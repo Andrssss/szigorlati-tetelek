@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Digitális Számítás Elmélete - Szigorlati Témák (Nyomtatható)</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <link rel="stylesheet" href="shared.css">
     <style>
         * {
             margin: 0;
@@ -267,9 +268,8 @@
                     Array.from(node.childNodes).forEach(wrapNotes);
                 }
             }
-            wrapNotes(document.body);
-        });
     </script>
+    <script src="shared.js"></script>
 </head>
 <body>
 
@@ -1464,55 +1464,11 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 </div>
 
 <script>
-  document.querySelectorAll('strong').forEach(function(el) {
-    var text = el.textContent.trim();
-    if (text.startsWith('Tétel') || text.startsWith('Definíció') || text.startsWith('Kérdés') || text.startsWith('Megj')) {
-      el.style.color = '#1a6bbf';
-    }
-  });
-
-  function highlightTerms(root, regex, color) {
-    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-      acceptNode: function(n) {
-        var p = n.parentNode;
-        if (p.nodeName === 'SCRIPT' || p.nodeName === 'STYLE') return NodeFilter.FILTER_REJECT;
-        var anc = p;
-        while (anc) { if (anc.nodeName === 'H3') return NodeFilter.FILTER_REJECT; anc = anc.parentNode; }
-        return NodeFilter.FILTER_ACCEPT;
-      }
-    }, false);
-    var nodes = [];
-    while (walker.nextNode()) nodes.push(walker.currentNode);
-    nodes.forEach(function(node) {
-      regex.lastIndex = 0;
-      if (!regex.test(node.nodeValue)) return;
-      regex.lastIndex = 0;
-      var frag = document.createDocumentFragment();
-      var last = 0, m;
-      while ((m = regex.exec(node.nodeValue)) !== null) {
-        if (m.index > last) frag.appendChild(document.createTextNode(node.nodeValue.slice(last, m.index)));
-        var sp = document.createElement('span');
-        sp.style.color = color;
-        sp.style.fontWeight = 'bold';
-        sp.textContent = m[0];
-        frag.appendChild(sp);
-        last = m.index + m[0].length;
-      }
-      if (last < node.nodeValue.length) frag.appendChild(document.createTextNode(node.nodeValue.slice(last)));
-      node.parentNode.replaceChild(frag, node);
-    });
-  }
-
-  // Felismerhető / rekurzíve felsorolható → narancssárga (először, hogy "rekurzív" ne rontsa el)
+  // —— Számításelmélet-specifikus kiemelések ——
   highlightTerms(document.body, /Turing[ -]felismerhető|rekurzíve felsorolható/gi, '#cc0000');
-  // Eldönthető / rekurzív → zöld
   highlightTerms(document.body, /Turing[ -]eldönthető|rekurzív(?!e)/gi, '#cc0000');
   highlightTerms(document.body, /Reguláris|reguláris(?!e)/gi, '#cc0000');
-highlightTerms(document.body, / akkor[ -]és[ -]csak[ -]akkor(?!e)/gi, '#cc0000');
-
-
-
-  Reguláris
+  highlightTerms(document.body, /akkor és csak akkor/gi, '#cc0000');
 </script>
 </body>
 </html>
