@@ -1,0 +1,929 @@
+=== PAGE 1 ===
+Nyelvtech kidolgoza´s
+Leichner Da´vid
+2016. december 12.
+Tartalomjegyz´ek
+1. Karakterek, k´odol´asi szabv´anyok, rendez´esek, n-gramok, karakter-´es n-gram-
+alapu´ statiszikai megfigyel´esek 2
+2. V´eges ´allapotu´ automat´ak (´es kiterjeszt´eseik) nyelvtechnol´ogiai alkalmaz´asai 5
+3. A sz´am´ıt´og´epes morfol´ogia alapvet˝o m´odszerei (k´etszintes, unifik´aci´os) 8
+4. A sz´am´ıt´og´epes morfol´ogia alkalmaz´asai (helyes´ır´as, elv´alaszt´as, intelligens
+keres´es, intelligens csere 12
+5. Form´alis nyelvtanok, szintaktikai reprezent´aci´ok (k¨ozvetlen ¨osszetev˝os, fu¨g-
+g˝os´egi, X-von´as), modatelemz´esi m´odszerek (TD, BU, kombin´alt) 15
+6. Az unifik´aci´o ´es alkalmaz´asai a nyelvtevhnol´ogi´aba (morfol´ogi´aban, szintaxis-
+ban) 16
+7. Jelent´esreprezent´aci´ok, szemantikus h´al´ok, fogalmi gr´afok, ontol´ogi´ak, Word-
+Net 19
+8. Sz´am´ıt´og´epes lexikogr´afia: sz´ot´ar´ep´ıt´es, sz´ot´ar´atalak´ıt´as, sz´ot´arhaszn´alat t´a-
+mogat´asa nyelvtechnolo´gi´aval 22
+9. P´arhuzamos korpuszok, sz¨ovegszinkroniz´al´as, ford´ıt´omem´ori´ak 25
+10.Szab´alyalapu´ ´es statisztikai g´epi ford´ıt´asi m´odszerek 29
+1
+
+=== PAGE 2 ===
+1. Karakterek, ko´dol´asi szabv´anyok, rendez´esek, n-gramok, ka-
+rakter- ´es n-gram-alapu´ statiszikai megfigyel´esek
+Ez egy el´eg alapvet˝o informatikai t´etel. El˝osz¨or is n´eh´any defin´ıci´oval ´erdemes kezdeni.
+Karakterk´odol´as
+• Karakter: absztrakt objektum, a sz´am´ıt´og´epen t´arolt sz¨ovegek legkisebb, tov´abb nem
+bonthat´o egys´ege. Egy karakter egy betu˝, sz´am,´ır´asjel, speci´alis jel, illetve egyetlen egy-
+szeru˝bb sz¨ovegform´az´o parancs ´abr´azol´as´ara alkalmas
+• Karakterk´od: a karakternek mint absztrakt objektumnak megfeleltett sz´amk´od, amely
+sz´am´ıto´g´epen k¨ozvetlenu¨l ´abr´azolhat´o
+• Karakterk´eszlet: karaktereket ´es sz´amk´odjaikat ¨osszerendez˝o t´abl´azat. Meghat´arozza,
+hogy milyen karakterek haszn´alhat´ok ´es azt is, hogy az egyes karakterk´odokat mik´eppen
+kell ´ertelmezni. A karakterk´eszlet megjelen´ıthet˝o karaktereket ´es speci´alis mu˝veleteket
+el˝o´ır´o vez´erl˝okaraktereket tartalmaz
+• K´odlap: t¨obb karakterk´eszletet is kezel˝o sz´am´ıt´og´eprendszerben egy saj´at sz´amk´odj´aval
+azonos´ıtott karakterk´eszlet
+• Betu˝k´eszlet: olyan t´abl´azat, amely adott karakterk´eszlet(ek) megjelen´ıthet˝o karakterei-
+hez karakterk´epeket rendel, amelyek a sz´am´ıt´og´ep k´eperny˝oj´en, vagy nyomtat´asban jelen-
+nek meg. Az alkalmazott betu˝k´eszlet a sz¨oveg sz´am´ıt´og´epbeli ´ertelmez´es´ere - p´eld´aul a
+sz¨oveget nyelvi szempontb´ol feldolgoz´o programokra - nincs befoly´assal, csak annak meg-
+jelen´ıt´esekor haszn´alatos
+K´odol´asi szabv´anyok c´ımsz´o alatt igaz´ab´ol a szok´asos mes´ekre gondolhatunk. Elkezdtu¨k a
+j´o kis BCD-t meg EBCDIC-t, de r´aj¨ottek, hogy ez kev´es is (asszem 6 bit) meg gagyi, sz´oval j¨ott
+p´ar u´j t´abla, pl ASCII 7 bittel, de a dr´aga amcsik elfelejtett´ek a t¨obbi nyelvet,´ıgy j¨ott be m´eg
+sok-sok karaktert´abla. Amikr˝ol az ´orai dik´ab´ol sz´o volt az kett˝o:
+1. UCS: Universal Character Set
+2. Unicode szabv´any
+Na h´at az 1. az eur´opai a 2. az amerikai. Ezek 16 bitesek, ami baromi sok karakter.
+Gyakorlatilag minden besz´elt ´es holt nyelv, illetve sok egy´eb nyelv (pl. Braille). Minden egyes
+karakternek sz´ama ´es neve van:
+• U+0041 → Latin capital letter A
+• U+0151 → Latin small letter o with double acute
+Manaps´ag viszont m´ar ez is kev´es. Ma m´ar ink´abb 4 b´ajton (32 biten) t´arolj´ak a karak-
+tert´abl´at.
+• UTF-8 (Unicode Transformation Format): v´altoz´o hosszu´s´agu´ k´odol´assal (1-6 b´ajt) k´epezi
+le a Unicode karaktert´abl´at, pl. 1 b´ajton t´arolt k´odjai az ACII-nak felelnek meg, ´ıgy a
+latin betu˝s UTF-8 k´odol´asu´ sz¨ovegek a r´egi ASCII k¨ornyezetben is olvashat´oak maradnak
+2
+
+=== PAGE 3 ===
+• UTF-16: 1112064 karaktert k´odol
+• UCS-4: 4 b´ajt (32-bit) = UTF-32 (pontosan 32 bit)
+Na ezek ut´an 1980-ra ig´eny volt egy egys´eges rendszerre. Nosza maradt az amcsi-eur´opai
+vonal is, csak az eur´opaiak nevet v´altoztattak:
+• ISO 10646 - az ISO szervezet szabv´anya
+• Unicode - amerikai c´egek konzirciuma
+1991-ben sz´epen egys´eges´ıtett´ek ˝oket, de az´ert mind a kett˝o megmaradt. Teljesen kompati-
+bilisek az´ota is. Vannak ku¨l¨onbs´egek, pl Unicode-ban vannak egyeztet´esi szab´alyok.
+Rendez´esi elvek
+Naj´o izgi. Sz´oval van sok nyelvu¨nk, ezeknek van ABC-je ´es ABC rendje. Mondjuk a k´ep´ır´asn´al
+m´ar bonyolultabb a helyzet, de hagyjuk. Az ´atj´ar´ast az ´ab´ec´ek k¨oz¨ott transzliter´al´asnak h´ıvjuk,
+itt vannak probl´em´ak. (Sok betu˝t ¨osszeegyeztetni k´et nyelvben p´eld´aul.)
+Namostittvansokf´elerendez´es,´erdemesmegeml´ıteniak¨onyvt´arirendez´est. Ehhezbaromi
+nagy´es sok saj´ats´agos szab´aly kell. A magyar akad´emiai rendez´es ezen szab´alyokat gyu˝jti ¨ossze.
+Itt minden sz´epen le van ´ırva. Van p´ar p´elda a diasorban is, ezeket nem ´ırtam ide mert van
+´eletem.
+Karakter- ´es n-gram-alapu´ statiszikai megfigyel´esek
+L´etezik a vil´agban olyan, hogy betu˝statisztika. Itt arra kell gondolni, hogy mondjuk a betu˝k
+milyen val´osz´ınu˝s´eggel fordulnak el˝o egy sz¨ovegben.
+• Hangstatisztik´ak, betu˝statisztik´ak
+• Titkos´ır´as-megfejt´esek
+• Morse-´ab´ec´e,´ır´og´ep-billentyu˝zet
+• A nyelvek tipiz´alhat´ok n-gr´afjaik alapj´an (pl. m´assalhangz´otorl´od´assal kezd˝od˝o szavaink
+r´egen egy´altal´an nem voltak, ´es ma is csak bizonyosak vannak)
+• Inform´aci´o (Shannon): kisebb val´osz´ınu˝s´egu˝ u¨zenetnek az inform´aci´otartalma nagyobb,
+´es fu¨ggetlen esem´enyek egyu¨ttes inform´aci´otartalma az esem´enyek inform´aci´otartalm´anak
+¨osszege. (Teh´at sz´etbonthat´oak (line´arisak), ak´ar anno infocode-b´ol)
+Ide lehet k¨otni az infocode-t is.
+• Az x jel inform´aci´otartalma: I(x) := p(x)log [p(x)−1]
+2
+• Itt m´eg volt a liner´ais tul. le´ır´asa ezt gondolom mindenki j´ol ismeri
+Most pedig k¨ovetkezhetnek a h´ıres-neves n-gramok. Az egym´as ut´an k¨ovetkez˝o n darab
+karakter egy sz¨ovegben az n-gram. Ezek lehetnek teljes szavak is, de nem felt´etlenu¨l azok. Az
+el˝onyu¨k, hogy nyelvfu¨ggetlenek ´es hibatu˝r˝o megold´asok megval´os´ıt´as´ara igen alkalmasak.
+Ezekb˝ol lehet p´eld´aul magyar betu˝statisztik´at ¨osszedobni (1-gramok) ekkor l´athat´o, hogy
+melyik betu˝, milyen val´osz´ınu˝s´eggel fordul el˝o. (A: 9.35, X 0.01).
+Mire j´ok ezek?
+3
+
+=== PAGE 4 ===
+1. n´ormlgenytnae˝oettesy sdru´k u¨ze ne´ee issgnis k, ˝oentetnsmrdttca.
+2. B´egiz ´erj, ercsz´epot, ekalf¨onembenyett km´ab os al˝orre.
+3. Ezenlapoltike leh´atsz¨okm´eg hog, aztradon k´et. Korcsant v´an.
+4. H´arone - Az a l´ehez, meg, akar´ozs´ak hogy ¨oreg´esz eg´eny l´at´an, j´arnagyon k´erdeket egy
+emberet. Tord´ard sem tan.
+5. Senki adsaadott, hogy egy ki tornak, a kapta a miel˝otte szor ismerni most vele a´otsap a
+eip˝ovel. - O´, biztos´ıt´as u´r csak t´arsallats´ag vele. Hallj ott.
+6. T¨ort´enik. Telt ´ev ´ota megl´atta bevallott kiss´e lehajtott ´es mindig, l´eg´ez erligyu´ne´aenl
+eltu˝nt.
+Megfigyelhet˝o, hogy a 4 ut´an nem javul igaz´an a min˝os´eg, Mi´ert? Mert kicsi tan´ıt´okorpusz
+eset´en (esetu¨nkben 8 Mb´ajt) a n´egyesn´el nagyobb csoportok eloszl´as´anak megb´ızhat´os´aga m´ar
+nem elegend˝o.
+Egy kis statisztika
+A Zipf-t¨orv´eny l´enyege, hogy ¨osszesz´amoljuk egy sz¨ovegben az el˝ofordul´o szavak gyakoris´ag´at,
+majd sorba rendezzu¨k ˝oket gyakoris´aguk alapj´an. A´br´azoljuk rang szerint (azaz annak a fu¨gg-
+v´eny´eben, hogy az illet˝o sz´o hanyadik a sorban) egy hatv´anyfu¨ggv´eny szerint lecseng˝o g¨orb´et
+kapunk -1-hez k¨ozeli kitev˝ovel. R ∼ 1
+i iα
+A Heaps t¨orv´eny szerint egy N sz´ob´ol ´all´o korpusz eset´en a ku¨l¨onb¨oz˝o szavak sz´ama:
+V ≈ K ·Nβ (1)
+ahol K : a sz¨ovegt˝ol fu¨gg˝o konstans (10 ≤ K ≤ 100), β : a sz¨ovegt˝ol fu¨gg˝o konstans (magyarn´al:
+0.6 ≤ β ≤ 0.7)
+4
+
+=== PAGE 5 ===
+2. V´eges ´allapotu´ automat´ak (´es kiterjeszt´eseik) nyelvtechnolo´-
+giai alkalmaz´asai
+No h´at akkor el˝osz¨or is el kell hogy meru¨lju¨nk a sz´of´ak csodasz´ep vil´ag´aban. A sz´ofa (Fred-
+kin 1960) egy olyan, a szavak r´ak¨ovetkez˝o karaktereivel c´ımk´ezett ´elsorozatokat tartalmaz´o fa,
+amelyben egy sz´ot u´gy tal´alunk meg, hogy v´egigj´arjuk karakterenk´ent.
+A sz´of´ak kir´alyak, mert:
+• Bin´aris keres˝of´ak: O(mlog(n)) (n a f´aban t´arolt elemek sz´ama)
+• Sz´ofa: m hosszu´s´agu´ kulcs megtal´al´asa max. O(m)
+• Nagy sza´mu´ r¨ovid fu¨z´er t´arol´asa eset´en a sz´ofa kevesebb helyet ig´enyel, mint a bin´aris ke-
+res˝ofa(ui. akulcsokatnemt´aroljuk,acsom´opontokatmegk¨oz¨osenhaszn´alj´akazegyforma
+kezd˝oszeletu˝ fu¨z´erek kulcsai)
+• Has´ıt´ot´abla´k helyett is haszn´alhat´o (b´ar n´eha a sz´of´ak lassabbak)
+• Nem mindenre j´o: vannak fu¨z´erk´ent nehezen ´abr´azolhat´o kulcsok (pl. a lebeg˝opontos
+sz´amok)
+• De: sz´ot´arak ´abr´azol´as´ara alkalmas
+• ADFSA (k¨ormentes determinisztikus v´eges automata) a sz´of´an´al is jobb, de csak ha nincs
+kieg´esz´ıt˝o inform´aci´o (csak puszta sz´olista)
+Alapvet˝oensoksz´ofafajtavan,mih´armatn´ezu¨nkmeg: ´altal´anossz´ofa,m´odos´ıttt(kompakt)
+sz´ofa, er˝osen m´odos´ıtott sz´ofa. A ku¨l¨onbs´eg, hogy az er˝osen m´odos´ıtott sz´of´ak ´elein t¨obb betu˝
+is lehet.
+AKay-f´elesz´o´abr´azol´asl´enyege, hogyt¨om¨or´ıtunknumerikusprefixekkel. M´asik´erdekess´ega
+szuffixum-sz´ofa, melyben egy fu¨z´er minden lehets´eges v´egszelete t´arolva van. Ezeknek n levelu¨k
+van ´es magass´aguk is n. A szuffixum-sz´of´anak is vannak ´erdekes tulajdons´agai.
+• O(m) id˝oben eld¨onthet˝o, hogy egy m hosszu´ P fu¨z´er a r´eszfu¨z´ere-e
+• O(m) id˝oben megtal´alhat´o egy tetsz˝oleges m hosszu´ P r´eszfu¨z´er´enek els˝o el˝ofordul´asa
+• O(m+z) id˝oben megtal´alhat´o mind a z darab el˝ofordul´asa egy m hosszu´ r´eszfu¨z´er´enek
+• Az S ´es az S fu¨z´erek leghosszabb k¨oz¨os r´eszfu¨z´ere megtal´alhat´o O(n +n ) id˝o alatt
+i j i j
+Na mostm´ar r´at´erhetu¨nk a t´etel l´enyeg´ere, vagy is az automat´ak ´es v´eges ´allapotu´ mo-
+fol´ogi´ak t´emak¨or´ere.
+Nyevel, nyelvtanok, automat´ak
+• A form´alis nyelv egy form´alis nyelvtan ´altal le´ırt fu¨z´erek halmaza
+• G = (N,T,R,S) egy form´alis nyelvtan, ahol
+1. N → nemtermina´lis szimb´olumok v´eges halmaza
+2. T → termin´alis szimb´olumok v´eges halmaza
+5
+
+=== PAGE 6 ===
+3. R → (T ∪N)∗N(T ∪N)∗ → (T ∪N) alaku´ szaba´lyok v´eges halmaza
+4. S ∈ N → mondatszimb´olumok
+• Form´alis nyelvek ´es form´alis nyelvtanok Chomsky-hierarchi´aja, ahol A,B ∈ N;a ∈ T;
+α,β,γ,∈ (T ∪N)∗:
+– 0-t´ıpusu´ nyelvtan (α → β): rekurz´ıv megsz´aml´alhat´o nyelvek
+– 1-t´ıpusu´ nyelvtan (αAβ → αγβ): k¨ornyezetfu¨gg˝o nyelvek
+– 2-t´ıpusu´ nyelvtan (A → γ): k¨ornyezetfu¨ggetlen nyelvek
+– 3-t´ıpusu´ nyelvtan (A → a and A → aB): regul´aris nyelvek
+• Az elfogad´o automat´ak hierarchi´aja:
+1. Turing-g´ep
+2. Line´arisan k¨ot¨ott automata
+3. Veremautomata - O(n3)
+4. V´eges ´allapotu´ automata - O(n)
+V´eges ´allapotu´ automat´ak
+• V´eges ´allapotu´ automata: A = (S,Σ,s,F,T) ¨ot¨os, ahol
+– S → ´allapotok v´eges halmaza
+– Σ → egy ´ab´ec´enek nevezett v´eges halmaz
+– s ∈ S → kiindul´o a´llapot
+– F ⊆ S → a v´eg´allapotok halmaza
+– T : S ×(Σ∪{(cid:15)}) → S → ´atmenet fu¨ggv´eny
+• AzX = x x ···x Σ´ab´ec´eb˝olalkotottfu¨z´ertA elfogadja,hal´etezikS-benaz´atmenetek
+0 1 n
+r ,r ,···r sorrendje a k¨ovetkez˝o felt´etelekkel:
+0 1 n
+1. r = s
+0
+2. r = T(r ,x )(i = 0,··· ,n−1)
+i+1 i i
+3. r ∈ F
+n
+1. ´abra. Regul´aris kifejez´es - regul´aris nyelv - v´eges g´ep
+Na sz´oval a regul´aris kifejez´eseket le´ırhatjuk ilyen kis csodasz´ep automat´akkal.
+6
+
+=== PAGE 7 ===
+V´eges ´atalak´ıt´ok (FST)
+• V´eges ´atalak´ıt´o: T(S,Σ,Γ,s,F,δ) hatos, ahol
+– S → az ´allapotok v´eges halmaza
+– Σ → a bemen˝o a´b´ec´enek nevezett v´eges halmaza
+– Γ → a kimen˝o ´ab´ec´enek nevezett v´eges halmaz
+– s ∈ S → a kezd˝o ´allapot
+– F ⊆ S → az elfogad´o ´allapotok v´eges halmaza
+– T : S ×(Σ∪{(cid:15)})×(Γ∪{(cid:15)}) → S → ´atmenetfu¨ggv´eny
+• A T ´atlak´ıtja az α ∈ Σ∗ fu¨z´ert β ∈ Γ∗ fu¨z´erbe (r¨oviden: α[T]β) ha l´etezik u´t a kezd˝o´alla-
+potb´ol egy v´eg´allapotba α bemen˝osorozat ´es β kimen˝o sorozat mellett
+• Az FSA ´es az FST ku¨l¨onbs´ege: az FSA kimenet´en egy Boole-v´alasz j¨on l´etre, m´ıg az FST
+egy fu¨z´ert ad eredm´enyu¨l (a m´asik szalag tartalm´at)
+E´s v´egu¨l az automat´ak k¨or´eb˝ol a velu¨k elv´egezhet˝o ´es ´ertelmezhet˝o mu˝veletek:
+1. Konkaten´aci´o
+2. Uni´o
+3. Iter´aci´o
+4. Metszett
+5. Kompoz´ıci´o
+A nyelvtechnol´ogiai felhaszn´al´as l´enyege, hogy megpr´ob´aljuk a nyelvet k´etszintes le´ır´assal
+megismerni, ezt automat´akon keresztu¨l tehetju¨k meg.
+7
+
+=== PAGE 8 ===
+3. A sz´am´ıto´g´epes morfol´ogia alapvet˝o mo´dszerei (k´etszintes,
+unifik´acio´s)
+A k´etszintes le´ır´as fel´e...
+Johnson felismer´ese a regul´aris rel´aci´o. Ez r¨oviden a k¨ovetkez˝o:
+1. aanbnb → k¨ornyezetfu¨ggetlen nyelv
+2. a(ab)nb → regul´aris nyelv
+Kaplan & Kay (1981/1994)
+Ez m´ar egy nehezebb di´oka. Egy hat´ekony elemz˝ot akartak ´ırni a kom´ak. Na a l´enyeg, hogy
+´eszrevett´ek, hogyhavank´etolyanszab´aly, amit´atalak´ıt´ovalmodell´alunk, akkoregyiketam´asik
+bemenet´ere k¨otve egyetlen ekvivalens ´atalak´ıt´ot kapunk. Ez az´ert kir´aly, mert nem gener´al
+k¨oztes eredm´enyt, illetve a szab´alyok sz´am´at´ol fu¨ggetlenu¨l tetsz˝oleges sz´amu´ fonol´ogiai u´jra´ır´as
+k¨ovetkezhet be.
+De itt van egy kis bibi. A szab´alymegford´ıt´as probl´em´aja. R¨oviden: Ugyanazon gener´al´o
+szab´alyokelemz´esreval´ohaszn´alatakorak¨otelez˝oszab´alyokopcion´alisakk´av´alhatnak: akaNpat
+lexik´alis fu¨z´erb˝ol a szab´alyok egyetlen felsz´ıni alakot gener´alnak, de a felsz´ıni alakb´ol az inverz
+lek´epez´es egy a sokhoz” t´ıpusu´ is lehet.
+”
+Ennek a probl´em´anak a megold´asa a v´eges ´atalak´ıt´ok soros vagy p´arhuzmaos kapcsol´asa.
+V´eges ´atalak´ıt´ok soros kapcsol´asa
+• A fonol´ogiai levezet´esek k¨oztes ´allapotai mindig kiku¨sz¨ob¨olhet˝ok az egyes szab´alyokb´ol
+kapott ´atalak´ıt´ok kompoz´ıci´oj´aval: az eredm´enyu¨l kapott ´atalak´ıt´onak csak k´et szintje
+van, a lexik´alis ´es a felsz´ıni
+• Az egyetlen generat´ıv ´atalak´ıt´o haszn´alata sokkal hat´ekonyabb felismer´esre is, mintha az
+eredeti szab´alyoknak megfelel˝o ´atalak´ıt´ok egyenk´ent invert´alt sorrendben mu˝k¨odn´enek
+• Kaplan´esKaymegoldottaugyanazegyesszab´alyoksorozata´atalak´ıt´obaval´oford´ıt´as´anak
+probl´em´aj´at, azonban a nagy szab´alyrendszerek egyetlen ´atalak´ıt´oba val´o kompoz´ıci´oja az
+akkori technikai korl´atok miatt a gyakorlatban megval´os´ıthatatlan volt
+V´eges ´atalak´ıt´ok p´arhuzamos kapcsol´asa
+• Tudva,hogyalexik´alis´esafelsz´ınialakokk¨oz¨ottimegfeleltet´esle´ırhat´oregul´arisrel´aci´oval,
+Koskenniemiegyl´enyegiv´altoztat´ast,aszab´alyhalmazb´olsz´armaz´o´atalak´ıt´okp´arhuzamos
+kapcsol´as´at javasolta
+A k´etszintes szab´alyok alakja
+• H´arom r´eszb˝ol ´all: megfeletetett p´arok, k¨ornyezet, szab´alyoper´ator
+• Megfeletett p´arok: egy lexik´alis ´es egy felsz´ıni karakterb˝ol ´all´o p´ar
+• K¨ornyezet: az adott jelens´eget k¨oru¨lvev˝o fonol´ogiai helyzetet specifik´alja (az al´ahu´z´as
+jelenti a megfeleltetett p´ar helyzet´et az adott k¨ornyezetben)
+8
+
+=== PAGE 9 ===
+• Szab´alyoper´ator: a megfeleltetett p´ar ´es a k¨ornyezete k¨oz¨ott fenn´all´o rel´aci´o; nagyj´ab´ol a
+form´alis logika felt´eteleket ´es k¨ovetkezm´enyeket le´ır´o oper´atorainak felelnek meg:
+– → a megfeleltet´es csak akkor ´all fenn, ha ez a k¨ornyezet
+– ← ha ez a ko¨rnyezet, akkor a megfeleltet´es fenn´all
+– ↔ a megfeleltet´es akkor ´es csak akkor ´all fenn, ha ez a k¨ornyezet
+– / ← a megfeleltet´es soha nem fordul el˝o ebben a k¨ornyezetben
+Generat´ıv vs. k´etszintes szab´alyok
+• t → c/ i h´at ez ilyen egyir´anyu´
+• t ⇒ i ez meg k´etir´anyu´
+Most j¨onnek ezek a hacac´ar´ek: ”kiz´ar´olag, de nem mindig”, ”mindig, de nem kiz´ar´olag”,
+”mindig ´es kiz´ar´olag”, ”soha”. Nyilv´an itt is van j´o sok konvenci´o ´es speci´alis szimb´olum.
+Ezeket most nem´ırn´am le, mert u´gy se jegyzi meg senki.
+K´etszintes lexikonok
+• T˝olexikonok
+• Altern´aci´os mint´ak lexikonjai
+• Toldal´eklexikon
+Vannak lexikonjaink, ezeknek elemei (lex´em´ak) meg van egy ilyen P folytat´asi oszt´aly mely:
+azt ´all´ıtja, hogy az eredeti lexik´alis elemet vagy a PS allexikon (birtokos toldal´ekok), vagy a K0
+allexikon (kritikumok) valamelyik eleme k¨ovetheti, vagy egy hat´arszimb´olum.
+P´arhuzamos szab´alyalkalmaz´as ´es a sz´ot´arak
+Itt a m´asik szinten tov´abbi megszor´ıt´asokkal bevezethet˝oek u´j lexikonok. A lexikonok meg
+igaz´ab´ol sz´o-fa erd˝ok, az egyik fa gy¨okere a m´asik level´en´el van ´es ´ıgy j´o. Ezek a folytonos
+lexik´alis szu˝r˝ok.
+Neh´ezs´egek:
+• A felsz´ın ´es a lexik´alis alak k¨otelez˝oen azonos hosszu´s´aga
+• A szupplet´ıv (lexikaliz´al´odott) alakok ´es a nem produkt´ıv toldal´ekol´as kezel´ese
+• Ha a sz´ot´ar mindent kib´ır”, mi´ert kell a neh´ez” alakokat is levezet´esekkel kezelni?
+” ”
+• Mit ´er a regul´aris rendszer, ha vannak regul´aris nyelvvel nem le´ırhat´o morfol´ogiai je-
+lens´egek?
+9
+
+=== PAGE 10 ===
+Unifik´acio´
+• A jegyszerekezetek ir´any´ıtott k¨ormentes gr´afokkal reprezent´alhat´ok, ahol a csom´opontok
+felelnek meg a v´altoz´oknak ´es az ¨osv´enyek a v´altoz´onevek
+• A jegyszerkezetek leggyakrabban jegy-´ert´ek m´atrixokk´ent´ırj´ak le, melyeknek k´et oszlopuk
+van (az egyik a jegyek nev´enek, a m´asik az ´ert´ekeinek)
+• Az ´ert´ek vagy atomi ´ert´ek vagy egy m´asik jegyszerkezet
+• Jegyszerkezet-unifik´aci´o: k´etjegyszerkezetenmu˝kd˝omu˝velet, melycsakakkorhiu´sulmeg,
+havanolyan¨osv´enymindk´etszerkezetben,melyeknekelt´er˝oatomi´ert´ekeivannak; minden
+m´as esetben a l´etrej¨ov˝o szerkezet az eredeti k´et szerkezet ¨osszes ¨osv´eny´et tartalmazza (az
+azonosakat egyeejtve)
+• Az unifik´aci´o absztrakt mu˝velet, ´es nem a morfol´ogi´ahoz tartozik, csak a legegyszeru˝bb
+form´aj´at itt t´argyaljuk el˝osz¨or
+Az unifik´aci´o mu˝velete
+Az unifika´ci´o olyan mu˝velet, mely egyedu¨l akkor nem hajthat´o v´egre, ha a tagokban egyazon
+jegy ku¨l¨onbo¨z˝o ´ert´ekekkel szerepel:
+• [NUMBERSG]∪[NUMBERPL] = fail!
+• de:
+• [NUMBERSG]∪[NUMBERSG] = [NUMBERSG]
+• [NUMBERSG]∪[NUMBER[]] = [NUMBERSG]
+• [NUMBERSG]∪[PERSON3] = [[NUMBERSG][PERSON3]]
+Az unifik´aci´o implement´aci´okban
+Destrukt´ıv unifik´aci´o:
+• K´et szerkezet unifik´aci´ojakor az egyik megszu˝nik, ´es hely´en l´etrej¨on az eredm´enyszerkezet
+• Gyors
+• Bizonyos esetekben nem k´ıv´ant hat´asa is lehet (pl. ha egy szab´alyt alkalmazunk, annak
+form´aj´at nem szeretn´enk a mu˝velet k¨ovetkezt´eben megv´altoztatni)
+Nem-destrukt´ıv unifik´aci´o:
+• A kiindul´o szerkezetek nem v´altoznak, az eredm´eny u´j, harmadik szerkezet
+• Az implement´aci´okban igen gyakori
+• K¨onnyu˝ kezelni, viszont m´asol´asi mu˝veletet ig´enyel
+• Az unifik´alhat´os´ag-ellen˝orz´es egy rel´aci´o, igen / nem eredm´ennyel, m´as kimenet n´elku¨l
+10
+
+=== PAGE 11 ===
+Az unifik´aci´or´ol ´altal´aban
+• Az unifik´aci´o, mint mu˝velet nem a morfol´ogi´ahoz tartozik, mind¨ossze egy egyszeru˝bb
+v´altozat´at itt t´argyaljuk el˝osz¨or
+• Az unifik´aci´ot els˝osorban ir´any´ıtott ciklusmentes gr´afok eset´eben szok´as haszn´alni
+• A morfol´ogiai le´ır´as eset´eben egyszeru˝bb struktu´r´akon mu˝k¨odtetju¨k az unifik´aci´ot
+• A DAG t¨obb mint fa, ´es ´epp ez´altal haszn´alhat´obb nyelvi szerkezetek le´ır´as´ara, hogy egy
+csom´opontnak a nyelvi szerkezetben sokszor kell, hogy t¨obb szu¨l˝oje lehessen
+• A k¨oz¨os csom´opontok els˝osorban a szintaktikai szerekezet kezel´es´en´el v´alnak fontoss´a
+11
+
+=== PAGE 12 ===
+4. A sz´am´ıto´g´epes morfol´ogia alkalmaz´asai (helyes´ır´as, elv´alasz-
+t´as, intelligens keres´es, intelligens csere
+A t´ema elej´en tekintsu¨k a hib´ak ´es norm´ak kezel´es´es´et:
+• A helyes´ır´asi norm´ak, a szab´alyok ´es a g´epi helyes´ıt´as-ellen˝orz´es viszonya
+• A helyes´ır´asi szab´alyzatok viszonya a g´epi helyes´ır´as-ellen˝orz´es´ehez
+• Formai ´es jelent´estani szempontok g´epi kezel´ese
+• A g´ep a ”nyelvhelyess´egi tan´acsad´o” szerep´eben
+• A nehezen ´ertelmezhet˝o elemz´esek okozta porbl´em´ak
+No most, ha hib´at szeretn´ek jav´ıtani, akkor vizsg´alni kell a tipikus hib´akat:
+• Karakterhiba´k, elu¨t´esek
+• Val´odi helyes´ır´asi hib´ak
+• Nyelvhelyess´egi hib´ak
+• Tipogr´afiai hib´ak
+• A helyes´ır´as-ellen˝orz´es lehet˝os´egei ´es korl´atai a szavak szintj´en
+• A sz´oellen˝orz´es ´es az u´n. nyelvehelyess´eg-ellen˝orz´es viszonya
+• A nyelvi programrendszer lehets´eges hib´ai: a tu´lgener´al´as
+A jav´ıta´si ig´enyekenek k´et fajt´ajuk van:
+1. Jav´ıthat´o (betu˝hib´ak, egybe´ır´asok, k¨ot˝ojelez´es, sz´oism´etl´es)
+2. Nem jav´ıthat´o (Hib´as ku¨l¨on´ır´asok, k¨ozpontoz´asi hib´ak, sz´orendhib´ak ´es m´eg sok m´as)
+A sz´oellen˝orz´es moduljai
+1. Alapsz´ot´ar illetve morfol´ogia
+2. Aj´anlo´modul ´es adatb´azisai
+3. Id˝oleges sajt´asz´ot´ar
+4. Kieg´esz´ıt˝o sz´ot´ar
+5. Kiz´ar´o sz´ot´ar
+6. A ragoz´o nyelvek eset´en hasznos a toldal´ekol´o saj´atsz´ot´arak lehet˝os´egei ´es neh´ezs´egei
+Levensthein t´av
+Hamming ´altal´anos´ıt´as. Van benne csere, beszu´r´as, t¨orl´es. Ide k¨otn´em a Damerau-Levensthein
+t´avot, ahol helycsere is van.
+12
+
+=== PAGE 13 ===
+A sz´oellen˝orz´es menete
+1. Morfol´ogiai elemz´es
+2. Aj´anl´as
+3. Elleno˝rz´es a gener´atumok morfol´ogiai elemz´es´evel
+A mondantszintj´en felismerhet˝o hibajelens´egek
+Na j´o meg kell hagyni itt csaltam egy mikonnyit, hisz ha nagyon figyelmes volt´al r´aj¨ohett´el,
+hogy eddig sz´o szintj´en detekt´altunk hib´at. Most azonban mondant szint´en fogunk, ez sokkal
+komplexebb ´es fincsibb, ez´ert csak megn´ezzu¨k hol tartunk.
+• N´evel˝o egyeztet´es
+• Vessz˝ohi´any
+• Algoritmikus sz´o¨osszet´etel
+• Szemantikus sz´o¨osszet´etel
+• Hib´as sz´o¨osszet´etel
+• Hi´anyos szerkezetek
+• T´eves sz´ohaszn´alat
+• Idegen szavak szu˝r´ese
+• Terjeng˝os kifejez´esek
+• Tr´ag´ar szavak szu˝r´ese
+• Sz´ok¨ozhi´any, -felesleg
+Automatikus sz¨ovegelv´alaszt´as
+Igen ez t´enyleg a sz´otagol´asr´ol fog sz´olni. Vannak alapszab´alyok, meg morfol´ogiai felu¨lb´ır´al´asok.
+Besz´elnu¨nk kell arr´ol is, ha valami kellemes, hosszabb sz´ot v´alasztunk el, akkor az algoritmu-
+sunk mennyire legyen ”enged´ekeny”. Tov´abb´a az´ert figyelni k´ene a ku¨l¨onleges elv´alaszt´asokra
+mondjuk az asz - szony - nyal (de kajak fontos).
+A probl´ema p´eld´aul, hogy angolban alapb´ol nem l´etezik egys´eg, t¨ok mindegy.
+Sz´am´ıt´og´epes szinonimasz´ot´arak ´es tezaszauruszok
+• A szinonim´akr´ol
+• Szinonimaszo´t´ar, vagy tezaszauruszok
+• T´arol´asi ´es keres´esi probl´em´ak
+• A rokon´ertelmu˝s´eg defin´ıci´oja
+13
+
+=== PAGE 14 ===
+• Az automatikus csere probl´em´ai
+• T˝o-vissza´all´ıt´as
+• T¨obb´ertelmu˝s´egek kezel´ese
+• A lexikai ´es a szintaktikai sz´o ku¨l¨onbs´eg´eb˝ol ad´od´o nehzs´egek
+• Az ¨osszetett szavak szinon´ım´ainak probl´em´aja
+• Morfol´ogiai gener´al´as minta alapj´an
+14
+
+=== PAGE 15 ===
+5. Form´alis nyelvtanok, szintaktikai reprezent´aci´ok (ko¨zvetlen
+¨osszetevo˝s, fu¨ggo˝s´egi, X-von´as), modatelemz´esi mo´dszerek
+(TD, BU, kombin´alt)
+Sz´oval na a form´alis nyelvtanokr´ol esett m´ar p´ar sz´o a m´asodik t´etelben. Teh´at v´edju¨k a f´akat
+´es lapozzunk t¨obbet.
+A szintaktikai reprezent´aci´ok gyakorlatilag f´ak. A k¨ozvetlen ¨osszetev˝os egy sz´ep egy oldalra
+rendezett fa. A funcion´alis meg ki van egyensu´lyozva. Az ¨osszetev˝os ´es fu¨gg˝os´egi reprezent´aci´o
+pedig valahogy mindkett˝o. Kb az amit gyakon csin´altunk. A X-von´as egy fokkal ´erdekesebb:
+• S → NPVP
+• Az¨osszetevo˝sszerkezetbenazNP ´esaVP ”testv´erek”,azazmindkettenazS ”gyermekei”,
+de ezt nem fejezi ki a fu¨gg˝os´egi le´ır´as
+• Aztviszontak¨ozvetlen¨osszetev˝osle´ır´asnemfejeziki,hogytestv´erekb´ar,denemegyforma
+su´llyal, ui. a VP a szerkezet feje
+• X-von´as szab´alyk´ent: V(cid:48)(cid:48) → N(cid:48)V(cid:48)
+• Azaz: a V(cid:48)(cid:48) a V maxim´alis projekci´oja, teh´at a mondat feje az ige!
+• Csak endocentrikus
+A tulajdons´agok:
+• Meg˝orzi mind az ¨osszetev˝os, mind a fu¨gg˝os´egi le´ır´as el˝onyeit
+• Sz´ofajok feletti ´altal´anos´ıt´as: X = V/N/P/Adj/Adv/Det/Q/···
+• Az X-n´el magasabb szerkezeteket is egys´egesen lehet vele le´ırni
+• Megku¨l¨onb¨oztethet˝ok a ku¨l¨onf´ele jellegu˝ b˝ov´ıtm´enyek (pl. el˝otte, m¨og¨otte)
+• Szintjei: lexik´alis szerkezet, k¨oztes szerkezet, maxim´alis szerkezet
+AzX-von´asnakvannakszab´alyaiezeketmegintnem´ıromle,mertannyiraaz´ertnemviccesek.
+Mondatelemz´esi mo´dszerek
+Alulr´ol-felfel´e (BU) elemz´es - felu¨lr˝ol-lefel´e (TD) elemz´es. TD vs. BU
+• TD: nem fordulhat el˝o, hogy ne mondat-szim´olummal v´egz˝od˝o elemz´essel t¨olsu¨k az id˝ot,
+´es nincs olyan r´eszszerkezet, melynek ne lenne helye a v´egs˝o f´aban
+• BU: nem fordulhat el˝o, hogy a bemenettel inkonzisztens szab´alyokkal kellene t¨oltenie az
+id˝ot, ´es nincs olyan r´eszszerkezet, mely ne lenne kompatibilis a bemenet valamely r´esz´evel
+• Optim´alismegold´as: valamif´elekombin´aci´o,pl. BU-elemz´esel˝ofordul´asival´osz´ınu˝s´egekkel;
+TD-elemz´es ”BU j´osl´assal”
+15
+
+=== PAGE 16 ===
+6. Az unifik´acio´ ´es alkalmaz´asai a nyelvtevhnol´ogi´aba (morfol´o-
+gi´aban, szintaxisban)
+El˝osz¨or is besz´elnu¨nk kell a jegyszerkezetekr˝ol.
+• Akateg´ori´ak(sz´ofajok)nematomiak,tov´abbaloszt´alyozhat´ok: VPto,Sthat,Non3sgAux...
+• Az eff´ele jegyek hierarchi´aba rendezhet˝ok
+• A szab´alyok´ıgy szab´alyoszt´alyokk´a v´alnak
+• Jegy-´ert´ek p´arok
+• Jegyek: nyelvtani tulajdons´agok, ´ert´ekek: atomi szimb´olumok ´es jegyszerkezetek
+• Jegy-¨osv´eny: nem egyetlen jegynek van ´ert´eke, hanem az ¨osv´enynek
+• P´eld´aul: [egyeztet´es[sz´am]] = Plur
+• Fej-jegyek ´es l´ab-jegyek
+De,hogymiisvoltez? Nosal´enyeg,hogyezeketadiszjunkjegy-´ert´ekp´arokatunifik´alhatjuk.
+2. ´abra. Az inform´aci´ok unifik´aci´oja a denot´aci´ok metszete
+Ezeket lehet ´ab´arzolni DAG-k´ent is.
+Ezeket m´eg reprezent´alni is lehet, hogy sz´epen tudjuk ˝oket kategoriz´alni.
+16
+
+=== PAGE 17 ===
+• O¨sv´enyekre vonatkoz´o egyenletekkel: < cat >= v, vagy < finite >= +
+• Jegy-´ert´ek m´atrixokkal:
+(cid:20) (cid:21)
+cat : v
+(2)
+finite : +
+Itt persze lehetnek m´atrixok a m´atrixban.
+Ezekkel tudunk alkotni szab´alyokat is:
+Az unifik´aci´ora m´ar j´o sok algoritmus l´etezik pl. Earley-algoritmus. Tov´abbi kiterjeszt´esek:
+• Neg´aci´o
+• Diszjunkci´o
+• O¨sv´eny-egyenl˝otlens´eg
+• Halmaz-´ert´eku˝ jegyek
+• Jegyszerkezet-le´ır´o metanyelv
+17
+
+=== PAGE 18 ===
+A v´eges ´allapotu´ eszko¨z¨ok kiterjeszt´esei szintaktikai elemz´eshez
+Itt van mondjuk az RTN (Recursive Transition Network). Ezekkel tudunk alkotni szab´alyokat
+is:
+Itt a szok´asos FSA mu˝k¨odtet´es´en tu´l figyelni kell:
+• az aktu´alis bemeneti poz´ıci´ot,
+• az aktu´alis ´allapotot ´es
+• hogy hova kell visszat´erni
+• ¨osszegezve: veremkezel´es kell
+Az RTN ¨osszefoglal´asa:
+• Az RTN egym´ast h´ıv´o FSA-k h´al´ozata: az ´elek c´ımk´ei k¨ozt megjelenik m´as FSA-k ”neve”
+• A FSA (a regul´aris nyelvek) O(n) id˝o alatt elemzhet˝ok
+• Az RTN val´oj´aban egy veremautomata, azaz k¨ornyezetefu¨ggetlen nyelvek elemz´es´ere is
+alkalmas
+• Az RTN-nel teh´at O(n3) elemz´esi id˝o garant´alhat´o
+Van itt m´eg ATN ami az RTN b˝ov´ıt´ese. Itt vannak ´elc´ımk´ek, ´ert´ekek, tesztek ´es akci´ok. Az
+ATN formalizmusra is van 1-2 algoritmus hagyom´anyosan l´etezik XML le´ır´asa is.
+18
+
+=== PAGE 19 ===
+7. Jelent´esreprezent´aci´ok, szemantikus h´al´ok, fogalmi gr´afok,
+ontolo´gi´ak, WordNet
+Jelent´es´abr´azol´as
+Jelent´es vagy vil´agismeret? Fontos mind a kett˝o, hiszen a k¨ornyezet n´elku¨l es´elytelen a je-
+lent´estreprezent´alni. A vil´agismeret reprezent´aci´o mindig a k¨ornyezet megismer´es´ere f´okusz´al,
+vagy is nem sz´o szinten akarja meg´erteni az ´elet nagy dolgait, hanem mondat, vagy m´eg enn´el
+is nagyobb egys´egek szintj´en.
+Ez eltol´odott (mint kb minden) a sz´am´ıt´og´epes jelent´es´abr´azol´asban
+• Matematikai logikai reprezent´aci´ok
+• Konceptu´alis reprezent´aci´ok:
+– fogalmi gr´afok
+– fogalmi fu¨gg˝os´eg
+• Lexik´alis szemantikai reprezent´aci´ok:
+– lexik´alis szemantikus h´al´ok, ontol´ogi´ak
+• M´elytanul´as, neur´alis h´al´ok (suprise...)
+Itt is van egy sorrendis´eg, hogy hogyan kellenek ezek a logik´ak, hogy fejl˝odtek:
+• Elvi probl´em´ak
+• Els˝orendu˝ logika
+• Magasabb rendu˝ logik´ak
+• Mod´alis logik´ak
+• Intenzion´alis logik´ak
+• Montague elm´elete (1970)
+Montague-nyelvtanok
+Az alapfelt´etelez´es: a mondatok jelenz´ese igazs´agfelt´etelekkel megadhat´o. Vegyu¨k a k¨ovetkez˝o
+mondatot: P´eter olvas egy k¨onyvet. ⇔ P´eter olvas egy k¨onyvet. E´rthet˝o nem de? Teh´at
+mindig´ırhatunk egy egyszeru˝ szab´alyt, amivel lefedhet˝o a mondat igazs´agtartalma,´ıgy az eg´esz
+nyelvtan. Ezeket megadhatjuk logikai formul´akkal (formaliz´al´as meghitt folyamata):
+P´eter olvas egy k¨onyvet → ∃x(k¨onyv(x)∧olvas(p∗,x)) (3)
+Ez ut´an j¨ohet az indirekt interpret´aci´o: TNY → logika → modellek.
+M´eg az´ert ide le´ırom a kompozicionalit´as elv´et: egy komplex kifejez´es jelent´ese a r´eszei
+jelent´eseinek ´es az ˝oket le´ır´o szintaktikai szerkeztnek a fu¨ggv´enye.
+Na, ez a gyakorlatban el´egg´e hasonl´ıt arra, amit a Borival csin´altunk gyakon. Itt katego-
+riz´aljukaszavakat(Mondat: S,intranzit´ıvig´ek: V,f˝onevek: N).Megtudunkadniilyenlevezetett
+kateg´ori´akat ebb˝ol:
+19
+
+=== PAGE 20 ===
+• F˝on´evi csoportok: S/V
+• Tranzit´ıv ig´ek: V/(S/V)
+• Determin´ansok: (S/V)/N
+A logikai levezet´esr˝ol t¨obb sz´ot nem ejten´ek, tanultuk DM II-b˝ol ezeket, aki esetlen nem
+eml´ekszik, az tal´al kis inf´ot a 6. dia 23. slide-j´an.
+Szemantikus h´al´ok
+• C´ımk´ezett gr´af
+• Csu´csai: objektumok (fogalmak)
+• E´lek: a csu´csok k¨oz¨otti ku¨l¨onf´ele lehets´eges rel´aci´ok
+• Az attribu´tumokat egyes rel´aci´ok k¨ozvet´ıthetik a rel´aci´ok ment´en
+Lexik´alis szemantikus h´al´ok
+Na ez a fontos. A WordNet is pl ezt haszn´alja. Pszicholingvisztikai ir´anyzatokat k¨ovet, hierar-
+chi´ak vannak benne.
+Az ontolo´gi´at is ide kell´ırni, ami a ”felfog´as le´ır´asa”. Ez egy j´o kis filoz´ofiai tudom´any´ag, a
+l´etez´est, l´etez˝o dolgokat vizsg´alja, megadja a vizsg´alt univerzumban l´etez˝o fogalmak kateg´ori´ait,
+metafizikai kereteket. A c´elja a vil´agnak a form´alis le´ır´asa. Az ontol´ogia´ertelmez´es´evel´erv´enyes
+logikai k¨ovetkeztet´esek v´egezhet˝ok.
+Fogalmi gr´afok
+Volt egy ember Sowa volt a neve, ´es voltak neki fogalmi gr´afjai. Ehhez tartozik gr´af-alapu´
+tud´asreprezent´aci´o meg k¨ovetkez´esi modell, illetve grafikus interf´esz az els˝orendu˝ logik´ahoz. Itt
+igaz´ab´ol rengeteg p´elda van, ezeket ide nem´ırom le, mert mindenki csak kinevetne, de le´ırom,
+hogy a hatodik el˝oad´as 28 di´aj´at´ol kezd˝od˝oen tal´altok p´arat. Amu´gy vettu¨k gyakon, m´eg h´aziba
+is benne volt. Amikor valahogy az eg´esz mondatb´ol levezetu¨nk egy csini gr´afot u´gy, hogy a
+fogalmakat tekintju¨k ´es ezekb˝ol k¨ovetkeztetu¨nk.
+WordNet
+• A legelso˝ WordNet (1990): a Princeton WordNet
+• Eredetileg az emberi agy nyelvi tud´asreprezent´aci´oj´anak modellje
+• A legnagyobb ingyenes egys´eges g´epileg feldolgozhat´o lexikai adatb´azis
+• Ma: WordNet 3.0
+• A WordNet legf˝obb jellemz˝oi:
+– szemantikus h´al´o
+– a csu´csok c´ımk´ei: a ”jelent´esek” mint szinon´ımahalmazok (synset)
+20
+
+=== PAGE 21 ===
+– az ´elek c´ımk´ei: a leggyakoribb lexikai rel´aci´ok
+– az ´elc´ımk´ek sz´ofajfu¨gg˝oek: f˝on´eviek, igeiek, mell´ekn´eviek
+A WordNet-ben is van csom´o rel´aci´o. Ezeket megint nem ´ırom le, mert senki nem jegyzi
+meg, viszont van f˝on´ev, ige, mell´ekn´ev ´es hat´aroz´osz´o is.
+21
+
+=== PAGE 22 ===
+8. Sz´am´ıto´g´epes lexikogr´afia: szo´t´ar´ep´ıt´es, sz´ot´ar´atalak´ıt´as, szo´-
+t´arhaszn´alat t´amogat´asa nyelvtechnol´ogi´aval
+El˝osz¨or is mi´ert kell ez? Mi a szerepe a nyelvtechnol´ogi´anak a lexikogr´afi´aban.
+• A sz´ot´arak c´elja ma
+– emberek sz´am´ara k´eszu¨lnek
+– g´epek sz´am´ara k´eszu¨lnek
+• Mib˝ol hozunk l´etre ma sz´ot´arakat
+– semmib˝ol, technikai t´amogat´assal
+– sz¨ovegekb˝ol, g´epi t´amogat´assal
+– megl´ev˝o sz´ot´ar(ak)b´ol, g´epi t´amogat´assal
+• A g´eppel t´amagotatt sz´ot´ark´esz´ıt´es t´ıpusai
+– embernek´ırt forr´asokb´ol, ember sz´am´ara
+– embernek´ırt forr´asokb´ol, g´ep sz´am´ara
+– g´epi forr´asokb´ol, ember sz´am´ara
+– g´epi forr´asokb´ol, a g´ep sz´am´ara
+Itt j¨on az a mese, hogy csak akkor tudsz j´ol sz´ot´arazni, ha valamennyire ismered a nyelvet,
+hogy az ember meg´ert mindent, de lusta ez´ert a legjobbat akarja ´es ilyesmik.
+Sz´ot´arak csoportos´ıt´asa
+A nyelvek sz´ama szerint. Vannak egynyelvu˝ek ´es k´etnyelvu˝ek, ja meg t¨obbnyelvu˝ek. Az egy-
+nyelvu˝ek k¨oz¨ott is k´et ku¨l¨onb¨oz˝o van: c´ımszavak ´es sz´ocikkek.
+A sz´ot´arak ´altal´anos szerkezete
+• O¨n´all´o ´es utal´o sz´ocikkek
+• Sz´ocikkfej (baloldal): c´ımsz´o, homonim´ak, alak- ´es ´ır´asv´altozatok, kiejt´es, elv´alaszt´as,
+sz´ofaj, f˝obb toldal´ekos alakok, nyelvtani megjegyz´es, st´ılusmin˝os´ıt´es
+• Jelent´escsoportok (jobboldal) alapjelent´es, jelet´es´arnyalatok, k¨ozmond´asok, m´as szavakkal
+alkotott o¨sszet´etelek, sz´armaz´eksz´ok
+A sz´ot´arelemek nyelvtechnol´ogiai felhaszn´al´asa
+• C´ımsz´o: kiindul´as helyes´ır´asi programokhoz
+• Vari´ansok ´es toldal´ekolt alakok: a morfol´ogiai rendszerhez
+• Sz´otagol´as: elv´alaszt´o programokhoz
+• Kiejt´es: besz´edkelt˝o rendszerekhez
+22
+
+=== PAGE 23 ===
+• Sz´ofaj: egy´ertelmu˝s´ıt˝okh¨oz
+• T´emak´od: sz´ovegt´ıpus-azonos´ıt´ashoz
+• Defin´ıci´ok: jelent´es-egy´ertelmu˝s´ıt´eshez
+• P´eld´ak: a c´ımsz´o k¨oru¨li t¨obbszavas kifejez´esek azonos´ıt´as´ahoz
+• ”L´asd m´eg” szavak: szinonim´ak, antonim´ak
+A t¨obbi dolog
+H´atezekel´egg´erizsaszagu´aknekem. M´armintnyomtatottvs. elektronikussz´ot´arak. Manaps´ag
+full sok platformra kij¨onnek, mobimouse, tel´ora. Vannak terminol´ogiakezel˝ok.
+A korszeru˝ internetes sz´ot´arszolg´altat´as krit´eriumai
+• Folyamatosan b˝ov´ıthet˝o sz´ot´ark´ın´alat
+• Saj´atszo´t´ar-k´esz´ıt´esi lehet˝os´egek
+• Tetsz˝oleges webes tartalom integr´alt megjelen´ıt´ese
+• A kifejez´esek intelligens kezel´ese
+• K¨oz¨oss´egi jelenl´et
+• Egyma´s seg´ıt´es´enek ´es a (jogos) kritik´anak a f´oruma
+• A rendszer szemantikus ismereteinek er˝os´ıt´ese a felhaszn´al´o keres´esi szok´asainak elemz´e-
+s´evel
+• K¨onnyu˝ keres´es-ind´ıt´asi lehet˝os´eg
+• Saj´at menthet˝o be´all´ıt´asok a k¨ornyezet szem´elyre szab´as´ahoz
+Nyelvfu¨gg˝o sz´ot´arprobl´em´ak
+• A forr´as- ´es c´elnyelv karakterk´eszleteinek ismerete
+• A forr´as- ´es c´elnyelv ´ab´ec´erendjeinek ismerete
+• A fonetikai inform´aci´o kezel´ese
+• Egys´eges jel¨ol´es: nyelvi keres´esn´el a sz´ot´ar grammatikai inform´aci´oval val´o kompatibilit´as
+23
+
+=== PAGE 24 ===
+Keres´esi technik´ak
+• Betu˝ szerint
+• Csonkolt keres´es
+• Hasonl´os´agi keres´es (fuzzy, soundex, spell)
+• Nyelvi alapu´ keres´es a bemeneti oldalon
+• Nyelvi alapu´ keres´es a tal´alati oldalon
+• A kifejez´esek kezel´es´enek probl´em´ai: alc´ımsz´ok, kulcssz´o-v´alaszt´as, indexek, egyazon kife-
+jez´es t¨obb c´ımsz´o alatt
+Sz´ot´armegjelen´ıt´es
+Itt van az LMF ami a Lexical Markup Freamwork.
+1. L´etez˝o sz´ot´arak struktu´r´ainak konzisztens felt´erk´epez´ese
+2. Az ¨osszes feldolgozott sz´ot´arat lefed˝o le´ır´as l´etrehoz´asa
+3. 61 szak´ert˝o bevon´as´aval az ¨osszes sz´oba j¨ov˝o sz´ot´arszerkezet megvizsg´al´asa
+Az ”intelligens” sz´ot´arak k´esz´ıt´es´enek probl´em´ai
+• A legf˝obb baj: a sz´ot´arforr´asok XML-v´altozatainak ”amat˝or” vagy legal´abbis nyomtat´as-
+centrikus megold´asai
+• A m´asodik ok: a sz´ot´ar az embereknek, nem a g´epeknek k´eszu¨l
+• Egy sor technikai probl´ema, ami a sz´ot´arak ”pap´ırsz´ot´ar” mivolt´ab´ol ered, ´am a g´epi
+v´altozatban ´at kell ezeket alak´ıtani
+Emell´em´egvanj´osokpr´obl´emaezeketfelsorolom,akit´erdekelb˝ovebbenn´ezzemeg(hatodik
+diasor 48. slide-t´ol).
+• Perjel probl´ema
+• T¨obbsz¨or¨os el˝ofordul´asok probl´em´aja
+• Az ellentmond´o el˝ofordul´asok probl´em´aja
+• A tilde-probl´ema
+• A morfol´ogia-probl´ema
+• A nagybetu˝-probl´ema
+• A vonzat-probl´ema
+• A p´elda-probl´ema
+• A ”l´asd”-probl´ema
+• A pontos tal´alatok probl´em´aja
+24
+
+=== PAGE 25 ===
+9. P´arhuzamos korpuszok, szo¨vegszinkroniz´al´as, ford´ıt´omemo´-
+ri´ak
+A p´arhuzamos korpuszok
+• Egy k¨onyvben ´atlagosan n´eh´any sz´azezer sz´o van
+• Egy mu˝velt ember ´atlagosan nap t´ızezer sz´ot olvas
+• Ez ¨osszesen ´evi 3.5 milli´o ´es egy ´eletben hozz´avet˝olegesen n´eh´any sz´azmilli´o
+• Sok leford´ıtott sz¨oveg ak´ar t¨obbsz´azmilli´o szava elektronikus u´ton el´erhet˝o
+• A g´ep teh´at t¨obb sz´oval tud tal´alkozni, mint egy ember eg´esz ´elet´eben...
+• Egy lehets´eges konklu´zi´o: a ford´ıt´asi probl´ema a mint´ak alapj´an statisztikai alapon meg-
+oldhat´o, de legal´abbis a ford´ıt´o munk´aja m´asok´eval j´ol t´amogathat´o, ha megtal´aljuk az
+´epp ford´ıtand´ohoz leghasonl´obb mondatot
+• Van magyar-angol p´arhuzamos korpusz is
+Sz¨ovegszinkroniz´acio´
+• ”Alignment”
+• K´etnyelvu˝ sz¨ovegp´arbanazegym´asford´ıt´as´anaktekinthet˝osz¨ovegegys´egekmeghat´aroz´asa
+• Nyelvi egys´egek szerinti sz¨ovegszinkroniz´aci´o-t´ıpusok:
+– Bekezd´esszintu˝
+– Mondatszintu˝
+– Sz´oszintu˝
+• Pontoss´ag/fed´es szerinti sz¨ovegszinkroniz´aci´o-t´ıpusok
+– teljes
+– r´eszleges
+Felhaszn´al´asa
+• P´arhuzamos korpuszok ´ep´ıt´ese ford´ıt´astudom´anyi felhaszn´al´asra
+– k´et- vagy t¨obbnyelvu˝ korpuszok szinkroniz´al´asa ford´ıt´asi megfelel´esek vizsg´alatra
+• Ford´ıt´asok terminol´ogiai konzisztenci´aj´anak vizsg´alata
+– a forr´assz¨ovegben megtal´alt szakkifejez´eseket a ford´ıt´asban megkeressu¨k
+• K´etnyelvu˝ teminol´ogia gyu˝jt´ese
+• Ford´ıt´omem´oria ´ep´ıt´ese
+– a p´arok k´esz ford´ıt´ask´ent felhaszn´alhat´ok a k´es˝obbiekben
+25
+
+=== PAGE 26 ===
+• Statisztikai g´ep ford´ıt´as
+• Eszk¨oz¨ok: TRADOS, MemoQ
+M´odszerek
+Tudjuk ˝oket csoportos´ıtani: hossz-alapu´, lexikai alapu´, horgonykeres˝o m´odszerek, hibrid m´od-
+szerek.
+Hossz-alapu´ szinkroniz´aci´o
+• Teljes szinkroniz´aci´o
+• Val´osz´ınu˝s´egi modell
+• Dinamikus programoz´as
+• Pozit´ıvumok: glob´alisanoptim´alismegold´astkeres,teljesszinkroniz´aci´orak´epes,robosztus
+• Negat´ıvumok: nem el´eg a sz¨ovegys´egek hosszait vizsg´alni, a beszu´r´asokat ´es az elhagy´aso-
+kat rosszul kezeli, k¨olts´eges O(n2).
+Horgony-alapu´ szinkroniz´aci´o
+• A horgonyok a sz¨ovegegys´egek egym´asnak nagy pontos´aggal megfeleltethet˝o pontjai
+• Kezdetben k´et horgony a sz¨ovegp´ar v´egpontjait k¨oti ¨ossze
+• Ezek ut´an olyan szavakat keres, amelyek gyakran fordulnak el˝o egyu¨tt a sz¨ovegp´ar k´et
+oldal´an nagyj´ab´ol azonos poz´ıci´oban (heurisztika), majd ezekb˝ol horgonyokat hat´aroznak
+meg (de pl. az egym´ast keresztez˝o horgonyokat elvetik)
+• A horgonyok ´altal kisebb szinkroniz´aland´o szegmensekre bonthat´o a sz¨oveg, ezeken belu¨l
+u´jra horgonyokat keresnek
+• Egyes horgonyokkal csak r´eszleges szinkroniz´aci´o val´os´ıthat´o meg
+• Az eredm´enyek nem el´eg j´ok
+Ford´ıto´mem´ori´ak
+Noh´atezegyolyanvalami, amiszegmensp´arokatt´arol. TMforr´asnyelviszegmensek´esc´elnyelvi
+ford´ıt´asok p´arjait t´arolja, n´emi adal´ekinform´aci´oval (r¨ogz´ıt´es d´atuma, ford´ıt´o neve, ford´ıt´as
+st´atusza stb.). Ha k´es˝obb egy hasonl´o forr´asnyelvi szegmenst kell ford´ıtani, a TM program
+megtal´alja ´es felk´ın´alja a szegmens kor´abbi ford´ıt´as´at.
+Alapfunkci´ok
+• Sz¨ovegelemz´es
+– k¨ozpontoza´s: egyfajta el˝ofeldolgoz´as
+– markup: lehets´eges seg´ıts´eg
+– ”k´odolt” sz¨ovegr´eszek azonos´ıt´asa
+26
+
+=== PAGE 27 ===
+• Szegment´al´as
+– a ford´ıt´asi egys´egek meg´allap´ıt´asa
+– egynyelvu˝ felsz´ıni elemz´essel
+– a szinkroniz´al´as alapvet˝o felt´etele
+• Sz¨ovegszinkroniz´al´as
+– forr´asnyelvi-c´elnyelvi p´arok l´etrehoz´asa
+• Terminol´ogiakivonatol´as
+– indul´o szo´t´arral, sz¨ovegstatisztik´ak seg´ıts´eg´evel
+– a ford´ıt´asi munk´aval kapcsolatos becsl´esek alapj´aul is szolg´al
+• Egy´eb funkci´ok
+– Visszakeres´es
+– M´odos´ıt´as, jav´ıt´as
+– Automatikus ford´ıt´as
+El˝ony¨ok ´es h´atr´anyok
+El˝ony¨ok:
+• Konzisztens dokumentumok el˝o´all´ıt´asa: nagy projektekn´el elengedhetetlen
+• Gyors´ıtja a folyamatot: egyszer kell ford´ıtani
+• P´enzt takar´ıt meg: a ford´ıt´oiroda tudja, mit tartalmaz az indul´o mem´oria, illetve meg
+tudja sz´amolni, hogy mit kellett ”igaz´an” ford´ıtani
+• Egyetlen projekten belu¨l is gazdas´agos
+H´atr´anyok:
+• Azon alapul, hogy a mondatok ”u´jrafelhaszn´alhat´ok”
+• A ma szoks´as ford´ıt´oi munkafolyamat ´atszervez´es´evel j´ar
+• Vannak dokumentumform´atumok, melyeket m´eg mindig nem t´amogatnak k¨ozvetlenu¨l
+• Id˝o, m´ıg valaki megtanulja ´es r´aszokik
+• Szabadu´sz´o ford´ıt´oknak dr´aga ´es sokszor bonyolult
+• Minden bemenetnek elektronikusnak kell lennie
+• A kor´abbi ford´ıt´asok is ´atalak´ıtand´ok a ford´ıt´omem´ori´anak megfelel˝o alaku´ra
+• A hib´ak is jobban szaporodhatnak a seg´ıts´eg´evel
+27
+
+=== PAGE 28 ===
+Keres´es a ford´ıt´omem´ori´akban
+A TMZ-hez numerikus ´ert´ekeket gener´aluk (fuzzy kulcs) ´es egy speci´alis indexf´ajlban t´aroljuk
+egy´ertelmu˝ azonos´ıt´oval. Keres´eskor ezt fejtik vissza (fuzzy index). A fuzzy kulcs ´altal´aban
+valamilyen n-gram. Normaliz´al´as: hosszu´ mondatok kis helyen val´o t´arol´as´at meg kell oldani.
+A TMX k´et implement´aci´os szintje:
+• 1. szint: az adatok a < seg > elemeken belu¨l sima sz¨ovegek Content Markup n´elku¨l, ami
+szoftveru¨zenetek ford´ıt´asakor el´eg, form´azott dokumentumokn´al nem
+• 2. szint (Content Markup): form´azott dokumentumokra (ld. SRX)
+Szabv´anyok
+1. TMX
+2. TBX
+3. SRX
+4. GMX
+5. OLIF
+6. XLIFF
+7. TransWS
+8. xml:tm
+Ford´ıt´omem´ori´ak a gyakorlatban
+3. ´abra. Az intelligens ford´ıt´omem´oria fel´e
+28
+
+=== PAGE 29 ===
+10. Szab´alyalapu´ ´es statisztikai g´epi ford´ıt´asi m´odszerek
+Szab´alyalapu´ ford´ıt´asi strat´egi´ak
+4. ´abra. Szab´alyalapu´ ford´ıt´asi strat´egi´ak
+No h´at ennek t¨obb form´aja van, ezeket fogjuk sz´epen sorban megvizsg´alni.
+K¨ozvetlen ford´ıt´as
+SL text → Morphological Analysis → Bilingual Dictionary Lookup → Local Reordering → TL
+Text
+Ezeknek a l´ep´esei a k¨ovetkez˝ok:
+1. morphological analysis
+2. lexical transfer of content words
+3. various work relating to prepositions
+4. SVO rearrangements
+5. miscellany
+6. morphological generation
+A k¨ozvetlen ford´ıt´as jellemz˝oi
+• Soha nincs k´esz semmilyen ´allapot sem, csak a v´eg´en
+• Rengeteg l´ep´esb˝ol ´all
+• Minden l´ep´es egy adott nyelvi jelens´eget dolgoz fel
+29
+
+=== PAGE 30 ===
+• A legfontosabb eszk¨oz a k´etnyelvu˝ sz´ot´ar
+• Komoly probl´ema a helyes kimeneti sz´orend ´es a megfelel˝o toldal´ekol´as el˝o´all´ıt´as
+• Ezt a feladatot ´atrendez´esnek h´ıvj´ak
+P´elda: Systran ´es Meteo.
+K¨ozvet´ıt˝onyelves ford´ıt´as
+H´at itt mint a nev´eben is benne van, haszn´alunk egy interlingua k¨ozpontot ´es akkor azzal
+dolgozunk.
+Jellemz˝oi
+• Nem l´etezik mindent kiel´eg´ıt˝o k¨ozvet´ıt˝onyelv
+• K´ıs´erletek: a logikai formalizmusokt´ol a formaliz´alt eszperant´oig
+• A soknyelvu˝ rendszerek eset´en nagyon ”vonz´o”
+• n > 3 eset´en n·(n−1) > 2·n
+• V´egu¨l is a k´et ford´ıt´asi l´ep´es nem m´as, mint egy-egy k¨ozvetlen ford´ıt´as
+Transzfer ford´ıt´as
+5. ´abra. A transzfer ford´ıt´as menete
+A transzfer ford´ıt´as menete ´es t´ıpusai
+• Morfol´ogiai elemz´es
+• Egy´ertelmu˝s´eg (POS, WSD)
+• Lexik´alis transzfer: k´etnyelvu˝ sz´ot´arakkal
+• Szerkezeti transzfer: fr´azisok, csonkok
+• Morfol´ogiai gener´al´as
+• Szintaktikai/felsz´ıni transzfer: hasonl´o struktu´r´aju´, ku¨l¨on¨osen rokon nyelvek k¨oz¨ott
+• Szemantikus/m´ely transfer: t´avolabbi rokons´agban l´ev˝o nyelvek k¨oz¨ott
+30
+
+=== PAGE 31 ===
+Egyebek
+• P´elda-alapu´ ford´ıt´as
+• MetaMorpho: egy hibrid szab´aly/p´elda-alapu´ ford´ıt´o
+Neh´ezs´egek
+• Lexikai t¨obb´ertelmu˝s´egek kezel´ese
+• PP-kapcsol´asok kezel´ese
+• Struktu´r´alis t¨obb´ertelmu˝s´egek kezel´ese
+• T¨obbszavas kifejez´esek kezel´ese
+• Idi´om´ak kezel´ese
+Statisztikai ford´ıt´as
+6. ´abra. A statisztikai ford´ıt´as alapjai
+A h´arom f˝o modul
+• Nyelvmodell: adott egy e angol string, hozz´a kell rendelni egy P(e)-t
+– j´o angol string: magas P(e)
+– rossz angol string: alacsony P(e)
+• Ford´ıt´asi modell: adott egy < f,e > stringp´ar, a hozz´arendelt P(f|e) val´osz´ınu˝s´eggel
+– ha < f,e > egym´as ford´ıt´asa: magas P(f|e)
+31
+
+=== PAGE 32 ===
+– ha < f,e > nem egym´as ford´ıt´asa: alacsony P(f|e)
+• Dek´odol´o algoritmus: nyelvmodell + ford´ıt´asi modell + bemen˝o f mondat, amikhez meg
+kell tal´alni az e ford´ıt´ast, a P(e)·P(f|e) maximaliz´al´as´aval
+A statisztikai GF l´enyege
+• A na´ıv Bayes-t´etel:
+e˜= argmax p(e|f) = argmax p(f|e)p(e) (4)
+e∈e∗ e∈e∗
+• Az ¨otlet a besz´edfelismer´esb˝ol j¨on
+• A legt¨obb ”min˝os´egi” probl´ema a korpusz m´eret´eb˝ol ad´odik
+• Csak egy ford´ıt´asi modell (felt´eteles val´osz´ınu˝s´egi r´esz) ´es egy nyelvmodell, (teljes val´osz´ı-
+nu˝s´egi r´esz) kell, meg a dek´oder, ami sz´amol
+A ford´ıt´asi modell
+• A ford´ıt´asi modell feladata megtal´alni a legjobban illeszked˝o bemenetet az e (angol) kime-
+nethez
+• P(f|e) tanul´asa´t p´arhuzamos korpuszb´ol lehet csak megoldani
+• Tipikus helyzet: sokszor nincs el´eg adat a P(f|e) k¨ozvetlen becsl´esre
+Hogyan hozunk l´etre ford´ıt´asi modellt
+• EM-algoritmus (expectation maximization)
+• Inicializ´al´as: minden kapcsolat azonos su´lyu´
+• Val´osz´ınu˝s´egi hozz´arendel´ese a hi´anyz´o adatokhoz
+• Param´eterbecsl´es a teljes adatokb´ol
+• Iter´al´as
+Megjelennek a fr´azis-alapu´ ford´ıt´asi modellek
+• Sz´oszinten neh´ez a t¨orl´es ´es a beszu´r´as, ez´ert meg´eri a bemenetet fr´azisokra szegment´alni
+• Itt a fr´azis nem nyelvtani fogalom, hanem csak a gyakran el˝ofordul´o ¨osszefu¨gg˝o sz´osoro-
+zatok
+• El˝osz¨or minden fr´azist leford´ıtunk a c´elnyelvre
+• Ezut´an fr´azisokat ´atrendezzu¨k
+• ´Igy nem kompoz´ıcion´alis fr´azisok is ford´ıthat´ok
+• Min´el t¨obb az adat, ann´al t¨obb hosszu´ fr´azis tanulhat´o meg
+32
+
+=== PAGE 33 ===
+A nyelvmodell kialak´ıt´asa
+• Ez azoknak a mondatoknak a halmaz´ab´ol indul ki, amit az adott nyelven mondani szoktak
+• Milyen a ”j´o” nyelvmodell? Milyen a ”j´o” nyelv?
+• Trigram-val´osz´ınu˝s´egekkel szok´as k¨ozel´ıteni
+• Pl. p(witch—the green) > p(green—the witch)
+• A nyelvmodell kiindulhat a web n-gramjaib´ol is!
+Ha nem el´eg nagy a korpusz
+• Sokszor szu¨ks´eges u´n. sim´ıt´as a nyelvmodellhez
+• Ha a z sose k¨ovette xy-t a sz¨ovegeinkben, akkor m´eg mindig megk´erdezhetju¨k, hogy z
+legal´abb y-t k¨ovette-e?
+• Ha igen, akkor xyz tal´an nem olyan rossz
+• Ha nem k¨ovette, m´eg mindig megk´erdezhetju¨k, hogy z elfogadhat´o h´etk¨oznapi sz´o-e? Ha
+nem, akkor xyz t´enyleg nagyon kis val´osz´ınu˝s´egu˝ kell legyen!
+• a = el˝ofordul´as(”xyz”) / el˝ofordul´as(”xy”) sim´ıtva:
+b(z|xy) =
+0.95·el˝ofordul´as(”xyz”)/el˝ofordul´as(”xy”)+
+0.04·el˝ofordul´as(”yz”)/el˝ofordul´as(”z”)+ (5)
+0.008·el˝ofordul´as(”z”)/¨osszes-l´atott-sz´o+
+0.002
+A statisztikai GF probl´em´ai ´es megold´asuk(?)
+• Tulajdonnevek: m´asol´as, transzliter´al´as, sz´ot´arb´ol u´jraalkot´as
+• Sz´ammal alkotott kifejez´esek, d´atumok, mennyis´egek: saj´at ford´ıt´asi t´abl´ak kellenek
+• F˝on´evi csoportok ´altal´aban: ezeket ´erdemes nyelvileg ”el˝o-elemezni”
+• A fejl˝od´es a hibrid rendszerek fel´e mutat
+• Alternat´ıv elk´epzel´esek: l´etez˝o rendszerek/szolg´altat´asok kombin´aci´oja
+• webford´ıt´as.hu → iTraslate4.eu
+• Soknyelvu˝ ford´ıt´as: u´jra ”k¨ozvet´ıt˝onyelves” megold´asok?
+• Elindult a vil´ag a neur´alis h´al´os ford´ıt´as fel´e
+33
+
