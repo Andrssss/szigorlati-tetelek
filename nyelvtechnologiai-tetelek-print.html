@@ -38,6 +38,34 @@
         <h2>Karakterek és betűreprezentáció. Alapvető nyelvstatisztikai törvények. n-gramok.</h2>
     </div>
 
+    <h3>Betűk és karakterek</h3>
+
+    <h4>Fonéma</h4>
+    <ul>
+        <li>A beszélt nyelvben a fonéma a hangok elemi, elvont egysége, amely egy adott nyelvben önálló egységet alkot, mivel más fonémákkal szemben jelentés-megkülönböztető szerepe van.</li>
+        <li>Nyelvtől függően egy-egy fonéma alá több beszédhang is tartozhat, amelyek általában fonetikailag hasonlók.</li>
+        <li>Ha két beszédhang egyikének a helyére behelyettesítjük a másikat, és más szótári egységet kapunk eredményül, a két beszédhangot két különböző fonémához soroljuk:<br>
+            <em>géz, kéz, méz, néz, réz</em> → /g/, /k/, /m/, /n/, /r/</li>
+        <li>Vannak még a fonémadefiníciónak további pontosításai, de a lényeg, hogy nem beszédhangról van szó, amik a különböző nyelvekben más és más fonémákhoz is tartozhatnak.</li>
+    </ul>
+
+    <h4>Fonetikus ábécé</h4>
+    <ul>
+        <li>Az IPA a latin (angol) ábécén alapszik.</li>
+        <li>A legtöbb latin betűs nyelv ugyanúgy ejt többet is: [b], [d], [f], [h], [k], [l], [m], [n], [p], [t], [v] stb.</li>
+        <li>Vannak közöttük olyanok, melyek kiejtése a legtöbb latin betűvel író nyelvben eltér: [j], [r], [y] stb.</li>
+        <li>Vannak olyan jelek, melyeket a latin betűk átalakításával hoztak létre, vagy írott formájukat használják: [ɛ], [ɜ] stb.</li>
+        <li>Bizonyos elemeket a görög ábécéből vettek: [β], [ɣ], [ɛ], [θ], [χ], [ʋ] stb.</li>
+        <li>A magyar nyelv 14 magánhangzó- és 24 mássalhangzófonémája az IPA rendszerben is megjeleníthető.</li>
+    </ul>
+
+    <h4>Karakter vs. betű</h4>
+    <div class="definicio">
+        <strong>Betű:</strong> egy írásrendszer elemi jele, amely egy fonémát (hangot) jelöl az adott nyelv ortográfiájában. Nyelvi-lingvisztikai fogalom; az ábécé egységei.<br><br>
+        <strong>Karakter:</strong> számítógépes fogalom — a tárolt szöveg legkisebb, tovább nem bontható egysége. A betű a karakter speciális esete: minden betű karakter, de nem minden karakter betű (pl. számjegyek, írásjelek, vezérlőkarakterek szintén karakterek).<br><br>
+        <strong>Összefoglalva:</strong> a <em>betű</em> lingvisztikai egység (fonémát jelöl), a <em>karakter</em> informatikai egység (kódponthoz rendelt jel). Az írásrendszerek betűit a számítógép karakterként tárolja és kezeli.
+    </div>
+
     <h3>Karakterek és betűreprezentáció</h3>
 
     <h4>Karakter, karakterkód, karakterkészlet</h4>
@@ -49,10 +77,11 @@
         <strong>Betűkészlet:</strong> olyan táblázat, amely adott karakterkészlet(ek) megjeleníthető karaktereihez karakterképeket rendel, amelyek a számítógép képernyőjén vagy nyomtatásban jelennek meg. Az alkalmazott betűkészlet a szöveg számítógépbeli értelmezésére — például a szöveget nyelvi szempontból feldolgozó programokra — nincs befolyással, csak annak megjelenítésekor használatos.
     </div>
 
+<img src="img/nyelvtech/kodlap.png" alt="Verem automaták" style="max-width:500px;width:40%;">
+
     <h4>Kódlapok és szabványok</h4>
     <ul>
-        <li>Az <strong>ISO 8859-2 (Latin-2)</strong> kódtábla a következő nyelveket fedi le: magyar, német, horvát, lengyel, román, szlovák, szlovén, szerb, cseh, albán.</li>
-        <li>A kódlapok problémája: ugyanaz a bájtérték különböző kódlapokon különböző karaktert jelent → szövegek kódolásának ismerete nélkül nem értelmezhetők.</li>
+        <li>Az <strong>ISO 8859-2 (Latin-2)</strong> kódtábla a következő nyelveket fedi le: Keleteurópai nyelvek, mint pl magyar.</li>
     </ul>
 
     <h4>Diakritikumok multigráfos kódolásai</h4>
@@ -83,52 +112,61 @@
     </ul>
     <p>1980-as évek: igény egy egységes, minden karaktert leíró kódtáblára → ISO 10646 (ISO szabvány) és Unicode (amerikai cégek konzorciuma). 1991: egyesítik a két projekt eredményeit; az ISO 10646 csak karakterkészlet, a Unicode-ban viszont léteznek további kiegészítések, pl. egyeztetési szabályok. <strong>Unicode 16.0 (2024):</strong> összesen 154 998 karakter, 159-féle írás. <span class="note">(az „Old Hungarian" = székelyírás is benne van: U+10C80–U+10CFF)</span></p>
 
-    <h4>Ábécék és rendezés</h4>
+    
+
+    <h3>Nyelvstatisztikai törvények</h3>
+
+<h4>Ábécék és rendezés</h4>
     <ul>
         <li>A kiejtés szerinti írás problémái; az ábécébe rendezés elvei.</li>
         <li>Átjárás ábécék között: transzliterálási problémák.</li>
         <li>A <strong>magyar akadémiai rendezés</strong> főbb szabályai:
             <ol>
-                <li>Az egyjegyű betűt teljesen elkülönítjük az azonos írásjelggyel kezdődő, de külön mássalhangzót jelölő kétjegyű (ill. háromjegyű) betűtől: az egyjegyű betű van előbb (pl.: <em>cudar, cukor, cuppant, csalit, csata</em>).</li>
-                <li>A többjegyű betűk kettőzött változatait sohasem az egyszerűsített alakok szerint soroljuk be a betűrendbe, hanem a megkettőzött betűt mindig két külön betűre bontjuk (<em>ccs = cs + cs; ggy = gy + gy</em>).</li>
-                <li>A magánhangzók rövid és hosszú változatát jelölő betűk (a – á, e – é, i – í, o – ó, ö – ő, u – ú, ü – ű) a kialakult szokás szerint mind a szavak elején, mind pedig a szavak belsejében azonos értékűnek számítanak a betűrendbe sorolás szempontjából. A magánhangzó hosszú változatát tartalmazó szó tehát meg is előzheti a rövid változatút.</li>
-                <li>A rövid magánhangzós szó kerül viszont előbbre olyankor, ha két szó betűsora csak az azonos magánhangzók hosszúsága tekintetében különbözik.</li>
-            </ol>
+                <li>A különböző betűvel kezdődő szavakat az első betűk ábécébeli helye szerint állítjuk rendbe, illetőleg keressük meg. (Pl.: <em>acél, cukor, csók...</em>)
+                    <br><span style="color:#1a5fa8;">(Az első eltérő betű ábécébeli sorrendje dönti el a szavak sorrendjét.)</span></li>
+                <li>Az egyjegyű betűt teljesen elkülönítjük az azonos írásjelggyel kezdődő, de külön mássalhangzót jelölő kétjegyű (ill. háromjegyű) betűtől: az egyjegyű betű van előbb (pl.: <em>cudar, cukor, cuppant, csalit, csata</em>).
+                    <br><span style="color:#1a5fa8;">(Az egyjegyű betű (pl. c) mindig megelőzi az ugyanolyan jellel kezdődő kétjegyű betűt (pl. cs).)</span></li>
+                <li>A többjegyű betűk kettőzött változatait sohasem az egyszerűsített alakok szerint soroljuk be a betűrendbe, hanem a megkettőzött betűt mindig két külön betűre bontjuk (<em>ccs = cs + cs; ggy = gy + gy</em>).
+                    <br><span style="color:#1a5fa8;">(A kettőzött többjegyű betűt (pl. ccs) két külön egységre bontva kezeljük a rendezésnél.)</span></li>
+                <li>A magánhangzók rövid és hosszú változatát jelölő betűk (a – á, e – é, i – í, o – ó, ö – ő, u – ú, ü – ű) a kialakult szokás szerint mind a szavak elején, mind pedig a szavak belsejében azonos értékűnek számítanak a betűrendbe sorolás szempontjából. A magánhangzó hosszú változatát tartalmazó szó tehát meg is előzheti a rövid változatút.
+                    <br><span style="color:#1a5fa8;">(A rövid és hosszú magánhangzók (pl. a–á) általában egyenértékűek a betűrendbe soroláskor.)</span></li>
+                <li>A rövid magánhangzós szó kerül viszont előbbre olyankor, ha két szó betűsora csak az azonos magánhangzók hosszúsága tekintetében különbözik.
+                    <br><span style="color:#1a5fa8;">(Ha két szó csak a magánhangzó hosszúságában tér el, a rövid magánhangzós szó kerül előre.)</span></li>
+                <li>A különírt elemekből álló szókapcsolatokat és az egybeírt vagy kötőjellel kapcsolt összetételeket minden tekintetben olyan szabályok szerint soroljuk betűrendbe, mint az egyszerű szavakat — a szóhatárokat tehát nem vesszük figyelembe. Ugyanez a szabály érvényes a közszavak közé besorolt tulajdonnevekre is. (Pl.: <em>Kis részben, kissé, Kiss Ernő, kis sorozat, kissorozat-gyártás, kis számban, kistányér, kis virág — tiszafa, Tiszahát, Tisza Kálmán, Tisza menti, Tiszántúl, Tiszapart, tiszavirág, tiszt</em>)
+                    <br><span style="color:#1a5fa8;">(A szóhatárokat, kötőjeleket és szóközöket figyelmen kívül hagyjuk; a szavakat egybefolyó betűsorként rendezzük.)</span></li>
+                <li>A betűrendbe soroláskor a szokásostól némiképp eltérően kezeljük a régies írású magyar családnevekben, valamint az idegen szavakban és tulajdonnevekben előforduló régi magyar, illetőleg idegen betűket. (Pl.: <em>Czibere, Czuczor, Cházár, Császár, Cselényi</em>)
+                    <br><span style="color:#1a5fa8;">(A régies magyar és idegen betűket speciális, eltérő szabályok szerint soroljuk be a betűrendbe.)</span></li>
+                <li>A számokat tartalmazó tételeket úgy rendezzük betűrendbe, mintha a szám ki volna írva szóval (pl.: <em>2. fejezet → „második fejezet"</em>). Ha az egész tétel számmal kezdődik, azt a betűrendben a megfelelő betűs szó helyére soroljuk. Azonos számok esetén a nagyobb szám kerül hátrább (pl.: <em>1., 2., 10., 100.</em>).
+                    <br><span style="color:#1a5fa8;">(A számokat kiírt szóalakjuk szerint rendezzük betűrendbe; pusztán számos tételek esetén növekvő számsorrend érvényes.)</span></li>
+            
+                </ol>
         </li>
     </ul>
 
-    <h3>Nyelvstatisztikai törvények</h3>
+
 
     <h4>Betűstatisztikák és információelmélet</h4>
-    <p>Hangstatisztikák, betűstatisztikák; titkosírás-megfejtések; Morse-ábécé, írógép-billentyűzet. A nyelvek tipizálhatók n-gráfjaik alapján (pl. mássalhangzó-torlódással kezdődő szavaink régen egyáltalán nem voltak, és ma is csak bizonyosak vannak).</p>
-    <div class="definicio">
-        <strong>Információ (Shannon):</strong> kisebb valószínűségű üzenetnek az információtartalma nagyobb, és független események együttes információtartalma az események információtartalmának összege.<br><br>
-        Shannon (1949): tfh. egy kommunikációs folyamatban veszünk részt, melynek csatornáján az X halmaz jeleiből összetevődő véges sorozatok, üzenetek áramlanak. Ha elég sok üzenet áll rendelkezésre, akkor mérni tudjuk azt a <em>p(x)</em> valószínűséget, hogy adott x∈X elem milyen gyakran fordul elő várhatóan egy üzenetben.<br><br>
-        <strong>Az x jel információtartalma:</strong> I(x) := p(x) · log<sub>2</sub>[p(x)<sup>−1</sup>]<br><br>
-        <strong>Az X üzenet információtartalma:</strong><br>
-        Ha X = (x<sub>1</sub>, x<sub>2</sub>, …, x<sub>j</sub>) ∈ Xⁱ jelek sorozata, akkor<br>
-        H(X) = I(x<sub>1</sub>) + I(x<sub>2</sub>) + … + I(x<sub>j</sub>)<br><br>
-        Shannon (1951): <em>Prediction and Entropy of Printed English</em>.
-    </div>
+    <ul>
+        <li><strong>Hangstatisztikák, betűstatisztikák:</strong> a legkorábbi számítógépes (vagy akár kézi) feldolgozás — pl. Petőfi összes versének fonémastatisztikája kézzel készült. A cél: meghatározni, melyik hangból/betűből mennyi fordul elő.</li>
+        <li><strong>Titkosírás-megfejtés:</strong> a betűgyakoriság alapján fejthető meg a rejtjelezés. Champollion a hieroglifákat, Gárdonyi titkos írását, az Enigma-kódot is gyakorisági elemzéssel törték fel (<em>Kódjátszma</em>).</li>
+        <li><strong>Morse-ábécé:</strong> a gyakori betűkhöz (elsősorban az angol gyakoriság alapján) rövidebb jelsorozatot rendeltek, a ritkábbakhoz hosszabbat — tehát gyakorisági alapon épül fel.</li>
+        <li><strong>Írógép-billentyűzet (QWERTY):</strong> az elrendezést úgy alakították ki, hogy a legtipikusabb betűsorozatokat két kézzel, különböző ujjakkal lehessen gyorsan leütni, és az írógépkarok ne akadjanak össze. Gyakorisági szempontokon alapul; a QWERTZ csak a Z–Y cserében tér el, mert a magyarban a Z gyakoribb.</li>
+        <li><strong>N-gráfok és nyelvtipizálás:</strong> a nyelvek jellemezhetők aszerint, hogy mely betűcsoportok (n-gramok) fordulnak elő gyakran. A magyarban eredetileg nem volt mássalhangzó-torlódás szó elején (sp-, str-, sk-); a latin jövevényszavakat ezért magánhangzóval oldottuk fel: <em>skóla → iskola, strázsa → istráng, Stefán → István</em>. Ma már (pl. <em>strukturalizmus</em>) elfogadjuk ezeket.</li>
+        <li><strong>Információ (Shannon):</strong> kisebb valószínűségű üzenetnek az információtartalma nagyobb, és független események együttes információtartalma az események információtartalmának összege.</li>
+    </ul>
+
 
     <h3>n-gramok</h3>
 
-    <div class="definicio">
-        <strong>n-gram:</strong> egymás után következő n db karakter egy szövegben. Az n-gramok lehetnek szavak is, de nem feltétlenül azok. Az n-gramok használatának előnye, hogy nyelvfüggetlen és hibatűrő megoldások megvalósítására igen alkalmas.
-    </div>
     <ul>
-        <li><strong>Stochastic Language Models (N-Gram) Specification:</strong> http://www.w3.org/TR/ngram-spec/</li>
-        <li><strong>Google N-gram Viewer:</strong> http://books.google.com/ngrams</li>
-        <li><strong>Microsoft Web N-gram Services</strong> → Project Oxford → Microsoft Cognitive Services → Azure Cognitive Services</li>
+        <li><strong>Definíció:</strong> n egymás után következő karakter (vagy szó) sorozata egy szövegben. Az n értékétől függően: unigramról (n=1), bigramról (n=2), trigramról (n=3) stb. beszélünk.</li>
+        <li><strong>Nem csak betűk:</strong> az n-gramok lehetnek karaktersorozatok és szósorozatok is — bármi, ami egymás után következik a szövegben.</li>
+        <li><strong>Nyelvfüggetlenség:</strong> minden nyelv szövegéből megszámolhatók, beleértve az ideografikus írású kínai és japán nyelveket is (ahol egy karakter egy szót jelöl — a szöveg ugyanúgy darabolható n-grammokra).</li>
+        <li><strong>Hibatűrés:</strong> nagy szövegkorpuszon a karaktersorozatok gyakorisági eloszlása stabil; egy-egy elütés nem befolyásolja jelentősen az összképet.</li>
+        <li><strong>Alkalmazás:</strong> a szöveg n-gramjainak gyakorisága az egész nyelvre jellemző mintázatot ad — amióta nagy mennyiségű szöveg áll rendelkezésre, az n-gramokkal való munka alapvető NLP-eszköz.</li>
     </ul>
 
-    <p><strong>Küpfmüller (1954) szöveggenerálása</strong> (német nyelvre) 1-, 2-, 3- és 4-gramokkal:</p>
-    <ol>
-        <li><code>EME GKNEET ERS TITBL VTZEN</code></li>
-        <li><code>AUSZ KEINU WONDINGLIN DUFRN</code></li>
-        <li><code>PLANZEUNDGES PHIN INE UNDEN</code></li>
-        <li><code>ICH FOLGEMASZIG BIS STEHEN DISPONIN</code></li>
-    </ol>
+
 
     <p><strong>n-gramok a magyarban</strong> (8 MB-os tanítókorpuszból generált szöveg 1–6-gramokkal):</p>
     <ol>
@@ -145,27 +183,39 @@
     <div class="definicio">
         G. K. Zipf az 1930-as években vette észre: ha egy szövegben összeszámoljuk az egyes szavak előfordulási gyakoriságát, majd sorba rendezzük őket gyakoriságuk alapján, és ábrázoljuk a gyakoriságot rang szerint (azaz annak a függvényében, hogy az illető szó hányadik a sorban), akkor (közelítéssel) egy hatványfüggvény szerint lecsengő görbét kapunk −1-hez közeli kitevővel.<br><br>
         Tehát a lista <em>i</em>-edik elemének gyakorisága: R<sub>i</sub> ~ 1 / i<sup>α</sup> (α a korpuszra jellemző, 1 körüli konstans).<br><br>
-        <strong>Következmény:</strong> ha a leggyakoribb szavakat tartjuk csak meg, a korpusz nagy része megmarad. A jelenség az emberi nyelvek univerzális tulajdonságának bizonyult: pl. hasonló viselkedést kapunk, ha nem a szavakat, hanem az összefüggő szöveg n-gramjait vizsgáljuk.
+        <strong>Következmény:</strong> ha a leggyakoribb szavakat tartjuk csak meg, a korpusz nagy része megmarad. A jelenség az emberi nyelvek univerzális tulajdonságának bizonyult.<br><br>
+        <strong>⚠ Fontos:</strong> a Zipf-törvény nem csak szavakra érvényes — ha nem nyelvi egységeket, hanem a szövegben szereplő tetszőleges stringeket (n-gramokat) vizsgálunk, ugyanezt a hatványfüggvény szerinti eloszlást kapjuk.
     </div>
 
     <h4>Heaps-törvény</h4>
     <div class="definicio">
-        Heaps (1978): egy N szóból álló korpusz esetén a különböző szavak száma:<br>
+        Heaps (1978): egy N szóból álló korpusz esetén a különböző szavak (szókészlet) mérete:<br>
         <strong>V ≈ K · N<sup>β</sup></strong><br>
-        ahol K: a szövegtől függő konstans (10 ≤ K ≤ 100), β: a nyelvtől függő konstans (angoknál: 0,4 ≤ β ≤ 0,6; magyarnál: 0,6 ≤ β ≤ 0,7).<br><br>
-        <strong>Következmény:</strong> egy korpuszban a különböző szavak száma új dokumentumok hozzáadásával folyamatosan növekszik (pl. az elírásoknak, a tulajdonneveknek és az új szavaknak köszönhetően), de ez a növekedés szublineáris, azaz az új szavak nem lesznek gyakori szavak.
+        ahol K és β szövegtől, ill. nyelvtől függő konstansok (angoknál: β ≈ 0,4–0,6; magyarnál: β ≈ 0,6–0,7).<br><br>
+        <strong>Mit jelent ez?</strong> A korpusz elején sok új szó jelenik meg, de ahogy növeljük a szövegtestet, egyre kisebb arányban bukkan fel valóban új szó — a növekedés szublineáris. Az új szavak (elírások, tulajdonnevek, ritkán előforduló alakok) nem lesznek gyakoriak.<br><br>
+        <strong>Magyar sajátosság:</strong> a magyar agglutináló (toldalékoló) jellege miatt a β értéke magasabb, mint az angolban. Az <em>asztal</em> szóból az <em>asztalra, asztalaitokéinak, asztalomnak</em> stb. mind külön „szóként" jelenik meg a statisztikában — rengeteg új alak keletkezhet. Angolban a <em>from, the, table</em> külön tárolódnak és minden előfordulásuk a saját számlálójukat növeli; nincs ilyen robbanásszerű alakkészlet-bővülés.<br><br>
+        <strong>Következmény:</strong> a nagyon gyakori szavak már egy viszonylag kis korpuszban megjelennek és stabilizálódnak; az újonnan felbukkanó szavak egyre ritkábbak lesznek, de teljesen soha nem állnak meg.
     </div>
 
     <h4>Néhány további statisztikai nyelvtörvény (Mandelbrot)</h4>
     <ul>
         <li>Összefüggés van a szavak hosszúsága és rangja között is: a rövidebb szavak minden nyelvben sokkal nagyobb gyakorisággal fordulnak elő, mint a hosszabbak, mégpedig a rangjuk a hosszal fordítottan arányos.</li>
-        <li>Észrevétel: ha a történelmi fejlődés során egy szó gyakorisága megnő, rendszerint meg is rövidül.</li>
-        <li>Következmény: nyelveink legősibb rétegét (pl. a testrészek neveit) szinte kivétel nélkül egytag, két-három fonémából álló szavak alkotják.</li>
+        <li>Észrevétel: ha a történelmi fejlődés során egy szó gyakorisága megnő, mivel ezezk rendszerint meg rövidülnek.</li>
+        <li>Következmény: nyelveink legősibb rétegét (pl.: szem, orr, fül, száj, nyak, mell, kar) szinte kivétel nélkül egytag, két-három fonémából álló szavak alkotják.</li>
     </ul>
+
+
+    <h4>Érdekes jelenség: betűsorrend és olvashatóság</h4>
     <div class="pelda">
-        <em>„Matematikai igazság, hogy kinek kétszótagú neve van, fél annyi kortessekkel választathatik meg, mint az, kinél négy szótagot kell kiáltani."</em><br>
-        (Eötvös: A falu jegyzője)
+        Nem számít, milyen sorrendben vannak a betűk egy szóban — az egyetlen fontos dolog, hogy az első és az utolsó betű a helyén legyen. A többi betű lehet teljes összevissza-sorrendben, mégis probléma nélkül olvasható a szöveg. Ennek oka, hogy nem olvassuk el minden betűt egyenként, hanem a szót olvassuk a maga egészében.
+        <br><br>
+        <em>Pldéul: „Egy anlgaii etegyem ktuasátai szenirt nem szímát, melyin serenrodbn vnanak a bteűk egy szbóan…"</em>
     </div>
+    <ul>
+        <li><strong>Kapcsolat az n-gramokkal:</strong> az n-gramok lényege, hogy a karakterek egymás utáni rákövetkezése jellemzi a szöveget. Ez a jelenség pontosan ezt a rákövetkezési sorrendet rúgja fel — a szó belsejének n-gramjait felforgatjuk, mégis olvasható marad a szöveg.</li>
+        <li><strong>Szabály:</strong> a szóhatároknál (space előtti és utáni) az első és az utolsó betű marad a helyén; a közbülső betűk tetszőleges sorrendbe keveredhetnek.</li>
+        <li><strong>Eredmény:</strong> az olvasók nagy százaléka gond nélkül dekódolja a szöveget — az agyunk a szót mint egészet ismeri fel, nem karakterenként olvassa.</li>
+    </ul>
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 1. Téma</div>
 </div>

@@ -213,6 +213,17 @@ td {
     color: #555;
 }
 
+.osszefoglalas {
+    display: inline-block;
+    margin-top: 4px;
+    font-style: italic;
+    color: #1a5fa8;
+    background: #e8f1fb;
+    border-left: 3px solid #1a5fa8;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
 @media screen {
     .back-btn {
         position: fixed;
