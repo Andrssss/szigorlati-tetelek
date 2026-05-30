@@ -1159,57 +1159,99 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <h2>NP-teljesség, Cook–Levin-tétel, NP-teljes problémák</h2>
     </div>
 
-    <h3>Nevezetes NP-beli nyelvek, tanúkkal</h3>
+
+<h3>Az NP nyelvosztály jellemzése.</h3>
+<div class="definicio">
+        Az elöző tétel vége. 
+    </div>
+
+
+
+    <h3>Nevezetes NP-beli nyelvek, tanúkkal.</h3>
     <div class="definicio">
-        <strong>Definíció:</strong> Legyen L egy Σ feletti nyelv. L <em>polinomiálisan bizonyítható</em>, ha van olyan V algoritmus, hogy<br><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;L = {w | V elfogadja ⟨w, c⟩-t valamely Σ*-beli c-re},<br><br>
+        Másik megközelítés: NP nyelvek azok, amelyek polinomiálisan bizonyíthatók. <br><br>
+
+        <strong>Definíció:</strong> Legyen L egy Σ feletti nyelv. L <em>polinomiálisan bizonyítható</em>, ha van olyan V algoritmus, hogy<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;L = {w | V elfogadja ⟨w, c⟩-t valamely Σ*-beli c-re},  <span class="note">(w maga a szó és c a tanú)</span>  <br>
         és V polinom idejű w hosszát tekintve.<br>
-        <span class="note">(c a tanú — „bizonyíték" arra, hogy w ∈ L)</span>
+        <span class="note">(c a tanú — „bizonyíték" arra, hogy w ∈ L)</span><br><br>
+
+        <strong>Tétel:</strong> NP azokat a nyelveket tartalmazza, amelyek polinomiálisan bizonyíthatók. ( Azaz NP = nem det. TG-vel felismerhető nyelvek osztálya. Ez a két fogalom ekvivalens )<br>
+
+        <span class="note">(PL.: Gráf síkba rajzolható-e. Tanú : K3 v K5 topológikus felbontása. P problémákra nem kell tanú, mivel meg is tudjuk oldali polinom időben és így leelenőrizni. Ezért nem kell oda ez a súgás, ami a tanú.)</span>
     </div>
     <div class="tetel-box">
         <strong>Tétel:</strong> NP = polinomiálisan bizonyítható nyelvek osztálya.
     </div>
 
-    <h3>Polinom időbeli visszavezethetőség (≤<sub>P</sub>)</h3>
-    <div class="definicio">
-        <strong>Definíció:</strong> Az A ≤<sub>P</sub> B jelölés (A polinom időben visszavezethető B-re) azt jelenti, hogy van olyan f polinom idejű TG által kiszámítható függvény, melyre w ∈ A ⟺ f(w) ∈ B.<br><br>
-        <strong>1. Lemma:</strong> Ha A ≤<sub>P</sub> B és B ∈ P, akkor A ∈ P.<br>
-        <strong>2. Lemma:</strong> Ha A ≤<sub>P</sub> B és B ∈ NP, akkor A ∈ NP.
-    </div>
 
-    <h3>NP-teljes problémák</h3>
+    <h3>NP-teljes nyelvek jellemzése</h3>
     <div class="definicio">
-        <strong>Definíció:</strong> Egy L problémát <em>NP-nehéznek</em> nevezünk, ha minden A ∈ NP esetén A ≤<sub>P</sub> L.<br>
-        Egy L problémát <em>NP-teljesnek</em> nevezünk, ha NP-nehéz és L ∈ NP is teljesül.
-    </div>
+        <strong>Informális:</strong> Egy L NP-beli nyelv NP-teljes, ha abból a feltételezésből, hogy L P-beli is, következik, hogy az összes NP-beli nyelv P-beli, azaz NP = P.
+         <span class="note">(Ha ∃ pol. algoritmus NP-re ⟹ NP = P és erről tudjuk, hogy még nem igaz.)</span><br><br>
+        <strong>1. Megj:</strong> „Elég" az NP-teljes problémákat vizsgálni.<br>
+        <strong>2. Megj:</strong> Egy NP-teljes problémára nem érdemes polinom idejű algoritmust keresni (mivel az a feltételezés, hogy P ⊂ NP).
+         <span class="note">(Nem érdemes rá P beli megoldást keresni.)</span>
+        <br><br>
 
-    <h3>SAT és a Cook–Levin-tétel</h3>
-    <div class="definicio">
-        <strong>Definíció:</strong> SAT = {φ | φ kielégíthető ítéletlogikai formula (CNF-ben)} — a kielégíthetőségi probléma.
+        <strong>Definíció (polinom idejű visszavezetés):</strong> Legyenek A és B Σ* feletti nyelvek. (A,B 1-1 feladat)<br>
+        A <em>polinom időben visszavezethető</em> B-re (jelölés: A ≤<sub>P</sub> B), ha van olyan<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;f: Σ* → Σ* polinomiális időben kiszámítható függvény, melyre<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;w ∈ A ⟺ f(w) ∈ B.   <span class="note">(w string  (vevé))</span>   <br>
+        <span class="note">(Az f függvény a visszavezetés; N TG először kiszámítja f(w)-t, majd M-et futtatja f(w)-n.)</span><br><br>
+
+        <strong>Tétel:</strong> Ha A ≤<sub>P</sub> B és B ∈ P, akkor A ∈ P. <span class="note">(Az A polinomiális időben visszavezethető B-re és B ismert és B megoldható → A is megoldható. Mivel w kiszámítása polinóm + f(w) kiszámolása is polinom idejű, ezért = polinom idő.)</span><br><br>
+
+        <strong>Definíció (NP-teljesség):</strong> L <em>NP-teljes</em>, ha<br>
+        &nbsp;&nbsp;1. L ∈ NP, és   <span class="note">(ha NP beli, azaz polinosan ellenőrihető)</span>  <br>
+        &nbsp;&nbsp;2. tetszőleges A ∈ NP esetén A ≤<sub>P</sub> L. ( A NP-beli probléma polinom időben visszavezethető
+L-re.)
     </div>
     <div class="tetel-box">
-        <strong>Cook–Levin-tétel:</strong> SAT ∈ P akkor és csak akkor, ha NP = P. Másképp fogalmazva, SAT NP-teljes.
+        <strong>Tétel:</strong> Ha B NP-teljes és B ∈ P, akkor NP = P.<br>
+        <strong>Tétel:</strong> Ha B NP-teljes, C ∈ NP, és B ≤<sub>P</sub> C, akkor C is NP-teljes.<br>
+         <span class="note">(Polinóm időben visszavezetjük C-t egy már ismert NP-teljes problémára, így C is NP-teljes lesz.)</span>
     </div>
 
-    <h3>3SAT</h3>
+    <h3>Nevezetes NP-teljes problémák</h3>
     <div class="definicio">
-        <strong>Definíció:</strong> 3SAT = {φ | φ kielégíthető 3-CNF-ben megadott ítéletlogikai formula}<br>
-        ahol 3-CNF: formula = klózok konjunkciója, klóz = pontosan 3 literál diszjunkciója.
+        <strong>Bool változók és kifejezések:</strong><br>
+       <strong>Definíció:</strong> Bool változók igaz (1) vagy hamis (0) értéket vehetnek fel. Műveletek:<br>
+        <strong>Definíció:</strong> Bool kifejezések:    &nbsp;&nbsp;∧ (és), ∨ (vagy), ¬ (nem).<br>
+        Pl.: Φ = (¬x ∧ y) ∨ (x ∧ ¬z)<br><br>
+
+        <strong>Definíció:</strong> SAT = {Φ | Φ kielégíthető Bool kifejezés}<br>  <span class="note">(Nem mindegyik kielígethető, de ami kielégíthető (ami 1-et ad) azt SAT-nak fogjuk fejőlni.)</span>  <br>
+     
+         <br>
+
+        <strong>Tétel (Cook–Levin):</strong> SAT ∈ P akkor és csak akkor, ha NP = P.<br>
+        Más szóval:  SAT NP-teljes.<br><br>
+
+
+        <strong>Definíció:</strong> 3SAT = {Φ | Φ konjunktív normálformájú Bool kifejezés, ahol minden klóz pontosan 3 literált tartalmaz, és Φ kielégíthető}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;Φ = (a<sub>1</sub> ∨ b<sub>1</sub> ∨ c<sub>1</sub>) ∧ (a<sub>2</sub> ∨ b<sub>2</sub> ∨ c<sub>2</sub>) ∧ … ∧ (a<sub>k</sub> ∨ b<sub>k</sub> ∨ c<sub>k</sub>)<br>
+        ahol minden a<sub>i</sub>, b<sub>i</sub>, c<sub>i</sub> egy Bool-változó vagy annak negáltja.
+        <br><br>
+         <strong>Tétel:</strong> 3SAT NP-teljes.<br>
+             <span class="note">(SAT benne van NP-ben, mert ha vki megmondja a megoldást, akkor villámgyorsan ellenőrizhető.)</span>
     </div>
     <div class="tetel-box">
-        <strong>Tétel:</strong> 3SAT NP-teljes.<br>
-        <span style="font-weight:normal;">SAT ≤<sub>P</sub> 3SAT könnyen belátható; 3SAT ≤<sub>P</sub> SAT triviális.</span>
+        
+       
+
+        <strong>Tétel:</strong> VERTEX COVER NP-teljes.   <span class="note">(lefogható-e G minden éle legfeljebb k ponttal)</span><br>
+
+        <strong>Tétel:</strong> k-COLORABILITY NP-teljes, ha k ≥ 3.   <span class="note">(kiszínezhető-e G minden éle legfeljebb k színnel)</span><br>
+
+        <strong>Tétel:</strong> HAMPATH NP-teljes.
+        <span class="note">( irányított gráfban van Hamilton út s-ből t-be}. Visszavezetés: 3SAT ≤<sub>P</sub> HAMPATH.)</span>
+    </div>
+<img src="img/digszam/np_p.png" alt="Verem automaták" style="max-width:500px;width:60%;">
+
+<div class="tetel-box">
+        EXP az ami nagyon sokáig futhat. NP-teljes, az NP-n belűl a nehéz feladatok. P az amiket megtudunk oldani polinomiális időben. <br>
     </div>
 
-    <h3>Egyéb NP-teljes problémák</h3>
-    <div class="tetel-box">
-        <strong>Tétel:</strong> A következő problémák NP-teljesek (polinom visszavezetéssel egymásra visszavezethetők):
-        <ul style="font-weight:normal; margin-top:6px;">
-            <li><strong>VERTEX COVER:</strong> Adott G gráf és k ≥ 1 szám, van-e G-ben k csúcsnál nem több csúcsból álló csúcslefedés?</li>
-            <li><strong>k-COLORABILITY (k ≥ 3):</strong> Adott G gráf csúcsai kiszínezhetők-e k színnel?</li>
-            <li><strong>HAMPATH:</strong> Adott G irányított gráfban és s, t ∈ V csúcsokban, van-e Hamilton-út s-ből t-be?</li>
-        </ul>
-    </div>
 
     <div class="page-footer">A Digitális Számítás Elmélete — 8. Téma</div>
 </div>
@@ -1223,3 +1265,4 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 </script>
 </body>
 </html>
+ 
