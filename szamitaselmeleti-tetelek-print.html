@@ -1104,12 +1104,23 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 
     <h3>Az NP nyelvosztály</h3>
     <div class="definicio">
-        <strong>Definíció: Nemdeterminisztikus Turing gép (ND TG) időkorlátja</strong><br>
+            <strong>Tétel:</strong> Minden M ND TG-hez van vele ekvivalens S TG. (csak ugye több idő)<br><br>
+
+        <strong>Definíció: Nemdeterminisztikus Turing gépel fogjuk bevezetni. </strong><br>
         Legyen t: N → N olyan, hogy t(n) ≥ n minden n-re. Az M ND TG <em>t(n) időkorlátos</em>, ha az n hosszú bemenetek esetén M minden számítási út mentén legfeljebb t(n) lépést megtéve megáll. Azaz n hosszú bemenetek esetén legfeljebb t(n)+1 mély a számítási fa.<br><br>
-        <strong>Definíció:</strong> NTIME(t(n)) = {L ⊆ Σ* | L felismerhető egy O(t(n)) időkorlátos M NDTG-pel.}<br><br>
-         <span class="note">( Megengedjük magunknak azt a luxust, hogy Nem determinisztikus TG nem sokszorozza meg magát minden időpillanatban, így benne lesz TIME(t(n))-ben.)</span>
+        
+         <span class="note">( Kép jól illusztrálja, hogy megnézzük, h milyen mély lesz a fa, minden n hosszú inputra ezen fák mélységét és megnézzük a maximumot, ha ez a max t(n), akkor t(n) időkorlátos. :) )</span>
     </div>
+       <img src="img/digszam/nemdet_tg_fa.png" alt="Verem automaták" style="max-width:500px;width:60%;">
+
+
+
     <div class="definicio">
+        <strong>Definíció:</strong> NTIME(t(n)) = {L ⊆ Σ* | L felismerhető egy O(t(n)) időkorlátos M NDTG-pel.}<br><br>
+        <span class="note">( Megengedjük magunknak azt a luxust, hogy Nem determinisztikus TG nem sokszorozza meg magát minden időpillanatban, így benne lesz TIME(t(n))-ben. Das NTIME(t(n)) része TIME(t(n))-nek )</span><br><br>
+
+
+
         <strong>Definíció:</strong> NP = ∪<sub>k≥1</sub> NTIME(n<sup>k</sup>) a polinom időben egyszalagos NDTG-pel eldönthető problémák osztálya.<br><br>
          <span class="note">(NP -ben azok vannak benne, amik megoldhatók nem determinisztikus polinomiális időben.)</span><br><br>
         
@@ -1148,10 +1159,12 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <h2>NP-teljesség, Cook–Levin-tétel, NP-teljes problémák</h2>
     </div>
 
-    <h3>Az NP osztály jellemzése — polinomiálisan bizonyítható</h3>
+    <h3>Nevezetes NP-beli nyelvek, tanúkkal</h3>
     <div class="definicio">
-        <strong>Definíció:</strong> Azt mondjuk, hogy az L ⊆ Σ* <em>polinomiálisan bizonyítható</em>, ha van olyan k ≥ 1 és olyan M 2-szalagos, polinom idejű TG, hogy L = {w ∈ Σ* | ∃ u ∈ Σ*, |u| ≤ |w|<sup>k</sup>, M elfogadja az w#u bemenetet}.<br><br>
-        <span style="font-style:italic;">u a tanú, „bizonyíték" w ∈ L mellett.</span>
+        <strong>Definíció:</strong> Legyen L egy Σ feletti nyelv. L <em>polinomiálisan bizonyítható</em>, ha van olyan V algoritmus, hogy<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;L = {w | V elfogadja ⟨w, c⟩-t valamely Σ*-beli c-re},<br><br>
+        és V polinom idejű w hosszát tekintve.<br>
+        <span class="note">(c a tanú — „bizonyíték" arra, hogy w ∈ L)</span>
     </div>
     <div class="tetel-box">
         <strong>Tétel:</strong> NP = polinomiálisan bizonyítható nyelvek osztálya.
