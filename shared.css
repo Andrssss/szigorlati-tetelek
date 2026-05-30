@@ -24,6 +24,20 @@ body {
     }
 }
 
+@media screen and (max-width: 700px) {
+    body { background: #fff; padding: 0; }
+    .page {
+        width: 100%;
+        min-height: unset;
+        margin: 0 0 2px 0;
+        padding: 16px 14px 20px 14px;
+        box-shadow: none;
+        border-bottom: 2px solid #ccc;
+    }
+    .cover { min-height: unset; padding: 24px 0; }
+    .back-btn { font-size: 0.8rem; padding: 6px 12px; }
+}
+
 @media print {
     body { background: #fff; }
     .page {
