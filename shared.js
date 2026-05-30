@@ -1,12 +1,14 @@
 // ── Shared JS for szigorlati tételek oldalak ──
 
 // 1. Bold-kék szín a Tétel/Definíció/stb. labelekre
-document.querySelectorAll('strong').forEach(function(el) {
-    var text = el.textContent.trim();
-    if (text.startsWith('Tétel') || text.startsWith('Definíció') ||
-        text.startsWith('Kérdés') || text.startsWith('Megj')) {
-        el.style.color = '#1a6bbf';
-    }
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('strong').forEach(function(el) {
+        var text = el.textContent.trim();
+        if (text.startsWith('Tétel') || text.startsWith('Definíció') ||
+            text.startsWith('Kérdés') || text.startsWith('Megj')) {
+            el.style.color = '#1a6bbf';
+        }
+    });
 });
 
 // 2. Zárójeles magyarázatok szürkítése (inline user notes)
