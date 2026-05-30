@@ -6,7 +6,7 @@ __pycache__/
 # PDF és generált szöveg
 *.pdf
 pdf_text_full.txt
-
+*.py
 # Windows
 desktop.ini
 Thumbs.db
