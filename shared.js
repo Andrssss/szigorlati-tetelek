@@ -1,13 +1,26 @@
 // ── Shared JS for szigorlati tételek oldalak ──
 
-// 1. Bold-kék szín a Tétel/Definíció/stb. labelekre
+// 1. Bold-kék szín a Tétel/Definíció/stb. labelekre (csak a prefix, kettőspontig)
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('strong').forEach(function(el) {
-        var text = el.textContent.trim();
-        if (text.startsWith('Tétel') || text.startsWith('Definíció') ||
-            text.startsWith('Kérdés') || text.startsWith('Megj')) {
+        var text = el.textContent;
+        if (!/^(Tétel|Definíció|Kérdés|Megj)/.test(text)) return;
+
+        var colonIdx = text.indexOf(':');
+        var prefix = colonIdx >= 0 ? text.slice(0, colonIdx + 1) : text;
+        var rest = text.slice(prefix.length);
+
+        if (!rest.trim()) {
             el.style.color = '#1a6bbf';
+            return;
         }
+
+        var span = document.createElement('span');
+        span.style.color = '#1a6bbf';
+        span.textContent = prefix;
+        el.textContent = '';
+        el.appendChild(span);
+        el.appendChild(document.createTextNode(rest));
     });
 });
 
