@@ -1,0 +1,1089 @@
+0:1313 secondsKedves hallgatóság, ez most a negyedik előadásunk, aminek hát az a címe, hogy unifikációs
+0:2020 secondsmorfológia szófai egyértelműsítés és alkalmazások, vagyis részben megyünk tovább a morfológiai módszerek ismerteté
+0:2929 secondsésében nem megyünk nagyon messze. A kétszintest a múltkor a maga
+0:3737 secondstechnológiájával és hátterével ismertettük. Most egy másik alapmódszert, az unifikációs morfológiát mutatjuk be, aminek nagyon lényeges
+0:4444 secondstulajdonsága az a rész, hogy unifikációs. Észer el fogom ma mondani, hogy az unifikációs azt jelenti, hogy az
+0:5252 secondsegy olyan módszer, amelyik nem a morfológia részeit, csak a morfológiában is használjuk, máshol is szinttaxis és
+0:5959 secondsígy tovább. Tehát ez most az unifikációt nem szeretném vizsgán visszahallani, hogy az a morfológia része, de kétségtelen, hogy először a morfológia
+1:071 minute, 7 secondskapcsán tárgyaljuk ezt. És beszélünk a szófai egyértelműről, ami talán mint nyelvi szint, a nyelvi
+1:161 minute, 16 secondsszintnek biztos újdonság, hiszen úgy gondolják, hogy a morfológia után már a szinttaxis, tehát a szavak belső szerkezete után a monderkezet
+1:241 minute, 24 secondskövetkezik, ám a nyelvtechnológia nem így gondolja. és alkalmazásokról lesz szó, hogy ezt, illetve a múltkor hallott szóvalni módszert, a kétszintest mi módon és hol lehet és miért alkalmazni?
+1:371 minute, 37 secondsAkkor ugorjunk bele. Hát először pár arab definíció, amit remélem, hogy tudnak, de azért tisztázzuk. Tehát ugye
+1:451 minute, 45 secondsa gráv, arról azt kell tudni, vagy azt szeretnénk, hogyha mindenki így gondolná, hogy ilyen objektumoknak a
+1:551 minute, 55 secondshalmaza, ott mindenféle bunkocskák vannak, majd mindjárt mondjuk, hogy ők a gráfnak miei, csomópontjai. És közöttük
+2:032 minutes, 3 secondsélek mennek, azok meg vonalak lerajzolva. Tehát az összeköttetéseket éleknek mondjuk, és az összeköttetések
+2:112 minutes, 11 secondsmentén valahonnan, valahova el lehet indulni. Például egy U0 csomópontból az unbe úgy lehet eljutni, hogy az u1, az
+2:192 minutes, 19 secondsu2 és végén az un. Tehát mindegyikből a következőbe és a legutolsó az azik.
+2:262 minutes, 26 secondsTehát amikor u-ból u n-be elmegyek, azt egy ösvénynek nevezem.
+2:312 minutes, 31 secondsNa most akkor mondom kapcsoltnak egy csomópontpárt, tehát U és V csomópontokat,
+2:392 minutes, 39 secondshogyha a gráfnak van olyan ösvénye, ami az U-ból indul és a V-be megy, vagyis hát így át tudok mászkálni különböző
+2:462 minutes, 46 secondsállom vagy különböző csomópontok között folytonosan élekkel. És a gráfot akkor mondom összefüggőnek, ha minden
+2:532 minutes, 53 secondskülönböző csomópontja, ami van neki, az kapcsolt, tehát nincsen olyan, ami egyszám magába lebeg ott a fura térben.
+3:013 minutes, 1 secondNa most irányított egy gráf akkor, ha ez a csomópontok halmaza az élek rendezett párjával van összekapcsolva, vagyis nem
+3:083 minutes, 8 secondscsak el nem elég azt mondani, hogy u I- 1 és UI, UE és UI + 1, hanem ezeknek a sorrendje is fontos, vagyis hogy merre
+3:163 minutes, 16 secondsmutat a nyíl. Tehát nem csak pusztán össze van kapcsolva, hanem van egy irányítottság.
+3:233 minutes, 23 secondsCsak jelzem, mert nemsokára szó lesz róla, hogy a fák, amelyiknek a lerajzolásánál hát ilyen lefele, vagy
+3:313 minutes, 31 secondseszetek fölfele, de álltam lefele ágazó dolgokat rajzolunk, mint fa szerkezetet, ott óhatatlan, hogy azt gondoljuk, hogy
+3:403 minutes, 40 secondsmivel nyilakat nem rajzolunk, mert a lefeleség vagy a felfeleség az irányt jelent, de bizony ha nem rajzoljuk be a
+3:463 minutes, 46 secondskis nyilakat a vonal végére, azok akkor is irányított gráfok.
+3:523 minutes, 52 secondsMost a gyökér, hát természetesen az egy darab speciális csomópont, amelyikből bármelyik csomóponthoz el lehet jutni.
+4:004 minutesEttől gyökér, hogy ő belőle kiindulva lehet bárhova eljutni. És a levél meg a másik vége a dolognak, aminek már nincs
+4:064 minutes, 6 secondskimenő éle. Tehát ameddig el tudtam jutni a gyökérből. Na most ezek után egy fontos fogalom a dagodic
+4:164 minutes, 16 secondsgraph, irányított körmentes gráf, ami nem más mint irányított gráf. Tehát ezek
+4:234 minutes, 23 secondsa élcimke párok ugye ezek rendezettek, tehát merre megy a nyíl? És nincs benne kör.
+4:314 minutes, 31 secondsNa most sok ilyen van, és már most mondom, az előbb emleettem ugye a fát, amelyik olyan, hogy irányított, hiszen
+4:384 minutes, 38 secondsmindig mondjuk lefele megy, és nincs benne kör, nem lehet visszajönni. Ám a dag ennél egy általosabb definíció. A
+4:474 minutes, 47 secondsdagban bizony lehetnek olyan furcsa struktúra részek, ami a fában nincs. Ha tetszik házi feladat, mindenki gondolja
+4:554 minutes, 55 secondsvégig, hogy miben különbözik a fa, és miben más ettől a dag. Bár a fa is irányított körmentes gráf, de a dag definíciója általánosabb.
+5:075 minutes, 7 secondsNa most a dag az aminek a segítségével vagy amire legokosabb ezt az unifikációnak nevezett
+5:165 minutes, 16 secondsműveletet definiálni. Így is teszünk mi most.
+5:215 minutes, 21 secondsTehát a jegyszerkezetek, amit itt a nyelvtechnológiában olyan előszerezettel használunk, sőt amit a nyelvészet, én
+5:275 minutes, 27 secondsmondtam, hogy a 63-ban Kacfodol, illetve 65-ben Csomski is bevezette, tehát végül is nem példenét valahova a nyelvészetbe,
+5:355 minutes, 35 secondsés ma meg tele van a nyelvészet is ezzel.
+5:385 minutes, 38 secondsazok ilyen irányított körmentes gráfokkal vannak reprezentálva, és a csomópontok meg az ösvények úgy
+5:475 minutes, 47 secondsnéznek ki, hogy a csomópontok felelnek meg ugye ezeknek a változóknak és az ösvények a változó neveknek. Vagyis megmondom, hogy két csomópont milyen
+5:565 minutes, 56 secondsnéven van összekötve. Az egyiknek mivel irányított, milyen típusú eleme a másik.
+6:036 minutes, 3 secondsHa most mondatelemzésre gondolnak, és az nem szó alaktan, a mondat alanya, a mondat alanyának száma a személye. Tehát
+6:116 minutes, 11 secondsa mondatnak van alanya, az mondat alanyának van száma, mondat alanyának van személye. Tehát amikor ilyen kvázi birtokos szerkezeteket mondok, akkor a
+6:206 minutes, 20 secondscsomópontok között elmondom, hogy milyen a reláció, ha tetszik, a két csomópont között, amelyik aszimmetrikus, hiszen irányított gráfról van szó.
+6:316 minutes, 31 secondsNa most ezeket föl lehet rajzolni akár egy mátrixban, hogy a jegyek neve és azon belül az értéke. Tehát le van írva a név és
+6:406 minutes, 40 secondsmögötte az érték esetleg több név, több érték egy ilyen kis mátrixban. A lényeg az, hogy tök egyszerűen át lehet írni
+6:496 minutes, 49 secondsilyen mátrixos reprezentációra jegyszerkezeteket, és akkor nem kell gráfokat rajzolgatni, hanem egy ilyen, majd mindjárt lesznek példák, és akkor jobban illusztrálható ez az egész.
+6:586 minutes, 58 secondsNa most amikor azt mondom, hogy valaminek az értéke, az ugye mindig a az ott ösvénynek, tehát amikor végigjártam
+7:067 minutes, 6 secondsegy valameddig egy nem föltétlen a gyökértől a levélik terjedő össvénynek, hanem
+7:137 minutes, 13 secondsgyökérből kiinduló bármelyik részútnak van értéke, mely érték, ha éppen az utolsó állapotban vagyok, annan nem
+7:217 minutes, 21 secondslehet továbbvenni, akkor az egy atomérték. Tehát amikor lejutottam a levélhez, és ott rá van akasztva egy atómi érték, tehát például az előbbi
+7:297 minutes, 29 secondspéldában, hogy a mondat alanyának száma többes szám. A többes szám az egy atomi
+7:367 minutes, 36 secondsérték. Ott lóg a mondat alanyának száma genitusos szerkezet végén, vagyis azon a két lépésen, hogy van a mondatnak alanya
+7:457 minutes, 45 secondsés az alanynak van száma. Az alanynak lehet személye is, első, második és harmadik és így tovább.
+7:527 minutes, 52 secondsTehát az, hogy a végén van egy ilyen atomi érték, azzal az egyik rész defindefiníciónál vagyunk. Az érték lehet atomiérték. A másik, hogy a mondat
+8:018 minutes, 1 secondalanyának lehetnek mindenféle tulajdonságai. Lehet neki száma, lehet neki személye. Amely szám lehet egyes
+8:098 minutes, 9 secondsvagy többes, amely személy lehet első, második, harmadik. Ezek jegyszerkezetek.
+8:138 minutes, 13 secondsTehát az érték az vagy egy konkrét atomielem, vagy egy olyan jegyszerkezet, ami maga is egy dag, amelyiknek szintén
+8:228 minutes, 22 secondsvagy ugye rekurzív definíció, vagy egy atomérték, vagy egy másik jegyszerkezet az értéke.
+8:288 minutes, 28 secondsNa most amikor valamit unifikálok, akkor azt a, mint mondtam, dagok segítségével csinálom. Két ilyen jegyszerkezetet
+8:358 minutes, 35 secondsfogok a kezembe, és összeítom őket. Hogyan? Úgy, hogy megnézzük, hogy
+8:428 minutes, 42 secondsvan-e ugyanolyan ösvény mind a két dagban. Tehát fölismerem, hogy innentől megy oda. Ebbe is van, innentől megy
+8:508 minutes, 50 secondsugyanoda ugyanazok a címkék, ugyanazok a csomópontok, ugyanazok az élcímkék. Na akkor egyetlen egy esetben nem tud
+8:578 minutes, 57 secondsösszeférni a kettő, hogyha két egyforma ösvénynek a legvégén eltérő atomi értékek vannak.
+9:069 minutes, 6 secondsminden más esetben, tehát ha nincs atomérték a végén, hiszen üres még egy alulpecifikált szerkezetnél minden
+9:149 minutes, 14 secondstovábbi nélkül elképzelhető, hogy amit mi most ott a
+9:229 minutes, 22 secondsszerkezetünkben kézbe fogunk, ugye ott a ott nem jutok el oda, hogy elmondjam,
+9:309 minutes, 30 secondshogy egyes vagy többes számon, csak azt mondom, hogy valamilyen számú majd később eldől. Ha példát akarnak, akkor mit tudom én, a fish szó az egy olyan
+9:409 minutes, 40 secondsszó, amelyik az angolban egy olyan tulajdonsággal bír, hogy nem tudjuk róla, hogy egyes
+9:469 minutes, 46 secondsvagy többes számú, az majd a mondatba derül ki. Tehát amikor előhúzom azt a lexikai információt, hogy fish, akkor az
+9:549 minutes, 54 secondsegyes számú is, meg többes számú is lehet, és a specifikus tulajdonságát majd a mondatban, attól függően, hogy egyes vagy többes számú állítmány
+10:0210 minutes, 2 secondsközelében van, ott kapja meg. Tehát lehet alulspecifikált. Akkor nincs gond az egyik alulspecifikált, a szabály nem
+10:0910 minutes, 9 secondsmondja meg, hogy melyik fis. A konkrét esetben meg az állítmány megmondja, hogy többes vagy egyes számú. És innen tudom meg, hogy a mi fisünk most aktuálisan
+10:1710 minutes, 17 secondsegyes vagy többes számú. Tehát unifikálható a az a szabályszerű dag, amelyik nem mondja meg, hogy a fis
+10:2510 minutes, 25 secondsmilyen. Azzal, hogy megmondjuk róla, hogy ez egy egyes számú fis. A kettő unifikációja az egyes számú fis.
+10:3310 minutes, 33 secondsOlyankor is lehet összerakni, unifikálni két szerkezetet, ha teljesen dísztag. Az egyik a alany
+10:4210 minutes, 42 secondsszámáról, a másik az állítmány szem, mit tudom én, számáról szól, de a kettő, mivel az két különböző él, hogy alany
+10:4910 minutes, 49 secondsmeg állítmány, az összerakott szerkezet is összefér, nem mond ellen egymásnak, mert akár különböző ösvényekről van szó,
+10:5710 minutes, 57 secondsakár azonos ösvényekről, egyiknek van értéke, másiknak nincs. abszurdum egyiknek sincs értéke, vagy mind a
+11:0411 minutes, 4 secondskettőnek van, de azonos, akkor unifikálható, és csak akkor, amikor az
+11:1111 minutes, 11 secondsösvény végén egymásnak ellentmondó atomi információvá, akkor nem. Tehát csak és csak akkor, akkor és csak akkor hiul
+11:1911 minutes, 19 secondsmeg, ha van olyan ösvény, aminek a végén, tehát egyszerre nem lehet valami harmadik személyű is, meg második személyű is, mert a személy kettő meg a
+11:2811 minutes, 28 secondsszemély három, ahol a kettő meg a három atomi érték, nem unifikálót, ott ütközik a két dolog.
+11:3511 minutes, 35 secondsNa most ez egy absztrakt művelet, mint ahogy az elején mondtam, nem a morfológiai művelet. Szándék mondtam szintaktikai példát, tehát mondat alan
+11:4311 minutes, 43 secondsállítmánya, hogy ne időssék, csak itt vezetjük be.
+11:4611 minutes, 46 secondsTehát az unifikáció dagokon végzett absztrakt művelet két dag unifikációjáról van szó. Definíció itt
+11:5311 minutes, 53 secondsjegyszerkezet formájában megadva, de nem érdekes, vagy nem fontos, hogy szóalagtan vagy mondattan.
+12:0212 minutes, 2 secondsNa akkor most néznek ki ezek a nyelvi egyszerkezetek? Hát így néz ki. Elég butácska leírás.
+12:0912 minutes, 9 secondsLehet balra is lejutni a háromhoz, bármit jelentsen is az. 1 2 3 lépésbe és lehet a HI Já nem a H után nem lehet,
+12:1812 minutes, 18 secondsmert látszik, hogy a H-ból a kiinduló csomópontból a H-ba úgy lehet eljutni, hogy tulajdonképpen
+12:2612 minutes, 26 secondsaz egésznek a gyökere az ott kellene, hogy legyen, hogy van FH, van GI és van Gj menet, ahol az FH-nak és a GI-nek
+12:3512 minutes, 35 secondsazonos az értéke, a jobb oldal látható karika. A G-nek pedig három az értéke.
+12:4112 minutes, 41 secondsEz teljesen absztrakt példa. Ne gondolkozzanak, hogy mit jelent. Tehát a gyökérelem bármilyen furcsa, bár ugye a fában mindig fölülre szoktuk rakni. Itt
+12:4812 minutes, 48 secondsez a baloldali elem, hiszen ebből indulnak kifelejéleg csak. Aztán az F-ből a H-n, a G-ből az IN keresztül
+12:5612 minutes, 56 secondsjutunk el ugyanabba a végállapotba, és az F-ből a H-n keresztül kvázi egy egyenlet ugyanoda jutunk, mint a G-.
+13:0313 minutes, 3 secondsEzzel szemben a Gén keresztül a hármas atomértékhez jutok. Ezt lehet ábrázolni,
+13:0913 minutes, 9 secondsmint mondtuk, ilyen kis mátrixban, ahol az FH sorozat, és ugye az az egyes, ami
+13:1713 minutes, 17 secondsott be van karikázva, az nem más, mint az a közös csomópont, ami valójában egy absztrakt ragasztó. Ugyanoda jutok,
+13:2413 minutes, 24 secondsmintha a GI úton jutnék el. Tehát, mint az előbbi grávban, az FH-t lerajzolta most itt a FH-t, mivel ott nem ágazik el
+13:3313 minutes, 33 secondssemmi az F és a H között, így jelzem, hogy F függőleges vonal H. A G-nél pedig van egy elágazás utána, hiszen lehet
+13:4113 minutes, 41 secondsIányba is menni, meg J irányba is. Az I irányba odajutok pontosan abba a ragasztós pontba, ahova az FH esetében,
+13:4913 minutes, 49 secondstehát ott összeér, és nincs érték. Tehát az FH úton és a GI úton eljutok abba a jobb oldali karikával.
+13:5713 minutes, 57 secondsaminek még nincs értéke, csak azt tudom, hogy ez a két út ugyanoda vezet, az FH meg a GI. A G pedig egy atom értékez a
+14:0614 minutes, 6 secondshármashoz vezet. Tehát így néz ki egy jeg egyszerkezet egy ilyen irányított ciklusmentes gráfként. És akkor korábban
+14:1314 minutes, 13 secondsföltett kérdésemre, itt már itt a válasz, hiszen H-ban nem lehet valaminek olyan csomópont, aminek két anyukája
+14:2114 minutes, 21 secondsvan. Márpedig ez a jobboldali karika megközelíthető a G és az FH útvonalon is. Ezt a fánál nem lehet megcsinálni,
+14:3114 minutes, 31 secondsmert mindenkinek csak egy anyja van a faszerkezetben, de ettől még a fa is irányított ciklusmentes gráf, de ez is az. Pedig ebbe akár több anyájú
+14:4014 minutes, 40 secondscsomókvantok is lehetnek. Na, akkor egy kicsit nyelvészetibb irányba. Tehát még egyszer akkor nem hajtható végre csak
+14:4814 minutes, 48 secondsakkor, ha egy ugyanazon atomjegy megjelenik az ösvények végén. Ha
+14:5514 minutes, 55 secondstetszik, az egész sorozatnak különböző értéke van. Tehát az egyes számes szám, ha a number az élnek a neve, akkor az SG
+15:0415 minutes, 4 secondsatomérték és a PL, tehát az egyes és a többes atomérték egyszerre nem lehet, tehát unifikálni azt nem lehet. Ilyen
+15:1015 minutes, 10 secondsesetben van meghiolás. Két egyes számú dolgot lehet unifikálni, egy egyes számú dolgot a semmivel lehet unifikálni, a
+15:1915 minutes, 19 secondssemmit is lehet a semmivel, és az egyes számot a harmadik személlyel is lehet unifikálni, akkor az egyes szám harmadik személyéről lesz szó. Tehát nem lesz
+15:2715 minutes, 27 secondsazonos ösvény, csak hogyha a number ösvény van, és a végén egymásnak ellentmondó érték, például egyes és többes szám akar egyszerre lenni.
+15:3815 minutes, 38 secondsaluspecifikáltság van. Tehát ha nem mondom meg, mint itt az utolsó előtti példában, hogy a második tagnak a
+15:4515 minutes, 45 secondsnumbernek milyen értéke van, akkor vagy ilyen, vagy olyan, de egyszerre a végén csak egy lehet. Tehát valcifikáltság van, két értékűség nincs.
+15:5815 minutes, 58 secondsTovábbi példák, megint csak nem a morfológiáról föltétlen. A főnévi kategória és az egyes szám unifikációja
+16:0516 minutes, 5 secondsegy olyan mátrix, amiben a kategória élen a főnév. Atomi csomópont az szám, élen pedig az egyes number singular.
+16:1516 minutes, 15 secondsA meg nem mondom milyen kategória. És ennek a kategóriának, tehát milyen szófai, ugye és ennek valamilyen
+16:2316 minutes, 23 secondskategóriának az esete tárgyeset, az azokat a kategóriákat jelenti, amik tárgyesetben vannak. De nem mondom meg,
+16:3116 minutes, 31 secondshogy ez a kat, ami am itt később derül ki, hogy esetleg noun főnév vagy adjective melléknév lesz. Mindegyik
+16:3916 minutes, 39 secondslehet akkuzatívusban. Ez az absztrakt leírás arról szól, hogy bármilyen kategória a kettő unifikációja egy tárgyesetben levő ugyanilyen kategória.
+16:5016 minutes, 50 secondsOtt egy kicsit mókásabb, absztraktabb dolog van. Az fytatódik valahogy ugyanúgy, ahogy a h. Tessék gondolatba
+16:5916 minutes, 59 secondsátírni ezt a kicsi gráfot. És ezt unifikálom azzal a dologgal, hogy az F-nek egy alulspecifikált jegye van. a
+17:0717 minutes, 7 secondsH-nak a G-n keresztül, tehát nem a H-nak, hanem a Hán G szintén. Vagyis ennek az egésznek az unifikációja egy
+17:1417 minutes, 14 secondsolyan szerkezet, hogy az Fből mehetek a G-be, de úgy, hogy az az F utáni állapot
+17:2117 minutes, 21 secondsaz ugyanaz, mint a Háni állapot. A G-nél pedig ugye az van, hogy a Háni folytatás az a G-ben jelenik meg. Tehát az F meg a
+17:3017 minutes, 30 secondsH egy közös csomópont, és utána jöhet még egy G. Ezt ugyanz alulról a H után a G-ből örökli, tehát a második elem alsó
+17:3817 minutes, 38 secondssorából, de mivel az F-nek meg a H-nak egy pozíciója van folytatásban, összekúszik a két dagbeli nyilacska, az
+17:4917 minutes, 49 secondsaz él, tehát az F-ből kimenő él, meg a H-ból kimenő él ugyanoda mutat. És hogyha a H-nál azt írtam, hogy a G jön utána, akkor az F-nél is az jön. Tehát F
+17:5717 minutes, 57 secondsés a H összejön, G-vel folytatódik, aminek nincs értéke. Vagy egy főnév unifikálva egy egy igével. Na, ilyen
+18:0518 minutes, 5 secondsnincs. Tehát a fél, hogy lám két atomi kategória, a főnév meg az ige, fél. És itt egy picit bonyolultabb nyelvi dolog.
+18:1518 minutes, 15 secondsAz az agreement, tehát az egyeztetési tulajdonság azt mondja, hogy az egyeztetési jegy neek a száma egyes, de
+18:2518 minutes, 25 secondsaz alany a subjectnek van egyeztetési jegye. A subject egyeztetési jegye ugyanoda megy, mint az előbbi eg, vagyis
+18:3218 minutes, 32 secondsott összeragasztom a két kis részgráfot, és number singularbbe folytatódik. Ha
+18:3918 minutes, 39 secondsezt unifikálom azzal, hogy subject agreementje, harmadik személy, ahol a személy ugye szintény élnek a neve, akkor lesz egy
+18:4818 minutes, 48 secondsolyan gráfom, hogy a subjectnek van egy agreementje, ami nem más, mint az a kettő együtt, hogy number singular,
+18:5618 minutes, 56 secondsperson third. Tehát, hogy a egyik helyen megjelent a subject agreement folytatásában a harmadik személy, a
+19:0319 minutes, 3 secondsmásik helyen megjelent az agreement folytatásában a number singular, vagy az egyes szám, vagyis együtt a subjectnek az agreementje
+19:1219 minutes, 12 secondsnumber oldalon singular, person oldalon third, ott szétnyílik és két atomiérték fejezi be. Tehát ezekkel el lehet
+19:1919 minutes, 19 secondsjátszani sokáig. Ezek nagyon lényegesek, hogy az unifikációról később értelmesen tudjunk beszélni.
+19:2619 minutes, 26 secondsHát implementációkban ez a következő módon jelenik meg, hogy ez egy destruktív művelet. Tehát amikor két ilyen szerkezetet unifikálok, akkor
+19:3519 minutes, 35 secondsáltalában fizikailag az történik, hogy az ki van találva, hogy melyiknek mondjuk az elsőnek a helyén létrejön az eredményszerkezet. Elfelejtem azt, ami a
+19:4319 minutes, 43 secondsmásik volt, és az eredmény az már átalakul az első elem, általában az első elem technikailag valami másra. Ez egy nagyon
+19:5119 minutes, 51 secondsgyors művelet. Viszont például ha nem szeretnénk valaminek a formáját megváltoztatni, az ezzel nem tehetjük meg, mert már a korábbi állapot nem lesz
+19:5919 minutes, 59 secondslátható az unifikáció műveletének a végén, hiszen elfelejtjük az egyik összetevőt, és a másik helyén már a kettő unifikációja áll, tehát van ennek
+20:0820 minutes, 8 secondselőnye is, meg hátránya is. Ezért kitalálták a nem destruktív unifikációt, ami valójában egy unifikáció, unifikálhatósági relációnak az
+20:1720 minutes, 17 secondsellenőrzése. Tehát azt mondom, hogy van két kiinduló szerkezetem. Én őket úgy unifikálom, hogy valahol létrehozok egy
+20:2420 minutes, 24 secondsharmadikat, tehát vissza tudok menni egy korábbi állapotba, hiszen se A-t, se B-t nem bántom, hanem egy A unió unifikáció
+20:3120 minutes, 31 secondsB-t fogok létrehozni. Ez nagyon gyakori az implementációban, viszont itt másolgatni kell, hiszen a A-nak a valamiért meg a B-nek a valamiért egy új
+20:4020 minutes, 40 secondshelyen kell létrehozni, viszont jutalmul megmaradnak az eredeti A meg B-k, tehát vissza tudok mászni időbe, és meg tudom nézni, hogy miből alakultak ők kint.
+20:4920 minutes, 49 secondsTehát ez egy reláció, egy bull válasszal, hogy a két dolog unifikálható, de a két dolog így marad.
+20:5520 minutes, 55 secondsA másik egy destruktív játék, létrejön az eredmény és ott az eredmény. Tessék.
+21:0021 minutesÉs nem tudom, hogy egy lépéssel előtte mi történt.
+21:0521 minutes, 5 secondsNa most jön egy igazán morfológiai szóalaktani mese, aminek most egy picit elfelejtjük az
+21:1321 minutes, 13 secondsunifikációt, mint műveletet, hiszen azt azért kellett, hogy itt tudjak később róla beszélni. Tehát most egy újlap, új
+21:2021 minutes, 20 secondsdia. Van a szóalak azon nyelvekben, amik nem olyanok, mint a séminyelvek, mert ugye arról múltkor volt szó, hogy azok
+21:2821 minutes, 28 secondsúgy toldalékolódnak, hogy a másra hangzó vázba belebújnak maghangzók. Tehát muket elfelejtjük. Mindig a fejünkben a magyar
+21:3621 minutes, 36 secondsnyelv van, mert az jól mutatja ezt a példát, de persze más még az angol is ilyen, de nyilván egyszerűbb leírása. Mi van itt valójában? Hát azt tudjuk
+21:4521 minutes, 45 secondsmondani, ez egy végtelenül leegyszerű, túl egyszerűsített séma. A bal oldalon azoknál a nyelveknél megint csak balról
+21:5321 minutes, 53 secondsjobbra írnak, de mondjuk a latin betűs nyelvekre ki lehet mondani, hogy balról jobbra jönnek. A legelején van a tő. Na
+22:0122 minutes, 1 secondez se igaz. Aki ügyes nyelvészetből rögtön tudja mondani, hogy vannak olyanok, hogy nem a tővel kezdődik.
+22:0622 minutes, 6 secondsEgyszerűség kedvéért mondjuk azt, hogy tő. A tő az egy olyan része a szóalaktani
+22:1422 minutes, 14 secondsfeldolgozásnak, amelyik a szóalakban benne van. Előtte nem jön semmi, de utána jöhet valami. Nem föltétlen jön
+22:2322 minutes, 23 secondskutya. Az úgy tő, hogy hát látszólag nem jön utána semmi. Most persze fölfogás kérdése, hogy a semmi nem jön utána,
+22:3022 minutes, 30 secondsvagy a nulla jön utána, de végül is egybe esik a ez a forma. A kutya nullat toldalék. Az ugyanúgy néz ki, mintogy
+22:3822 minutes, 38 secondskutya. Tehát a tő az az, ami jobbról toldalékolódik.
+22:4422 minutes, 44 secondsA másik vége ennek a sémának, hogy vannak terminális toldalékok, amiután nem jöhet semmi. A magyarban mondjuk
+22:5122 minutes, 51 secondsilyenek az esetragok. Az esetraktát egy olyan jószág, amelyik a legvégén áll egy szóalaknak,
+23:0023 minutesés utána nem állhat semmi. Tehát például kutyának, a nak után a kutyának
+23:0923 minutes, 9 secondsszó befejeződik, nem tud semmi jönni. A nak tehát egy olyan típusúalék, amelyik zárja, amelyik legjobb esetben sem
+23:1723 minutes, 17 secondsfolytatódhat. Tehát vannak olyanok, amik biztos kezdők. Még egyszer mondom, hogy csak a séma kedvéért higgyék ezt el.
+23:2423 minutes, 24 secondsTehát biztos kezdők a tövek és biztos zárók a terminális toldalékok.
+23:3123 minutes, 31 secondsTöbbé-kevésbé az esetragok, meg a befejezett igeerragok, vagy finit igeerragok. Tehát az olyan típusú
+23:3823 minutes, 38 secondsdolgok, amik a magyarban jól felismerhetőek, azok nem folytathatók.
+23:4223 minutes, 42 secondsIgen ám, de nem csak két elemből áll egy szóalak, csak leggyakrabban van az elején a tő és leggyakrabban van a végén
+23:5123 minutes, 51 secondsa terminális oldalig, és ismét nagyon gyakran nincs közöttük semmi.
+23:5523 minutes, 55 secondsSzámítógéppel, asztalhoz, nem tudom én, ülök, az ülök a egyes szám
+24:0624 minutes, 6 secondselső személyi toldóik és így tovább. Na most a kettő között lehetnek nem terminális toldók, amiket nyilván
+24:1324 minutes, 13 secondshagyományosan több kategóriába is be tudunk sorolni. Ugye nyilván ha azt mondom az ülők helyett, hogy ültem, akkor mindenki érzi, hogy az ül az a tő.
+24:2424 minutes, 24 secondsA m arra utal, mint terminális toldék, hogy egyes szám első személy és vége a dolognak. De megjelent középen egy múltiidő, amelyik az ülőkhöz képest
+24:3324 minutes, 33 secondsannyiba különbözik, hogy nem két elemű, hanem három elemű már a játék. Ez a T valójában egy nem terminálist oldalig.
+24:4024 minutes, 40 secondsEzt hagyományosan mondjuk a magyar jelnek hívja, ugye azt mondja, hogy a múltiidő jele. De végül is számunkra az
+24:4724 minutes, 47 secondslényeges, hogy az ült elvileg lehet terminálista oldalék, hiszen ha azt mondom, hogy ült, akkor nem látszik az a
+24:5524 minutes, 55 secondsnulla, vagy hát ha nullát választunk le, akkor ő a terminális told. Látszik, hogy a nem terminális oldalig tud terminális
+25:0225 minutes, 2 secondslenni szembe a terminálissal, amelyik nem terminális soha nem tud lenni, hiszen a nem termináliság azt jelentené,
+25:0925 minutes, 9 secondshogy valami őt követi. Tehát vannak olyanok, amik akár befejezőek is lehetnek, de le általában valami jön
+25:1725 minutes, 17 secondsutánuk. Ültél, ültem, ültünk. Tehát, hogy a t után még valami van. az ült esetében vagy a nulla van, vagy nincs
+25:2425 minutes, 24 secondssemmi. Ami miatt aszimmetrikus a játék, hogy a toldalékság azért mégis csak azt jelenti, hogy vagy utolsó, vagy nem, általában nem, de első soha.
+25:3625 minutes, 36 secondsTehát a tem vagy a NA, az nem egy önálló szó. Tehát a tő az mindenképpen az elején ott áll, a végén a terminálist
+25:4425 minutes, 44 secondsoldalék, nulla vagy valami, és középen egy vagy esetleg több terminális oldalék, asztal.
+25:5225 minutes, 52 secondsoskodásaitokira.
+25:5625 minutes, 56 secondsR az terminális az, amit közte mondtam, abban volt képző meg jel meg mindenféle, azok úgy jönnek egymás után, de azért az
+26:0526 minutes, 5 secondsigazán meghatározó, hogy az elején van egy tő, ami a mondjuk azt magunk közt ugye jelentést fogja majd vinni, és egy terminális toldalék, ami valahol a
+26:1326 minutes, 13 secondsszintaktikai pozíciót üzeni. És a kettő között vannak mindenféle egyéb fontos dolgok, amik esetleg átviszik egy másik
+26:2226 minutes, 22 secondsszófajba. Múltkori példában voltak múltkori előadások, hogy ez a pázmányosodik, akkor a pázmány után az
+26:2926 minutes, 29 secondsesképző átviszi pázmányos valami melléknével pázmányosodik, igébe pázmányosodott,
+26:3626 minutes, 36 secondsmár az egy melléknévi igenév. És a elpázmányosodott tag, ahol látszik, hogy az el-t azért mondtam, mert hát nem mindig ott ő a legelső, de mi
+26:4426 minutes, 44 secondspéldáinkban most egyelőre az ott megint átmegyünk főnévbe is annak a terminális toldéka van a végén. Vagyis ami biztos,
+26:5226 minutes, 52 secondshogy a tő az elején az igazi tő, a végén a toldalék igazi toldalék. De kitaláltuk
+26:5926 minutes, 59 secondsezt a relatív tő relatív toldalék dolgot. És akkor most talán ezek a nyilak is érthetőek. Tehát a tővége jobbról
+27:0827 minutes, 8 secondsakár fölvehet más elemeket, balról semmi, jobbról veszi föl. A terminális oldali bal vége kapcsolódik az előzőhöz.
+27:1727 minutes, 17 secondsA nem terminális errefele úgy viselkedik, mint egy toldalék, mert ő a tő után toldalék. Arrafele úgy
+27:2327 minutes, 23 secondsviselkedik, mint egy tő. És valóban az ült t az úgy viselkedik, hogy a t egy toldalék, és az ültőhöz toldéként
+27:3227 minutes, 32 secondskapcsolódik. Az ült viszont a egyes szám első személyi ökhöz úgy kapcsolódik, mint a tő. Tehát ül ök vagy ült ök, az
+27:4127 minutes, 41 secondsmár mindegy. Vagyis ezek a köztes dolgok relatív toldalék, relatív tő kettős arcot mutatnak, míg a tő az első helyen
+27:5027 minutes, 50 secondslehet azt mondjuk, hogy relatív tő, de ő talán abszolút értékben is az. A toldalék a végén, ami terminális, az abszolút értékben is told. És minden
+28:0028 minutesköztes elem erre tő, arra told. És ezt nagyon fontos, hogy lássuk. És nyilván a mi anyanyelvünk alkalmas erre, hogy ezt
+28:0728 minutes, 7 secondsjól demonstráljuk, mert innentől kezdve erre építünk egy módszert. Ez a módszer a humor, amelyik HP unification
+28:1528 minutes, 15 secondsmorpalogi, tehát egy unifikációs morfológia, egy nagy sebességi művelet, amikor ezt bevezettük, az még a 90-es
+28:2428 minutes, 24 secondsévek legelején volt nagyon régen. És akkor ez könsen nagy sebességűnek számított, mert az unifikáció egy nagyon
+28:3228 minutes, 32 secondshatékonyan implementálható művelet. És mint mondtam háromszor, most negyedszer is, hogy nem a morfológiához tartozik.
+28:4028 minutes, 40 secondsÉs a humor ugye mindenki amikor ezt először a magyar nyelvre létrehoztuk, akkor azt gondolták, hogy ez a Hungarian
+28:4728 minutes, 47 secondsMorphology, de csináltunk más nyelvi megoldásokat is. És akkor ahány nyelv, annyi megoldás, ugye oroszra rumor lett
+28:5428 minutes, 54 secondsvolna, törökre egy tumor lett volna, és ez nem túl szerencse. És ezért úgy maradtunk magunkkal, hogy a Hu az a High Speed Unificationnek felel meg, és ezt
+29:0329 minutes, 3 secondslehet használni magyarra, oroszra, törökre vagy bármilyen nyelvre. Na most az unifikáció fogalmát, amit itt most dagokra, jegyszerkezetekre megpróbáltunk
+29:1229 minutes, 12 secondsértelmezni, valójában ha valaki véletlenül a prológ nyelvet ismeri, és most nincs interakció, tehát magukba tegyék föl a kezüket, ha így adódna,
+29:2029 minutes, 20 secondshogy ismerik. Ugye ez a nyelv a 70-es évek végén, 80-as évek elején vált népszerűvé a világban. logikai
+29:2829 minutes, 28 secondsprogramozási nyelv, ha tetszik a log elsőrendű logikának
+29:3629 minutes, 36 secondsegyfajta gépi megvalósítása, és valójában a program lefutása egy tételbizonyítás volt ebben a logikában, egy állítás bizonyítása. Na most nem
+29:4429 minutes, 44 secondsmegyünk bele ebbe. Magyarország nagy hatalom volt prológba. Azt azért elmondom, hogy amit a bevezető előadásban többször mondtam, akár
+29:5329 minutes, 53 secondsWilliam Woodsnak a Luna rendszere, akár a Terry Vinográdnak az a furcsa betű
+30:0030 minutesnevű SHRDLU rendszere, ezek mind Amerikában az akkor használatos szövegfeldolgozó nyelven, a LISP
+30:0930 minutes, 9 secondsnyelven, list processing language, tehát a listafeldolgozó nyelven készültek, ami viszont egy ilyen funkcionális programozási nyelv volt abban az időben.
+30:1930 minutes, 19 secondsElsősorban interpretált nyelvek. Tehát mert a prológus először az volt és később készültek compáilerek, amikor ugye futtatható kód volt, és nem kellett
+30:2730 minutes, 27 secondsállandóan jelen lennie magának az interpreternek lényegtelen. Tehát minden lisztbe készült és ezért Amerika Liszt nagy hatalom lett, mert ezeket a
+30:3530 minutes, 35 secondsnyelvtechnológia megoldásokat is meg minden mesterséges intelligencia dolgot Lisben írtak.
+30:4130 minutes, 41 secondsEurópában, bár kis kanadai közvetítés, de Európában, Franciaországban, Portugáliában, de aztán főként Magyarországon a prológ nagyon erős
+30:5030 minutes, 50 secondsvolt. Prólóg viszont egy másik világot, a logikai programozási nyelvek világát fogta meg, és ezek küzdöttek egymással,
+30:5830 minutes, 58 secondshogy melyik lesz a mesterséges intelligencia, vagy a nyelvi feldolgozásnak a programozási nyelve.
+31:0431 minutes, 4 secondsUgye az idő már meghozta, hogy egyiknek a nevét se ismerik, vagy sokan nem ismerik. Ez nem túl nagy öröm, de tény. Ezzel szemben a
+31:1231 minutes, 12 secondsprológnak volt egy nagyon érdekes tulajdonsága, vagy mint mondtam, hát ilyen logikai, tehát predikátumokat ábrázoltunk, a predikátum pedig áll egy
+31:2031 minutes, 20 secondspredikátum névből, és egy-kettő valahány argumentumból.
+31:2431 minutes, 24 secondsHiszen így néznek ki a logikai leírások, hogy a predikátumnak van neve, meg vannak argumentumai. argumentumok
+31:3331 minutes, 33 secondsazok ugye kötött pozíciók, első, második, harmadik pozíció, ami egy picit emlékeztet a nyelvészetre, hogy mit tudom én, az igének van alanja, tárgya
+31:4231 minutes, 42 secondsés valami részeshatározós izéje, és akkor ad valaki valamit valakinek.
+31:4931 minutes, 49 secondsTehát a alany, a tárgy meg a datívus, az így van egymás után. És ezek mindig sorrendiséget jelentenek.
+31:5731 minutes, 57 secondsA mi unifikációs definíciónknál mindennek van neve, tehát nem kell van, hogy arany meg tárgy meg datívus, de ha
+32:0432 minutes, 4 secondscsak a sorrend volna, mint a prológban, akkor ugyanezt az unifikációt látjuk ott is, csak ott az első, második harmadik
+32:1232 minutes, 12 secondsként megjelenés anélkül, hogy neve volna az argumentumnak jelenti ugyanezt, de ott egy működő ilyen jegyértékpár volt,
+32:2032 minutes, 20 secondsahol gyakorlatilag az értékek a megfelelő argumentum pozícióba, ha beleestek és ott egy változó szó volt. Akkor a kettő
+32:2832 minutes, 28 secondsunifikáció az az érték volt, amit oda belenyomtunk. Ha a kettő üres volt, akkor maradt üres az eredmény, tehát a white cut. Ha viszont ott volt valami,
+32:3632 minutes, 36 secondsés én bele akartam rakni egy olyat, ami ott elentmondott, akkor volt a fél az eset, az hogy az unifikáció nem jött
+32:4332 minutes, 43 secondslétre, hiszen két atomi érték ütközik azon a pozíción, ahol unifikálni kellene őket. Tehát
+32:5132 minutes, 51 secondsaz unifikáció egy létező valami volt, csak egy picit általosítva lett azzal, hogy nem sorrendi pozíciók, hanem nevesített szerepeknek,
+33:0133 minutes, 1 secondjegyeknek van értéke. Na most a humornál, amelyik rendszert itt most ismertetjük, kizárólag az előbb említett unifikálhatósági relációról beszélünk.
+33:1233 minutes, 12 secondsTehát a humor nem más, mint az unifikálhatósági relációknak a működtetése. És minden nyelvi tulajdonság egy jegy.
+33:2133 minutes, 21 secondsTehát ez egy nagyon lényeges elv, hogy a nyelvi toldalék, tehát azok a kategóriák, amit a múltkor a morfológiában fölsoroltunk,
+33:3033 minutes, 30 secondsmint alapelemek, azok valamilyen tulajdonságokat hoznak, és rögtön egyfajta szótár segítségével lecseréljük a string darabokat.
+33:4133 minutes, 41 secondstulajdonság együttesekre, vagyis ha tőnek is van egy tulajdonságma jegyértékpárogbó, meg a toldaléknak is,
+33:4933 minutes, 49 secondsakkor azokat lehet unifikálni. És innentől kezdve elvész a literális alak, tehát nem az számít, hogy milyen
+33:5533 minutes, 55 secondsbetűkből áll, amint az első számítógépes nyelvészeti kísérletek mindig azt mondták, hogy lépj vissza két betűt, vágjál egyet, rakjál hozzá még egyet. Ez
+34:0434 minutes, 4 secondsnagyon alacsony szintű tevékenysége azt mondom, hogy fölismerem a tőrészt egy szótár segítségével. Ezek a jegyértékpárok reprezentálják.
+34:1334 minutes, 13 secondsFelismerem a told részt, azok pedig ilyenek. Megnézzük, hogy jól ismertem-e felül őket, vagy ez a két dolog összeillik-e.
+34:2234 minutes, 22 secondsÉs tulajdonképpen csak ott kell unifikáció, ahol valami valahogy folytatót. Ha teha emlékeznek az előző ábrára, ahol ilyen nyil kétirányú
+34:3134 minutes, 31 secondsnyilacskák voltak, ahol össze kell paszítani ott adott esetben egy relatív tövet egy relatív toldalékkal, azokon a
+34:3834 minutes, 38 secondspontokon kell unifikálni. Tehát a kész string darabokat egymás mellé rakjuk, kirakjuk valahogy egy puzzleből, hogy
+34:4734 minutes, 47 secondsezekből a string darabokból állhat össze az én szavam, és a string darabokhoz tartozó jegyértékpárokkal pedig
+34:5434 minutes, 54 secondsműveleteket végzünk. Vagyis egy pillanat alatt kicseréljük a string darabjait jegyértékpárokra. Semmi más műveletet
+35:0235 minutes, 2 secondsnem kell innentől végezni, csak az unifikáltóság ellenőrzést. Az én kis stringemnek megfelelő jegyértékpárok szeretik-e a másikat, ami mellettük van?
+35:1135 minutes, 11 secondsNa de hogy szeretik? Mármint, hogy mi módon ellenőrzöm, és így ki mondja meg, hogy melyik jegyeknek milyen értékét kell szeretni, vagy sem, hiszen nem
+35:1935 minutes, 19 secondsminden jegy minden értéke játszik, és ez nagyon lényeges. Ezt hozza a humor a következő táblázatban.
+35:2735 minutes, 27 secondsHát itt egy kicsit elcsúsztak a kettes, hetes, 10-es, azoknak nincs jelentőségük, csak valahol egy ráütöttem egy tabulátorra. Elnézést, csak valakinek a szemét zavarja az enyémet.
+35:3735 minutes, 37 secondsIgen, de nem vettem észre. Na, mi látható itt? Egy borzasztó nagyon-nagyon alacsony szintű jegyértékpár leírás,
+35:4635 minutes, 46 secondsahol is tulajdonképpen kétféle értéke van minden jegynek, a plusz meg a mínusz. Tehát, hogy ilyen vagy olyan.
+35:5435 minutes, 54 secondsLehetne 1000erféle, vagy legalábbis mondjuk három. Például vegyük azt, hogy a személy, első személy, második személy, harmadik személy, ott nem lehet nagyon binárissá alakítani a dolgot.
+36:0436 minutes, 4 secondsPontosabban alakítani lehet. Általában úgy szokták föltenni a kérdést, hogy a beszélgető pozícióban benne van vagy
+36:1336 minutes, 13 secondsnincs, mert ha nincs, akkor ő az ő, a harmadik személy. Ha benne van, akkor azt kérdezem, hogy a beszélő vagy nem, hallgató vagy nem. Tehát úgy tudom
+36:2236 minutes, 22 secondsszétszedni háromra, hogy az egyik esetet leválasztom, a másikat rákérdezek.
+36:2636 minutes, 26 secondsMindenki, aki minimálisan tájékozott, és nyilván itt mindenki az bináris számokban, hát világos, hogy négy eset
+36:3536 minutes, 35 secondslenne, de hát mivel az egyik az, hogy az ő leválasztódik, akkor már csak két eset marad, vagyis a hármat egy kicsit luxus,
+36:4236 minutes, 42 secondsde két biten tárolom, hiszen egy kérdéssel szétválasztom, hogy ő vagy nem ő, de lehetne úgy is szétválasztani,
+36:4936 minutes, 49 secondshogy a beszélőről van szó. Igen. Nem, ha nem, akkor megkérdezem, hogy itt van vagy nincs itt. És akkor kiderül, hogy ő
+36:5636 minutes, 56 secondsa te vagy ő az ő. Attól függen, hogy itt van, nincs itt. Tehát lehet sokféleképpen ezt a kétszer két biten tárolható
+37:0437 minutes, 4 secondsinformációt, amiben valójában csak három esettel dolgozunk, a negyedikkel nem így leírni. Ugye ezt mindenki tudja, biztos
+37:1137 minutes, 11 secondsismerik, hogy 10féle ember van, aki ismeri a bináris számokat, meg aki nem.
+37:1637 minutes, 16 secondsNa hát most ez ennek a konkrét megvalósulásán. Nézzük, hogy mik vannak itt a binárisakkal. Tehát például föltesszük azt a kérdést, az a legelső
+37:2437 minutes, 24 secondsoszlop, ami ott az a alfa után van.
+37:3037 minutes, 30 secondsNévszó-e az a dolog, amiről beszélünk. A névszó plusz mínusz. Hát ha plusz, akkor nyilván ő a népszó. Ha nem, akkor ha nem
+37:3837 minutes, 38 secondsnévszó, akkor ige. Tehát nem azt kérdezem, hogy névszó-e vagy ige, hanem megkérdezem, hogy névszó-e. És ha igen, akkor plusz. Ha pedig nem, akkor tudom,
+37:4637 minutes, 46 secondshogy igen. Na most rögtön a kettes látszik, hogy egy olyan esetről szól szándékosan, amikor a névszó plusz volt.
+37:5637 minutes, 56 secondsHiszen csak akkor van értelme arról beszélni, hogy főnév, melléknév, vagy miről van szó, ha ha tudom, hogy ő már név szól. Tehát nyilván az igéket nem
+38:0538 minutes, 5 secondsfogom a kettes szerint osztályozni, csak az egyes szerint. Vagyis jól látható, hogy ezek a szempontok, míg az egyes szempont még teljesen független volt
+38:1338 minutes, 13 secondsmindentől, el kell döntenem, hogy névtó vagy ige. A kettes szempont már csak akkor értelmezett. Ja, igen, stíma lehet én nem is véletlenül csak egyszer
+38:2038 minutes, 20 secondsbeljebb nyomtam ezt a kettőst. Ez azt jelenti, hogy a kettes, ami miatt beljebb van lám, nem ütöttem el én azt a tabulátort, csak elfelejtettem, hogy
+38:2838 minutes, 28 secondsazért hoztam be. Ő egy függő szempont. Ő csak akkor van értelmezve, ha az egyes névszó. Tehát már két olyan
+38:3738 minutes, 37 secondsismérvet hoztam be, ami függőségi viszonyban van, hierarchikus viszonyban van egymással, hiszen ha igen, nem kérdezem meg, ha főnév megkérdezem, és
+38:4438 minutes, 44 secondsakkor van értelmezve. Majd ilyen lesz a hetes is, hogy a hatosnak a plusz esetére vonatkozik, vagy a 10-es, ami a kilencesnek a plusz esetére vonatkozik.
+38:5438 minutes, 54 secondsVagyis akkor amikor egy ilyet csinálok, akkor ugye azt hozom be, hogy a eddig függetlennek gondolt eseményekbe
+39:0239 minutes, 2 secondsbevezetek egy kis függőséget. Hát például azt mondom, hogy ha nem olyan, hogy távol van a dialógusban, tehát hogy
+39:1039 minutes, 10 secondsnem egy őről van szó, akkor megkérdezem, hogy tehát tudom, hogy itt van, hogy a beszélő vagy nem. Tehát nyilván ugyanilyen, ha tudom, hogy névszó, akkor megkérdezem, hogy főnév vagy nem főnév.
+39:1939 minutes, 19 secondsMost az egyszerűség kedvéért a mínusználnál együtt hagytam a melléknevet meg a számnevet, de nyilván azokat is tovább lehet vinni. Ez csak egy demo. Föltehetek egy olyan kérdést,
+39:2839 minutes, 28 secondsami teljesen független az egytől vagy az egy kettő-től, mondjuk ez a hármas, hogy ez a string, amelyiket most nézek, tehát mindig karaktersorról van szó, szótári
+39:3739 minutes, 37 secondsalapalakú-e vagy nem. Tehát a szótári jegynek plusz vagy mínusz az értéke. Mit jelent ez? A kutya az egy olyan alak,
+39:4639 minutes, 46 secondshogy ő szótári alapalak. Tehát ha nem követi semmi, akkor is jó szó. Erre mondtam az előbb, hogy tekinthetjük úgy, hogy egy null toldékot raktunk utána, de
+39:5539 minutes, 55 secondsugye nullával mindig óvatosnál kell lennünk. Tehát megkérdezzük a hármasban, nem muszáj hármasba. És csak egy lehetőség, hogy ő alapalakban van-e.
+40:0640 minutes, 6 secondsUgyanez igaz a bagoly alakra is, ami egy korábbi példánkban volt a múltkor. A bagolyszó az egy szótári alapalak. ahhoz
+40:1440 minutes, 14 secondsjöhet bagoak bagoyról, de minden további nélkül lehet bagoly nullat oldalékkal, mert a nominatusza az. De emlékszünk,
+40:2340 minutes, 23 secondshogy volt egy olyan allomorf, amelyik bagi alakú volt. A bagiok bagi alaknak az első fele. Na most a bag
+40:3340 minutes, 33 secondsbármennyire szeretnénk, az a hármas ismér szerint vagy jegy szerint a mínuszértéket kapja, mert ilyen szótári alapalak nincs. Tehát ha véletlenül azt
+40:4140 minutes, 41 secondslátnánk leírve, hogy bag, akkor tiltakozni fogunk, hogy az nem jó, mert nem alapalakban van. Ő csak akkor létezik, ha toldalékot követik. A másik,
+40:5040 minutes, 50 secondsa bago az akár követi, akár nem követi, az alapalak. Na, vegyünk mást, a négyest. Kérdezzük meg, hogy az adott
+40:5840 minutes, 58 secondsbetűsorozat magánhangzó váza az olyan-e, hogy elölképzett vagy hátulképzett oldalékokat igényel. Szebben magyarul,
+41:0841 minutes, 8 secondsvagy talán jobban érthetően magas hangrendű vagy mély hangrendű. Tehát hogyha azt akarom, hogy kutyának, akkor az mélyhangrendű, mert a nak mély.
+41:2041 minutes, 20 secondsHa az van, hogy Kecskének, akkor a nek meg előlképzett magaserű.
+41:2541 minutes, 25 secondsTehát az, hogy milyen toldalékot fog majd szeretni a kutya vagy a kecske.
+41:3241 minutes, 32 secondsAztán az ötös egy másik maghangzó harmóniára utaló kérdés, hogy aja kerekítéses vagy sem. Tehát már rögtön látjuk, és nyelvészek nyilván tudják, a
+41:4141 minutes, 41 secondsmagyarban két magáhangzó harmónia van egyszerre. A képzés helye szerint, meg a kerekítés szerint. Tehát ugye a képzés helye szerint elöl hátulja a kerekítéses
+41:5041 minutes, 50 secondsvagy sem. Na most nyilván ha például veszünk egy olyan toldékot, aminek tényleg van sok alakja, mondjuk a
+41:5741 minutes, 57 secondstárgyeset ott, et ott öt, akkor lehet olyan, hogy nem tudom én, bot ott, de ház ott.
+42:1042 minutes, 10 secondsFőnök öt, de nem tudom én, gyerek.
+42:1742 minutes, 17 secondsVagyis, hogy a gyerek, a főnök, a ház meg a bot, az ugye az egyik harmónia szerint az alapalak, a elölképzettség,
+42:2642 minutes, 26 secondshátulképzettség szerint lehet magas meg mély. Tehát a házat meg a botot az hátulképzett négyesben mínusz egyik. A
+42:3442 minutes, 34 secondsfőnököt meg a gyereket, az pedig elölképzett. Ezzel szemben ajakerekítés szempontjából a bot ott és a főnök öt ajakerekítéses.
+42:4542 minutes, 45 secondsA gyerek meg a ház meg nem az. Vagyis hogy ez a két a négyesbe meg az ötösbe leírt magangzó ami teljesen független.
+42:5442 minutes, 54 secondsÉs ugye négy lehetséges esetük van.
+42:5742 minutes, 57 secondsPersze nyilván a magyarban vannak olyan toldékok, nem csak olyan, mint a tárgyeset vagy a többes szám, hogy annak mind a négy megvan, hanem vannak olyan
+43:0443 minutes, 4 secondstoldékok, amiben mondjuk csak három van, de hát két bit minden elfér. a három is, nem minden nem, de 1 2 3 4 elfér például
+43:1143 minutes, 11 secondshossz hezhöz, ha mély hangrendű, ha hátulképzett akkor lényeges, tehát a
+43:1843 minutes, 18 secondsnégy mínusz a négyes jegynek a elölképzett, hátulképzetnek, ha mínusz
+43:2443 minutes, 24 secondsaz értéke, akkor hogy lenne további feldolgozás, nincs rá példa, mert a hoz alak olyan, hogy a hoz nem lehet más.
+43:3643 minutes, 36 secondsEzzel szemben, ha előlképzed, tehát plusz az értéke, akkor van értelme az ötösről beszélni. Ajakerekítéses vagy
+43:4243 minutes, 42 secondssem, öz vagy ez, höz vagy hez? Főnökhöz, gyerekhez, ha mély házhoz, bothoz. Tehát
+43:5043 minutes, 50 secondsigaz, hogy az előbb láttuk, hogy a ház meg a bot ház bot ott. Tehát volt olyan, ahol kijött tárgyeset előtt, hogy két
+43:5943 minutes, 59 secondsarca van, de valójában a hossz az olyan, hogyha mélyhangrendű, akkor az nem osztályozódik tovább. Tehát részben függ a négyes meg az ötös egymástól, mert van
+44:0744 minutes, 7 secondsolyan toldunk és van olyan, hogy naknek ott csak annyit tudok megkérdezni, hogy előképzett, hátulképzett és nem játszik az ajakerekítés. Sőt van olyan toldékunk is, hogy ért, amiből csak egy van.
+44:1944 minutes, 19 secondsNaknekből kettő, hosszből három, ott et 5-ből ott et ugye at ott et ötből
+44:2644 minutes, 26 secondsnégy. És tulajdonképpen amit itt a hatos hetesben kérdezünk, az még bejön. Hát a hatosban azt kérdezzük, hogy egyáltalán
+44:3444 minutes, 34 secondsállhat-e a szó többes számba? Tehát olyan-e a szó, hogy van neki többes száma. Ha valaki most megrémül, akkor mondom, hogy a gázművek főnévnek nincs
+44:4244 minutes, 42 secondstöbbes száma. Hát mert ő a többes szám, de nem lehet a gázművekek nincs, de gázmű sincs. Tehát a gázművek egy olyan
+44:4944 minutes, 49 secondsjószág, aminek nincs többes száma. A fisnek sincs az angolban, de most ezt ne menjünk bele, maradjunk a magyarnál. De
+44:5644 minutes, 56 secondsazt, hogyha van többes száma, és a botnak, háznak, gyereknek, főnöknek van, akkor kell-e bele kötőhang, vagy nem? Én
+45:0545 minutes, 5 secondsmost olyan példát mondtam az előbb, ahol at, ott, et, öt, mind a négynél van, de mi van hozzó, hogy autó?
+45:1245 minutes, 12 secondsAz autó az abszolút mély hangrendű, tehát hátulképzett, és attól és van is többes száma, autó.
+45:2445 minutes, 24 secondsTehát akkor nincsen maghangzó, nem látszik meg az autók alapon, hogy tulajdonképpen tehát van többes száma,
+45:3145 minutes, 31 secondsde a hetesben nincs kötőhang. Tehát az autó után az egy szál k jön anélkül, hogy magáhangzó előzné meg. Vagyis
+45:3945 minutes, 39 secondsmegtudnám, hogy ak ek melyike, mint a házak, botok, emberek, gyerekek,
+45:4645 minutes, 46 secondsfőnökök. Tehát nincsen magáhangzó. Tehát az egy megint egy függőviszony, hogy ha van többes száma, van-e kötőhang, vagy
+45:5445 minutes, 54 secondsnincs. Hát ha nincs többes száma, mert olyan aszó, akkor ez nem játszik.
+45:5745 minutes, 57 secondsUgyanilyen lesz a 910 is, ami itt 910-es példa, a tárgyeset. És ami megdöbbentő, hogy nem egyforma a kettő. Tehát a többes számnak van vagy nincs tárgyeset.
+46:0946 minutes, 9 secondsMost nyilván a gázműveknek van tárgyesete.
+46:1246 minutes, 12 secondsGázműveket fölhívtam, tehát van tárgyesete, nem igaz, hogy nincs. És akkor a gázművek et ott előljön az, hogy
+46:1946 minutes, 19 secondsa kötőhanggal van, és a kötőhang meghatározása pedig a négyes ötösben meghatározott módon a elölképzett nem a
+46:2846 minutes, 28 secondskerekítéses gázművek e alakot kapja, míg a többes száma nincs. De ha lenne több számos sem szükségszerű, hogy legyen,
+46:3746 minutes, 37 secondsmert például autó esetében mind a többes szám, mind a tárgyeset kötőang nélkül
+46:4346 minutes, 43 secondsautó autó t. Na de lesznek olyan furcsa jószágok,
+46:4946 minutes, 49 secondshogy mondjuk bér bért kap valaki, és bérek. Tehát a többes számnál megjelenik
+46:5746 minutes, 57 secondsa kötőhang, a tárgyasetnél nem jelenik meg. Tehát ezek független szempontok, hogy van vagy nincs többes szám vagy tárgyezet, és ha van, akkor melyiknek
+47:0547 minutes, 5 secondsvan kötőhangja. De például azt is lehet tudni hangtanból, de ebbe most nagyon nem fogunk belemenni, hogy nyilván az van, hogy bér, t és bérek, de olyan
+47:1547 minutes, 15 secondsnincs, hogy a k-nak nincs kötőhangja, de a t-nek van. Ennek hangtalni oka van, képzési helyről van szó, ami a fonógusok
+47:2247 minutes, 22 secondskiválóan tudnak erről beszélni. Csak jelzem, hogy tehát ilyen részleges függőségek vannak a bevezetett bitjeink között. Tehát így szépen végigmegyek
+47:3147 minutes, 31 secondsezen, még ott van egy-két tulaj további érdekesség, hogy van datívus vagy nincs, van eszközhatározó eset, eszközhatározó
+47:3947 minutes, 39 secondsvalvel vagy nincs. Ugye nyilván ha van, akkor annak egy ilyen különleges tulajdonsága lesz, hogy másra hangzóra végződő szavaink úgy nem valvel, hanem
+47:4947 minutes, 49 secondsB-re végződők. Balbel, C-re, calcell, D-re, daldel alakot vesznek föl. Tehát ezt még bonyolultabban lehet tovább vinni.
+47:5747 minutes, 57 secondsvan-e és képzője, olyan vagy nincs. És pont pont pont akárhány ilyen szempontunk lehet. Tehát tulajdonképpen
+48:0548 minutes, 5 secondsfölsorolunk valány szempontot, és ha mondjuk csak 10 szempontunk volna, most nem annyi van, meg még többet is lehet,
+48:1448 minutes, 14 secondsakkor ugye itt kettő a nedeniken, 10 esetében kettő a 10en lehetséges kombinációja volna 1024. Ezeknek a igen
+48:2248 minutes, 22 secondsnemeknek, 01 sorozatoknak ugye annyit lehetne kódolni vele. Ám a nyelv olyan, hogy bizonyosak együtt előfordulnak,
+48:3048 minutes, 30 secondsmások meg nem. Tehát messze nem tölti ki az összes 0-1 kombinációt a nyelv.
+48:3448 minutes, 34 secondsBármilyen jegyeket veszek föl, de elvileg lehetne annál nem több. Azért nagyon érdekes ez, mert ezekre a
+48:4348 minutes, 43 secondskérdésekre, amiket itt föltettünk, minden magyar ember tud válaszolni. arra nehezebben válaszolnak, meg hát olyan lenne, mint egy nyelvtanúra vizsga, hogy
+48:5248 minutes, 52 secondsna mondjon egy hangzókieséses mélyhangrendű magyar nem tudom főneve. És akkor azon gondolkodni kell, hogy milyen hangzókiesés, igen, nem igen.
+49:0349 minutes, 3 secondsMélyhangrend, igen, nem igen. És így főnév, igen, nem. Tehát szép lassan a bitekkel egyenként ki tudom titrálni, le tudom filterezni a kis adatbázisomat.
+49:1449 minutes, 14 secondsFejbe is így megy ez. És nem egy komplex szempontot kell kitalálnom, amiknek aztán még alosztálya is van, és az alól még egy kivétel, hanem még lesz a 21.
+49:2449 minutes, 24 secondsszempont, ami nagyon ritkán jön be, de ha bejön, akkor az is egy szempont.
+49:2949 minutes, 29 secondsTehát ami szempontunk van, azt mi figyelembe vesszük, és ezért elvileg minden olyan lehetséges kombinációja a
+49:3749 minutes, 37 secondsbiteknek, ami a nyelvben előfordul, ha fölsorolom az összes szempontot itt bal oldalon, akkor az itt meglesz. Tehát
+49:4549 minutes, 45 secondskettő a szempontadikon lehetőség közül fálaszt majd a nyelvjat, amelyik létezik, hiszen látjuk, hogy vannak egymástól függő sorok, tehát nem
+49:5349 minutes, 53 secondsteljesen független, nem kettő a nediken, hanem annál kevesebb, de elvileg egy ilyen játékot játszom. Ennyi lehetséges
+50:0050 minutes01 kombináció van. Ez azt jelenti, hogy nem a kategóriákat hozom létre, ahogy az előbb mondtam, hogy mély hangrendű
+50:0950 minutes, 9 secondshangzó, kieséses főnevek, hanem csak kérdéseket teszek föl, és egyenként mindegyikre jó a válasz, és amit kimetsz, azok olyanok, amiről
+50:1850 minutes, 18 secondsbeszéltünk. Na most lesznek olyan kis kategóriák, amiben nagyon kevesen vannak, tehát olyan bit kombinációk,
+50:2550 minutes, 25 secondsamik kevés elemhez adódnak hozzá ismértként, mert nagyon ritka. Hát mondjuk ugye a múltkor is néztük, hogy a
+50:3250 minutes, 32 secondsmegy vagy a jön különböző alakjai mennyire ritkák.
+50:3750 minutes, 37 secondsBár olyan értelemben nem szerem mennyire gyakoriak, mert a nyelvben a megy meg a jön sokszor szerepe, de mondjuk a me
+50:4350 minutes, 43 secondsalak az a me het feltételes alaknak az egyetlen olyan, ami a fel a hat het követi. A mé az csak a előtt, hogy mész.
+50:5450 minutes, 54 secondsTehát nyilván nagyon kevés toldék előtt jelenik meg egy ilyen tőallamorf, de ez minket nem érdekel. Tehát ha
+51:0151 minutes, 1 secondcsinálunk egy rendszert, akkor mindennek van helye, és lesznek olyan rubrikák, olyan konstellációk, kombinációk,
+51:0851 minutes, 8 secondsamikben nagyon sok elem fog beleesni, vagyis annak nagyon sok felelmeg és lesz, amiben nagyon kevés. Na most amiben nagyon kevés esik, azokat úgy
+51:1751 minutes, 17 secondsszokták mondani hagyományosan, hogy azok kivételek. A kivétel nem jó szó, mert nyilván ritkák, tehát olyanfajta
+51:2551 minutes, 25 secondsjegykonstellációt mutatnak, amiből nagyon kevés felel megcsak egy vagy kettő van ebben az esetben, és vannak nagyon produktívak,
+51:3351 minutes, 33 secondsahova rengeteg esik. De minket, amikor egy ilyen rendszert csinálunk, ez nem zavar, ez majd a statisztikai feldolgozásnál fontos, hogy melyik
+51:4051 minutes, 40 secondsmennyire gyakorik, de az, hogy van vagy nincs, azt ha jól fölsoroltuk az összes szempontot, akkor mindig minden szót be
+51:4851 minutes, 48 secondstudunk osztályozni. És hogy hányan vannak benne, ez egy másik típusú kérdés lesz. Na, akkor néhány példa erre, amit eddig csináltunk.
+51:5751 minutes, 57 secondsVan egy szótő tárunk, mondjuk ott van benne a hó, a havamorfjával együtt, meg a kép, ezige a képz allamorfiával
+52:0552 minutes, 5 secondsegyütt. Tehát ez a hú, ugye emlékszünk, a tő olyan, hogy balfele nincs semmilyen
+52:1352 minutes, 13 secondsfeltétele, vagyis ő egy igazi tő, amelyiket nem előz meg senki. Ezért a baloldali arca ezt jelzi ez a két egymáshoz fordított szöglet zárójel.
+52:2352 minutes, 23 secondsÜres nincs bale. Jobb fele van. Ő a névszó kérdésre pluszat válaszol. Mivel a névszóra pluszt válaszol, a főnév
+52:3152 minutes, 31 secondskérdést is megkérdezhetjük. Arra is plusz, hiszen nem melléknév. Azt, hogy szótárie, ez egy igazán független szempont. Igen. A hó alak egymagába áll
+52:4052 minutes, 40 secondskét betűköz között. Jó lesz. Arra, hogy elölképzelt azt mondjuk, hogy nem, nem, hátulképzett, mélyhangrendű. Arra, hogy
+52:4952 minutes, 49 secondsajakerekítéses se, ajakerekítéses e, arra azt kell válaszolnunk, hogy
+52:5852 minutes, 58 secondsazt hiszem, hogy rosszul válaszoljuk, ugye, merthogy a hó a hezből majd amikor
+53:0553 minutes, 5 secondsa mélyhangrendű lesz, hogy hóhoz. Ja igen mínusz van ittőle, bocsánat, egyel arra néztem.
+53:1053 minutes, 10 secondsa mínusz van írva, tehát ő nem számít, hogy a kerekítésese ebben az esetben a hosszében, mert a hosszból csak egy van,
+53:1853 minutes, 18 secondsde a ha lesz olyan toldék, aminél ez előfordul, akkor ő nem ilyen. Majd ezt a havak havat alaknál látjuk, hiszen az
+53:2653 minutes, 26 secondsak, ek, ok, ök többes szám alakból nem a havok ajakerekítéses, hanem a havak alakot kéri, bár ez a hón-nál nem nagyon játszik, és a h-nak nincs több összáma.
+53:3953 minutes, 39 secondsA hó allamomorfnak, tehát a hó hók, nincs hók, havak van, de az a tesója a hav, tehát annál fog megjelenni a többes
+53:4853 minutes, 48 secondsszám. Megnézzük, hogy a hav ugyanígy kezdődik a leírása. Persze még a hóé folytatódik. Nincsen szemérazása, nincs
+53:5653 minutes, 56 secondshomm, hód, csak havam, havad. Tehát mínusz perc. Nincs tárgyesete, hót, csak havat, alul meg ott a plusz.
+54:0454 minutes, 4 secondsHa akkuzatívusban van, akkor ugye a a hó esetében, ha lenne hót, akkor nem volna
+54:1254 minutes, 12 secondshozzá kötőhang, de ez most minket nem érdekel. A datívus hónak van datívusza és havnak nincs datívusza.
+54:2154 minutes, 21 secondsÉs a hó az, ahol a instrumentális valvel megjelenik véve. Tehát hóval val, nem balcaldal, hanem val. Míg a havalaknak
+54:3154 minutes, 31 secondsnincs. Havval olyan nincs. Tehát azt írtuk itt le, hogy a Halomorf névszói, főnévi, szótári alak hátulképzett, nem a
+54:3954 minutes, 39 secondskerekítéses, nincs többes száma, nincs személyir, nincs tárgyesete, van datívusa és van valvelkja. A hav pedig
+54:4654 minutes, 46 secondsolyan, hogy pont fordítva. Mondjuk azt, hogy komplementer viszonyban vannak, hiszen van többszáma van és így tovább.
+54:5554 minutes, 55 secondsNa most ugyanzt megnézzük a képeshez.
+54:5654 minutes, 56 secondsKépzelet. A kép ez egy olyan jószág, amelyik nem népszó, hanem mer ige szótári a képez. A képz nem állhat két
+55:0555 minutes, 5 secondsbetű között. Elölképzett, tehát képez head, képez leg, tehát magas hangrendű toldalékok jönnek és nem kerek a
+55:1355 minutes, 13 secondstoldalék, ami jön utána, hanem a kerék nélküli.
+55:1755 minutes, 17 secondsÉs ásés alakja, csak a képzés. Tehát a képznek vanés alak a képezés olyan meg
+55:2355 minutes, 23 secondsnincs. Tehát ez mondjuk példa arról, hogy milyenek lehetnek a szótövek. Na milyenek a toldalékok? Hát ott van
+55:3255 minutes, 32 secondspéldául az meg az, ezek a főnévi képzők, amik igéből csinálnak főnevet. Na ők igazi, nem terminális toldalékok.
+55:4155 minutes, 41 secondsKét arcuk van.
+55:4355 minutes, 43 secondsFölső arc az, hogy ő amit ő szeretne maga előtt, tehát bal
+55:5155 minutes, 51 secondsfele mindig az az első, hogy ne legyen névszó. Hát persze, mert ő ige után jöhet csak. Mászkálás, gondolkodás,
+55:5955 minutes, 59 secondsképzés majd. Tehát nem névszó, hanem igei, amit bal oldalt kér. Ami előtte van az ásnál, az néhangrendű, tehát nem
+56:0756 minutes, 7 secondselőlképzett. És ő olyan, hogy ő az ás tulajdonságú ilyen, és ezt fogja tovább
+56:1556 minutes, 15 secondsadni a másik arcával, amelyik jobb fele van, hogy ő innentől névszónak látszik.
+56:2056 minutes, 20 secondsTehát egy ilyen metamorfózison megy át, bejön balról a mínusz névszó az ige, gondolkodás, de innentől egy főnév megy
+56:2856 minutes, 28 secondski népszó. Főnév a gondolkodás szótári alak, nem előlképzett, nem kerek. Van többzáma gondolkodás sok. Van neki
+56:3756 minutes, 37 secondskötőhangzója gondolkodást nincs a t-nek kötőhangzója gondolkodásnak gondolkodásal.
+56:4456 minutes, 44 secondsAz és ugyanígy csak a magas párja. Na most az akek ugye a többes szám jele az is nagyon hasonló, csak ott a igazán
+56:5256 minutes, 52 secondsfontos az, hogy a többes számnak van kötőhangz kötőhangja, de mind a két
+56:5956 minutes, 59 secondsharmónia játszik. Ugye az akan, hogy elölképzésben mínusz, kerekítésben mínusz, vagyis hátulképzett nem kerek. A
+57:0757 minutes, 7 secondshátulképzett kerek volna az ok, batok, illetve az eknél a elölképzett nem kerek az ek, előlképzett kerek az ök
+57:1657 minutes, 16 secondsfőnökök. De ez most csak ez a kettő van itt. És akkor vettünk két terminális toldékot, a nakot meg a neket. Na, ná, hogy nekik a kifelé menő második
+57:2557 minutes, 25 secondstulajdonságú semmi, mert terminálisok nem megy tovább. Mit igényelnek ők, hogy névszó legyen előttük tőlük valra a nak
+57:3357 minutes, 33 secondsesetében mély hangrendű legyen ez a névszó, és szeresse a datuszokat. Itt már látszik valami. Itt az látszik, hogy
+57:4057 minutes, 40 secondsa toldalék, tehát a relatív toldalék, a toldalékság meghatározza, hogy milyen tulajdonságát szeretné az előtte levő
+57:4957 minutes, 49 secondsrelatív tőnek. Tehát a toldalék, mindig a jobboldali elem az, amelyik a baloldalit igényli. Vagyis amikor
+57:5657 minutes, 56 secondsösszerakok egy tövet egy toldalékkal, a tőnek 1000erféle tulajdonsága van, mert ő részt tud venni különböző
+58:0358 minutes, 3 secondstoldalékolásba. A toldék viszont ott konkrétan megmondja, hogy ő milyen. Nak azt mondja, hogy kérek egy névszót.
+58:1158 minutes, 11 secondsTehát háznak az tök jó, számítógépnek is jó, de az a ne kell jó, mert névszó, mert elöl vagy
+58:1858 minutes, 18 secondsnem elől képzettek, és mind a kettő ház is számítógépés föl tudja venni a datívus. Bagoak, de bagy nem tudja fölvenni a datívustus, tehát bagnak az nem fog unifikálódni.
+58:3058 minutes, 30 secondsHát ez az unifikáció, amiről eddig beszéltünk, ezt majd mindenki tanulmányozgatja. Otthon van egy ilyen kis pseudó kódos valami, ami hát ezt a
+58:3758 minutes, 37 secondsrekurzív játékot játssza el, ahol a mi jegyeink most borzasztó egyszerűek, egy emeletmélyek voltak, és az értékek hozzájuk rendelve bináris értékek
+58:4658 minutes, 46 secondsvoltak, tehát egy picit ágyúva lövünk verébbre, de ugye mondtuk, hogy az unifikáció az nem a morfológiának vagy ennek a nagyon egyszerű szerkezetnek az
+58:5558 minutes, 55 secondsunifikációja, hanem bármié lesz majd később szó bonyolultabb unifikációról is. Na most ez a morfológia ezzel így
+59:0259 minutes, 2 secondsműködik. Ha látom leírva, hogy hó két betű között, akkor nekem egy fontos, hogy plusz szótári legyen, hogy el
+59:0859 minutes, 8 secondstudjam fogadni. Mivel az ő jegyérték adatbázisában a szótári jegy pluszértékű, boldogan azt mondom, hogy ő
+59:1759 minutes, 17 secondslétezik. Ugyanez haf le van írva két betűközt közé ránézek, szótári egy mínusz értékű nem jó. A toldékot a szó
+59:2459 minutes, 24 secondsH-nak, és szétszedem a H-nak szót valahogy. Hát nyilván megpróbálom a H-val, olyan tő nincs és aktoldalék
+59:3259 minutes, 32 secondsnincs, de megpróbálhatom, hogy a hón esetleg olyan tő van, de az akt oldalék nem jön hozzá. Hónat oldalik nincs.
+59:4059 minutes, 40 secondsSzóval szép lassan kijön, hogy a hó meg a naka két lehetséges összetevő. Fogom a hóalakot, ami egyik azt mondja magáról,
+59:4759 minutes, 47 secondshogy ő névszó, azt mondja magáról, hogy hátulképzett, és azt mondja, hogy datusz. és még mond 100 dolgot, ami picit se érdekli a naaktoldalékot, mert
+59:5659 minutes, 56 secondsmint mondtuk, a jobboldali elem, a mindenkori relatív tő kér valamit.
+1:00:011 hour, 1 secondLegyél névszó, legyél névhangrendül, legyél datívus szerető. Ha megvan, akkor én egy jó szóalak vagyok, vagyis az
+1:00:081 hour, 8 secondsunifikációja a hó jegyeinek és a nakénak azért jön össze, mert van egy rakás indiferens dolog a hótőben,
+1:00:161 hour, 16 secondsde mint mondtuk, a semmivel minden unifikálható. És van egy csomó olyan, ahol a jegyek, a népszójegy plusz értékű, elől egy mínuszértékű, datjegy
+1:00:241 hour, 24 secondsplusz értékű stimmelnek, hiszen az ösvény végén ugyanaz az atomiérték, pont ott van plusz, pont ott van mínusz.
+1:00:311 hour, 31 secondsSzembe a havnak alakkal, ha leírta volna valaki, ott a mínusz dat meg a plusz dat ötközik. A dat jegynek annak az
+1:00:371 hour, 37 secondsösvénynek kicsit rövid az ösvény. Az értéke egyiknél plusz, másiknál mínusz. Havat.
+1:00:451 hour, 45 secondsUgyanúgy jó, csak akkuzatívussal játszuk, nem datívusszal, hóvel. Jó lenne azon az alapon, hogy a hó-val jó.
+1:00:521 hour, 52 secondsTehát a hó szereti az instrumentális és v-vel kezdődő instrumentális szeret valvelt. De sajnos az elölképzésnél van
+1:01:001 hour, 1 minuteegy mínusz plusz. És akkor vegyünk egy ilyen bonyolultabb példát, mintogy képzésnek. Ugye itt úgy indulunk, hogy a
+1:01:061 hour, 1 minute, 6 secondsképz az egyető mínusz névszó és előképzett és van utána lehetőség
+1:01:131 hour, 1 minute, 13 secondsásés felvételére. Az és mint relatív toldalék a képz és azt mondja, hogy szeretnék egy igét, ami előlképzett és
+1:01:211 hour, 1 minute, 21 secondsszeresse az ásést. És lám második sor írja elő. Első sorral unifikálható.
+1:01:271 hour, 1 minute, 27 secondsKi magából az outputot? A képzés, hogy én egy plusz névszó vagyok, hiszen a továbbiakban jobb felé én már népszóként
+1:01:351 hour, 1 minute, 35 secondsviselkedek, meg elölképzelt vagyok meg 100 dolgot.
+1:01:381 hour, 1 minute, 38 secondsÉs akkor jön a nekem azt mondja, hogy névszó van előttem, elől képzett, szereti a datívuszt, akkor jó. És a
+1:01:451 hour, 1 minute, 45 secondsképzés eredményeként előálló hosszú jegyérték pár sorozat azt mondja, hogy én ilyen vagyok. Tehát a képzésnek
+1:01:541 hour, 1 minute, 54 secondsstring megfelel a magyar morfológiának, mert az ő hozzájuk rendelt kis mini dagok, egyemelett magas kis
+1:02:021 hour, 2 minutes, 2 secondsjegyértékpárok valójában összekapcsolhatóak az unifikáció mentén.
+1:02:081 hour, 2 minutes, 8 secondsTehát unifikáció nem morfológia, hanem itt beszéljük. elsősorban ciklusmentes irányított gráfok esetében, de ez az
+1:02:161 hour, 2 minutes, 16 secondselőbbi példában olyan lapos volt, hogy ugye egy magas is így föl se tűnt a hát néha kettő magas volt, mert ha nem névszó, akkor igen, de ha névszó, akkor
+1:02:241 hour, 2 minutes, 24 secondsazon belül fő név. Tehát azért még ott egy picit már magasabb a struktúra, de nagyon kis lapas struktúrákról van szó.
+1:02:321 hour, 2 minutes, 32 secondsA morfológiai leírásnál ezt nagyon jól tudjuk használni. A dag nem fa, mert bizonyos csomópontjainak két anyukája
+1:02:391 hour, 2 minutes, 39 secondsvan, és majd a szinttaxisnál lesz ez igazán fontos, akkor majd az unifikációt folytatjuk. Na most ugye eljutottunk
+1:02:491 hour, 2 minutes, 49 secondsoda, hogy a szavakat így szét tudjuk szedni toldalék, tőre és toldalékra valamilyen szinten. Az azt jelenti, hogyha tudjuk, hogy mi a tve meg mi a
+1:02:571 hour, 2 minutes, 57 secondstoldalék, akkor a kettőt együtt egy szóalaknak tekinthetjük. De azt nem mondhatjuk, hogy van még a
+1:03:061 hour, 3 minutes, 6 secondsadatbázisunkban olyan tő, ami nincs benne, mert hát azért van adatbázis, ott véges sokan vannak, és ami nincs benne, az nyilván nem jó. És a formális nyelvi
+1:03:151 hour, 3 minutes, 15 secondsdefiníció vagy Csomszki elgondolása, ami nincs a szótárban, az nincs. Na, hogy van ez szó? Ezt úgy kell elképzelni, hogy mint az elején mondtam, Csomski azt
+1:03:231 hour, 3 minutes, 23 secondsmondta, hogy egy pillanatképet csinálunk Snapcsoton, és akkor ami a nyelvben most van, azt lefényképezem. Ott nincs
+1:03:301 hour, 3 minutes, 30 secondsváltozás. ami akor akkor benne van az adat bázisában benne van és ha van egy másik nyelv amelyik ugyanabból a szókészletből áll egy pillanattal később
+1:03:391 hour, 3 minutes, 39 secondsbelekelő egy új szó nem tudom én Navali vagy Trump pár évvel ezelőtt most ezzel lehet vitatkozni hogy mi magyar mi sem
+1:03:471 hour, 3 minutes, 47 secondsde az biztos, hogy abba az értelemben magyar hogy magyar szövegbe használjuk és tldalékoljuk amíg ez a szó nincs benne addig hibásnak
+1:03:541 hour, 3 minutes, 54 secondsjelejük ha benne van az egy másik nyelvtank viszont ezt elmondhatja csomski hogy mi a szinkron al foglalkozunk, és az
+1:04:021 hour, 4 minutes, 2 secondsidőbeli változás az kívül esik a mi látókörünkön. Viszont amikor az ember nyelvtechnológiai eszközöket csinál, és mondjuk fölmegy a webre, ott állandóan
+1:04:111 hour, 4 minutes, 11 secondsjönnek új szavak. Tehát nem engedhetjük meg azt a luxust, hogy azt mondjuk, hogy a szótárunk zárt, ami benne van tő, az van. Ugye azt mondtuk, hogy ami benne van toldalék, annak benne kell lennie.
+1:04:211 hour, 4 minutes, 21 secondsTehát a toldalékoknak 100%-ig listázan kell lenniük, de mondjuk a
+1:04:281 hour, 4 minutes, 28 secondstő adatbázis az akkor mekkora. Na hát, hogy ezt most, hogy ezt a guessinget, tehát kitaláljuk a töveket, ezt nem
+1:04:371 hour, 4 minutes, 37 secondsengedjük meg, akkor a szavak nagy részére Trumppal tárgyalt. Hát az a Trumppal oda van írva, hát ilyen szót mi nem ismerünk. Hibás. Ez nem volna jó.
+1:04:471 hour, 4 minutes, 47 secondsTehát ehhez kell egy ilyen kitaláló rendszer. Vagyis mondjuk azt, hogy a mi kis szótári adatbázisunk
+1:04:541 hour, 4 minutes, 54 secondsegyrészt rögzített elemekből áll, másrészt mégis csak nyitott. Tehát nem csak azok az elemek vannak benne, amik benne vannak. hanem bizonyos
+1:05:011 hour, 5 minutes, 1 secondfeltételeknek megfelelő bármilyen string benne van, de először persze okos dolog azokból gazdálkodni, amiket ismerünk.
+1:05:081 hour, 5 minutes, 8 secondsAzért minden szót ismeretlennek föltételezni az elég lassú volna, de ha odajutunk, hogy nem ismerjük a tövet, akkor próbálkozhat egy ilyen gesesszel.
+1:05:161 hour, 5 minutes, 16 secondsNa, erről lesz szó most a következőkben.
+1:05:201 hour, 5 minutes, 20 secondsArról van szó, hogy keresünk egy jó kis szóalakot, amelyik többé-kevésbé megfelel ennek a játéknak, amint
+1:05:271 hour, 5 minutes, 27 secondsszerintünk. Kitaláltam azt, hogy a kacsó szó, ami hát ma már mondhatjuk, hogy mai magyarban nem olyan gyakori, de azért
+1:05:351 hour, 5 minutes, 35 secondsegy átlagosan művelt magyar azért tudja, hogy hölgyeknek a kacsójáról van szó. Ha mondjuk a kacsószó nincs benne, csak
+1:05:431 hour, 5 minutes, 43 secondsazért olyan szóval próbálom, amit ismerünk, mert így könnyebb demonstrálni a példát. Nincs benne a mi kis adatbázisunkban, de látjuk a szövegben,
+1:05:511 hour, 5 minutes, 51 secondsvagyis hát a mi kis nyelvi módszerünkkel neki esünk a szónak, és azt látjuk, hogy kacsónak, akkor a magyar ember tudja,
+1:05:581 hour, 5 minutes, 58 secondshogy ez van, de az adatbázis azt látja, hogy neki ilyen nincs. Tehát a kacsónak szó nem szerepel az adatbázisban, így van.
+1:06:071 hour, 6 minutes, 7 secondsAz a megdöbbentő, hogy semmilyen megkötésünk nincs arra, hogy mi lehet magyarul alany esetben álló főnév. Tehát
+1:06:151 hour, 6 minutes, 15 secondsbármilyen betűsorozat elvileg lehet. Na most nyilván erre lehet azt mondani, hogy ha egy magáhangzó sincs benne, az nagyon furcsa. És ebben vannak ilyen
+1:06:231 hour, 6 minutes, 23 secondsszavakbakok, és akkor VLK az három máshangzó, de mondjuk 10 más hangzó még ott sincs. Ha meg van benne már
+1:06:301 hour, 6 minutes, 30 secondsmagáhangzó itt meg ott, akkor tehát az biztos, hogy a kacsónak szó potenciális főnév.
+1:06:371 hour, 6 minutes, 37 secondsNem tudhatjuk, hogy a Trump szó is potenciális főnév. Nem tudhatom, hogy mi a Trump szó nyilván ha nem láttam még előtte, akkor nem vagyok benne biztos, hogy micsoda, de azért valószínű főnév.
+1:06:481 hour, 6 minutes, 48 secondsA kacsónak szót pedig ha nem láttam előtte, mint ahogy a mi rendszerünk nem látta előtte, azt mondja, hogy szerinte ez egy lehetséges főnév. És nyilván, ha
+1:06:571 hour, 6 minutes, 57 secondsolyat akarok mondani, ami elbizonytalanít mindenkit, akkor áprilőasnak a tavasz című versének az
+1:07:041 hour, 7 minutes, 4 secondsegyik sorában van ez, hogy egy ős evojét az égbe kiállt.
+1:07:101 hour, 7 minutes, 10 secondsÉs kérdés, hogy aki nem tudja, megint csak találós kérdés, hogy az evoé az egy
+1:07:161 hour, 7 minutes, 16 secondsszó, vagy az evoét az egy szó, egy ős evoét, egy ős apa, vagy nem tudom,
+1:07:231 hour, 7 minutes, 23 secondslehetne alanyeset. Egy ős EVO kötőjel tér nem így van írva. Lehet tárgyeset.
+1:07:291 hour, 7 minutes, 29 secondsAmíg én nem tudom, hogy az EVO-t az egy alanyesetű vagy Evo plus tárgyeset, addig bizony-bizonytalan vagyok. Csak érzem, hogy ez nem annyira vicces, de
+1:07:371 hour, 7 minutes, 37 secondsnagyon vicces, hogy például a magyarban az Ondok nevű állatnak a vakváltozatát
+1:07:451 hour, 7 minutes, 45 secondsismerjük vakondokként, de az élet úgy hozta, hogy azt az okot a végén az emberek többes számnak vélték. És ma már
+1:07:521 hour, 7 minutes, 52 secondsvan olyan, hogy vakond, a kis vakond vagy a vakond nadrágja, de valójában amikor létrejött, akkor a vakból meg az ondokból rakták össze. De azt az UK-t a
+1:08:011 hour, 8 minutes, 1 secondvégén sokan nem tudták, hogy többes száme-e vagy sem. Tehát létezik az a probléma, hogy nem tudom, hogy valaminek
+1:08:081 hour, 8 minutes, 8 secondsa lehetséges vége az egy toldalékolt alak evoé evoét, vagy egy alapalak evoét
+1:08:151 hour, 8 minutes, 15 secondsvakondok vakondok. Na, induljunk el abból, hogy a gép nem tudja. Tehát ez lehet, ez megjegyzi, hogy akár lehet
+1:08:221 hour, 8 minutes, 22 secondsfőnév is. Aztán elindul hátulról, mert ugye okos a rendszer, és tudja, hogy a K az egy létezőt oldalék a magyarban, hiszen nő, nők, autó autók. Működik.
+1:08:331 hour, 8 minutes, 33 secondsIgen, de azt is tudja ez az okos rendszer ezekre a előbb csinált jegyérték párokra építve, hogy ahhoz,
+1:08:411 hour, 8 minutes, 41 secondshogy a K menjen, ahhoz az előtte levő, mert mondjuk okos, nagyon okos fonológiailag a rendszer, előtte mindig
+1:08:481 hour, 8 minutes, 48 secondsmegnyújtja. vagy hosszú a magáhangzó nő autó, vagy ha nem, akkor oszlót, tehát
+1:08:551 hour, 8 minutes, 55 secondsabban a pillanatban, hogy egy formálisan rövidót teszek oda, akkor a tárgyesetben már vessző van a tetején és hosszú Óval
+1:09:031 hour, 9 minutes, 3 secondsvan írva. Vagyis nem lehet főnév Kes számmal, mert akkor kacsónák volna, de hát itt kacsóna van, ka pedig nem lehet
+1:09:121 hour, 9 minutes, 12 secondsegy szar k-val folytatva, hiszen vagy őneki kellene hosszúnak lenni, vagy vagy hosszúnak kéne lennie mindenképp. No, akkor leveszem az akoldalékot, hiszen a házaknál ezt láttuk, hogy van.
+1:09:241 hour, 9 minutes, 24 secondsAzt meg onnan tudja a rendszer, hogy meg van neki mondva, hogy az ak, az úgynevezett nyitótövű főneveinknek a
+1:09:321 hour, 9 minutes, 32 secondsvilága rendkívül zárt. Az történetileg alakult ki, és az ak nem produktív többes szám. Tehát akinek ilyenje van,
+1:09:401 hour, 9 minutes, 40 secondshogy házak ak, az annak örülhetünk, hogy ő beletartozik ebbe a főnévi kategóriába. De ha nem
+1:09:491 hour, 9 minutes, 49 secondstartozik bele, megnézzük, kacsón az nincs benne. Tehát ahol a házak föl van sorolva és vegyük észre, hogy nagyon kevés van.
+1:09:581 hour, 9 minutes, 58 secondsMegint házifat lehet gondolkodni, min van ak többes száma, de a kacsón nem ilyen. Tehát kidobjuk azzal, hogy az ak ugyan jó, de a kacsón nem felel meg az ak elvárásának.
+1:10:081 hour, 10 minutes, 8 secondsItt van a nak. Vegyük a többes szám harmadik személyű nakot, hogyha ez egy igelen lépjünk át. A nak tényleg egy
+1:10:151 hour, 10 minutes, 15 secondstöbbeszám, harmadik személyű ige. Itt oldalék játszanak, nem tudom én, ugranak, gondolkodnak,
+1:10:241 hour, 10 minutes, 24 secondskacsónak. Na jó, de megint csak nagyon érdekes, és megint tudja a nyelvész biztosan és nyilván a nyelvész beleteszi
+1:10:311 hour, 10 minutes, 31 secondsebbe a rendszerbe tudását, hogy az ige az egy zárt osztályt alkot. Magyar igét csinálni. Tehát igét csak képzővel lehet
+1:10:391 hour, 10 minutes, 39 secondscsinálni. Önmagában, ha a kacsó szó nem képzett, tehát igek képzővel létrehovezott szó, akkor benne kéne
+1:10:461 hour, 10 minutes, 46 secondslenni abban a relatíve szűk listában -2000 igénk van, amelyik
+1:10:521 hour, 10 minutes, 52 secondszárt. Tehát nem ige csak úgy képződik, hogy zképzővel, lképzővel bármizni, bármit ellel ellátni lehet.
+1:11:021 hour, 11 minutes, 2 secondsÉs ezek az igék, akkor automatikusan főnévből képződő igék. Tehát akkor nyilván a végükön a Z vagy az elle
+1:11:101 hour, 11 minutes, 10 secondslátszana. És ez mindig így van. Ha nem látszik, akkor annak az úgynevezett népetimológia az oka egyébként. Tehát,
+1:11:171 hour, 11 minutes, 17 secondshogy vannak olyan Z-re vagy l-re végződő szavaink, amik valójában nem képzők, csak az emberek azt hitték. Ugye ez a népetimológia, amit az előbb a vakondos
+1:11:251 hour, 11 minutes, 25 secondspéldán is mondta. Tehát valakik azt hiszik, hogy az egy képzett alak. És olyan furcsa a magyar, hogy a magyarországi területeken jelentős
+1:11:341 hour, 11 minutes, 34 secondsszámba meglevő cigány nyelveken az lre végződő cigány, vagy a szlávnyelvek múltidejében nevű L ho olyan igealakot,
+1:11:431 hour, 11 minutes, 43 secondsamit a lokális közösség, a lovári nyelven beszélők vagy a szlávnyelveken beszélők használnak, és ezek kétnyelvűek
+1:11:511 hour, 11 minutes, 51 secondsis veszik a szavakat. hallják a többiek is, és azt gondolják, hogy azok a szavak, amik erre végződnek, azok azért
+1:11:581 hour, 11 minutes, 58 secondsvégződnek elre, mert ők valójában elképzők, mint ahogy gépel vagy bridgeel, vagy nem tudom én mit csinál,
+1:12:061 hour, 12 minutes, 6 secondsaz elképző az megmozdítja a bridge kártyát, vagy a gépet, hogy gépelek vele. Vagyis azok a szavak, amiket a
+1:12:141 hour, 12 minutes, 14 secondsslang előszeretettel behoz, és például éppen a lovari nyelvből nagyon érdekes, hogy sokszor erre végződnek, mert van
+1:12:211 hour, 12 minutes, 21 secondsolyan igealaka a lováriban, és akkor lesz a jal, szovel, kamel, cigány szavakból magyar szó, mert a magyar
+1:12:301 hour, 12 minutes, 30 secondsember úgy gondolja, hogy ezek elképzősek. Persze, ha ez nem nagyon működik, mint a kamelbe, akkor addig torzítja a többi maghangzót, hogy ugye
+1:12:371 hour, 12 minutes, 37 secondsaz lett a komál. Nem komálom ezt a dolgot. Tehát ez a szeretni kedvelni típusú dolog. Hát végül is a komaszóból
+1:12:451 hour, 12 minutes, 45 secondski lehetett volna találni, de az nem olyan, hogy a komaszó létezett és hozzájött egy elképző, hanem a Kamela annyira szokatlan volt, hogy addig torzult a dolog, míg egy értelmesnek
+1:12:531 hour, 12 minutes, 53 secondslátszó magyar képző nem lett belőle. Na de a kacsó nem erre nemzére végződik, ilyen igen nincs. Ez sem jó forma. Ha a
+1:13:011 hour, 13 minutes, 1 secondfőnévi nakot veszem, a datívusi nakot, tehát azt, hogy naknek, valaminek, akkor leválasztom előtte a string, akár főnév
+1:13:111 hour, 13 minutes, 11 secondsis lehet, fogalmam nincs, hogy az-e. De az biztos, hogy semmilyen evidencia nincs arra, hogy a főnévi nap előtt, hiszen a mély hangrendű magangzók,
+1:13:191 hour, 13 minutes, 19 secondsminden arra utal, hogy a datnak megfelel a kacsónak a stringje. Vagyis második találatunk az első teljes string mellett
+1:13:261 hour, 13 minutes, 26 secondsaz, hogy esetleg kacsó a tveek. Aztán megyünk tovább, mert ugye nem hagyjuk abba. Hát az ú ő is egy produktív képző,
+1:13:341 hour, 13 minutes, 34 secondsa melléknévi igenévé, de akkor a kacs ige kellene, hogy meglegyen. Itt már kétszeresen nem lesz meg. A kétszeresen
+1:13:411 hour, 13 minutes, 41 secondsúgy azt értem, hogy előbb mondtam, hogy az igék eleve egy zárt csoportot alkotnak. Másrészt az egy szótagúak.
+1:13:491 hour, 13 minutes, 49 secondsTehát egy szótagut meg különösképpen nem lehet létrehozni. Ezok általában régiek. Meg ilyen első órákon beszéltünk róla.
+1:13:551 hour, 13 minutes, 55 secondsTehát ilyen szó, hogy kacs az igék osztályában nincs. Ergo, ez nem lehet egy igenév, mert nincs olyan ige, amiből ezt igenet csinált volna. Pedig ha
+1:14:031 hour, 14 minutes, 3 secondsigenév volna, lehetne egy datusz a végén.
+1:14:061 hour, 14 minutes, 6 secondsÉs akkor még mindig van az, hogy lemegyek odáig, hogy csónak, akkor azt megtalálom, és megnézem, hogy van-e olyan, hogy kade, de hát olyan főnevet nem találok, mert mondjuk a főnév főnév
+1:14:141 hour, 14 minutes, 14 secondsösszetétel is egy lehetséges morfológiai valami, hogy két főnév egybe van írva, és a magyarban jelöl egybe,
+1:14:231 hour, 14 minutes, 23 secondstehát például nem tudom én, ha ez facsónak volna, akkor az lehet egybe írva, de ez kacsónak és k olyan nincsen.
+1:14:301 hour, 14 minutes, 30 secondsVagyis a ezek után már tovább nem tudunk menni. A földbontásainkból a Gesser rájön, hogy két lehetséges van, de ezt
+1:14:391 hour, 14 minutes, 39 secondsegy példából nem tudja eldönteni, hogy melyik. És neki nincsen nyelvi előélete.
+1:14:451 hour, 14 minutes, 45 secondsNem élt itt a földön magyar emberként, mint ahogy a magyar gyerekfölnő és a kacsó szóval nem tudom én, 10 éves korában találkozik az irodalomórán.
+1:14:541 hour, 14 minutes, 54 secondsEgyszerűen a többit meg addigra már megtanulja. Hát ez a rendszer egyszerre ezt megkapja. Hát mit tud csinálni?
+1:14:581 hour, 14 minutes, 58 secondsStatisztikát. Ha sok-sok szöveget kap egyébként az ember, hogy azt csinálja, akkor a szóalaggyakoriság. Tehát hogyha a kacsónak tényleg egy igazi tő volna,
+1:15:071 hour, 15 minutes, 7 secondsakkor volna esély, hogy van tárgyesete meg grare alakja meg minden, és akkor lenne kacsónak ott kacsónakra. Ahogy nézem a szövegkorpust, olvasom be a
+1:15:151 hour, 15 minutes, 15 secondsszázezreket, milliókat, 10 milliókat, milliárdokat, még mindig nem jön egy se.
+1:15:201 hour, 15 minutes, 20 secondsAz gyanús. Ezzel szemben, ha a kacsó lenne a tő, azt is megnézem, hogy van-e toldékolt alak és meglepőm oldal a kacsót kacsóra kacsói satöbbi, elkezd
+1:15:291 hour, 15 minutes, 29 secondslenni. Ha pedig ezek olyanok, hogy mindegyikből a kacsóalakra megyek vissza, egyre nagyobb az esélyünk, hogy a kacsószó egy létező szó. De ezt csak
+1:15:381 hour, 15 minutes, 38 secondsgyakorisági alapon tudjuk elmondani. Egy esetében nem tudhatjuk, ahogy a EVO is egy ilyen ravasz, hiszen nem nagyon
+1:15:451 hour, 15 minutes, 45 secondsszokott a se az Evoét, se az Evoé olyan sokszor előfordulni, hogy az embernek evidencia legyen, hogy melyik. Tehát így
+1:15:521 hour, 15 minutes, 52 secondsműködik egy gesszernek a logikája. Tehát ki tudjuk azt is találni, ami nincs benne a szótárunkban, de nyilván egy picit drága, mert itt időigényes elma,
+1:16:011 hour, 16 minutes, 1 secondés utána még várni is kell, hogy sok alakra ráfussunk, hogy megmondhassuk.
+1:16:051 hour, 16 minutes, 5 secondsTehát csak akkor tudunk dönteni, ha elég sokszor hallottuk. Ha nem, akkor bizonytalanok vagyunk. Mindenki tegye a szívére a kezét egy ismeretlen szónál,
+1:16:131 hour, 16 minutes, 13 secondsnem kérdez vissza, mert egy kicsit vár, hátha rájövök a környezetből, hogy azt hogy kell használni, és akkor megmondom, hogy ez egy micsoda. Hát ilyet csinál a gép is.
+1:16:241 hour, 16 minutes, 24 secondsMost a következő lépés, amivel foglalkozni kell, hogy megvan a lehetséges szó valamilyen formában, hogy hát
+1:16:321 hour, 16 minutes, 32 secondsvalamilyen módon mondjuk a leválasztottuk a toldalékot, de még
+1:16:381 hour, 16 minutes, 38 secondsmindig lehetséges az, hogy több megoldás van. Az egyik toldalék ugye a kacsónaknál is, hogyha bejött volna az,
+1:16:451 hour, 16 minutes, 45 secondshogy az a NA egyik ige, másik főnév, akkor meg kellett volna kérdezni, hogy melyik, mint ahogy a várnak esetében meg
+1:16:531 hour, 16 minutes, 53 secondskell kérdezni, hogy most melyik várra tetszik gondolni, mert így önmagában ugye én mondom, hogy várnak senki nem tudja. Ahhoz szöveg kell,
+1:17:021 hour, 17 minutes, 2 secondshogy a várnak menet, felszálltam a 16-os buszra a szélk vagy mit tudom én. A a az egyértelmű. És az, hogy a barátaim már
+1:17:111 hour, 17 minutes, 11 secondsórák óta várnak, akkor nyilván egyértelmű abban a környezetben, hogy ez melyik, de amíg nincs környezet, nem tudhatom. Erre való a szófeli
+1:17:191 hour, 17 minutes, 19 secondsegyértelműsítés. Tehát van a szó a string két betűközött. És nekem meg kell mondanom, hogy melyik a töve vár, de milyen címkejű vár, főnévi vár igei vár.
+1:17:301 hour, 17 minutes, 30 secondsTehát ezt úgy csinálom meg, hogy a mondatot tokenekre, tehát egységekre bontom,
+1:17:381 hour, 17 minutes, 38 secondsszavakra meg szóközi központozási jelekre, és mindegyikhez rendelek egy címkét, aztán nekifut egy
+1:17:461 hour, 17 minutes, 46 secondsilyen program, amiről most fogunk beszélni, és elmondja, hogy mi az a címke, ami a mondott szavainál ahhoz a
+1:17:531 hour, 17 minutes, 53 secondstőhöz kapcsolódik. Tehát a várnak tényleg vár a töve, de melyik? az egyik vagy a másik, vagy adott esetben még
+1:18:021 hour, 18 minutes, 2 secondsszerencsétlenebb módon ugye elmondja, hogy a szemetek esetében a szemét vagy a szem a tő. Mind a kettő ugyan főnév, de
+1:18:101 hour, 18 minutes, 10 secondsnem mindegy, hogy melyik tő az, ami adott környezetben előfalul. Itt már persze furcsa jelentésbeli probléma is van, hogy egybe esik két teljesen különböző szónak a egyik alakja.
+1:18:221 hour, 18 minutes, 22 secondsUgye más nyelvekben a ilyen egybeesések azok, hogy két alak szerencsétlen módon egybe esik. Ilyen a magyarban is van,
+1:18:311 hour, 18 minutes, 31 secondshogy a daru meg a daru egybe esik, de a szófajuk nem különbözik, csak az egyik madár, a másik meg gép. Crin ugyanígy
+1:18:381 hour, 18 minutes, 38 secondsvan, de a magyarban mondjuk vannak olyan morfológiai esetek, mint az, hogy szállnak a darvak, akkor mindannyian
+1:18:441 hour, 18 minutes, 44 secondstudjuk, hogy nem a emelők szállnak. És a darvaks szónak a formájából tudjuk, hogy ez a darunak a régi és többes száma, de
+1:18:531 hour, 18 minutes, 53 secondsitt a szemetek meg a szemetek esetében egy véletlen egybeesés van két teljesen különböző tőről. Tehát a szótő szem vagy
+1:19:011 hour, 19 minutes, 1 secondszemét, aztán mégis egybe esik a ragozott forma. Szóval van feladata az egyértelmisítőnek megmondani, hogy melyik a tő és mi a szófaja. Ezt általában markov modellekkel csinálják.
+1:19:121 hour, 19 minutes, 12 secondsA Markov modell az valójában ugye ahhoz a Markov lánc az egy ilyen rákövetkezéses játék, tehát diszkrét,
+1:19:201 hour, 19 minutes, 20 secondsmert nem folytonos dolgokról szól. Egyik dolog, következő dolog megszámolható, egy-kettő sok és valami sztohasztikus, valami valószínűségi játék a
+1:19:291 hour, 19 minutes, 29 secondsrákövetkezések sora. Na most a Markov, a Markov, aki egy személy volt, egy orosz
+1:19:371 hour, 19 minutes, 37 secondsszemély, azt vette észre, hogy van olyan folyamat, amit markafolyamatnak hívunk, hogy ahogy így múlik az idő, a későbbi
+1:19:461 hour, 19 minutes, 46 secondsállapot, ugye a jövőbeni állapotok, azok nem nagyon fognak függeni a múltbeliektől, tehát egy-két
+1:19:551 hour, 19 minutes, 55 secondsegymás melletti dolog határoz meg valamit, de tulajdonképpen nem nagyon sok. Tehát nem kell nagyon messzire
+1:20:021 hour, 20 minutes, 2 secondsmenni ahhoz, hogy amit így ránézek a környezetbe, annak a segítségével meg tudok határozni. Tehát olyasmi, mint ahogy a véges állapot automatánál
+1:20:111 hour, 20 minutes, 11 secondsmondtuk, hogy hát nem kell nagyon messzemenni, hogy elfelejtsük az előző állapotot, mert lépek egyet és már nem tudom, hogy mi volt az előbb. Na hát valahol ilyesmi a markó vis nagyon nem
+1:20:191 hour, 20 minutes, 19 secondsfügenek a korábbiaktól. Na de attól érdekes a markofolyamat, hogy van egy olyan változata, a rejtett, a hidden
+1:20:281 hour, 20 minutes, 28 secondsmarkov moda, tehát a rejtett mark modell, ami úgy néz ki, hogy ismerjük, hogy mi az, ami van, tehát mi az a
+1:20:361 hour, 20 minutes, 36 secondsgenerált szekvencia, amit a felszínen látunk, de a modell meg a hozzátartozó paraméterek nem jól láthatóak, tehát mi
+1:20:431 hour, 20 minutes, 43 secondsarra föl következtetünk. És ez a következés, ez ugye a belső szerkezetére következtetünk, hogy miért hozhatta
+1:20:511 hour, 20 minutes, 51 secondslétre. Tehát kicsit hasonlít a véges állapotú automatában, de el van nekünk dugva valami az, ami a működésének a lelke. És van egy ilyen rákövetkezési
+1:21:001 hour, 21 minutesvalószínűség, ami viszont segíti ennek a kitalálását. Tehát akkor a modell tulajdonképpen, ahogy így megyünk előre,
+1:21:091 hour, 21 minutes, 9 secondsicipici környezettől függ csak, tehát hogy ha ez volt előtte, akkor ő micsoda?
+1:21:141 hour, 21 minutes, 14 secondsÉs hát ha valamiről tudjuk, hogy milyen szófajú, milyen alakú, akkor a következő szónál már föl tudom használni, hogy az
+1:21:211 hour, 21 minutes, 21 secondselőzőnek tudtam, hogy mi a szófaja meg a címkéje. És akkor így léptelek végig az egész rendszeren, megfigyelem, hogy
+1:21:281 hour, 21 minutes, 28 secondsmilyen rákövetkezések vannak, és úgy építem föl ezt a modellt. Mindjárt itt mutatjuk, hogy hogy ezzel valahogy neki
+1:21:361 hour, 21 minutes, 36 secondstudjunk állni a egymás után következő szavak szófajának az egyértelműsítéséhez, vagyis hogy milyen
+1:21:441 hour, 21 minutes, 44 secondsszavak milyen szófajjal, milyen biztonsággal mondják meg, hogy a következő szó milyen szó, milyen szófajú. Na most ezt majd egy kicsit
+1:21:521 hour, 21 minutes, 52 secondskésőbb részletesen most elmondjuk, hogy ez egy lehetséges közelítése a ez a rákövetkezés, de vannak teljesen
+1:21:591 hour, 21 minutes, 59 secondsvalószínűség nélküli, valószínűségszámítás nélküli módszerek.
+1:22:031 hour, 22 minutes, 3 secondsVannak ilyen megszorításos módszerek, amik szabályok egyre megszorítóbbak, és annak a segítségével nézzük meg, hogy a környezetben mik lehetnek. Vannak
+1:22:121 hour, 22 minutes, 12 secondstranszformációs modellek, ami azt mondja, hogy ha ez ilyen, az meg olyan, akkor csinálok belőle egy amolyan. Ha ez ilyen, az meg amolyan, akkor megint.
+1:22:181 hour, 22 minutes, 18 secondsTehát átíró rendszert hozok létre. Ezek szabályalapúak és hát nyilván ők is a rákövetkezést is kihasználják, de nem
+1:22:261 hour, 22 minutes, 26 secondsvalószínűségi alapon, hanem úgy, hogy egyre több konstraintet, egyre több megszorítást, vagy egyre több ilyen transzformációt használnak. Na most a
+1:22:341 hour, 22 minutes, 34 secondsvalószínűségi modellek között, hát a rejtett markó modellt kezdtük az előbb. Na most akkor ugorjunk bele egy picit.
+1:22:401 hour, 22 minutes, 40 secondsTehát mi szeretnénk egy színke sorozatot, hogy névelő, főnév, főnév, ige, főnév. Mondjuk egy ilyet
+1:22:471 hour, 22 minutes, 47 secondsszeretnénk. és azt, hogy ez melyik a jó, hiszen mindegyik szónak lehet egynél több potenciális szófaja, és abból kell
+1:22:541 hour, 22 minutes, 54 secondskiválasztani a legjobbat. A következő módon csináljuk a rejtett markó madaral, amit az előbb valahogy halványan elővezettünk, abba az látszik, hogy egy
+1:23:041 hour, 23 minutes, 4 secondsilyent kell csinálnunk, a legjobb címke sorozatot, tehát nem egy elemet választok, hanem az egész sorozatot szeretném optimalizálni. A maximumát
+1:23:121 hour, 23 minutes, 12 secondsszeretném annak a valószínűségnek. A t az mindig a tagek, tehát a cinkék sorozata. A W meg a worldök a szavak
+1:23:201 hour, 23 minutes, 20 secondssorozata. Tehát azt szeretném maximalizálni annak a valószínűségét, hogy a címkéket a szavakhoz jól rendelem
+1:23:271 hour, 23 minutes, 27 secondshozzá, amit a base tétel segítségével ki tudok így fejezni ezt a valószínűség számításból. Hát a á vagy tanulták, vagy
+1:23:351 hour, 23 minutes, 35 secondsnem akkor fogják tanulni, de az biztos, hogy ez a t feltéve W az úgy kifordul P, tehát az a valószínű két valószínűség
+1:23:441 hour, 23 minutes, 44 secondsszorzatával válik fordítva. Tehát, hogy a V feltéve Torz PT-vel van egy feltételes valószínűség, meg egy teljes
+1:23:511 hour, 23 minutes, 51 secondsvalószínűség. És akkor ez a feltételes valószínűség úgy fejtendő ki, és itt a legalsó sorban látható, hogy az ijedik
+1:23:591 hour, 23 minutes, 59 secondsszó, feltéve, hogy ő az iedik szófajú, tehát annak a szónak az a szófaja, illetve a tagek, a címkék azok függenek
+1:24:081 hour, 24 minutes, 8 secondsattól, hogy mi az előző. Tehát egy mondjuk azt, hogy egy névelő volt, annak iszonyú kicsi a gyakorisága,
+1:24:171 hour, 24 minutes, 17 secondsgyakorlatilag nulla, hogy a névelő után ige jöjjön. Tehát például a névelő ige sorrend. Ha a névelő az i-usedik tag,
+1:24:241 hour, 24 minutes, 24 secondsakkor az iedik tag szinte biztos, hogy nem lehet. Igen. Tehát ezek a rákövetkezések, ez az egyik a címkék sorozatában való
+1:24:331 hour, 24 minutes, 33 secondsrákövetkezés, a másik a szóhoz, egy adott szóhoz hozzárendelt címkéknek.
+1:24:381 hour, 24 minutes, 38 secondsTehát a W feltév T középsősorban az a végigszalad a lehetséges szavaknak és a
+1:24:461 hour, 24 minutes, 46 secondshozzájuk rendelt címkéknek a feltételes valószínte feltéve, hogy ennek a szónak feltéve, hogy ez a címkéje szorozva a
+1:24:541 hour, 24 minutes, 54 secondskövetkezővel, következővel következővel, hiszen a nagy pillan más, mint a valószínűségek szorzata. És egy másik
+1:25:001 hour, 25 minutespedig minden címke az előzőnek a ö előző címkével, tehát feltéve, hogy az az először címke, annak a valószínűsége.
+1:25:101 hour, 25 minutes, 10 secondsTehát annak nagyon kicsi lesz, hogy az ige a névelő után jött, annak lényegesen, ugye főnév jött a névelő
+1:25:161 hour, 25 minutes, 16 secondsután az iedik, főnév az i -1 nével után, annak magasabb lesz. Azok is összeszorzódnak, kettő is
+1:25:231 hour, 25 minutes, 23 secondsösszeszorzódik, és ez lesz a legnagyobb, maximumra törekszünk. az, ahol kiválasztjuk, hogy melyik az a sorozat,
+1:25:311 hour, 25 minutes, 31 secondshiszen még egyszer látjuk, itt nem egy elemről van szó, hanem az a teljes mondatnyi szó és címke párokból álló sorozat, amelyik a legjobb nekünk. Tehát
+1:25:401 hour, 25 minutes, 40 secondsa rejtvarkó modellben ugye annyi van csak, hogy az i-us 1 és az i között nem föltétlen egyelemű, de itt most csak egyet nézek hátra, van egy ilyen
+1:25:491 hour, 25 minutes, 49 secondsrákövetkezéses lánc, és van egy másik alapmódszer, a maximum entrópián alapuló, ami a teljes környezetre vonatkozó információ. Tehát nem
+1:25:581 hour, 25 minutes, 58 secondsválasztom így szét, hogy a szavakhoz hozzárendelt címke és a címkék egymás utánja, hanem azt mondom, hogy van egy címke, tehát ott az van a kezemben, és
+1:26:071 hour, 26 minutes, 7 secondsfeltéve, hogy ennek a címkének ez a szó a lefedettje, és előtte pedig az a címke
+1:26:141 hour, 26 minutes, 14 secondsvolt. Ezt egyszerre kezelem. Tehát a a címkék egymás után járt, a hozzájuk rendelt szavak és az előző címkék
+1:26:221 hour, 26 minutes, 22 secondsegyütteséből. Kázi nagyobb környezet, amit így megfogunk. A kettő között csak annyi a különbség, hogy a Markov egy
+1:26:291 hour, 26 minutes, 29 secondsilyen direkt rákövetkezés, maximum entrópia pedig egy nagyobb egységről szól. De végül is az, hogy hány lépésben
+1:26:361 hour, 26 minutes, 36 secondsközelítem a dolgot, az mindjárt látszik, hogy majd a példáknál, hogy lehet több lépésbe is. Tehát a Markovnál nem csak egy elemet, egy előző elemet vhetek
+1:26:441 hour, 26 minutes, 44 secondsfigyelembe, hanem esetleg kettőt is van értelme. De ezt majd akkor. Na, itt van egy megszorításos modell, csak egy
+1:26:521 hour, 26 minutes, 52 secondspélda. Elzinki egyetemen dolgoztál ki az angol nyelvre, hogy veszem az azokat a szavakat. Sok table van az angol
+1:27:011 hour, 27 minutes, 1 secondadatbázisban. Sok igei azért sok igei, mert az angolban kevés toldék. Tehát nyilván egy igei alak van a table, az
+1:27:101 hour, 27 minutes, 10 secondslehet ige is, de az, hogy mindegyiknek, hogy ez infinitivus vagy nem harmadik személyű ige, nem látszik meg, mert csak
+1:27:171 hour, 27 minutes, 17 secondsabból derül ki, hogy a környezetben hogy viselkedik. Tehát azért van ilyen sok table, mert elvileg sok lehetséges
+1:27:231 hour, 27 minutes, 23 secondsmorfológiai kód tartozhat hozzá. Mebból is van kettő, collapsebből is van. És akkor az, hogy table might collapse,
+1:27:311 hour, 27 minutes, 31 secondsvagy the table might collapse, annak a lehetséges ilyen együtt előfordulásaira
+1:27:381 hour, 27 minutes, 38 secondsilyen szabályrendszeres megszorítások vannak, hogy ha ez van, akkor az jön utána, nem valószínűséges. Ha kettővel előtt ez van, akkor eggyel utána ez
+1:27:461 hour, 27 minutes, 46 secondslehet. Tehát a constraintek, mint látszik, 3600 szabályt csináltak. És feltéve, ha ilyen típusú szabályokból
+1:27:531 hour, 27 minutes, 53 secondskivagdossa a vastagon kihozottat, hogy ebben a mondatban a tableek főnévnek kell lennie, a collapsenek pedig egy olyan igének, amelyik itt éppen
+1:28:021 hour, 28 minutes, 2 secondsinfinitivusba áll, mert a my az, amelyik az infinitivust igényli. Ha nem lenne ott, hogy table collapsis, akkor az nyilván nem infinitivus volna, hanem egyes szám harmadik személyű.
+1:28:141 hour, 28 minutes, 14 secondsEz a megszorításos dolog. a transzformációsra egy hosszú ideég nagyon népszerű eszközt, a Brillgert
+1:28:211 hour, 28 minutes, 21 secondsmutatnám be. A Brill egy olyan számítos nyelvész volt, aki azt találta ki, hogy ilyen transzformációkba át tudom írni a
+1:28:291 hour, 28 minutes, 29 secondsdolgokat. És gyakorlatilag ha van egy címkézett korpuszom, akkor el tudom mondani, hogy a különböző címkéket hogy kell átírni feltérve, hogy előtte utána
+1:28:381 hour, 28 minutes, 38 secondsaz van. Tehát például, hogy az egy Z-t írd át Y-ra, ha előtte X áll, Z-t írd át Y-ra, ha az előtte W szó van. Tehát
+1:28:461 hour, 28 minutes, 46 secondslátszik, hogy címkérre is lehet referálni meg szavakra is, ami emlékeztet a markómodellnél a t-kre címkék és a w-kre szavakra való
+1:28:541 hour, 28 minutes, 54 secondsreferencia, de itt át kell írni, és ez van, és a következő, akkor írd át, és akkor egy új helyzet van, akkor megint ráengedjük a szabályt és megint és
+1:29:031 hour, 29 minutes, 3 secondsmegint, és mindaddig, amíg alkalmazható, addig csináljuk, ugye visszamegyünk itt a legalsó három szabályból, és mindig
+1:29:111 hour, 29 minutes, 11 secondskiválasztjuk, amelyiket tudjuk, és a végén nem lehet már alkalmazni, akkor azt mondjuk, hogy itt beállt a fix kontrolz jutottunk, akkor mi úgy
+1:29:181 hour, 29 minutes, 18 secondstekintjük, hogy ez az outputja a rendszernek. A Briltegert hosszú ideig csak néhány nyelvre csinálták meg, de nagyon sok évvel ezelőtt Megyesi Bea
+1:29:271 hour, 29 minutes, 27 secondsnevű svédországi magyar nyelvész megcsinálta magyarra is, tehát létezik Brilteger a magyarra. Nem ő működik a legjobban, de hosszú ideig ez volt a
+1:29:351 hour, 29 minutes, 35 secondslegjobb. Szabályaporak közül pedig nyilván a legjobb ilyen ravaszmódszer, ami a markó modellek használata. Itt ez
+1:29:421 hour, 29 minutes, 42 secondsa TNT nevű egyértelmisítő, amit ez a Torston Brvű úriember fejlesztő kí már
+1:29:481 hour, 29 minutes, 48 seconds18 éve. Ő egy Markov modellt használt, másodrendűt. A másodrendű azt jelenti, hogy nem csak egy taget nézek vissza,
+1:29:571 hour, 29 minutes, 57 secondshanem kettőt. Tehát az ijedik tag feltéve, hogy előttem ilyen tag van, címke van, és azelőtt olyan címke van.
+1:30:031 hour, 30 minutes, 3 secondsTehát egy ilyen hármasból mindig az utolsónál állok, és az előző kettőből azoknak a gyakoriságából megnézem, hogy
+1:30:111 hour, 30 minutes, 11 secondsmennyire valószínű, hogy a ezután a kettő után jöhet-e az a harmadik.
+1:30:161 hour, 30 minutes, 16 secondsEz gyakorlatilag ugyanaz a markóvondel, amit az előbb mutattunk, csak nem i -1-re, hanem -1, i -2, tehát az előző két elemre vannak kitéve. Ezt jelenti a
+1:30:251 hour, 30 minutes, 25 secondsmásodrendűség, hogy két címke előtte. A simítottság meg azt jelenti, hogy nem mindig van elég példánk. Tehát nem találunk elég mintát arra, hogy hogy néz
+1:30:341 hour, 30 minutes, 34 secondski a szó, ha kettő ilyen van előtte, mert nagyon sokszor nem szerepel a szó, vagy nagyon kevésszer szerepel. Ezt jelenti a simítás. Akkor mindenféle
+1:30:421 hour, 30 minutes, 42 secondsilyen lambda súlyokkal a gyakoriságokból kalkulálunk valamit. Tehát ha nincs meg a T3 címkéknek T1, T2 utáni
+1:30:511 hour, 30 minutes, 51 secondselőfordulása, akkor fogjuk a T3 címkét önmagában, annak a gyakoriságát megnézzük, megszorozzuk valami rendszerre jellemző lambda egyel, amit
+1:31:001 hour, 31 minuteskikalkuláló számítógű nyelvész, és hozzáadjuk azt, hogy a t megelőzi a t-at, mert olyan esetleg van, hogy egyik
+1:31:081 hour, 31 minutes, 8 secondsmegelőzi és utána pedig azt mondjuk, hogy a t1-et meg a tőt megnézzük, hogy megelőzi a T3-at, és az is van egy
+1:31:151 hour, 31 minutes, 15 secondssúlya, és hogyha ezek így megvannak, Akkor ezeknek a egyre kisebb súllyal simítjuk a modellt, és így
+1:31:221 hour, 31 minutes, 22 secondskitaláljuk, hogy a T3 feltéve T1 T2 hogy nézhet ki. Most nyilván erre nekünk
+1:31:291 hour, 31 minutes, 29 secondskicsi az esélyünk, hogy pontos adatokat kapjunk, de hogy ne legyen deadlock, hogy esetleg legyen olyan szó, aminek nincs két, nem fordult elő például a
+1:31:381 hour, 31 minutes, 38 secondsharmadik helyen, csak a másodikonkor nincs két szó előtte. Na most ezzel a simítással azért az ismeretlen szavakkal
+1:31:451 hour, 31 minutes, 45 secondsis tud valamit kezdeni. Aztán ugye a végződések levágása azért fontos, mert itt morfológiával nem nagyon foglalkoznak. És ugye hát ő nem magyarra
+1:31:521 hour, 31 minutes, 52 secondstalált ezt ez az egészet. És ugye az állandóan egy probléma, hogy a nagy kezdőbetűket figyeljük vagy sem, mert ugye olcsóbb úgy megcsinálni, hogy csak
+1:32:001 hour, 32 minutesegyféle ABC van a kis ABC, tehát mindent konvertálunk kicsibe. Sőt, még egyszerűbb úgy, hogy az ékezetes betűket is elfelejtjük, és csak a ekezetlen
+1:32:091 hour, 32 minutes, 9 secondsheadbiteset, amiről szó volt, ugye használjuk. Ezek mindig rontanak a rendszeren. Nyilván az angol esetében nem nagyon, de a magyar esetében nagyon.
+1:32:171 hour, 32 minutes, 17 secondsTehát ennek sok variánsa van. A TNT-t megszerették a magyarok, és megjelent a magyar Ergyértelmisíték világában
+1:32:241 hour, 32 minutes, 24 seconds2007-ben a Humpos rendszer a Műegyetem médiaoktatus kutatóközpontjában dolgozták ki. Hát naná, hogy Hm alapú,
+1:32:331 hour, 32 minutes, 33 secondshát persze, hogy rejtett markó modern a TNT-t hozták át. Ez egy nagyon érdekes történet. Aki nem tudja elolvasni a TNT után levő szót, Oamel, az egy
+1:32:411 hour, 32 minutes, 41 secondsprogramozási nyelv, amit Magyarországon a kutya se használ. És mivel ez egy nagyon ritka nyelv és nagyon ritka volt, kellett hozzá keresni egy olyan ügyes
+1:32:491 hour, 32 minutes, 49 secondsembert, aki tudam előül, és aztán ő valahogy lefordította Magyarországon is használatos
+1:32:571 hour, 32 minutes, 57 secondsprogramozási nyelvekre. Addig azért nem lehetett, mert önmagában, mint egy titkos nyelven lenne, olyan programozási nyelven volt írva. Amit ez a rendszer
+1:33:041 hour, 33 minutes, 4 secondshasznál, az az úgynevezett MSD kód, amiről eddig nem esett szó, de most muszáj beszélni röviden róla. Ez egy ilyen pozicionális, tehát egy olyan,
+1:33:131 hour, 33 minutes, 13 secondsahogy az előbb említettem a prológnyelvet, ahol minden argumentumnak van egy konkrét helye. Az MSD kód is
+1:33:191 hour, 33 minutes, 19 secondsolyan, hogy különböző tulajdonságoknak nem nevük van, hanem
+1:33:261 hour, 33 minutes, 26 secondspozíciójuk. Tehát a főnévnek van mindenféle tulajdonsága, ami az első, a hetedik, a 11. és amilyen
+1:33:341 hour, 33 minutes, 34 secondstulajdonságokat összeszedtek morfológiából, elsősorban nyugat-európai nyelvekre, azokat próbálták használni.
+1:33:421 hour, 33 minutes, 42 secondsNa most az MSD kódok, ezek szerint nyugat-európai nyelvet lettek kitalálva, és a kelet-európaira pláne egy ilyen aglutináló, mint a magyar, hát kicsit se
+1:33:491 hour, 33 minutes, 49 secondsvolt jó, mert mondjuk olyan esete, hogy hogy nem tudom én addessusz nem volt, mert a heshöznek egy prepozíció volt a
+1:33:561 hour, 33 minutes, 56 secondsmegfelelő és ilyen pozíció, hogy hshöz ilyen nem volt ebbe a rendszerbe. Akkor csináltak kiegészítést kerete-európai nyelvekre, de ez mindig szerencsétlen.
+1:34:051 hour, 34 minutes, 5 secondsTehát az MSD sztenderd, amelyik a angol, német, francia, spanyolnak valamilyen morfológiai tulajdonságait hozza, és
+1:34:121 hour, 34 minutes, 12 secondsaztán próbálták például magyarra is, meg más kelópai nyelvre is csinálni.
+1:34:191 hour, 34 minutes, 19 secondsAzért jó, mert sztenderd, és például a szegedi egyetem ezt nagy előszerettel használta. Így 2010-ben, amikor a Magyar
+1:34:271 hour, 34 minutes, 27 secondsLánc nevű teljes nyelvfeldolgozó mod csinálták, akkor abban az egyértelműsítőt a Stanford Post Taggerrel, amelyik egy
+1:34:351 hour, 34 minutes, 35 secondslétező ilyen part of speech tagger, tehát egyértelmű, ugye ennek ez a magyar megfelelője, de valójában a tagging, ugye a címkézés és a pos ugye a part of
+1:34:441 hour, 34 minutes, 44 secondsspeech, tehát a a a szófai címkéző, Sanfis szófai címkézőt kiegészítették
+1:34:511 hour, 34 minutes, 51 secondsegy morfológ jellemzővel, és használták ezt az MSD kódot, mert az a nemzetközi sztend volt. És aztán a Pure POS az első
+1:34:591 hour, 34 minutes, 59 secondsolyan rendszer volt, ahol a tulajdonképpen a TNT-t újra gondolták.
+1:35:061 hour, 35 minutes, 6 secondsEzt a Lázmány Péter katolikus egyet információ, akkor még csak információs technológiai karánk, később lettünk és bionikai.
+1:35:141 hour, 35 minutes, 14 secondsOrosz Gyuri kollégánk, akkori doktoranduszon később ebből írta a PhD-ját, és Novák Attila hozták létre,
+1:35:231 hour, 35 minutes, 23 secondsami tulajdonképpen a már meglevő TNT egy Java kóddal összerakva, és integráltak hozzá egy
+1:35:301 hour, 35 minutes, 30 secondsmorfológiai elemzőt, azt a humort, ami az unifikációs morfológia alapján kidolgozásra került, és amelyik a mai napig is a
+1:35:391 hour, 35 minutes, 39 secondslegtöbb helyesírási programnak az alapja, hiszen a helyesírási program egy morfol morfológiai jellemzőt is tartalmaz, és ezért ez a morfológiemző
+1:35:461 hour, 35 minutes, 46 secondssok helyre lett integrálva. A PPOS így indult el, de aztán PPOSnak egész önálló élete lett 2012 óta.
+1:35:551 hour, 35 minutes, 55 secondsKikerült nyílfarráskódba, ugye egyszerre egyértelmű, tövesítő. ezt köszöni a morfolgia elemzővel való integrálásnak. És már nem csak Jávába,
+1:36:031 hour, 36 minutes, 3 secondshanem hát mindenféle módon Pythonba is átkerült. Ez Javaris Tindig Balázs munkája és elérhető ezen ahab címen
+1:36:121 hour, 36 minutes, 12 secondsmegfelelő licencekkel.
+1:36:161 hour, 36 minutes, 16 secondsÉs ami érdekes, hogy a magyarlánc későbbi változatába hármasba, 3.0á-ba már ez került bele egyértelműként, tehát
+1:36:231 hour, 36 minutes, 23 secondskilökte a Stanford Hostergelt, majd a teljesmagyar emagyar.hu hu
+1:36:301 hour, 36 minutes, 30 secondsfeldolgozórendszernek, amit ma leginkább érdemes reklámozni, hogy bárki használhatja, elérheti, annak is az egyértelműsítő
+1:36:391 hour, 36 minutes, 39 secondsmodulja a POS lesz, tehát integrálva egy több olyan rendszerbe, amitől megkerülhetetlenné vált. Tehát a lelke
+1:36:471 hour, 36 minutes, 47 secondsrejtett markó modell alakú, de mindenféle javabon Pythonban elérhető formában és mindenki számára letölthető
+1:36:551 hour, 36 minutes, 55 secondsmódon fut. Tehát a Pilpus most a magyar egyértelműsítő. És ugye nyilván ez azért fontos, mert az nagyon drága volna, hogy
+1:37:021 hour, 37 minutes, 2 secondsrögtön egy szintaktikai jelemző kövesse a morfológiát. Nyelvész fejében úgy van, van egy morfológiai több értelmiség, majd kiderül magasabban, lesz egy olyan
+1:37:101 hour, 37 minutes, 10 secondsszerkezet, amiben ezt majd megmondjuk, hogy melyik. Na ja, de ez csak akkor van, ha tényleg van egy szintaktika jellemzőnk, de ha esetleg több
+1:37:181 hour, 37 minutes, 18 secondslehetséges fölbontásunk van, akkor mindegyiket végig kell szintaktika elemezni. És hogyha azok kombinálódnak, akkor még több mondat van. Tehát a
+1:37:261 hour, 37 minutes, 26 secondslehetséges morfológiai lehetőségeknek a kombinációja iszonyú nagy lehet. Tehát vegyünk egy ilyen mondatot, hogy az utca
+1:37:331 hour, 37 minutes, 33 secondsvégén levő legelőre mentem legeltni. Hát ez egy ilyen hétköznapi mondott webb tele van nyilván ilyenekkel, de ha nincs, demónak jó.
+1:37:431 hour, 37 minutes, 43 secondsAz azról kiderül, hogy ő vagy névelő, vagy név. Ugye mutató név más, vagy névelő. Utca jó. A végén az látszólag
+1:37:521 hour, 37 minutes, 52 secondsegyértelmű, mert a végfőnévhez jön valami, csak nem mindegy, hogy mi a vége plusz on ön valaminek a végén, de lehet
+1:38:001 hour, 38 minutesaz is, hogy a vég a vég birtoka, ami a vég és azonön. Ez a kettő nagyon
+1:38:071 hour, 38 minutes, 7 secondshasonló, hogy vége + n vagy vg + n, de morfológiailag ez két különböző alak.
+1:38:121 hour, 38 minutes, 12 secondsLevő mondjuk oké. Legelőre, hát a legelőre az egy határozó szó, hogy hova?
+1:38:171 hour, 38 minutes, 17 secondsHát legelőre á fiam, vagy a legelő plusz rare? Hát világos, hogy az meg egy főnév plusz egy ilyen szubladívus. Igen, de a
+1:38:251 hour, 38 minutes, 25 secondslegelőt főnevet föl lehet mondani arra, hogy ez valaki, aki legel, tehénkeféle plusz ó ő folyamatos melléknév igenév.
+1:38:331 hour, 38 minutes, 33 secondsPersze, hogy a legelő ebből alakult, de a legelő főnév az benne van a szótártban. Biztos, mert valamilyen szótárban benne volt. És ugye ezeknek a
+1:38:421 hour, 38 minutes, 42 secondsrendszereknek a szótára olyan, hogy a magyar nyelvvel kapcsolatos szótárak összes címszava benne van. Tehát a legelő az mint hely benne van, de azt
+1:38:501 hour, 38 minutes, 50 secondsnem lehet kizárni, hogy a gondolj a legelőre, és ne csak azoknak a tehneknek vigyél, nem tudom én, vizet, amelyik nem
+1:39:001 hour, 39 minuteslegel, hanem a legelőknek is gondolja a legelőre. Szóval bármilyen alak előfordulhat, ami a mi számunkra azonos,
+1:39:071 hour, 39 minutes, 7 secondsde legelő már három értékű. Na hát ha mentem, ugye az világos, hogy én mentem, de azért ha meggondoljuk, hogy ez a harmadik fölbontás itt a mintába vagy a
+1:39:161 hour, 39 minutes, 16 secondspéldába, mert a első a tárgyas egyes szám első személyű, hogy én azt a dolgot
+1:39:221 hour, 39 minutes, 22 secondsmentem, I saving valamit vagy valakit mentem a fuldoklót. Tehát ez egy teljesen másik mentem. A ment melléknév viszonylag ritka, de benne van a szótárban a mentes értelmű melléknév.
+1:39:341 hour, 39 minutes, 34 secondsOtt a mentem, az én mentes dolgom. Hát az én mentem m nagyon erőltetett, de
+1:39:411 hour, 39 minutes, 41 secondsformailag stint. A megyeknek múltide alakja, hogy én mentem.
+1:39:471 hour, 39 minutes, 47 secondsEz mondjuk világos mentem. Ez pedig a ment melléknévi
+1:39:541 hour, 39 minutes, 54 secondsbefejezett melléknévi igenév. A moziba ment filmek. Mondjuk a ment mint nagyon erőltetett, de formilag semmi nem zárik.
+1:40:031 hour, 40 minutes, 3 secondsbefejezett melléknevet egyes szám első személyt oldal kövesen. Az a megy esetében nem annyira tipikus, de például
+1:40:101 hour, 40 minutes, 10 secondsa választottam, az én választottam az tökéletesen azonos azzal, hogy én választottam valamit, vagy az én
+1:40:161 hour, 40 minutes, 16 secondsválasztottam itt áll mellettem. A mentem meg nem ilyen, de ettől még formailag négy alakja van. A legeltetni meg hát egyszerűen benne van, hogy legel, és
+1:40:251 hour, 40 minutes, 25 secondsbenne van esetleg az is, hogy legelt. De hát azt produktívan is elő tudom állítani, hogy legel plusz tattet. Tehát
+1:40:311 hour, 40 minutes, 31 secondsakkor ha kétszer kzerx 4 x2 lehetőségem van, ami akárhogy is
+1:40:391 hour, 40 minutes, 39 secondsnézem, az nem tudom 96 lehetséges. Tehát a Dcard szorzatot összerakom ennyiféle mondat, vagyis egy mondat helyett nekem
+1:40:471 hour, 40 minutes, 47 seconds96 ilyen string sorozatot kell átadnom, hogy akár a hidden modell, Markov modell alakú, akár bármelyik egy teljes szekvenciát kapjon, és majd eldöntse,
+1:40:561 hour, 40 minutes, 56 secondshogy az mennyire esélyes. és mind a 96-ot leosztályzom, és amelyik a legjobb lesz, azt fogom kiválasztani a végén.
+1:41:041 hour, 41 minutes, 4 secondsValószínűleg ez nem annyira jó megoldás, hogy így egyenként kézzel legenerálom őket, és utána ilyen megszorításokat
+1:41:111 hour, 41 minutes, 11 secondsírok. Sokkal jobb tényleg az, hogy ahogy így menet közben megyek előre, rögtön dönt a rákövetkezések meg mindenfélek
+1:41:181 hour, 41 minutes, 18 secondskövetkeztében a idemarkov vagy a maximum entrópia rendszer. Tehát az egyértelműség az a magyar ember számára,
+1:41:271 hour, 41 minutes, 27 secondsmikor beszél, evidencia, akkor is egyértelmű valami, ha több értelmű. Hát gondoljanak arra, hogy mikor volt problémájuk abból, hogy a napszót nem
+1:41:361 hour, 41 minutes, 36 secondstudta valaki egy adott környezetben, hogy sun vagy day értelemben használják.
+1:41:401 hour, 41 minutes, 40 secondsJó, ez inkább jelentés egyértelműség, mert ugyanaz a főnév, de azt, hogy a vár szót főnévű vagy igeérrt, nem volt ilyen gond. A rendszernek meg nagyon sok
+1:41:491 hour, 41 minutes, 49 secondsgondja van, mert ő mindent literálisan betű szerint néz, és nagyon sok baja lehet ebből, de már kontextuálisan ugyanúgy ki tudja szűrni, mint én magam.
+1:41:571 hour, 41 minutes, 57 secondsPersze feltéve, hogy jó sok példát látott, és a gyakoriság segít neki ebben. És akkor ezek lesznek a helyesen kiválasztottak.
+1:42:071 hour, 42 minutes, 7 secondsTehát a valaminek a vége onenön és a legelő az a főnév rare és a megy mentem és a legelő.
+1:42:161 hour, 42 minutes, 16 secondsNa.
+1:42:191 hour, 42 minutes, 19 secondsHát akkor beszéljünk arról, hogy mire használják mindezt, mert ugye ezt nem csak azért csináljuk, hogy legyenek, hanem azért, mert ezeknek értelmük van.
+1:42:251 hour, 42 minutes, 25 secondsNa hát így végigszaladunk. Néhány olyan alkal alapalkalmazás van, ami azért készült el, mert ezeket az eszközöket mindenki
+1:42:341 hour, 42 minutes, 34 secondsboldogan beépítette valahova. Adott esetben épp a számítógépes nyelvész építette be valahova. De nézzük, hogy hova. Hát először is a normál
+1:42:421 hour, 42 minutes, 42 secondskezelésébe. Tehát a helyes írási eszközök, amit angolul proofing toolsnak mondanak, fölhívnám a figyelmet, itt a proofing az egy nyomdai átolvasás, tehát
+1:42:511 hour, 42 minutes, 51 secondsaz sokkal inkább nem a helyes írásnak a kezelése, hanem a szövegnek a rendben rakása, amikor persze nyilván a helyes írás is benne van. angolul proof az a
+1:43:001 hour, 43 minutescsomag ami hegyesírás előzőből elválasztóból tezauruszból checkerből nyázőből áll
+1:43:081 hour, 43 minutes, 8 secondsvalójában itt a helyesírási norma az egy ilyen irányával ahogy az elején mondtuk hogy az akadémia helyesírás ja akadémiai
+1:43:151 hour, 43 minutes, 15 secondsrendezés az egy ajánlás hát okos dolog betartani azt tudjuk hogy nem tetszikát a helyesírás is ilyen. Nincsen olyan törvény, hogy be kell tartani. De hát
+1:43:241 hour, 43 minutes, 24 secondsmégis csak vannak szabályok, amiket vagy jól lehet programozni, vagy nem. Na ha nagyon nehezen lehet, az macerás.
+1:43:301 hour, 43 minutes, 30 secondsÉs van az, amit szeretnénk és kérdés, hogy melyiket mekkora energiával érdemes, mekkora aparátussal programozni, tehát hogy mennyire lőjünk
+1:43:381 hour, 43 minutes, 38 secondságyúval, verébbre. Tehát van egy ilyen gazdasági szempont, nem közvetlen pénzügyi, de olyan, hogy érdemes-e egy ilyen bonyolult dolgot beleprogramozni,
+1:43:461 hour, 43 minutes, 46 secondsamikor az esetek 1-10 millió ad részébe jelentsek segítséget, vagy nem? Tehát lehetünk egyrészt nagyvonalúak, ennek égisze alatt veszítünk valamit a
+1:43:551 hour, 43 minutes, 55 secondsmásik oldalon, de hatékonyabb az eszközünk. És azért tartsuk be azokat a normákat, amiket a helyesírási szabályzatok leírnak, hogy azért ne
+1:44:021 hour, 44 minutes, 2 secondsnagyon térjen el a gépjellenőrzés a a leírtaktól. Na most ugye a formai szempontokat a gép kezeli, a lentéstanira meg csak álmodunk, hogy
+1:44:111 hour, 44 minutes, 11 secondsszeretné, hogy értse. Ezért inkább azt mondanám, hogy a gép inkább egy ilyen helyes irát tanácsadó, hogy szól. Tehát
+1:44:191 hour, 44 minutes, 19 secondssokszor azt mondanám, hogy warning van, és nem error message. Tehát nem hiba a hiba, hanem figyelmeztetlek, hogy lehet,
+1:44:261 hour, 44 minutes, 26 secondshogy itt ez van. és döntsél te felhasználó, aki okosabb vagy, mint én. Gép. Az emberek nem így gondolkoznak.
+1:44:331 hour, 44 minutes, 33 secondsGép biztos meg kell mondania neki a tutit. Hát ez sajnos nem így van. A gépek nagyon sokszor csak tanácsot adhatnak, és én azt várom, hogy ő oldja
+1:44:401 hour, 44 minutes, 40 secondsmeg a problémát, akkor menekülök, mert én nem szeretnék ezzel foglalkozni.
+1:44:451 hour, 44 minutes, 45 secondsTehát a ráadásul vannak olyan nagyon nehezen értelmezhető elemzések, mint az előbb is volt ez a mentek, és véletlenül egy ilyen alak formailag stimmel, akkor
+1:44:541 hour, 44 minutes, 54 secondsvalami olyan helyzetbe juthat a rendszer, hogy ő azt hiszi, hogy jól van, és én meg értem, hogy nem jól van.
+1:45:001 hour, 45 minutesUgye az egyik kedvencem, amit az előbb a a kacsónak esetében mondtam, hogy bármelyik hétfőnév egybeható a magyarba.
+1:45:081 hour, 45 minutes, 8 secondsTehát arra nincs szabály, hogy mely főneveket lehet egybe írni. Hát jelentést meg szokás. Tehát, hogy nem tudom én, azt, hogy síparadicsom, azt
+1:45:151 hour, 45 minutes, 15 secondsegybe írjuk, azt, hogy szánkó paprika, azt nem írjuk egybe, mer olyan szó nincsen. De hát a siparadicsom mintájára ő is lehetne egy szó, de az nincs. És
+1:45:231 hour, 45 minutes, 23 secondshát nyilván, ha valami szokott a szavak elején lenni, összetétel elejének szokott a végén lenni, azokat föl tudjuk
+1:45:311 hour, 45 minutes, 31 secondssorolni. És a rendszer olyan, hogy akkor vézi, hogy mik szoktak előtag lenni. Sereghajtó. Hát akkor a sereg az tud előtag lenni.
+1:45:391 hour, 45 minutes, 39 secondsSzent Ivá, az éjj tud utótag lenni.
+1:45:421 hour, 45 minutes, 42 secondsTehát a sereg egybeható, mert milyen akadálya van. Igen, de az J-vel van írva, mert az éj, ugye a Szentváni
+1:45:491 hour, 45 minutes, 49 secondsmintájára az éj. Viszont a seregeit, ha valaki leírja el Y helyett J-vel és elfogadja, akkor azt gondolják, hogy aki ezt a programot írta, nem tudta, hogy a
+1:45:571 hour, 45 minutes, 57 secondsseregét nem LY-nak kell írni. Van olyan van, itt csak egy összetételt engedtünk meg, a sereg előtag és az éj utótag
+1:46:041 hour, 46 minutes, 4 secondsegybeát. Ez csak példa arra, hogy a rendszer, ha bátor, akkor nagyon furcsa olyan esetekbe szaladhat bele, ami meg a
+1:46:121 hour, 46 minutes, 12 secondsfelhasználó számára érthetetlen helyzetet hoz létre. És nagyon könnyen lehet, ugye az is egy elég rövid szó, két betűből áll, rengeteg olyan
+1:46:211 hour, 46 minutes, 21 secondszöldséget összerakni, amik végül is az átok vagy az ének szó, amik alapszavak a magyarban,
+1:46:291 hour, 46 minutes, 29 secondsminden további nélkül toldéksorozatok is lehetnek. Tehát a számítógépének nem tesz jót, ha nem tudom mit
+1:46:371 hour, 46 minutes, 37 secondscsinálnak, de hát a számítógépek összetétel azért elég valószínűlen. Honnan tudja a rendszer, hogy nem?
+1:46:431 hour, 46 minutes, 43 secondsGépének. Hát népének. A népének az egy megint egy jó kérdés, hogy az micsoda? A gépének az valószínűleg nem a gép
+1:46:511 hour, 46 minutes, 51 secondsénekel, hanem az egy datírusz. De hát itt a gyakoriság segít. És ugye hát egy szó, amikor így csőlátással egy szót
+1:46:581 hour, 46 minutes, 58 secondsnézek, hogy jól van-e az írva, akkor az jól van írva. Szerencsénk van, hogy a gépének akkor is jó, hogyha nem összetétel, de amikor majd arra van
+1:47:071 hour, 47 minutes, 7 secondsszükségem, hogy ezt esetleg tovább elemezzem, akkor bajba kerülhetek. És ugyanígy a nem tudom én a az átok is ilyen.
+1:47:161 hour, 47 minutes, 16 secondsA nem tudom én. Hát kellene egy jó szót keresni.
+1:47:261 hour, 47 minutes, 26 secondsHát keressenek házi feladat, keresenek olyat, ahol az átok nemcsak összetételi határ, hanem nyilvánvalóan egy arra
+1:47:331 hour, 47 minutes, 33 secondsvégződő szónak, aminek az anélküli változata is esetleg értelmes szó. A folytatása,
+1:47:421 hour, 47 minutes, 42 secondsnem tudom én túrátok, ahol a túr az létezhet, mint szó a túra is, és a túrátok hát az elég furcsa.
+1:47:521 hour, 47 minutes, 52 secondsNa csak azért mondtam, hogy játék ezekkel a betűkkel, de egy számítógépes rendszernek fogalma nincs, hogy ezek az
+1:48:001 hour, 48 minuteselemzések ezek jók-e vagy sem. Na most nyilván a hibák olyanok, hogyha betűhibák, elütések, akkor akkor is segít a gép, ha sokan helyből
+1:48:071 hour, 48 minutes, 7 secondskikapcsolják a helyesírási dolgot, hogy nekik az nem kell. Egyébként csak képzeljék el, hogy most ugye ez itten backgroundba fut, tehát a háttérbe és
+1:48:141 hour, 48 minutes, 14 secondsamikor bekapcsolnak egy örfélét, akkor ott vannak az aláírás, aláhúzások, pirosak, zöldek, de amikor ez indult,
+1:48:231 hour, 48 minutes, 23 secondsakkor még egy külön F7 indította el a helyesírási programot, tehát nem kellett így, vagy nem lehetett így a háttérben.
+1:48:301 hour, 48 minutes, 30 secondsEnnek előnye hátránya volt. Hátránya az volt, hogy nem láttam, csak amikor megnyomtam, akkor egyenként ment szekvenciálisan végig a szövegen, és mondta, hogy ez a szó nem jó, az nem jó.
+1:48:391 hour, 48 minutes, 39 secondsjavítottuk és kilépett.
+1:48:411 hour, 48 minutes, 41 secondsViszont előnye az volt, hogy ahányszor elindítottam, annyiszor inicializálta magát. Tehát ha valami olyan technika kialakult, ami menet közben okosította a
+1:48:501 hour, 48 minutes, 50 secondsrendszert, az újabb indításnál ez már benne lehetett. Míg most ugye a háttérben fut és elindítottam három hónappal ezelőtt, azóta nem kapcsoltam
+1:48:571 hour, 48 minutes, 57 secondski a gépem, néha azért kapcsolják ki a laptopot is. Nem kapcsoltam ki, és ott fut, és tulajdonképpen
+1:49:041 hour, 49 minutes, 4 secondső állandóan a háttérben fut, és nem tudok hozzászólni, tehát nem indul újra meg újra. Tehát nem tudok neki segíteni.
+1:49:101 hour, 49 minutes, 10 secondsAz a tudás van benne, ami három hónappal ezelőtt volt. De mégis azért itt lehet nyilván a hibás egybeírásokat szét lehet
+1:49:191 hour, 49 minutes, 19 secondsszedni, de a hibás külön írásokat nem lehet összerakni, mert csőlátású programról van szó, ha szószinten kell javítani. A szó az azt jelenti, mint
+1:49:261 hour, 49 minutes, 26 secondsmondtuk, hogy két betűköz között. Tehát hogyha valamiben betűköz van, akkor per definíció nem az nem felel meg ennek.
+1:49:321 hour, 49 minutes, 32 secondsTehát csak egy szavasokat látok, vagyis két szóról nem tudom, hogy mi volt előtte, mi van utána.
+1:49:391 hour, 49 minutes, 39 secondsMondjuk, ha kötőjel van beletéve, akkor esetleg azt ki tudom törölni, vagy tudom javasolni, hogy szedjék ki, de ha nincs beletéve, nem tudom javasolni, hogy
+1:49:451 hour, 49 minutes, 45 secondsrakják közé. és valami különleges módon a szóismétlés, aminek semmi köze nincs ezekhez a rendszerekhez, de valaki egyszer Amerikába beleprogramozta,
+1:49:551 hour, 49 minutes, 55 secondsés ezért a Had angol furcsa
+1:50:021 hour, 50 minutes, 2 secondspast perfectnek a formáját is megkritizálja, merthogy a HAD, HD egymás után kétszer van, de hát a magyarban is,
+1:50:091 hour, 50 minutes, 9 secondshogy az az ember, amelyik és máris szól, hogy két az van egymás után, de ennek semmi köze nincs a szószinthez, csak
+1:50:161 hour, 50 minutes, 16 secondsérdekes módon valaki oda belerakta, és a mai napig benne van. Viszont a hibák nagy része nem javítható itt. Tehát nem lehet a különírást, ezt most elmondtam.
+1:50:251 hour, 50 minutes, 25 secondsAz, hogy jó helyen van-e a vessző, vagy a távoli dolgok egyeztethetőek-e, vagy szóval rengeteg minden nem fér bele.
+1:50:311 hour, 50 minutes, 31 secondsEzért a helyes írás rögtön szétesett két dologra. Az egyik, amit spellingnek, vagy spell checkingnek hívnak, a másik amiket Amerikában grammar checkernek
+1:50:391 hour, 50 minutes, 39 secondsneveztek el. Vagyis mintha a spell az egy nem olyan típusú probléma volna, mint a nyelvtalan. Magyar az a probléma,
+1:50:471 hour, 50 minutes, 47 secondshogy spell, mert nem arról van szó, hogy nem tudjuk leírni azt, amit mondunk, hiszen általában azt le tudjuk írni.
+1:50:521 hour, 50 minutes, 52 secondsNekünk már ott is nyelvtani hibáink vannak a toldalékolás furcsaságai miatt, viszont van olyan nyelvtani probléma, amit csak mondatszint tudunk megoldani.
+1:51:011 hour, 51 minutes, 1 secondÚgyhogy el egy ilyen egyszerű rendszerrel a karakterelütést meg tudjuk fogni. A tipikus helyes írási hibákat, valaki mit
+1:51:101 hour, 51 minutes, 10 secondstudom én, ly J helyet, azt esetleg meg tudjuk fogni. a nyelvhelyességieket kevésbé tipográfiával az átlagos ember
+1:51:181 hour, 51 minutes, 18 secondsnem foglalkozik, hogy mi az, ami nyelvhelyességileg stimmel, de nem szokták a tipográfusok így, de azért a tördelőrendszerekbe kell ilyen. Tehát
+1:51:261 hour, 51 minutes, 26 secondsállandóan a szó és a nem szó közötti problémával vesződünk. Ráadásul ugye a spell és a grammer a magyarban az, hogy alacsony
+1:51:351 hour, 51 minutes, 35 secondsszintű helyes írás, meg a kicsit magasabb szókörnyezetbeli helyes írás.
+1:51:391 hour, 51 minutes, 39 secondsÉs akkor van egy olyan probléma, amiről szándékkal nem beszéltem, mert nagyon félrevezető volna itt ezt hosszosan taglalni, de hát elképzelhető az, hogy a
+1:51:471 hour, 51 minutes, 47 secondsszó készletben vannak olyan problémák, amik valójában helyesek, de ha nincs magyarázat a rendszerhöz, akkor egyszerűen szerencsétlenül használja
+1:51:551 hour, 51 minutes, 55 secondsőket. Tehát az a szó, hogy kő az a forma hosszú ével, amelyik a Pictev Caronak a negyedik tesója a kártyában. Ez a
+1:52:041 hour, 52 minutes, 4 secondskörszó, ez hosszú idővel iratik, de az emberek nem tudják, hogy itt most arra kell gondolni, vagy a rövidős körre. Ha leírja így, jó lesz. Na most az elég
+1:52:131 hour, 52 minutes, 13 secondsijesztő, hogy ő azt hitte, hogy ezt röviddel kényez, látja, hogy hosszúval is elfogadja. Sőt az összetételekben is jó lesz. És akkor a kőút mondjuk az
+1:52:211 hour, 52 minutes, 21 secondslesz, ahol kő adásával jut el az eredményig. pedig dehogyis, csak rosszul írta azt, hogy körút.
+1:52:281 hour, 52 minutes, 28 secondsAmi még furcsább, hogy megjelennek olyanfajta toldékolási problémák, amiket soha senki nem tárgyalt előtte, mert nem
+1:52:351 hour, 52 minutes, 35 secondsírtak még olyan programot, amelyik ész nélkül használja a magyar szóalaktan.
+1:52:411 hour, 52 minutes, 41 secondsTehát ha vesszük azt a szót, hogy alak, ezt a magyar főnevet, akkor ugye ennek van egy igeképzője, hogy alakít az hosszú i-vel van.
+1:52:521 hour, 52 minutes, 52 secondsHát nem tudom, ma már ugye kevesebben katonák és nem ismerik azt a fogalmat, hogy alaki foglalkozás, de én bizony ezzel találkoztam és azt mondták, hogy
+1:52:591 hour, 52 minutes, 59 secondsnem lehet kihagyni az alakit. Tehát az alaki alak plusz i képző plusz tárgyeset is egy létező szó, mégha ritka is. Mind
+1:53:081 hour, 53 minutes, 8 secondsa kettő van. Tehát az alakhoz lehet alakít és lehet alakít.
+1:53:131 hour, 53 minutes, 13 secondsMost például ott van a ház, házi feladat. Írd meg a házit. Rövidével van. olyan, hogy házít, olyan szó nincs.
+1:53:211 hour, 53 minutes, 21 secondsEzzel szemben van olyan, hogy tanít, de a tanszóhoz nem nagyon szoktunk kiképződeni, pedig lehetne, mert ahogy a házi, ugye a tani, de hát a tani az nem, annak a tárgyezete meg rövidível van.
+1:53:311 hour, 53 minutes, 31 secondsVagyis úgy látjuk, hogy az alak az olyan, hogy mind a kettő ilyen furcsa toldékot megengedi. A ház csak a rövidíst, a tan pedig csak a hosszú is.
+1:53:401 hour, 53 minutes, 40 secondsTehát az összes magyar főnevet osztályozni kell arra nézve, hogy nehogy interferáljon, mint az alak esetében ezt teszi. két olyan alak, amivel az egyik
+1:53:491 hour, 53 minutes, 49 secondsházít, illetve tanít, egyszerűen nem létezik. Tehát ezek teljesen szabályosan létrehozott alakuk, csak éppen a
+1:53:571 hour, 53 minutes, 57 secondstúlgenerálás miatt olyan szavak is keletkezhetnek, ami a magyarban nem létezik, de formailag akár létezhetne is. És a rendszer elő mit sem tud.
+1:54:071 hour, 54 minutes, 7 secondsVegyük egyszerűség kedvén először a szóellemőrzőt. Tehát azok a helyes írási programok, amik alapvetően a morfológiát
+1:54:141 hour, 54 minutes, 14 secondshasználják, azok úgy működnek, hogy van nekik egy alapszótáruk, és arra épül egy morfológia. Na most nyilván, ahogy az előbb mondtam, ha a
+1:54:221 hour, 54 minutes, 22 secondsgesszer nincs benne, akkor csak valahány szót ismer föl, tehát egy olyan tövet rakok bele, amit nem ismer, akkor azt nem fogja tudni kezelni. Ahhoz már
+1:54:311 hour, 54 minutes, 31 secondsnagyon komplex morfológia kell, hogy az a gesszer benne legyen. És nagyon sokszor a világ nagy cégei, itt egy
+1:54:381 hour, 54 minutes, 38 secondspélda egy szövegszerkesztőnek a kicsi ablakából, ahol megjelennek a helyesírási modulnak a felszíni tünetei.
+1:54:461 hour, 54 minutes, 46 secondsUgye van egy nagyon egyszerű ott az a fölső, és van egy kicsit komplexebb, amikor kinyílik egy ablak.
+1:54:531 hour, 54 minutes, 53 secondstulajdonképpen nem nagyon tudnak arról, hogy a magyarban nem lehet fölsorolni a szavakat, ahogy az angolba, hiszen ott minden szó föl van sorolva s-sel meg s
+1:55:001 hour, 55 minutesnélkül, ahogy szoktam mondani, és minden ige, minden főnév, minden alakja ezzel meg még egy, kettő le van fedve, és nem kell hozzá aktív tevékenység. Tehát
+1:55:091 hour, 55 minutes, 9 secondsahhoz, hogy ebben a modulban jól működjön egy magyar modul, le kell futnia egy olyan programnak, ami az angolban egy egyszerű szótári luka.
+1:55:171 hour, 55 minutes, 17 secondsTehát olyan sebességgel kell működnie, hogy ne legyen nagy a különbség.
+1:55:211 hour, 55 minutes, 21 secondsEgyetlen szerencsénk, hogy a háttérben fut mindez, és amíg a felhasználó lapozgott az oldalakon, addig ugyan jönnek elő ezek a piros aláhúzások,
+1:55:291 hour, 55 minutes, 29 secondstehát elég ügyesek vagyunk, akkor nem nagyon maradunk le az angoltól azzal, hogy nekünk nem egy szótári lukap, hogy megnézzük, hogy a két betűköz közötti
+1:55:361 hour, 55 minutes, 36 secondsstring megvan-e, hanem ott működik egy egész morfológia. És aztán, hogyha a morfológia megtalálta, akkor örülünknek
+1:55:431 hour, 55 minutes, 43 secondsis vesszük a következő szót. Ha viszont majd erről lesz szó, nincs meg a szó, akkor elindulunk egy olyan irányba, hogy hogy találjuk meg azt, hogy mit kéne
+1:55:521 hour, 55 minutes, 52 secondshelyette. Tehát ez az ajánlómodul is, ahhoz is vannak adatbázisok. Ráadásul amiket az emberek nem szoktak tudni, hogy vannak ilyen kiegészítő
+1:55:591 hour, 55 minutes, 59 secondssajátszótárak, részben olyanok, amiket minden szers végén törre öt adunk kikapcsolom mondjuk a ördöt, akkor utána már nincs meg. És van olyan, ahova
+1:56:071 hour, 56 minutes, 7 secondselteszi a dolgokat, és amit én egyszer felülbíráltam, innentől kezdve mindig felül lesz bírálva. Sőt, még azt is lehet, hogy amit jól csinál, azt ne
+1:56:151 hour, 56 minutes, 15 secondscsinálja, amit rosszul csinál, azt csinálja meg. Tehát van egy kizáró meg egy kiegészítő szótár.
+1:56:211 hour, 56 minutes, 21 secondsÉs hát nyilván az lenne jó, hogyha fölveszek egy szót a szótárba, mert ugye ez lenne a lényeges, akkor az minden alakjában legyen ott. Na de hát angolból
+1:56:291 hour, 56 minutes, 29 secondsindultak ki, és az angolban fölvettem egy szót, azt kész, fölveszemessel is, és akkor tényleg kész. Magyaran, ha egy
+1:56:361 hour, 56 minutes, 36 secondsszót fölveszek, képzeljél el, ezt a kacsót hányféleképpen kéne fölvenni, ha nincs benne a szótárba, hogy kacsóra kacsónak, kacsóitok, kacsóinkhoz, kacsóítokéjra és így tovább.
+1:56:461 hour, 56 minutes, 46 secondsReménytelen. Ehhez kellene egyfajta okosság, hogy felismerje a tövet. Erre volt kísérlet. Á picit mutatok is ilyet,
+1:56:531 hour, 56 minutes, 53 secondsde a gyakorlat azt mondja, hogy azok a világcégek, akik ezt szeretnék beépíteni az eszközeikbe, nem készültek föl
+1:57:001 hour, 57 minutesmagyarból vagy komplex nyelvekből, és nincs olyan felület, ahol jól lehetne kommunikálni.
+1:57:061 hour, 57 minutes, 6 secondsTehát egyszerűen olyan felület van, szó jó vagy nem jó, és ha nem jó, akkor mondja meg, hogy mit mond helyette, és akkor valamit mond. A rendszer legfontosabb tulajdonsága, hogy szóljon,
+1:57:151 hour, 57 minutes, 15 secondsha valamit elütöttek, az már egy ráadás, hogy még egy jót is javasol. De hát nagy ügy, ha én észreveszem, hogy az nekem
+1:57:221 hour, 57 minutes, 22 secondsnem jó, kijavítom meg látom, hogy jó, jót nevetek, mert mindig én vagyok az okosabb és nem a gép. Ami viszont nagyon
+1:57:291 hour, 57 minutes, 29 secondsfontos, és megint csak technika vagy technológia, hogy ugye volt a Heming távolság, amit már valószínűleg
+1:57:361 hour, 57 minutes, 36 secondstanultak, tehát ugye egy bit el van állítva, és hát ugye ha egy bit nulla, hanem egyes, vagy nem egyes, hanem nulla, akkor egy hing távolságra van, és
+1:57:431 hour, 57 minutes, 43 secondsahány ilyen hely van, annyi távolságra van az egyik string a másiktól. De ennek az általansítása fűzérekre, stringekre
+1:57:521 hour, 57 minutes, 52 secondsúgy, hogy nemcsak egyszerű csere van, hanem lehet beszúrni, tehát hosszabb lesz a string,
+1:57:591 hour, 57 minutes, 59 secondstörölni, rövidebb lesz a string. És Levenstein, akinek azért ilyen különleges a neve, mert ő egy oroszországi ember, akinek német neve
+1:58:081 hour, 58 minutes, 8 secondsvolt. Valószínűleg nagyon sok ilyen van Oroszországban, hiszen például a németokk is, de általában a zsidóságnak választott német nevei Lőenstein volt.
+1:58:181 hour, 58 minutes, 18 secondsEzt csak mint érdekességet mondom. Ő meg az oroszban nincs. Tehát Sziril előtt nem lehet írni. Leírták így, hogy Levenstein, majd amikor publikált és
+1:58:261 hour, 58 minutes, 26 secondsangol folyóiratokban írt, akkor a nevét automatikusan transzliterálták. És m oroszban Levenstein volt e-vel, sőt az
+1:58:341 hour, 58 minutes, 34 secondsS-t is SH-sel, tehát SH-val írták át. Jó lehet, a Stein az egy ismert német formula. Persze azokat meg angolul
+1:58:421 hour, 58 minutes, 42 secondsSteinnek mondják, tehát a Bernstein Bernsteinnek, tehát az is Lenstein lenne. Tehát így legalább Lövensteinnek mondják, de kétségtelen, hogy érdekes az
+1:58:501 hour, 58 minutes, 50 secondső neve, mert ő is valahány Levenstein távolságra van a saját eledeti nevétől.
+1:58:551 hour, 58 minutes, 55 secondsTehát ez egy olyan string manipulációs játék, hogy egy karakterbe, egy karakter ki, egy karakter csere. Ahány ilyen van,
+1:59:041 hour, 59 minutes, 4 secondsannyi távolságra van két string egymástól. És itt van az algoritmus, hogy ezt hogy lehet egyik stringet hány lépésbe, vagy hogy lehet átalakítani, és
+1:59:131 hour, 59 minutes, 13 secondsahány ilyen kell, annyi lővensteény távolságra van az egyik string. A másiktrtól miért mondjuk ezt el? Mert nyilván amikor egy adott stringről nem
+1:59:211 hour, 59 minutes, 21 secondstudjuk, hogy mi, mert nem jön ki belőle a helyes morfológia elemzés, akkor kísérleteket teszünk arra, hogy valahogy abból a stringből csináljunk egy másik
+1:59:291 hour, 59 minutes, 29 secondsstringet, és nyilván arra gondolunk, hogy biztos egy helyen elrontotta. Tehát technikailag szúrjunk be, töröljünk ki, rakjunk be mindent. És ugye hát mit
+1:59:381 hour, 59 minutes, 38 secondscsinálunk? Legeneráljuk az összeset és pak pá pák. Egyenként míg a felhasználó bambán nézi a felületet, hogy mi van,
+1:59:451 hour, 59 minutes, 45 secondslegeneráljuk, hogy melyik lett, hiszen ő már megállt a hibás szón, mert azt látjuk, hogy az nincs benne a morfológiánkban. De amíg ő rányom arra a
+1:59:521 hour, 59 minutes, 52 secondsjobboldali egérgombbal, hogy na mit javasol a gép, addig mi ezt a pár százer dolgot legeneráljuk és leelemezzük, és a
+2:00:002 hoursLenstein távolság segíthet. Csak, hogy ez nem elég.
+2:00:042 hours, 4 secondsEzért Damero, amikor még alig volt számítógépes nyelvészet 60-as években, azt mondta, hogy a helycsere is fontos,
+2:00:122 hours, 12 secondsgépelek és összeakad a két ujjam. Sőt nem is akad össze, csak távoli betűknél, amiket egyébként az írógépen azért helyezték így el a karaktereket, ugye
+2:00:202 hours, 20 secondselső órán beszéltünk róla, hogy gyakoriságunlő, de hogy ne akadjanak össze ezek a fémszárak, tehát hogy gyorsan lehessen úgy gépelni, hogy
+2:00:282 hours, 28 secondsgyakori dolog ne legyen egymás mellett, mikor egymásnak üti a jobb meg a bal kéz.
+2:00:332 hours, 33 secondsDe hát mégis csak valami módon annak azért van esélye, hogy valami módon melléütök és mondjuk a D hye testütök, mert az egymás mellett van. De mondjuk a
+2:00:422 hours, 42 secondsW helyett mondjuk B-t üssek vagy P-t, az teljesen valószínűlen. Tehát nyilván két karakternek a cseréje azért nem
+2:00:502 hours, 50 secondsugyanolyan súlyú, de egy a fene az viszont elég tipikus, hogy egymás melletti betű előbb töömle a másikat, mint az előbbit. Tehát így egy ilyen
+2:00:582 hours, 58 secondssorrendi cserét is bevett Damero és azt mondta, ez a transzpozíció, hogy egymás mellett élőt kicseréli. Ezt a 60-aső
+2:01:052 hours, 1 minute, 5 secondsmondta, hogy nézte az emberi elütéseket, írógépes elütés meg ugye ilyen papíron való javítást, hogy 80% javítható, és ez
+2:01:132 hours, 1 minute, 13 secondsa Damero Lövenstein távolság bejött a stringek közötti rokonságnak a legegyszerűbb technikai menedzselésére.
+2:01:212 hours, 1 minute, 21 secondsA probléma csak az, hogy egy távolságú elütésekkel számol Damero, és az a baj, hogy nagyon sokszor indokolt esetben
+2:01:302 hours, 1 minute, 30 secondskettő vagy három is lehet, csak az indokolt kell, hogy legyen. Hát gondoljunk arra, hogy az E meg az E nem tudtam, hogy van ékezetesbe. Nem tudtam, hogy rövid ível vagy hosszú ível kell
+2:01:382 hours, 1 minute, 38 secondsírni. Az nem egy olyan hiba. Tehát a vízi biciklit itt-ott hosszúval meg röviddel írva, az nem annyi hiba, ahánynak látjuk. Hiszen csak arról van
+2:01:452 hours, 1 minute, 45 secondsszó, hogy az i i nemonos, vagyis súlyozni kéne ezeket. De Shellenstein Sedamero ezt nem tette. Az egy távolságúak nem mindig adtak megoldást.
+2:01:542 hours, 1 minute, 54 secondsA kettő iszonyú nagy távolságba elvi.
+2:01:572 hours, 1 minute, 57 secondsTehát gondoljuk arra a játékra, hogy a vízből hogy kell jég alakot csinálni, hány betű cseréjével. Értelmes szavak
+2:02:042 hours, 2 minutes, 4 secondsmentén. Ugye van egy egy ilyen, hogy víz, víg, vég, jég. Tehát így akkor mindig értelmes szavak mentén megyek el.
+2:02:102 hours, 2 minutes, 10 secondsDe ez egy marhaság, mert három betűs szavakat nagyon könnyű lecserélni egymásra. De ha az empériokriticizmust írja el valaki, akkor bármilyen betűjét
+2:02:182 hours, 2 minutes, 18 secondselcseréli, azt nyugodtan lehetne mondani, hogy az azért az a szó, mert ilyen hosszúban hasonló sincsen. Tehát látszik, hogy nagyon mechanikus a
+2:02:262 hours, 2 minutes, 26 secondsLövensin is, damer Lövenstein, de hát azért ezt használják. Na, akkor ezt használjuk vagy sem, a következő játék van. Az előbbi példa, amit ott láttak,
+2:02:342 hours, 2 minutes, 34 secondshogy be van írva, hogy kérdése. Ilyen szó a morfológiában nincs. Tehát jön az ajánlómodul. ajánlomómodódul elkezd törölgetni egy karaktert érdése,
+2:02:422 hours, 2 minutes, 42 secondsküldésre, kérése, kérdése satöbbi. Vagy fölcserélünk egymás mellett itt, vagy esetleg nyelvcifikus csere e egy kicsit
+2:02:512 hours, 2 minutes, 51 secondsgyakoribb és így tovább. Legenerálok sok 10000 alakot és mi történik? Odadobom a helyes íráselőzőnek a háttérbe, hogy
+2:02:582 hours, 2 minutes, 58 secondsmindetelen ellenőrizzel-e. És akkor azt mondja, hogy találtam egy olyan stringet, hogy kérdése. Az létezik.
+2:03:042 hours, 3 minutes, 4 secondsKérdéses létezik. kérdesse, ugye a kérdet elég gyakorisággal kicsi kérdéssé
+2:03:112 hours, 3 minutes, 11 secondstranszformál valamit. Ennek a string játéknak, hogy törléssel, cserével ilyen-olyan Damero Lövenstein vagy még
+2:03:182 hours, 3 minutes, 18 secondsilyen nyelvspecifikus dologgal legenerált sok százóból, ez a négy jött ki, hogy vannak ilyenek. És ezeket
+2:03:252 hours, 3 minutes, 25 secondsrakjuk ki abba a listába, hogy ha elütötte az illető azt, hogy kérdése, akkor vagy kérdése, duplázta az s
+2:03:332 hours, 3 minutes, 33 secondskérdéses, s fölcserélte az s- kérdése kicsit valószínűtlen, de lehet ékezet nélkül kérdésékezettel.
+2:03:412 hours, 3 minutes, 41 secondsÉs akkor ezeknek van mindegyiknek többféle morfológia elemzése, de nekünk bőven elég a legelsőig elmenni. Tehát a
+2:03:492 hours, 3 minutes, 49 secondshelyes írásellző csak az elsőig megy, és ha van fölbontás, fütyül arra, hogy van még több. Neki nincs szüksége a többire, mert ha valamelyik licencálja, tehát
+2:03:572 hours, 3 minutes, 57 secondsvisszajelzi, hogy ez egy létező alak a nyelvbe, akkor boldogan szaladunk tovább. Tehát nem kell végigjárni az egész fának minden ágát, hanem az első
+2:04:072 hours, 4 minutes, 7 secondshelyes találatnál azt mondjuk, hogy létezik a szó, és bedobjuk a lehetséges ajánlatok közé. Na most ha a szóhatáron
+2:04:142 hours, 4 minutes, 14 secondstúl akarunk lépni, akkor ott megint egy nagyon érdekes problémával találkozunk.
+2:04:192 hours, 4 minutes, 19 secondsugyanis ők Grammer checkennek hívják, de valójában nem érdemes az egész mondatot elemezni, mert mi még a jó mondatokra is nagyon nehezen írunk szintaktikai
+2:04:272 hours, 4 minutes, 27 secondselemzőt. Majd erről lesz ott szó a szintaktikai elemzésnél, tehát a mondatszerkezet elemzésénél. Na de olyanra, amelyik eleve rossz, olyanra
+2:04:352 hours, 4 minutes, 35 secondsnagyon nehéz. Tehát azt nagyon nehéz megcsinálni, hogy egy szintaktikai szerkezetek hibáival hemzsegő, vagy
+2:04:422 hours, 4 minutes, 42 secondslegalábbis hibáit tartalmazó szerkezetnek megmondani, hogy mi lenne az az elemzése, ha jól volna írva. Tehát itt inkább hibanyelvtant kell írni, hogy
+2:04:502 hours, 4 minutes, 50 secondsmik azok a tipikus helyek, ahol valamit elrontottak, és azt szembeállítani a szokásossal, vagyis nem az egész mondatnak az elemzése, hanem ilyen
+2:04:582 hours, 4 minutes, 58 secondshibajelenségeknek a lokális észrevétele, anélkül, hogy az egész mondatnak volna szerkezete, a normától itt-ott eltérő
+2:05:062 hours, 5 minutes, 6 secondsdolgokat teszünk. Tehát mit tudom én, nagyon egyszerű, hogy a hogy előtt nincs vesző, azt mindenki látja, hogy oda kell egyet tenni kontextuálisan. Ehhez nem
+2:05:142 hours, 5 minutes, 14 secondskell a mondatot végigjelenni. És tulajdonképpen itt jön elő, hogy nem is tudjuk, hogy mi hiba meg mi nem, mert hát lehetne olyan értelme, csak azt
+2:05:222 hours, 5 minutes, 22 secondsnagyon nehéz magyarázni. Most akkor a gyakori az a dolog, ami hiba, vagy vagy ami nem gyakori, az is lehet. Szóval itt egy
+2:05:302 hours, 5 minutes, 30 secondsnagyon eltér a a nyelvi, formai problémáknak a világa. Kitalálta valaki, hogy a stílust is lehet ellenőrizni, ami
+2:05:382 hours, 5 minutes, 38 secondsnyilván bizonyos szavak használata, túlgyakori használata, vagy olyan szerkezetek használata, amit könnyű megfogni. Ez is ennek a parciális
+2:05:462 hours, 5 minutes, 46 secondsellenzésnek a része. És persze lehet úgy ellenőrizni, hogy egy-egy szó, ami jó, a mellett szó az kiváló önmagában. Csirke
+2:05:552 hours, 5 minutes, 55 secondsmellett kérek, de a ház mellett egy té-ével nagy eséllyel a múlt időt írtál be. A múlt időt látják. A névutót írta egy té-vel az illető, mert azt hitte,
+2:06:042 hours, 6 minutes, 4 secondshogy egyével kell írni, mert olyan szó is van, és senki nem húzta neki alá, mert ez egy jó szóalak. Csak a ház után évutóként ez valószínűleg két évvel
+2:06:112 hours, 6 minutes, 11 secondskellene. És ma már jönnek be a statisztikai meg neurális szóbeási modellek, amiről majd szintén lesz szó.
+2:06:192 hours, 6 minutes, 19 secondsÉs ezért ahogy sok példafordul elő, ugye a nagykeresőigő beírják a valamit, azt rögtön megkérdezi, hogy did you mean? és
+2:06:262 hours, 6 minutes, 26 secondskiírja helyette azt, ami sokkal gyakoribb, amit sokkal többen írtak, vagy sokkal többen ütöttek rá, hogy igen, ezt akarom. És ahhoz erőszakosnak
+2:06:332 hours, 6 minutes, 33 secondskell lenni, hogy én azt, amit beírtam, azt szeretném, nem pedig, amit elütöttem. Viszont ez nagyon jó, mert ha elütöm, akkor gyorsan hozza helyette
+2:06:412 hours, 6 minutes, 41 secondsazt, amire gondoltam, és nem kell magyarázni, hogy tehát ha véletlenül valaki a Széchenyét Csével írná le, ami szörnyűségű, akkor is kihozza a
+2:06:482 hours, 6 minutes, 48 secondsSzéchenyt, hozz ki cs azt mondja, hogy biztos arra gondoltak, hogy chát nem arról van szó, hogy a hibásat hozza, hanem a gyakoribat. És hogyha a gyakori
+2:06:562 hours, 6 minutes, 56 secondsaz, amiről azt reméljük, hogy az emberek gyakrabban írnak jól valamit, mint rosszul, akkor az segít. De nyilván ez egy helyi, helyes írási programban, amik
+2:07:042 hours, 7 minutes, 4 secondsegy szövegszerkesztő van integrálva, nem sokat segít. Na most nyilván meg lehet fogni azt, hogy a névelő nem jól van,
+2:07:122 hours, 7 minutes, 12 secondsmit tudom én, a Z- és névelő csak magáhangzó előtt állhat. Ha két ige van a mondatban valahol, látok, vagyok, akkor valahol közé kéne egy vessző. Azt,
+2:07:212 hours, 7 minutes, 21 secondshogy a nincsen a a lábú előtt mondjuk nincsen semmi, olyat nem lehet, olyan nincs, hogy lábú. Tehát muszáj
+2:07:292 hours, 7 minutes, 29 secondsvalamilyen valahány lábunak lennie. Ezt lehet ellenőrizni. Ha megtaláljuk azt a szót, hogy Kecskebéka egyben a szótárban, akkor külön nagy eséllyel
+2:07:382 hours, 7 minutes, 38 secondslehet, hogy mégis csak egybe kellett volna írni. Mi nem tudhatjuk, hogy egybe kellett, de azt mondhatjuk a felhasználónak, warning, hogy nézd meg ezt a két szót, szerintünk gyakrabban
+2:07:472 hours, 7 minutes, 47 secondsvan egyben, mint külön. Aztán persze itt van az a tipikus példa. Olvassák a többit is át. A tipikus példa, hogy a
+2:07:552 hours, 7 minutes, 55 secondsmagyar ember evés közben nem beszél. Ha beírják, akkor a az a grammercsekkel bizony erre azt mondja, amelyik ugye itten közhasználatban van, nem
+2:08:022 hours, 8 minutes, 2 secondsreklámozunk semmit, hogy talán arra gondolt, hogy a magyar emberevés közben nem beszél. Tehát ugye az emberevés egy
+2:08:102 hours, 8 minutes, 10 secondslétező ásésses képzet összetett szó és nem tudhatja. Persze nyilván nekem nem kell elfogadnom itt jót nevetek, de meg
+2:08:192 hours, 8 minutes, 19 secondshát vannak olyan szóhasználatok, amik itt láthatóak, sőt hát arra is használják, hogy a printert ne használjuk, mert mi annyira puristák vagyunk, hogy csak nyomtatót használunk.
+2:08:282 hours, 8 minutes, 28 secondsDe hát ezek kikapcsolhatóak, de nyilván a megrendelőnek lehet olyan igénye, hogy a nemzetközi szavakat cseréljük le egy
+2:08:352 hours, 8 minutes, 35 secondsmagyarra, vagy olyat, hogy büntet helyet, büntetést eszközel. És akkor hát az angolt, aki bekapcsolva egy az angol gramelcseket, rengetegszer szól, hogy
+2:08:432 hours, 8 minutes, 43 secondsezt nem így, ezt lehet egyszerűbben is mondani. Meg hát a csúnyának gondolt szavakat nem szabad leírni. Kérdés, hogy
+2:08:512 hours, 8 minutes, 51 secondsugye a szarvast, mint összetételt minek tekintjük? Hiszen ez esetben akkor akkor hibás a szó. Amúgy meg hát kell ezt szeretnünk. Szóval rengeteg ilyen
+2:09:002 hours, 9 minutestechnikai dolgot lehet belerakni egy grammer checkerbe, de igazán ez nem a grammer checker, hanem egy szószintű ellenőrzést kibővítve több szavas
+2:09:072 hours, 9 minutes, 7 secondskörnyezetre. angolban nem egészen erről van szó. Ott egyeztetési hibákat is megfognak. A magyarba, hacsak valaki nem mostanul, magyarul is az első órákon
+2:09:162 hours, 9 minutes, 16 secondsvan, egyszerűen magyar ember ilyen hibát nem üt nem csinál. Angolban pedig anyanyelvi beszélők is sokszor elfelejtik, hogy ott egyes vagy itt egyes.
+2:09:252 hours, 9 minutes, 25 secondsTehát amit a magyarban lehetett csinálni, hogy egy adott hibához, ha nem tudta, hogy miért szólok, hogy az el szeretném, mert ugye elzeretném a
+2:09:332 hours, 9 minutes, 33 secondsszomszéd feleségét, akkor azt egy szóba kell írni. De egyébként az eladról van szó, tehát az el szeretném adni, az így
+2:09:402 hours, 9 minutes, 40 secondskülön irandó. És ha valaki nem tudja, hogy miért, akkor a hozzátartozó helyesírás szabályzatbeli szabályt elő tudjuk húzni és meg tudjuk mutatni,
+2:09:492 hours, 9 minutes, 49 secondsaminek volna népnevelő súlya, de sajnálatos módon ahhoz mindenféle olyan extra eszközök bekapcsolása kell, hogy
+2:09:562 hours, 9 minutes, 56 secondsez az ablak följöjjön, hogy szerintem ember nincs, aki tudja, hogy ez a rendszer benne van egy adott esetben egy Wordbe, hiszen nem használja azokat az
+2:10:042 hours, 10 minutes, 4 secondsopciókat, amiknek a mentén ez is elő tud jönni. Úgyhogy meg van oldva a probléma, csak senki nem használja. Amúgy is
+2:10:112 hours, 10 minutes, 11 secondstudjuk, hogy a szövegszerkesztőknek néhány százaléka-a lehetséges opcióinak van használatban. Tehát 6-7% és
+2:10:192 hours, 10 minutes, 19 seconds93-94%-ot soha nem használ felhasználóknak a legnagyobb része vagy túlnyomó többsége így ez se.
+2:10:282 hours, 10 minutes, 28 secondsNa most a szövegelválasztás egy másik ilyen dolog, ami már nem annyira az átlagembernek kell, bár kétségtelen, hogy szép egy szabályosan elválasztott
+2:10:362 hours, 10 minutes, 36 secondsszöveg, de sokkal inkább a mindenfajta nyomdai munkálatoknál, tehát tördelésnél kell, magyar elválasztás alapszabályai
+2:10:452 hours, 10 minutes, 45 secondsnem nehezek. Az a kérdés, hogy mikor kell felülbírálni, és a felülbírálás már morfológiai kérdés, tehát amit csináltunk morfológiába, be kell ide
+2:10:522 hours, 10 minutes, 52 secondshozni. Sőt, még vannak több értelműségek is, ami azt jelenti, hogy a többféle elválasztást esetleg attól függ, hogy melyik értelemben van itt. És nincs az a
+2:11:012 hours, 11 minutes, 1 secondszoftver, amelyik el tudná dönteni, hogy a legelőre szó az most az első helyre vagy a legelő irányába értelemben van
+2:11:082 hours, 11 minutes, 8 secondsitt. Márpedig az elválasztás az a felső foknál legelőre, másiknapig legelőre.
+2:11:172 hours, 11 minutes, 17 secondsEgyetlen dolgot lehet tudni, hogy mind a kettőt el tudom ott választani, hogy re.
+2:11:222 hours, 11 minutes, 22 secondsTehát ahol nem akarok elválasztani, ott inkább nem választok el, meghagyva ezt a lehetőséget a felhasználónak, és
+2:11:302 hours, 11 minutes, 30 secondsinnentől kezdve csak ott választol a program, ahol biztos. Tehát a leelő részben nem biztos, a René biztos. Tehát
+2:11:372 hours, 11 minutes, 37 secondsegyfajta ilyen és művelet az összes elválasztási pozíciót összeéseljük. Ez egy nagyon jó algoritmus, de nyilván egy ismeretlen vagy hosszú szónál, ha nincs
+2:11:452 hours, 11 minutes, 45 secondsbenne elválasztási lehetőség, mert nem tudok ilyet, akkor probléma van. ugyanis akkor lehet, hogy ez a keskeny hasában,
+2:11:532 hours, 11 minutes, 53 secondsamibe az a szövegrész van, nagyon csúnyán néz ki. Ilyenkor jönnek a felhasználók, a tördelők, szerkesztük, akik ott ülnek a szövegnél és
+2:12:002 hours, 12 minutesbelenyúlnak. Ez nem a mi dolgunk, hanem a lektoré, meg a tördelőjé, meg a bármilyen szakemberé.
+2:12:082 hours, 12 minutes, 8 secondsA baj az, hogy vannak különleges elválasztások, mint a magyarban a kettő meg a kettős meg a hármas másra hangzó, ugye SSZ, mint ahogy az első alkalom
+2:12:162 hours, 12 minutes, 16 secondsbeszéltünk, sőt a J még mókásabb, DDZs a duplája. És ezeknek az elválasztásához, annak az elválasztóprogramnak tudnia
+2:12:252 hours, 12 minutes, 25 secondskell, hogy ez a probléma egy nyelvbe létezik. Na most a magyar elég különleges azzal, hogy az elválasztása ilyen, hogy elválasztás pillanatában
+2:12:322 hours, 12 minutes, 32 secondsmegszűnik, megszületik a kettős betűnek a második eleme. Tehát sz + sz,
+2:12:402 hours, 12 minutes, 40 secondsde elválaszkor elválasztáskor szőel újsor sz. Tehát megjelenik egy új zs
+2:12:482 hours, 12 minutes, 48 secondsután, amelyik nincs benne az elválasztás nélküli. És gondoljanak bele, hogy egy program általában büntetéseket számol, és azt mondja, hogy nem férek ki sehogy az egész hasra nézve kérek elválasztást.
+2:12:592 hours, 12 minutes, 59 secondsHa megadják az elválasztást és sikerül valahogy beleerőltetni egy másik szöveget, akkor kiszámolja, hogy ezzel a szöveggel viszont nem kell elválasztás,
+2:13:062 hours, 13 minutes, 6 secondsés azt mondja, hogy ne jöjjön az elválasztás, és abban a pillanatban visszaáll a 22-es csapdája, mert más hosszú a szöveg elválasztással is
+2:13:152 hours, 13 minutes, 15 secondsanélkül. Anélkül kell, ha beszúrom, már nem kell. Ezek nagyon komoly problémák akkor, ha nem ismeri az elválasztó program
+2:13:232 hours, 13 minutes, 23 secondshívója, a szövegszerkesztő vagy kiadványszerkesztő például a magyar nyelvi problémákat. Sőt, azt lehet mondani még nagyon tipikusan, hogy egy
+2:13:312 hours, 13 minutes, 31 secondsolyan szó, hogy asszony, az azért nem választható el a legtöbb programba, mert nem azt mondja, hogy milyen az asszony
+2:13:382 hours, 13 minutes, 38 secondselválasztott alakja asz kötőel szeny, hanem azt kérdezi, hogy hanyadik karakter. Na most az asszony szót úgy,
+2:13:462 hours, 13 minutes, 46 secondshogy hanyadik karakter nem lehet elválasztani? Tehát az interface egy numerikus valami, hogy hány betű után kell, akkor nincs elválasztása ennek a
+2:13:542 hours, 13 minutes, 54 secondsszónak, és akkor széttöredezik a szöveg, mert nagy space-ek maradnak a has közepén, mert ezt a szót nem sikerült
+2:14:002 hours, 14 minuteselválasztani. És aztán nyilván ennek még mindenféle következményei lehetnek. Tehát látszik, hogy van egy szabályos magyar
+2:14:092 hours, 14 minutes, 9 secondselválasztás, és vannak a befogadó szoftverek, akik ezt hívják. Tehát hiába ügyes a szoftver írója, ha a hívófélnek
+2:14:162 hours, 14 minutes, 16 secondsaz apia hívási felülete ezt nem tudja, akkor annyi. Ilyen egyszerű a magyar elválasztás, tehát ezzel semmi gond nincsen. Hol kell ugye a V meg a C, a
+2:14:252 hours, 14 minutes, 25 secondsmagangzó meg a másangzó általában ezt végig lehet nézegetni, hogy hogy kell ilyet elválasztani. Nyilván az utolsó szor sor az érdekes, ahol az
+2:14:332 hours, 14 minutes, 33 secondsösszeelválasztása egy másik szó. S kötőjel ez. Erről beszéltem eddig. Az elválasztást csak jelzem. alul a példák.
+2:14:432 hours, 14 minutes, 43 secondsSzerencsére a magyar egyértelműen jelzi, de például az angolba az Oxford vagy a Longman szótár más elválasztást ad, mert
+2:14:502 hours, 14 minutes, 50 secondsnincs egy ilyen központi helyesírási rendszer, ami azt mondja, hogy így kell elválasztani. Tehát az egyik így választál, a másik meg úgy. Ezek
+2:14:572 hours, 14 minutes, 57 secondskülönböző sztenderdek, ha tetszik, de bármelyik utána lehet nézni.
+2:15:012 hours, 15 minutes, 1 secondValamelyik a képzőt tartja fontosnak. Az eyes, tehát a ha ott azért fontos, hogy hogy az eyes az le legyen választva,
+2:15:102 hours, 15 minutes, 10 secondsvagy hogy hallja-e azt, hogy seis, ugye hype a seis, és hogy ez egy görög tő, meg ezem a magyarban is van ilyen.
+2:15:172 hours, 15 minutes, 17 secondsValaki a diagnózis szót akarja elválasztani, akkor az elválasztós diagnózis.
+2:15:242 hours, 15 minutes, 24 secondsHa viszont valaki tud görögül, meg van engedve neki, hogy dia kötője, gnózis.
+2:15:292 hours, 15 minutes, 29 secondsHát aki tudja, hogy a gnózis egy szó, az odahúzhat egy cezúrát, és oda lehet elválasztást rakni. Tehát a magyarban is
+2:15:362 hours, 15 minutes, 36 secondsvannak ilyen kettős lehetőségek, de azért általában a fő problémánk az, és itt lehet látni, hogy a kézi
+2:15:432 hours, 15 minutes, 43 secondselválasztásnál, amit még a Word is megmutat, azt a szót, hogy elválasztást ezen a pozíción, ahol éppen az a szó
+2:15:502 hours, 15 minutes, 50 secondsvolt a szövegben, itt fogom elválasztani akarni, amit nyilván, ha be van kapcsolva az automatikus elválasztás, ezt sose látja senki, de meg lehet kérni, hogy mutassa meg. Ezzel szemben a
+2:15:592 hours, 15 minutes, 59 secondsmegint szót soha nem fogja elválasztani, mert nem tudhatjuk róla, hogy megint vagy ismét megint. Tehát, hogy most a G
+2:16:072 hours, 16 minutes, 7 secondsután vagy a Gőtt van az elválasztás, ezért ennek a szónak soha nincs elválasztása, hacsak a mindenkori tördelő maga nem választja el. Az
+2:16:162 hours, 16 minutes, 16 secondsasszonáncnál pedig látszik az, amit az asszonynál mondtam. Ott egy ilyen furcsa egyenlőséggel van. megoldottuk azt a problémát, hogy a kettős más hangzókat
+2:16:242 hours, 16 minutes, 24 secondsúgy lehet elválasztani, hogy elválasztási pozícióban látszik egy virtuális Z van ott, de ha arrébb talom a szöveget, mindenki kája mondjuk
+2:16:312 hours, 16 minutes, 31 secondsWordbe, akkor eltűnik ez a Z. Tehát lehetőségek vannak.
+2:16:362 hours, 16 minutes, 36 secondsÉs akkor még van egy harmadik világ a szinonimas szótárok, teszoruszok világa, ami a proofing pontosan a negyedik, mert ugye spelling és grammar elválasztás,
+2:16:442 hours, 16 minutes, 44 secondshyponation és ez, de itt valójában egy ilyen kiegészítő plusz a nyelvi, a morfológiai elemzés. Ugyanis
+2:16:532 hours, 16 minutes, 53 secondsami itt le van írva, az nem más, mintogy a tezaurusz és a szinonima szótár azonos-e vagy sem. Magyarul nem, angolul igen. Tehát magyarul tezus az egy
+2:17:012 hours, 17 minutes, 1 secondmindenféle relációkat tartalmazó, komplex hierarchiát mutató adatbázis, a szinonima szótár, meg a szavakhoz föl
+2:17:092 hours, 17 minutes, 9 secondsvan szorolva szinonima. Az pedig nagy kérdés, hogy mi az, hogy szinonima.
+2:17:132 hours, 17 minutes, 13 secondsMaradjunk abban, hogy nem biztos, hogy semmi köze nincs hozzá. Ez körülbelül a szinonima definíciója. minden más esetben ez zűrös. A szinonima tényleg
+2:17:212 hours, 17 minutes, 21 secondsezt jelenti, mert azért ha belegondolnak, hogy a kutya meg az ebb, az mindenki számára szinonima. Ez egy szótárva benne van, de például az ebadó
+2:17:302 hours, 17 minutes, 30 secondsszót az életben nem lehet kutyaadóra kicserélni.
+2:17:332 hours, 17 minutes, 33 secondsAki a kutyaszót keresi, és nem keres rá az ebre, egy rakás olyan dokumentumot nem talál meg, ami az adózásról szól, mert kutyaadó pedig nincs.
+2:17:432 hours, 17 minutes, 43 secondsÉs ez úgy szinonima, hogy ugyanazt jelenti, de bizonyos helyeken nem csereszabatos. Tehát azért mondom, hogy végtelen bonyolult nyelvi problémákat jelentenek a szinonimák. Na meg pláne az
+2:17:522 hours, 17 minutes, 52 secondsantonimák, ugye az ellentétek, mert ugye az is egy ilyen szótárszerű dolog, van is olyan angol alkalmazás, amit így hoznak. Ott pedig az a baj, hogy nem
+2:18:012 hours, 18 minutes, 1 secondtudjuk, hogy milyen értelemben ellentét az egyik szó a másiknak. Amikor valaki egy magyar antonima szótárt írt, akkor azt vette észre, hogy egészen más a
+2:18:082 hours, 18 minutes, 8 secondshagyomány, angolul meg magyarul. Van az a szó, hogy dolgozik, aminek az angolban az az antonímája, hogy pihen, a magyarul
+2:18:172 hours, 18 minutes, 17 secondspedig az, hogy heny. Na most van olyan értelme a dolgoziknak, hogy aktuálisan nem dolgozik, teát pihen. A magyarban pedig az a defót, hogy hát aki nem
+2:18:252 hours, 18 minutes, 25 secondsdolgozik, az nyilván nem dolgozik. Tehát most ezt nagyon nehéz elmagyarázni, hogy hogy vannak ezek. Ez egy ingoványos terület, ami miatt mi mégis itt
+2:18:332 hours, 18 minutes, 33 secondstárgyaljuk, mert a proofing tools csomagnak része, és mert valójában amikor elindulunk, ráütünk egy szóra,
+2:18:402 hours, 18 minutes, 40 secondsmondjuk arra, hogy nem tudom én, segítő, és akkor azt meg kellene találni, de így nincs benne a szótárban, csak úgy, hogy segít. És akkor a segítnek van egy
+2:18:492 hours, 18 minutes, 49 secondstámogatjelentése, és a támogat szót vissza is lehetne írni a szövegbe. Na de ki emlékszik arra, hogy én nem azt írtam be, hogy segít, hanem azt, hogy segítő?
+2:18:582 hours, 18 minutes, 58 secondsAnnak idején készítettünk olyan modult, amelyik elindul úgy, hogy leveszi a toldalékot, megjegyzi a tövet, ott szinonim a keresés kézzel, ami a
+2:19:062 hours, 19 minutes, 6 secondsfelhasználó feladata, majd visszaragozza a végén azt a szót, amit kiválasztott ahelyett, ami eredetileg volt. De mivel
+2:19:142 hours, 19 minutes, 14 secondsaz eredetileg szintaktikai pozícióban volt, ezért most is egy olyan szintaktikai pozíciójú szót kell visszaírjam. Kutyáitoknak
+2:19:222 hours, 19 minutes, 22 secondseb a kutya tőre, akkor ebeiteknek. És ezt a rendszer tudja. Sajnálatos módon
+2:19:292 hours, 19 minutes, 29 secondsaz aktuálisan fel aktuálisan ismerhető ilyen nyelvi rendszerek ezt nem támogatják, mert nincs rá szükség. A
+2:19:362 hours, 19 minutes, 36 secondsmagyaroknak meg hát nagy ügy, hát őnekik akkor majd valami más megoldás lesz.
+2:19:412 hours, 19 minutes, 41 secondsKívülről meg lehet oldani a problémát, de a rendszerbe integrált eszközök, amit egy partner csinálhat, nem tartalmazhatnak olyat, amit az anyja cég
+2:19:492 hours, 19 minutes, 49 secondsnem szeret. Így a szinomas szótároknak elvileg van egy morfológiai előkéjük, meg egy morpológiai generáljú utókájuk. Valójában ezeket nem tudjuk kihasználni.
+2:19:582 hours, 19 minutes, 58 secondsÖrülünk, ha leszedjük a tövet és megkapjuk azt a toldalék nélküli szinonimát, amire aztán gyalog kézzel ráírjuk, hogy mi is toldék. Mi az a
+2:20:062 hours, 20 minutes, 6 secondstoldalék, ami kell hozzá, hogy abba a pozícióba. Meg jelen bár a program meg tudná csinálni, de az interface nem
+2:20:122 hours, 20 minutes, 12 secondsengedi. Tehát összefoglalva van egy nagyon fontos alapkérdés, hogy a különböző eszközöknél melyik beszéltünk
+2:20:202 hours, 20 minutes, 20 secondsróla a kezdő előadásokon, a pontosság, precision vagy a fedés. Ugye az nagyon lényeges. Fedés szót ugye azt azt
+2:20:292 hours, 20 minutes, 29 secondsa recall az angolban, és nem pedig valami coverage. Tehát az a recall az, ami ennek megfelel. Melyik a fontosabb?
+2:20:352 hours, 20 minutes, 35 secondsUgye a pontosság az, hogy amink van, azok azok elég pontosak. Így szeretnénk. A fés meg, hogy mindent megtaláltunk-e.
+2:20:432 hours, 20 minutes, 43 secondsHelyes írási programnál nagyon fontos, hogy minden problémát vegyünk észre annak az árán is, hogy esetleg van, amit
+2:20:502 hours, 20 minutes, 50 secondsrosszul veszünk észre, majd a felhasználó dönt. Ezt nagyon nem szeretik az emberek. Miért húzza ezt alá? Azért, mert túl generál. De azért kell túlgenerálja. Az nagyon jó érzés
+2:20:592 hours, 20 minutes, 59 secondsvolna, ha egy olyan lenne, amik soha nem szól, hogy hibásat írtam, de tele van hibával, bent marad minden. Nekem minden lehetséges hibát alá kell húznom, olyat
+2:21:072 hours, 21 minutes, 7 secondsis, amit a felhasználó jót mosolyog. Jó hír, hogy ő dönthet, ránéz, oda se kell menni, buta a rendszer. A rossz hír
+2:21:152 hours, 21 minutes, 15 secondsviszont, hogy tudni kell a helyes írást, hogy melyiket kell tényleg kijavítani, de legalább fölhívja a figyelmet highlighttal vagy aláhúzással, hogy ezek
+2:21:212 hours, 21 minutes, 21 secondsazok, amikre javítást vár, mert elütöttél egy rövidít hosszú helyett.
+2:21:272 hours, 21 minutes, 27 secondsIlyesmi van. Az elválasztásnál pont fordítva, legyen pontos, tehát ahogy beszéltünk, válasszon el jól, mert ha nincs elválasztás, az nem helyes írási
+2:21:352 hours, 21 minutes, 35 secondsprobléma, az csak legfeljebb esztétikai, de ha bevisz egy rossz elválasztást, az már helyes írási lesz. Márpedig mi nem lehet, hogy újat generáljunk. van el
+2:21:432 hours, 21 minutes, 43 secondselég a szövegbe. Tehát az az ára, hogy ilyenkor néha kézzel kell belenyúlni, mert a megint soha nem fogja elválasztani. Emlékezzenek a példára.
+2:21:512 hours, 21 minutes, 51 secondsViszont a így nagyon gyors marad az egész. Tehát a rendszer lefut a tördelőnek utolsó pillanatban, amikor már határideje van, be tudja adni, és
+2:21:592 hours, 21 minutes, 59 secondsnem lesz benne rossz elválasztás, mert csak azt választja el, amit biztosan tud. És szemre az meg látszik, hogyha valami csúnya és nagy space van a sor közén, akkor azt kézzel ki lehet
+2:22:082 hours, 22 minutes, 8 secondsjavítani, de figyelni kell rá. A szín szótárból megint az van, hogy a keresések problémája, hogy nyilván az a fontos, hogy mindent vegyen észre, hogy
+2:22:172 hours, 22 minutes, 17 secondsminél kevesebb olyan eset legyen, amit nem vett észre, de megint az áram, mint a helyesírásnál, hogy hát néha azért olyan butaságokat is mond, amin mi jót
+2:22:242 hours, 22 minutes, 24 secondsmosolygunk, mert mi mindig okosabbak vagyunk. És akkor ez még csak az egy nyelvi szótárak világa volt, de mivel ez a proofing toolsnak része, ezért
+2:22:322 hours, 22 minutes, 32 secondsbeszéltünk róla, és majd amikor odajutunk, akkor a több nyelvű szótárokról is fogunk beszélni hasonló problematikával, de az egy másik előadás. Köszönöm a figyelmüket.

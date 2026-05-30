@@ -20,7 +20,7 @@
             <ol>
                 <li>Karakterek és betűreprezentáció. Nyelv­statisztikai törvények. n-gramok.</li>
                 <li>Reguláris kifejezések a gépi nyelvészetben. FSA, FST. Véges állapotú automaták kiterjesztései (RTN, ATN).</li>
-                <li>Kétszintes és unifikációs morfológia. Számítógépes morfológia alkalmazásai.</li>
+                <li>Kétszintes és unifikációs morfológia. Szófaji egyértelműsítés. Alkalmazások.</li>
                 <li>Mondatreprezentáció, jegyszerkezetek, unifikáció. Mondatelemzési módszerek.</li>
                 <li>Szintaktikai szerepek és jelentés. Fogalmi reprezentációk. Ontológiák, WordNet.</li>
                 <li>Korpuszok. Gépi tanulás. Szóbeágyazás. Gépi fordítás (szabályalapú, statisztikai, neurális).</li>
@@ -221,6 +221,24 @@
 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- ═══════════════════════════════════════════════════════════ TÉMA 2 -->
 <div class="page">
     <div class="topic-header">
@@ -230,24 +248,8 @@
 
     <h3>Reguláris kifejezések a gépi nyelvészetben</h3>
 
-    <h4>Szófa (trie)</h4>
-    <p>A szófa (Fredkin 1960) egy olyan, a szavak rákövetkező karaktereivel címkézett élsorozatokat tartalmazó fa, amelyben egy szót úgy találunk meg, hogy végigjárjuk karakterenként.</p>
-    <ul>
-        <li>Bináris keresőfák: O(m log(n)) (n a fában tárolt elemek száma)</li>
-        <li>Szófa: m hosszúságú kulcs megtalálása max. O(m)</li>
-        <li>Nagy számú rövid füzér tárolása esetén a szófa kevesebb helyet igényel, mint a bináris keresőfa (ui. a kulcsokat nem tároljuk, a csomópontokat meg közösen használják az egyforma kezdőszeletű füzérek kulcsai)</li>
-        <li>Hasítótáblák helyett is használható (bár néha a szófák lassabbak)</li>
-        <li>Nem mindenre jó: vannak füzérként nehezen ábrázolható kulcsok (pl. a lebegőpontos számok)</li>
-        <li>De: szótárak ábrázolására alkalmas</li>
-        <li><strong>ADFSA</strong> (körmentes determinisztikus véges automata) a szófánál is jobb, de csak ha nincs kiegészítő információ (csak puszta szólista)</li>
-    </ul>
-    <p>Alapvetően sokszófafajta van; három típus: általános szófa, módosított (kompakt) szófa, erősen módosított szófa. Az erősen módosított szófák (PATRICIA-fa: Practical Algorithm to Retrieve Information Coded in Alphanumeric, Morrison 1968) élein több betű is lehet, pl. az előtagok (igekötők, re-, pre-, anti- stb.) vagy a tipikus és ritka kezdő betűpárok.</p>
+   
 
-    <h4>Formális nyelvek és automaták Chomsky-hierarchiája</h4>
-    <div class="definicio">
-        <strong>Formális nyelv:</strong> egy formális nyelvtan által leírt füzérek halmaza.<br>
-        G = (N, T, R, S) egy formális nyelvtan, ahol: N → nemterminális szimbólumok véges halmaza; T → terminális szimbólumok véges halmaza; R → (T∪N)*N(T∪N)* → (T∪N) alakú szabályok véges halmaza; S ∈ N → mondatszimbólum.
-    </div>
     <ul>
         <li><strong>0-típusú nyelvtan</strong> (α → β): rekurzív megszámlálható nyelvek — felismerő: Turing-gép</li>
         <li><strong>1-típusú nyelvtan</strong> (αAβ → αγβ): környezetfüggő nyelvek — felismerő: lineárisan korlátozott automata</li>
@@ -256,43 +258,75 @@
     </ul>
 
     <h4>Reguláris kifejezések a gépi nyelvészetben</h4>
-    <p>A reguláris kifejezések leírhatók véges automatákkal. A reguláris kifejezés – reguláris nyelv – véges gép háromszög ekvivalencia az alapja a gépi nyelvészeti alkalmazásoknak. <span class="note">(ez a kapcsolat teszi lehetővé a morfológiai elemzők hatékony implementálását)</span></p>
+    <p>A Chomsky-hierarchiában a <strong>3-típusú (reguláris) nyelveket</strong> ragadjuk meg: ezeket véges állapotú automatával (FSA) ismerhetjük fel, O(n) időben — szemben a veremautomatával (O(n³)) vagy a Turing-géppel.</pp>
 
-    <h3>FSA</h3>
 
-    <h4>Véges állapotú automata (FSA)</h4>
+    <h3>Véges állapotú automata (FSA)</h3>
+
+    A legegyszerűbb nyelveknek a regulárisoknak a kezelésére a véges állapotú automatát definiálta. 
+
+<img src="img/nyelvtech/regularis.png" alt="Verem automaták" style="max-width:500px;width:30%;">
+
+
     <div class="definicio">
         <strong>Véges állapotú automata:</strong> A = (S, Σ, s, F, T) ötös, ahol:<br>
         — S → állapotok véges halmaza<br>
-        — Σ → egy ábécének nevezett véges halmaz<br>
+        — Σ → egy ábécének nevezett véges halmaz (nem puszta karakterek, hanem a nyelv szimbólumai) <br>
         — s ∈ S → kiinduló állapot<br>
-        — F ⊆ S → a végállapotok halmaza<br>
+        — F ⊆ S → a végállapotok halmaza  (végállapot bárhol lehet) <br>
         — T : S × (Σ ∪ {ε}) → S → átmenet függvény<br><br>
         Az X = x<sub>0</sub>x<sub>1</sub>…x<sub>n</sub> Σ ábécéből alkotott füzért A elfogadja, ha létezik S-ben az átmenetek r<sub>0</sub>, r<sub>1</sub>, …r<sub>n</sub> sorrendje a következő feltételekkel:<br>
-        1. r<sub>0</sub> = s<br>
-        2. r<sub>i+1</sub> = T(r<sub>i</sub>, x<sub>i</sub>) (i = 0, …, n−1)<br>
+        1. r<sub>0</sub> = s ( a kiinduló állapot)  <br>
+        2. r<sub>i+1</sub> = T(r<sub>i</sub>, x<sub>i</sub>) ( átmegyek az állapotok között x hatására )<br>
         3. r<sub>n</sub> ∈ F
     </div>
 
-    <h3>FST</h3>
+    <div class="definicio">
+        <strong>Reguláris nyelv:</strong> a véges állapotú automata által elfogadott füzérek halmaza<br><br>
+        <strong>Reguláris kifejezés:</strong> olyan formula, mely konkatenáció, unió és iteráció használatával meghatároz egy reguláris nyelvet
+    </div>
 
-    <h4>Véges átalakítók (FST)</h4>
+<img src="img/nyelvtech/reg_kif.png" alt="Verem automaták" style="max-width:500px;width:60%;">
+
+
+
+
+
+
+    <h3>Véges átalakítók (FST)</h3>
+
+    <div class="pelda">
+        Az FSA outputja <strong>bináris</strong>: a bemenő karaktersort beolvassa, és a végén annyit mond — elfogadtam vagy nem fogadtam el (igen/nem, true/false). A feldolgozás lépéseiről semmilyen információt nem ad. A nyelvészetben viszont nem csak az érdekel minket, hogy egy szóalak helyes-e, hanem az is, hogy <em>mit jelent</em> — mi a töve, mi a toldalék, milyen nyelvtani információt hordoz. Ehhez a bináris kimenet kevés. Éppen emiatt jött létre a véges átalakító (FST).
+    </div>
+
     <div class="definicio">
         <strong>Véges átalakító:</strong> T(S, Σ, Γ, s, F, δ) hatos, ahol:<br>
         — S → az állapotok véges halmaza<br>
-        — Σ → a bemenő ábécének nevezett véges halmaza<br>
-        — Γ → a kimenő ábécének nevezett véges halmaz<br>
+        — Σ → a bemenő ábécének nevezett véges halmaza  (IN)<br>
+        — Γ → a kimenő ábécének nevezett véges halmaz (OUTPUT, ami egy string lesz és nem bool)<br>
         — s ∈ S → a kezdő állapot<br>
         — F ⊆ S → az elfogadó állapotok véges halmaza<br>
         — T : S × (Σ ∪ {ε}) × (Γ ∪ {ε}) → S → átmenetfüggvény<br><br>
         A T átalakítja az α ∈ Σ* füzért β ∈ Γ* füzérbe (röviden: α[T]β) ha létezik út a kezdőállapotból egy végállapotba α bemenősorozat és β kimenő sorozat mellett.<br><br>
-        <strong>Az FSA és az FST különbsége:</strong> az FSA kimenetén egy Boole-válasz jön létre, míg az FST egy füzért ad eredményül (a másik szalag tartalmát).
     </div>
 
     <p>Az automatákkal elvégezhető és értelmezhető műveletek: konkatenáció, unió, iteráció, metszet, kompozíció.</p>
-    <p>A nyelvtechnológiai felhasználás lényege, hogy megpróbáljuk a nyelvet kétszintes leírással megismerni; ezt automatákon keresztül tehetjük meg.</p>
+
+<img src="img/nyelvtech/veges_muv.png" alt="Verem automaták" style="max-width:500px;width:80%;">
+
+
+    <p>A nyelvtechnológiai felhasználás lényege, hogy megpróbáljuk a nyelvet kétszintes leírással megismerni; ezt automatákon keresztül tehetjük meg. A <strong>két szint</strong>: a <strong>lexikális szint</strong> (a szótári/belső alak, pl. <em>ház+ak</em>) és a <strong>felszíni szint</strong> (a ténylegesen kiejtett/leírt alak, pl. <em>házak</em>). Az FST pontosan ezt a leképezést végzi el a két szint között.</p>
+
+    <h4>Johnson felismerése (1972)</h4>
+    <p>Johnson észrevette, hogy a fonológiai leírások sosem alkalmazzák az újraíró szabályt saját kimenetére — mindig csak a környezetet írják át. Emiatt a bemenet-kimenet párok leírhatók <strong>reguláris relációval</strong>, ami ekvivalens egy véges állapotú átalakítóval. Következmény: a generatív fonológia szabályai bár környezetfüggő formalizmusban vannak leírva, valójában csak <strong>reguláris nyelveket</strong> generálnak — a 3-as Chomsky-osztályba tartoznak, nem az 1-esbe.</p>
+
+<img src="img/nyelvtech/jonson.png" alt="Verem automaták" style="max-width:500px;width:60%;">
+Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezéssel is meglehet számolni, hogy azonos számú AB-t fűzünk egymás után, mint amennyi B van a végén. Ez a szabály nem generál környezetfüggetlen nyelvet, hanem regulárist.
+
 
     <h3>Véges állapotú automaták kiterjesztései (RTN, ATN)</h3>
+
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=6390s" target="_blank">▶ Előadás ezen a részen </a></p>
 
     <p><strong>RTN (Recursive Transition Network):</strong> egymást hívó FSA-k hálózata; az élek címkéi közt megjelenik más FSA-k „neve". Az aktuális bemeneti pozíciót, az aktuális állapotot és a visszatérési helyet veremkezeléssel kezeli.</p>
     <div class="definicio">
@@ -300,101 +334,229 @@
         — Az RTN egymást hívó FSA-k hálózata: az élek címkéi közt megjelenik más FSA-k „neve".<br>
         — Az FSA (a reguláris nyelvek) O(n) idő alatt elemezhetők.<br>
         — Az RTN valójában egy veremautomata, azaz környezetfüggetlen nyelvek elemzésére is alkalmas.<br>
-        — Az RTN-nel tehát O(n³) elemzési idő garantálható.
     </div>
 
-    <p><strong>ATN (Augmented Transition Network):</strong> az RTN bővítése. Az ATN-ben vannak élcímkék, értékek, tesztek és akciók. Az ATN formalizmusra is van 1-2 algoritmus; hagyományosan létezik XML leírása is. <span class="note">(az ATN a természetes nyelv feldolgozásában az 1970-es évek domináns eszköze volt)</span></p>
+    <p><strong>ATN (Augmented Transition Network):</strong> az RTN bővítése, amelynek már van memóriája is a RTN-el ellentétben. Az ATN-ben vannak élcímkék, értékek, tesztek és akciók. Ez egy TG, mivel bármit megenged a nyelvtani szabályokban. </p>
+    <ul>
+        <li><strong>Regisztereket</strong> használ információk tárolására</li>
+        <li><strong>Teszteket</strong> végezhet az átmeneteken</li>
+        <li><strong>Akciókat</strong> hajthat végre</li>
+        <li>Összetettebb, kontextusfüggő nyelvtani jelenségeket képes kezelni — különösen hasznos természetes nyelvű mondatok elemzésében</li>
+    </ul>
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 2. Téma</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- ═══════════════════════════════════════════════════════════ TÉMA 3 -->
 <div class="page">
     <div class="topic-header">
         <span class="topic-num">3. Téma</span>
-        <h2>Kétszintes és unifikációs morfológia. Számítógépes morfológia alkalmazásai.</h2>
+        <h2>Kétszintes és unifikációs morfológia. Szófaji egyértelműsítés. Alkalmazások.</h2>
     </div>
 
-    <h3>Kétszintes és unifikációs morfológia</h3>
+    <h3>Kétszintes morfológia</h3>
 
     <h4>A számítógépes morfológia célja</h4>
-    <p>A számítógépes morfológia olyan számítógépes technológiák és algoritmusok kialakításával foglalkozik, melyek segítségével különféle nyelvű toldalékolt szóalakok elemzése és generálása megoldható. A számítógépes morfológia az írott alakokkal foglalkozik. <span class="note">(1983: Koskenniemi vs. Winograd — megindult a modern számítógépes morfológia)</span></p>
+    <p>A számítógépes morfológia olyan számítógépes technológiák és algoritmusok kialakításával foglalkozik, melyek segítségével különféle nyelvű toldalékolt szóalakok elemzése és generálása megoldható. A számítógépes morfológia az írott alakokkal foglalkozik. </p>
     <ul>
         <li><strong>Szóalak-felismerés:</strong> a program visszaadja a toldalékolt szóalakból a szótári tövet (lemmatizálás), annak szófaját és a megjelenített nyelvtani információt.</li>
         <li><strong>Szóalak-generálás:</strong> a helyes szóalak előállítása a szótő és a morfológiailag releváns nyelvtani információ segítségével.</li>
     </ul>
 
-    <h4>A kétszintes leírás felé</h4>
-    <p><strong>Johnson felismerése</strong> a reguláris reláció:</p>
-    <ol>
-        <li>aanbnb → környezetfüggetlen nyelv</li>
-        <li>a(ab)nb → reguláris nyelv</li>
-    </ol>
-    <p><strong>Kaplan &amp; Kay (1981/1994):</strong> észrevették, hogy ha van két olyan szabály, amit átalakítóval modellálunk, akkor egyiket a másik bemenetére kötve egyetlen ekvivalens átalakítót kapunk. Ez azért fontos, mert nem generál közbülső eredményt, illetve a szabályok számától függetlenül tetszőleges számú fonológiai újraírás következhet be.</p>
-    <p>A <strong>szabálymegfordítás problémája:</strong> ugyanazon generáló szabályok elemzésre való használatakor a kötelező szabályok opcionálisakká válhatnak: adott N lexikális füzérből a szabályok egyetlen felszíni alakot generálnak, de a felszíni alakból az inverz leképezés „egy a sokhoz" típusú is lehet. Megoldás: véges átalakítók soros vagy párhuzamos kapcsolása.</p>
 
-    <h4>Véges átalakítók soros kapcsolása</h4>
+    <h4>Véges átalakítók soros kapcsolása (Kaplan &amp; Kay)</h4>
     <ul>
         <li>A fonológiai levezetések közbülső állapotai mindig kiküszöbölhetők az egyes szabályokból kapott átalakítók kompozíciójával: az eredményül kapott átalakítónak csak két szintje van, a lexikális és a felszíni.</li>
         <li>Az egyetlen generatív átalakító használata sokkal hatékonyabb felismerésre is, mintha az eredeti szabályoknak megfelelő átalakítók egyenként invertált sorrendben működnének.</li>
-        <li>Kaplan és Kay megoldotta ugyan az egyes szabályok sorozata átalakítóba való fordításának problémáját, azonban a nagy szabályrendszerek egyetlen átalakítóba való kompozíciója az akkori technikai korlátok miatt a gyakorlatban megvalósíthatatlan volt.</li>
     </ul>
 
     <h4>Véges átalakítók párhuzamos kapcsolása</h4>
+    <p><a href="https://www.youtube.com/watch?v=l2CA0ULnVI4&t=6694s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>Tudva, hogy a lexikális és a felszíni alakok közötti megfeleltetés leírható reguláris relációval, Koskenniemi egy lényegi változtatást, a szabályhalmazból származó átalakítók párhuzamos kapcsolását javasolta.</p>
+    <img src="img/nyelvtech/parhuzamos.png" alt="Verem automaták" style="max-width:500px;width:60%;">
+
 
     <h4>A kétszintes szabályok alakja</h4>
+        <p><a href="https://www.youtube.com/watch?v=l2CA0ULnVI4&t=1h56m58s" target="_blank">▶ Előadás ezen a részen</a></p>
+
     <div class="definicio">
         Egy kétszintes szabály az alábbi három részből áll:<br>
         — <strong>megfeleltetett párok:</strong> amiről valójában a szabály „szól" — egy lexikális és egy felszíni karakterből álló pár (pl. t:c ahol a lexikális t megfelel a felszíni c-nek)<br>
         — <strong>környezet</strong> (bal környezet (lc) és/vagy jobb környezet (rc)): az adott jelenséget körülvevő fonológiai helyzetet specifikálja (az aláhúzás jelenti a megfeleltetett pár helyzetét az adott környezetben)<br>
         — <strong>szabályoperátor:</strong> a megfeleltetett pár és a környezete között fennálló reláció; nagyjából a formális logika feltételeket és következményeket leíró operátorainak felelnek meg:
         <ul>
-            <li>→ a megfeleltetés csak akkor áll fenn, ha ez a környezet</li>
-            <li>← ha ez a környezet, akkor a megfeleltetés fennáll</li>
-            <li>↔ a megfeleltetés akkor és csak akkor áll fenn, ha ez a környezet</li>
-            <li>/← a megfeleltetés soha nem fordul elő ebben a környezetben</li>
+            <li><strong>⇒</strong> a megfeleltetés csak akkor áll fenn, ha ez a környezet</li>
+            <li><strong>⇐</strong> ha ez a környezet, akkor a megfeleltetés fennáll</li>
+            <li><strong>⇔</strong> a megfeleltetés akkor és csak akkor áll fenn, ha ez a környezet</li>
+            <li><strong>⇍</strong> a megfeleltetés soha nem fordul elő ebben a környezetben</li>
         </ul>
     </div>
+    <p><a href="https://www.youtube.com/watch?v=l2CA0ULnVI4&t=1h53m19s" target="_blank">▶ Előadás ezen a részen</a></p>
+   <img src="img/nyelvtech/pelda_ketszintes.png" alt="Verem automaták" style="max-width:500px;width:60%;">
 
-    <h4>Konvenciók, speciális szimbólumok</h4>
-    <ul>
-        <li><strong>Alapértelmezett</strong> (pl. t:t, i:i — röviden: t, i) és speciális megfeleltetések (pl. t:c)</li>
-        <li><strong>Dzsókerszimbólum</strong> (általában: @): az adott ábécé tetszőleges karaktere helyett állhat, pl. <code>t:c → ___ i:@</code></li>
-        <li><strong>Nullszimbólum</strong> (általában: 0 vagy ε): beszúrásnál és törlésnél a kétszintes rendszer egyik szalagján üres szimbólumnak kell állnia, mert a két szalag csak egyenlő számú szimbólum esetén használható megfeleltetésre</li>
+
+    <h4>Konvenciók, speciális szimb megfeleltetés:</strong> ha a két szalagon azonos szimbólum áll, nem kell kétszer kiírni — pl. t:t röviden t, i:i röviden i.</li>
+        <li><strong>Dzsókerszimbólum</strong> (általában: @, „kukac"): az adott ábécé tetszőleges karaktere helyett állhat; más formalizmokban más jellel is jelölhetik. Pl. <code>t:c ↔ ___ i:@</code> azt fejezi ki, hogy t lexikálisan c-nek felel meg, ha utána bármilyen felszíni szimbólum követi az i-t.</li>
+        <li><strong>Nullszimbólum</strong> (általában: 0 vagy ε): a két szalag csak egyenlő számú szimbólum esetén párosítható, ezért beszúrásnál és törlésnél az egyik szalagon üres (null) szimbólumnak kell állnia — pl. az y:i és 0:e párok egyidejű kezelésénél.</li>
         <li><strong>Határszimbólum</strong> (általában: #): jelzi a szó elejét vagy végét (kizárólag egy másik határszimbólummal párban: #:#)</li>
         <li><strong>Részhalmaz:</strong> egyszavas nevekkel jelzett karakterhalmazok, pl. C a mássalhangzók halmaza, V a magánhangzóké, T a felpattanó hangzóké, NAS a nazálisoké</li>
     </ul>
 
     <h4>Kétszintes lexikonok</h4>
+        <p><a href="https://www.youtube.com/watch?v=l2CA0ULnVI4&t=2h02m37s" target="_blank">▶ Előadás ezen a részen</a></p>
+
     <ul>
         <li>Kétszintes lexikonok: a tőlexikonok, az alternációs minták lexikonjai és a toldaléklexikonok (inflexiósak és derivációsak)</li>
         <li>Lexikon: egy név és az alábbi formájú lexikális elemek listája</li>
         <li>Lexikális elemek: lexéma, folytatási osztály, kimeneti információ</li>
         <li>A P folytatási osztály definíciója (ami valahol másutt van megadva): (P = PS K0 #) azt állítja, hogy az eredeti lexikális elemet vagy a PS allexikon (birtokos toldalékok), vagy a K0 allexikon (klitikumok) valamelyik eleme követheti, vagy egy határszimbólum.</li>
     </ul>
-    <p>A kétszintes leírás néhány nehézsége: a felszín és a lexikális alak kötelezően azonos hosszúsága; a szuppletív (lexikalizálódott) alakok és a nem produktív toldalékolás kezelése; mit ér a reguláris rendszer, ha vannak reguláris nyelvvel nem leírható morfológiai jelenségek? (pl. nagy, nagy+obb, leg+nagy+obb)</p>
 
-    <h4>Unifikáció</h4>
+    <p> - A kétszintes leírás néhány nehézsége: a felszín és a lexikális alak kötelezően azonos hosszúsága; a szuppletív (lexikalizálódott) alakok és a nem produktív toldalékolás kezelése; mit ér a reguláris rendszer, ha vannak reguláris nyelvvel nem leírható morfológiai jelenségek? (pl. nagy, nagy+obb, leg+nagy+obb)</p>
+
+    <p> - Kétszíntes átkonvertálható TG-be.  <a href="https://www.youtube.com/watch?v=l2CA0ULnVI4&t=2h11m50s" target="_blank">▶ Előadás ezen a részen</a></p>
+
+
+
+    <h4>Unifikáció és jegyszerkezetek</h4>
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1m37s" target="_blank">▶ Előadás ezen a részen (gráf fogalmak, DAG, jegyszerkezetek)</a></p>
+
+    <p>Az unifikáció <strong>NEM a morfológia része</strong> — DAG-okon értelmezett absztrakt művelet, amelyet morfológiában, szintaxisban és máshol egyaránt alkalmaznak. A morfológiánál tárgyaljuk először, de vizsgán nem szabad morfológiai műveletnek mondani.</p>
+
     <div class="definicio">
-        A jegyszerkezetek irányított körmentes gráfokkal reprezentálhatók, ahol a csomópontok felelnek meg a változóknak és az ösvények a változóneveknek. A jegyszerkezeteket leggyakrabban jegy-érték mátrixokként írják le, melyeknek két oszlopuk van (az egyik a jegyek nevének, a másik az értékeinek). Az érték vagy atomi érték vagy egy másik jegyszerkezet.<br><br>
-        <strong>Jegyszerkezet-unifikáció:</strong> két jegyszerkezeten működő művelet, mely csak akkor hiúsul meg, ha van olyan ösvény mindkét szerkezetben, melyeknek eltérő atomi értékeik vannak; minden más esetben a létrejövő szerkezet az eredeti két szerkezet összes ösvényét tartalmazza (az azonosakat egybeejtve).<br><br>
-        Az unifikáció absztrakt művelet, és NEM a morfológiához tartozik, csak a legegyszerűbb formáját itt tárgyaljuk először.
+        <strong>DAG</strong> (<em>Directed Acyclic Graph</em>, irányított körmentes gráf): irányított gráf, amelyben nincs irányított kör. A fánál általánosabb szerkezet: egy csomópontnak <em>több szülője</em> is lehet (fában minden csomópontnak pontosan egy szülője van). Ez a tulajdonság teszi a DAG-ot alkalmassá jegyszerkezetek leírására — pl. az egyeztetési jegy (agreement) egyszerre köthető az alany és az állítmány csomópontjához.<br><br>
+        <strong>Jegyszerkezetek DAG-ként:</strong> a csomópontok a változóknak, az élcímke-sorozatok (ösvények) a jegyneveknek felelnek meg. Az ösvény végén lévő atomi érték konkrét tulajdonság (pl. SG, PL, 3); ha nincs atomi érték az ösvény végén, a jegy <em>alulspecifikált</em> — bármelyik értékkel unifikálható. A jegyszerkezeteket jegy–érték mátrixként szokás felírni.<br><br>
+        <strong>Jegyszerkezet-unifikáció:</strong> két jegyszerkezeten végzett művelet, amely csak akkor hiúsul meg, ha van olyan ösvény mindkét szerkezetben, amelyeknek <em>eltérő atomi</em> értékeik vannak. Minden más esetben (alulspecifikált + konkrét; diszjunkt ösvények; azonos értékek) a művelet sikeres, az eredmény mindkét szerkezet ösvényeit tartalmazza egybeejtve.
     </div>
 
-    <p><strong>Az unifikáció művelete</strong> — az unifikáció olyan művelet, mely egyedül akkor nem hajtható végre, ha a tagokban egyazon jegy különböző értékekkel szerepel:</p>
+    <p><strong>Az unifikáció művelete</strong> — az unifikáció egyedül akkor nem hajtható végre, ha ugyanazon az ösvényen egymásnak ellentmondó atomi értékek állnak:</p>
     <ul>
-        <li>[NUMBER SG] ∪ [NUMBER PL] = fail!</li>
+        <li>[NUMBER SG] ∪ [NUMBER PL] = <strong>fail!</strong> (eltérő atomi értékek)</li>
         <li>[NUMBER SG] ∪ [NUMBER SG] = [NUMBER SG]</li>
-        <li>[NUMBER SG] ∪ [NUMBER []] = [NUMBER SG]</li>
-        <li>[NUMBER SG] ∪ [PERSON 3] = [[NUMBER SG][PERSON 3]]</li>
+        <li>[NUMBER SG] ∪ [NUMBER []] = [NUMBER SG] (alulspecifikált + konkrét = konkrét)</li>
+        <li>[NUMBER SG] ∪ [PERSON 3] = [[NUMBER SG][PERSON 3]] (diszjunkt ösvények → mindkettő megmarad)</li>
     </ul>
 
-    <p><strong>Destruktív unifikáció:</strong> két szerkezet unifikációjakor az egyik megszűnik, és helyén létrejön az eredményszerkezet. Gyors, de bizonyos esetekben nem kívánt hatása is lehet.</p>
-    <p><strong>Nem-destruktív unifikáció:</strong> a kiinduló szerkezetek nem változnak, az eredmény egy új, harmadik szerkezet. Az implementációkban igen gyakori; könnyen kezelni, viszont másolási műveletet igényel.</p>
+    <p><strong>Destruktív unifikáció:</strong> az egyik kiinduló szerkezet helyén létrejön az eredmény; a másik megszűnik. Gyors, de a korábbi állapot elveszik.</p>
+    <p><strong>Nem-destruktív unifikáció:</strong> valójában unifikálhatósági reláció ellenőrzése — a kiinduló szerkezetek megmaradnak, az eredmény egy harmadik, új szerkezet. Másolást igényel, de visszakövethetővé teszi a levezetést; implementációkban igen gyakori.</p>
+
+    <h3>Unifikációs morfológia (HuMor)</h3>
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=21m05s" target="_blank">▶ Előadás ezen a részen</a></p>
+
+    <h4>A szóalak szerkezete</h4>
+    <p>Latin betűs, agglutináló nyelvekben (pl. magyarban) a szóalak szerkezete balról jobbra: <strong>tő – [nem-terminális toldalék(ok)] – terminális toldalék</strong>.</p>
+    <ul>
+        <li><strong>Tő (abszolút tő):</strong> mindig a szóalak elején áll; balról semmi sem előzheti meg. Önállóan is érvényes szó lehet (pl. <em>kutya</em>, <em>ül</em>).</li>
+        <li><strong>Terminális toldalék:</strong> a szóalak legvégén áll; utána semmi sem következhet (pl. esetragok, finit igeragok). Abszolút toldalék — sohasem viselkedhet tőként.</li>
+        <li><strong>Nem-terminális toldalék:</strong> köztes elem; <em>kettős arca</em> van: az előző elemhez toldalékként, a következőhöz tőként kapcsolódik (<strong>relatív toldalék / relatív tő</strong>). Pl. a múlt idő jele: <em>ül-t-em</em> — a <em>-t</em> az <em>ül</em>-höz toldalék, de az <em>-em</em>-hez tőként viszonyul.</li>
+    </ul>
+
+    <h4>A HuMor rendszer</h4>
+    <div class="definicio">
+        <strong>HuMor</strong> (<em>High-speed Unification Morphology</em>) — a 90-es évek elején bevezetett unifikációs morfológiai rendszer. A neve eredetileg <em>Hungarian Morphology</em>-ból ered, de más nyelvekre is alkalmazható (orosz, török stb.), ezért a <em>Hu</em> a <em>High-speed Unification</em> rövidítésévé vált.
+    </div>
+    <p>Működési elv: minden morfológiai tulajdonság egy <strong>jegy</strong>. Az elemzés során:</p>
+    <ol>
+        <li>A szóalakot szegmentáljuk: megkeressük a lehetséges tő + toldalék(ok) felbontásait.</li>
+        <li>A tőhöz és minden toldalékhoz egy jegy-érték párokat tartalmazó mini-DAG tartozik a szótárból.</li>
+        <li>A jobboldali elem (relatív toldalék) megmondja, milyen jegyeket vár el a baloldali elemtől (relatív tőtől).</li>
+        <li>Az összeillesztést unifikálhatósági relációval ellenőrizzük: ha sikeres, a szóalak grammatikus; eredménye a teljes morfológiai leírás.</li>
+    </ol>
+    <p>Így a string-szintű összehasonlítás helyett jegyrendszeren végzett unifikáció dönti el, hogy egy szóalak érvényes-e. A HuMor ma is számos helyesírási program morfológiai motorja.</p>
+
+    <h4>Bináris jegyrendszer (magyar névszókra)</h4>
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=35m37s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A HuMor a hagyományos kategóriacímkék helyett hierarchikus, bináris (+/−) kérdések sorozatával osztályozza a szótöveket és toldalékokat. Néhány kulcskérdés magyar névszókra:</p>
+    <ul>
+        <li><strong>1. Névszó-e?</strong> (+ = névszó; − = ige)</li>
+        <li><strong>2. Főnév-e?</strong> (csak ha 1. = +; − = melléknév/számnév)</li>
+        <li><strong>3. Szótári alapalak?</strong> (pl. <em>kutya</em>: +; <em>bag-</em> allomorf: −)</li>
+        <li><strong>4. Hátulképzett (mélyhangrendű)?</strong> (<em>ház, bot</em>: +; <em>kecske, főnök</em>: −)</li>
+        <li><strong>5. Ajakerekítéses?</strong> (csak ha 4. = −; <em>főnök</em>: +; <em>gyerek</em>: −) → meghatározza: <em>-hez/-höz</em>, <em>-et/-öt</em> stb.</li>
+        <li><strong>6. Van-e többes száma?</strong> (pl. <em>gázművek</em>: −)</li>
+        <li><strong>7. Kötőhang a többes számban?</strong> (<em>autók</em>: −; <em>házak</em>: +)</li>
+        <li><strong>8. Van-e datívusza?</strong> (<em>hó</em>: +; <em>hav-</em> allomorf: −)</li>
+        <li><strong>9. Van-e tárgyesete? / Kötőhang a tárgyesetben?</strong></li>
+        <li><em>… és további szempontok (instrumentális, képzők stb.)</em></li>
+    </ul>
+    <p>n darab bináris jegy elvileg 2ⁿ kombinációt engedne meg, de a valódi nyelvi adatok messze nem töltik ki az összes lehetséges kombinációt. A „kivételek" mindössze ritka jegykonstellációjú szavak — a rendszer egységesen kezeli őket.</p>
+
+    <h4>Guesser — ismeretlen szavak kezelése</h4>
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h04m54s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A morfológiai elemző csak a szótárában szereplő töveket ismeri fel. Ha egy tő nincs benne az adatbázisban (pl. új tulajdonneveket, neologizmusokat), a <strong>guesser</strong> (becslő modul) lép működésbe:</p>
+    <ol>
+        <li>Jobbról leválasztja az ismert toldalékokat, majd vizsgálja, hogy a maradék tőjelölt morfológiailag koherens-e.</li>
+        <li>A toldalékosztályok korlátai alapján szűri a lehetetlen elemzéseket (pl. az igék zárt osztályt alkotnak: új igét csak igekötővel/képzővel lehet alkotni, önállóan nem jöhet létre).</li>
+        <li>Többértelmű esetben (pl. <em>kacsónak</em>: datívusz vagy igei alak?) a korpuszgyakoriság segít: ha a feltételezett tőhöz sok toldalékolt alak található a szövegkorpuszban, az megerősíti az elemzést.</li>
+    </ol>
+    <p>Egyetlen előfordulásból sokszor nem dönthető el az elemzés — elegendő kontextus és szövegkorpusz szükséges.</p>
+
+    <h3>Szófaji egyértelműsítés (POS tagging)</h3>
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h16m24s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A morfológiai elemzés után egy szóalakhoz több lehetséges elemzés tartozhat (pl. <em>vár</em>: főnév vagy ige; <em>szemetek</em>: <em>szem</em> vagy <em>szemét</em> töve). A <strong>szófaji egyértelműsítő</strong> az egész mondat kontextusát figyelembe véve rendel egyetlen morfológiai/szófaji címkét minden tokenhez.</p>
+
+    <h4>Rejtett Markov-modell (HMM)</h4>
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h22m40s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        <strong>Markov-folyamat:</strong> a jövőbeni állapot csak az aktuális állapottól függ, nem a teljes előzménytől.<br><br>
+        <strong>Rejtett Markov-modell (HMM):</strong> a belső állapotok (szófaji címkék) nem közvetlenül megfigyelhetők; csak a kibocsátott szimbólumok (szóalakok) láthatók.
+    </div>
+    <p>Cél: megtalálni a legjobb T = (t₁…tₙ) <strong>teljes</strong> címkesorozatot a megfigyelt W = (w₁…wₙ) szósorozathoz. Bayes-tétel alapján:</p>
+    <p style="margin-left:1.5em"><code>argmax<sub>T</sub> P(T|W) = argmax<sub>T</sub> P(W|T) · P(T)</code></p>
+    <ul>
+        <li><strong>P(wᵢ | tᵢ)</strong> — kibocsátási valószínűség: adott szófajhoz mekkora valószínűséggel tartozik a szóalak?</li>
+        <li><strong>P(tᵢ | tᵢ₋₁)</strong> — átmeneti valószínűség: egy adott szófaj után mekkora valószínűséggel következik a következő szófaj?</li>
+    </ul>
+    <p><strong>Másodrendű HMM:</strong> két korábbi címkét vesz figyelembe: P(tᵢ | tᵢ₋₁, tᵢ₋₂). Simítás szükséges, ha egy hármas nem fordul elő a tanítókorpuszban (lambda-súlyozás).</p>
+
+    <h4>Maximum entrópia modell</h4>
+    <p>Nem választja szét a kibocsátási és az átmeneti valószínűségeket, hanem a teljes kontextust (szóalak + előző címkék) együtt kezeli: P(tᵢ | wᵢ, tᵢ₋₁, tᵢ₋₂, …). Így nagyobb kontextuális ablak fogható meg egyszerre.</p>
+
+    <h4>Megszorításos módszer (Constraint Grammar)</h4>
+    <p>A Helsinki Egyetemen fejlesztett, nem valószínűségalapú módszer. Szabályok sorozata egyre szűkebb megszorításokat alkalmaz, kivéve az inkonzisztens elemzéseket. Kb. 3600 szabály az angolra. Pl.: ha az előző szó modális segédige (<em>might</em>), a rákövetkező igének infinitívuszi alakban kell állnia.</p>
+
+    <h4>Transzformációs módszer (Brill-tagger)</h4>
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h28m14s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>Eric Brill módszere: annotált korpuszból tanult átíró szabályok sorozata. Alakja: „ha X szóhoz Y szófajcímke van rendelve, és a környezetben Z áll, akkor írd át W-re." A szabályokat iterálva alkalmazzák, amíg változás lehetséges. Magyar változata Megyesi Beáta munkája.</p>
+
+    <h4>TNT, MSD-kód és PurePos</h4>
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h29m42s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <ul>
+        <li><strong>TNT</strong> (Thorsten Brants): simított másodrendű HMM-tagger. Oberon programozási nyelven íródott, ami megnehezítette a korai magyarországi adaptációt.</li>
+        <li><strong>MSD-kód</strong> (<em>Morphosyntactic Description</em>): pozicionális kódrendszer — a morfológiai jegyeknek (szófaj, szám, eset stb.) rögzített pozíciójuk van, nem nevük. Nyugat-európai nyelvekre tervezték; keleti, agglutináló nyelvekre (pl. magyar) kiegészítésekkel bővítették. A szegedi egyetem és a magyarLánc 2.x ezt használta.</li>
+        <li><strong>HuMoS</strong> (2007, PPKE MIK): a TNT Java-portja, HuMor morfológiai elemzővel integrálva, MSD-kóddal.</li>
+        <li><strong>PurePos</strong> (2012, Orosz György &amp; Novák Attila, PPKE IK): nyílt forráskódú (Java/Python); egyszerre egyértelműsítő és tövesítő, HuMor-integrált. A magyarLánc 3.0 és az <strong>emagyar.hu</strong> teljes feldolgozórendszer egyértelműsítő modulja.</li>
+    </ul>
 
     <h3>Számítógépes morfológia alkalmazásai</h3>
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h42m19s" target="_blank">▶ Előadás ezen a részen</a></p>
+
+    <p><strong>Helyesírás-ellenőrzés vs. nyelvhelyesség-ellenőrzés:</strong></p>
+    <ul>
+        <li><strong>Helyesírás-ellenőrzés (spell checker):</strong> szószintű — megvizsgálja, hogy az adott szóalak létezik-e a morfológiai adatbázisban. Ha nem, hibás szónak jelöli.</li>
+        <li><strong>Nyelvhelyesség-ellenőrzés (grammar checker):</strong> mondatszintű — szintaktikai és szemantikai összefüggéseket is figyelembe vesz. Lényegesen nehezebb feladat.</li>
+        <li>A proofing tools csomag általában magában foglalja: helyesírás-ellenőrző + elválasztó modul + tezaurusz. A HuMor-alapú helyesírás-ellenőrző bekerült az Office-termékekbe is.</li>
+    </ul>
 
     <p>A hibák és normák kezelése: a helyesírási normák, a szabályok és a gépi helyesítás-ellenőrzés viszonya; formai és jelentéstani szempontok gépi kezelése; a gép a „nyelvhelyességi tanácsadó" szerepében.</p>
 
@@ -410,10 +572,12 @@
     <p><strong>A javítási igények két fajtája:</strong></p>
     <ol>
         <li>Javítható: betűhibák, egybeírások, kötőjelezés, szóismétlés</li>
-        <li>Nem javítható: hibás különírások, közponozási hibák, szórenhibák és még sok más</li>
+        <li>Nem javítható: hibás különírások, közponozási hibák, szórendi hibák és még sok más</li>
     </ol>
 
-    <p><strong>A szóellenőrzés moduljai:</strong> alapszótár illetve morfológia; ajánló modul és adatbázisai; ideiglenes sajtószótár; kiegészítő szótár; kizáró szótár; a ragozó nyelvek esetén hasznos a toldalékoló sajtszótárak lehetőségei és nehézségei.</p>
+    <p><strong>A szóellenőrzés moduljai:</strong> alapszótár illetve morfológia; ajánló modul és adatbázisai; ideiglenes sajtószótár; kiegészítő szótár; kizáró szótár; ragozó nyelvek esetén hasznos a toldalékoló sajtószótárak lehetőségei és nehézségei.</p>
+
+    <p><strong>Ajánló modul:</strong> ha a szó nem ismerhető fel, az ajánló a Levenshtein/Damerau-távolság alapján keres hasonló, érvényes alakokat. Pl. <em>kérdéses</em> vs. <em>kérdése</em> — az utóbbi valódi szóalak (<em>kérdés</em> + <em>-e</em> birtokos), ezért az ajánló mindkét lehetséges javítást felkínálja.</p>
 
     <div class="definicio">
         <strong>Levenshtein-távolság (Hamming általánosítása):</strong> minimális számú törlés, csere és beszúrás.<br>
@@ -422,12 +586,38 @@
 
     <p><strong>A szóellenőrzés menete:</strong> morfológiai elemzés → ajánlás → ellenőrzés a generátumok morfológiai elemzésével.</p>
 
-    <p><strong>Automatikus szövegelválasztás:</strong> vannak alapszabályok, meg morfológiai felülbírálások. Figyelni kell az algoritmus „engedékenységére" hosszabb szavaknál; különleges elválasztások, pl. asz – szony – nyal. <span class="note">(angolban alapból nem létezik egység, ott tök mindegy)</span></p>
+    <p><strong>Automatikus szövegelválasztás:</strong></p>
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=2h10m28s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>Alapszabályok, plusz morfológiai felülbírálások. Figyelni kell az algoritmus „engedékenységére" hosszabb szavaknál; különleges elválasztások, pl. <em>asz–szony–nyal</em>. <span class="note">(angolban alapból nem létezik egység, ott tök mindegy)</span></p>
 
-    <p><strong>Számítógépes szinonimaszótárak és tezauruszok:</strong> a rokonértelmű szavak definíciója; automatikus csere problémái; tővisszaállítás; többértelműségek kezelése; a lexikai és a szintaktikai szó különbségéből adódó nehézségek.</p>
+    <p><strong>Számítógépes szinonimaszótárak és tezauruszok:</strong></p>
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=2h16m36s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A rokonértelmű szavak definíciója; automatikus csere problémái; tővisszaállítás; többértelműségek kezelése; a lexikai és a szintaktikai szó különbségéből adódó nehézségek.</p>
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 3. Téma</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- ═══════════════════════════════════════════════════════════ TÉMA 4 -->
@@ -568,6 +758,22 @@
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 5. Téma</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- ═══════════════════════════════════════════════════════════ TÉMA 6 -->
