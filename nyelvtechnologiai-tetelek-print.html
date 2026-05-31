@@ -391,6 +391,12 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
     <h4>A számítógépes morfológia célja</h4>
     <p>A számítógépes morfológia olyan számítógépes technológiák és algoritmusok kialakításával foglalkozik, melyek segítségével különféle nyelvű toldalékolt szóalakok elemzése és generálása megoldható. A számítógépes morfológia az írott alakokkal foglalkozik. </p>
+    <p><strong>Példa (magyar):</strong></p>
+    <ul>
+        <li><strong>Elemzés:</strong> <code>házakban</code> → <code>ház</code> + <code>ak</code> (többes szám) + <code>ban</code> (inessivus/helyhatározó rag)</li>
+        <li><strong>Generálás:</strong> <code>ház</code> + PL + INE → <code>házakban</code></li>
+    </ul>
+    <p>Az ilyen leképezéseket általában <strong>véges állapotú transzducer (FST)</strong> valósítja meg, amely minden toldalékolt alakot visszavezet az alapalakra és a morfológiai jegyekre (és fordítva).</p>
     <ul>
         <li><strong>Szóalak-felismerés:</strong> a program visszaadja a toldalékolt szóalakból a szótári tövet (lemmatizálás), annak szófaját és a megjelenített nyelvtani információt.</li>
         <li><strong>Szóalak-generálás:</strong> a helyes szóalak előállítása a szótő és a morfológiailag releváns nyelvtani információ segítségével.</li>
@@ -451,6 +457,13 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     </ol>
 
     <p>Az unifikáció <strong>NEM a morfológia része</strong> — DAG-okon értelmezett absztrakt művelet, amelyet morfológiában, szintaxisban és máshol egyaránt alkalmaznak. A morfológiánál tárgyaljuk először, de vizsgán nem szabad morfológiai műveletnek mondani.</p>
+    <table style="border-collapse:collapse; margin: 0.5em 0; font-size:0.95em;">
+        <thead><tr style="background:#f0f0f0;"><th style="border:1px solid #ccc;padding:4px 10px;">Hol</th><th style="border:1px solid #ccc;padding:4px 10px;">Mire használjuk</th><th style="border:1px solid #ccc;padding:4px 10px;">Példa</th></tr></thead>
+        <tbody>
+            <tr><td style="border:1px solid #ccc;padding:4px 10px;"><strong>3. téma — morfológia</strong></td><td style="border:1px solid #ccc;padding:4px 10px;">tő + toldalék jegyeinek összeillesztése (HuMor)</td><td style="border:1px solid #ccc;padding:4px 10px;"><em>ház</em> + <em>-ban</em> → unifikálható ✓ &nbsp;|&nbsp; <em>főnök</em> + <em>-ban</em> → fail ✗</td></tr>
+            <tr><td style="border:1px solid #ccc;padding:4px 10px;"><strong>4. téma — szintaxis</strong></td><td style="border:1px solid #ccc;padding:4px 10px;">alany–állítmány egyeztetés, vonzatkeret ellenőrzése</td><td style="border:1px solid #ccc;padding:4px 10px;"><em>fiúk [PL]</em> + <em>futnak [PL]</em> → ✓ &nbsp;|&nbsp; <em>fiú [SG]</em> + <em>futnak [PL]</em> → fail ✗</td></tr>
+        </tbody>
+    </table>
 
     <div class="definicio">
         <strong>DAG</strong> (irányított körmentes gráf):  Erre a legalkalmasabb használni az unifikációt.<br><br>
@@ -591,6 +604,9 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     <h3>A mondatszerkezet reprezentálása — faszerű gráfok</h3>
     <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1m25s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>A mondatban az elemek közötti viszonyt leggyakrabban <strong>faszerkezettel</strong> ábrázoljuk. A fa egy irányított, körmentes gráf, amelyben minden csomópontnak pontosan egy szülője van; a csomópontok címkézettek, legfelül a gyökér, legalul a levelek.</p>
+   
+   
+   <img src="img/nyelvtech/fasz.png" alt="Verem automaták" style="max-width:500px;width:60%;">
     <div class="definicio">
         A fa egyszerre két információt kódol:<br>
         — <strong>dominancia</strong> (immediate dominance): ki kinek van alárendelve (hierarchia)<br>
@@ -607,18 +623,25 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
         <li>Az angolban a sorrend (SVO) erősen jellemző; a magyarban a szabad szórend miatt a funkcionális szerkezet (alany–állítmány–tárgy) sokkal hangsúlyosabb.</li>
     </ul>
 
+    <h4>Miért problémás morfológiailag gazdag nyelveknél?</h4>
+    <div class="definicio">
+        A <strong>morfológia</strong> a szavak belső szerkezetének tana: hogyan épülnek fel a szavak tövekből és toldalékokból. Pl. <em>ház + ban = házban</em>, <em>olvas + t + am = olvastam</em>. 
+    </div>
+    <p>A közvetlen összetevős elemzés feltételezi, hogy az összetartozó szavak egymás mellé kerülnek a fában (projektív, egybefüggő részfák). Magyarban azonban ugyanaz a grammatikai viszony szabad szórenddel is kifejezhető — a tárgyat az esetrag (<em>-t</em>) jelöli, nem a pozíció. Így pl. <em>„A macska kergeti az egeret"</em> és <em>„Az egeret kergeti a macska"</em> mondatokban az összetevőcsoportok szétesnek, vagy legalábbis más fát alkotnak, miközben a mondat jelentése azonos. A morfológia <em>redundánssá</em> teszi a pozíciót — az összetevős faszerkezet ezért sokkal kevesebb információt hordoz, mint analitikus (pl. angol) nyelvek esetén.</p>
+
     <h3>Függőségi (dependencia) szerkezet (Tesnière)</h3>
     <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=22m01s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A franciaországi Lucien Tesnière 1957-es elképzelése: az elemek <strong>nem ágaznak el</strong> új szülőcsomópontokba, hanem közvetlenül egymásra mutató, <strong>címkézett élekkel</strong> kapcsolódnak. A mondat központja az ige (a finitum); minden más bővítmény (alany, tárgy, határozó, kiegészítő) közvetlenül rajta vagy egymáson lóg.</p>
+    <p>Az elemek <strong>nem ágaznak el</strong> új szülőcsomópontokba, hanem közvetlenül egymásra mutató, <strong>címkézett élekkel</strong> kapcsolódnak. A mondat központja az ige (a finitum); minden más bővítmény (alany, tárgy, határozó, kiegészítő) közvetlenül rajta vagy egymáson lóg.</p>
+    <img src="img/nyelvtech/fuggosegi.png" alt="Verem automaták" style="max-width:500px;width:60%;">
     <ul>
         <li><strong>Erőssége:</strong> a szintaktikai viszony neve közvetlenül az élen jelenik meg (subject, object, det, adjunct…).</li>
         <li><strong>Gyengesége:</strong> nem nevez meg csoportokat — nem lehet közvetlenül hivatkozni arra, hogy „a kutya" mint egész egy NP.</li>
-        <li>Történetileg francia, német és kelet-európai (cseh, szovjet) iskolák kedvelték; ma <strong>az angol nyelvtechnológia is széles körben használja</strong> (Universal Dependencies).</li>
     </ul>
 
     <h3>X-vonás (X-bar) elmélet — a két szemlélet ötvözése</h3>
     <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=27m02s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>Az X-vonás nyelvtan ötvözi a közvetlen összetevős és a függőségi szemléletet. Az <em>X</em> bármely szófaji kategória helyettesítője (V, N, P, A…); a szerkezet vonásszámmal nő, ahogy a fej egyre több bővítményét veszi fel.</p>
+    <img src="img/nyelvtech/x_vonas.png" alt="Verem automaták" style="max-width:500px;width:40%;">
     <div class="definicio">
         <strong>X</strong> = lexikonból előjövő, „üres" fej (még nincsenek bővítményei).<br>
         <strong>X′ (X-vonás)</strong> = a fej + kötelező <strong>complement</strong> (jobbra), pl. tárgy.<br>
@@ -629,20 +652,42 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     <p><strong>Endocentrikus vs. egzocentrikus szerkezet:</strong> az X-vonás az endocentrikus szerkezeteknél működik (van egyértelmű fej, amely átviszi a kategóriát). A koordináció (pl. <em>Jancsi és Juliska</em>) egzocentrikus: nincs igazi fej — sem Jancsi, sem Juliska, sem a kötőszó nem hozza önmagában a főnéviséget.</p>
 
     <h3>Funkcionális szerkezet — a magyar hagyomány</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=17m22s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>A magyar iskolai nyelvtani hagyomány nem a sorrendből, hanem a <strong>funkcióból</strong> indul ki: a mondatnak alanya, állítmánya, tárgya, határozója, jelzője van. A toldalékok (esetragok) hordozzák ezt az információt, ezért a magyar szabad szórend mellett is azonosíthatók a mondatrészek (<em>a kutya ugatja a holdat</em> ↔ <em>a holdat ugatja a kutya</em>).</p>
 
     <h3>Mondatelemzési módszerek</h3>
     <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=39m21s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A formális nyelvtan négyes <em>(N, T, P, S)</em>: <strong>N</strong> = nem-terminálisok (szófaji és mondatrész-kategóriák), <strong>T</strong> = terminálisok (szótári elemek), <strong>P</strong> = újraíró szabályok (pl. S → NP VP), <strong>S</strong> = mondat-szimbólum. A szabályok alkalmazásának irányától függően:</p>
+    <p>A formális nyelvtan négyes <em>(N, T, P, S)</em>: <strong>N</strong> = nem-terminálisok (szófaji és mondatrész-kategóriák), <strong>T</strong> = terminálisok (szótári elemek), <strong>P</strong> = újraíró szabályok (pl. S → NP VP), <strong>S</strong> = mondat-szimbólum. <br><br>A szavak mondatba szerveződésének szabályaihoz a <strong>környezetfüggetlen (CF)</strong> szint terjedt el: a reguláris túl gyenge (csak lineáris szabályok, nem tud beágyazást kezelni), a környezetfüggő meg túl drága (köbös komplexitás) — a CF a kettő között a legtöbb szintaktikai jelenséget jól leírja.</p>
+    <p>A szabályok alkalmazásának irányától függően:</p>
     <ul>
         <li><strong>Felülről lefele (top-down):</strong> S-ből indulunk, a szabályokat balról jobbra alkalmazva levezetjük a bemenetet.</li>
         <li><strong>Alulról felfele (bottom-up):</strong> a bemenet szavainak kategóriáiból építjük fel a fát, redukciókkal jutunk el S-ig.</li>
         <li><strong>Vegyes (chart parser, Earley):</strong> mindkét irányt kombinálja, részeredményeket tárol, így kerüli a többszöri elemzést.</li>
+        <li><strong>Valószínűségi (PCFG):</strong> a CF szabályokhoz gyakoriságot / valószínűséget rendelünk — megszámoljuk, hogy egy adott újraírási szabályt hányszor alkalmaztunk (pl. Penn Treebankból). Az elemző a <em>leggyakoribb szabályokat veszi elő először</em>, így nagyobb eséllyel talál helyes elemzést korán, és kevesebbet kell visszalépni. <span class="note">(Elv: amelyik szabály tipikusabb, azt rendezzük előre a szabályrendszerben.)</span></li>
+        <li><strong>Balsarok-elemzés (left-corner parsing):</strong> a grammatikából előre kiszámítjuk, hogy melyik szimbólum lehet egy adott kategória <em>balsarka</em> (bal széle) — tehát melyik szimbólummal kezdődhet annak levezetése. Amikor elemzünk, rögtön tudható, hogy az aktuális szó melyik szabályba illik bele, így a top-down elemző átveszi a bottom-up előnyét: nem kell vakon kipróbálni minden szabályt. <span class="note">(Pl. ha a mondat <em>does</em>-sal kezdődik, ami AUX, és AUX balsarka az S-nek, rögtön az AUX-os szabályt vesszük elő.)</span></li>
+        <li><strong>Chart parser (Earley-algoritmus):</strong> a már egyszer megtalált részszerkezeteket egy táblázatban (<em>chart</em>) tárolja — ha visszalépéskor ugyanolyan részfával találkozik, nem elemzi újra. Ez az <em>dinamikus programozás</em> elvén alapul: az exponenciálisan robbanó kombinatorika polinomiálissá redukálódik.</li>
     </ul>
     <p>A morfológiailag gazdag nyelveknél (magyar) gyakori, hogy a fa levelei nem szavak, hanem <strong>morfémák</strong>, és a szintaxis „belenyúl" a szó belsejébe — pl. a <em>szemben lakó szomszéd</em> elemzéséhez a <em>lak-ó</em> melléknévi igenév összetétel megbontása szükséges.</p>
 
-    <h3>Jegyszerkezetek a szintaxisban</h3>
-    <p>A morfológiánál bevezetett <strong>jegy–érték párokon</strong> alapuló reprezentáció a szintaxisban is használható: a csomópontokhoz egyezési jegyeket (szám, személy, eset, határozottság) rendelünk, és az összekapcsolásnál <strong>unifikációval</strong> ellenőrizzük az összeillést (alany–állítmány egyeztetés, vonzatkeret kielégítése). Így a szintaktikai elemzés ugyanazzal a műveletkészlettel végezhető, mint a morfológia.</p>
+    <h3>Jegyszerkezetek a mondatelemzésben</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h20m41s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p class="note">Az unifikáció és a jegyszerkezetek fogalmát a <strong>3. tételben</strong> vezettük be (HuMor, DAG, destruktív/nem-destruktív unifikáció). Itt ugyanazt a mechanizmust <strong>szintaxis szintjén</strong> alkalmazzuk: nem tő+toldalék, hanem mondat csomópontjai között.</p>
+    <p>A morfológiánál bevezetett <strong>jegy–érték párokon</strong> alapuló reprezentáció a mondatelemzésben is használható: a csomópontokhoz egyezési jegyeket (szám, személy, eset, határozottság) rendelünk, és az összekapcsolásnál <strong>unifikációval</strong> ellenőrizzük az összeillést (alany–állítmány egyeztetés, vonzatkeret kielégítése). Így a mondatelemzés ugyanazzal a műveletkészlettel végezhető, mint a morfológia.</p>
+    <p><strong>Példa – alany–állítmány egyeztetés:</strong> A <em>„A fiúk futnak."</em> mondatban:</p>
+    <ul>
+        <li><code>fiúk</code> → [SZÁm: PL, SZEMÉLY: 3, KES: NOM]</li>
+        <li><code>futnak</code> → [SZÁm: PL, SZEMÉLY: 3]</li>
+        <li>Unifikáció: a két csomópont SZÁm és SZEMÉLY jegye egyezik → összekapcsolható ✓</li>
+        <li>Ha <em>„A fiú futnak."</em> lenne: <code>[SZÁM: SG] ∪ [SZÁM: PL] = fail!</code> (eltérő atomi értékek) → elemzés elutasítva ✗</li>
+        <li><em>„A könyvet olvasnak."</em> — vonzatkeret nem teljesíthető: <code>könyvet</code> → [KES: ACC], de az ige alanyt vár [KES: NOM] pozícióban; nincs NOM esetű alany → unifikáció sikertelen, elemzés elutasítva ✗</li>
+    </ul>
+    <p><small><em>„Elutasítva"</em> azt jelenti: az elemző ezt a részfa-hipotézist elveti és nem folytatja. Ha minden lehetséges út meghiúsul, a mondat grammatikailag helytelennek minősül — a program nem ad vissza szerkezetet.</small></p>
+    <div class="definicio">
+        Fontos különbségtétel: <strong>nem a jegynek van értéke, hanem az odavezető ösvénynek (útnak)</strong>.<br><br>
+        Nem azt mondjuk, hogy „az igének száma van", hanem hogy <em>„a mondat állítmányát jelző ige száma azonos a mondat alanyát jelző főnév számával"</em> — vagyis két DAG-ösvény végén lévő érték kell, hogy egyezzen. Ez az egyeztetés (agreement) DAG-gal való leírása: ha ezt az ösvény-azonosságot felírjuk, egyetlen szabállyal leírjuk az egyes és többes számú egyeztetést is — nem kell külön szabály minden kombinációra.
+    </div>
+    <img src="img/nyelvtech/jegysz.png" alt="Jegyszerkezet unifikáció" style="max-width:500px;width:60%;">
+    <p><strong>Fejjegyek vs. lábjegyek:</strong> a fejjegyek (head features) végigvonulnak az egész szerkezeten — pl. szám, személy, élő/élettelen. A lábjegyek (foot features) csak az aktuális művelethez kellenek, utána eldobhatók — pl. a magyar <em>a/az</em> névelő választása attól függ, hogy a következő szó magán- vagy mássalhangzóval kezdődik-e; ez az információ az NP-n belül kell, de feljebb már nem.</p>
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 4. Téma</div>
 </div>
