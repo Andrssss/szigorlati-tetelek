@@ -832,17 +832,16 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
     <h4>Korpusznyelvészet — két iránya</h4>
     <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=0m47s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A korpusznyelvészetnek nincs egységes definíciója: a lényege, hogy valamilyen meghatározott szempontok szerint összeállított szövegegyüttesen végzünk vizsgálatot. A terület előképe már a 19. századi induktív nyelvészekre visszanyúlik — Simonyi Zsigmond például példákból kiindulva tanított, nem szabályokat sulykolt.</p>
+    <p>A korpusznyelvészetnek nincs egységes definíciója: a lényege, hogy valamilyen meghatározott szempontok szerint összeállított szövegegyüttesen végzünk vizsgálatot.</p>
     <p>Két alapvető megközelítés különíthető el:</p>
     <ul>
         <li><strong>Korpuszalapú (corpus-based):</strong> a kutató már rendelkezik valamilyen elméleti hipotézissel, és a korpuszból veszi hozzá az adatokat — megszámolja, majd megerősíti vagy cáfolja az elméletet.</li>
         <li><strong>Korpuszvezérelt (corpus-driven):</strong> a kutató adatok nézegetése közben vesz észre egy mintát, amelyből aztán az ötlet vagy elmélet születik. Erre vonatkozik a <em>serendipity principle</em> — a véletlenszerű felfedezés elve: nem azt találjuk, amit kerestünk, hanem valami meglepőt.</li>
     </ul>
-    <p>Két meghatározó előd: <strong>Firth</strong> mondta: <em>„You shall know a word by the company it keeps"</em> — a szót a környezete alapján ismerjük meg. <strong>John Sinclair</strong>, akit a korpusznyelvészet atyjának tartanak, azt hirdette, hogy a nyelvet valódi szövegekből kell megragadni (<em>capture</em>), nem konstruált példamondatokból.</p>
 
     <h4>A korpusz mérete: token és type</h4>
     <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=5m05s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A korpusznyelvészeti módszerek (statisztika, gépi tanulás) csak kellő méret fölött működnek megbízhatóan — ahogy rúdugráshoz sem elég 1 méter magasság. De mekkora az elég? A méretet általában <strong>tokenekben</strong> adják meg (whitespace-szel elhatárolt egységek), mert a <strong>type</strong>-ok (különböző szóalakok) megszámlálása morfológiai elemzést igényelne.</p>
+    <p>A korpusznyelvészeti módszerek (statisztika, gépi tanulás) csak kellő méret fölött működnek megbízhatóan — ahogy rúdugráshoz sem elég 1 méter magasság. De mekkora az elég? A méretet általában <strong>tokenekben</strong> adják meg (whitespace-szel elhatárolt egységek vagy pl: . / # / $  ...), mert a <strong>type</strong>-ok (különböző szóalakok) megszámlálása morfológiai elemzést igényelne.</p>
     <ul>
         <li>1 A4-es oldal ≈ 250 szó</li>
         <li>Az első igazi korpusz, a <strong>Brown korpusz</strong> (1961): 1 millió szó</li>
@@ -850,7 +849,7 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     </ul>
     <p>Érdekesség: milliárdos korpuszban egy ezreléknyi hibaarány is egymilliós hibaszámot jelent — mégis elegendő minőségi adat marad pl. helyesírás-ellenőrző tanításához.</p>
 
-    <h4>Korpuszannotáció</h4>
+    <h4>Korpuszannotáció <span style="font-weight:normal;font-size:0.85em;">(a szöveg strukturált nyelvi elemzési rétegekkel való gazdagítása)</span></h4>
     <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=11m38s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>A korpuszok egyszerű nyers szövegként is felhasználhatók, de értékük annotálással növelhető:</p>
     <ul>
@@ -863,41 +862,88 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     </ul>
 
 
-    <h3>Gépi tanulás és szóbeágyazás</h3>
-    <p>A korpuszok teszik lehetővé a statisztikai és neurális modellek tanítását. Az annotált korpuszokon felügyelt tanulással készülnek POS-taggerek, NER-rendszerek, szintaktikai elemzők; az annotálatlan korpuszokon önfelügyelt tanulással szóbeágyazások és nyelvi modellek.</p>
-    <div class="definicio">
-        <strong>Szóbeágyazás (word embedding):</strong> szavak ábrázolása sűrű, valós értékű vektorként egy néhány száz dimenziós térben. A vektorok úgy tanulódnak, hogy <strong>hasonló kontextusban előforduló szavak közel kerüljenek</strong> egymáshoz (disztribúciós szemantika — Firth elve számszerűsítve). Klasszikus modellek: word2vec (CBOW, Skip-gram), GloVe, FastText; ma a kontextuális beágyazások (BERT) terjedtek el.
-    </div>
-    <p>Tipikus tulajdonság: a szóvektorok között a szemantikai-szintaktikai relációk lineárisak (pl. <em>király − férfi + nő ≈ királynő</em>).</p>
-    <p>További korpuszalapú feladatok: tulajdonnévfelismerés (NER), anafora- és koreferencia-feloldás, témafelismerés, hangulatelemzés (sentiment analysis), automatikus összefoglalás (extractive vs. abstractive), kérdés-válasz rendszerek (Watson), OCR, beszédfelismerés.</p>
-
-    <h3>Párhuzamos korpuszok</h3>
-    <p><a href="https://www.youtube.com/watch?v=58M0q1lWA00&t=2m" target="_blank">▶ Előadás ezen a részen</a></p>
+   <h4>Párhuzamos korpuszok</h4>
+    <p><a href="https://www.youtube.com/watch?v=58M0q1lWA00&t=4m3s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Párhuzamos korpusz:</strong> két (vagy több) nyelvű egymásnak megfeleltetett szöveggyűjtemény. A megfeleltetés általában mondat-, ritkábban kifejezés- vagy szószintű.
     </div>
-    <p>Klasszikus példa: a <strong>Rosetta-kő</strong> (i.e. 196) — egyiptomi hieroglifa, démotikus és ógörög változat egymás mellett. Champollion ennek alapján fejtette meg a hieroglifákat. A <strong>Biblia</strong> a legrégebbi, sok nyelven fennmaradt párhuzamos korpusz.</p>
-    <p>Modern párhuzamos korpuszok:</p>
-    <ul>
-        <li><strong>Hunglish</strong>: ≈54 millió tokenes magyar–angol párhuzamos korpusz. Pl. <em>university</em> ↔ <em>egyetem</em>, <em>college</em> ↔ <em>főiskola</em>.</li>
-        <li><strong>JRC Acquis Communautaire</strong>: az EU joganyaga 22 nyelven.</li>
-        <li><strong>Orwell „1984"</strong>: a kelet-közép-európai nyelvek párhuzamos korpusza.</li>
-    </ul>
-    <img src="img/nyelvtech/parhuzamos.png" alt="Párhuzamos korpuszok" style="max-width:500px;width:60%;">
+             <p> a <strong>Rosetta-kő</strong> (i.e. 196) — egyiptomi hieroglifa, démotikus és ógörög változat egymás mellett. Champollion ennek alapján fejtette meg a hieroglifákat. A <strong>Biblia</strong> a legrégebbi, sok nyelven fennmaradt párhuzamos korpusz.</p>
+ 
 
-    <h4>Mondatszinkronizálás (sentence alignment)</h4>
-    <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=1m" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A párhuzamos korpusz építéséhez először <strong>mondatra kell szegmentálni</strong> (nehéz: a pont nem mindig mondatvég — <em>U.S.</em>, <em>Smith Corp.</em>, URL-ek). Utána a mondatokat egymásnak meg kell feleltetni (1:1, 1:2, 2:1, 1:0 stb.).</p>
-    <ul>
-        <li><strong>Hosszalapú</strong> (Gale–Church, 1990): a megfeleltetett mondatok hossza erősen korrelál. Gyors, nyelvfüggetlen, jó kiindulás.</li>
-        <li><strong>Szótáralapú</strong>: kétnyelvű szótár segítségével keresi a szóegyezéseket.</li>
-        <li><strong>Horgony (anchor) alapú</strong>: nyelvtől független fix elemek (számok, dátumok, tulajdonnevek, e-mail-címek, URL-ek) használata rögzítési pontként.</li>
-        <li><strong>Hibrid</strong>: a fentiek kombinációja — ez a gyakorlatban használatos.</li>
-        <li>Szóláncok és karaktereltérés mérésére a <strong>Levenshtein- (szerkesztési) távolság</strong> a klasszikus eszköz.</li>
-    </ul>
 
+
+
+    <h3>Szövegszinkronizáció </h3>
+    <p><a href="https://www.youtube.com/watch?v=58M0q1lWA00&t=17m15s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        <strong>Szövegszinkronizáció</strong> (alignment): párhuzamos szövegek egymásnak megfelelő szövegegységeinek összekapcsolása. Az alapkérdés: bekezdés-, mondat- vagy szószintű legyen-e a megfeleltetés?
+    </div>
+        <h4>Részletek: </h4>
+        <ul>
+            <li><strong>Bekezdésszint</strong>: viszonylag megbízható — a fordítások általában nem változtatnak a bekezdéshatárokon.</li>
+            <li><strong>Mondatszint</strong>: kívánatos, de nehezebb — az arány nem mindig 1:1; lehetséges 1:2, 2:1, sőt 1:0 (kihagyott vagy betoldott mondat) is.</li>
+            <li><strong>Szószint</strong>: sok szónak nincs közvetlen fordítása, ezért ez a legproblematikusabb szint.</li>
+        </ul>
+        <p><strong>Pontosság vs. teljesség trade-off:</strong> ha minden mondatnak erőltetünk párt → nagy teljesség, de romlik a pontosság (hibás párok is bekerülnek). Ha csak a biztos párokat vesszük fel → jobb pontosság, de marad párosítatlan anyag.</p>
+        <p>Miért fontos? Szinkronizált szövegpárokból lehet: fordítási megfeleléseket vizsgálni (fordítástudomány), terminológia-konzisztenciát ellenőrizni, terminológiát bányászni, fordítómemóriát és SMT/NMT tanítóadatot építeni.</p>
+
+    <h3>Mondatszegmentálás (sentence boundary detection)</h3>
+    <p><a href="https://www.youtube.com/watch?v=58M0q1lWA00&t=28m0s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        <strong>Mondatszegmentálás:</strong> a folyamatos szöveg mondathatárokra bontása. Durva hüvelykujj-szabály: „nagy betűvel kezdődik és ponttal végződik" — de ez gyakran megbízhatatlan.
+    </div>
+       <h4>Részletek: </h4>
+        <p>A pont önmagában <em>nem</em> elég megbízható mondatzáró jel. Problémás esetek:</p>
+        <ul>
+            <li><strong>Rövidítések:</strong> <em>U.S.</em>, <em>Smith Corp.</em> — a pont rövidítésjel, nem mondatvég.</li>
+            <li><strong>E-mail-cím, webcím:</strong> <em>john@smith.com</em> — belső pont nem mondathatár.</li>
+            <li><strong>Tizedes pont</strong> (angolban): <em>3.14</em></li>
+            <li><strong>Idézőjeles közbevetés:</strong> a macskakörömben lévő idézet átnyúlhat mondathatáron.</li>
+            <li><strong>Gondolatjel közt lévő betoldás:</strong> a gondolatjelek közt álló rész önmagában nem mondat, de kiszakítva annak látszik.</li>
+        </ul>
+        <p>Megoldás: előfeldolgozás (rövidítéslista, regex-alapú tokenizálás), majd statisztikai/szabályalapú mondathatár-detektor.</p>
+
+    <h3>Szinkronizálási módszerek</h3>
+    <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=0m0s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        Három alapmódszer létezik a mondatpárok meghatározásához, amelyeket a gyakorlatban hibrid formában kombinálnak.
+        <br><br><strong>Felhasználása:</strong>
+        <ul>
+            <li>Párhuzamos korpuszok építése fordítástudományi felhasználásra</li>
+            <li>Fordítások <strong>terminológiai konzisztenciájának</strong> vizsgálata — a forrásszövegben megtalált szakkifejezéseket a fordításban megkeressük</li>
+            <li>Kétnyelvű terminológia gyűjtése</li>
+            <li><strong>Fordítómemória építése</strong> — a párok kész fordításként felhasználhatók a későbbiekben</li>
+        </ul>
+    </div>
+        <h4>Részletek:</h4>
+        <ul>
+            <li>
+                <strong>Hosszalapú (length-based)</strong> — <a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=3m46s" target="_blank">▶</a><br>
+                Gale–Church (1993): a fordítás hossza korrelál az eredeti hosszával. <strong>Dinamikus programozással</strong> globálisan optimális párba állítást keres — nem kapkod, hanem az egész szövegre nézve legjobb megoldást találja. Előny: nyelvfüggetlen, mindig ad eredményt (teljes szinkronizáció). Hátrány: eltévedhet 1:2, 2:1, 1:0 esetekben.
+            </li>
+            <li>
+                <strong>Szótáralapú (dictionary-based)</strong> — <a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=1m34s" target="_blank">▶</a><br>
+                Kétnyelvű szótárból ismert szópárokat keres a mondatokban: ahol mindkét oldalon sok megfelelő szó szerepel, ott párosít. Előny: jó pontosságú részleges szinkronizáció. Hátrány: külső lexikai forrás kell, tulajdonneveket és ritka szavakat nem kezeli.
+            </li>
+            <li>
+                <strong>Horgony (anchor) alapú</strong> — <a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=2m28s" target="_blank">▶</a><br>
+                Nyelvtől független, mindkét szövegben azonosan szereplő elemeket (e-mail-cím, URL, szám, tulajdonnév) rögzítési pontként használja. Lineáris regresszióval szűri a valódi horgonyokat. Előny: pontossága közel 100%. Hátrány: csak részleges szinkronizáció — kevés horgony van egy szövegben.
+            </li>
+            <li>
+                <strong>Hibrid módszer</strong> — <a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=16m17s" target="_blank">▶</a><br>
+                Először horgonyalapú szinkronizációval kisebb szövegszakaszokat jelöl ki, majd ezeken belül hosszalapú módszert alkalmaz. Így a hosszalapú nem tud „eltévedni" a nagy szövegben, a horgonyok pedig nem kell hogy minden mondatot lefedjék.
+            </li>
+        </ul>
+
+
+
+
+
+
+
+    
     <h3>Fordítómemóriák (Translation Memory, TM)</h3>
-    <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=15m" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=16m47s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         A <strong>fordítómemória ≠ gépi fordítás</strong>. A TM korábbi emberi fordítások forrás–cél szegmenspárjait tárolja, és új mondat fordításakor a hasonló korábbi szegmenseket ajánlja fel a fordítónak.
     </div>
@@ -914,11 +960,40 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
         <li><strong>MemoQ</strong>: önálló editorral; magyar fejlesztés, a <em>Kilgray</em> cégtől (Kis + Lengyel + Ugrai alapítók nevéből).</li>
     </ul>
 
+
+
+
+
+
+    <h3>Gépi tanulás és szóbeágyazás</h3>
+    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h28m36s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A korpuszok teszik lehetővé a statisztikai és neurális modellek tanítását. Az annotált korpuszokon felügyelt tanulással készülnek POS-taggerek, NER-rendszerek, szintaktikai elemzők; az annotálatlan (nyelvileg nem címkézett, nyers) korpuszokon önfelügyelt tanulással szóbeágyazások és nyelvi modellek.</p>
+    <div class="definicio">
+        <strong>Szóbeágyazás (word embedding):</strong> szavak ábrázolása sűrű, valós értékű vektorként egy néhány száz dimenziós térben. A vektorok úgy tanulódnak, hogy <strong>hasonló kontextusban előforduló szavak közel kerüljenek</strong> egymáshoz (disztribúciós szemantika — Firth elve számszerűsítve). Klasszikus modellek: word2vec (CBOW, Skip-gram), GloVe, FastText; ma a kontextuális beágyazások (BERT) terjedtek el.
+    </div>
+    <p>Tipikus tulajdonság: a szóvektorok között a szemantikai-szintaktikai relációk lineárisak (pl. <em>király − férfi + nő ≈ királynő</em>).</p>
+    <p>További korpuszalapú feladatok: tulajdonnévfelismerés (NER), anafora- és koreferencia-feloldás, témafelismerés, hangulatelemzés (sentiment analysis), automatikus összefoglalás (extractive vs. abstractive), kérdés-válasz rendszerek (Watson), OCR, beszédfelismerés.</p>
+
+ 
+    <h4>Mondatszinkronizálás (sentence alignment)</h4>
+    <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=1m" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A párhuzamos korpusz építéséhez először <strong>mondatra kell szegmentálni</strong> (nehéz: a pont nem mindig mondatvég — <em>U.S.</em>, <em>Smith Corp.</em>, URL-ek). Utána a mondatokat egymásnak meg kell feleltetni (1:1, 1:2, 2:1, 1:0 stb.).</p>
+    <ul>
+        <li><strong>Hosszalapú</strong> (Gale–Church, 1990): a megfeleltetett mondatok hossza erősen korrelál. Gyors, nyelvfüggetlen, jó kiindulás.</li>
+        <li><strong>Szótáralapú</strong>: kétnyelvű szótár segítségével keresi a szóegyezéseket.</li>
+        <li><strong>Horgony (anchor) alapú</strong>: nyelvtől független fix elemek (számok, dátumok, tulajdonnevek, e-mail-címek, URL-ek) használata rögzítési pontként.</li>
+        <li><strong>Hibrid</strong>: a fentiek kombinációja — ez a gyakorlatban használatos.</li>
+        <li>Szóláncok és karaktereltérés mérésére a <strong>Levenshtein- (szerkesztési) távolság</strong> a klasszikus eszköz.</li>
+    </ul>
+
+
+
     <h3>Gépi fordítás (Machine Translation, MT)</h3>
     <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=2m" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>Anekdota a kezdetekről: a korai szóalapú gépi fordító a <em>„The spirit is willing but the flesh is weak"</em> mondatból állítólag <em>„The vodka is good but the meat is rotten"</em> oroszt csinált — a WSD és kontextuskezelés hiányának klasszikus illusztrációja.</p>
 
     <h4>Szabályalapú MT — a Vauquois-háromszög</h4>
+    <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=11m18s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>Három alapstratégia (Vauquois-háromszög, alulról felfele egyre absztraktabb):</p>
     <ul>
         <li><strong>Direct (közvetlen) fordítás:</strong> szó-szó megfeleltetés + minimális átrendezés. Pl. <strong>Meteo</strong> rendszer Kanadában — korlátozott időjárás-tartomány.</li>
@@ -929,6 +1004,7 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     <p>Köztes paradigmák: <strong>példaalapú</strong> (EBMT) — korábbi fordítási mintákból illeszt; <strong>MetaMorpho</strong> — magyar fejlesztésű hibrid (szabály + statisztika).</p>
 
     <h4>Statisztikai gépi fordítás (SMT)</h4>
+    <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=52m54s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>Az IBM csapata (<em>Frederick Jelinek</em> és társai) a 90-es években bevezette a tisztán statisztikai modellt — Bayes-szabály alapján:</p>
     <p style="text-align:center"><em>P(e | f) ∝ P(f | e) · P(e)</em></p>
     <p>ahol <em>e</em> a célnyelvi (pl. angol), <em>f</em> a forrásnyelvi (pl. francia) mondat. A modell két komponense:</p>
@@ -944,6 +1020,7 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     </ul>
 
     <h4>Neurális gépi fordítás (NMT) — rövid kitekintés</h4>
+    <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=1h24m07s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>A 2014 utáni paradigma: encoder-decoder neurális hálók (eleinte LSTM, ma Transformer) végpont-végpont tanulnak párhuzamos korpuszból. A szóbeágyazások és a figyelmi (attention) mechanizmus tette lehetővé a hosszabb kontextus jó kezelését — ma minden vezető fordítórendszer (Google Translate, DeepL) ezen alapul.</p>
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 6. Téma</div>
