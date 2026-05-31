@@ -1,0 +1,78 @@
+hogy ez az egész terület, amiről mi most beszélünk, az nyelvtechnológia, és a szövegek azok meg nyelveket kódolnak.
+0:099 secondsTehát nincs olyan karaktersorozat, ami ne nyelvi információt kódolna. Persze némelyik már nagyon eltávolodott ettől.
+0:1818 secondsbizonyos rövidítéseket, meg olyanfajta jelsorozatokat is rögzítünk, amit talán kimondani nem szoktunk, de hát azért az
+0:2525 secondsírásaink azok azért lettek linearizálva, hogy a nyelvi információt valahogy
+0:3131 secondseljuttassuk a másik emberhez. Hát milyen nyelveken adunk le információt? Ez szinte már közhely, de mégiscsak hát a
+0:4040 secondsvilágon összességében, tehát az utolsó oszlopot nézik ezen a dián, azt látják, hogy legtöbben angolul beszélnek.
+0:4848 secondsTavalyi statisztika az etnológ szerint.
+0:5151 secondsPersze anyanyelvi beszélőből a mandarin kínai lényegesen több. Ennek majd sok következménye lesz, mármint annak, hogy nem az angolból van a legtöbb anyanyű
+0:5959 secondsbeszélő. De azt lehet látni, hogy világon körbe ugyanannyian beszélnek angolul, mint kínaiul. is azért ezen el
+1:071 minute, 7 secondslehet gondolkodni, miközben számunkra a kínai egy egotikus nyelv, amit ott valahol beszélnek. Jó néhányan már Magyarországon is, még a maguk
+1:161 minute, 16 secondsgyakorlatője is, de azért alapvetően mégis csak azt gondoljuk, hogy az angol az máshogy világnyelv, mint az a kínai.
+1:231 minute, 23 secondsNa most ott van a hindi, amelyik szintén követi erősen a mandarint. És azt lehet mondani, hogy olyan tempóban nő a
+1:331 minute, 33 secondslélekszám, a hindiai anyanyelvi beszélők lélekszáma, hogy ezzel is hát gondolkodni kell a jövőben. Hát nyilván
+1:401 minute, 40 secondsa spanyolról tudjuk, hogy egész Latinamerika, a franciáról tudjuk, hogy a valahai gyarmati birodalom, az arabról tudjuk, hogy
+1:491 minute, 49 secondshát itt egész Észak-Afrikától közép közelkeletig sokan vannak. A Bengaliról talán nem gondoltuk, hogy a világ
+1:571 minute, 57 secondshetedik legtöbb beszélővel rendelkező nyelve. Ugye hát ott a
+2:052 minutes, 5 secondsBanglades hát az a világ, ahol mi nem gondoljuk, hogy az internetet, mert ugye hát mi mégis csak egy nyelvtechnológia
+2:122 minutes, 12 secondsórán vagyunk. Ezt befolyásolnám, mindjárt lesz szó róla. Aztán jön az orosz hatalmas nyelv Európától Ázsiáig.
+2:182 minutes, 18 secondsa portugál, amelyik hát nyilván Mozambiktól Brazíliáig hát egyfajta portugál nyelvet beszélnek, és az
+2:252 minutes, 25 secondsIndonézia még szintén egy nagyon hatékony lélekszám növekedésen ment át az utóbbi időben. Na most csak ez azért
+2:342 minutes, 34 secondsérdekes, hogy végignézik ezeket a nyelveket és amit elmondtam, akkor tulajdonképpen egyik sem csak európai. Persze az angol, spanyol,
+2:422 minutes, 42 secondsfrancia, orosz részben és a portugál azt gondoljuk, de ami miatt sok beszélő van, az nem európai. Tehát csak azt szeretném
+2:492 minutes, 49 secondsegy picit eloszlatni, hogy itt Európa lenne a nyelvi központ. Persze nyilván az angol Európában gyökerezik, ezért
+2:562 minutes, 56 secondsszeretnénk ezt hinni, de a világ nyelvei azok hát máshogy oszlanak el, és csak az első 10, nem is mentünk bele a többibe.
+3:043 minutes, 4 secondsHa úgy ábrázolnánk valahogy, akkor ugye hát a mandarint lehet ilyen nagy krumplival karikával mutatni, a
+3:123 minutes, 12 secondstöbbieket meg arányosan kisebbel. És akkor hát valamelyik pici pötty lehetne valahol a magyar is, de hát rengeteg olyan nyelv van,
+3:213 minutes, 21 secondsamelyik nagyon fontos a beszélőinek, de hogyha ezt a öt nagy karikát összeadjuk, akkor látjuk, hogy ezek jelentős számok.
+3:293 minutes, 29 secondsErről majd még lesz szó. Tehát, hogy néhány nyelvnek a kódrendszere az interneten is hatékonyan jelenik meg. És
+3:363 minutes, 36 secondscsak jelzem, majd erről megint csak több szó lesz, hogy a kínai írás egységes, és
+3:433 minutes, 43 secondsnem csak a mandarin nyelvet, hanem más Kínában beszélt nyelvet is kódol. És mivel az interneten mi írott szövegekkel
+3:503 minutes, 50 secondsdolgozunk, az egyféle írásnak van előnye. Gondoljanak arra, hogy mi most
+3:573 minutes, 57 secondsmagyar betűket majd, merr külön lesz szó, ma használunk, ami hát latin betű kicsit különbözik a szomszédainkétól.
+4:054 minutes, 5 secondsÉs anekdotikus történet, de egy Japánban dolgozó magyar professzort megkértek a
+4:144 minutes, 14 secondsromán könyvek rendszerezésére, és amikor ő jelezte, egyetemről van szó, jelezte, hogy ez egy másik nyelv, és mi nem tud ő
+4:214 minutes, 21 secondsrománul, akkor azt mondták, hogy de hát ugyanúgy néznek ki a betűk, onnan nézve persze tényleg. És hát olyan közel vagyunk egymáshoz. Tehát a naivitás még
+4:304 minutes, 30 secondsegy egyetemen is megvan, és nekünk is megvan az a naivításunk, hogy hát nyilván ez egy nagyon bonyolult ny és sajnáluk is mondjuk a kínai gyerekeket,
+4:374 minutes, 37 secondshogy azt a bonyolult, ideografikus rendszert kell elsajátítaniuk, de jelzem, hogy az interneten az egységes írás az nagyon sokat segíthet, aztán
+4:454 minutes, 45 secondsmindenki az anyyelvén fölolvassa, amit ott olvasott. Ezt a betőíró nyelveknél nem lehet, mert ott mindig a nyelv tartalmát kódoljuk betűbe és azt a
+4:544 minutes, 54 secondshangzó anyagot, nem pedig egy ilyen fogalmi leírást, ahogy a ideografikus nyelvek, amilyen a kínai írás is, vagy azok az írások kódolják az információt.
+5:065 minutes, 6 secondsTehát ha akarunk olyat, hogy megértsék a többiek is, akkor gondoljanak arra, hogy a olimpia csak lesz előbb-utóbb. jelei
+5:145 minutes, 14 secondsolyanfajta sportmozdulatok, amitől mindenki megért, és nem kell kiírni külön, hogy úszás vagy szméménk, hanem hát mindenki látja azt az úszót ott a
+5:215 minutes, 21 secondsképen, vagy ha a láncidat vagy a bazilikát meg akarjuk kutatni, hogy merre esik a városba, akkor kis ábrácskákat rajzolunk, vagyis, hogy
+5:305 minutes, 30 secondsigyekszünk itt Európában mi is az ideografikus irányba menni, amit több ezer éve Kínában már igen kimálóan kidolgoztak.
+5:395 minutes, 39 secondsTehát beszéltünk a magyar nyelvről, én itt csak hoztam néhányat. az elrentemés miatt, hogy talán lássák azokat a
+5:465 minutes, 46 secondsnyelveket, akik az etnológ szerint az előttünk levő több beszélővel rendelkezők. Hát a magyar ebben a pillanatban, legalábbis ezerint a
+5:545 minutes, 54 secondskimutatás szerint a világ 72. legnagyobb nyelve. Na most ha előtte nézzük, hogy sok indiai, bangladesi, indonéz, kamuzai
+6:036 minutes, 3 secondstávolkeleti nyelvről van szó, és mondjuk az előttünk levő listáb csak a görög szerepel, akkor azt látjuk, hogy az
+6:116 minutes, 11 secondseurópai nyelvek közt ez nem is olyan rossz pozíció, vagy olyan tizenvalahyadiknak lenni. Lényeges dologról van szó. A magyar nyelv egy
+6:196 minutes, 19 secondsolyan nyelv, amelyik a legnagyobb európai nyelvek között van, miközben mi sokszor szomorkodunk azon, hogy nem így van.
+6:286 minutes, 28 secondsA nyelvek területileg tehát úgy oszlanak el, ahogy az előbb mondtam, hogy Európában relatíve kevés van. Most az a 284, ami ebben a statisztikában van, az
+6:366 minutes, 36 secondscsak annyit mond, hogy ennyiféle nyelv van regisztrálva Európában, ebben nagyon kicsik is vannak. Nyilván nem a nemzeti
+6:456 minutes, 45 secondsnyelvek azok, amiket mindannyian ismerünk, mert azok jóval kevesebben vannak. De még ebben sem rossz az a 15.
+6:516 minutes, 51 secondskörüli hely. A világ összes, hát nehéz megmondani, hogy mi a nyelv és mi a nyelvjárás. Erről most ne menjünk bele, mert nagyon kicsi a hatásokszor
+6:596 minutes, 59 secondspolitikai különbségek definiálják a nyelveket. Hát ezt a 7000ret akárhogy nézzük is, úgy kell
+7:067 minutes, 6 secondselképzelnünk, hogy hát ezek egy része folyamatosan fogy, hal el, de nagyjából ennyien van a világon. És a százalék-os
+7:147 minutes, 14 secondsarányok pedig azt mutatják, hogy hát Európában az a élő nyelveknek az egy 25.
+7:217 minutes, 21 secondsrésze van Európában, és azért a beszélők egy negyede, Ázsiában meg mondjuk az 1egyhada van a nyelveknek, és a beszélőknek meg szinte a kétharmada.
+7:297 minutes, 29 secondsTehát látszik, hogy az arányok úgy vannak eltolva, hogy Európában is sokan vannak, Ázsiában még többen és a többi kontinensen ehhez képest kevesebben.
+7:397 minutes, 39 secondsHa más statisztikát nézünk, és ez megint egy fontos dolog, hogy a nagyon nagy populációjú nyelvekben nagyon kevés van.
+7:467 minutes, 46 secondsEzt mindannyian tudjuk, és majd több olyan nyelvi törvény lesz a mai órán, amelyik ezekre a számokra utal. Aztán
+7:537 minutes, 53 secondsazt lehet mondani, hogy a legerősebb nyelvek, a legnagyobb lélekszámú beszélővel rendelkező nyelvek, azok
+8:028 minutes, 2 secondskörülbelül ugye az a nyolc az annyian van, mint a 10zer annyi második osztály egy nagyságrenddel kisebb, tehát a 10 és 100 millió közötti nyelvek, amiknek az
+8:118 minutes, 11 secondsösszbeszélő száma szintén ennyi. És akkor azt is lehet mondani, hogy ők már nagyjából definiálták is a beszélőknek mintegy
+8:208 minutes, 20 seconds80%-át. Tehát ez látszik, hogy az első két blokk, a legtöbb beszélői nyelvek összesen 90-en vannak, és a 7000-hez
+8:278 minutes, 27 secondsképest nagyon kevés 20% maradt a maradék 6900
+8:338 minutes, 33 secondsén 10-re. Tehát, hogy aránytalanság van, és nyilvánvalóan minden nyelv egyenlő, és mindenféle jogokat biztosít mindenki
+8:428 minutes, 42 secondsminden nyelvnek, de azért azt is látjuk, hogy a nagy nyelvverke egész másfajta technikai feldolgozás vár, mint a kicsikre. És azt is szokták mondani,
+8:508 minutes, 50 secondshogy ahol van nyelvtechnológiai feldolgozás, azok a nyelvek garantáltan nem fognak kihalni. Mondanok olyat is, akinek Wikipédiája van valamilyen nyelven. Az a nyelv már nem fog kihalni.
+9:009 minutesNem azért, mert Wikipédiája van, hanem mert olyan típusú populáció működteti, hogy már Wikipédiát is létrehozott, vagy nyelvtechnológiai eszközöket is.
+9:109 minutes, 10 secondsNa most egy kicsit konkrétabbra menve, aztán majd ezt többször visszaköszön még az előző egy-két statisztika.
+9:179 minutes, 17 secondsHát végül is betűket írunk mi itt nagyjából. Ugye elő mondtuk, hogy a kínaiak kicsit mást, és nyilván a régi
+9:249 minutes, 24 secondsegyiptomiak is mást írtak, de hát ezért néhány dologról most szó lesz, hogy hogy kerül elő a karakter, vagy a betű, ami
+9:329 minutes, 32 secondstöbbé-kevésbé nem, csak kicsit szinonim a karakterrel a hangzóvilágból, mert ugye nyilván előbb beszélt az ember és csak utána írta le. előbb voltak hangok,
+9:429 minutes, 42 secondsaztán az a különleges dolog, ami fonéma, aki nem nyelvész, annak az újdonságnyelvészeknek bizonyára könyökükön jön ki, de hát egy
+9:499 minutes, 49 secondsjelentős különbség van a hang és a fonéma között, bár hangzó dologról van szó, és aztán ez keveredik át a betűvilágba, és ezt kódolják a
+9:579 minutes, 57 secondsszámítógépek karakterekben. B
+
+https://www.youtube.com/watch?v=-9NUY5d4VXM&list=PLvLI66ieiidhOULovlk35bwn9Dz6LGVFC&index=16

@@ -1,0 +1,652 @@
+Tehát nézzük konkrétan beszédes nyelvben a fonéma az egy olyan dolog, egy absztrakció valójában, ami a hangokból
+0:1010 secondskeletkezik mi számunkra az adott nyelvben egy olyan önálló egység, ami a többi ugyanilyen definió definíció
+0:1818 secondsalapján készített fanévábbal szemben úgy viselkedik, hogy jelentés megkülönböztető szerepe van.
+0:2525 secondsUgye különböző nyelvekben egy-egy fonémo alá több beszédhang is tartózhat, tehát a kettő nem ekvivalens. Hát nyilván valamilyen szempontból ezek hasonlóak.
+0:3333 secondsHát akkor nézzünk olyan példát, hogy mutassuk meg, hogy hogy van jelentés megkülönböztető szerepe ennek a fonémának. Tehát például az betűsor,
+0:4343 secondshangsor a magyarban, ha úgy kezdődik, hogy géz, vagy úgy, hogy kéz, néz, néz,
+0:5050 secondsréz, akkor látjuk, hogy ezek mind különböző jelentéssel bíró nyelvi egységek a magyarban. Tehát a G-nek,
+0:5959 secondsK-nak, M-nek, N-nek, R-nek különböző jelentést megkülönböztető szerepük van.
+1:091 minute, 9 secondsJól lehet tudjuk, hogy a G meg a K az csak kicsit ugye zöngészségben hasonlítanak, vagy nem itt térnek el egymástól, az Majdnem
+1:171 minute, 17 secondsugyanott képződnek, nem egészen. Tehát ezek rokó hangok, viszont a méz meg a néz az két teljesen különböző szó magyarban. Vagyis
+1:261 minute, 26 secondskét különböző fonémáról van szó. Ezek a beszédhangok, hogy m meg hogy nő. Ezek két különböző fonémához tartoznak. Most
+1:341 minute, 34 secondsugyanez a nö, hogyha abban a szóban szerepel mondjuk, hogy angol,
+1:411 minute, 41 secondsakkor nem azt mondjuk, hogy angol, hanem azt, hogy angol. ez a ng hang ez nem létezik máshol, csak ugye hát itt a
+1:501 minute, 50 secondsGöltennek megvan a pontos oka, hogy a képzés, hogy alakul így. Vagyis az N, amelyik az angolba le van írva, az soha
+1:581 minute, 58 secondsnem ejtődik ilyen butánki, ahogy mondtam.
+2:022 minutes, 2 secondsDe nem lesz egy önálló fonéma az a n, mert nincsen olyan helyzet, ahol ez jelent és megkülönböztető volna, hiszen
+2:112 minutes, 11 secondsnincs olyan, hogy a néni szó helyett esetleg létezne egy néi, amelyik mást jelentene, vagy adott esetben a honvéd
+2:192 minutes, 19 secondsszóban a M, ugye V előtt ilyennél válik a hang, a M szintén nem létezik néni alakban, tehát a néni az biztos, hogy
+2:282 minutes, 28 secondsN-ként hangzik. A honvédben honvéd lesz, az angolban angol lesz, de a n meg a n
+2:352 minutes, 35 secondsmeg a n azok valójában egy fonémához tartoznak. Bár három különböző beszédhangról van szó. Ráadásul
+2:432 minutes, 43 secondskülönböző nyelvekben egy azon hangzás is különböző folimákhoz tartozhat, mert gondoljuk el, hogy mondjuk az angolnak
+2:502 minutes, 50 secondsnincs célje. Tehát az a hang, hogy cél, ez az angol rendszerben így nincs. Ők máshogy jelölik. És nyilván amikor mi azt mondjuk, hogy cucc, abban nagyon cél
+2:582 minutes, 58 secondsvan. Ha azt mondjuk, hogy boots, akkor az ugyanúgy hangzik az a cö, csak nekik ugye egy t meg egy séma van együtt. És persze hangzásilag, ahogy az angolban is
+3:083 minutes, 8 secondsegy ng meg egy gllt ugye egymás után, hát az angolban is két dolog áll egymás után, ám nekik nem létezik az a fonéma,
+3:163 minutes, 16 secondsamit mi a C fonémának gondolunk. Tehát ez valahol azért lényeges, mert a betűírásnál, hiszen az angol és a honvéd
+3:253 minutes, 25 secondsis ennel íródik, az egy folémához tartozó egységeket próbáljuk betűkbe képezni, nem pedig az egy hangoz, mert
+3:333 minutes, 33 secondsakkor az angol möjét és a honvé möjét is külön betűvel kellene jelölnünk.
+3:413 minutes, 41 secondsEzt a fonetikus világot, ezt ugye standardizálták, az International Fonetic Association, tehát a fonetikai
+3:493 minutes, 49 secondsszövetség, ugye először csináltak egy olyan alap ABC-t, amik a legtöbb latin betűs nyelvben
+3:573 minutes, 57 secondslétező hangokat összeszedte. Hát ez általában azt lehet mondani, nagyjából ezek, amik itt fel vannak sorolva.
+4:044 minutes, 4 secondsSzöklett zárójel mutatja, hogy ők fonémák és nem hangok. Aztán persze vannak olyanok is, amiket különböző nyelvekben már máshogy ejtenek. Ugye a
+4:124 minutes, 12 secondsJ-nek a kiejtése nyelvenként a J-től a H- különbözhet. Az R is különböző módon szólal, meg az Y-r is beszélve, hogy azt
+4:204 minutes, 20 secondshányféleképpen hol másangzó, hol meghangzó. Sőt, vannak olyan szimbólumok is, amiket azért kell létrehozni, mert
+4:284 minutes, 28 secondsszeretnénk valahogy jelölni őket, de nincs hozzájuk betű, legalábbis a latin ABC-ben nincs. Akkor a görögöt meg
+4:354 minutes, 35 secondsmindenféle más ABC-ket hívjuk segítségül. Ott látjuk a görög ABC-ből vett ilyen elemeket.
+4:444 minutes, 44 secondsVagyis ezek a fonémák egy nemzetközi sztendbe kerülnek a magyarban. 14 magahangzó
+4:514 minutes, 51 secondsés 24 másrahangzó fonéma van. És ez nyilván az iparrendszerben is létezik.
+4:584 minutes, 58 secondsVan egy nemzetközi sztend, mint mondtuk, és ezek a szimbólumok ott vannak, és ezeket pontosan meg lehet feleltetni minden nyelv, minden megfelelő
+5:055 minutes, 5 secondsfonémájának. Tehát nincs csoda. Az ember, mint Homo sapiens, hát egy olyanfajta hangképző berendezéssel rendelkezik, amibe ugye ott azon a
+5:145 minutes, 14 secondstáblázaton látnak szürke téglalapocskákat. Az azt jelenti, hogy az fizikailag lehetetlen létrehozni olyan hangot. Ez a lehetőség, a helye és
+5:245 minutes, 24 secondsa formája, ahogy létrehozom egyszerűen ez a mátrix ugye itt, hogy hogy hozódik létre, illetve hol hozódik létre, nem
+5:325 minutes, 32 secondsteszi lehetővé az ember fiziológia felépítésé, hogy olyan hangokat produkáljon. És így egy ilyen nemzetközi
+5:405 minutes, 40 secondssztendbe kerülnek a fonémák, és aztán pedig egy lokális sztenderde. Ezeket különböző betűírásban jelenítik meg a
+5:475 minutes, 47 secondsnyelvek. Például azoknak, akiknek nem elég a latin ABC és mi pont ilyenek vagyunk, hát kiegészítő jeleket kell
+5:565 minutes, 56 secondshasználni. Hát kétféle kiegészítés lehetséges, hiszen a latin ABC, ami hát gyakorlatilag az angol ABC, jó, mondjuk
+6:036 minutes, 3 secondsaz angolban van teszem, az W az a latinban kevésbé volt, de szóval, hogy a mellékel nélküli ABC, latin ABC, az
+6:116 minutes, 11 secondskiegészül mindenféle olyan plusz kis jelekkel, diakritikumokkal, diakritikus jelekkel, amit hát kvázi ékezetnek
+6:196 minutes, 19 secondsszoktunk mondani, de hát nem csak fölül van a magyarban, leginkább ugye vesszők, pontok, pettyök vannak a javariszt magánzó tetején. Ezzel szemben
+6:286 minutes, 28 secondsmindenféle egyéb jelek is létezhetnek különösen más nyelvekbe.
+6:336 minutes, 33 secondsÉs létezik egy olyanfajta átkódolási lehetőség, hogy több egymás utáni gráf, graféma, tehát betűcske egymás
+6:426 minutes, 42 secondsmellett mást jelent. Tehát azt ismerjük, hogy nekünk az s az s-ből meg Z-ből áll.
+6:476 minutes, 47 secondsEzt más nyelven két különböző betűnek tekintik nálunk meg nem. De csak érdemes utalni itt a példában is szereplő
+6:556 minutes, 55 secondslengyelre, ahol ez az s meg a z egymás mellett ugyanígy egy közös szimbólum, de ott kódolnak vele, míg mi ezt. Tehát még
+7:037 minutes, 3 secondsa legtöbb nyelvven a sima s betűvel ezt kódolnak, mi a sima s betűvel s hangot kódolunk és az szárral
+7:117 minutes, 11 secondsezt. Vagyis amit egy egyszerű s-sel lehet magyarba leírni, mert nekünk az s hangot, ezt a kis görbe vonal jelöli,
+7:207 minutes, 20 secondsazt máshol sh-val, CH-val, SCH-val különböző dolgokat hozzátéve i-t, kjét-t különbözően nyelveken, vagy diakritikus
+7:297 minutes, 29 secondsjeleket, mint sok szlávnyelvben ez a kisek a tetején, vagy vessző, vagy alatta egy kis farkinc, amit a románból
+7:367 minutes, 36 secondstörökből ismerhetünk, vagy még más jelek is rá lehet tenni. Na, szóval vagy diakritikus jel, vagy multigráf. Na most
+7:447 minutes, 44 secondsszámítógépesen nézve, ezeknek az a problémájuk, hogy amikor mellékjeleket adunk hozzá, azokat valahol egy
+7:527 minutes, 52 secondstáblázatban el kell magyarázni az embereknek. Erről fogunk majd beszélni mindjárt, hogy milyen fajta karaktereket ismerünk. Ha pedig több karakterrel
+8:008 minuteskódoljuk, mint ahogy itt az SCH a németben például ezt teszi, akkor azt nem lehet betűszinten tárolni, hiszen a
+8:068 minutes, 6 secondskaraktereink egy egy szimbólum, és az S meg a C meg a H az három. Egymás mellé kerülésük esetén jelentik az S-t. És
+8:148 minutes, 14 secondsakkor még nem beszéltem azokról a problémákról, amit mindenki ismer, hogy nem tudom én, sózsák. és a sószsák
+8:218 minutes, 21 secondsesetében, hát leírva az az ss, azt már csak a magyar ember tudja, hogy az egy sből meg egy z-ből tevődik össze, és
+8:298 minutes, 29 secondsmondjuk nem egy s-ből és egy s-ből, bár formailag ez is lehetne.
+8:358 minutes, 35 secondsTehát az írásokban ez az extra kódolás további gondokat okoz. Vagy abban, hogy a karakterkészlet nem tárol ilyeneket,
+8:428 minutes, 42 secondsvagy abban, hogy tárol, de több ilyen elemből kell összerakni, vagyis már csak a szó szintjén tudjuk megfogni, a karakterek szintjén nem is tudjuk megfogni a betű átírásunkat.
+8:538 minutes, 53 secondsHát az európai ékezetes betűk úgy kezdődnek, ugye, hogy mindenféle jeleket tesznek a különböző mondjuk itt a
+9:019 minutes, 1 secondmagánhangzókra alul a másangzók is látszanak, és egy részüket nem is tudjuk, hogy hogy kell kódolni, hogy kell dekódolni, mit jelent az a
+9:099 minutes, 9 secondsvalójában, hogy mondják ki azon a nyelven. Gondoljuk el, hogy hány sportkönzvetítésben hallani, hogy furcsán mondjuk az idegen játékosok
+9:169 minutes, 16 secondsneveit, illetve a mieinket mondják furcsán az idegen ajkú riporterek, mert ezeket a szimbólumokat nem tudják hova tenni, és nem értik, hogy mit kell kiejteni.
+9:279 minutes, 27 secondsA keleti európai AB cig még több mellékjel van, ezt sok olyan nyelvnek, mint például a
+9:349 minutes, 34 secondsLitván köszönhetjük, ahol rengeteg ilyen diakritikus jeles szimbólum van.
+9:409 minutes, 40 secondsTehát ezek nagyon furcsán működnek. Na, vegyünk akkor a magyarba. Hát a magyarba a diakritikumokat, ugye a a
+9:489 minutes, 48 secondsráadásbetűket, maghangzóink vesszőjét jó lenne, hogyha egyértelműen tudnánk kódolni. Leginkább levesszük őket, és megszoktuk, hogy emailben megy a hét
+9:579 minutes, 57 secondsbites információ, úgy is tud a magyar ékezetesíteni röptében. És ugye mindenki ismeri ezt a kifejezést, hogy árvíztűrő
+10:0510 minutes, 5 secondstükörfúrógép. Ezt fogjuk használni példának, hiszen ebben a két szóban az összes magyar rövid hosszú magánhangzó
+10:1210 minutes, 12 secondsszerepel. Nincs kérdés, hogy mit jelent az árvisztűri tükörfúrógép. Bár hogy idegen ajkunak nem volna egyértelmű feladat, hova tegyen milyen pontokat,
+10:2110 minutes, 21 secondsahogy nem egyértelmű feladat az arab vagy a héber nyelvnek az ékezeteit visszaállítani, mármint az ékezetek helyében most a magáhangzókat gondolok.
+10:2910 minutes, 29 secondsTehát azokat a pozíciókat, amik nincsenek kitéve. Hát így sincsenek kitéve a pöttyök meg a vonalak, de minden magyar tudja. Hát persze lehetnek
+10:3810 minutes, 38 secondsolyan problémák, mint a kedvenc Fókabél versus főkábel kifejezésnél, amit nyilván kontextuálisan minden magyar el tud
+10:4610 minutes, 46 secondskülöníteni, hogyha fókákról van szó, ez nyilván fókabél, ha pedig szerelésről van, a bizon szerelés, akkor főkábel, de
+10:5310 minutes, 53 secondsönmagában ez valóban nem ékezetesíthető, de a magyar embert ez nem zavarja. Emailbe, SMS-be nyomja ezt a bitest.
+11:0111 minutes, 1 secondRégen valaha ugye voltak táviratok és kitarták a távirati kódolást, ahol két darab magáhangzó jelentette az ékezetes
+11:0811 minutes, 8 secondsváltozatot. A két a az a volt, a két i a hosszú i, sőt az u e ugye az a hosszú ü,
+11:1611 minutes, 16 secondsoe az az ö és így tovább. Ez egy egyértelmű kódolás. Egyébként ha valaki ismeri a fnyelvet, amelyik rokonunk ott
+11:2511 minutes, 25 secondstulajdonképpen a magánhangzó, hosszú magánhangzókat kettő írással kódolják.
+11:2911 minutes, 29 secondsnagyon hasonlóan ehhez, de nekünk nem ez a bevett sztenderdünk.
+11:3411 minutes, 34 secondsEzért kitalálták, hogy repülőékezeteket írnak, amik nagyon csúnyák és ugye hosszítják a stringet, de valójában, ha az a után vesszőt vagy aposztrófot
+11:4211 minutes, 42 secondsteszek, és egy másik szoftver rá tudja tenni, vagyis elő tud állítani egy rendes a betűt, vagy ugye a macskaköröm
+11:4911 minutes, 49 secondsaz kétvessző, esetleg a kettős pontot szöveg közepébe berakva, azt úgy kell értelmezni az előző magánhozó tetejére
+11:5711 minutes, 57 secondsteendő. Tehát egy kódolási utasítás arra nézve, hogy akinek van ékezetes betűje, és azért volt egy időszak, amikor ezek a betűk még nem voltak elérhetőek a
+12:0612 minutes, 6 secondsszámítógépesek számára, akkor egy célzoftver átalakította nyomtatható betű GS-t.
+12:1312 minutes, 13 secondsAztán kialakult egy ilyen számkódos kódolás. Nyelvészek külön szeretettel használták ezt. Itt arról van szó, hogy
+12:2012 minutes, 20 secondsa előbbi aposztrof macskaköröm kettős pont, abból véges sok van, viszont számokból eléggé sok. Sőt, hát
+12:2712 minutes, 27 secondsmegkockáztattuk, hogy nincsen fölső korlát. Vagyis ha egyesel jelöljük azt, hogy veszőt kell rátenni, kettessel, hogy két pöttyöt, hármassal, hogy két
+12:3512 minutes, 35 secondsvesszőt és 127-essel akármit. Tehát annyi számot írok, amennyit akarok. az összes diakritikumnak lehet egy ilyen
+12:4312 minutes, 43 secondsszámformája, és akkor az a szoftver, amelyik a magánhangzót és az utána lévő számot együtt úgy értelmezi, hogy megjeleníti nyomtatásba azt a speciális
+12:5112 minutes, 51 secondskaraktert, amelyiket karaktert, amelyiket, akkor az egy jól használható rendszer. És akkor amikor még egyszer mondom, a egyszerű számítógépeken még
+13:0013 minutesnem voltak ékezetes betűk, de már mondjuk a törtelőrendszerekben igen, így kódolva a dolgot, akár archaikus régi szövegeket is kiválóan tudtak így
+13:0813 minutes, 8 secondskódolni. Még egy ilyen kis érdekesség, hogy ugye az egy a rátett vessző, tehát adott esetben a toldalékolás, ha leírom
+13:1713 minutes, 17 secondsazt a szót, hogy kutya, és a toldalékoló rendszer az ékezetet is hozza magával, tehát a tárgyesetnek a tjeje az meghosszítja a kutya végén levő alatt.
+13:2713 minutes, 27 secondsHa 1T lenne a toldalék, akkor a kutya és az 1T összekapcsolásával kiolvashatóan kutya által rakjon létre. Tehát van
+13:3613 minutes, 36 secondsennek előnye, de nyilván az eredeti betűk száma lényegesen megszaporodik a beszúrt számkarakterek száma miatt.
+13:4413 minutes, 44 secondsAztán a világhírű techrendszer, amiről ha eddig nem hallottak, föltétlen pár szót kell mondani, hogy először is az ejtése tech görög, tehát nem tex és nem tech.
+13:5613 minutes, 56 secondsÉs az egésznek a szépsége, hogy van egy olyan informatikus kolléga, aki az előző
+14:0414 minutes, 4 seconds20. század második felében annyi minden fontos dolgot csinált. Donald Gusról van szó. Knut. Knut nyus szépen mondva, de magyarul mi csak Knutnak mondjuk.
+14:1714 minutes, 17 secondsLétrehozta azt a rendszert, amivel ő maga már a nagyon korai doszos világban, ahol még nem voltak grafikus PC-k, már ott is
+14:2514 minutes, 25 secondstudott kiválóan professzionális nyomdakés szövegeket létrehozni. úgy kódolta a különböző
+14:3314 minutes, 33 secondsnyelvek betűit, hogy azok meg tudjanak jelenni. És bár amerikai volt, például itt látnak egy olyat, hogy backash H. Ez
+14:4214 minutes, 42 secondsa Hungarian Umlaut, tehát ő már ismerte, hogy a magyaroknak az hosszú ű meg a hosszú űre lesz szükségük. És nyilván
+14:4914 minutes, 49 secondsneki erre közvetlenül nem volt szüksége, de azt mondta, hogy az ember csinál egy rendes szoftvert, akkor azt csinálja úgy, hogy minden nyelvre működjön.
+14:5614 minutes, 56 secondsRáadásul nem csak ezt a kódolást csinálta, meg azt a compilert, amelyik ebből előállított pixel tökéletes
+15:0315 minutes, 3 secondsnyomtatott formátumot, hanem egy olyan matematikai leíró nyelvet írt az egészhez, ami nem csak a betűket, hanem az elrendezést is tudta kezelni, és mai
+15:1215 minutes, 12 secondsnapig remélem többen használnak már mindenféle Windows-os tech verziókat.
+15:1715 minutes, 17 secondsSőt, Nut még azt is megcsinálta, hogy lézer hozzott egy metafont nevű szoftvert, ami belement a tipográfusok világába, lehetővé tette, hogy a betűk
+15:2515 minutes, 25 secondsformáját valaki maga alakítsa ki, vagy a legprofesszionálisabb betű rajzolóktól vegye át azt, ahogy az
+15:3315 minutes, 33 secondsmajd a végén kinézni fog. Tehát egy nagyon alapos ember volt, és nem mondtam, mindezt azért csinálta, mert szüksége volt speciális karakterekhez
+15:4115 minutes, 41 secondsahhoz a könyvhöz, aminek az a címe, hogy a számítógép programozás művészete, Art of Programming, amelyik egy három
+15:4715 minutes, 47 secondskötetes alapkönyv. Nyilván ma már egy részével azért nem foglalkoznak az informatikusok, mert nem mennek le olyan
+15:5415 minutes, 54 secondsmélyre, hogy hogy kell compilert gépi fordító programot, tehát az a a számítógép lelke, nem az emberi nyelvek
+16:0116 minutes, 1 secondközötti fordítást csinálni. Ő pedig ezekről is és mindenféléről, ami a számítástechnikának a legle legal alapja, 60-as-70-es években ehhez még
+16:1016 minutes, 10 secondsközeljártak az emberek, aztán kezdtek elszakadni, és olyan magas szintű nyelvek keletkeztek, hogy már le se látunk az aljára. Szóval ő írt egy ilyen
+16:1716 minutes, 17 secondskönyvet, a könyvhöz kellett neki a tech, a techhez a metafont, és mindent egy maga megírt, és ebben a sckben, amit magának épített fölemben, szépen lement,
+16:2616 minutes, 26 secondsmegcsinálta és visszajött. Tehát kész rendszereket hagyott az utókorra. Csak ennyi tisztelet mindenképpen
+16:3316 minutes, 33 secondskell, hogy elmondjuk, hogy őt övezze, mert alapvető dolgokat csinálta a számítógép programozásban, és a különböző tech verziókat pedig még
+16:4116 minutes, 41 secondsegyszer mondom, remélem, hogy önök is használják. Hát a HTM-et már nem kell elmagyarázni. Itt nevük van már a karaktereknek. Az a az Acute nevű
+16:5016 minutes, 50 secondsékezettel együtt a alakot ír, tehát a plusz akut az a árvíztűrő.
+16:5816 minutes, 58 secondsDe hát aztán a már olyan hosszú, hogy a tükörfúrógépek utá nem férk ki. Tehát vannak ezek a hosszú szekvenciák, amik hogyha nem saját magukat kódolják a
+17:0717 minutes, 7 secondsbetűk, mint az R vagy a V, akkor pontos vesszővel választódnak el. Itt például nem tudom én, azandis után a hat
+17:1417 minutes, 14 secondskarakter írja le azt a betűt, amelyiket nevük van a betűknek. Így is bármit le lehet, bármilyen szimbólumot le lehet írni. Tehát ez is egy betűkódolási
+17:2217 minutes, 22 secondsforma. Emberi fogyasztásra nyilván nem alkalmas.
+17:2617 minutes, 26 secondsNa most ugye eljutottunk oda az alapproblémához, hogy ugye a karakter, ami szintén egy absztrakt objektum, az a gépen van egy egység, valami azonosítója
+17:3517 minutes, 35 secondsvan, szám, betű, bármilyen írásjel, és valamilyen pozíciót egy adott rendszerben betölt.
+17:4417 minutes, 44 secondsAztán a karakterkód, ugye az a kód, az a számkód, amit ő betölt. Tehát egy táblázatban valami numerikus értéket
+17:5117 minutes, 51 secondsrendelek hozzá. És ugye hát a karakter készlet az, hogy melyik szimbólumhoz, melyik karakterhez milyen kódot
+17:5717 minutes, 57 secondskapcsolok, és hát hány darab, hány elemből áll a karakterkészlet. Ez nagyon fontos. Ugye a kódlap az egy olyan lap,
+18:0518 minutes, 5 secondsamin valahányszor valahányban elhelyezkednek az odatartozó karakterek.
+18:1018 minutes, 10 secondsAz elején nagyon kevés volt, nyilván a kettő advány már az elején is játszott.
+18:1418 minutes, 14 secondsMondjuk 128 karaktert, vagy 256 karaktert kellett így kódolni. majd mindjárt szó lesz róla lényegesen többet
+18:2118 minutes, 21 secondstudunk egy kódlapa. És ugye a betűkészletünk az egy olyan táblázat, hogy a karakterkészlet
+18:3018 minutes, 30 secondsmeginthető karaktereihez milyen képet rendel. Ahogy az előbb is mondtuk, hogy ez a furcsa leírás, az egy darab képet
+18:3718 minutes, 37 secondsrendelt a tech vagy a HTML esetében a leíráshoz. Tehát az a kép az valójában a betű, ahogy megjelenik képernyőn vagy nyomtatásban.
+18:4718 minutes, 47 secondsDe hát ugye ezek mind azokról a singli szimbólumokról szólnak, amikről beszéltünk, hogy jó esetben mindenféle
+18:5518 minutes, 55 secondsékezett diakritikus jel nélkülek, bonyolultabb esetben van nekik ilyen, de amikor több ilyen van egymás után, az már nem a kódlap, kódkészlet, betűkészlet kategóriája, hanem a nyelv.
+19:0619 minutes, 6 secondsHát a legegyszerűbb ilyen kódlap volt az induláskor a kódlábla kódtábla volt. 128 karakter az angol ABC betűi. Valahonnan
+19:1619 minutes, 16 secondslátják a 65-től tartott a 90-ig. Aztán a kisbetűk 97-től 122-ig. És máris
+19:2419 minutes, 24 secondslátszik, hogy mivel a súlyuk különböző, ha ezeket rendezni akartuk, akkor máshova esnek a nagy betűk, mint a kisbetűk. És mondjuk, ha valahol van egy
+19:3219 minutes, 32 secondsolyan sztenderd, hogy össze lehet keverni a nagy betűt a kisbetővel, nincs azoknak különböző súlyuk, akkor már ez a tábla a numerikus értékeikkel nem
+19:4019 minutes, 40 secondsegészen azt közvetíti, amit mi szeretnénk. Már valakinek ezt felül kell bírálnia. Ráadásul hát a számok is esetlegesen a nagy betűk előtt vannak,
+19:4919 minutes, 49 secondsde senki nem mondta, hogy a számok kisebb súlyúak egy rendezésnél, mint a nagy betűk. De mivel Amerikában ez így
+19:5519 minutes, 55 secondsvolt, ez a rendszer így alakult ki, és mindenféle korábbi kódolási elvek, tele type
+20:0520 minutes, 5 secondsmindenféle ilyen távíró eszközök, szal papír, lyukszalagok kódolásánál
+20:1320 minutes, 13 secondsezeket a szimbólumokat a terexgépeknél odatették ahova, és azt megörökölte a számítástechnika. És mivel
+20:2120 minutes, 21 secondsAmerikába indult erősen a dolog, ez nekik elég is volt. És akik abban az időben kezdtek a számítógéppel foglalkozni, magam is ezek közé
+20:3020 minutes, 30 secondstartozom, meg kellett küzdeniük azokkal, akik azt mondták, hogy az életben nem lesz olyan, hogy magyar ékezetes betű, majd a magyarok is leszoknak az ékezetes
+20:3820 minutes, 38 secondsbetűéről, mert hát a számítógép csak ezt tudja, ezt a táblázatot. De hát úgy alakult a dolog, hogy a 128-ról azért
+20:4620 minutes, 46 secondssokan sejtjük, hogy azért az nem tölti ki a 8 bit az 1 bytteot, tehát az csak hét
+20:5420 minutes, 54 secondsugye 2 4 8 16 32 64 128. És még volt egy bit, amit arra használtak, hogy a
+21:0121 minutes, 1 secondkommunikációs helyzetben oda mindig egy ilyen egyest vagy nullát tettek. Aserint, hogy valamelyikből
+21:0821 minutes, 8 secondsnullából egyesből hány darab volt a szóba egy ilyen a kommunikációban az esetleges sérülésekre reagáló kiegészítő
+21:1721 minutes, 17 secondsinformáció volt, hiszen valahol egy nulla helyett egyes került volna át, akkor ez a utolsó pozíció nyolcadik vitelvő nulla vagy egyes jelezte, hogy
+21:2621 minutes, 26 secondsnem annyi számú egyes vagy annyivan nulla van a eredetiben, hiszen az nagyon kicsi valószínűsége volt, hogy két helyen fog megsérülni egy ilyen 8 bites
+21:3421 minutes, 34 secondsstring. Az egyik az a tartalma, a másik meg pont az a bit, az utolsó, amelyik ezt az információt tartalmazza. Tehát
+21:4321 minutes, 43 secondsazt mondták, hogy lehet, hogy már a kommunikációnk jobb, és máshol kell ezt a kommunikációt segítő eszközt, ezt a
+21:4921 minutes, 49 secondskis control beatet használni. legyen 256 karakterünk, mind a nyolcat használjuk ki, akkor már kettő a nyolcadikon az már
+21:5721 minutes, 57 secondsmégis csak egy több mint a hetediken. És akkor ide lehet kódolni olyan betűket, amik ezeknek a furcsa kelet-európai névek népeknek is igényük. Csak
+22:0622 minutes, 6 secondshozzátenném, hogy először persze a nyugat-európaiakat kódolták itt, mert ugye nyilván a németeknek, franciáknak, svédeknek is voltak igényei. Aztán jött
+22:1422 minutes, 14 secondsa úgynevezett latin 2, ahol már a kelet-európaiaknak is, vagyis úgy kell elképzelni, hogy az első 128 mindenkinek
+22:2122 minutes, 21 secondsfix volt. Aztán volt egy nyugat-európai ráadás 128 meg egy kelet-európai. Ez itt a kelet-európai, ami látszik. Itt már sok nyelvnek megvan a karakterigénye.
+22:3222 minutes, 32 secondsAzért nekünk is, ha megnézik, akkor ott vannak már hosszú ők, meg sőt egyáltalán ő meg ő. Hát teljesen rendom, hogy hova
+22:4022 minutes, 40 secondsesnek, mert valaki Amerikában így szerette volna elhelyezni. Tehát ez se a rendezésnél nem segít, se a többi nyelvekkel való összevetésnél, hiszen
+22:4822 minutes, 48 secondsugyan oda esett mondjuk a magyar hosszú ő, ahol a másik kiegészítő táblábal a francia hullámos ő. És ha valakinek nem
+22:5522 minutes, 55 secondsvolt kelet-európai honlapja, akkor minden hosszú helyében egy francia hullámos keletkezett, később kalapos ő meg mit tudom én. Szóval, hogy
+23:0323 minutes, 3 secondsösszekavarodtak az ékezetek, mert az a második 128 már nem volt annyira sztenderd, mint az első.
+23:1023 minutes, 10 secondsDe hát így alakult, hogy már lehetőséget kaptak sok évtizeddel ezelőtt a kelet-európai nyelvek is, hogy tisztességesen írjanak számítógépen.
+23:1923 minutes, 19 secondsAkkor egy picit már megdőlni látszott ez a gondolat, hogy minden szöveg ezután már hét bites lesz. Akkor mondták, hogy jó, jó, lesz ilyen, de hát ezt olyan macerás használni, amiben igazuk volt.
+23:2923 minutes, 29 secondsNa most közben a világban elindult egy nagy sztandardizáció, a UC Universal Character Set.
+23:3623 minutes, 36 secondsElőször megpróbálták, azt mondták, hogy 16 bites információkat, tehát nem nyolc, hanem 16 bites információkat rakunk le.
+23:4523 minutes, 45 secondsEzzel már 100000 karaktert is lehet akár ezt a nagyságrendet is elérhetjük, kódolni, és akkor minden nyelvnek,
+23:5323 minutes, 53 secondsminden beszélt, minden holdnyelvnek még a vakok számára itt Brain Rusnak is a karakterei egyértelműen valamilyen pozícióba odakerülnek.
+24:0224 minutes, 2 secondsMindegyiket le is lehetett írni a kódhoz. egy ilyen szöveg latin nagy betű, nagy a betű például, vagy mit
+24:0924 minutes, 9 secondstudom én. A kis hosszú ő az a W acute, az azt jelenti, hogy kis hosszú ő.
+24:1624 minutes, 16 secondsMindenkinek volt neve, és ezen a 16 biten úgy gondolták, hogy minden elég lesz. Aztán hamarosan kiderült, hogy ez
+24:2324 minutes, 23 secondsMórick képzeli így, hiszen a világ nyelvei meg írásrendszerei is sokkal gazdagabbak. Úgyhogy azért kialakult, hogy már 32 bitre vitték ezt a dolgot.
+24:3324 minutes, 33 secondsDe az érdekesség, hogy közben létrejött a Unico Transformation format is, amelyik ugye egyrészt egy karakterkészlet volt, másrészt egy transzformációs formátum.
+24:4524 minutes, 45 secondsTehát ott már sok ravasszság volt, ami hát úgy néz ki, hogy az eleje olyan volt, mint az aszkitábla, aztán utána az
+24:5224 minutes, 52 secondsaszkit támogatva a további karaktereket is olyan helyre tették, ahova ezt okosolt tenni. És a nyolc bitesből ők is
+25:0125 minutes, 1 second16 bitest csináltak. És akkor egyszer csak kiderült, hogy két kód van egyszerre. Az előbb említett UCS meg a Unicode. A
+25:1025 minutes, 10 secondsUTFet, Unico Transformation Formatot azt ISO, ugye a nemzetközi szabványügyi szervezet is magáével tette. És akkor
+25:1725 minutes, 17 secondsezek ugye elkezdtek arról beszélni, hogy lehet, hogy jobb lenne, ha valahogy együtt működnénk. És a 80-as években kialakult, hogy míg a Unicode azért
+25:2725 minutes, 27 secondsmégis csak egy amerikai konzervum, az is mégis csak egy nemzetközi szervezet és hogy ez a UCS meg a Unicode nem jó, hogy kettő van, 91-ben leültek és ugyan a
+25:3625 minutes, 36 secondsszervezetek megmaradtak és teljesen kompatibilisek. Tehát ma már Unicode hívjuk ezt a dolgot. Unicódban persze további, mint az egyeztetési szabályok,
+25:4525 minutes, 45 secondsmindenféle kiegészítések vannak, de a kódkészletük azonosít, tehát már 91 óta csak egy senderdünk van, ami nagyon okos, mert azért a világban sok helyen
+25:5425 minutes, 54 secondsvan olyan, hogy tebb féle sztenderd, és az nem mindig segíti a sztendizációt, hogy ja, én eszerint vagyok sztender, legalább a karakterírásunk az egységes.
+26:0326 minutes, 3 secondsÉs akkor Unicö kis története. Hát most a 13-asnál tartunk éppen idén májusban jelent meg Unicor 13 könyvbe is
+26:0926 minutes, 9 secondsmegjelentő Unicod Standard. Ezt elvileg nem csak a webben, hanem könyvformájában is meg lehet szerezni. Sőt, hát nagyon
+26:1826 minutes, 18 secondsravasz dolgok, mint például további információ a decode Unicode nevű német
+26:2526 minutes, 25 secondsszervezetnek is vannak kiadványai. Tehát kód az már mindenkinek trivialitás, és abban a hatalmas nagy táblázatban ott van minden betűnek a lehetséges helye.
+26:3626 minutes, 36 secondsAmi érdekes, hogy a konkrét betűfontok, amiket használunk, az mindig csak egy nagyon pici részét valósítja meg konkrét mi voltukban. Az őrületes mennyiségű
+26:4526 minutes, 45 secondsegyéb, tehát amikor magyarul írok, akkor nagyon nincs szükségem a kínaira. Tehát a kínai karaktereknek bár ott van a helyük, de nyilvánvalóan egy sokkal
+26:5326 minutes, 53 secondskisebb táblával tudok dolgozni, mintogyha mind az összes lehetséges karakternek ugyanabban az egy betű típusban ott volna a helye. Ezzel
+27:0227 minutes, 2 secondsspórolunk valamennyit, de logikailag mindennek van helye tényleg.
+27:0727 minutes, 7 secondsÉs akkor eljutottunk oda, hogy amit az előbb már mondtam, hogy ezeknek valamilyen sorrendjük van, de legkevésbé az a sorrendjük, amit a táblában a
+27:1527 minutes, 15 secondsnumérikus értékük sugal. Na most az ABC-k is nemzeti szinten különböznek egymástól. Tehát az egyik ABC
+27:2427 minutes, 24 secondsegyik ilyen karakter rendezés jelv az egyik országban élve és a másikban a másik. És ugye szerencsétlen módon egy
+27:3127 minutes, 31 secondskönyvtárban pedig minden országból jönnek könyvek és az interneten is mindenféle szövegek vannak. Tehát egyrészt van egy lokális nemzeti
+27:3927 minutes, 39 secondsrendezési elv, másrészt van, hogy össze kéne a világ betűit rendezni. És mint láttuk, hát nagyon sokféle betűt
+27:4727 minutes, 47 secondshasználnak ezek a nyelvek. Mondjuk itt csak egy példa, hogy az ABC elején hát van az A betű, meg az alfa meg az alf,
+27:5527 minutes, 55 secondsmert ezek még sejtjük. Hát aztán vannak olyanok, amiket kiolvasni se tudunk, és az ÖABC-k így kezdődik. Tehát nagyon sokféle írás van, hogy kell ezeket
+28:0328 minutes, 3 secondsegymás mellé rendezni. Hát nyilván amiket nem tudunk elolvasni, azt általában sehogy, azoknak jó esetben van valami angol transzliterációja. Ha meg
+28:1128 minutes, 11 secondsnincs, akkor teljesen mindegy. De azért vannak mondjuk a latin alapúak, mondjuk a latin görög ciril nagyon hasonlítanak
+28:1928 minutes, 19 secondsegymásra. Ám azért az ABC rendünk az különbözik. És hát kérdés, hogy mit kell itt csinálni.
+28:2628 minutes, 26 secondsHát egyrészt ugye a az írások csak szószó a kiejtést követik. mindenféle a
+28:3428 minutes, 34 secondssztandarizációnak az ideje beindítása szerint különböző időpontokban lettek egységesek az írásrendszerek. Például a
+28:4228 minutes, 42 secondsmagyar is ugye hát a 19. század első felében még nagyon rendezetlen volt az írás. És az egységes ortográfia helyes
+28:5028 minutes, 50 secondsírásnak a sztenderd kialakulása, ami persze egy ajánlást, csak mondom és nem parancs, tehát nem törvény, de mégis csak okos dolog betartani, az bizonyos
+28:5928 minutes, 59 secondsbetűhasználatot is sugal, és hát a betűhasználat az óvatatlanul következik, hogy akkor a betű készlete az valahány
+29:0729 minutes, 7 secondselemű. Azt tudjuk, hogy a magyarban az ABC-nk az úgy néz ki, hogy A B C D Z G E satöbbi. Az iskolában megtanuljuk. És hát nyilván ezel kell rendezni.
+29:1729 minutes, 17 secondsGondoljuk mi. Hát ugye a különböző ABC-k, hát a másik ABC gondoljanak, nem tudom én, dvarzsák
+29:2529 minutes, 25 secondsnevére, amit hát magyarul ugye azt a R betűt, azt azt ugye hát nem tudjuk, aminek olyan hadság van a tetején, csak
+29:3129 minutes, 31 secondsRzg-vel átírni. Tehát nem csak a civil betűt vagy a görög betűket írjuk át latin betűre, hanem olykor a latin
+29:4029 minutes, 40 secondsbetűket is, mert nekünk nincs olyan betünk, és valahogy át kell írni, és furcsa módon egy európai nevet mi magyarul máshogy írunk le, mint ahogy az
+29:4929 minutes, 49 secondseredetileg volt, hiszen nekünk nincsen olyan betűn. Ezért a könyvtári rendezés, ahol ugye Dorzsák eredetiben is
+29:5529 minutes, 55 secondsmeglehet, nem csak a magyar átiratban egy zenemű, egy egy cse kiadott lemez borítóján, hát óhatatlan, hogy az
+30:0430 minutes, 4 secondseredelti betűformát is tárolja. És akkor kitalálták a nagyon egyszerű dolgot a könyvtárosok, hogy a lokális a latin ABC
+30:1130 minutes, 11 secondslesz a stand. És azon belül, ha megjelenik egy a valamilyen mellékjellel, akkor azoknak van egy sorrendjük, és akkor az többé-kevésbé
+30:2030 minutes, 20 secondsegy ilyen szakirodalmi szabvány írja elő, hogy hogy kell ezeket egymás után rendezni, és akkor megtalálni az R-nél is, mondjuk az R betű pozíciójának az
+30:2830 minutes, 28 secondsutolsó helyein azt, hogy az R ilyen hadsákkal, az az összes R után kezd, és akkor van neki is hele. Na de hát a
+30:3630 minutes, 36 secondsmagyar ABC-ben ilyen nincsen, és mi magyarok vagyunk, és az ABC rendezésünk magyar. Tehát van egy könyvtári szakirodalom dokumentációs szabvány, és
+30:4630 minutes, 46 secondsvan egy nemzeti, nem egy sok, különböző nyelveknek különböző nemzeti ABC rendezésre. A magyar akadémiai rendezés
+30:5330 minutes, 53 secondsúgy néz ki, hogy egyszer hallják, csak hogy tudjanak róla, mert sajnos egy szoftver sem tudja teljesíteni 100%-ban
+31:0031 minutesezt legalább tudják, hogyha kihívásnak érzik és akarnak írni egy igazán profi rendező programot, mi mindent kell hozzátudni.
+31:0931 minutes, 9 secondsHát először is azt, hogy a különböző betűvel kezdődő szavakat az első betű KBC helbeli helye szerint állítjuk
+31:1631 minutes, 16 secondssorba. Nincs ezzel semmi baj, csak ugye tudni kell, hogy a C az egy betű, pedig nem egy karakter. Tehát az acél és a
+31:2431 minutes, 24 secondscukor sorrendje az világos, mert az A előbb van, mint a C. De a cukor és a csók sorrendje is világos, mert a C előbb van, mint a C. Tehát nem a CU van
+31:3331 minutes, 33 secondselőbb, mint a CS, mert az nem igaz, hanem a C betű előbb van, mint a C betű, ami digráf, hiszen két grávból két
+31:4231 minutes, 42 secondskarakterből áll. És ha megyünk tovább, olasz öröm, az O előbb van, mint az ő. A nagy betű nincs előbb, mint a másik
+31:5031 minutes, 50 secondsbetű, és az N mindig előbb van, mint az N. Az S előbb van, mint az S, és így tovább. De hát az amúgy is általában így
+31:5731 minutes, 57 secondstörténet. Tehát ez egy tiszta ügy. Első betű szerint rendezzük. Legföljebb az nem tiszta, hogy a betűk nem egyes karakterekből állnak. Kettő.
+32:0732 minutes, 7 secondsAz egy jegegyű betűt teljesen elkülönítjük a azonos írásjegyel kezdődő, de külön mászati előtt. Tehát
+32:1432 minutes, 14 secondsaz a helyzet, hogy mindig tehát cudar, cukor, cukor, cuppant, ahogy az előbb mondom, csalit, csal csata, csepel.
+32:2032 minutes, 20 secondsTehát a C-sek máshol vannak, és a G-sek is máshol vannak, mint a D-sek. És a Z is máshol van, mint a Z. Tehát az U
+32:2932 minutes, 29 secondsdullbár betű szerint ugye későbbre kerülne, mint a Z. De tudjuk. Tehát valakinek tudnia kell, hogy mely
+32:3632 minutes, 36 secondsdigráfok, ad absurdum trigráf, ugye a J három betűvel áll, szerepel egy nyelvvel magyarba, és akkor azt önálló
+32:4332 minutes, 43 secondsegységként, tehát át kell konvertálni röptében egy olyan karakterré, a J-t, amelyik a D után úgy van, hogy a Z
+32:5232 minutes, 52 secondsmegelőzi, és csak az előtt van a D, és utána jön az E.
+32:5732 minutes, 57 secondsÉs egy ilyen formára konvertálva már akár egyes karakterekkel is lehet reprezentálni, de nem lehet az adott betűsorozatot közvetlenül rendezni.
+33:0633 minutes, 6 secondsAztán még egy baj van, hogy a hosszú kettős máshangzók az ugye két egymás után írt máshangzóból állnak, ami a magáhangzóknál ugye nem áll, tehát ott a
+33:1533 minutes, 15 secondshosszú magáhangzónak önálló diakritikus felel meg. A hosszú az nem két rövidó, hanem vessző van a tetején.
+33:2533 minutes, 25 secondsEzzel szemben a másangzótnál két s az s nincs is azzal baj, ahol baja digráfokkal van, mert a két C az nem
+33:3333 minutes, 33 secondsCSCS, hanem CCS, mert a zólom betűből kellett spórolni, és nem akarták, hogy hosszúak legyenek a
+33:4233 minutes, 42 secondsszövegek. A standerd úgy alakult ki, hogy a kettős másra hangzóinknak csak az első betűjét kettőzzük. Tehát tudni
+33:4933 minutes, 49 secondskell, hogy ők 2 G helyett állnak, vagyis ugyanúgy néznek ki, mintha két gyna.
+33:5433 minutes, 54 secondsTehát itt az utolsó sorban látszik nagyáította két gy-vel nagy gyá az ugyanolyan mint a
+34:0334 minutes, 3 secondsnagy gyakorlat. És mivel az a meg az a ekvivalens, mindjárt beszélünk erről is, hiszen csak ékezetben különböznek.
+34:1234 minutes, 12 secondsViszont az első szó a nagyjából be is fejeződik, a másik hosszabb, tehát ez a helyes sorrend. Nagyjá nagy gyakorlat
+34:1934 minutes, 19 secondsnagyal ott is kégyél van, de ott pedig a nagja, tehát a k és az elsje a nagy gyakorlati
+34:2734 minutes, 27 secondsa várra dönt. Nagy itt a G után I jön és nem egy másik G. Tehát ez a helyes
+34:3434 minutes, 34 secondssorrend. Íme az előbb említett azonosság. A magánhangzóink
+34:4034 minutes, 40 secondsazonos helyre kerülnek. Az a meg az a e meg az e. Tehát amik ugyanazzal a mellékjellel vannak, azok a mellékel nélkülel összekeverendőek.
+34:5134 minutes, 51 secondsTehát adott esetben a sorrendjüket nem azt fogja meghatározni, hogy hosszúak-e vagy rövidek, mert ők egyforma súlyúak, ugyanúgy, ahogy a nagy betűk is egyforma
+34:5934 minutes, 59 secondsújok kicsivel. Tehát az ír az egy i meg egy röböl áll. Az irak ugyanígy kezdődik, csak akkal folytatódik. Tehát nem érdekes, hogy nagy betű és hosszú.
+35:0835 minutes, 8 secondsAz Irán a A ugyanaz, de a K és az N az Irak iráns rendet definiálja. Az Irandó ugyanúgy néz ki, mint az Irán. Átírva
+35:1735 minutes, 17 secondsnem számít a rövidi, a kis betű és az a különbsége, de hosszabb egy dóval iránt t. Aztán író, ír oda irónia a D meg az.
+35:2935 minutes, 29 secondsTehát se a kis betű, se a nagy betű, se az ékezete, se az ékezetlen. De ha adott
+35:3535 minutes, 35 secondsesetben teljesen azonos lesz ez a hipotetikusság konvertált ékezet nélküli változat, akkor mégis csak először a
+35:4535 minutes, 45 secondsékezet nélküli változat kellet kerül előre. Égbolt előbb van, mint eger. Ez egyértelműen, mert a ég B és az eg e a B
+35:5435 minutes, 54 secondsés az E sorrendje miatt. De Eger, egér, éger ugyanarra a ékezet nélküli kvázi
+36:0036 minuteskis betűs formára mennek vissza, akkor az ékezetlen eger az első, a
+36:0836 minutes, 8 secondskésőbb ékezettel rendelkező egér a második és a éger a harmadik. Éger után égés, az S és az R sorrendje miatt
+36:1736 minutes, 17 secondsegész. És így tovább mindenki végigjátszhatja, hogy miért ez a sorrend szelés szé szeles, szelés széles.
+36:2436 minutes, 24 secondsUgyanez a probléma. Tehát ha a kisbetűsített, ékezetlenített hipotetikus forma azonos, akkor azon
+36:3336 minutes, 33 secondsbelül mégis csak van sor. Ráadásul a space sem számít. Ezt 100-ból 100 szoftver nem tudja. Tehát a különírt
+36:4236 minutes, 42 secondselemekből álló szókapcsolat és a kötőjeles és az egybe ugyanolyan, tehát a space-t is töröljük a hipotetikus
+36:5036 minutes, 50 secondsalakban, a kötőjelet is, és úgy soroljuk őket össze. Tehát ha több tagú szavakat kell rendezni, akkor a kis részben azért
+37:0037 minuteskerül a kis Sé elé, mert a R és az Sorrendje. A kis Rnő pedig azért kerül
+37:0737 minutes, 7 secondskésőbb, mert a két S a kis E-be is megvan. De a kis e r nővel folytatódik.
+37:1437 minutes, 14 secondsA kis sorozat is kétessel van, de ott ó jön a kétes után, és nem e vagy? Tehát
+37:2137 minutes, 21 secondsez a szabály, hogy ahol az egységekben space vagy kötőjel van, azokat nem vesszük figyelembe.
+37:3037 minutes, 30 secondsEzt nem szokták tudni. És akkor van még az a furcsaság, amit már nyilván nagyon nehéz géppel észrevenni, hogy bizonyos hangok történetileg
+37:3937 minutes, 39 secondsrögzültek. És ezeknek a kiejtése ugyanolyan, mint egy nem így írt verzió.
+37:4537 minutes, 45 secondsTehát vannak olyan digráfjaink, amik ma nem élnek. A CZ ma már nem él, csak archaikus tevékben. A CZ C súlyú. Ez
+37:5337 minutes, 53 secondsnyilván a nevekben jelenik meg. Tehát ha valakinek neveket kell rendezni, akkor elvileg a régi családneveknél a CZ-t és
+38:0038 minutesa C-t ugyanúgy kellene tekintenie, ugyanarra a C-re mennének ők vissza.
+38:0638 minutes, 6 secondsAz a kellemetlen, hogy már van, amit nem is tudunk, tehát szegény császárnak a nevét, amelyik CH-val és Z-vel van írva,
+38:1338 minutes, 13 secondssokan nem ismerik kimondani, vagy nem tudják kimondani, mert a CH sok más nyelvben H vagy K-nak felel meg, de mi a
+38:2038 minutes, 20 secondsC helyet használtuk nagyon sokáig, és gondoljunk a Keglevic, Keglovic, Madács, tehát a végén is CH van, ez
+38:2938 minutes, 29 secondscsászár és ugye hát a két magánzó közötti 100z pedig mutatja azt, hogy a Z és az lesz. Tehát amik csak egy kis
+38:3638 minutes, 36 secondszöngéven különböznek egymástól, azok hosszú ideig ugyanúgy voltak írva. És az nagyon érdekes, hogy az s meg a z is
+38:4538 minutes, 45 secondsugyanúgy volt írva. Tehát nagyon meglepő, hogy vannak olyan hangsoraink, sőt vannak olyan neveink, amiknek az
+38:5238 minutes, 52 secondseredete, ha tudjuk, hogy az s helyett Z-t is lehet írni, hiszen ugyanúgy, ahogy S helyett Z-t írtak, akkor a
+38:5938 minutes, 59 secondszsigrai sigrai nevek azok azonos töhűek, hiszen ugyanaz a Z volt ott, csak van amikor ssel írták, van amikor zs-vel.
+39:0639 minutes, 6 secondsSőt, a zsidó név is zsidó szónak a SS változata. Érthetően a történelemben aztán vigyáztak rá, hogy a kiejtéssel is
+39:1539 minutes, 15 secondsjelezzék, hogy ezeknek látszólag semmi közük egymáshoz. De a császárt is, ha tudjuk, hogy úgy van, mint császár, akkor oda kell rendezni ABC-be. Ha
+39:2239 minutes, 22 secondsmondjuk valaki feladatul egy telefonkönyvet, valami névsort kap, akkor azért van feladata, nem jó a CH-hoz rendezni, csak hát ezt nagyon
+39:3139 minutes, 31 secondsnehéz ma már megcsinálni. És akkor még jönnek a meghatározhatatlan számú egyebek, mert ugye mondtam az előbb is
+39:3939 minutes, 39 secondsmadácsot, hogy azt tudjuk, hogy C-vel van meg, hogy az E sokszor E és az E w török dezsőfi, ezekben a nevekbenrevk,
+39:4939 minutes, 49 secondsdesev fi úgy jelenik meg. És ugye nyilván hát az Yi az egy ismert azonosság a nevekben, de hát jönnek az
+39:5739 minutes, 57 secondsidegen nevek. az idegen nevek, amiknek a betűsorozata jó szerencsénkbe a magyar betűkből áll össze, szerencsétlenebb
+40:0640 minutes, 6 secondsesetben pedig különböző melléknevek, mellékjelek jönnek be Portugálba, románba, szerbe megjelennek ezek a
+40:1340 minutes, 13 secondsbetűk, és akkor vagy elfelejtjük őket, vagy megpróbáljuk valami módon átírni.
+40:1840 minutes, 18 secondsÉppen a szerb nagyon érdekes, hogy ugye a szerbnök van egy olyan különleges hangja, amelyik ugye a CS meg a CY
+40:2540 minutes, 25 secondsközött van a magyarban, és azt olykor csével írjuk le, olykor tyével. Tehát ismerjük ezt, hogy a onnan jött
+40:3340 minutes, 33 secondsneveknek, családneveknek egy része vanovic végződik mások csére.
+40:4040 minutes, 40 secondsÍcs.
+40:4240 minutes, 42 secondsTehát, hogy ezt nem, mivel nem tudjuk helyesen kiejteni, ahogy az előbb elmitelt varzsákot sem, hát itt további bonyodalmak jönnek. A lényeges az, hogy ezek már a nevek világa és történeti.
+40:5440 minutes, 54 secondsAzért ha az utolsó két pontot leszámoljuk, akkor az a ABC rendezés, ami odáig állt, az minden magyar szó,
+41:0141 minutes, 1 secondközszó esetére is áll, sőt a több szavas kifejezésekére is. Kérdés, hogy valaha írt-e valaki egy olyan rendezőprogramot, amiben ez 100%-osan
+41:1041 minutes, 10 secondsmeg is testesül. És akkor ugye hát a számoknak is van helyük ezekben a rendszerekben. Ráadásul a számok hol
+41:1741 minutes, 17 secondsarab, hol római számok. Tehát ez egy jó sorrend. Egy, mert egyszer egy az egy az egyessel kezdődik. Második János pár
+41:2541 minutes, 25 secondskettessel 10 kérdés. A 10 nagyobb, mint az egy meg a kettő. Ugye ismerjük azt az ABC rendezést, hogy 1 10 11 satöbbi 100
+41:3541 minutes, 35 seconds21, merthogy betűknek tekintjük, karaktereknek nem. 10 11 88 8000 A.
+41:4441 minutes, 44 secondsÉs akkor jönnek az és az a CZ az ugye látszik, hogy azonos a C-vel. Tehát ezt a rendezést kellene valahol láttatni.
+41:5441 minutes, 54 secondsValószínűleg sose lesz tökéletes ilyen.
+41:5641 minutes, 56 secondsÉs ez egy másik kérdés, hogy akkor, amikor ez kialakult, akkor az emberek kézzel rendeztek. Amióta számítógépek vannak, nagyon sokszor befolyásolják azt
+42:0442 minutes, 4 secondsa feladatot, amire használják őket. Nem zárom ki, hogy a jövőben a számítógéppel való
+42:1142 minutes, 11 secondsrendezhetőség esetleg az akadémia rendezést is befolyásolni fogja, hiszen hosszú ideig nem tartható az, hogy van
+42:1942 minutes, 19 secondsegy mindenki által használt eszközrendszer, amiben vannak megoldhatatlan problémák, hiszen a gépnek továbbra se lesz történeti
+42:2742 minutes, 27 secondsáttekintés érzéke, viszont tud hatékonyan rendezni, és lehet, hogy engedni kell. Bár ez csak egy tipp, de
+42:3542 minutes, 35 secondsmint érdekességet elmondtam. Na, szóval ezek a szövegek, amik így vannak a fonetikus világból karakterekké, illetve
+42:4442 minutes, 44 secondselőször betűké alakítva, a betűk pedig egy vagy több karakterekké, ezek megjelennek a nyelven, a weben, bárhol
+42:5142 minutes, 51 secondsaz interneten. Én most megnéztem, hogy hogy állunk. Tehát most körbelül hát valami ilyen közel 60 milliárd weboldal van elérhető formában az interneten.
+43:0443 minutes, 4 secondsTehát az elérhető szövegek száma jó lehet ezen képek meg hangok meg zenék meg sok minden van, de azért
+43:1043 minutes, 10 secondsnagyon-nagyon nagy. olyan nagy, amit és nyilván különböző nyelveken írt szövegekről van szó, ami mindenképpen elgondolkoztató, hiszen eddig a
+43:1943 minutes, 19 secondsszövegeinkhez nem fértünk hozzá, hanem a nyelvész hipotetikus képet csinált a nyelvről, azt leképezte, és valahogy
+43:2543 minutes, 25 secondsazzal dolgozott mindenki. Most meg hogy mondjam, hát rajta üthetünk, hogy hogy írnak legalábbis azok, akik a weben
+43:3443 minutes, 34 secondsírnak, és nyilván egy kis százalékuk, aki nagyon kontrolláltan ír különböző komoly súlyú portálok, és sokkal kevésbé
+43:4243 minutes, 42 secondskontrolláltak a bármilyen társasmédiákon megjelölő szövegek vagy hozzászólások, mert hát azt mindenki csak úgy röftébe
+43:5043 minutes, 50 secondsegy ilyen kis papírfefcni sarkára írja föl, ami viszont megörökítődik az internet furcsa tulajdonsága, ami miatt,
+43:5743 minutes, 57 secondshogy nehezen felejt. És akkor ezek a szövegek is gyarapítják ezt a 60 milliárd weboldalt.
+44:0344 minutes, 3 secondsNa nézzük, hogy körülbelül mennyien milyen nyelven rakják föl ezt a webbre ezeket a szövegeket. Ez nem az. Ez csak
+44:1244 minutes, 12 secondsarról szól egy ilyen kis figyelmeztetés, hogy ami az elején volt, hogy kínait mandalint beszélnek sokan, spanyolt 400
+44:1944 minutes, 19 secondsmillióan hangol és így tovább. Itt is látszik, hogy nem sok csak európai nyelv, mert tehát a portugál, orosz, angol, spanyol nem csak európai nyelv
+44:2844 minutes, 28 secondsvan itt. Ezek a beszélők. Így van a világ. Tehát a kínait nagyon sokan beszélik, a többit is elég sokan. Na de
+44:3644 minutes, 36 secondsaz interneten használt nyelvek az látszik, hogy a föntlevő szövegeknek a 25%-a az angol. A kínai, amit ugye
+44:4444 minutes, 44 secondsnehezebben olvasunk el mi, az is már majdnem annyi. Aztán spanyol. Tehát mindegyik, mégha nagyjából ugyanazok a nyelvek vannak is, de hát aránytalanul
+44:5244 minutes, 52 secondskicsi a reprezentációjuk az internet egészét tekintve.
+44:5744 minutes, 57 secondsHát ez úgy néz ki körülbelül, ahogy ezen a grafikon látszik, hogy itt jobb oldalt vannak azok a számok, ak beszélők, tehát nem az anyanyelvi beszélők, hanem
+45:0645 minutes, 6 secondsmondjuk a azok a felhasználók, akik angolul használnak fel. Nem angol anyanyelvi, mind. A kínaiaknak nagy
+45:1445 minutes, 14 secondsrésze kínai anyanyelvi, és hát körülbelül a 1,2 milliárd mandarinú beszélőnek a fele már eléri a webet.
+45:2245 minutes, 22 secondsViszont a fölrakott információknak, a weblapoknak több mint a fele angol és csak pici része, néhány százaléka-a,
+45:3045 minutes, 30 secondsjapán, spanyol, kínai, portugál, német, arab satöbbi. Vagyis az az érdekesség, hogy az angolt azt a nem angolok
+45:3645 minutes, 36 secondsprodukálják. Vagyis a világ úgy néz ki, hogy angolul mindenki tud, ugye? Mi is,
+45:4345 minutes, 43 secondsmaguk is, bárki. A mi számunkra az angol az angol nyelvnek tűnik, de az angol nyelvet most nagyon sokan gyakorolják és rakják fel a webre.
+45:5445 minutes, 54 secondsÚgyhogy ebből még majd következmények fognak származni. Egyik következmény az, hogyha tudjuk, hogy az internetes tartalom fele angol, és az
+46:0246 minutes, 2 secondsinternethasználók 3árom neegyede meg nem az, akkor nyilván olyanok írják az angol szöveget a weben, akik nem angolok.
+46:0946 minutes, 9 secondsMagyarok, spanyolok, japánok, akárkik, argenentinok.
+46:1546 minutes, 15 secondsÉs akkor az az angol az a mi hibáinkkal együtt angol. Mi mindannyian nem vagyunk angol anyanyelvűek, tehát rakunk föl
+46:2246 minutes, 22 secondsmindent angolnak látszó nyelven. Aki viszont ezt olvassa, nem biztos, hogy abban a helyzetben van, hacsak nem valami nagyon profi, hogy
+46:3046 minutes, 30 secondsmegkülönbözteti, hogy ki is rakta azt föl. Hiszen angolul látszik lenni, ahogy szoktam mondani, a th két betűköz között
+46:3746 minutes, 37 secondsolyan gyakori, mint az angolban. hiszen a névelő az angolban megismerhetjük, milyen gyakori. És ami olyan szöveg,
+46:4546 minutes, 45 secondsamiben ezek a háromatis szavak elég gyakran vannak. Pont ugyanúgy, mint az úgy néz ki, mintha angol volna, telehi hibával esetleg. Tehát ez a webes
+46:5346 minutes, 53 secondstartalom nem angolok által születik, de angolul látszik lenni.
+46:5946 minutes, 59 secondsA nem angolon nyelviek ezeket a hibákat, amiket mi elkövetünk, vagy nem ismerik föl, vagy némelyéket fölismerik, de ők másm követnek el, mert az ő nyelvük
+47:0747 minutes, 7 secondsmást. Tehát ezek a pontatlanságok szaporodnak a weben, és angolnak látszó szövegek árasztják el a webet. És itt
+47:1447 minutes, 14 secondsjön egy kis kör. Kicsit kilépek ebből. Gondolják el, hogy a magyart mind magyarok teszik föl.
+47:2147 minutes, 21 secondsTehát olyan minimális az, aki nem magyarként ír magyart, hogy még mindenfajta furcsasággal, lazasággal,
+47:3047 minutes, 30 secondsnormától való eltéréssel is a magyar szövegek biztos, hogy magyarok. Magyar hibákkal és magyar lazaságokkal. Ez csak
+47:3747 minutes, 37 secondsazért érdekes, mert az angol ezt nem tudja már megtenni. És ahogy ezt sokszor idézem, a angol nyelvész ismerősöm mondta, hogy nekem ilyen könnyű, mármint
+47:4647 minutes, 46 secondsnekem magyarnak, mert ha ő hazamegy, egész más a helyzete, mint nekem, én hazamegyek, ott mindenki magyarul beszél. Ha ő hazamegy, ott mindenki
+47:5447 minutes, 54 secondspróbálkozik az ő anyanyelvével. Na most ha meggondoljuk, hogy mennyire frusztráló, hogyha valaki nagyon közepesen, vagy annál rosszabbul beszél
+48:0248 minutes, 2 secondsmagyarul, csak annyira jó, hogy végre ő megtanult magyarul, hogy ennek mi örülünk. De ha mindenki ilyen volna, az egy rendkívül idegesítő dolog. És a
+48:1148 minutes, 11 secondsangol anyanyelvők számára a web az egy rendkívül frusztráló terület, mert csupa, pontatlanul rosszul fogalmazott angol szöveget találnak rajta, meg így
+48:2048 minutes, 20 secondsis beszélnek hozzájuk. Tehát, hogy ha mindenki eddig irigyelte a angol-amerikai ismerősét, hogy ő azért egy konferencián előnyös helyzetben van,
+48:2848 minutes, 28 secondsmert hát ő úgy tud beszélni, ahogy mi nem, akkor arra is gondoljunk, hogy neki mennyire nehéz lehet minket elviselni, akik mindannyian kísérletezünk az
+48:3648 minutes, 36 secondsangollal, szembe a magyarokkal, akiknek ilyen élményük nincs, vagy azt a néhány magyarul tanulót piedesztára emelik, és örülnek neki, hiszen nincsenek sokan.
+48:4648 minutes, 46 secondsTehát az a nagy kérdés, hogy mi lesz az internetről tanított nyelvi programokkal, ha elsősorban angolra tanítjuk, és azt az angolt az
+48:5448 minutes, 54 secondsinternetről vesszük, és nem tudjuk, hogy ki írta. Hiszen nincs odaírva, hogy én olasz voltam, és én nagyon nem tudtam angolul, csak úgy néz ki, hogy angol,
+49:0149 minutes, 1 secondamit csináltam. A másik meg Japán volt, és ő azért nem tudott jól angolul, hanem hát angol szöveg, látjuk, hogy egymás után a gyakori szavak úgy szerepelnek,
+49:1049 minutes, 10 secondsleszedjük és ebből tanítjuk a rendszerünket. Vagyis nem csak a mi angolunk indul el egy ilyen furcsa,
+49:1749 minutes, 17 secondsmindenki által beszél, de sehol nem felismerhető, tehát se nem angol, se nem amerikai, se nem ausztrál, se nem újlandi, hanem egy speciális angol
+49:2549 minutes, 25 secondsirányában, hanem az interneten tanított programok is ezt tudják. Legkevésbé az autentikus angolt. Arra majd a britek
+49:3249 minutes, 32 secondsvagy az amerikaiak fognak majd otthon valamit írni, csak azzal nem mennek sokra, ha a mi angolunkat kell földolgozniuk. Tehát egy nagyon furcsa
+49:4049 minutes, 40 secondsvilágba keveredünk be azáltal, hogy az interneten amit elérünk szövegek, azoknak a pontos forrása nincs
+49:4749 minutes, 47 secondsmegjelölve, hogy mennyire is volt az angolul. És autentikus angol szöveget azért olyan mennyiségben, ami ahhoz kell, hogy a mai világunkban jól
+49:5549 minutes, 55 secondsdolgozzunk, nagyon nehéz szerezni. Hát miről van itt szó? arról, hogy a statisztikák, a szövegmennyiség átvette
+50:0350 minutes, 3 secondsaz uralmat ebben a nyelvtechnológiai világban, és ennek a indulásáról, a legalapvetőbb gondolatokról fogok itt,
+50:1050 minutes, 10 secondshiszen aztán a tárgyak, a tárgy majd tovább hozza ezeket. Tehát itt arról fogok beszélni, hogy hogy is indult ez el. Hát úgy indult el, hogy
+50:1850 minutes, 18 secondshangstatisztikákat, betűstatisztikákat készítettek, ami olyan mókás dolog, hogy melyikből hány van, mert meg lehetett számolni a számítógéppel a De hát ezek
+50:2750 minutes, 27 secondsnyilván kevés szövegek és akár még korábban kézzel is megszámolták. Én tudom, hogy létezett ilyen, hogy Petőfi
+50:3450 minutes, 34 secondsfonéma statisztikája és Petőfi összes versébe szépen valaki kézzel végigszámolta, hogy hány és milyen magánzók vannak. De hát Petőfi életműve
+50:4250 minutes, 42 secondsaz icipici ahhoz képest, ami ma a weben van. Hát aztán nyilván a statisztikák kellettek a titkosírás megfejtésekhez
+50:5050 minutes, 50 secondsis, meg bármihez, ami komoly problémákat vetett föl, hiszen Champolion így fejtette meg a
+50:5850 minutes, 58 secondshieroglifákat, hogy valaminek a gyakoriságát nézte, de Gárdonyi titkos írását is így fejtették meg. Sőt, hát a
+51:0651 minutes, 6 secondsmostanában többször emelgetett kódjátszon című filmben is ugye hát mindenféle gyakorisági információkkal fejtették meg a németek enigma
+51:1451 minutes, 14 secondskódolását. Na most építettek is, nem csak dekódoltak. Például a morze ABC úgy alakult ki, hogy mennyire gyakori hát
+51:2351 minutes, 23 secondselsősorban az angol nyelven bizonyos betűsorozatoknak az előfordulása. És akkor azoknak, ha
+51:3051 minutes, 30 secondsrövidebb, fontosabb betű, kevesebb jel, tehát kevesebbet kellett leütni a kis morzebillentyűt, a ritkábbakra
+51:3751 minutes, 37 secondshosszabban, vagy gondoljunk az írógép billentyűzetre, ami azért olyan, mert amikor elindult az írógép, akkor azt gondolták, hogy hát, hogy ne akadjanak
+51:4751 minutes, 47 secondsössze a különböző karok, úgy kell elrendezni a betűket, hogy gyakorisági szempontból egyformán jól lehessen bal és jobb kézzel, hiszen 10 óral fognak
+51:5551 minutes, 55 secondsgépelni. a különböző karakterket úgy leütni, hogy a legtipikusabb betűsorozatok azok ne így egy uújjal kelljen leütni, hanem azokat úgy gyorsan
+52:0352 minutes, 3 secondslehessen gépelni. És kialakult ez a forma, amiben mi ragaszkodunk ahhoz a világ másik felén keletkezett
+52:1152 minutes, 11 secondsbetűkészlet elrendezéshez. Legfelljebb a Z-t meg az Y-t szoktuk ugye fölcserélni, mert hát nekünk mégis csak az Y kevésbé
+52:1852 minutes, 18 secondsgyakori, mint a Z. Az angolan megfordítva.
+52:2252 minutes, 22 secondstöbbit már így elfogadtuk, tehát az is gyakorisági alapon rendeződött ilyennél.
+52:2752 minutes, 27 secondsNa most hamar kiderült, hogy a nyelvekben voltak olyan vannak olyan betűsorozatok,
+52:3452 minutes, 34 secondsamik korábban nem voltak. Hát például amikor megjelentek a latin meg más nyelveknek a szavai a mi nyelvünkben,
+52:4152 minutes, 41 secondsamit onnan Ázsiából hoztunk, és amiben ilyenek nem voltak, megjelentek a latinra jellemző másangzó torlódások, m
+52:5052 minutes, 50 secondspéldául ugye az SP, vagy az STR, vagy az SK, a skóla, a nem tudom én
+53:0053 minutesstrátum, tehát azok a szavak, amiknek az elején olyan máshangzó torlódások volt, olyan betűsorozatok, olyan N gráfok,
+53:0853 minutes, 8 secondsugye gráf az a betű, n grammok, ha tetszik, amik nem voltak meg nekünk. És akkor a magyar történetileg ezeket föloldotta iskola, istráng, ispotáj,
+53:1853 minutes, 18 secondstehát olyanfjta szavakat használt a magyar, amik arra utaltak, hogy a mi betűsorozataink között az övéik nem
+53:2653 minutes, 26 secondsszerepeltek, és egy ilyen magáhangzóval feloldottuk ezeket. Tehát elé írtunk egy magánzót, elé mondtunk egy magánzót, és akkor kiejthető volt. Ma már nincs gond.
+53:3553 minutes, 35 secondsMa már simán mondunk olyat, hogy strukturalizmus, de ha ez korábban érkezett volna a magyarban ez a szó, hogy strukturalizmus, akkor lehet, hogy
+53:4253 minutes, 42 secondsstrukturalizmus lett volna, hiszen ezzel az ív sok mindent kiváltottunk. Az István nevünk ugye az is a Stefán,
+53:5053 minutes, 50 secondsSteven Stefánból István lett. Ez ismert probléma. Tehát vannak olyan tipikus
+53:5653 minutes, 56 secondsmásra hangzó vagy egymás után előforduló hangok, amik egy nyelvre jellemzőek. A magyarra nagyon nem volt jellemző, hogy az STR vagy az SP egymás után gyakori
+54:0554 minutes, 5 secondslenne, pláne szó elején. Tehát azt hamar kiderült, hogy a nyelvek osztályozatok azerint, hogy mely betű csoportok vannak
+54:1354 minutes, 13 secondsgyakoran, és melyek kevésbé. Tehát ez már ugye levegőben volt.
+54:1954 minutes, 19 secondsÉs ez az egyik, ami a betű, illetve hát az ilyen nyelvi statisztikák irányába nyomta a számítógépes világot, amikor megjelent a számítógép. A másik pedig
+54:2754 minutes, 27 secondsShonnak a gondolata az információról, hogy ugye kisebb valószínűségű üzenetnek, ami valószínűtlenebb, hogy
+54:3454 minutes, 34 secondsmegjelenik, nagyobb az információ tartalma. Hát ha olyat hallok, olyan hírt, amire nem számítottam, akkor nagyot fogok kiáltani, hogy hű. És ugye
+54:4254 minutes, 42 secondshát az is kiderült Shernonnál, hogy a különböző egymástól független események együttes információ tartalma az a különböző információ tartalmak összege.
+54:5154 minutes, 51 secondsTehát ha itt van ez, ott van az, és ezeknek semmi közük egymáshoz, akkor a kettő együtt az még nagyobb információtartalom. Tehát a Shenon
+54:5954 minutes, 59 secondsvalahol a 40-es évek elején, amikor ugye beszéltük, hogy a számítógép keletkezett, akkor azt mondta, hogy ugye hát azért egy kommunikációs folyamatról
+55:0755 minutes, 7 secondsvan szó, a nyelvvel kapcsolatban ezt sokszor mondjuk és megjelenik egy valamilyen halmaz, x halmaznak a jeleiből egy sorozat és jönnek az
+55:1655 minutes, 16 secondsüzenetek. És hogyha nekünk elég sok ilyen üzenetünk van, akkor ezeket mérni tudjuk, hogy mekkora a gyakorisága egy adott elemnek, mekkora a valószínűsége,
+55:2555 minutes, 25 secondshogy ő fog ott pont előfordulni, ahol most éppen vagyunk. és kialakította azt, hogy ennek a jelnek az információ tartalma, ez az, az a jelnek a
+55:3455 minutes, 34 secondsvalószínűsége megszorozva a ennek a valószínűség reciprokának a
+55:4155 minutes, 41 secondskettő alapú logaritmusával. És kiderült, hogy ez a dolog működni fog. Ha sok jel jön egymás után, jön egy jelsorozat,
+55:4955 minutes, 49 secondsakkor azok, ha független jelekből állnak, akkor mindegyiknek az információ tartalma így összeadható. És ezt egy könyvben, ebben a prediction andropy of
+55:5855 minutes, 58 secondsprinted English leírja. Tehát ez egy elmélet, de a printed English az ott van. Tehát az írott angolról nyomtatott
+56:0556 minutes, 5 secondsangolról van szó. Tehát, hogy ő egy elméletet épített, de a nyelv, ami hát szinonaként ugye itt az angol van, ott
+56:1356 minutes, 13 secondsvan állandóan pedig háton egy informatikai, ha tetszik, a villamosnöki világban, a jeli, jel feldolgozó
+56:2156 minutes, 21 secondsvilágban alkotott, de azért a nyelv az számára egy fontos dolog volt, aminek a segítségével jött rá dolgokra.
+56:2956 minutes, 29 secondsa nyelvben levő előrejelzés mekkora eséllyel jelenik meg egy szimbólum valahol a semmoni
+56:3656 minutes, 36 secondselméletnek az alapjaiban is ott van és ezzel sokszor fogunk élni majd menet közben. Na most az n gram, amit az előbb
+56:4556 minutes, 45 secondsmondtunk, hogy egymás után előforduló valahány karakter, az nem más, mint ez.
+56:4956 minutes, 49 secondsTehát n darab karakter, ami egymás után fordul elő. És így az gram, az n olyan
+56:5656 minutes, 56 secondskarakter egymás utánja, amiben adott esetben a betűkhöz is benne lehet. Tehát az gramok lehetnek szavak, de nem feltétlenül azok. Egymás utáni n darab
+57:0457 minutes, 4 secondskarakter, bármi. És az előnyük, hogy ugye ha egymás utáni n karaktert nézek, megszámolni egy-kettő sok karaktert minden nyelven lehet. Tehát ez teljesen nyelvfüggetlen.
+57:1557 minutes, 15 secondsEz sok szempontból hibatűrő, hiszen ezeknek a stringeknek a gyakorisága az az egész nyelvre jellemző, és nem pedig
+57:2357 minutes, 23 secondsha egy-egy betűt elütök, azért az nem fog alapvetően befolyásolni egy ilyet.
+57:2757 minutes, 27 secondsTehát ha nagy számú szövegben nézem az enromot, ez egy nagyon hasznos dolog. és megjelentek az interneten is. A V3 konzorcium is fölrakott ilyen
+57:3557 minutes, 35 secondsspecifikációt. A Google maga egyram viewer csinál, tehát hogy a Google Booksban, ami ugye hát a világ könyveinek egy jelentős részét ugye
+57:4457 minutes, 44 secondsbeszkennelték és karakteresen felismerhetővé tették. A benne levő stringeknek az előfordulása, a karaktersorozatoknak az előfordulásában
+57:5257 minutes, 52 secondshát különbözőramokat dolgoztak föl, tehát 2 3 4 5 és meg lehet nézni, hogy mik a gyakoriak, és lehet kérdéseket
+57:5957 minutes, 59 secondsföltenni ezen az oldalon arra nézve, hogy milyen időben, hiszen a könyvek valamitől kezdve vannak feldolgozva
+58:0658 minutes, 6 secondsegészen máig, hol egy szó vagy egy adott betűsorozat milyen gyakorisággal jelent meg, és ezt időben ki is rajzolják.
+58:1358 minutes, 13 secondsTehát ilyen olyan szolgáltatás, ami nagyon érdekes így kívülről, hogy a Microsoft is indította ő webes projektjében ilyen szolgáltatást, amit
+58:2258 minutes, 22 secondsaztán az Oxford kiadóval együtt csinált a Project Oxford-ban, majd Microsoft Cognitive vagy Azure Cognitive services
+58:2958 minutes, 29 secondsnéven indított, ugye a Azur az a Microsoft felhője. meg lehet találni itt most már ez egészen elment az enram irányból egy ilyen mesterséges
+58:3758 minutes, 37 secondsintelligencia szolgáltatás család meg apik, tehát kommunikációs felületeknek a bemutatása és intelligens alkalmazások
+58:4558 minutes, 45 secondsfejlesztésében, de mindez az enramos alapokból indult ki, hiszen ez nyfüggetlen és minden nyelvnek a karakterei megszámolhatóak még annak az
+58:5358 minutes, 53 secondsideografikusan író kínai vagy japán nyelvnek a karakterei is. Igaz, hogy ott a karakterek szimbolikusan egy szót
+59:0159 minutes, 1 secondreprezentálnak, nem pedig egy fonémát, ugye, de végül is ugyanúgy darabolhatóak a szövegek akármilyen engram, mint a
+59:0859 minutes, 8 secondsmásik nyelven. És ezért ez egy, amióta sok szövegünk van, azgramokkal való munka az egy alap. Hát vegyünk egy 1
+59:1859 minutes, 18 secondsgrot, unigramot. Ez pedig a betű. Tehát ugye ha egy darab karaktert nézek és mondjuk a magyar nyelvet megnézem, hogy melyik betűk a leggyakoribb a nagy
+59:2759 minutes, 27 secondsfeldolgozás eredményeként, akkor nem lesz nagyon meglepő, hogy az e gyakorisága a magyarban igen magas.
+59:3459 minutes, 34 secondsSzemben mondjuk a W valamelyik megszámlálhatatlanul picin. És akkor nyilván az információ tartalom is
+59:4159 minutes, 41 secondskifejezhető ezzel. Ha megjön egy e betű leírva, az nem olyan meglepő. Ha megjön egy x betű, akkor az nagyon meglepő.
+59:4859 minutes, 48 secondsLátszik, hogy a X információ tartalma az előbb is ennoni gondolat alapján 13, míg mondjuk az eé csak 3,30.
+59:5759 minutes, 57 secondsHát ez csak egy egyszerű dolog.
+59:5859 minutes, 58 secondsUnigramot bárki megszámolhat. Ami érdekes, hogy már az 50-es években, amikor még nagyon gyengén ment a számítógép, egy küfler nevű német
+1:00:071 hour, 7 secondskitalálta, hogy megnézi, hogy milyen gyakoriságúak az unigrammok, a bigrammok, a trigrammok, a kvadrogrammok
+1:00:141 hour, 14 secondsa németben. Azt mondta, hogy megvizsgált szövegeket kigenerálta belőle a különböző hát egy az a betűstatisztika,
+1:00:221 hour, 22 secondskettő a két betű statisztika, három satöbbi, és utána random generált ilyen szöveket. Egy betű statisztikával látható az egyes példa. Hát az nem
+1:00:311 hour, 31 secondsnagyon látszik németnek, bár a gyakorisága az egyes karaktereknek olyan, mint a németben, de teljesen zizi, ami oda van írva.
+1:00:391 hour, 39 secondsKét betű egymás után már mutat egy-két olyan jel, ami a németben előjön. A harmadik halványan olyan, hogy aki nagyon nem tud németül, már majdnem
+1:00:471 hour, 47 secondsnémetnek tűnik. És megkockáztatom, hogy a negyedik az úgy szinte német szavakból áll, vagyis hihetően olyan, mint a német
+1:00:551 hour, 55 secondsvolna. egyszerűen csak quadrogrom statisztika alapján ész nélkül legenerálta azt a szöveget, ami itt látható. És tulajdonképpen elég
+1:01:031 hour, 1 minute, 3 secondsnémetszerű, tehát úgy tűnik, hogy ez egy használható ötlet. Hát a használható ötlet, nézzük meg, hogy magyarban ez hogy működik. Hát ez lenne a
+1:01:121 hour, 1 minute, 12 secondsbetűstatisztika alapján, amit csináltunk. Hát az eléggé nem magyarul van még. Ez sem igazán. A trigramoknál
+1:01:211 hour, 1 minute, 21 secondshát halvánnyan azt hiszük, hogy kicsit a né négy. Tehát a quadrigramnál már hát nyilván aki nem tud magyarul, vagy azt
+1:01:301 hour, 1 minute, 30 secondsgondoljuk, hogy az egény, vagy a kérdeket az magyar szó, akár majdnem lehetne is, hát olyan, mintha magyarul volna. Az öt sem rossz, ugye?
+1:01:401 hour, 1 minute, 40 secondsA hat az se rossz. meg a h 7 n8 k se lenne rossz, de talán észrevették, hogy
+1:01:481 hour, 1 minute, 48 secondsa négy után az a görbő, ami az 1 2 3nál eléggé igyekezett exponenciálisan fölfele szaladni, az úgy lelapult.
+1:01:551 hour, 1 minute, 55 secondsNégyes, ötös, hatos, ott nem nagyon javul a minőség.
+1:01:591 hour, 1 minute, 59 secondsEz nem a magyar tulajdonság. Ez minden nyelvnél így van. Mi lehet az ok? Mit gondolnak? Jó, hát nyilván meg fogom
+1:02:071 hour, 2 minutes, 7 secondsválaszolni, ha ez egy interaktívabb óra volna, akkor azért kérdeznék, de hát gondolják végig, hogy miért. Hát persze, hogy azért, mertogy itt egy icipici
+1:02:161 hour, 2 minutes, 16 secondstanítókorpuszunk van. Hát ez néhány 8 MB-os volt, tehát kicsi. És egyszerűen a négynél nagyobb sorozatoknak már az
+1:02:241 hour, 2 minutes, 24 secondseloszlása az nagyon gyenge, nagyon kicsit megbízható, teljesen rendom, hogy mi van. Tehát nyilván a 100 gból annyira
+1:02:311 hour, 2 minutes, 31 secondskevés van, hogy az nem lesz elég informatív. Az 1 gból nagyon sok van, de az azért nem lesz, mert nincs eléggé a környezet ráépítve. A kettő jobb, három
+1:02:401 hour, 2 minutes, 40 secondsjobb, négy is jó. A 4 5 hatnál még elég sok 4 5 6 g van, de már a későbbiekből
+1:02:461 hour, 2 minutes, 46 secondsnincs annyi. Tehát a 7 8 9 10 100 gból már nagyon kevés van. Tehát van egy ilyen görbénk, hogy az elején nincs elég
+1:02:541 hour, 2 minutes, 54 secondsnagy összefüggő szövegegység, amire építeni lehetne nyelvszerűen. Egy idő után meg nincs elég mintaszám, tehát valahol a 3 nö körül van. És így is van.
+1:03:041 hour, 3 minutes, 4 secondsTrigramok, kvadrogrammok elsősorban azok, amit a nyelvtechnológia használ pont az említett okokból, hogy már elég
+1:03:111 hour, 3 minutes, 11 secondsinformatív, de még elég sok is van belőlük.
+1:03:161 hour, 3 minutes, 16 secondsHát vegyünk egy hamar fölismert statisztikai nyelvtörvényt, a CP törvényt, aminek a nevét remélem, hogy
+1:03:241 hour, 3 minutes, 24 secondsvalaki már hallotta is akár. Hát a cífe azt mondta egy olyan gyenge 100 évvel ezelőtt, hogyha összezámoljuk, hogy egy
+1:03:311 hour, 3 minutes, 31 secondsszövegben milyen gyakoriak a szavak, és szépen lerendezzük őket, hogy ez az első ilyen gyakori, második olyan hát ugye a betűinknél az E lett volna az elején is,
+1:03:391 hour, 3 minutes, 39 secondsmondjuk a W a végén. Egy szövegbe a szavak ilyenek. És azt nézzük meg, hogy ez a gyakorisági sorrend, ez
+1:03:471 hour, 3 minutes, 47 secondstulajdonképpen ennek a reciproka, meg a gyakoriság az valamilyen viszonyban van egymással. És mint látjuk egy ilyen hatványfüggény
+1:03:561 hour, 3 minutes, 56 secondsszerint lecsengő görbe egy ilyen jól ismert hiperbala lesz belőle, hogy az ijedik, a valahanyadik a sorrendben, az
+1:04:051 hour, 4 minutes, 5 secondsúgy 1/ i annak a rje. És tulajdonképpen az az érdekes,
+1:04:131 hour, 4 minutes, 13 secondshogy az alfa az még ugye azt jelzi, hogy meg egy korpuszra jellemző szám, amit egy picit be lehet rakni, ne csak a ijedik pozíció, hanem annak valamilyen
+1:04:211 hour, 4 minutes, 21 secondshatványa legyen, hogy a korpuszra nézz egy picit pontosítsunk. De gyakorlatilag azt mondjuk ki ezzel, hogy a nagyon gyakori szavakból nagyon kevés van, de a
+1:04:291 hour, 4 minutes, 29 secondsszöveg nagy részét fedik le. A kevésbé gyakoribból rengeteg van. És akármilyen hosszú ez a farkincája ennek a
+1:04:361 hour, 4 minutes, 36 secondshiperbollának, annak az integrálja nyilván nagy, de gyakorlatilag mindig lesznek olyan szavak, amikben alig van egy-két előfordulás, viszont ezekből
+1:04:451 hour, 4 minutes, 45 secondsrengeteg van, és ezek lesznek a szöveg maradékrésze. Vagyis ügyesen mondva azt mondjuk, hogy a leggyakoribb szavakat megtartjuk, akkor azért a szöveg nagy
+1:04:531 hour, 4 minutes, 53 secondsrésze meg is maradt. Az előbb ugye volt egy ilyen furcsa statisztikánk a nyelvekről, hogy a 100 millió beszélő körüli nyelvek meg a
+1:05:011 hour, 5 minutes, 1 second10 millió meg az 1 millió, és ott mondtam, hogy egy ilyen furcsa görbénk van, hogy a nagyon kevés nagyon
+1:05:091 hour, 5 minutes, 9 secondskevés nyelvünk van nagyon sok beszélőből, de ők lefedik a világ beszélőinek a hamar a negyedét felét
+1:05:161 hour, 5 minutes, 16 secondskétharmadát. Tehát viszonylag kevés nyelvvel lefedjük a 7 milliárd embernek a nyelveit, és utána marad iszonyatosan
+1:05:231 hour, 5 minutes, 23 secondssok nyelv, ami hasonlóan egy ilyen hiperbolára emlékeztet, egy ilyen fordított arányosságra. Tehát
+1:05:311 hour, 5 minutes, 31 secondsha nem szavakat, hanem engrammokat vizsgálunk, tehát nem nyelvi egységeket, hanem a szövegbe levő stringeket, azokra ugyanezt kapjuk. Tehát nagyjából azt,
+1:05:391 hour, 5 minutes, 39 secondshogy ez a hatványfüggvény azt mutatja, hogy a nagyon gyakoribból kevés is elég, hogy a dolgaink nagy részét lefedje, és
+1:05:481 hour, 5 minutes, 48 secondsa kevésbé gyakoribból nagyon sok kell, és még mindig nem lesz teljesen lefedve.
+1:05:521 hour, 5 minutes, 52 secondsTehát van az eleje, mondjuk a nagyon nagyon az Y tengert nagyon tengelyt nagyon közelítő, és aztán az X-tengelyt pedig nagyon sokáig közelítő rész.
+1:06:041 hour, 6 minutes, 4 secondsCip tehát ezt vette észre, hogy a szavak gyakorisága és a pozíciójuk ebben a gyakoriság listában farítottan arányos.
+1:06:121 hour, 6 minutes, 12 secondsA hívszög azt vette észre, hogyha van egy szövegkorpuszunk valamekkora, ugye ez már 78, tehát itt már kezdtek még azért messze nem volt sok szöveg, de már
+1:06:211 hour, 6 minutes, 21 secondsmégis csak géppel nagyobb mennyiségű szöveget dolgoztak fel. Tehát van egy nzóból álló korpuszunk, akkor akkor, hogyha szépen adogatjuk
+1:06:301 hour, 6 minutes, 30 secondshozzá az újabb dokumentumokat, akkor fog még növekedni, de a különböző szavak száma, de azért úgy nagyon lassan,
+1:06:391 hour, 6 minutes, 39 secondsvagyis, hogy azt lehet mondani, hogy a különböző szavak számára van neki egy ilyen kis képlete. Tehát ott az a k az egy ilyen konstans, ami megjött
+1:06:471 hour, 6 minutes, 47 secondsszövegtől függ, még a a béta is, de valójában azt mondja, hogy ez a nzóból álló korpuszra jellemző, hogy körülbelül
+1:06:551 hour, 6 minutes, 55 secondsannak hanyad része az, ami olyan szó, amiből áll a korpusz, és amikor új szövegek jönnek hozzá, egyre kisebb
+1:07:041 hour, 7 minutes, 4 secondsmértékben jelennek meg újszak. Vagy a szövegtest elején nagyon sok új szó van, de ahogy növeljük a szövegtestet, már
+1:07:111 hour, 7 minutes, 11 secondsnem jelenik meg annyi újszó, relatíve egyre kevesebb van. Na most persze ez nyelvenként iszonyatosan különbözhet, tehát ez mindenképpen a az új szavak nem
+1:07:201 hour, 7 minutes, 20 secondslesznek olyan gyakoriak, de azért gondoljuk meg, hogy mi a szó. Ha a szó az a két Space közt előforduló betűsor, akkor a magyarban a sok toldalás miatt
+1:07:281 hour, 7 minutes, 28 secondsezeknek a száma iszonyatos. Tehát hiába írtam le azt, hogy asztalra, nem jelent meg a szövegbe azt, hogy asztalokból vagy asztalai tookéinak. És ha
+1:07:371 hour, 7 minutes, 37 secondsmegjelenik, az egy új egység. Az angolban ilyen nem tud megjelenni, mert a from meg a dem meg a table le van írva, akkor azok bármilyen sorrendben is
+1:07:451 hour, 7 minutes, 45 secondsa szóst statisztikában, ahányszor el van írva, a from azt növelik, a dő, azt, a table meg azt. A magyarról viszont egy új szó jelenik meg azáltal, hogy
+1:07:521 hour, 7 minutes, 52 secondsasztalaitokéinak, míg az asztalról, asztalhoz, asztalomnak, asztalod hoz, azok mind új
+1:08:001 hour, 8 minutesalakok lesznek, és soha nem lesz belőlük elég. Tehát a toldalékolásunk miatt a agglutinatív jellege a magyar nyelvnek
+1:08:071 hour, 8 minutes, 7 secondslehetővé teszi, hogy viszonylag sok új szó jelen meg mondjuk az angolhoz képest. Nyilván ez is szublimináris lesz, tehát ez se lesz olyan gyakorít,
+1:08:151 hour, 8 minutes, 15 secondstehát nem jelennek meg iszonyú mennyiségben új szavak a Nagykorpuszban, de a magyarban mindig sokkal nagyobb eséllyel fog megjelenni új szó. Pont
+1:08:231 hour, 8 minutes, 23 secondsazért, mert az új szóval valójában nem új szó, csak egy új toldalékolási helyzetben van. Mindenesetre tehát a HIPS azt vette észre, hogy a korpuszban
+1:08:321 hour, 8 minutes, 32 secondsa alapszavaknak a száma bár növekszik, de már közel se olyan erősen, mint az elején. Persze nyilván lesznek, ugye itt
+1:08:411 hour, 8 minutes, 41 secondsírom is, hogy új szavak lesznek tulajdonnevek, elírások, ami miatt jelenhetnek meg újak, de ezek soha nem lesznek már nagyon gyakoriak, csak
+1:08:491 hour, 8 minutes, 49 secondsvalamennyire. Tehát már a nagyon gyakori az az első valamekkora korpuszban már megvan.
+1:08:551 hour, 8 minutes, 55 secondsÉs ennek a mintára még sokféle nyelvtörvényre jöttek rá. Például Mander Brot, akinek ugye hát a nevét remélem az informatikusok biztos ismerik arról a
+1:09:041 hour, 9 minutes, 4 secondsgyönyörű cizelláltságú felületről, ugye ami a Mandelbrot halmaz néven ment be a matematikai tudatba. Ő azt mondta, hogy
+1:09:121 hour, 9 minutes, 12 secondsa szavak hosszak, tehát nem a gyakorissága, hanem hossza. És a gyakorisági rangja között, tehát ugyanolyan gyakorisági ranglista, mint a
+1:09:191 hour, 9 minutes, 19 secondsciptörvénynél között is van kapcsolat. A rövid szavak azok sokkal gyakoribak, minden gyakrabban fordulnak elő minden
+1:09:271 hour, 9 minutes, 27 secondsnyelv, mint a hosszabbak. Méghozzá pontosan, hogyha sorba rendezzük a a szavakat a gyakoriság szerint, akkor a nagyon gyakoriak rövidek lesznek, és a kevésbé gyakoriak egyre hosszabbak.
+1:09:371 hour, 9 minutes, 37 secondsTehát ez valahol azt jelenti, hogy egy szó régi, akkor a történelmi fejlődés során lekopik a vége. Ez majdnem minden
+1:09:451 hour, 9 minutes, 45 secondsnyelvben így megfogható. A szavak legrég, legtiikusabb része nagyon régi, az rövid. Ha arra
+1:09:521 hour, 9 minutes, 52 secondsgondolunk, hogy mondjuk az emberi testtel kapcsolatos elnevezéseknek hát elég réginek kell lennie, hiszen az
+1:10:011 hour, 10 minutes, 1 secondember hamar észre észrevette a saját testét. Most függetlenül az eredetüktől hát nézzék meg az embert, hogy fej,
+1:10:071 hour, 10 minutes, 7 secondsszem, orr, fül, száj, nyak, mell, kar, láb, kéz, tehát minden egytagú. Persze a
+1:10:161 hour, 10 minutes, 16 secondsnem tudom én a a hasnyálmirigy az már nem látszott, tehát az egy összetett szó és az sokkal később keletkezett, de ami látszik rajtunk, azok rövidek. Nagyon
+1:10:241 hour, 10 minutes, 24 secondsérdekes, hogy a gyakorisággal együtt tényleg kopnak le a szavak. Tehát vannak olyan törvények, amik azt mutatják, nyelvtörvények, hangtani, mindenféle
+1:10:331 hour, 10 minutes, 33 secondsnyelvtörvények, hogy egyszerűen rövidülnek azok a szavak, amiket gyakrabban használunk. Tehát ezek a nagyon régiek tényleg néhány fonémából
+1:10:421 hour, 10 minutes, 42 secondsállnak. És nagyon aranyos, hogy a falu jegyzőjében írja ötvös, hogy matematikai igazság, hogy kinek két szótagú neve
+1:10:491 hour, 10 minutes, 49 secondsvan, félannyi kortesssel választhatik meg, mint az, akinek négy szótagot kell kiáltani. Tehát egyszerűen könnyebb.
+1:10:561 hour, 10 minutes, 56 secondsUgye volt olyan szobrászművészünk, aki azt a nevet választotta magának, hogy Kő Pál.
+1:11:021 hour, 11 minutes, 2 secondsHát ezt mondjuk Csíkszent Mihályi Mihályhoz képest lényegesen gyorsabban lehet kimondani, és nyilvánvalóan a használata egyszerűbb. És ha
+1:11:091 hour, 11 minutes, 9 secondsbelegondolnak abba, hogy hány olyan rövidítés vagy olyan becézett alak van,
+1:11:161 hour, 11 minutes, 16 secondsamit tulajd nem is gondolnak, hogy miért alakul ki. Tehát egyrészt nyilván a becézés meg a kicsinyítőképző az a kedvesség jele, de rövidül vele a szó.
+1:11:261 hour, 11 minutes, 26 secondsSzótagok vesznek el, ha rövidre veszem, és ezek olyan helyeken jelennek meg, ahol igazán gyakoriak. Tehát amikor kimennek a piacra, akkor azért van
+1:11:341 hour, 11 minutes, 34 secondsodaírva, hogy buri meg pari, meg ugye a szengbe tali meg nem tudom. Mert így sokkal gyakrabban használt szavaink, sokkal rövidebbek lesznek. Az, hogy
+1:11:431 hour, 11 minutes, 43 secondstalálkozó vagy burgonja, az nagyon hosszú. Ezzel jelezni akarják, hogy ők gyakoriak és nem becézik. Tehát a pari
+1:11:501 hour, 11 minutes, 50 secondsmeg a buri nem azért kerül oda, mert az olyan aranyos, hanem azért, mert egyszerűen könnyebb leírni, kisebb helyen fér el, és egyszerűen a kommunikációban rövid mutatja, hogy én
+1:11:591 hour, 11 minutes, 59 secondsezt gyakran használom. piac ezek olyan szavak vagy éppen a száben.
+1:12:041 hour, 12 minutes, 4 secondsAztán van egy másik, ami a statisztikára részben. A statisztikára részben pedig a string alapú földolgozására megy vissza.
+1:12:111 hour, 12 minutes, 11 secondsÉs ez nagyon érdekes. Ugyanis eddig arról beszéltünk, hogy az engramoknál a szavak azok egy végtében, ha valamilyen
+1:12:181 hour, 12 minutes, 18 secondsértelemben egy végtében vannak, tehát a karakterek a szövegben a szavak a szavakon belül, illetve mondaton belül a karakterek, azok egymás után
+1:12:271 hour, 12 minutes, 27 secondsrákövetkezéssel jelennek meg. Itt a rákövetkezéssel történik valami Vivi, méghozzá a rákövetkezést változtatjuk
+1:12:351 hour, 12 minutes, 35 secondsmeg. Ez egy ismert dolog. Talán többen ismerik is a hallgatóság közül, hogyha egy szövegben a szavaknak, tehát a space
+1:12:431 hour, 12 minutes, 43 secondskét oldalán levő indulás és végződésnél azokat a betűit, amik indulnak és befejeződnek, tehát az elsőt és az
+1:12:511 hour, 12 minutes, 51 secondsutolsót megtartjuk, a space előtt és a space utáni betűk jól vannak, de a többiek nincsenek jól. Tehát enram mi
+1:12:591 hour, 12 minutes, 59 secondsvoltukban fölrúgjuk őket, össze-vissza keverjük, csak a két végét tartjuk meg a szónak. akkor igen nagy százalékban
+1:13:071 hour, 13 minutes, 7 secondspróbálják ezt olvasni. Jól olvasható a szöveg angliegyetünk kutatásai szerint nem számít milyen sorrendben vannak a
+1:13:141 hour, 13 minutes, 14 secondsbetűk egy szóban. Egyetlen fontos dolog, hogy az első és utolsó betűk helyükön legyenek a többit olvassák maguk. Ha valakinek nem megy, vannak olyan
+1:13:221 hour, 13 minutes, 22 secondsproblémák, ami miatt ez nem megy. De statisztikusan az olvasó emberek nagy része, akinek semmilyen diszlexiás problémája nincs, ezeket kiválóan
+1:13:311 hour, 13 minutes, 31 secondsolvassa. Nagy kérdés, hogy mit olvasunk, hiszen a stringek nemok, hiszen nem abban a sorrendben vannak. Ráadásul a
+1:13:401 hour, 13 minutes, 40 secondsszavak belsejében a fölcserélt betűsor különböző hosszú, nem egyforma hosszúak a szavaink. egyikben az egyetem ekkora,
+1:13:471 hour, 13 minutes, 47 secondsaz angliai akkor és mégis a benne levő betűket nem is akarom elolvasni. Tehát úgy tűnik, hogy máshogy olvas az ember, mint ahogy a számítógép, mert a
+1:13:561 hour, 13 minutes, 56 secondsszámítógép nagyon lineárisan halad, és a karaktersort úgy olvassa, ahogy van, és egy ilyen karaktersor számára nem
+1:14:031 hour, 14 minutes, 3 secondslétezik. Ezért olyan módszerekre van szükség, ahol fölismeri ezt az űröset, és azt mondja, hogy én tudom, hogy te mit akartál írni, ha ezt véletlenül
+1:14:121 hour, 14 minutes, 12 secondsvalaki írta volna. Hát erre kicsi az esély, de mondjuk ezt valaki írta volna, akkor csak győzne a világhírű cégnek a szoftverre olyanokat mondani, hogy did
+1:14:201 hour, 14 minutes, 20 secondsyou mean? és odadobná azt, amelyik nagyon gyakori ebben a ilyen típusú szövegben, azon a helyen etegyem olyan nincs, egyetem olyan van, ez a gyakori.
+1:14:301 hour, 14 minutes, 30 secondsTehát, hogy nagyon érdekes az, hogy a stringeinkbe egyrészt a rákövetkezésre, azgramságra nagyon építünk, másrészt
+1:14:371 hour, 14 minutes, 37 secondsazért valahol a szavakra is építünk, hiszen a szavaknak az első meg utolsó betűjét itt, hogyha megváltoztatom, akkor nem fog menni a dolog. Tehát
+1:14:441 hour, 14 minutes, 44 secondsvalaki befogja ezt a stringet. Tehát bár az engramok úgy tűnik, hogy teljesen egyformák, de azért a szavak belsejébe levők kicsit máshogy viselkednek, ott a belső sorrendjük nem annyira lényeges.
+1:14:561 hour, 14 minutes, 56 secondsEzt csak azért vetítettük előre, mert lesz szó innentől kezdve rengeteg statisztikai neurálisállós módszerra,
+1:15:031 hour, 15 minutes, 3 secondsamiben a rákövetkezésre nagyon építünk, és olyanra is, ami már elszakad ettől a nagyon durva rákövetkezést világtól, és
+1:15:121 hour, 15 minutes, 12 secondsegy picit olyasmit csinál, mint amikor mi olvassuk ezt. De ez a jövő zenéje vagy nyelvészete, ezt majd a következő előadásokon.
+1:15:221 hour, 15 minutes, 22 secondsAmit viszont még ma akarunk nagyon röviden, hogy nekifogunk a nyelvi feldolgozásnak a további szintjeinek. Tehát ez csak egy
+1:15:311 hour, 15 minutes, 31 secondsilyen kis első löket volt, hogy a karakterekkel, azokkal, amik szingli szimbólumok, is tudunk már valami okosat csinálni, de
+1:15:401 hour, 15 minutes, 40 secondsezeknek nyelvileg hát, hogy ne mondjam, jelentésük nincs. És a nagyobb egységeknek pedig van. Hát ugye a következő szint a szó, mint az előbb mondtuk, ami a betűköz két oldalán van.
+1:15:501 hour, 15 minutes, 50 secondsUgye nincs definíciója, de hát jobb hián ezt mondtam, hogy ami a betű közök között van, az a szó. Ezt csak azért mondja az ember, mert nem tud jobbat.
+1:15:581 hour, 15 minutes, 58 secondsMindenféle tudomány nyelvészetbe próbálkozott a szó definíció. A fonológiai szó például azt mondja, hogy amiben a hangtani hatások érvényesülnek.
+1:16:091 hour, 16 minutes, 9 secondsTehát a fonológia házam az azért érdekes, mert az am alja azáltal lett definiálva, hogy a ház átulképzett mélyhangrendű, tehát házam és nem házem.
+1:16:201 hour, 16 minutes, 20 secondsŐ egy fonológiai szó. Hiába ha külön kellene írni, akkor is fonológiai szó, de hát nyilván egybe írom, mert hatása van. Az összetett szavak
+1:16:281 hour, 16 minutes, 28 secondsviszont nem ilyenek. Tehát a sí paradicsomban, a sí meg a paradicsomok semmi közük hangtinak egymáshoz. ők fonológ nem alkotnak egy fonológiai
+1:16:361 hour, 16 minutes, 36 secondsegységet, mert csak ortográfiailag, jelentésileg összeírom őket egybe, mert úgy érzem, hogy ez úgy kell, de hangtanilag nem egyegység. Tehát a
+1:16:461 hour, 16 minutes, 46 secondsfonológiai szó az egy ilyen ameddig ér a fonológiai hatást. A lexikai szó azt mondja, hogy ami
+1:16:531 hour, 16 minutes, 53 secondsegyetlen szótári egység, az fontos nekem. A lexikon, ami hát ugye szótár, ez nagyon nehéz, mert a magyarban a lexikon valami miatt azt jelenti, amit más nyelvekben az enciklopédia jelent.
+1:17:041 hour, 17 minutes, 4 secondsMagyar szótárra inkább szótárat mondunk, és nem lexikont. Tehát a lexikai a szótárazott egységek az a kérdés, hogy
+1:17:141 hour, 17 minutes, 14 secondsami levezethető az alkotó elemei jelentéséből, vagy ami nem levezethető.
+1:17:201 hour, 17 minutes, 20 secondsTehát a számítógépezés minden eleme levezethető.
+1:17:241 hour, 17 minutes, 24 secondsA számít számító gép számító és a szám számít számító számító gép számító gépez
+1:17:311 hour, 17 minutes, 31 secondsszámító gépezés ez egy produktív képzés ezt gyakorlatilag nem kell hogy a szótárba fölsoroljuk mert ha valaki nem ismerné akkor is kiszámítható a
+1:17:401 hour, 17 minutes, 40 secondsrészekből viszont vannak olyan kifejezések mint mit tudom én mondjuk egy angolt hogy man of war azt azért aki nem tudja hogy az a
+1:17:481 hour, 17 minutes, 48 secondshadihajó amiben hát a man az ember háború embere mit tudom én men a kötőjel. Hát azt ki nem tudja találni,
+1:17:561 hour, 17 minutes, 56 secondshogy ezt a hadi hajóra használják az angolban, magyarban is vannak ilyen szavak. Tehát tulajdonképpen
+1:18:041 hour, 18 minutes, 4 secondsvannak olyan lexikális egységek, amiket muszáj fölsorolni, mert nem tudjuk megmondani anélkül, csak ha odaírjuk a szótárba, hogy mit jelentenek.
+1:18:111 hour, 18 minutes, 11 secondsSzámítógépvezés nem ilyen. Na most van a morfológiai szó, ami azt mondja, hogy a ragozásnál egy egyegység. Tehát a látnék
+1:18:191 hour, 18 minutes, 19 secondsaz egy szó látnék, mert a lát meg a feltételes meg az egyes szám első szemé most láttam volna ennek a múltideje. Hát
+1:18:261 hour, 18 minutes, 26 secondsnyilván ugyanolyan logikai egység, mintha látnék, láttam volna, csak ha láttam volna, hát valami miatt mi hagyományilag két szóba írjuk, hiszen a
+1:18:351 hour, 18 minutes, 35 secondslátnéknek a néje az a volnán jelenik meg az a nanená né volna, de önálló szóban ilyen a magyar. Ettől még ez
+1:18:431 hour, 18 minutes, 43 secondsmorfológiailag egy egység, mert a látniknak a múltiideje.
+1:18:491 hour, 18 minutes, 49 secondsA szintaktikai szó az egy olyan egység, ami amire a szinttaxisnak valamilyen
+1:18:581 hour, 18 minutes, 58 secondsértelemben hát hatása van. Tehát ha azt mondom, hogy szépségei, mint itt a példa
+1:19:061 hour, 19 minutes, 6 secondsmutatja, abba belül senki nem tud belenyúlni.
+1:19:101 hour, 19 minutes, 10 secondsNincs az a szintaktikai helyzet a mondatban, hogy ennek a belső szerkezete átalakulna. Viszont egy igekötős igére,
+1:19:181 hour, 19 minutes, 18 secondsamelyik az igek kötőjét elveszíti és messzelyezi, ö nem tudom én,
+1:19:261 hour, 19 minutes, 26 secondsmehettél volna azok után az emberek után be, de te itt maradtál. Na most az a mehettél volna és az a be, azok egy helyre tartoznak. Ők egy szintaktikai
+1:19:341 hour, 19 minutes, 34 secondsszót alkotnak, de hát a szinttaxis rendesen szétszedi őket, de azért valahol ezeket össze kéne rakni. Nagyon nyomorú dolog, hogy messze van tőle, míg
+1:19:431 hour, 19 minutes, 43 secondsa volna csak utána van, de a be már messze. És aki nem tud magyarul, ezt nem tudja összerakni. Vagyis a szó definíciójának egy nagyon szerencsétlen
+1:19:501 hour, 19 minutes, 50 secondsformája, hogy egész mondatot érteni kell ahhoz, hogy megtudjam, hogy mi az egy szó, meheltél volna be. Ahelyett, hogy
+1:19:581 hour, 19 minutes, 58 secondsvalami technikai egységet adjunk. Tehát mi a technikai egységet mégis csak két space vagy hát white space közötti
+1:20:051 hour, 20 minutes, 5 secondsstringel gondoljuk. Ez nem jelent mást, mintogy vagy betűköz, vagy valami közpondozási jel, és a másik ugyanilyen
+1:20:121 hour, 20 minutes, 12 secondsközötti egységet tekintjük szónak. Ez nem definíció, csak ezt tudjuk ahhoz, hogy számítógépesen kezelni lehessen a
+1:20:191 hour, 20 minutes, 19 secondsszó. Ami nagyobb baj, hogy a szón belül a toldalék meg a tő hát valamilyen viszonyban van, de nincsen nekik pontos
+1:20:271 hour, 20 minutes, 27 secondshatáruk. Tehát nincs természetes határ, hogy meddig ér a ház és honnan jön az am, mert a ház am az egy olyan, mint egy
+1:20:351 hour, 20 minutes, 35 secondstő meg egy toldalék, de például ház a im, ahol a ház am közepébe látszólag bebújik egy i a többes szám, a többes
+1:20:431 hour, 20 minutes, 43 secondsszám a házhoz tartozik. Az am az a birtokos, az enyém, csak a ház száma lett több azzal, hogy beesett egy i. Hát
+1:20:511 hour, 20 minutes, 51 secondsez nagyon macerás. Tehát nincs neki egy természetes határa, még hát a szavaknak legalább a írásban van egy ilyen betű köz. Másik, akinek nincs természetes határa, a többszóból álló kifejezés.
+1:21:031 hour, 21 minutes, 3 secondsMeddig ér? Tehát vannak olyan több szóból álló kifejezések, hogy
+1:21:101 hour, 21 minutes, 10 secondsvalami egészen érdekes módon hát, hogy mondjam, egyegységet alkot, és
+1:21:181 hour, 21 minutes, 18 secondsezt csak mi tudjuk. Tehát a világból ismerjük, hogy az a dolog az egyeg egység. Mondjuk a házi feladatról tudjuk, hogy az egység. Az egy olyan
+1:21:261 hour, 21 minutes, 26 secondsszószerkezet, amit mindig együtt használunk. Nincs ugye házi nagyszerkezet, házi kétszerkezet, semmi nincs. Ez házi feladat, házi két
+1:21:341 hour, 21 minutes, 34 secondsfeladat, házi nagy feladat, hanem ez egy szerkezet házi feladat. Na most amikor ez így mindig együtt megy és közte van egy space, akkor ők tulajdonképpen
+1:21:431 hour, 21 minutes, 43 secondsolyanok, mintha egy szó lenne, kvázi egy legszéma, de valahol mégis azt tudjuk, hogy ami előtte van, az az előző szerkezet, azt utána van, utána ő meg
+1:21:521 hour, 21 minutes, 52 secondsegy, és ilyenek a nevek is. Nyilván egy olyan szerkezetet, amit mi a világból tudunk, mondjuk Orbán Viktor, hát ezt
+1:21:591 hour, 21 minutes, 59 secondsmindenki tudja, Magyarországon az egy ilyen nyelvi egység, ez a tulajdonnév.
+1:22:051 hour, 22 minutes, 5 secondsAngela Merkel, az is egy ilyen tulajdonné, de ha az van leírva, hogy Orbán Viktor Angela Merkel vendége volt, senki magyar ember nem jelent, nem érez
+1:22:131 hour, 22 minutes, 13 secondsproblémát a földolgozásnál. De ha egy rendszer nem tudja a világból, hogy van egy Orbán Viktor és egy Angéla Merkel, akkor lehet Orbán Viktor Angela Merkel
+1:22:221 hour, 22 minutes, 22 secondsvendége, vagy Orbán Viktor Angéla Merkel vendége. Tehát azt a világból tudjuk, hogy ez egy olyan szószerkezet, aminek
+1:22:291 hour, 22 minutes, 29 secondsén a világból tudom a határát, nincsen olyan jelövegben, ami ezt jelezni. Tehát a szószerkezet, akár tulajdonnévi, akár
+1:22:371 hour, 22 minutes, 37 secondsköznévi, terminológiai egységek egy egységet alkotnak, együtt mozognak, de valójában nem tudjuk, hogy honnan kezdődnek és hol
+1:22:451 hour, 22 minutes, 45 secondsvégződnek, ami a nyelvfeldolgozásnál komoly probléma. Na most a mondat, hát ha írott szöveg van, és tisztességesen
+1:22:531 hour, 22 minutes, 53 secondsírták, nagy betűvel kezdődik, ponttal vagy valami mondatot záró jellel fejeződik be.
+1:22:591 hour, 22 minutes, 59 secondsÍgy aztán azoknak a földolgozása azért egyszerűbb, mert hát az a nagy betű meg a pont. Majd erről is beszélünk, hogy mennyi nehézség van itt. Tehát nem minden kezdődik nagyvetővel, nem minden
+1:23:081 hour, 23 minutes, 8 secondsvégződik ponttal, de mégis csak a mondatról van valami. A megnyilvánulás, ami a generatív gramatikában a kialakulása előtt,
+1:23:161 hour, 23 minutes, 16 secondsaz egy létező fogalom volt. Ez lett sentence, mert a formális leírásban mondatot írunk, de valójában a megnyilvánulás az egy vagy több
+1:23:251 hour, 23 minutes, 25 secondsmondatból álló olyanfjta dolog, aminek nincs pontos definíciója, de hát írásban mégis csak a mondatnak van. Ezért a nagy
+1:23:331 hour, 23 minutes, 33 secondsbetűtől záró, mondatzáró jelig tartó dolgot tekintjük mondatnak. Így kicsi jele van azért, hogy azt szét lehet szedni a szöveget
+1:23:411 hour, 23 minutes, 41 secondsmondatokra, szét lehet menni szavakra, nehezebb szétszedni morfémára vagy fráisra. És ugye a szöveg pedig mondatok sorozata, hogy mettől meddig tart. Tehát
+1:23:501 hour, 23 minutes, 50 secondsazt lehet mondani, hogy egy bekezdés az többé-kevésbé egységes információt közvít az új bekezdés valami mást. Ott a
+1:23:571 hour, 23 minutes, 57 secondsbekezdése között már nem olyan komoly az átkapcsolódás. többé-kevésbé, ha jól van bekezdésekre bondva egy hosszú szöveg, akkor a bekezdés a nyelvi egység, utána
+1:24:061 hour, 24 minutes, 6 secondsvesz egy nagy levegőt és folytatja a következővel, de végül is a szövegt teljes egység egy regény is, egy olyan szövegegység, amit kellene egybe kezelni. Hát ezeket is nagyon nehéz.
+1:24:161 hour, 24 minutes, 16 secondsTehát látszik, hogy a karaktereket könnyen megfogtuk, de már a digráf meg trigráf az már macerás volt. De mondjuk,
+1:24:231 hour, 24 minutes, 23 secondshogy a karakterszinten elvoltunk. A szószinten majd elleszünk, mert a betűközök segítenek egy picit a mondatszinten is nagy betű pont, de
+1:24:321 hour, 24 minutes, 32 secondsazért a többi szintet, szavak belső szerkezetét, mondat belső szerkezetét, szövegek egészét géppel kezelni azért
+1:24:391 hour, 24 minutes, 39 secondsnehéz, mert a határaik nincsenek meg. És minden szinten, tehát az összes eddig fölsorolt szinten meg kell különböztetni
+1:24:471 hour, 24 minutes, 47 secondsazt a két dolgot, aminek hát nincs igazán magyar megfelelője, típus, type és token.
+1:24:541 hour, 24 minutes, 54 secondsA kettő azt jelzi, hogy az egyik a token az a konkrét dolog, ami előfordul. A typ pedig az a neta kategória, amihez ő
+1:25:011 hour, 25 minutes, 1 secondtartozik. Ha tetszik valamilyen osztály, aminek ő egy reprezentánsa, és nyilván többféle dolog is reprezentálhatja azt
+1:25:081 hour, 25 minutes, 8 secondsaz osztályt. Tehát nyilván ha akarom, akkor a type egy magasabb szintű egység, amiben sok token fordulhat elő, és
+1:25:161 hour, 25 minutes, 16 secondsnyilván a tejfel meg a tejföl két különböző token, de hát ugyanannak a type-nak a megnyilvánulása, hogy le szeretném írni a tejfölséget, és ezért
+1:25:251 hour, 25 minutes, 25 secondsvalamelyiket használom a kettő közül, de ennél egészen bonyolultabbak is, minden nyelvi szinten előfordulhatnak. Ha visszaemlékeznek, akkor a hang és a
+1:25:331 hour, 25 minutes, 33 secondsfonéma is ilyenfajta viszonyban volt majdnem egymással, mert hiszen az egyik a konkrét előfordulás a hangoké, a másik
+1:25:411 hour, 25 minutes, 41 secondspedig az a type, ami a fonéma, amiben különböző hangok keverednek oda, és ők fejeznek ki egy fonémát. Tehát ez lesz a
+1:25:481 hour, 25 minutes, 48 secondskövetkezőben a nyelvfeldolgozásnak az iránya, hogy különböző szintű feldolgozásokon megyünk át. Miket csinál, csinált, és esetleg a
+1:25:571 hour, 25 minutes, 57 secondskövetkezőkben is csinál majd a nyelvtechnológus, vagy a számítógépes nyelvész. és azon a rendszeren belül, hogy különbözteti meg a typeokat és a
+1:26:051 hour, 26 minutes, 5 secondstokeneket. Viszontlátásra! Köszönöm a figyelmüket!
+
+https://www.youtube.com/watch?v=eCLsBpWa_js&list=PLvLI66ieiidhOULovlk35bwn9Dz6LGVFC&index=15
