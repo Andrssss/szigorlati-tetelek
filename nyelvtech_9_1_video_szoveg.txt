@@ -1,0 +1,247 @@
+Tisztelt hallgatóság! nyelvtechnológia alapjai folytatódik az előadássorozat is. Hát a fordítás támogatásnál
+0:1818 secondstalálkoztunk legutóbban, amikor így együtt voltunk és nem volt szünet és nem volt magyar tudomány ünnepe.
+0:2626 secondsÉs akkor a szótárak szerepéről beszéltünk a fordítást támogató folyamatban, és említettük, hogy van egy olyan jószág, amit fordító memóriának,
+0:3535 secondstranslation memory hívnak, a forítási memóriának, ki hogy hívja, ami hát valahogy a fordító életében, aki a
+0:4343 secondsszámítógép mellett van, segédeszköz. Na most az ötlet, és azért vetítettem ki,
+0:5151 secondsaz abból jött elő, hogy a kézfordításokat egymás mellé helyezve csupa okosságot tudunk észrevenni. És az
+0:5959 secondselső ilyen nagy találat az a hieroglifáknak a
+1:071 minute, 7 secondspontos beazonosítása volt ugye Sampolion, aki ugye francia volt, mint tudjuk, akkor Tit dolgozott ezzel az
+1:161 minute, 16 secondsanyaggal, amikor a franciák megtalálták ezt a rosszotta követ. Most nem beszélem el az egész történetet, de a történet
+1:231 minute, 23 secondsönmagában is érdekes, érdemes utána olvasni. egyébként aki a British múzeumba járt, az nyilván látta ezt a nagyszerű követ, ahol három nyelven van
+1:311 minute, 31 secondsugyanaz a szöveg, törvénykezésről van szó, hiergofákkal, az úgynevezett demotikus írással, tehát
+1:391 minute, 39 secondsami már átalakulóban van, hiszen itt már a Egyiptomban görögkornál tartunk és göröggel. Tehát ahol a, B és C szöveg
+1:491 minute, 49 secondsugyanazon a nyelven tartalmazza, a saját nyelvén tartalmazza ugyanazt a szöveget más írással, más nyelveken. Tehát a régi Egyiptom, ami az újabb és a görög nyelv.
+2:012 minutes, 1 secondÉs ebből ki lehetett kalkulálni, hogy mi minek a párja. Tehát körülbelül a szövegeknek a párhuzamosítása, tehát két
+2:102 minutes, 10 secondsszöveg egymás mellé tétele innen eredezik. egyébként a kőről még csak annyit, hogy ugye itt ez egy nagyon érdekes történet, hogy az angolok közben
+2:192 minutes, 19 secondsmegérkeznek Egyiptomba, és ugye ott sikerül átvenniük az uralmat és hát ezt a követ is megszerzik. Bár mondom, hogy
+2:272 minutes, 27 secondsa franciáké volt eredetileg, mert ugye hát Napoleon se csinált mást, mint begyűjtötte a dolgokat, és vitte haza, vitte volna haza ezt is Párizsba. No ezt
+2:342 minutes, 34 secondsaz angolok vitték a királynak Londonba, de végül is megengedték, hogy egy
+2:412 minutes, 41 secondsmásolatot készítsen róla a francia hadsereg megfelelő embere. És ez a másolat úgy nézett ki, olyasmi volt, mint amikor ma a gyerekek így ugye
+2:502 minutes, 50 secondsátfirkálják a papírt és a dombor, illetve a homor részek azok kiemelkednek. Tehát csináltak egy ilyen másolatot, és szampolin ezen a másolaton
+2:582 minutes, 58 secondsmutatta ki ezt a párhuzamosságot. Tehát az eredeti kőre csak azért volt szükség, hogy kiinduljon az adata. Még az angolok büszként kiállították, és hogyha tudják,
+3:073 minutes, 7 secondsakkor az egyik kis sarkára be is írták, hogy ez az angol király tulajdona, tehát hogy valaki eltévesze a dolgot. Ez azonban nem tartozik a lényekhez, de a
+3:163 minutes, 16 secondsbritis múzeumban ott van ez a nagyszerű kő. És mivel a helységnek Roset, ugye rozet kőnek vagy Roset kőnek is hívják
+3:243 minutes, 24 secondsvolt a neve, ez így ment be a köztudatba, de végül is a lényeg az, hogy
+3:323 minutes, 32 secondssikerült egy, hát ha tetszik, egy algoritmikus statisztikai gondolkodással az azonos tartalm, de különböző nyelven
+3:393 minutes, 39 secondsírt szövegeket egymás mellé tenni. Na hát erről lesz szó a mai óránkon tulajdonképpen a párhuzamos korpuszokról. Az egy picike három nyelvű
+3:483 minutes, 48 secondskorpusz volt, de hát vannak nagyobbak és elég nekünk két nyelvű is. Az persze nyilván nagy segítség volt, hogy itt voltak három darab pár, tehát ugye
+3:573 minutes, 57 secondskülönböző módon lehetett párosítani ezt a három darab szövegegységet.
+4:044 minutes, 4 secondsA párhuzamos korpuszokról ugye röviden ezt lehet mondani. Észük, hogy ki fölvillantja az ember, hogy hát egy könyv az csak pár százer szó, csak
+4:114 minutes, 11 secondsjelzem, hogy hát ez nagyságrendben egy nem túl nagy könyv. Az egy ilyen vastagabb napilapnak a karakterszáma.
+4:214 minutes, 21 secondsTehát amikor szövekké gyűjtünk, akkor egy napilapot beszerezve, annak a tartalmát beszerezve, az naponta
+4:284 minutes, 28 secondsegy könyvnyi szöveget produkál. Tehát hogyha egy könyvkiadó könyveit megkapjuk, az nagyon jó, mert ugye van
+4:354 minutes, 35 secondsirodalmi szövegünk, normatív lektorált szövegünk, de darabszámra lényegesen többek a folyóiratok, és még sokkal
+4:424 minutes, 42 secondstöbb, ami a weben van. Hát itt látszik, hogy ugye egy nagyon művelt ember az napi 10000 szót ha elolvas,
+4:504 minutes, 50 secondsez mondjuk évi 3,s5 millió és hát néhány 100 millió karaktert olvasunk el egész életünkben. E csak azért jó tudni, mert
+4:574 minutes, 57 secondsaz ember azt gondolja, hogy ez a szám, ez nagyon nagy, de ez nagyon kicsi, hiszen ma egy több 100 millió szavas korpusz bárkinek elérhető.
+5:085 minutes, 8 secondsNem kell a webre menni, ahol szavak 10 milliárdjai vannak, 100 milliárdjai, még annál is több már. Tehát ma már elég
+5:165 minutes, 16 secondselérhető elektronikus úton is ekkora szöveg. És hát a számítógép ezekkel mind találkozik, mi meg kedves hallgatók meg
+5:245 minutes, 24 secondsén, mi meg nem. Tehát mi nem találkozunk ennyiben. Mi tudjuk, hogy ez ott van, de képtelenek vagyunk. Ugye ha nem olvassuk el, akkor miért használnánk? Ha
+5:325 minutes, 32 secondselolvassuk, akkor lelassul az idő, hiszen nekünk akkor át kell menni a karakterozaton. A gép viszont ezt iszony teljesítménnyel a háttérben földolgozza,
+5:415 minutes, 41 secondsés olyan szövegekkel is találkozik, amikkel én soha.
+5:445 minutes, 44 secondsTehát tulajdonképpen amikor a nagy mennyiségű szövegek előálltak a számítógép számára, akkor a fordítók azt mondták, hogy a fordítási
+5:525 minutes, 52 secondsprobléma bizonyos értelemben megoldódott, mert nem kell mást csinálni, mint fogni a két szöveget, az egy eredetit, meg amit valaki lefordított, egymás mellé tenni
+6:016 minutes, 1 secondpárhuzambot és azt mondani, hogy ennek ez a fordítása. Sajnálatos módon ugye nincs a jó fordítása, hanem vannak
+6:086 minutes, 8 secondstöbbé-kevésbé jó vagy elfogadható fordítások. Ráadásul egy szövegegység fordítása, egy másik szövegegység, azokat föl lehet szeletelni mondjuk
+6:176 minutes, 17 secondsmondatokra. Mondatok fordításai meg hát egy mondat fordítása, rendkívül sok minden lehet. És hogy melyik a jó, hát
+6:246 minutes, 24 secondsnyilván vannak nagyon rossz fordítások, de ez inkább kontextuálisan derül ki, mégis azt lehet mondani, hogyha összegyűjtjük sok mondatnak a profik általi fordítását, abból baj nem lehet.
+6:346 minutes, 34 secondsÉs akkor a fordítót azzal támogatjuk, hogy fölnyúl a polcra és leveszi a kézfordítást. vagy legalábbis a leghasonlóbbat. Na, erről lesz most szó.
+6:456 minutes, 45 secondsUgye hát a párhuzamos korpusz az eddig is elvileg létezett, hiszen korpuszkeresőink vannak. És ha minden mondatos pártban megvan a fordítása,
+6:536 minutes, 53 secondsakkor össze tudom kapcsolni őket, és itt látszanak a mondat párok a képernyőn. 1
+6:596 minutes, 59 seconds2 3 magyar mondategység és hat angol fordítási egység.
+7:067 minutes, 6 secondsItt benne az egyetem szót, mondjuk, ha rákeresek a magyarba, akkor azt mondja, hogy ez az egyetemnek
+7:137 minutes, 13 secondsmagyar oldalon az egyetem szónak a találatai, és ehhez ez az angol egység kerül át a másik oldalon.
+7:227 minutes, 22 secondsÉs hát többé-kevésbé azt látjuk, hogy a az egyetem szónak hát a university fordítása, és ezt itt meg is találjuk.
+7:317 minutes, 31 secondsTehát ha hat példát veszünk, akkor nem ér nagy meglepetés minket. Bár jobb oldalt semmilyen kereső nem jelölt ki semmit, de szemmel aki tud angolul megtalálhatja.
+7:417 minutes, 41 secondsIgen ám, de egy igazán jól kereshető korpusban akkora mennyiség van, hogy az derül ki, hogy az egyetem szó igen
+7:487 minutes, 48 secondsjelentős mértékben nem universem college. És ezt nyilván aki tud angolul tudja. Ugye aki meg nem annyira tud, az
+7:557 minutes, 55 secondsmeg attól tartok, hogy sokszor azt hiszi, hogy az kollégium, ami hát persze nem igaz, de igazán olyan dolog, ami a
+8:038 minutes, 3 secondscigan a magyar egyetemi kultúrában talán nincs is.
+8:078 minutes, 7 secondsPersze a egyetemnek forítjuk nagy tévedést nincsen, mert hát valami olyasmi.
+8:138 minutes, 13 secondsDe hát igazán a angol egyetemi létnek a a a
+8:208 minutes, 20 secondsmegnevezése, például az utolsó mondat fancy cage és a pucos egyetem. Hát persze egyetem egészében, de azért a
+8:278 minutes, 27 secondsKalics, ha valaki, ha más Harry Potterre gondol, ami ugye nem egyetem volt. De hát hogy az a dolog, ahogy a azok ott úgy együtt vannak egy olyan lét, az
+8:368 minutes, 36 secondsbizony a brit kultúrában is így volt. Na most ezt egy magyar embernek, hogyha nem jó angolból, akkor az marad meg a fejébe, hogy az egyetemnek a university
+8:448 minutes, 44 secondsa megfelelője. Ez a cidge meg inkább kerülendő. Bara Kalic sokszor tudja egyetemre fordítani. Na a párhuzamos korpusz megmutatja, hogy mikor kell kalicsként, mikor kell universityként.
+8:548 minutes, 54 secondsEz ebből nem derül ki, csak mégis csak segít abban, hogy a különböző fordításokat valahogy előhozza annak, aki eddig ebbe bele se gondolt.
+9:069 minutes, 6 secondsNa most, hogyha ezek alkorpuszokra vannak bontva nagy korpuszok, tehát legalább oda van írva, hogy ugye itt a bal oldalon látható, hogy egy szótári
+9:159 minutes, 15 secondsegységet az egyetemet keresünk úgy mint cage, tehát megadom a párt, hogy egyetem magyarul, collage angolul, akkor megtalálja. Ugye a subtitles az a része
+9:249 minutes, 24 secondsa nagy magyarangol párhuzamos korpusznak, amiben itt a példát vettük, ami a filmfeliratok, tehát az, ami ott
+9:319 minutes, 31 secondsugye a szinkronizáció helyett szövegaláírásban ott van, ezek nyilván kontextuálisan értelmezhetőek. Nagyon
+9:409 minutes, 40 secondshosszú mondat nincs is köztük, hiszen itten dialógus helyzetekben mondanak ilyeneket, de mégis csak subtiteluszt.
+9:459 minutes, 45 secondsAztán ott van a irodalmi szövegből, literaturből való ilyen. És akkor ez egy kicsit már árnyalja a dolgot, hogy mikor, hol, mennyire kell egyik vagy
+9:549 minutes, 54 secondsmásik szót azon a kalich equivalent használni. Hát ez a korpusz volt a Hangish korpusza, ami az első magyar
+10:0210 minutes, 2 secondsilyen nevesített párhuzamos kétnyel korpusz. Ugyát a hanglis az adja magát, hogy magyar angol korpusz. Párhuzamos.
+10:0910 minutes, 9 secondsAzért párhuzamos, mert ugyanaz a szöveg van mindkét oldalon.
+10:1310 minutes, 13 secondsÉs hát ebben van minden. Vannak szoftver dokumentációk két nyelven. Nyilván valamelyik eredetileg angol volt és fordították magyarra. Jogi szövegek,
+10:2210 minutes, 22 secondsezek is fordítások. Szép irodalom szintén megjelent egyik nyelven, másik nyelven. Az nagyon nem mindegy, hogy melyikre farították, melyikre, de mindestre párhuzamos korpusz mégiscsak.
+10:3410 minutes, 34 secondsFilm, tehát ezek a film aláírások és újságok. Olyan újság, ami megvan két nyelven. Hát ebbe 54 millió körüli token, tehát ennyi van. 2 millió mondat.
+10:4610 minutes, 46 secondsEzt a 2000-es évek elején a Műegyetem médiaoktatási kutatóközpontja és a nyelvtudományi intézet csinálta együtt,
+10:5410 minutes, 54 secondsés ezzel jól lehetett kísérletezni, és ma is mindenki számára elérhető. Na most egy kicsit nagyobb és soknyelvű korpusz
+11:0311 minutes, 3 secondscommunity, ami az Európai Uniónak egy hatalmas korpusza, ahol jogi szövegek vannak szinkronba állítva. És ez már egy
+11:1011 minutes, 10 secondspicit jobban emlékeztet a Rozetta kőre, mert hogy itt ugye lehetem a magyar, angol, német, román négyest, és akkor
+11:1811 minutes, 18 secondsmondjuk abból tudok valamit kibányászni, de hát általában csak nyelvpárokat veszek, és ugyanaz a szöveg van minden nyelven. És itt fölvett egy nagyon
+11:2711 minutes, 27 secondsérdekes gondolatot az egész, hogy tulajdonképpen a francia meg az angol volt a kiindulóag, és mindent abból
+11:3511 minutes, 35 secondsfordítottak. És tulajdonképpen a fordítás az mindig abban különbözik az eredetit erre mindenféle statisztikák vannak, hogy az hosszabb. Nem azért
+11:4311 minutes, 43 secondshosszabb, mert a célnyelv szószátjára, hanem azért hosszabb, mert hosszabb, mert nem lehet ugyanolyan röviden kifejezni semmit. Ugye a mi nyelvünk
+11:5211 minutes, 52 secondsmindig azt mondjuk, hogy hű, de tömök vagyunk bizonyos helyeken nagyon. De amikor egy olyan fogalmi rendszerbe dolgozunk, ahol a másik világban az
+12:0012 minutestermészetes, akkor azt ugyanúgy ki kell fejtenünk, hogy mit is jelent az ott.
+12:0412 minutes, 4 secondsKorábban egyszer említettem a Harry Pottert. Tehát, hogy Harry Potternek a kontextusát, egy olyan angol középiskolai világot, az ember nem tud
+12:1312 minutes, 13 secondsúgy kezelni, hogy hogy mindent tud belőle. Magyarázatokra van szükség.
+12:1712 minutes, 17 secondsÓhatatlanul megnő a fordított szöveg hossza az eredetihez képest.
+12:2112 minutes, 21 secondsMegjegyzem, ez volt, amit a szótároknál mondtam, hogy nagyon sokszor annyira bonyolult volna kifejteni, hogy az a rajzos kiegészítés a szótárokban sokszor
+12:3012 minutes, 30 secondsazért van, mert olyan nehéz kulturálisan elmagyarázni valamit, de egy ábrán meg lehet mutatni, hogy az a része a dolognak az önálló névvel bír azon a
+12:3812 minutes, 38 secondsnyelven. Na most ha ezt kifejtjük, akkor az karakterbe sok. Ergo egy olyan 10%-kal a fortaszöveg mindig hosszabb.
+12:4412 minutes, 44 secondsDe ha elfelejtjük ezt, akkor ezek a szöveg, ezek a különböző nyelvi szövegek nagyjából egymáshoz képest ugyanolyan
+12:5112 minutes, 51 secondsviszonyban vannak, mert majdnem mint fordítás. És például nagyon érdekes, hogy Vatikán, aminek latin a hivatalos
+12:5912 minutes, 59 secondsnyelve, mindent latinul írnak meg először, de ezt a nyelvet valójában természetesen a latinul minden valamire
+13:0613 minutes, 6 secondsvaló Rómába működő pap beszél, elvileg a többi is, de azon azért mégse beszélnek olyan nagyon. Ugyanakkor minden
+13:1413 minutes, 14 secondsdokumentum ezen a nyelven készül, mint mondtam, a terminológiai egységeket a mai latinban, ami már nem létezik csak azért, hogy létezzék megfogalmazzák.
+13:2313 minutes, 23 secondsTehát egy terminológik központ ugye a alkatrészek nevét meg minden modern eszközt latiniz. És aztán ezt a latin szöveget minden nyelvre lefordítják,
+13:3113 minutes, 31 secondsmondjuk egy pápai enciklika vagy bármilyen Vatikánból mindenfelé kimenő üzenet.
+13:3713 minutes, 37 secondsTehát tulajdon az összes nyelvfordítás és az eredetit meg nem használják. Ezek egymással egész más viszonyban vannak, mint mikor az angol az eredeti és a
+13:4513 minutes, 45 secondsmagyar a fordítás. Magyar az eredeti és angol a fordítás. De ezt felejtsük el, ez már egy olyan dolog, ahol a angol és francia kivételével a nyelvek mind
+13:5413 minutes, 54 secondsfordítások, és ezek összemérhetőek, és ezzel mindenféle kísérleteket lehet végezni. Tehát azért adva van egy nagyon-nagyon sok nyelvű tipikus
+14:0214 minutes, 2 secondspárhuzamos korpusz. Ugye az előbb említettem Vatikánt, tehát egy picit előbb.
+14:0814 minutes, 8 secondsA Biblia, mint olyan megjelent. Ugye Volgata mindenki számára elérhető.
+14:1414 minutes, 14 secondsNemrég volt Szent Jerus ünnepe. Ugye a kifordította latin az első bibliát. No a kiinduló
+14:2214 minutes, 22 secondsszöveg, ha az nem is az eredeti arámi görög, mondjuk, hogy a latin. Abból
+14:2914 minutes, 29 secondsfordítottak minden nyelvre. látják itt a magyartól az esperantóig és a különböző
+14:3714 minutes, 37 secondsitt elsősorban ismert nyelvek, de hát nagyon sok szinte ismeretlen, bár a Maurit nem sokan ismerik, ugye Izélandon beszélik, szóval minden nyelvre lehet
+14:4614 minutes, 46 secondsfordítani, és ezek a szövegek óhatatlanul párhuzamosak, nem csak azért, mert ugyanaz, hiszen az előbb is azt mondtam, hogy ugyanazt a bekezdést
+14:5414 minutes, 54 secondsugyanarra fordítják, hanem meg is van számozva. Tehát itt a példán Jób könyve 23. fejezet első bekezdés az minden
+15:0115 minutes, 1 secondnyelven jó 231. Tehát nem kell attól félni, hogy valahol elcsúszik, mert ezt
+15:0815 minutes, 8 secondsgarantálja a Bibliafordító közösség, hogy az egyszer beszámozott mondategységek vagy szövegegységek, azok
+15:1615 minutes, 16 secondsminden nyelven ugyanazok. Pillanat alatt lehet párhuzamos korpuszt csinálni. Nem kell megmagyarázni, hogy mi minek a párja. Hogy is gondoljanak bele, amiről
+15:2315 minutes, 23 secondseddig beszéltünk, az azt mondtam, hogy szöveg szintjén, bekezdés szintjén nagyjából összejön. Amikor azt mondom, hogy miért ne megírta a Micimackót,
+15:3215 minutes, 32 secondsKarinti meg lefordította, akkor van két szövegünk a Micimackó eredetve. Védő Q meg a mi micimackónk. Na de hogy melyik
+15:4015 minutes, 40 secondsmondat, melyik mondatnak az ekvivalense, azt senki nem mondta meg. Azt nekünk kéne összerakni. A Biblia pedig olyan, hogy már össze is rakták. Tehát rögtön a
+15:4815 minutes, 48 secondsés a Károliban ugyanúgy 231, jobb 231, mint egy mai fordításban. Tehát akár az egynyelvűeket is párba lehet állítani,
+15:5515 minutes, 55 secondsés nyelvi hasonlóságot, különbséget lehet rajtuk vizsgálni. Tehát a feladat az, hogy ahogy a Biblia már megcsinálta
+16:0316 minutes, 3 secondsnekünk a meglevő szövegeket, amikről tudjuk, hogy egymás fordításai párba kell állítani. Azt egyébként csak úgy zárójelben mondom, hogy amikor egy ilyen
+16:1116 minutes, 11 secondsfeladat van, akkor nagyon sokszor az a fő probléma, hogy hol van az a fordítás, amivel dolgoznunk kell. Nyilván a
+16:1916 minutes, 19 secondsmicimackót majd előhúzzuk karinti számítógépjéből és megpróbáljuk összerakni, ha nem, hát akkor OCRZünk, beolvassuk,
+16:2816 minutes, 28 secondsde egy mai nagy vállalatnál bankba bárhol, hú megvolt ennek a szövegnek a fordítása valahol. Na most gondoljanak
+16:3616 minutes, 36 secondsbele a feladatba. Egy hatalmas számítógép rendszeren meg kell találni azt a doxit, ami részben vagy egészben tartalmazza egy másik szöveg fordítását.
+16:4416 minutes, 44 secondsHát milyen alapon keresünk? Tehát nem olyan egyszerű a feladat. Ha már megvan, akkor azt elkezdhetjük párba állítani, de hogy hol van, azt azért hozni kell
+16:5316 minutes, 53 secondskézbe. Na mondjuk, hogy induljunk ki abban, hogy már valaki hozza kézbe. És van nekünk valamilyen értelemben egy párhuzamos
+17:0217 minutes, 2 secondsolyan korpuszunk, ami még nincsen szinkronizálva, de tudjuk, hogy ugyanannak a szövegnek a két nyelvi megfelelői. Na hát akkor induljunk neki.
+17:0917 minutes, 9 secondsMit csinálna? Mit csinálnának, hogyha párba kellene állítani kétszöveget?
+17:1517 minutes, 15 secondsAlignmentnek hívják ezt a szinkronizációt angolul. Alignolni kellene. Hát mekkora egységeket rakjunk párba.
+17:2417 minutes, 24 secondsNyilván a bekezdés az egy elég természetes határ. Paragrafus jelent entert nyomtam. Azért az nagyjából ugyanannyi enter van az egyik nyelven,
+17:3217 minutes, 32 secondsmint a másikon. Tehát kétszöleg ugyanannyi bekezdésből áll. Bekezdés közepén nem szoktunk új bekezdést kezdeni a fordításba, csak véletlenül.
+17:4117 minutes, 41 secondsA bekezdésen belül viszont már a mondatok azok egymáshoz képest valamilyen viszony vannak. Hát jók lennének a mondatok, mint szövegettség, mert a szavak meg túl picik, meg sok
+17:5017 minutes, 50 secondsszónak nincs is fortása. Tehát jó lenne a mondat, de azért a mondat se olyan egyszerű, mert egy bekezdésben nem biztos, hogy mindkét nyelven ugyanakkora
+17:5717 minutes, 57 secondsszámú mondat van. Hát tehát a bekezdésszintű az biztos, de az túl nagy. Mondatszintű jó lenne, de nem biztos, hogy ugyanannyi mondatban áll
+18:0518 minutes, 5 secondsegy bekezdés. kifejezéseknek, mint már a morfológia fejezetnél beszéltünk róla, nincs természetes határ után nehéz őket
+18:1318 minutes, 13 secondsmegfogni. A szavaknak van, azoknak nem mindig van fordítása, vagy nagyon félrevezető egy-egy szó szó kapcsolatba levő pozíciójának a fordítása.
+18:2318 minutes, 23 secondsAmit meg mindannyian tudunk, hogy a szövegszinkronizáció is, mint minden más nyelvtechnológia nyelvi informatikai tevékenység két módon mérhető.
+18:3318 minutes, 33 secondsSikerült-e teljesen párba állítani két szöveget? Igen vagy nem? Tehát, hogy minden egységnek van párja, vagy nem?
+18:4218 minutes, 42 secondsTehát teljesen tudtam szinkronizálni, vagy nem teljesen részlegesen. Ezzel szemben egy igen fontos dolog, hogy
+18:4918 minutes, 49 secondsmennyire pontos ez. Tehát, hogy igaz, hogy mindenkinek van párja, csak egy csomót elrontottam. Versus azért csinálom részlegesen, hogy csak azoknak
+18:5818 minutes, 58 secondsadjak párt, amire tuti biztos vagyok, hogy az a párja. Tehát, hogy a pontosság az a részlegességgel járpárban. A
+19:0619 minutes, 6 secondsteljesség meg ugye a nagyobb fedés viszont a pontatlansággal, relatív pontatlansággal. Na most, hogy mi az
+19:1319 minutes, 13 secondsokosabb, hogy mindenkinek legyen pár csak sokszor rossz, vagy ne legyen mindenkinek, de ami van, az tök jó. Ez feladata válogatja, mint ahogy annak idején is beszéltünk erről.
+19:2319 minutes, 23 secondsHát mire való ez az egész? Hát a fordításudomány, amelyik hát azóta igazán tudomány, amióta sok fordítás elérhető számítógépesen.
+19:3319 minutes, 33 secondsAddig is volt kísérlet, de azért most van így igazán keletje ennek a dolognak.
+19:3819 minutes, 38 secondsHát egyszerűen mindenféle fordítási megfelelések vizsgálatára, hát egy picike példa volt erre az, hogy az egyetemet universitek vagy colge-enek
+19:4619 minutes, 46 secondsfordítják, de hát valójában ez kicsi példa, de ennél sokkal komplexebb megfeleltetéseket is lehet keresni, és eddig ilyet nem lehetett.
+19:5619 minutes, 56 secondsMásrészt a terminó konzisztencia. Na ez egy nagyon érdekes dolog, és mivel mint talán a korábban említettem, hogy kis
+20:0420 minutes, 4 secondscsapattal annak idején benne voltam a 2004. május 1jén befejeződött abban a nagy szöveg szinkronizáló
+20:1320 minutes, 13 secondsprojektben, amelyik ugye a magyar EU csatlakozás előtt a jogharmonizáció keretében szinkronba állított angol és
+20:2220 minutes, 22 secondsmagyar szövegeket, az eredeti angolt és a farítás magyart. És ugye azt kellett csinálni, hogy végig kellett menni az eredeti angol szövegen és meg volt adva
+20:3120 minutes, 31 secondsegy nagy terminológia adatbázis, hogy ezeknek a kifejezéseknek ez az ekvivalense muszáj, kötelező, ilyen az EU. Tehát megkerestük a szinkronba
+20:3920 minutes, 39 secondsállított szövegbe, hogyha itt előfordult az a szó, amelyik valamelyike a felsorolt listának, akkor a lista
+20:4720 minutes, 47 secondsmásodik eleme, ami az ekvivalens, megtalálható-e a másik oldali szövegben.
+20:5120 minutes, 51 secondsEz például egy nagyon jó dolog, és rögtön csöngetett, ha nem, vagyis hogyha nem a hivatalos terminológiát használta a fordító, és akkor megpróbálták ezt lecserélni arra, amire tényleg kell.
+21:0221 minutes, 2 secondsRáadásul ezt nem csak arra lehet használni, hogy a meglevő terminológiát ellenőrizzem, hanem hogy gyűjtsek.
+21:0821 minutes, 8 secondsTehát, hogy elég gyakran előfordul egy szó a másik oldalon a szinkronizált egységben, mondjuk mondatpárok esetén ebbe a mondatba előforduló szavakhoz
+21:1721 minutes, 17 secondsezek fordulnak elő. És ha nagyon sokszor veszem ezeket, akkor látom, hogy bizonyos ismétlődő szavakhoz, bizonyos ismétlődő megfeleltetések vannak a
+21:2521 minutes, 25 secondstúloldalon. Tehát potenciális terminológiai egységeket lehet gyűjteni, aztán később ezeket még tovább lehet filterezni, de kiindulónak nem rossz.
+21:3521 minutes, 35 secondsNa és hát amiért itt vagyunk és ami a mai előadás, hogy hát fordítómemóriát is, fordítási memóriát is lehet belőle építeni.
+21:4321 minutes, 43 secondsAzt jelenti, hogy azok a párok, amik a fordítómemóriába bekerülnek, azokat mivel ugye kész fordítás párok, azokat
+21:5121 minutes, 51 secondskésőbb úgy tudjuk felhasználni, hogyha pont azt írták be, ami a mi egyik oldalon levő szövegünk, akkor nagy mázlink van, akkor csak odanyomjuk a
+22:0022 minutesmásik oldalt, hogy ez a fordítása. Hát azért arra lehet fölkészülni, hogy kevésszer fogják pont ugyanazt leírni.
+22:0722 minutes, 7 secondsKérdés, hogy mennyire vagyunk ügyesek abban, hogy megtaláljunk olyan információt, ami karakteresen valamennyire hasonlít a mi
+22:1522 minutes, 15 secondsszövegeinkhez, de nem pont ugyanaz. És akkor nyilván odaadjuk a felhasználónak, a farítónak azt a farítást, ami nem az ő
+22:2322 minutes, 23 secondsszövegének a farítása, hanem valami picit ettől eltérőnek, de az egy ilyen ötletet ad neki, hogy hogy kell az övét lefordítani. Tehát elsősorban arra való,
+22:3122 minutes, 31 secondshogy ötleteket adjon, és picit átszerkeszti.
+22:3522 minutes, 35 secondsDe hát aki maga fordított vagy beszélt fordítóval, az tudja, hogy ez úgy működik, hogy a fordító azt mondja, hogy inkább ilyen lefordítom, gyorsabb vagyok én, mint hogy ott a gépállandal bele nyereskedjem.
+22:4522 minutes, 45 secondsHosszú ideig ez az állítás igaz volt. Ma már mégis azt lehet mondani, hogy ezek az eszközök, amiről a mai előadás szól,
+22:5122 minutes, 51 secondsaz minden farító farítóirodának a kötelező szoftvereszköz készletében benne van. És
+22:5922 minutes, 59 secondsegy fordító akkor tud fordítani, ha ilyeneket tud használni. Lehet, hogy a szépirodalmi fordítók nem ilyenek, de
+23:0623 minutes, 6 secondsakik technikai, műszaki, jogi szövegeket fordítanak, azoknak ez természetes, hogy ilyen eszközöket kell használnia. És hát
+23:1423 minutes, 14 secondsitt mindjárt meg is beszéljük, hogy ez miért ennyire jó.
+23:1923 minutes, 19 secondsÉs a legutolsó, de a legújabb, az utolsó valahány évtized év,
+23:2723 minutes, 27 secondsstatisztikai évtized, neurális eszközök, inkább az utolsó 10 évnek a hozománya, hogy mind abból indul ki, hogy van egy szinkronizált korpuszunk, tehát hogy
+23:3623 minutes, 36 secondsvannak párhuzamos szövegeink, amikkel mindenféle okossággal tudunk csinálni.
+23:4123 minutes, 41 secondsTehát a teljesen automatizált for farítás az is jó. Farítómemóriák építéséhez, terminológiák építéséhez és egyádfarítás elmérészeknek is hasznos
+23:5023 minutes, 50 secondsdolog. Hát ilyen eszközök. Egyik jól látszik itt a kora, hiszen ez egy korabeli Windows-os ablak, de mégis csak
+23:5923 minutes, 59 secondsmutatok egy ilyet. A Trados annyira látszik a kora, hogy még az sem látszik benne, mert mint mondtam Windowsos, hogy a Trados szóban a TR translation, hát azt kitalálták, hogy a falírás. in DOS.
+24:1124 minutes, 11 secondsHát aki tudja, hogy a DOS egy olyan karakteres, nem grafikus oprendszer volt, ami a Windows előtt volt, sőt az
+24:1924 minutes, 19 secondselső Windowsok valójában a DOSON futó alkalmazások voltak még. A 3.1-es Windows az nem egy önálló oprendszer
+24:2624 minutes, 26 secondsvolt valójában, hanem a DOS feje tetején, vagy nyakába ült és úgy működött. Hát ez abból a korból való,
+24:3324 minutes, 33 secondstehát a 90-es évek elejéről, amikor ez a Tradosz eszköz elkészült, majd a Tradosz cég, amelyik ezt az eszközt létrehozta,
+24:4224 minutes, 42 secondsolyan híres lehet ebben a fordító világban, hogy már szinte azt mondják az emberek, hogy tradoszozni,
+24:4924 minutes, 49 secondsegy picit olyan, mint a fénymásolók azok xeroxozni Magyarországon, akkor is, ha Ricóval vagy Canonnal másolnak, akkor is
+24:5824 minutes, 58 secondsxeroxozás. Hát a tradoszoás is egy ilyen, hogy Tradosszal kell. A Tradosz valójában ennek a forító memória első
+25:0525 minutes, 5 secondskísérletének valami módon a közös elnevezése is ma. Egyébként itt az
+25:1325 minutes, 13 secondslátszik, a szöveg nem fognak meglepődni. Orbel 1984-e, és ezt már sokszor volt szó,
+25:2125 minutes, 21 secondsvagy többször említettem, hogy ez egy olyan szöveg volt, ami az első kelet-európai közös projektekben.
+25:3325 minutes, 33 secondsVörnet is ilyen volt. Ugye beszéltünk korábban sok mindenről, amit Európában még az uniós csatlakozás előtt csináltunk. Ez volt az az irodalmi mű,
+25:4125 minutes, 41 secondsami nyelvileg minden nyelven egyt megvolt a Biblia mellett. Nem volt ugyan teljesen szinkronizálva. De Orvel 1984-t
+25:4825 minutes, 48 secondsa 80-as években, 70-es80-as években mindenfajta volt szocialista országban lefordították, és ez lett a közös
+25:5725 minutes, 57 secondseszköz, hogy minden nyelvet ezen a szövegen mutatjuk be, hogy szinkronizálunk. És itt látszik az angol-magyar szinkronizálásban, hogy például egy mondat, ami a bal oldalon
+26:0626 minutes, 6 secondsegyetlen mondat, ez a hosszú ott a fekete blokk alatt a Winston Smith kezdetű, az a túloldalt Winston kezdetű,
+26:1526 minutes, 15 secondsde az csak az első mondott, és alatta van a második, és itt a pötty, pötty, pöttyel mutatja, hogy hát egy mondatból lehet kettő, de adott esetben két
+26:2326 minutes, 23 secondsmondatból is lehet egy, meg egy mondat lehet úgy, hogy a másikkal olyan sorrendet mutat, hogy ő van később, nem
+26:3126 minutes, 31 secondspedig előbb. Tehát nagyon sokféle cserebere létezik. Meg olyan van, hogy nem mondják azt a mondatot, nem fordítják le, vagy éppen beszúrnak egy
+26:3826 minutes, 38 secondsolyat, amit lefordítanak. Tehát látszik, hogy a szövegszinkronizálás nem azt jelenti, hogy mind első mondat, első második, második 979, hanem úgy nagyjából.
+26:4926 minutes, 49 secondsEgy másik ilyen eszköz, erre sokkal inkább lehetünk viszkék, mert a memok egy magyar szoftver, és egyébként ma már a céget is memoknak hívják. korábban
+26:5726 minutes, 57 secondsmaga, aki kifejlesztett, az killen volt, és a morphologic cégnek egyfajta spinoffja, tehát egy 16 évvel ezelőtt
+27:0827 minutes, 8 secondshárom kutatótársam, ö Kisbalázs, Lengyel István és Ugrai Gábor, csak
+27:1627 minutes, 16 secondsazért, mert a Kilgray az a Krai nevekből állt össze, létrehozta ezt az eszközt, és bár nagyon jó ötletnek
+27:2527 minutes, 25 secondslátszott, de azt senki nem gondolta, hogy 11 pár év múlva világ egyik világ első ilyen
+27:3227 minutes, 32 secondsfordítómemori eszközről van szó, aminek most csak a szövegszinkronizál lehet mutatom, de a szöveg szinkronizálója is nagyon jó. Hát itt
+27:4027 minutes, 40 secondslátszanak ezek a párok, egyik nyelv, másik nyelv és a felület. És hát a memukról azért ezt jó tudni, hogy magyar
+27:4827 minutes, 48 secondskollégák csinálják. Bár nagyon nemzetközi ma már a cég. Na, hogy mi kell ahhoz, hogy szövegységekre bontsuk, ugye a Mert akkor már megvannak a
+27:5527 minutes, 55 secondsszövegségek, akkor már ezeket a vonalakat közéjük jó esetben viszintesen, vagy kicsit ferdén be lehet írni. Na de mitől lesznek mondatok? Hát
+28:0428 minutes, 4 secondsúgy, hogy szétvagdassuk. És ezt a zöldséget én már nagyon sokszor elmondtam az előadások. A mondat az, ami nagy betűvel kezdődik és ponttal
+28:1228 minutes, 12 secondsíráséral fejeződik be, ami nyilván nem definíció, csak egy ilyen vicces állítás, ami nagy százalékban igaz.
+28:2028 minutes, 20 secondsHát akkor próbálkozzunk melyik jelekkel.
+28:2328 minutes, 23 secondsTehát he can be reached at john smiths.com.
+28:2928 minutes, 29 secondsTehát, hogy látszik, hogy az a gondolat, hogy ponttal fejeződik be. Tudni kell, hogy melyik ponttal. Jó,
+28:3628 minutes, 36 secondsegy valamilyen csuda eszköz már egy preprocesszálást végez, és mondjuk a email címeket kiemeli. Akkor mit csinál
+28:4328 minutes, 43 secondsazzal, ami két macskakörömben van? Ugye ott az az i felki e felkiáltójel az egy ilyen. Hát
+28:5128 minutes, 51 secondsazt kiemeljük a szövegből mondvám, hogy a mi macskakörömből az olyan mintogyha egy ilyen unknown dolog volna, egy white card volna. Csak mindegy, hogy mi van
+28:5928 minutes, 59 secondsott. Na de nézzük csak ezt. He was news that he was a model employee. És itt véget ér a macskaköröm, de a mondott
+29:0829 minutes, 8 secondsmegy tovább szedd ilyenkor. Vagyis itt tulajdonképpen lehet azt mondani, hogy ú szedd ilyenkor, de amikor a macskaköröm
+29:1729 minutes, 17 secondsáthalad mondathatáron, és ilyen is létezik, hogy elindul az egyik mondatba, és tart a másik közepéig, akkor már
+29:2429 minutes, 24 secondsnagyon nehéz a mondatszegmentáció, hogy a he worked at smith scarp, ugye itt az
+29:3229 minutes, 32 secondsötödik sorban, de ha az folytatódna, nem tudhatjuk, hogy nem folytatódik-e, hiszen a Smith Scorp végén a pont az nem biztos, hogy mond mondatvégzőpont,
+29:4029 minutes, 40 secondshiszen a corporation végén ott van a rövidítéselzőpont.
+29:4429 minutes, 44 secondsHa az nem mondat végpont, akkor folytatj scorp use reports, és megy tovább a mondat, és azt valakinek el kéne
+29:5229 minutes, 52 secondsdönteni, hogy ez most mondatvégpont is volt-e vagy sem, mert akkor a macskaköröm egy hosszú mondat közepén kivág egy darabot, ami teljesen
+30:0030 minutesértelmetlenné teszi az egészet, ha ez egy ilyen eset. Hát ez most nem persze a
+30:0730 minutes, 7 secondsUS-be is van két pont, de bízunk benne, hogy azt valaki megmutatta a programnak, hogy az sose szedje szét. De a Newberry
+30:1430 minutes, 14 secondsStreet a negyedik sor végén is egy érdekes dolog, hiszen az esté végén van egy pont. És hát ha az ember nem nagyon gyakorlott, lehet az Newberry sent he.
+30:2530 minutes, 25 secondsHát mondjuk, hogy valami szent neve az a he. Jó, a he az mondjuk az angolban egy név más, de egy szerencsétlenebb szóval induló mondatba. szent akárki is lehet.
+30:3530 minutes, 35 secondsÉs honnan tudjuk, hogy az nem a szent neek az előtagja, hanem a streetnek, a Newbery Streetnek az utótagja. De előtte
+30:4330 minutes, 43 secondsvan egy ilyen, hogy there is a JS a Banks. És akkor megint pont pont pont
+30:5030 minutes, 50 secondsrengeteg probléma van. Itt a pontok itt ott megjelenek, vagy éppen nem jelennek meg. Tizedes pontok az angolan nem vesző van, emailben, webcímben satöbbi.
+31:0231 minutes, 2 secondsEgyáltalán nem egyszerű. mondat szegmentálás. Persze gondoljuk azt, hogy ez az angolba van, a magyarba se jobb a helyzet. Szóval itt egy teljesen ártalmatlan mondat. Hány mondat ez? Egy.
+31:1531 minutes, 15 secondsOlvasgassák. Hát nyilván a 38 pontot nem fogjuk elhinni, hogy az vége a mondatnak. A kettős pontnál már valaminek tényleg vége van, de mivel
+31:2331 minutes, 23 secondselvileg nem kezdődik nagy betűvel a következő, csak Steven Gerard nevel kezdődik nagy betűvel. Tehát mondjuk most szerencsénk van.
+31:3231 minutes, 32 secondsAztán van egy zárójeles megjegyzés, ami még szintén egy mondat, vagy nem, vagy benne van, vagy csak egy része. Tehát ez hány mondat? Kár négy.
+31:4331 minutes, 43 secondsAkkor mi van a két gondolatjel közt?
+31:4531 minutes, 45 secondsElőször még csak ha azt kihagyom, megmarad a mondat, de ha benne hagyom, az a dolog magában nem mondat.
+31:5231 minutes, 52 secondsTehát addig van csak béke az ember fejében mondat szegmentális ügybe, amíg nem kezdi el. Tehát az látszik, hogy persze az esetek nagy részében nagyon
+32:0132 minutes, 1 secondegyszerű a mondatszegmentálás, de amikor gond van, akkor nagy gond van. És a web ráadásul nagyon sokszor tele van hívás szövegekkel, még azzal is gondolkodnunk
+32:0932 minutes, 9 secondsel, hogy mit mit fogadjunk el, melyik jelet fogadjuk el, és melyiknek a hiányát pótoljuk vagy ne pótoljuk. Itt
+32:1732 minutes, 17 secondslegalább többé-kevésbé normatív szöveűekről van szó.
+32:2132 minutes, 21 secondsTehát mondjuk, hogy valaki ezt megcsinálta, mert a mai uránt nem a mondott szegmentálás, de hát azt érezzük, hogy mekkora probléma. Tehát valaki
+32:3032 minutes, 30 secondsvalamilyen módon fölszabdalt a mondott egységekre, és akkor már jöhet maga a szinkronizálás, maga az a
+32:3832 minutes, 38 secondsdolog, amit szinkronizációnak hívunk.
+32:4332 minutes, 43 secondsHát, hogy lehet őket csoportni? Mik a legalapvetőbb ilyen módszerek?
+
+https://www.youtube.com/watch?v=58M0q1lWA00&list=PLvLI66ieiidhOULovlk35bwn9Dz6LGVFC&index=8

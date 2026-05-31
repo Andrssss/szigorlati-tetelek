@@ -1,0 +1,670 @@
+Kedves hallgatóság, ugye eljutottunk a nyelvtechnológia alapjai tárgyban a gépi farításhoz. Ugye
+0:2323 secondsmúltkor volt a géppel támogatott fordításnak a két része, a szótárak meg aztán a fordítómemóriák.
+0:3232 secondsÉs ami most jön az a tényleges gép fordítás, aminek hát egy picit végigmegyünk a történetén. Bár sokan
+0:3939 secondssejthetik, hogy a konklúzió majd az lesz, hogy ma már mindent gépi tanuló technikákkal csinálunk, különböző
+0:4747 secondsstatisztikai neurális technikákal, de azért a kialakulása lényeges, hogy hogy indult a gépi fordítás. Na most ezért
+0:5555 secondsami ugye egy korábbi előadásomban már nem a mostani sorozatban, hanem mondjuk pár évvel ezelőttiben nem nagyon tudtam
+1:031 minute, 3 secondsvolna konkrét példákra utalni. Most viszont ugye az a félelme mindig annak, aki gépfordításról beszél, hogy hát
+1:091 minute, 9 secondsismerik, mert hát a weben látják. És akkor mindenféle ilyen zöldségeket olvasni a weben, hogy kibott idő a gépi fordítással foglalkozni, mert úgy se fog
+1:181 minute, 18 secondstudni soha Shakespeirt fordítani. Nem tudom önök vannak, én nem tudok Shakespeartt fordítani, tehát azt gondolom, hogy azt meg kéne hagyni az embereknek. Ettől még sok mindenre jó.
+1:271 minute, 27 secondsMásik, amit mindig olvasunk róla, hogy az butaságra olyan vicceset csinált, hogy még. Na most a butaság az, hogy
+1:351 minute, 35 secondsolyan szöveget adok neki, ami nem neki való. Ha egy ilyen bibliai szöveg, és talán nem véletlen az 50-es évek kísérleteibe emlegettük a bevezető
+1:441 minute, 44 secondselőadásba, hogy 50-es évekből az IBM-nél 54-ben megjelent az első gépi fordítási bemutató. És hát ha a Bibliában
+1:521 minute, 52 secondsfordítanak, hogy a lélek erős, de a test erőtlen, a spirit is willing, but flesh is weak. Ha egy ezt a mondatot adják be
+2:002 minutesés angolul adják be, ami abban az időben egyébként azt lehet mondani, hogy fordítva volt. Tehát oroszból fordítottak angolra, de mindegy, akkor
+2:082 minutes, 8 secondsazt fordított állítólag angolról, oroszról, hogy a vodka jó, mivel hogy a spiritus sok mindent jelenthet, nem csak lelket. A flash meg hát tényleg gyenge.
+2:192 minutes, 19 secondsNa most ez nagyon vicces, de egyrészt nem biztos, hogy így van. Tehát ezek a városi legendák, ezek itt is kialakulnak. Másrészt alapvető probléma
+2:282 minutes, 28 secondsvalóban, hogy most a spirit 1 vagy a spirit 2, tehát a lélek vagy a szex értelemben kell használni, és erről még sok szó lesz a mai előadásban. Aztán
+2:362 minutes, 36 secondsáltalános azt mondják, hogy úgyis gyakorlatban ez nem használható, ez inkább csak egy ilyen demonstrálható valami. Azért erről ma már megvannak
+2:432 minutes, 43 secondsönök is győződve, ha nézik a webet, hogy azért ezek már egész használható fordítások. És mindig hozzáteszem, hogy
+2:502 minutes, 50 secondsha én elveszve érzem magam mondjuk Albán környezetbe, akkor egy albán géti fortító csodákat tehet. Mindig ugyan
+2:572 minutes, 57 secondsmindenki a általa jól ismert nyelveknek adott esetben Magyarországon elsősorban az angolnak a fordításait nézi. És ha
+3:043 minutes, 4 secondsúgy látjuk, hogy az angol nem elég jó, mert én jobb vagyok, akkor büszkén állítom, hogy én többet tudok, mint a gép, de hát helyzete válogatja, hogy
+3:123 minutes, 12 secondsmikor mennyire használható egy ilyen. Na most az, hogy elveszi a farítók munkáját, hát épp a múltkor beszéltünk, hogy nem elveszi, hanem támogatja,
+3:203 minutes, 20 secondsannyira nem leszünk soha elől, hogy már ne kelljen fordító. viszont lesz lesznek olyan szakterületek, ahol egyszerű fordítani, lesz erre is példa, és akkor
+3:293 minutes, 29 secondsott a gép tényleg elveszi a fordítók munkáját, és a fordító arra koncentráljon, amit csak ő tud. Aztán mindig elmondják, hogy vannak olyanok
+3:373 minutes, 37 secondsáltalában a japánok, ugye ismerjük a brit tudósok, a japánok kifejlesztettek valamit, és akkor az már le is fordítja. Ez már
+3:453 minutes, 45 secondskínaival is ismert. Na most van is ilyesmi, bár ezek közel vannak a konzervfordításokhoz, de nem föltétlen.
+3:513 minutes, 51 secondsÉs megint csak a beszéd beszédfordításról sokszor elmondtuk, hogy ugye az úgy néz ki, hogy van egy beszédfelismerő, egy fordítórendszer,
+3:583 minutes, 58 secondsmeg egy beszédgenerátor. Na most ha ilyen környezetben
+4:034 minutes, 3 seconds[Zene]
+4:044 minutes, 4 secondsmondjuk az előadásomat, amit most mondok szépen artikuláltan, azt fölvesszük, azt egy hang beszédfelismerő átalakítja a
+4:124 minutes, 12 secondsfolyó magyar írott szövegre, azt lefordítjuk valahogy angolra, és azt felolvastatjuk. Ez működik, de amikor a telefon beszélek, akkor nem így
+4:204 minutes, 20 secondsbeszélek, hanem félmondatokat mondok, tehát olyasmiket mondok, hogy jaj, szél te. Ö ja most várjál várjál most igen
+4:284 minutes, 28 secondsmost látom, hogy holnap amit beszél igen amit beszéltünk azt akkor inkább holnap után. Jó na most ebbe sehol nem volt egy
+4:354 minutes, 35 secondsértelmes mondat. Hangfölismerő fölismeri, de nem rakja össze valamilyen szerkezetekét. Mi viszont kiválóan
+4:434 minutes, 43 secondstudjuk a életből, hiszen a telefonban olyanokkal beszélünk általában, akiket ismerünk. Nagyon ritka az, hogy olyan
+4:514 minutes, 51 secondslenne a telefonbeszélgetés, hogy nekünk ne kelljen abba kézzel beavatkozni.
+4:564 minutes, 56 secondsnagyon jól megérteni a gép. Tehát valamiket fejlesztenek, valamire használtuk. Már a Pekingi olimpián is voltak ilyen kütyük, amiket a kínaiak
+5:045 minutes, 4 secondskidobtak. Hogyha valaki nem tud kínai és odakerül Pekingbe, ugye akkor még szabadon lehetett utazni, akkor az
+5:115 minutes, 11 secondslefordítja. De hát ezek ilyen sematikus dolgok, tehát igazán profi fordítást még a beszédfelismerőkkel, hiába kapcsoljuk őket össze, azért annyira nem tudunk.
+5:215 minutes, 21 secondsAztán van egy olyan, ami abszolút a meseekategóriába tartozik, hogy van valami különleges nyelv. Általában ezt a
+5:295 minutes, 29 secondsnevű délamerikai dél-amerikai indián nyelvet veszik elő, de bármi, aminek hát olyan szerkezete van, ami a többi nyelvnek nem, és azzal lehet könnyen
+5:375 minutes, 37 secondsgépi fordítást csinálni. Csak jelzem, hogy hát olyan nyelv, amit beszélnek, és olyan szerkezete van, amit könnyű elemezni, hát olyan nem nagyon van.
+5:455 minutes, 45 secondsOlyan, hogy valaminél könnyebb az egyik oldalon, és a nehézségek jönnek a másikon. Tehát lehet, hogy a magyar szavakat föl lehet bontani morfémákra
+5:545 minutes, 54 secondsis, akkor sokkal előrébb vagyunk, mintogyha az angol szavakat bontjuk föl.
+5:585 minutes, 58 secondsViszont utána a mondatszerkezetet pedig az angolba sorrendül mindenféle alapon máshogy elemezzük, mint a magyart.
+6:056 minutes, 5 secondsSzóval mindegyik nyelvnek megvan a saját speciális tulajdonsága, még az esperantónak is, amiről szintén lesz szó
+6:126 minutes, 12 secondsmai előadásban. Viszont az igaz, hogy a minőség az sokszor kívánnivalót hagy, de mondjuk a sebesség is számít. Tehát
+6:206 minutes, 20 secondstudom, hogy nem igazán az egyetlen paraméter, mert hát azért ha le akarok valamit forítani, akkor legyen jó. De nem mindegy, hogy mennyi idő alatt kapom
+6:296 minutes, 29 secondsezt. Tehát, hogy ilyen gyorsan, ilyen rosszul csak a gép tud fordítani, és azért az elég olcsó is ahhoz képest, hogy ingyen van.
+6:366 minutes, 36 secondsNa de kérdés, hogy mikor tudom annyira megbecsülni, hogy ez a három paraméter, az ára, a sebessége és a minősége jól
+6:446 minutes, 44 secondskiegyensúlyozott legyen. Biztos jártak olyan boltban, nekem a bicikliszervizbe van kiírva, hogy mi gyorsak vagyunk,
+6:516 minutes, 51 secondsolcsók vagyunk, tökéletes minőségben dolgozunk, a három közül bármelyik kettőt választhatja. Tehát ilyesmi a gépi fordítás is.
+7:007 minutesNa most az, hogy bizonyos körülmények közt a gépi fordítás jól fordít, ez nyugodtan mondhatjuk, hogy igaz. A meteorendszer, amelyik a 70-es évektől
+7:097 minutes, 9 secondsműködik Kanadában, gyakorlatilag minimális emberi korrekciót igényel, mert miért? Mert időjárás jelentéseket fordít, ami egy nagyon szív domén.
+7:187 minutes, 18 secondsViszont azon már mindent tud, tehát keveset kell hozzányúlni. És Kanada kétvű ország. Ugye tartomány francia, de hát azért az egész ország két nyelvű.
+7:277 minutes, 27 secondsbárhova mehet franciául angolul az információ, és egy ilyen rendszernek van hasznú, de hát ez inkább az unalmas fordításokat veszi el az embertől, nem pedig a Shakespeirit.
+7:387 minutes, 38 secondsTehát körülbelül minden valamire való időjárásjelentést egyikről a másikra fordítom. viszont nem
+7:467 minutes, 46 secondsfenyegezi a fordítók munkáját, mert a fordítók eddig is utáltak adott esetben meteorológiai jelentéseket fordítani. A fordítók ettől kezdve azzal
+7:547 minutes, 54 secondsfoglalkoznak, amit ők tudnak, és ha jó mintákat produkálnak, akkor a múltkori fordítómemóriába egyre jobb minták kerülnek be.
+8:038 minutes, 3 secondsÚgyhogy azt meg az előbb elmondtuk, hogy valóban van beszédbeszédgépi fordítási kísérlet. Nagyon sok kutatást igényel
+8:108 minutes, 10 secondskönsen azért, mert hogy az nem a sztendelhasználatból való. Nem azért csak, mert nehéz a beszédfelismerés meg a beszédgenálás, mert azok azért hát a
+8:198 minutes, 19 secondsgenerálás már nagyon régen megvan, de a beszéd felismerése akár a magyar is kipróbálhatják a weben, amikor nézik a
+8:278 minutes, 27 secondsnem tudom én, televízió feliratozását, azt egy a, egy Magyarországon kifejlesztett szoftver végzi, tehát lehet egész jól
+8:358 minutes, 35 secondscsinálni. Ez ugyan még mindig a mondatokra épül azokra a mondatokra, amik egészben vannak, és nem pedig azokra a félszavakra, amiket az előbb
+8:438 minutes, 43 secondspróbáltam mondatni. Na most ezek nagyon időigényes dolgok ezek a gépfordítórendszeri fejlesztések,
+8:518 minutes, 51 secondsés mindenki azt hiszi, hogy pikpak most különösen amióta ilyen gépitanuló módszerekkel csináljuk, megvannak az eredmények, tehát nincsenek meg. És
+9:009 minutesezért el kell gondolkodni azon, hogy érdemes-e pusztán csak azon az alapon kritizálni így rendszert, hogy mi emberek jobban
+9:089 minutes, 8 secondstudunk valamit. Még egyszer, mi például olyan gyorsan soha nem fogunk tudni fordítani, mint a gép. Mi ha a minőség javul, az ár meg közel van a nullához,
+9:179 minutes, 17 secondsakkor azért ha tényleg javul a mennység, akkor ez a sebesség óriási. Tehát érdemes megnézni egy géppel lefordított szöveget, puff, lefordítom, és ha kell
+9:259 minutes, 25 secondsmajd valakinek odaadom. Azelőtt esélyünk nem volt. Gondoljanak az Albán példámra.
+9:319 minutes, 31 secondsNa most úgy tűnik, hogy meg, hogy mondjam, megdobta a lelkesedést az, hogy a statisztikai rendszerek, gépi tanuló
+9:399 minutes, 39 secondsneurális rendszerek, hát ilyen nyelvtudás közvetlen nem is kell olyanok csinálni a gép fordítást, akik nem értenek a nyelvhez. Ez tulajdonképpen
+9:469 minutes, 46 secondsvalamennyire igaz, de a teszteléshez, illetve a tanítóadatok összeállításához viszont nagyon kell érteni. Tehát, hogy
+9:549 minutes, 54 secondsa nyelvészeti feladatok eltorultak egy másik irányba, és kétségtelen, hogy ebben a modern világban a az adat a
+10:0310 minutes, 3 secondsnyelv területén talán a legkönnyebben hozzáférhető. Gondoljunk egy genetikai hasonló gépi tanulú rendszerre. Hát amíg
+10:1110 minutes, 11 secondsa genetikai adat előáll, ahhoz azért speciális szaktudást kell és oda kell menni és meg kell szerezni. Ma pedig fölmegyek a webre és legyújítom az
+10:1810 minutes, 18 secondsinternetről a szövegeket. Jó, mondjuk kétnyelvi szövegeket nehezebb, mert hiába van mondjuk akár egy website is két nyelven, azért az nem ugyanaz, nem a
+10:2710 minutes, 27 secondsfordítás. Bár a múltkor láttuk a szövegszinkronizálásnál, hogy találni szép számmal olyan anyagokat is, amiknek
+10:3510 minutes, 35 secondsa pontos fordítása akár az Európai Unió segítségével ott van. Tehát tanítani már van honnan? Persze az nyilván csak egy
+10:4210 minutes, 42 secondsszűk szegmensre tanul. És azért annak a előkészítése, annotációja azért az tényleg nyelvészeti tudást igényel. Bár
+10:5010 minutes, 50 secondssokan úgy gondolják, hogy ott vannak a betűk, aztán hadd menjen.
+10:5410 minutes, 54 secondsHát azért menjünk vissza az időbe. Azt gondolta az emberiség, hogy azért tudunk fordítani, mert vannak szabályok, amik alapján fordítunk. Az ember is ezeket
+11:0211 minutes, 2 secondsköveti, és akkor a szabályalapú fordítás az nem más, mint átalakítani egy kódrendszert egy másikká.
+11:0911 minutes, 9 secondsvisszaemlékeznek a bevezető előadásra, ott az 50-es évek elején ezt mondták, hogy sífridozni, de sífrizni olyan, mint amikor a háborúban valami titkosítás
+11:1811 minutes, 18 secondsvan. Van a bal oldalt alul ezen a háromszögön ugye a kiinduló forrásnyelv direkt forrítással áthúzom a célnyelvbe,
+11:2611 minutes, 26 secondsa target language, tehát gyakorlatilag addig tekerem a karaktersorozatot, míg át nem alakítom. Ez volt az első szintje
+11:3511 minutes, 35 secondsa gépi fordításnak. mindenféle technikai trükkökkel is. Hát nyilván, hogy ez a háromszögők, hogy néz ki, hát
+11:4211 minutes, 42 secondsmost ez egy elég semikus valami, de itt alul látszik, hogy a távolság az a forrásnyelv és a célnyelv között. Hát kétségtelen, hogy Cserzlovákra más
+11:5011 minutes, 50 secondsfordítani, mint akár szlovákról magyarra. Tehát a Cse és a szlovák közötti fordítások azok ilyen technikai különbségek, akkor is, hogyha ez két
+11:5911 minutes, 59 secondskülönböző nyelv, de van annyi hasonlóság közöttük, hogy érdemes kihasználni ezt.
+12:0312 minutes, 3 secondsA másik a látható egy ilyen, hogy a elemzés mélysége, hát az nulla elemzési mélységű. Gyakorlatilag ez egy ilyen vonal legalul, hogy átalakítom majd
+12:1112 minutes, 11 secondserről részletesebben van a közvetlen fordítás. És akkor valaki kitalálta, hogyha lenne egy olyan nyelvünk, és majd ez lesz az interling fölül, az a
+12:2012 minutes, 20 secondsközvetítő nyelv, amire lefordítunk mindent, tehát elemzés a forrásnyelvből oda föl, generálás az interingválból a célnyelvre oda le. És akkor
+12:2912 minutes, 29 secondstulajdonképpen két fordítás van egy helyett, tehát ez mondjuk egy nyelvpár esetén nem éri meg, de már háromnál igencsak megéri ez a dolog, mert ugye
+12:3712 minutes, 37 secondshát a három nyelv esetében már hat fordítási párunk van, és onnantól kezdve sokkal egyszerűbb a két n ahány nyelv
+12:4612 minutes, 46 secondsvan, kétszer annyi fordítórendszert írni, egyet fel egyet le, mint mindegyikről mindegyikre, tehát nszer -1 nyelvpárral dolgozni.
+12:5612 minutes, 56 secondsViszont ilyen intervát majd beszélünk róla, nehéz csinálni, pontosabban nem nagyon sikerült. Tehát az az interlingva mint ötlet jó volt, de mint konkrét
+13:0413 minutes, 4 secondsmegvalósítási lehetőség kevés. És akkor hát ezt a háromszöget, mint a láttojás tetejét elkezdték így beütögetni, és azt
+13:1213 minutes, 12 secondsmondták, hogy jó, hát akkor nem megyünk egészen fel ebbe a csúcspontba, hanem majd úgy lejjebb jövünk, valamennyit formalizálunk, elemezzük, aztán azt az
+13:2013 minutes, 20 secondselemzett szöveget már direkt fordítással, amit transzfernek hívunk, hiszen itt már struktúrákat viszünk át, lefordítjuk egy másik struktúrába a
+13:2813 minutes, 28 secondscélnyelven, majd azt kilapítjuk a célnyelvi felszíni formában. Tehát a transzferfordítás egy ilyen trapéz.
+13:3613 minutes, 36 secondsfordítok egy kicsit, vagyis hát kicsit elemzek, aztán átviszem. Ez lesz a tényleges fordítás, ami nagyon hasonlít a lent levő direkt fordításhoz, de nem a
+13:4413 minutes, 44 secondsnyelvi karaktersorozaton, hanem bizonyos struktúrákon hajtom végre. És akkor hát ez lett a leggyakoribb szabályalú
+13:5313 minutes, 53 secondsfordítórendszer. Ezt a hármat fogjuk most a direktet, interlingválist és a transzfert átnézni. Hát a direkt ugye
+14:0014 minutesszép magyar szóval közvetlen fordítás, ami semmi mást nem csinál, mint hogy átviszi az egyik karaktersorozatot a
+14:0614 minutes, 6 secondsmásikba. Hát van a forrásnyelvitex, hát neki kell összev, neki kellett esni morfológia elemzővel. Ugye itt azért az
+14:1414 minutes, 14 secondsalapső mindig az, hogy az oroszból indulunk ki, az orosz meg azért ragozó nyelv. Tehát a morfológia jellemzésére szükség van, ha angolból indulnak, talán
+14:2214 minutes, 22 secondsszükség se volna rá. Aztán egy ilyen szótári luka, kétvi szótár, és akkor utána elkezdjük matatni, átcseréberélni
+14:2914 minutes, 29 secondsa kicsit angolul megcsinált töket, hogy úgy nézzen ki, mint egy angol szöveg is kijön a végén, ami kijön. Na most ezek
+14:3714 minutes, 37 secondsnyilván a lépései azért azok több lépésből állnak, tehát nem csak a morfológia jellemzés van, hanem hát a tartalmas szavakat kicseréljük. Persze,
+14:4414 minutes, 44 secondshogy kell tudni, hogy spirit egyet vagy spirit kettőt cserélünk. Aztán ugye a prepozíciók, ami hát angolban és
+14:5314 minutes, 53 secondsoroszban is megvannak, azok néha egy kicsit csereek, mert nem ugyanúgy kell, nem ugyanaz a vonzott az egyik igének, mint a másiknak. Aztán ugye ez a subject
+15:0215 minutes, 2 secondsword object, tehát a szobjektum, verbum, objektum, cserebberel, alany állítmánytárgy, hogy azokat máshogy kell
+15:0915 minutes, 9 secondsegy egyik nyelvben mondani, mint a másikban, mert sok olyan nyelv, ami angol meg az orosz, tár indo-európaiban,
+15:1615 minutes, 16 secondsez a sorrend lesz szinte a defult, tehát az alapértelmezett, aztán mindenféle egyedi nyelvpár specikus dolog, és a végén is úgy kigenerálom a végeredményt.
+15:2615 minutes, 26 secondsÉs akkor itt van egy japánangol fordítás. Ö itgt szimulálva van ugye a input, a japán input, az nyilván
+15:3315 minutes, 33 secondskaraktersorozat nem tartalmaz semmit, tehát úgy kell elekinteni a japán karaktereket, amikor átírják őket, hogy
+15:4015 minutes, 40 secondsilyen így néznek ki. Fölszeleteljük és akkor egyes szavait lecseréljük.
+15:4615 minutes, 46 secondsTehát látszik, hogy különböző állapotokban, amikor morfológia elemzés van, amikor már a tartalmas szavakat kicseréltük,
+15:5415 minutes, 54 secondsa prepozíciókat bevettük, ugye a harmadikban undesk meg to give meg ilyenek.
+16:0216 minutes, 2 secondsAztán átrendezzük a a japánba általban az ige a végén áll. Tehát ezt itt előre kell hozni az angolnak megfelelően.
+16:1116 minutes, 11 secondsAztán beszúrunk egy névőt az ötösbe, ami hát az angolban van, a japánban az ott nincs. És a végén kiolvassuk a morfologi
+16:1816 minutes, 18 secondsgenerálts szöveget, és olyan, mintha tudnánk fordítani. Ez volt a mai elképzelés a direkt farításról. Hát
+16:2716 minutes, 27 secondsdirekt fordított a meteó is. Itt van egy mai, vagyis hát valamikori mai torontói idárs jelentés.
+16:3716 minutes, 37 secondsAznapra, estére, másnapra. Jól látható egy csütörtökén abból indultunk ki, hogy még péntekre is valamit előre mondott.
+16:4516 minutes, 45 secondsHát ilyesmik voltak leírva. Itt szándékos a nagy betű, ugye eztán 70-es évektől kezdve van, tehát akkor még nem voltak ilyen gyönyörű konzol
+16:5216 minutes, 52 secondslehetőségek, hogy én már egyik grafikus felületen beszélgetek, hanem hát egy konzol írógépből jött ki a szöveg, és csak nagy betűket használtak. De hát ezt
+17:0017 minutesfelejtsük el, most csak inkább a móka kedvéér itt van, hogy cizzel látták, szebbé tették hatékonyabb internetes, de
+17:0717 minutes, 7 secondsugyanúgy működik már lassan 40 valahány év.
+17:1217 minutes, 12 secondsHát mit lehet erről mondani? közvetlen fordításban ugye azt láttuk, hogy semmi sincs kész soha, csak a legvégén. Tehát láttuk itt a japán meg angol keveredést,
+17:2117 minutes, 21 secondsde hát ez nem nagyon érdekelte a számítógépeseket, mert úgy se látta a felhasználó köztes állapotot. Hát most itt hat lépést mutattunk az előbb, de
+17:2817 minutes, 28 secondslehet ez 28 is, tehát rengeteg lépésbá is el lehet részni menet közben. Most mindegyik egy nyelvi jelenséghez tartozik, ami tulajdonképpen nem rossz,
+17:3717 minutes, 37 secondsmert a nyelvész elé leír egy jelenséget, aztán utána azt valahogy leprogramozzák és beleteszik. De azért igazán a
+17:4417 minutes, 44 secondsszótáron múlik minden. Most ha a szótár nagyon jó, akkor nagyon sok jelentést sorol föl, és akkor nagyon nehézzé teszi
+17:5117 minutes, 51 secondsa fordítóprogram dolgát. Tehát voltak olyan fordítóprogramok, konkrétan a Prompt, amiről talán
+17:5817 minutes, 58 secondsbevezetőbe is egy említést tettem, amelyik úgy indult el még a Szovjetunióba, hogy oroszny Szent
+18:0518 minutes, 5 secondsPéterváron, illetve akkor Leningrádon csinálták, hogy egy szótárban, egy szónak egy jelentése van, és több szótár
+18:1318 minutes, 13 secondsvan, és akkor eldönti a rendszer az elején, hogy melyiket használja. ez most időjárásjelentés vagy nem tudom én női
+18:2018 minutes, 20 secondsoldal vagy sport, akkor annak megfelelő szótárat felül is ott nincs két értelműség. Tehát lehet, hogy a pen jelent járókád is nem csak tollad, nem
+18:3018 minutes, 30 secondsbaj, mi azért ebben a környezetben, ahol gyereksz van, csak járunkaként fordítjuk. És akkor onnantól kezdve ez ment, de hát a Spiritnél ott volt a két jelentés, és a másikat találta meg.
+18:4218 minutes, 42 secondsHát, hogy mi a helyes kimeneti szórend?
+18:4518 minutes, 45 secondsUgye hát nyilván azon a nyelven, ahol számít mondjuk a magyarban is számít, azért az nagyon fontos volna, de hát ezzel nem nagyon foglalkoztak. Örültek,
+18:5318 minutes, 53 secondshogy valami a végén kijött. meg hát nyilván megfelelt oldalását, morfológiát már tudtok itt. Inkább arról van szó, hogy lehet, hogy az egész
+19:0119 minutes, 1 secondmondatszerkezetet át kellene szerkeszteni a legvégén, és nem pedig az eredeti mondatnak megfelelő kicsit
+19:0919 minutes, 9 secondsmegváltoztott sorrendű output adni, de mindig arra gondoltak, hogy az ember ül a másik oldalon, és majd ő megérti.
+19:1519 minutes, 15 secondsTehát azért ezt nem mondtam, de nagyon lehet tudni, nekem volt korában egy doktoranduszom
+19:2119 minutes, 21 secondsaki azzal foglalkozott, hogy a gépi fordításnak az eredményeit próbálta az
+19:2819 minutes, 28 secondsemberek véleményével összekapcsolni. És az emberek véleménye, hát ez egy bölcsés diplomy PhD volt. Nagyon érdekes, hogy
+19:3619 minutes, 36 secondsaz emberek azt hitték, hogy nem jó a farritás és el is mondták, hogy mennyire utálják és hogy mennyire rossz. majd azokra a kérdésekre, amiket ravaszul
+19:4519 minutes, 45 secondsföltettek az eredeti alapján, azokra kiváló választ tudtak adni a rossz fordítás segítségével. Tehát ők azt hitték, hogy nem értik a fordítást.
+19:5319 minutes, 53 secondsValójában értették, de annyira idegen volt az a szöveg, amit kaptak, hogy inkább azt mondták, hogy ez nem nem jó, tehát nem is értik. Amikor rá voltak
+20:0120 minutes, 1 secondkényszerítve, akkor értették. Tehát, hogy a szűk keresztmeet az ember, és ha embernek készülve, akkor majd ő a másik végén megérti. Tehát erre mondtam azt,
+20:0920 minutes, 9 secondshogy az Albánt ha rosszul fordítják angolra, akkor is van esély, hogy segít minket abban, hogy mi is lehet odaírva.
+20:1520 minutes, 15 secondsDe pláne gondoljuk el a távolkeleti ideografikus nyelvek esetében, még az információ se jön elő nekünk a
+20:2220 minutes, 22 secondsszavakból, mint bár az Albánnál se nagyon valaki látta, de azért a kínainál biztos, hogy a koreainál sokkal kevesebb információt látunk a felszínen.
+20:3220 minutes, 32 secondsNa most ez az átrendezés, ami a kimeneti szórendrőnek, hogy hogy néz ki a vége, ez az, ami szép lassan átalakult az
+20:4020 minutes, 40 secondselőbb említett transzferré, tehát modulárissá vált a közvetlen forítás.
+20:4620 minutes, 46 secondsUgye az átrendezés az részben arról szólt, hogy egy igének milyen vonzatai vannak, és hogy ezek a vonzatelemek, ezek milyen sorrendűek. Na most ugye
+20:5420 minutes, 54 secondsnyilván ez az alanyállítmánytárgy, ez az angolban szon működött, de ugye a magyarban vannak olyan igék, amiknek nincs is tipikus alapsorrendje, csak
+21:0321 minutes, 3 secondsolyan, mint egy kifordított. Tehát ugye szoktuk mondani, vannak ezek a hangsúlykerülő igék, amik mindig valamelyik vonzatukat teszik a
+21:1021 minutes, 10 secondshangsúlyos pozícióba. Tehát, hogy földrajzi igék, hogy mit tudom én, Budapest a Duna két partján terül el.
+21:1721 minutes, 17 secondsazért az a Duna két pontján terül elben, a terü el az egy olyan ige, ami maga elé engedi mindig azt, ahol. Tehát nincs
+21:2421 minutes, 24 secondsolyan, hogy elterül. Budapest nem elterül, mert az egy másik ige, bár történetileg nyilván abból adódik, de ez
+21:3221 minutes, 32 secondsolyan, hogy valahol terül el sorrend, tehát mindig hátul van az igekötő és valahol. Földrazilők nem lehet máshogy mondani. Ezt tudni kell, hogy a terüel
+21:4121 minutes, 41 secondsaz egy ilyen ige, hogy oda mit kér, és az nem valami hangsúlyos hely, hogy a Duna két partján. Tehát, hogy még más esetben
+21:4821 minutes, 48 secondsszinte kilöki onnan az alanyt, vagy valamelyik másik mondatrészt a odakerülő dolog, és akkor kontrasztos lesz. Tehát
+21:5621 minutes, 56 secondsnem tudom én Péter a munkahelyéről jött el, akkor az azt
+22:0522 minutes, 5 secondsjelenti, hogy Péter eljött a munkahelyéről lenne a neurál neutrál neurális neutrális mondat. Péter eljött a munkahelyére, de Péter a munkahelyéről
+22:1222 minutes, 12 secondsjött el, akkor onnan jött el. Tehát nem máshonnan, hanem onnan. Még itt ebben semmi ilyen nincsen. Budapest a Dunakét patyán terület. Tehát tudni kell, hogy
+22:2022 minutes, 20 secondsmelyik ige, melyik vonza, tehát hova szereti tenni alapértelmezésben. És akkor ezekkel a átrendezési dolgokkal
+22:2822 minutes, 28 secondsfoglalkozik ez a tulajdonképpen a közvetlen fordításnak ez a része.
+22:3622 minutes, 36 secondsPedig ez egyáltalán nem moduláris, hanem úgy össze-vissza volt, és próbálták modulárissá tenni, és akkor a célnyelv
+22:4422 minutes, 44 secondsmegfelelő szavainak a sorozatát, mint kimenetet előállítani. És akkor gyakorlatilag szép lassan a meteó, amit mutattunk és a szisztranika az egyik
+22:5222 minutes, 52 secondsleghíresebb ilyen gépfordító rendszer szép lassan ezt a teljesen moduláriságmentes
+23:0023 minutesrendszert addig alakították, míg modulokká nem váltak. És ahogy a gépi ne gépi for egész informatikából vagy
+23:0723 minutes, 7 secondsszámítástechnikában megjelentek a moduláris elképzelések, nem csak föntről lefele programoztunk, írtuk a sarokat, hanem már valami magaszint logikát
+23:1623 minutes, 16 secondskövettek. ezek a rendszerek is átalakultak, és szép lassan összeálltak olyan modulok, amiket már érdemes volt külön megszólítani. Tehát ez már a
+23:2523 minutes, 25 secondstranszfernek, a későbbi, tehát a trapéz alakú leírásnak a egyik szintje voltak, és a átvivőszint, illetve a
+23:3323 minutes, 33 secondsgenerálószint. Hát itt van a Sran, amelyiknek így fönt föntről lefele a nyilakat követve ennyi modulja volt, amikor megcsinálták a Ez a Sistran,
+23:4223 minutes, 42 secondsugye, amelyik a Peter Toma magyar származású IBM-nél dolgozó
+23:5023 minutes, 50 secondsgépi fordító szakembernek a rendszere, ami ugye korábban az IBM volt, aztán szép lassan ő csinálta ezt a szíszlánc céget még az 50-es és 60-as években,
+23:5923 minutes, 59 secondsmajd eljutott Európába, és ugye, mint a bevezetőben mondtam, a európai közösség fordító rendszere Ma már persze ez is a modern
+24:0624 minutes, 6 secondstechnológiákkal megy, de amikor ezt az eredetit megírták, akkor ez még teljesen direkt közvetlen fordítás volt. Majd
+24:1424 minutes, 14 secondsdobozokba rakták ezeket az elemeket, és úgy tűnt, hogy az első valahány az elemző lépés, aztán van egy ilyen csereverés transzferlépés is, van egy
+24:2124 minutes, 21 secondsgeneráló szintézis lépés, vagyis összeáll a trapéznek a három nyilacskája, a felfele az oldalt és a lefele jövőn.
+24:3124 minutes, 31 secondsHát ez lett a transzferfordítás, ahogy ez kialakult, persze hát nyilván azért előtte, mint mondtam, megpróbálták a közvetítő nyelvet. Na most a közvetítő
+24:4024 minutes, 40 secondsnyelv az valami középen van, és tök mindegy, hogy most angolról, németről, franciáról vagy cseről visszük oda a dolgot, azt oda benyomjuk, és onnan
+24:4724 minutes, 47 secondsbármelyikben ki lehet jönni. Ez volt ugye a álom, hogy bármilyen nyelven az interlingva az középen ugye amikor a
+24:5724 minutes, 57 secondsforrásnyelv célnyelvet csinálunk, akkor oda egy köztes reprezentáció, egy olyan nyelv kerülne, ami persze nincs. Próbáltak
+25:0525 minutes, 5 secondsmindenfélét kitalálni oda. Na lehetőleg különfébb ötleteket, de hát mindent kielégítőt nem találtak. Voltak logikailagak, voltak nyelvészetiek.
+25:1525 minutes, 15 secondsSőt ugye hát a logikaiak ugye a logika farumanizmusa adott volt, csak hát a nyelv azért az nem annyira logika.
+25:2125 minutes, 21 secondsJózsef Attilánál is lehet olvasni.
+25:2525 minutes, 25 secondsViszont az esperanto az úgy tűnik, hogy az egy nagyon érdekes kísérlet volt. Nem tudom a neve között esperantista, de
+25:3225 minutes, 32 secondskorábban nagyon vatos volt. Ez egy mozgalom. Most nyilván az esperanto mint nyelv az sok
+25:3925 minutes, 39 secondselsősorban európai nyelvnek a tulajdonságait hoz le van egyszerűsítve.
+25:4425 minutes, 44 secondsÉs mivel le van egyszerűsítve, a megtanulása könnyebb, és bizonyos dolgokat nehezebb is benne kifejezni.
+25:4925 minutes, 49 secondsUgyanakkor a kulturális háttér nagyon nem mindegy. Tehát amikor az ember egy esperarantó szót nem tud, akkor levesz a
+25:5725 minutes, 57 secondspolcról egy olyan nemzetközi kifejezést, amiről azt gondolja, hogy azt biztos megérti majd a partner. És megfelelő végződéssel, mit tudom én, valamikor
+26:0526 minutes, 5 secondsfőnév, a-val, amikor melléknév, ezt beteszi a szövegébe, és ha szerencséje van, akkor megérti a másikat. Tehát az
+26:1326 minutes, 13 secondseszparantó az embereknek nagyon jó, akik hasonló kultúrkörben vannak.
+26:1826 minutes, 18 secondsPéldául gondoljanak arra csak azért, aki nem tud ez perú, hogy ez hogy néz ki, hogy a lány szót azt úgy definiálták,
+26:2626 minutes, 26 secondshogy a Knábó, aki tud németült, ugye ő Knábé volt a eredeti a fiú, a Knábó,
+26:3326 minutes, 33 secondsmerthogy főnév, Mal Knabo alakja, tehát a az inverze, vagy ha tetszik a
+26:4026 minutes, 40 secondskomplementere, tehát gender ügyekbe nem megyünk bele, de hogy a Malknabbo, az így lett Esperantól szó.
+26:4726 minutes, 47 secondsValaki ezt ki tudja találni akkor is, ha esetleg nincs külön szava, vagy nem tudja, hogy hogy kell megnevezni a lányt, akkor így lehet definiálni más
+26:5526 minutes, 55 secondsfogalmakat is, hogy valaminek az ellentéte, főnév. Tehát ez nagyon jó, de a gép számára ez ugyanolyan emberi nyelv, mint a többi, legfelljebb a
+27:0427 minutes, 4 secondsmorfológiája egyszerűbb, amit hát azért a legtöbb nyelv esetében akkor is megoldottak. Hát láttuk, hogy a morfológia megoldható, hogyha sokkal bonyolultabb, mint az esperantó.
+27:1327 minutes, 13 secondsNa most nyilván, mint mondtam, ez sok nyelvű esetben nagyon vonzó. Most egy pillanat rájunk meg, gondoljuk el, hogy Egyesült Államokban vagyunk, pláne
+27:2027 minutes, 20 seconds50-es60-as évek. Az egy-eg egy nyelvű ország.
+27:2427 minutes, 24 seconds100 nyelvet beszélnek, mert ugye jönnek mindenhonnan bevándorlók, de mégiscsak ez csak az utóbbi év tizedeknek az
+27:3227 minutes, 32 secondseredménye, hogy a spanyol már olyan szinten van jelen, hogy már semmiképpre sem mondható egy nyelvűek, mégha hivatalosan az is. Hiszen nagyon sokan
+27:4127 minutes, 41 secondsspanyol ajkóak, sokkal többen, mint korábban lengyel, magyar, akármi, aki bevándorlók voltak.
+27:4627 minutes, 46 secondsTehát az Egyesült Államok ebben az időben, a hidegháborús időben egy nyelvű és csak az oroszra, kicsit a kínaira, de elsősor az oroszra koncentrál. Hol van
+27:5527 minutes, 55 secondsmég ilyen? Oroszország. Oroszország is akármennyire 100 nyelv van abban az országban, az akkori Szovjetunióban, az orosz volt az egy nyelv. Ha még
+28:0328 minutes, 3 secondselmegyünk oda, hogy Kína, akkor ott is sok nyelv van, de ott az írás, mint már az első órákon mondtuk, az megfogalmazza
+28:1028 minutes, 10 secondsazt, hogy szinte az egynyelvűség, az egyírásúság az közös. Tehát megint egy kultúrában csak egy dolog van. Japán,
+28:1728 minutes, 17 secondsjapánok nem beszélnek gyakorlatilag ma már ez sem igaz, de hosszú nem beszéltek abba az időre, pláne, hanem más nyelveken. Japán volt az egyetlen nyelv.
+28:2628 minutes, 26 secondsTehát ahol igazán kelete volt a gépi fordításnak Egyesült Államok Oroszország vagy Szovjetunió, Kínai és Japán, ott
+28:3428 minutes, 34 secondsegyszerűen egy nyelvűség volt. Tehát a multi sok nyelvű, sokkulturá dolog az csak Európába jöhetett létre, de
+28:4228 minutes, 42 secondsEurópaor még nem volt abban a helyzetben, hogy a gépi fordítással igazán versenyezzen ebbe a nagy hidegháborús játékba. Pedig ha már
+28:5028 minutes, 50 secondsháromnál több nyelvünk van, mint az elején is mondtam, akkor már nincs semmi gond. És nyilván amikor megindult a közös piac meg az európai közösség, ahol
+28:5828 minutes, 58 secondsegyre többször előjött az, hogy Európa nyelvei egyenlő jogúak, és ezekkel egyformán kellene válni, Európában jött erre először az igény, hogy ilyen
+29:0629 minutes, 6 secondsközvetítő nyelves fordítás legyen, ami hát végül is nem más, mint két darab egyszerű direkt fordítás. Forrásnyelvről
+29:1429 minutes, 14 secondsarra az interingvárok, ha jól van definiálva, és onnan le a másikra. Tehát ez ennyi. Annak körben, hogy kell elképzelni, hogy van egy ilyen
+29:2229 minutes, 22 secondsszerkezetünk, ami hát ez a mindenek mögött álló, amiben az van benne, hogy Jonesnek tetszik a film. A Jonesnak
+29:3029 minutes, 30 secondstetszik a film, azt leginkább a németre hasonlít, ha meg hát a franciára. Tehát, hogy úgy tűnik, hogy az, ha valaki nem
+29:3729 minutes, 37 secondsis tud ezeken a nyelveken, látszik, hogy hát a francia meg a német inkább a filmről beszél, hogy a film tetszik neki. A angol meg
+29:4629 minutes, 46 secondsolyan az ige, hogy a alanya van elől és a tárgya hátul. Ezt egy szerkezetbe is
+29:5229 minutes, 52 secondslehet ábrázolni, hogy van egy valamilyen mély
+29:5929 minutes, 59 secondseset, ez a tétel eset, amiben hát nem a aranyt állítmányt, hanem valami szemantikus reprezentációt rakunk bele,
+30:0730 minutes, 7 secondshogy ez az experiencer, akiről szó van, akivel történik ez az esemény, meg a be is az a dolog, amit ami amivel történik
+30:1530 minutes, 15 secondsaz esemény. És akkor tulajdonképpen a kettő együtt azt, hogy like player vagy ugye fallen, melyik az angol, francia
+30:2330 minutes, 23 secondsvagy a német ige, ami ott van, az már teljesen másodlagos. Hiszen ha franciául olvasom ki, akkor így fogom kiolvasni
+30:2930 minutes, 29 secondsezt a belső struktúrát, aminek a kvázi mély alanya, talán így lehetne magyarul
+30:3630 minutes, 36 secondsmondani, mély tárgya Jones meg a film, de kiolvasva magyarul is így olvassuk ki, hogy Jonesnak tetszik a film ilyen datibuszosan. És a
+30:4530 minutes, 45 secondsköztes szerkezet mindezt nem tárolja, csak azt, hogy a Jones az egy tulajdonnév és a a filmnek van egy névelője. De hogy ez a névelő melyik
+30:5430 minutes, 54 secondsnyelvben das vagy l vagy l, az már innentől kezdve a céljevi generálásnak a
+31:0131 minutes, 1 seconddó. Na most, hogy ezt az absztrakciót, ezt valahogy ugye, mint mondtam, el kellett veszteni, mert bár nagyon jól
+31:0831 minutes, 8 secondsnéz ki ez a háromnyelvű szerkezet, de ilyet azért nagyon nehéz minden nyelvre definiálni. Ráadásul tényleg minden nyelvre, hát sokkal egyszerűbb
+31:1631 minutes, 16 secondsnyelvpárnak a két nyelvével foglalkozni, mint fejbe tartani. Még van sok 100 másik, sok 10, akár csak egy-kettő is.
+31:2531 minutes, 25 secondsTranszfer fordítás, tehát abból indult ki, hogy ugye elindulunk fölfele, de nem megyünk csak egy valamilyen elemzési szintig, és azt átvissztük transzferrel.
+31:3631 minutes, 36 secondsTehát van egy faszerkezet, valami zárójelezett színkézett izénk, amit átviszünk egy másik zárójelzett színkézett izébe, és akkor majd azt
+31:4531 minutes, 45 secondskigeneráljuk a tulajdonal. Tehát ezt nagyjából úgy kell elképzelni, hogy van a először szavanként ugye végigmorpológiai elemezzük az egészet,
+31:5331 minutes, 53 secondsmondjuk egyértelmisítjük, ugye part speech tagging, tehát szófai egyértelmisítés, word sense, tehát
+32:0032 minutesvalami jelentés egyértelmű spirit 1, spirit 2 szétszedjük.
+32:0632 minutes, 6 secondsMajd a transzferk egyik szintje az, hogy kicseréljük a címkéket, vagy a legalsó
+32:1332 minutes, 13 secondsszinteket, ha tetszik, a a a levélelemeket a fában. Tehát egyszerűen sima most már ki tudjuk cserélni, mert ha egyértelmű, hogy spirit egy vag
+32:2132 minutes, 21 secondsspirit kettő, akkor tudjuk, hogy lélekről van szó, vagy ceszről, és akkor már azt cseréljük ki, és akkor ez a lexik, tehát a lexikális transzfer
+32:2932 minutes, 29 secondsezeknek a fácskáknak a leveleit cserélgeti. Majd szerkezeti transzfer, átvisszük az egészet a másik oldalra, és
+32:3632 minutes, 36 secondskiderül, hogy a az, hogy a film és Jones és kefallen, illetve a
+32:4532 minutes, 45 secondsmásik oldal Jones likes the film. Hát az melyik nyelvi szerkezetben hogy néz ki?
+32:4932 minutes, 49 secondsEz egy ilyen faamb itt az alany. Ez egy olyan fa, amiben ott már ki vannak cserélve a szavak is. És ilyen csonkok mennek át. És amikor kész vagyunk, most
+32:5832 minutes, 58 secondskigeneráljuk az egészet. Na most nyilván, hogyha ez nagyon lapos, tehát nagyon közel van a felszínhez, kicsit
+33:0533 minutes, 5 secondselemzünk csak csereslovák, szervát és így tovább közötti fordításnál kicsi lesz ez a magasság. Tehát a
+33:1333 minutes, 13 secondsháromszög nagyon mélyre van ütve a trapéz, a transzferonal, míg mondjuk lesznek olyan szemantikai szintű
+33:2133 minutes, 21 secondsfordítások, ahogy szinte már az interlingvánál vagyunk, annyira pici a háromszögnek a vagy hát ennek a tapéznek a vízintes szakasza.
+33:2933 minutes, 29 secondstávolabbi rokonságban levő nyelvek között magasabban vagyunk, közelieknél alacsonyan ebben a háromszögben. Hát így
+33:3633 minutes, 36 secondskell elképzelni a lexikális transzfert, hogy van a baloldali fa, ha ezt jól megnézik, abba van olyan, hogy na nézzük
+33:4433 minutes, 44 secondscsak, itt vége az van, hogy hogy any government depends on its supporters. Miért nincs
+33:5333 minutes, 53 secondskiíró? Nem tudom. Elvesztettem a mondatot. Tehát, hogy minden valamiről kormány ugye a
+34:0034 minutestámogatóitól függ. És akkor nyilván azt franciára lefordítva nyilván kicseréljük az enit ara, a government gora és így
+34:1034 minutes, 10 secondstovább a a megfelelő lexikális csere. De a két fa csak annyiban különbözik egymástól, hogy
+34:1934 minutes, 19 secondsis depending, mondjuk is dependent. Tehát az angolban az két szó, a francián dependent. Ez csak egy
+34:2634 minutes, 26 secondsszó, de azért még gyakorlatilag ezek lexikális cserék, és amikor megvagyunk, akkor kicseréljük a szerkezeteket is.
+34:3334 minutes, 33 secondsItt ugye visszamentünk a Jonesos példára. Tehát ha a Jones likes the fail mondat van, amiben a Jones az felszínen
+34:4134 minutes, 41 secondsalany a filmnek tárgya, akkor itt nem megyünk bele ebbe a mélyszerkezetbe, amit az intelliguál látunk, hanem egyszerűen azt fogjuk, hogy a franciában
+34:4834 minutes, 48 secondsmeg fordítva van az L2 széma lesz az arany, tehát a film lesz az arany és a
+34:5534 minutes, 55 secondsJones kap egy prepozíciót a Jones, tehát film Jones, az azt jelenti, amit a Jones like the film jelent. Csak ki kell cserélni a MP1-et meg az MP2-t.
+35:0735 minutes, 7 secondsPontosabban egy PP-t kell csinálni az MP1-ből, egy prepozícióval meg egy MP1-el. És akkor ez egy szerkezeti transzfer. Tehát a leveleket lexikális
+35:1535 minutes, 15 secondstranszfer, fa transzformáció szerkezeti transzfer és kész. És ilyen egyszerűnek tűnt ebből. Ezek a példák egyébként az
+35:2435 minutes, 24 secondsEurotra nevű európai fordítórendszerből 70-es években népszerű kísérlet volt, hogy talán valami ebből legyen valami.
+35:3335 minutes, 33 secondsEurópa erre jelentős pénzeket összpontosított, mint ahogy az esperantóra is, ezt még az elején is említettem, tehát volt egy ilyen
+35:4135 minutes, 41 secondsesperanto orientált intelligual gondolkodást sugalló gépi fordítórendszere a európai
+35:4935 minutes, 49 secondsközösségnek. az elhalt talán éppen a korábban említett az Eszpana aznek a
+35:5635 minutes, 56 secondsmozgalmi volt amiatt tehát nem tudományosokból, hanem hát egy kicsit túl hangsúlyozták az Esperanto szerepét
+36:0536 minutes, 5 secondstalán annál is jobban, mint amennyire valójában a technikai feltételek ezt lehetővé tették és akkor az elhalt, az Eurotra maradt, de hát nem lett nagyon
+36:1436 minutes, 14 secondssikeres. már az akkori európai közösség több nyelvével, több nyelvről több nyelvre csináltak farítórendszert.
+36:2236 minutes, 22 secondsÉs akkor megjelentek a még nem statisztikai, de alternatív megoldások, például a példaalapú farítás, hogy azt mondták, hogy azért van egy rakás példa
+36:3036 minutes, 30 secondsa szakszövegekben, amiket úgy kell farítani, ahogy tehát elő van írva. És milyen jó lenne, ha ezeknek lenne egy adatbázisa, és ha abban valamilyen csere
+36:3836 minutes, 38 secondstörténik, valami terminust lecserélnénk egy másikra mondott szerkezettre, akkor is ilyen marad. ismerőse ehhez. Hát nyilván ismerős, mert a múltkor a
+36:4636 minutes, 46 secondspárhuzamos korpuszoknál ilyenekről beszéltünk. Hát valami módon ugye a Forest valami analóg példát kellene keresni. Hát nyilván a stringek
+36:5436 minutes, 54 secondstávolsága az azért múltkor láttuk, hogy nem mindig vezet szemantikus eredményre, de ha megvan egy
+37:0137 minutes, 1 secondhasonló valami, azt is ki lehet dobni a célnyelvi adatbázisból, és akkor tulajdonképpen ilyen konzerveket fordítunk, és lehet, hogy lesz egy rakás
+37:0937 minutes, 9 secondsolyan mondatunk, amit konzervfordítással sokkal jobbat tudunk fordítani, mintha a gép sokat erőlködne. Tehát a példaalapú fordítás az hosszú ideig a levegőben
+37:1837 minutes, 18 secondsvolt. Nyilván akkor még a forómemóriák kevésbé voltak kifejlettek, és azt mondták, hogy hát azért ha ezt odaadjuk
+37:2437 minutes, 24 secondsa gépnek, már nem csak a fordítót támogatógépnek, hanem a gépi fordítást végző gépnek. Gépi fordítórendszer is
+37:3137 minutes, 31 secondstud ebből valami hasznot húzni, hogy vannak megfeleltetett példák egymással.
+37:3737 minutes, 37 secondsMost tulajdonképpen a metamorf rendszer, amit Magyarországon dolgoztunk ki, az egy ilyen hibrid jószág, amelyik ezt a
+37:4437 minutes, 44 secondsszabályalapot meg a példaalapot egy kicsit ötvezi. Tehát először úgy kell elképzelni, hogy ott ebben nem volt szótár vagy nyelvtan külön. Miért nem
+37:5237 minutes, 52 secondsvolt? Mert minden tárolva van, és a tárolt információnak a specifikussági szintje adja meg, hogy mélyek hívják
+37:5937 minutes, 59 secondshagyományosan őket. Tehát ha valaki hagyományosan egy ilyen rendszert mondjuk szabályalakúak hív, akkor sok benne a
+38:0838 minutes, 8 secondsszabály. Mi egy szabály? Egy ilyen leírásnak a viszonylag alulpecifikált formája. Tehát nem mondom meg, hogy melyik főnév, csak azt, hogy főnév. Nem
+38:1738 minutes, 17 secondsmondom meg, hogy milyen ige, csak azt, hogy ige. Tehát ezek a szabályok. De ha megmondom, hogy milyen ige, mert mondjuk egy konkrét igéről beszélek, mondjuk a
+38:2638 minutes, 26 secondsterü el, ugye, ha már az előbb ezt említettem, és akkor annak a vonzata a valahol terül el, a valahol viszont nem tartozik az igéhez, mint lexikális
+38:3438 minutes, 34 secondsegységhez. Azt majd aktuálisan fogjuk föltölteni, hogy a Duna két partján, vagy az Alföld keleti oldalán, vagy hol
+38:4138 minutes, 41 secondsterül el. Tehát akkor az ige az már egy specifikus dolog, hogy terül el, de előtte van egy szabad sztor, ha tetszik.
+38:4738 minutes, 47 secondsTehát ez már egy sokkal kevésbé szabály alakú dolog, mint mondjuk az, hogy alany állítmányt tárgy sorrend, hiszen
+38:5738 minutes, 57 secondsaz egy szabály, hanem hogy itt valamilyen félig specifikus, félig alpecifikált. És mondjuk teljesen konkrétan veszek egy példát, számítógép,
+39:0639 minutes, 6 secondsaz egy olyan nyelvi egység, ami teljesen specifikus. Nincs benne egy szabad paraméter sem. Ilyenkor őt szótári
+39:1339 minutes, 13 secondsegységnek tekintem. A valahol terü el az olyan szótár, amibe picit bejön a dinamika és a fordításnak a logikája, mert hát hogy hogy kell egy olyan
+39:2239 minutes, 22 secondsfordítani, ami fizikailag nincs ott. És egy teljesen általános szabály pedig teljesen alú specifikált elemekből,
+39:3039 minutes, 30 secondsaranyból állítványból, tárgyból vagy bármi ilyenből áll. Tehát, hogy a specificitási szint az határozza meg,
+39:3739 minutes, 37 secondshogy mi szabály és mi nem, illetve a hosszú, mert azt lehet mondani, hogy a szótárba java részt rövid elemek vannak, hiszen ha egy szó van, a szótárba, az
+39:4639 minutes, 46 secondsinkább szótári elem, akkor is, hogyha ezek lennének ugye a levelek az előbb látott transzferbe legalul. olykor azért
+39:5239 minutes, 52 secondsa Magyar Tudományos Akadémia az nem egy szóból áll, és lesznek még olyanok, amik nem egy szóból állnak. Tehát végül is lehetnek hosszabbak is, de javariést egy
+40:0140 minutes, 1 secondés kicsit, de mindenképpen elég specifikus. És ahogy bevezetjük a kevésbé specifikus elemeket, a vonzatot meg ilyeneket, már hasonlítunk a
+40:1040 minutes, 10 secondsnyelvtanra, és végül már csak ilyenek vannak, azok meg a nyelvtani elemek. Na most valójában ezek nem szabályok és szótári elemek, hanem úgy mondjuk, hogy
+40:1840 minutes, 18 secondsminták, tehát mintapárok vannak. mint tehát egy ilyen lexikális és vagy nyelvtani információ, és hozzátartozik
+40:2640 minutes, 26 secondsegy neki megfelelő lexikális és vagy nyelvtani információ. Ez az egyik nyelv, tehát attól párok, hogy van az egyik nyelven is valami leírva meg a másikon.
+40:3640 minutes, 36 secondsÉs ezek tulajdonképpen egymással meg vannak feleltetve. Ha ezek nagyon specifikusak, akkor végül is a számítógéphez tényleg a computer
+40:4440 minutes, 44 secondstartozik az angol oldalon. Ez nem kérdés.
+40:4840 minutes, 48 secondsÉs ahogy ezt a párokat egymásba tudjuk rakni, az lesz majd a fordítás. Tehát ahogy az egyik oldalon mi az elemzést
+40:5640 minutes, 56 secondsvégezzük, az elemzés tulajdonképpen az, aminek lépéseit a forrásoldalon megtesszük, de minden egyes elemzési
+41:0541 minutes, 5 secondslépéshez tartozik egy pár, egy másik nyelvi minta. És azokat is egymásra alkalmazom, nem föltétlen úgy, ahogy az
+41:1341 minutes, 13 secondsinput oldalon. Ha itt egy picit kiszabad szabadulni és visszaemékeznek a szemantikánál ugye a lambda absztrakciót
+41:2141 minutes, 21 secondsegy picit behoztuk. Tehát a lambda az az, ahol esetleg a lambda mögötti paraméter az nem csak a változó lehet,
+41:3041 minutes, 30 secondsilletve nem csak az lehet változó, amit mi a argumentunknak gondolunk, hanem akár a predikátum neve is. Tehát, hogy hova tesszük bele, melyik elem helyébe a
+41:3841 minutes, 38 secondsmásikat, az itt le lesz írva azzal, hogy az egyik oldalt, a forrásnyelvi oldalon, hogy alkalmazom a dolgokat egymásra, és az eredményét, hogy alkalmazom a
+41:4641 minutes, 46 secondscélnyelvi oldalon. Például az előbbi példában a Jones W filmet magyarul úgy kell csinálni, hogy a azt amelyik ott
+41:5541 minutes, 55 secondsvan, hogy Jones, azt a naknekes pozícióba kell majd betenni, és amelyik az nyilván a tetszikből következik, hogy tetszik valami valakinek az egy más
+42:0342 minutes, 3 secondsszerkezet, mint a valami valaki likes valamit. Ezt a kettőt úgy alakítjuk át, hogy ezen a szinten kvázi megjelenik a
+42:1142 minutes, 11 secondstranszfer, de a transzfer az eddig egy szekvenciális játékban egy következő szint volt. Itt pedig az elemzés folyamán jelennek meg a részanszferek.
+42:2142 minutes, 21 secondsTehát nem az történik, hogy leelemezzük, az elemzés eredményét transzferáljuk, majd kyalogoljuk laposra, hanem menet
+42:2842 minutes, 28 secondsközben alakul át minden. És ez az átalakulás, ez az átalakítás, maga a transzfer az elemzési időben jön létre.
+42:3742 minutes, 37 secondsÉs amikor vége az elemzésnek a forrásoldala, akkor melléktermékként a célszerkezet létrejön a másik oldalt,
+42:4442 minutes, 44 secondshogy mit kell mire, mint a lambdánál alkalmazni ahhoz, hogy a részszerkezeteket egymásra alkalmazva kiolvassam az eredményt.
+42:5342 minutes, 53 secondsTehát míg a közvetlen fordítás, ugye a visszaidézzük a korábbi áblát, ábrát, ugye itt a legalul ez a vonal volt, a
+43:0143 minutes, 1 secondközvetítő nyelves interlingvás, az ott ugye leföl a transzfer volt ez a furcsa.
+43:0643 minutes, 6 secondsÉs gyakorlatilag a metamorfó egy olyan elvet próbál megvalósítani, ahol a transzfer az elemlési elemzési lépések között jön létre. És amikor legelmeztük
+43:1543 minutes, 15 secondsaz egészet, tul ki tudjuk olvasni anélkül, hogy egy újabb lépés történne, hiszen nem a be a bemeneti oldalt, hanem
+43:2243 minutes, 22 secondsa mellette létrejött célnyelvi oldalt tudjuk így kigenálni. Erre lehetne demonstrációt csinálni. Ezt most sajnos
+43:3043 minutes, 30 secondsezen a online felületen nem lehet, mert arra most itt nincs mód, hogy megosszak egy másik képernyőt is ezzel egy idővel,
+43:3843 minutes, 38 secondsde valamilyen módon, akit érdekel, szívesen módját ejtem, hogy megmutassam.
+43:4343 minutes, 43 secondsEzt korábban mindig megmutattam, hogy ezt hogy kell elképzelni, hogy a metamorfó gyakorlatilag menet közben rakja össze ezeket a példákat és hozza,
+43:5043 minutes, 50 secondsvagy ezeket a fordításokat, és hozza össze a fordítást, még mielőtt egy külön fordítási lépés lenne magából az
+43:5843 minutes, 58 secondselemzésből. Tehát ez egy más elvű dolog, de olyan, mintha a transfert röptébe on the fly tudnám alkalmazni.
+44:0644 minutes, 6 secondsNa most ennek a rendszernek is, mint minden gépi fordító, szabályalokú gépi fordítónak a fő problémái azok, amikről már korábban mindenféle helyen
+44:1444 minutes, 14 secondsszintxzisnál, szemantikánál szót ejtettünk. Ez a fordításnál állandó probléma lesz. Tehát a lexikai több értelmiség, ez ugye itt megjelent a
+44:2344 minutes, 23 secondsspirit esetében is. Hát mi történik? Hát ott a minit ugye egy percben hat 60 másodperc van. A minit tehát percet jelent.
+44:3444 minutes, 34 secondsNa de ez pedig ez egy aprócska különbség a képek között. Itt amén itt már nem azt
+44:4344 minutes, 43 secondsjelenti, mint az előbb. És amikor feljegyzéseket készítünk, ahogy a
+44:5144 minutes, 51 secondstitkár munkájának is részehelyezéseket készíteni a különböző találkozókról. Hát itt amin az már erősen igen. Most
+44:5844 minutes, 58 secondsmondhatjuk azt, hogy a itt már lehet szófai egyértelműteni, de az előbb csak jelentés egyértelmesíteni lehetett volna. Amiről viszont megtanultuk, hogy
+45:0745 minutes, 7 secondsmeglehetősen drága művelet, tehát minden szónak, minden kontextusba az egyértelműsítésen nagyon nehéz. Tehát
+45:1445 minutes, 14 secondsez állandó probléma a gépű fordításnál az Péma. Másik a PP attachment, tehát a
+45:2245 minutes, 22 secondsPP kapcsolások, ugye a prepozíciós fráis.
+45:2645 minutes, 26 secondsHát ugye ez a híres mondat, amit mindig leírnak, hogy optimális esetben a szó tényleg csak azt jelenti, hogy látta
+45:3545 minutes, 35 secondsa lányt távcsővel, és akkor ugye magyarban mondtadik, hogy ez a távcsöves lányt, és akkor nincs semmi kérdés. De hát ha így fordítjuk le magyarra is,
+45:4445 minutes, 44 secondshogy lányt a távcsővel, akkor megmarad a többértelmiség. Tehát a férfi látta a lányt a távcsővel, és akkor megmarad az, hogy vajon a távcső a lánynál volt, vagy
+45:5245 minutes, 52 secondsvajon a távcső a férfiné volt, aki látott. Most mi tudjuk, hogy nagy esély van, hogy egy adott szituációban, ha
+46:0146 minutes, 1 secondmessze van a célpont, akkor nagy esélyel ő ő néz távcsőbe. Ha pedig látjuk, hogy ott van a lány ezzel, akkor nincs gond.
+46:1046 minutes, 10 secondsPersze ezt még tovább lehet ragozni, mert szokták ezt a mondatot úgy is, hogy the man the girl with a telescope on the hill. És akkor, hogy mi volt a domban? A
+46:1846 minutes, 18 secondsteleszkóp, a lány vagy én? Szinte reménytelen. És akkor nem mentünk vele abba a több értelmiségbe, hogy a szó az
+46:2546 minutes, 25 secondstermészetesen fűrészelt is jelent. És erre mindenféle mókás képi ábrázolás szokott lenni, hogy akkor egy hatalmas
+46:3346 minutes, 33 secondsnagy távcső kis recékkel és akkor a man se the girl. Szóval nyilván ezt most jókat nevetünk rajta mi emberek, de a
+46:4146 minutes, 41 secondsrendszer számára nem lehet tudni, hogy legfeljebb az, hogy gyakrabban szokott előfarulni, hogy ez látással kapcsolatos a teleszkóp is, valamint a fűrészel is,
+46:5046 minutes, 50 secondsmint tevékenység, de a gép ezt nem tudhatja, legalábbis a szabályalú fordítórendszerek világában nem tudja.
+46:5846 minutes, 58 secondsHát a strukturális többértelműségekkel is az a baj, hogy állandóan interferál a szemantikával, hiszen ebben a szerkezetben megint csak nem tudom
+47:0747 minutes, 7 secondsdemonstrálni, de talán mindenki tudja, hogy ez Csamskinak nem mindenki, de hogy most tudja, hogy Csamskinak a híres mondata.
+47:1447 minutes, 14 secondsItt nyilvánvalóan arról van szó, hogy az idő mint egy nyíl repül, de semmi
+47:2247 minutes, 22 secondsakadálya nem volna annak, hogy az angol összetett szó, ami ugye kettő darab főnév egymás után írva
+47:3047 minutes, 30 secondslogikájával, itten időlegyekről beszéljünk, time flies. És a time flies az olyan állat, ami többes számban van,
+47:3847 minutes, 38 secondsez az idől és szeretnek egy nyilat. Hát kicsit valószínű, hogy ez lenne a fordítása, de akár lehetne is. Ráadásul
+47:4547 minutes, 45 secondsa time az időzíti is, tehát felszólítóban is lehet ez, hogy time, felszólítalak, hogy időzíts legyeket a
+47:5447 minutes, 54 secondsmint egy nyíl. Na mondj nyílként vagy nyíl, úgy mint a nyíl. Tehát rengeteg butafítása is lehet, és nekünk csak egy
+48:0248 minutes, 2 secondsvan. És ha elsőre mutatjuk, akkor nyilván mindenkinek a idő úgy repül, mint a nyílvessző. ezt ezt a jelentést
+48:1148 minutes, 11 secondssugározzan. A jelentésről van szó. A szerkezeti több értelműség pedig az egyik jelentést preferálja, a másik kettőt kevéssé. És mi emberek vagyunk,
+48:1948 minutes, 19 secondslegalább kontextuálisan értelmezzük. Bár olyanfajta kontextus, amiben időlegyek vannak, vagy a legyeket időzíteni
+48:2748 minutes, 27 secondskellene, az nagyon specifikus, tehát az nekünk általában nem jut eszünkbe. Ez nagyon érdekes egyébként ez a probléma,
+48:3548 minutes, 35 secondshogy vannak olyan helyzetek, hogy a dolog jut eszünkbe, de van a probléma.
+48:4148 minutes, 41 secondsNa most a gépnek ilyen nincs, mert vagy nem ismeri a szabályt, és akkor nem jut az eszébe, vagy ismeri a szabályt és
+48:4848 minutes, 48 secondsakkor az eszébe jut. Tehát előkerül, mint alternatíva.
+48:5148 minutes, 51 secondsAz emberek rengetegszer találkoznak olyan helyzettel, amire azt gondolják, hogy egyértelmű, pedig valójában csak az agyunk szűr.
+49:0249 minutes, 2 secondsLehet, hogy már mondtam korábban, de az nagyon jól idejön az a kedvenc példám, hogy mindenki tudja, mit jelent az, hogy telefon. Hát na náhogy ne tudnák, hát
+49:1049 minutes, 10 secondshogy ne tudják. Hogy persze, hogy tudják. És akkor jön az a mondat, amit vagy mondtam, vagy nem, de ide nagyon passzol, hogy ez a pók minden
+49:1849 minutes, 18 secondstalpalatnyi helyett telefon. És akkor hirtelen leesik az a tantusz, hogy jó, hát én tudtam, hogy van ilyen igékősége, de az olyan ritka, hogy eszembe se jut.
+49:2849 minutes, 28 secondsTehát amikor megkérdeztem, hogy mit jelentet a telefon, akkor 100-ból 100anna hogy én tudnám, ott van a kezemben.
+49:3549 minutes, 35 secondsÉs amikor meg megjelenik az igekötőség, ezt is tudtam. Na most ilyen a gépnek nincs, mert vagy tudta és akkor áll Timefly, tehát vagy tudja, hogy van
+49:4349 minutes, 43 secondsolyan, hogy idől, ő úgy véli, hogy tudja, vagy nem, de nincs olyan, hogy egy kicsit kevésbé jut eszébe. Tehát
+49:5049 minutes, 50 secondsazért a for ezeknek a szabályokúgépi fordításoknak ez a statisztika hiánya, ez nagyon nagy hátütőjük. Utána viszont
+49:5849 minutes, 58 secondsnagyon nehéz megmondani, hogy mikor kell elővenni, ha mégis. Tehát a telefont csak akkor vesszük elő, ha pók van a környezetben, különben maradjon a kezünkben a jó szág.
+50:0850 minutes, 8 secondsTöbb szavas kifejezések. Persze az angolban rengeteg ilyen van.
+50:1250 minutes, 12 secondsUgye repülőgép, hogy flying plane, amiből hát a plane is lehet repülőgép, de nyilván ha ez a flying plane egy szó,
+50:2150 minutes, 21 secondsmerthogy ez maga a repülőgép, az világos, hogy akkor a mondatnak ez az egyik fordítása. De hát az, hogy a
+50:2850 minutes, 28 secondspléneknek, amik jó esetben szintén repülőgépet is jelenthetnek csíkot, a reptetése lehet, tehát hogy a többszöros
+50:3650 minutes, 36 secondskifejezéseket egyszerűen nem egybe kezeli, hanem külön. Senki nem mondja meg, hogy melyik a jó. És máris ott van egy olyan több értelmisége, ami az
+50:4450 minutes, 44 secondsemberek számára hát elősor, és akkor vannak az idiómák, amik hát valaki tudja, hogy így kell tönkremenni,
+50:5250 minutes, 52 secondsakkor semmi gond. Különben pedig kutyát meg mindenféle menést fordít. Tehát ha nem tudjuk, hogy van ez az idiom, ez kitalálhatatlan.
+51:0251 minutes, 2 secondsIme egy lexikalizálódott mondatszerkezet, mert valami has gone to
+51:0851 minutes, 8 secondsthe valami az egyetlen mozgó dinamikus elemennek most country írtuk, de
+51:1351 minutes, 13 secondsbármészet Peter is gun to the dogs. Míg a go-nak a gun formája az igeidőfüggő,
+51:2451 minutes, 24 secondsde a to the az mindig kell ahhoz, hogy a tönkremen és hát a tönk az már eleve a magyarban is egy ilyen furcsa szó.
+51:3051 minutes, 30 secondsLáttam egy ilyen ajtóra kiírva egyébként, hogy ilyen bol régi boltos ki szokta rakni a táblát, hogy hova ment, hogy pont pont pont mentem, és oda
+51:3851 minutes, 38 secondsbeírja, hogy a szomszédba vagy a boltba várjon öt percet, és valaki beírta oda, hogy tönkre. És nyilván ebben az a
+51:4551 minutes, 45 secondsvicces, hogy a tönkrementben már mi alig halljuk azt, hogy az egy valahova ment.
+51:5051 minutes, 50 secondsAzt így kell mondani. Tehát ők se hallják, az angolok se hallják ebbe a kutyát, azt mégis ott van. Ez az idioma.
+51:5551 minutes, 55 secondsÉs az az, amire a gépi fordítók, ha megmondtuk nekik, kiválóan tudják. Nem mondtuk meg nekik, semmit nem tudnak róla. kitalálhatatlan.
+52:0452 minutes, 4 secondsMegjegyzem az ember számára is. Tehát hány olyan szerkezet van, idegen nyelvban nem ismerünk és nem értjük addig, amíg rá nem jövünk, hogy ez egy
+52:1152 minutes, 11 secondsolyan idióa, amit tudni kell ahhoz, hogy na most a statisztikai fordításban ilyen típusú problémák csak részlegesen
+52:2052 minutes, 20 secondsfordulnak elő, mert hiszen mindig a gyakori környezetben levőket fordítjuk valahogy, és a kevésbé gyakoriak kevésbé
+52:2752 minutes, 27 secondsjátszanak szerepet. Ez egy jelentős különbség a szabályalapú gépi fordítással szemben. Tehát lehet látni,
+52:3552 minutes, 35 secondshogy a szabályalapú gépi fordításban a statisztikára nagy vágy van, de nem tudjuk beépíteni. Legfőbb azt mondjuk, hogy ne vegyük figyelembe, vagy
+52:4252 minutes, 42 secondscsináljunk egy olyan szótárat, amiben csak egy jelentése van a szónak, és a másik az itt nem játszik, de ha mégis, nem tudunk vele mit tenni. Hát a statisztikai fordítás az nem ilyen.
+52:5452 minutes, 54 secondsStatisztikai fordításban mondjuk azt, hogy a gyakoriságok nyernek. Ami sokszor van, az elég erősen
+53:0353 minutes, 3 secondsvalószerűsíthető, hogy úgy kell csinálni.
+53:0653 minutes, 6 secondsAlapja itt egy példa a spanyolangol fordításra az, hogy kiindulunk egy lehetséges fordítások halmazából. Tehát,
+53:1553 minutes, 15 secondshogy amikor én spanyol angolra fordítok, akkor angol-spanyol korpuszt használok.
+53:2053 minutes, 20 secondsTehát hogy mik milyen angol szerkezetekben jelent meg valami ilyesmi. És ez az összes olyan angol szerkezet, amire
+53:2853 minutes, 28 secondsmegjelent ilyesmi, mint az én fordítandó spanyol szövegem, azokat összeszedem, és abból kiválasztom valamilyen alapon a
+53:3553 minutes, 35 secondslegjobbat. Na hát a legjobb az persze mindig relatív. Tehát egy ilyen köztest valamire fordítok statisztikailag,
+53:4353 minutes, 43 secondsés aztán ezt a köztest fogom abból fogom kiválasztani a legjobbat. Na hát ezt kicsit matekosabb nyelvre levíve az
+53:5153 minutes, 51 secondstörténik, hogy van egy úgynevezett fordítási modellem. Megnézem, hogy milyen gyakran szokott ez az angol szerkezet olyan spanyol szerkezet lenni.
+53:5953 minutes, 59 secondsTehát, hogy mik azok a részszerkezetek, és nyilván nem az egész mondatról, hanem mindenfajta szó nesről esik itt szó. És akkor ha már
+54:0954 minutes, 9 secondsszó, akkor rögtön itt vagyunk, hogy az grramnak ismét egy nagyszerű felhasználásáról van itt szó. Tehát itt nem okosan fordítok, hogy majd egy
+54:1754 minutes, 17 secondsnyelvi szerkezetet átalakítok egy másikkal, hanem egymás után előforduló n darab szónak egynek, kettőnek, háromnak, négy ötnek.
+54:2654 minutes, 26 secondsMondjuk valami miatt a három-4 körül szokott ez tipikusan lenni. Ennek a fordítása az, ami egyik nyelvről a
+54:3454 minutes, 34 secondsmásikra átmegy. Tehát a mondatot engramokra bantom, átfedő enramokra, ugye ezt mindenki tudja. És akkor ezeknek az engramoknak mekkora az
+54:4254 minutes, 42 secondsesélye, hogy találta valahol a rendszer egy másik olyan szerkezetbe, ahol szintén volt megfelelőram. Tehát itt a
+54:5054 minutes, 50 secondsszóesek részfordításaiból összeállított, összekalapált broken English mondat jelenott meg.
+54:5954 minutes, 59 secondsEz a fordítási modell, tehát gramok enramokkal párba állítva gyakoriság szerint. A másik oldalt ebből a sokból kiválasztom azt, amit mondanak is ezen a
+55:0855 minutes, 8 secondsnyelven. Vagyis azt a sok részerkezetből összeálló fura törtangol mondatot
+55:1555 minutes, 15 secondsmegnézem, hogy mennyire mondják, mennyire van. Tehát ehhez egy egyelvű korpusz kell. Az előző egy két nyelvű spanyol angol
+55:2355 minutes, 23 secondsmondatpárokbal, farítási párokbal áró valami. Még itt azt kell kiválasztanom, hogy egy angol mondat mennyire létezik a
+55:3355 minutes, 33 secondsangol nyelvi használatban. Tehát van egy egynyelvű korpuszom, célnyelvi, ugye hát a célnyelv az lényeges, mert arra fordítok, a forrásnyelven nem kell
+55:4155 minutes, 41 secondssemmit tennem, a célnyelven mondanak-e ilyet. És akkor ott alul látszik, hogy ennek a két dolognak, a két nyelvű farítási modellnek és az egy nyelvű
+55:4955 minutes, 49 secondsnyelvmodellnek a kombinálása az, hogy hát valószínűségeket szorzok össze és a maximumát keresem. Méghozzá milyen
+55:5855 minutes, 58 secondsvalószínűségeket, ugye annak az esélyét, hogy ennek az angol mondatnak van ilyen spanyol fordítása, valamilyen gyakorissággal, valamilyen
+56:0656 minutes, 6 secondsvalószínűséggel, és ezt megszorzom azzal a PR-vel, azzal a teljes valószínűséggel, ami az egynyelű korpuszban van ilyen angol mondat, vagy
+56:1456 minutes, 14 secondsolyan szerkezet. Tehát kilapítom a lehetséges zűrös fordításokat, és kiszedem belőlük azt, amelyik a
+56:2156 minutes, 21 secondslegvalószínűbb, hogy mondták. Tehát, hogy ugye ha én a the Dog Barks mondatot akarom leforítani
+56:3056 minutes, 30 secondsmagyarra, amire azt szeretném várni, hogy a kutyaugat legyen az eredmény, akkor mindenféle részszerkezetek fordításában kijöhet az is, hogy kutya
+56:3856 minutes, 38 secondsugat a, amiben benne van minden az eredetiből, de a sorrend olyan, hogy ezt magyarul nem mondják. Tehát a célnyelven ilyen mondat nincsen, és ezek közül a
+56:4656 minutes, 46 secondslehetséges socialálták közül kell kiválasztanom a legjobbat. Tehát van három fő modelunk, a nyelvmodell, ugye
+56:5356 minutes, 53 secondsaz az egy nyelvű esetünkben egy angol string. Megmondjuk, hogy mennyire gyakori, hányszor szokott előfordulni.
+57:0057 minutesHa jó, akkor ez magas, rossz, akkor alacsony. Fordítási modell meg egy pár.
+57:0657 minutes, 6 secondsA két nyelv, ez egy feltételes valószínűség. Nyilván a két nyelv az automatikusan adja, hogy feltételes
+57:1357 minutes, 13 secondsvalószínűségnek két változója van. Tehát annak az esélye, hogyan mekkora esélye, milyen gyakran egymás forítása ez az gr
+57:2157 minutes, 21 secondsannak az gram-nak, amiből összekalapálom mondom valahogy a mondatot. És akkor van egy dekóderünk, egy dekóderú algoritmus
+57:2857 minutes, 28 secondsebből a kettőből meg az aktuális bemenő mondatból megtalálja azt a farítást, amire ez a szorzat, a egy nyelvű és a
+57:3757 minutes, 37 secondskétnyelvű feltételesnek valószínűséges szorzata a maximum. Ennyi az egész, ha jó a tanító korpusz, és hát egy adt is
+57:4457 minutes, 44 secondslétre kell hozni. Tehát ezt naiv base tételnek hívják. A base
+57:5057 minutes, 50 secondstétel lényege, hogy amikor egy e feltéve f-et akarok létrehozni, akkor megfordul
+57:5757 minutes, 57 secondsa kettő. Tehát az felt téve e valószínűségét szavazom az e valószínűségére. Most nem vezetjük le a base tételt, de nagyon lényeges, hogy
+58:0658 minutes, 6 secondsazért mondtam, hogy ezeknek az angol mondatoknak a fordításában benne volt az a spanyol, mert itt megfordult a dolog, pedig a spanyolról fordítok angolra. Ez
+58:1458 minutes, 14 secondsegyrészt lényeges, másrészt nagyon lényeges az, hogy itt elvileg még lenne egy hányados is, ami azért nem jön be,
+58:2258 minutes, 22 secondsmert a mi esetünkben nem játszik szerepet a forrásnyelv, tehát csak az számít, hogy a a feltételes valószínűség meg a célnyelvben előfordulás
+58:3158 minutes, 31 secondsvalószínűsége. A naivitás pedig ugye minden valószínűség számítási tétel tétel esetén azt jelenti, hogy az események, azok a valószínűségi
+58:4058 minutes, 40 secondsesemények, amikről itt szó van, azokat mi függetlennek tekintjük. független attól, hogy ők esetleg nem azok. Tehát minden egyes nyelvi jelenséggel úgy
+58:4958 minutes, 49 secondsbánunk el, minthogyha annak a mondatnak a másik felében nem volna egy olyan elem, ami szintén befolyásolja ennek a jelentését. Tehát ez csak a
+58:5658 minutes, 56 secondsleegyszerűsítés. Tehát a naiv tételek mindig az, hogy összeszorozhatóvá válnak a valószínűségek. Az együttes valószínűség nem más, mint a
+59:0459 minutes, 4 secondsvalószínűségek szorzata. Nyilván, ha ez ténylegesen független esemény, kockával dobok egyet, kijön valami, megint dobok
+59:1259 minutes, 12 secondsegyet. Semmi köze nincs, hogy mi jött ki az előbb. Ugyanúgy kijöhet bármik. Na most ez nyilván teljesen független esemény, mint ahogy a lottó számoknál
+59:2259 minutes, 22 secondssincsen másképp. Ugye nyilván csak arról van szó, hogy egy picit lotószámoknál a egyet kihúztak, akkor már csak 8090 és nem 90. De az esemény maga, hogy mit
+59:3059 minutes, 30 secondshúzok ki, az nem függ attól, hogy a múlt héten például mit húztak ki. Úgyhogy ezért kárlott kulcsokal kísérletőni.
+59:3759 minutes, 37 secondsViszont a események egy bizonyos halmazát tekinthetjük.
+59:4259 minutes, 42 secondsnaivan független eseményeknek, hogy így hatékonyabb eredményt érünk-e, hiszen nagyon bonyolult volna egy olyan valószínűség kiszámítása, ahol
+59:5159 minutes, 51 secondsfigyelembe kéne venni az esetleges együttes előfordulásnak a mindenféle furcsaságát, így diszunk valószínűségekként kezeljük őket. Egész
+1:00:001 hourötlet annan jön, hogy a 90-es években a beszédfelismerés kísérletezve arra jöttek rá, hogy a hang folyamhoz
+1:00:091 hour, 9 secondsbetűsorozatokat lehet rendelni, és ezeknek a gyakoriságait kezelték, és ugye az egyik
+1:00:171 hour, 17 secondsmédium maga a hangzó világ, semmi köze nincs a másikhoz, de össze tudták párosítani őket, és az IBM-nél volt egy
+1:00:241 hour, 24 secondsilyen kísérlet. És akkor híres Freddy Jelinek, aki egy cse származású amerikai volt, és aki ezt az
+1:00:321 hour, 32 secondsegészet bevezette, és hát az IBM híres tudósává lett, ötletére valaki azt mondta, hogy de miért kell az egyiknek hangzónak lenni? Mi van, ha mind a kettő
+1:00:401 hour, 40 secondsnyelvi? Egyik nyelv, másik nyelv és másik ugyanezt az ötletet, akkor máris lehet használni a
+1:00:471 hour, 47 secondsgépi fordításra. Na most nyilván az volt, hogy ha nincs elég anyag, nincs elég tanító anyag, akkor az a korpusz
+1:00:541 hour, 54 secondsméretét ugye nagyon abban az időben igazá nem voltak a korpuszok múva. Hát ez jelentősen befolyásolja korpusz
+1:01:021 hour, 1 minute, 2 secondsmérete a minőséget, akkor bizony baj van. Ezt magyarul Spars data problemnek hívják, vagy legalábbis nem magyarul, de
+1:01:101 hour, 1 minute, 10 secondsígy hívják. Tehát sosincs elég adatunk nekünk.
+1:01:131 hour, 1 minute, 13 secondsUgye nekünk csak annyi kell, hogy van egy fordítási modell, egy nyelvmodell, feltételes teljes hajszé dekodel, ami száma. Na jó, csak a korpuszen. Na most
+1:01:221 hour, 1 minute, 22 secondsugye hát minden nyelvről minden nyelvre ugyanakkora eséllyel lehet így fordítani, hiszen ha jó sok anyagunk van, akkor lehet. Na de nem mindenből
+1:01:291 hour, 1 minute, 29 secondsvan, hanem sok anyagunk. Tehát lehet, hogy amit a weben látunk angol-spanyol fordítást, német angol, kínai angol, azért van
+1:01:381 hour, 1 minute, 38 secondsstatisztikai fordítás. Ma már ugye a neurális egy picit más gépi tanuló rendszer. Ezeknek jelentőségem ezekből
+1:01:451 hour, 1 minute, 45 secondsóriási szövegkorpuszok van. Óriási az az anyag, amit már lefordítottak és amit tanításhoz fel lehet használni. Na most gondoljunk arra, hogy magyarról,
+1:01:541 hour, 1 minute, 54 secondslitvánra mennyi szöveget fordítottak le egyáltalán. Szép irodalmat, tudományt, bármit. Hát valamennyit, de nagyon nem elég ahhoz, hogy egy ilyen rendszert
+1:02:021 hour, 2 minutes, 2 secondsműködtessünk. Tehát hiába tudjuk, hogy jogilag a magyar és a litván egyforma jogú nyelv az Európai Unióban. Az
+1:02:101 hour, 2 minutes, 10 secondsbiztos, hogy az angol-némethez képest a magyar litvány sokkal kevesebb az összes összeszedhető anyag. Tehát a minőségi probléma Magyar Litvánnal az lesz, hogy
+1:02:191 hour, 2 minutes, 19 secondsnincs, ha mindent összeszedek, sincs megfelelő méretű korkuszunk.
+1:02:251 hour, 2 minutes, 25 secondsHát itt most ugye a fordítási modellről a háromról még egy pár szót. Tehát ugye azt szeretnénk, hogy
+1:02:321 hour, 2 minutes, 32 secondsa egyik nyelvről, a másik nyelvre legyen elég mintánk. Tehát, hogy nincs elég adat, az baj. Tehát amikor le akarok
+1:02:401 hour, 2 minutes, 40 secondsvalamit fordítani, és nincs be nem fordult elő a tanítókorkuszba, akkor arra csak ötleteim lehetnek, hogy hogy fordítom le, de semmiképpen se biztosan
+1:02:491 hour, 2 minutes, 49 secondsfordítok. Tehát amíg van egy előfordulás, vagy sok, azt lehet látni, hogy így fordítják az emberek, ha nincs, akkor a kontextusból lépünk. És pár éve
+1:02:581 hour, 2 minutes, 58 secondsvolt az az eset, amikor azt hiszem, hogy a Las Vegas Kecskemétre fordította a Google fordítója, és akkor jöttek a
+1:03:061 hour, 3 minutes, 6 secondsmindenfajta sajtósok látvánok leven ezt a kis geget, hogy hát na hát, na hát és hogy miért van ez? És nagyon nehéz elmagyarázni, hogy ezeknek a
+1:03:141 hour, 3 minutes, 14 secondstanítórendszereknek a befolyásolása szinte lehetetlen. Paraméterek mentén lehetséges, de azt nem tudom neki mondani, hogy ezt mindig így fordítsza
+1:03:231 hour, 3 minutes, 23 secondsle. Miért fordította úgy? Ez a string nem volt meg a adatbázisban, és keresett olyan környezetet, ami valamilyen okból
+1:03:311 hour, 3 minutes, 31 secondskifolyólag hasonlított rá, és akkor azt helyettesítette be. pedig sokkal egyszerűbb lett volna, mint a szabályalakúnál egyszerűen csak
+1:03:391 hour, 3 minutes, 39 secondskicserélni az egyik stringet a ugyanarra, és akkor megmaradt volna a Las Vegas Las Vegasnak, de hát nem maradt meg, mert olyan nem volt a
+1:03:471 hour, 3 minutes, 47 secondsszövegben, és helyette keresett valami, ami valamilyen különleges okba pont a talán a kecskemét volt.
+1:03:541 hour, 3 minutes, 54 secondsegyébként csak erre még egy mondat, hogy a metamorfóban ez úgy lett megoldva, hogy stringszerűen, tehát literálisan
+1:04:021 hour, 4 minutes, 2 secondsáthoztuk a le nem fordítandó részt, tehát a mondjuk a nagy betűs részt, a tulajdonneveket a másik oldalra, és
+1:04:091 hour, 4 minutes, 9 secondsutána megpróbáltuk elragozni a magyar nyelven az angolból kivett szöveget.
+1:04:141 hour, 4 minutes, 14 secondsTehát a Las Vegas áthoztuk magyarra, és megnéztük egy ilyen kiejtésgenerátorral, hogy hogy mondanák ezt ki magyarul. Las
+1:04:231 hour, 4 minutes, 23 secondsVegas így átírta a fejében, és ha azt valamilyen módon Las Vegasra gondoltam, akkor a Ra ra rag jött hozzá, és nem a
+1:04:311 hour, 4 minutes, 31 secondsre, mert hiszen ebbe a mély hangrendet találta meg a rendszer, tehát titokban kimondta, és
+1:04:391 hour, 4 minutes, 39 secondsfogalma nem volt, hogy mit fordít. Ez a szabályapónál lehetséges, tehát ügyesen hozza által nem fordítható részeket, tulajdonneveket, míg mondjuk a
+1:04:481 hour, 4 minutes, 48 secondsstatisztikai fordító mindig környezetet keres hozzá, és legfjebb valamilyen simítással, valami trükkel tudjuk a környezeteket az adott hiányzorsó
+1:04:571 hour, 4 minutes, 57 secondstávollétében kitalálni, és semmiképpen se azzal a logikával, amit mindenki jogosan vár el adott esetben a sajtó
+1:05:041 hour, 5 minutes, 4 secondsképviselő is. Tehát ezt kell valahogy létrehozni, ezt a fordítási modellt. Na, hogy történik az emation maximization algoritmussal?
+1:05:151 hour, 5 minutes, 15 secondsIlletve hát sokféleképpen történhet, de most ezt vesszük, mert ez a legalapvetőbb.
+1:05:201 hour, 5 minutes, 20 secondsÚgy indulunk el, hogy egy mondott párban, vagy egy ilyen nram párban minden kapcsolat azonosúly.
+1:05:291 hour, 5 minutes, 29 secondsTehát nem tudjuk, hogy mi minek a fordítása, és megpróbálunk valahogy valószínűséget, gyakoriságokat hozzárendelni.
+1:05:381 hour, 5 minutes, 38 secondsAztán iteráljuk, iteráljuk és szép lassan kialakul a dolog. Gondoljunk arra, hogy annak a mondatnak a fordítása, amit az imént mondtam, hogy
+1:05:471 hour, 5 minutes, 47 secondsThe dog barks, mekkora eséllyel az a kutya ugot, az csak akkor derül ki, ha tudjuk, hogy a dönnek mi a farítása a
+1:05:551 hour, 5 minutes, 55 secondsdognak, a barksnak, az dognak, a dogbarksnak és az barksnak. Tehát egy elemű, ahol az N1, ahol az N2, tehát két
+1:06:041 hour, 6 minutes, 4 secondspár meg a három szó együtt. Na most semmi akadálya nincs annak, hogy bármi
+1:06:121 hour, 6 minutes, 12 secondslegyen. Tehát mivel nem tud semmit a nyelvről, az adogbaraszak lehet az a kutya, a ugat, az a kutya, a kutyaugat, vagy az egész a kutyaugat a fordítása.
+1:06:241 hour, 6 minutes, 24 secondsÉs amíg nincs elég példa rá, addig nem tudjuk eldönteni, hogy melyik. Na, erre lesznek itt most példák. Tehát például egy francia-angol adatbázisban, amikor
+1:06:331 hour, 6 minutes, 33 secondsígy párba állítottuk, ugye a múltkor miért is szinkronizáljuk ezeket a szövegeket, hogy meglegyenek a mondatpárjaink. Tehát az egyikben előfordul villó, a másikbaan még the
+1:06:421 hour, 6 minutes, 42 secondshouse. És akkor ezt a kettőt, hát a la vagy a vagy a house, a mezon vagy a vagy a house. Tehát mindent mindennel
+1:06:491 hour, 6 minutes, 49 secondsösszekötünk. Ha az van, hogy lemon blue akkor a blue house, tehát már kék ház, akkor megint mindegyik mindegyikkel
+1:06:571 hour, 6 minutes, 57 secondsössze van kötve, vagy lafle, the flower össze van kötve minden mindennel. Na de
+1:07:031 hour, 7 minutes, 3 secondsez az első lépés. Aztán egy iterációs lépés után ebből a három példából azt látja, hogy a la az elég sokszor dőre
+1:07:121 hour, 7 minutes, 12 secondsfordul, míg a többi szó nem annyira erős. A LA egyébként az első két példa miatt lehet, hogy house, de nem annyira
+1:07:201 hour, 7 minutes, 20 secondserősen, mint a D, mert a három példából a D-re való fordítás a Lának az három esetet hoz. A houseera az kétszer,
+1:07:291 hour, 7 minutes, 29 secondsa bluera meg a flowerra meg csak egyszer egyszer. Tehát és van esély, hogy a mezon az house, de lehet, hogy the
+1:07:371 hour, 7 minutes, 37 secondshiszen a the house van az elsőben, másodikban is van the house. Tehát látszik, hogy vannak nagyon vastag élek, vannak közepesen, meg vannak végúyak. Ez
+1:07:451 hour, 7 minutes, 45 secondshárom példa. Pár ezer, pár 10000, pár száz, pár millió, 10 millió, 100 millió
+1:07:511 hour, 7 minutes, 51 secondspélda esetén ez a dolog óhatatlanul úgy áll össze, hogy biztos, hogy amit
+1:08:011 hour, 8 minutes, 1 secondgyakran szoktunk úgy fordítani, arra igen nagy esély van, hogy annak tényleg az is a fordítása, de semmi ész, ez csak a gyakoriság. És nézzük meg a fölső
+1:08:091 hour, 8 minutes, 9 secondsképen a láthatók ezek egyre vastagabban jön elő, hogy a laison és a house az egyre vastagabb lesz. Többiek halványok
+1:08:171 hour, 8 minutes, 17 secondslesznek és szép lassan kivesszük a gyér vékony éleket. Marad ami alul van.
+1:08:241 hour, 8 minutes, 24 secondsAakezonnak a satöbbi, a blueek a blue a fordítása és így tovább.
+1:08:311 hour, 8 minutes, 31 secondsMost nyilván ez egy viktuta példa volt, pláne egyszeri példa, pláne arról is beszélve, hogy nem feltétlen szavakat, hanem engramokat felejtettünk meg
+1:08:381 hour, 8 minutes, 38 secondsegymáshoz. De a logikája, hogy ezt érzékeltessük, az ez, hogy sok sok sok előfordulás esetén kialakulnak a vastag
+1:08:451 hour, 8 minutes, 45 secondsélek, és így tudom meg, hogy minek mi a fordítása. Megjem, valószínűleg mi is így csináljuk emberek, hogy annyiszor halljuk, hogy tudjuk, hogy ez így van.
+1:08:541 hour, 8 minutes, 54 secondsÉs akkor látjuk, hogy mekkora a gyakoriság. Hány példából hányszor fordult elő a la zökként? A lö szinténként? Tehát attól, hogy angolban
+1:09:021 hour, 9 minutes, 2 secondscsak egy név elő van, a franciában meg kettő lehető mindegyiknek a farítása egy feltételes valószínűség.
+1:09:081 hour, 9 minutes, 8 secondsA mezon houseént sokkal gyakoribb, hiszen a blade blueént is így tovább. És akkor kijön a gyakoriság, hogy hányból hányszor szokott lenni. Így becsüljük
+1:09:171 hour, 9 minutes, 17 secondsmeg az egyes paramétereket. Tehát az expectation maximization nem csinál mást, mintogy a példákban a mondatpárok
+1:09:251 hour, 9 minutes, 25 secondspéldájában való együttes előfordulásnak a erejét mutatja, hogy hányszor szokott ki kivel együtt előfordulni.
+1:09:341 hour, 9 minutes, 34 secondsMost a szószintű szinkronizálás, hogy mi minek a fordítása, azért nem megy, mert látjuk, hogy egyrészt vannak szavak, amiket nem fordítunk le a másik
+1:09:421 hour, 9 minutes, 42 secondsnyelvben, van ami több szóra, van ami több szóból lesz egy szó, van amit nem fordítunk egyáltalán, van amit beszúrunk, attól függ, hogy most melyik irányba megyünk angolba, francia é
+1:09:511 hour, 9 minutes, 51 secondsfranciából angol irányba. Tehát azért szavakat nem lehet szinkronba állítani, csak szó csoportokat, esetleg egy szóval, de azért azt lehet mondani, hogy
+1:10:001 hour, 10 minutesvannak olyan szavak, amit egy másik nyelv sok szóval fejezünk ki. Viceverza.
+1:10:051 hour, 10 minutes, 5 secondsÉs akkor ezek a megfeleltetések szószinten így néznek ki. Nagyjából ha az gramok most egy tehát unigram indulás
+1:10:131 hour, 10 minutes, 13 secondsvan, minden szónak mi felel meg a másik nyelven. Hát a baloldali egyszavaknak megfelelnek egy vagy több szavak a másik
+1:10:201 hour, 10 minutes, 20 secondsnyelven. Na most szép lassan kialakult az, hogy nem kell itt szavakban gondolkodni, hanem elég a frázis nekünk.
+1:10:271 hour, 10 minutes, 27 secondsFrázis az ugye nem a nyelvészeti értelembe vett valami, hanem inkább olyanfajta engramok,
+1:10:331 hour, 10 minutes, 33 secondsamik gyakran fordulnak együtt elő. És mivel ez így elég macerás a szószinten, amit az előbb láttunk, hogy kitörölni,
+1:10:421 hour, 10 minutes, 42 secondsbeszúrni, vegyünk nagyobb egységeket, úgy szegmentáljuk, amik olyan nesek, amik úgy együtt szoktak előfordulni,
+1:10:481 hour, 10 minutes, 48 secondsgyakran előforduló szósorozatok. És akkor ezeket fordítjuk le. És akkor nem kell megmagyarázni, hogy a a N Canada az
+1:10:561 hour, 10 minutes, 56 secondsin Canada, de ha mondjuk a conference az pedig to the conference, tehát mert a cba benne van a cu is, meg a névelő is.
+1:11:041 hour, 11 minutes, 4 secondsCuder, csak a németbe ezt egy szóba írják. Nem érdekes. Vagy a flag az mit tudom én ebben az értelemben will fly,
+1:11:141 hour, 11 minutes, 14 secondstehát két szóvá fordul. Tehát ilyen nneseket kapcsolunk össze. Ez teljesen olyan, mint a szavak, csak előtte ugye a
+1:11:211 hour, 11 minutes, 21 secondsa bemenet szegmentálása gyakori egységekre történik, és a gyakori egységek fordulnak le. Ez egészen
+1:11:281 hour, 11 minutes, 28 secondsszélsőséges formában van ma jelen a neurális rendszerekben, de erről majd máskor.
+1:11:351 hour, 11 minutes, 35 secondsNa most akkor azok, amik olyan fázisok, amik nem szedhetők szét alkatrészeikre, idiomatikusak, nem kompozicionálisak,
+1:11:431 hour, 11 minutes, 43 secondsazok is fordítottuk, azok egyben maradnak. Tehát a gun to the dogs így mint szerkezett a tönkrementre fordul le
+1:11:521 hour, 11 minutes, 52 secondsés nem kell vele vacakolni hogy mik a részei. Na most mivel több szövegünk van, annál több ilyen gyakran előforduló, tehát ha mindig azt látom,
+1:12:001 hour, 12 minuteshogy a gun to the ducks az egy nagy gyakori szerkezet, akkor azt egybe fogom akarni leforítani. De ez csak akkor látom, ha nagyon sok adat van, hiszen
+1:12:081 hour, 12 minutes, 8 secondsnagyon sok kell ahhoz, hogy ez elég gyakran forduljon elő. Még mondjuk a benne levő szavakat a túl megadaj az nagyon sok fordul elő. magában. Most a
+1:12:171 hour, 12 minutes, 17 secondsmásik a nyelvmodell ugye az egy argumentumó, az egy valószínűségi változást változó tartalmazó, hogy
+1:12:251 hour, 12 minutes, 25 secondsszokták-e mondani ezen a nyelven. Hát nyilván olyan jó szövegeket kell mintának, tanítómintának használni, amiben azok a gyakori dolgok, amik
+1:12:341 hour, 12 minutes, 34 secondskellenek, azok benne vannak. És hát nyilván itt is triggalumokkal közelítünk. Tehát például ugye lehet tudni, hogy a The Green Witch, amit az
+1:12:431 hour, 12 minutes, 43 secondselső valószínűség itten az utolsó előti sorban mutat, az gyakoribb, mint a The Witch Green szerkezet, mert hát ugye az
+1:12:511 hour, 12 minutes, 51 secondsazt mondja, hogy the green megelőzi a beachet azon a bal oldalon, és The Witch megelőzi a green. Tehát, hogy trigramokból, hogy másik kettő után
+1:13:001 hour, 13 minutesmennyire valószínű az, ami most következik, mennyire gyakori volt az adatbázisban. És akkor nyilván a
+1:13:071 hour, 13 minutes, 7 secondsa Witchnek nagyobb a gyakorisága a The Green után, mint a Greennek a The Witch után.
+1:13:121 hour, 13 minutes, 12 secondsTehát szépen a web vagy bármilyen szövegek engramjait földolgozzuk és azt tesszük nyelvon mellé. Na most ugye
+1:13:211 hour, 13 minutes, 21 secondserről említettem, hogy nem szükségszerű, hogy legyen elég, mint a mint ahogy a Las Vegasból se volt. Tehát ehhez óvatatlan, hogy a simítást mint ötletet
+1:13:291 hour, 13 minutes, 29 secondskell használni. Tehát hogyha nem volt ilyen, hogy a bármely szót követni a lesz, és aztán azt meg a Vegas, tehát
+1:13:361 hour, 13 minutes, 36 secondshogyha ilyen nem volt, hogy valami lesz és utána Vegas jön a szövegekbe, akkor megnézzük, hogy kisebb egységekből összejön-e. Hát általában ebből se.
+1:13:461 hour, 13 minutes, 46 secondsTehát ugye itt a X meg az Y meg a Z egymás utánja nincs meg. Ha nincs ilyen trigramunk, akkor abból indulunk ki,
+1:13:531 hour, 13 minutes, 53 secondshogy jó, hát ha nincs, akkor viszont hátha van xy, amit a z követ, de ha nincs ilyen, akkor a z ami az y-t
+1:14:011 hour, 14 minutes, 1 secondköveti, és hogyha ilyen sincs, akkor a z önmagába, és így ezekből a egyre kisebb egységekből hát kijön egy olyan
+1:14:091 hour, 14 minutes, 9 secondsgyakorisági szám, ami akkor is ad valamit a előfordulási gyakoriságra, ha valójában a trigram magas sose fordult
+1:14:181 hour, 14 minutes, 18 secondselő, csak a trigram bigram része, vagy az unigram része egyik másik és így valahogy megpróbáljuk közelíteni a
+1:14:261 hour, 14 minutes, 26 secondstriggram tényleges gyakoriságát, de nagyon sokszor nem sikerül. Ezért volt a vegasz kecskemét.
+1:14:331 hour, 14 minutes, 33 secondsNa most a tulajdonneveket már említettem az előbb, hogy azokat nem tudjuk másolni, nem tudjuk transzliterálni, tehát mit tudom én cirőből vagy kínaiból
+1:14:421 hour, 14 minutes, 42 secondsáthozni. De az nagyon nehéz, ha nincs a szótárba szótármasd a korpuszomban olyan elem, akkor azt nagyon nehéz megmondani,
+1:14:491 hour, 14 minutes, 49 secondshogy őt hogy kell a másik nyelven megjeleníteni. Tehát a szótárok, ez annyira igaz, hogy próbáltunk ilyen
+1:14:571 hour, 14 minutes, 57 secondsszótárakat hozzávni statisztikai rendszerhez.
+1:15:011 hour, 15 minutes, 1 secondLaki Lászlód doktoram, korábbi doktorandus visuszon disszertációjában volt erről szó. És ugye nagyon nehéz kísérletek, hogy
+1:15:091 hour, 15 minutes, 9 secondshozzáadunk szótárat, mert azt gondoljuk, hogy az sokat segít majd, hogy akkor megtanulja. De valójában a szótári egységekben nincs kontextus, tehát azért
+1:15:171 hour, 15 minutes, 17 secondsnem tudta jól megtanulni a tanulórendszer, mert nem egy nagyobb egységet adtunk neki, hanem egy szótárat. És bár hozzávtuk a szótárat, mint megfeleltetési párokat a
+1:15:261 hour, 15 minutes, 26 secondsstatisztikai rendszer, ez nem lett tőle okosabb. Most ugyanez igaz a számmal alkotott kifejezésekről, tehát minden ilyen name identitérről, amiről már volt szó, dátumról, mennyiségekről.
+1:15:361 hour, 15 minutes, 36 secondsEzt nagyon nehéz belerakni, hiszen fölsorolni nem lehet őket. Így aztán mintát meg január
+1:15:431 hour, 15 minutes, 43 secondsszóként szerepel, de 01-ként már annyiféleképpen szerepel a 01 a szövegekben, hogy azt már nehéz parítási mintának odaadni.
+1:15:531 hour, 15 minutes, 53 secondsHát általában a főnévű csoportokat, ezek sokszor tartalmaz ilyen tulajdonnévtípusú vagy némtípípusú
+1:16:001 hour, 16 minutesdolgokat. Hát ezeket valahogy ki kell emelni és előre kell feldolgozni. Tehát megjelennek a hibrid rendszereknek a
+1:16:071 hour, 16 minutes, 7 secondsmegjelenik a hibrid rendszerek igénye, hogy hát egy picit bele kéne nyúlni a szövegbe, és akkor utána már a statisztikai forító jöhet. És erre volt
+1:16:161 hour, 16 minutes, 16 secondsa matrix projekt, az az egyik ilyen nagy európai erőfeszítés, aminek érdekessége, hogy minden nyelvcsaládból választottak
+1:16:241 hour, 16 minutes, 24 secondsgépi fordító rendszerbe nyelvet, és a magyar is bekerült. Ám olyan nehéz volt a akkori körülmények között ezzel a
+1:16:331 hour, 16 minutes, 33 secondshagyományos statisztikai fordítóval a magyarra jó minőséget kihozni. Szembe a
+1:16:401 hour, 16 minutes, 40 secondsangol, ugye német, mint germánnyelv.
+1:16:451 hour, 16 minutes, 45 secondsNeolatin nyelvek, szlávnyelvek sem volt éppen benne, egészen hasonló eredményeket adtak. De a magyar maga agutinálóvoltával annyira kilógott
+1:16:541 hour, 16 minutes, 54 secondsebből, hogy a romatrix fordításánál azt mondták, hogy hibrid ide vagy oda, de ha magyar nem volna benne, akkor nem rontanák le a numerikus értékeket
+1:17:021 hour, 17 minutes, 2 secondsannyira a mindenfajta statisztikák. És ugye hát az uniós vezetésnek megmutatni egy ilyet, hogy magyarról semmire se megyünk, ez nem túl szerencsés. Tehát
+1:17:101 hour, 17 minutes, 10 secondsóvatos politikai okokból a gromázius pluszba a magyar már nem került bele, mert olyan eredményeket adott az a
+1:17:171 hour, 17 minutes, 17 secondsbizonyos blő ö szám, amit a múltkor a végén így megemlítettünk, hogy az előfordulásoknak, a rész
+1:17:261 hour, 17 minutes, 26 secondselőfordulásoknak a mindenféle gyakoriságával próbálják elemezni a fordítást. és a magyar bármilyen nyelvről vagy bármilyen nyelvről fordítottuk, annyira gyengecskes
+1:17:341 hour, 17 minutes, 34 secondsszámokat adott, hogy az szembe tűnő volt. Tehát a magyar kimaradt ebből. Na most megjelentek azok az alternatív
+1:17:421 hour, 17 minutes, 42 secondselképzelések, hogy talán nem hibrid rendszereket kéne építeni, hanem úgy kéne összekapcsolni rendszereket, meglevő rendszereket, hogy mindegyik a
+1:17:501 hour, 17 minutes, 50 secondsmásikkal összekapcsolva elmondhassa a saját véleményét. És ezt mind odaadjuk a felhasználónak. Tehát nem egy fordítást adni. Ugye nyilván ez nem egy
+1:17:581 hour, 17 minutes, 58 secondsszövegfordítás, hanem egy szövegértelmezési környezetben lehetséges, hogy vannak erre a nyelvpára más rendszerek. Adjuk oda mindnek az
+1:18:061 hour, 18 minutes, 6 secondsoutputját ugyanarra az egy inputra, és majd a felhasználó ezt kitalálja.
+1:18:111 hour, 18 minutes, 11 secondsRáadásul akkor hoztuk létre a webfaritás.hu mai napig is működő oldalt, amiben hát a kiindulás az angol-magyar magyar-angol
+1:18:201 hour, 18 minutes, 20 secondsfordítórendszer volt, de megkerestük Európában azokat a angol nyelvre vagy angol nyelvről fordító kollégákat. más
+1:18:281 hour, 18 minutes, 28 secondsországban, akik az fordításaikat az angolra, illetve az angolról össze tudták kötni technikailag a milyenkel.
+1:18:351 hour, 18 minutes, 35 secondsÉs akkor mi magyarról angolra, angolról célnyelvre mondjuk Litvára forítottunk, vagy onnantól angolra és vissza mi
+1:18:421 hour, 18 minutes, 42 secondsmagyarra. Tehát egy olyan logikával, amiben a magyar a központi helyen állt, mindenféle nyelvpárokat létrehoztunk,
+1:18:501 hour, 18 minutes, 50 secondsami nyilván hát már egy nyelvpár is nagyon rossz tudott lenni. A ilyen szekvenciális kapcsolatban még sokkal rosszabb. Ennek ellenére ez volt a
+1:18:581 hour, 18 minutes, 58 secondslegfélravezetőbb megoldás, hiszen arra már valószínűleg nem lett volna senkinek anyagi támogatása, hogy a magyar svédre
+1:19:061 hour, 19 minutes, 6 secondsvagy görögre lefordító rendszert kidolgoztasson. Még az angolra se volt igazán pénz, de ezt megoldotta.
+1:19:141 hour, 19 minutes, 14 secondsEz a kis magáncég meg mindenféle projektekből sikerült összerakni annyit, hogy ez létrejött. Na de így, hogy így technikailag összekapcsoltak,
+1:19:221 hour, 19 minutes, 22 secondstulajdonképpen egyfajta olyan szolgáltatást hoztunk létre, hogy olyan nyelvekre is fordítottunk magyar gondol magyarra, amikre nem volt fordítórendszer.
+1:19:311 hour, 19 minutes, 31 secondsÉs amikor ezt tovább vittük az IT Translate for EU-ra, mi hát az Európai Uniónak a nyelveire mutattuk meg, hogy gyakorlatilag nem a magyar tesszük
+1:19:401 hour, 19 minutes, 40 secondsközépre, hanem a bármelyik nyelvet, akkor bármelyikről bármelyikre az angolon keresztül lehet fordítani, és ez nem volt akkor példa nélküli, hiszen az
+1:19:481 hour, 19 minutes, 48 secondsakkori Google fordító is ilyen áttítás fordítást használt,
+1:19:541 hour, 19 minutes, 54 secondsrelé fordítást, ahogy ezt a igazi élő emberi fordításnál is csinálják.
+1:19:591 hour, 19 minutes, 59 secondsegyébként csak egy záróeles megjegyzés, hogy hogy a ez a fajta fordítás, hogy először a
+1:20:061 hour, 20 minutes, 6 secondsmondjuk egy angolra valamilyen közvetítő nyelvre fordítok, azért az emlékeztet arra, amit az interlingvánra mondtunk, hogy először lefordítjuk a közvetítő
+1:20:131 hour, 20 minutes, 13 secondsnyelvre és arról a célnyelvre. Most nyilván az angol nem egy igazi közvetítő nyelv, hiszen ő az egyike a nyelveknek,
+1:20:201 hour, 20 minutes, 20 secondsde azért a gépi fordítás helyzetében azt biztosan ki lehet mondani, hogy angolra azért nagyon sokan készítenek fordítórendszert, és ez
+1:20:291 hour, 20 minutes, 29 secondsangolról fordító, tehát ez elérhető és egyetlen lehetséges. És hogy emberek esetében is ez működik. volt egy konkrét
+1:20:371 hour, 20 minutes, 37 secondseset Strasburgban, amikor valami Európa tanácsi esemény kapcsán Lettország és Magyarország között egy
+1:20:461 hour, 20 minutes, 46 secondsvita alakult ki, de nem volt magyar lett, lett magyar fordít tolmácsolás, hanem mindössze egy ilyen relé, tehát a
+1:20:541 hour, 20 minutes, 54 secondsmagyar magyart lefordították angolra, vagy a magyar angolul fordított, az angolról pedig letre és vissza. És ugye az a probléma, amit már többször
+1:21:031 hour, 21 minutes, 3 secondsjeleztünk a lexikális transzfernél, illetve a szófai egyértelmiségnél, megjelent az a probléma, itt assasszem
+1:21:101 hour, 21 minutes, 10 secondsakkor volt arról szó, ez egy korábbi időszak, amikor még a letnyelv nagyon nagy veszélyben volt, hiszen letországban több volt az orosz nyelvű,
+1:21:191 hour, 21 minutes, 19 secondsmint a lett, és hát ugye szerették volna a lettet egyértelműen ezt, hát hogy mondjam, úgy államnyelvé alakítani, hogy
+1:21:261 hour, 21 minutes, 26 secondsvalóban mindenki lettül beszél, és akkor mindenféle törvényeket hoztak, amiben hát óhatatlan, hogy a nem lett
+1:21:341 hour, 21 minutes, 34 secondsanyanyelviek háttérbe kerültek, de ez az egész szándék most ne menjünk bele a politikába. Ez nyilván arra irányult, hogy ne elkerüljön domináns helyzetbe
+1:21:421 hour, 21 minutes, 42 secondsismét az orosz, hanem maradjon a na de voltak ott magyarok is ebbe az országba.
+1:21:461 hour, 21 minutes, 46 secondsÉs ezért a magyar fél interpellát is jelezte, hogy ő ezt föl van egy kicsit háborodva azon, hogy
+1:21:541 hour, 21 minutes, 54 secondsa magyarok tulajdonképpen hát így mivel nem lett ország a hazájuk,
+1:22:011 hour, 22 minutes, 1 secondki vannak véve bizonyos törvények hatálya alól, pedig hát ez nem jogos. És a lényeg az volt, hogy a magyarok
+1:22:091 hour, 22 minutes, 9 secondsfolytanosan a hazátlanságra utalva fordították angolra, fordítatták angolra azt, hogy home lesz. És a homeless a
+1:22:171 hour, 22 minutes, 17 secondsmásik oldal pedig úgy jelent meg, mint cseles. És állandóan tiltakozott a Litván fél, hogy de miért lennének a magyarok ilyenek, mert ő meg nem tudta, hogy az angol fordítás eredetie mi volt.
+1:22:271 hour, 22 minutes, 27 secondsTehát az angolban home lesz egy, vagy home egy lesz és a home 2 lesz összecsúszott érthető okokból. És ez a LEDben is, meg a magyarban is két szó.
+1:22:351 hour, 22 minutes, 35 secondsviszont amikor rosszul fordítják, akkor nem tudják, hogy a közvetítő nyelv okozza ezt a problémát. Tehát még emberi tolmácsolásnál is, amihez kiderült, hogy
+1:22:431 hour, 22 minutes, 43 secondsszó nincs arról, hogy utcára tenék a magyarokat pusztán, csak a abba az értelemben hazátlanok, ahogy a magyar eredetilegre gondoltak, akkor mindenki
+1:22:511 hour, 22 minutes, 51 secondsmegnyugodott. De hát van ilyen, hogy a reléfrítás az gondokat okoz. Hát nyilván itt is okozott. Ám ha van 2 3 5 ny
+1:23:011 hour, 23 minutes, 1 secondfordítórendszer különböző nyelvpárokból, amik az outputot kiadják, ezen az translate felületen meg lehetett nézni, hogy miket csinálnak a
+1:23:081 hour, 23 minutes, 8 secondsfortítórendszerek, és abból a néhány mondatból kikalkulálhatta az ember a saját fejébe, hogy mi is az igazi fordítás.
+1:23:151 hour, 23 minutes, 15 secondsEgy másik nagyon fontos irány, hogy ami sokszor megjelent, ez a post editing, tehát az utószerkesztés, hogy valamit
+1:23:221 hour, 23 minutes, 22 secondsfordít a rendszer, és utána ezt emberek kézzel átjavítják. Most erre mondhat sok fordító, hogy jobb, ha én fordítom, akkor jól fordítom. Hát egy javítgatás
+1:23:311 hour, 23 minutes, 31 secondsaz csak foltozás. Viszont az is igaz, hogy ezt az utószerkesztést is lehet statisztikailag támogatni. Tehát, hogy
+1:23:391 hour, 23 minutes, 39 secondselég sok javítást megtanítunk. Tehát először fordul valamiről valamire, a célnyelven rosszul fordul, utána
+1:23:461 hour, 23 minutes, 46 secondskijavítják javított célnyelvre, és arra is rátanítunk egy rendszert, hogy egy sima gépi fordítási output, és az ember
+1:23:541 hour, 23 minutes, 54 secondsáltal megjavított gépifordítási output, hogy viszonyul egymáshoz, ott is lehet egy statisztikai tanítást csinálni.
+1:24:001 hour, 24 minutesTehát megtanítjuk a sok futószerkesztés mintájára, hogy hol kell belenyúlni abba, amit egyébként rosszul fordított a rendszer.
+1:24:071 hour, 24 minutes, 7 secondsEzek nagyon ugye gyakorlati használati irányából mutató dolgok. És ez mindaddig tartott, míg meg nem jelentek a neurális
+1:24:151 hour, 24 minutes, 15 secondsmodellek. Na most a neurális modellek nem csak a farításba, hanem a nyelvtechnológiai, illetve a szoftverilág minden szintjén
+1:24:221 hour, 24 minutes, 22 secondsmegjelentek. Egy olyan 10 éve pontosabban sokkal előbb itt voltak, csak használható módon, nagy méretű anyagokkal, nagyméretű korpuszokkal
+1:24:301 hour, 24 minutes, 30 secondshasználható módon. 10 éve elindult a világ a neurális hálósfítás felé. És innentől kezdve a gépi tanulást, a
+1:24:391 hour, 24 minutes, 39 secondshagyományos statisztikait lecserélték a neurális tanulási módszerek, amiről beszéltünk már a jelentésrezációnál,
+1:24:461 hour, 24 minutes, 46 secondshogy vektoriális reprezentációk jelentek meg, tehát a puszta szavak, karaktersorozatok helyén egy sokdziós
+1:24:561 hour, 24 minutes, 56 secondshajtalanos vektortérben jelentek meg vektorok, és a hasonló dolog hasonlót jelent, a kevésbé hasonló kevésbé hasonlót. Innentől kezdve ezekkel
+1:25:041 hour, 25 minutes, 4 secondsfordítottunk. Ha tetszik, akkor a ez az encóder decóder páros, ami a neurális fordításnak az alapjait jelenti, az,
+1:25:131 hour, 25 minutes, 13 secondshogy lecseréltük a szavakat ilyen ugye one shot vektorokra emlékeznek, hogy még először csak ilyen egyszerű egy
+1:25:211 hour, 25 minutes, 21 secondselemű 00100 típusú vektorokra. Aztán ebből csinálhat a rendszer egy megtanult, egy vektoriális
+1:25:291 hour, 25 minutes, 29 secondsreprezentációt a szavakra. Ezek az együttes működéséből a neurónok összerakták a mondatnak a
+1:25:371 hour, 25 minutes, 37 secondstényleges tartalmát. abba a piros pögybe, abba a neuronba keletkezett tulajdonképpen a mondatnak a
+1:25:441 hour, 25 minutes, 44 secondslefordítandó magja, amit szekvenciálisan szétszórva, majd
+1:25:511 hour, 25 minutes, 51 secondsvektorokra forítva, majd szé a végén vanatra, szavakra dekó
+1:25:581 hour, 25 minutes, 58 secondslefordította azt, ami abban a pirosban egymagában volt. tetszik, megjelent megint a interelling immáron egy neuron
+1:26:061 hour, 26 minutes, 6 secondsformájában, ami tartalmazta a bemenő mondatnak minden olyan tulajdonságát, amit a kimenőnek szintén hoznia kellett.
+1:26:131 hour, 26 minutes, 13 secondsMost erre fölépült ez az alaplogika, de ez tényleg csak az alap. És utána pár év
+1:26:201 hour, 26 minutes, 20 secondsalatt, tehát a 2010-es évek elejétől a maiig, amikor már Transformer modellekről beszélünk, hogy messzevezetne a mai előadáson túl, az
+1:26:291 hour, 26 minutes, 29 secondslényeges, hogy már nem is így működnek a rendszerek, sőt már nem is a szavakat helyettesítjük, hanem ezekben a módellekben már ilyen
+1:26:371 hour, 26 minutes, 37 secondsstring szeleteket vagy szószeleteket pís, jelenít meg a rendszer. Tehát már nem is számít, hogy az ortográfia,
+1:26:441 hour, 26 minutes, 44 secondshelyes írás az pontosan hova teszi a betűt, és hova nem, hiszen akkor mekkora ma már a környezet, ugye emlékszünk,
+1:26:531 hour, 26 minutes, 53 secondshogy a a szóbeásnál említettük, hogy mondjuk ma a mai rendszerek, vagy hát akkor amikor arról beszéltünk, hogy
+1:27:021 hour, 27 minutes, 2 secondsplusz mínusz öt szókörnyezetben, tehát 11-es advokban dolgoznak, ennél lényegesen nagyobbat tudnak, tehát egész mondatokat látnak. Ergó, meg tudnak
+1:27:101 hour, 27 minutes, 10 secondsolyanokat is jelenni, mint korábban, nem? és fölülbírálják a helyes írási szó definíciót, így az egybe különírás
+1:27:191 hour, 27 minutes, 19 secondskevésbé jelent problémát, és az idegen szavak is ezekből a worldpaceekből egészen máshogy rakhatók össze. Na de ez
+1:27:251 hour, 27 minutes, 25 secondsmár egy következő dolog, a neurális gépi farítás, amiről majd a következő alkalommal lesz szó. Most pedig köszönöm szépen a figyelmünket, viszontlátásra.
+
+https://www.youtube.com/watch?v=fMdM4C4d8eY&list=PLvLI66ieiidhOULovlk35bwn9Dz6LGVFC&index=6

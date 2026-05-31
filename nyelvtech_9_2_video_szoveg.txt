@@ -1,0 +1,366 @@
+A legalapvetőbb szinkronizációs módszerek meglepő módon úgy indulnak el, amikre talán nem
+0:2020 secondsgondolnak, hogy hosszalapúak. Tehát semmi ész nincs a első szinkronizációs módszercsoportban. egyfajta logika van,
+0:2727 secondshogy olyan string nincs, aminek ne lenne hossza.
+0:3333 secondsEz azt jelenti, hogy a szövegünk akármekkora, van hossza, rövidnek kicsi,
+0:4141 secondshosszúnak hosszú, és többé-kevésbé azt az állítást próbáljuk meg technikailag kezelni, hogy egy adott szöveg akkor hosszú, ha az eredeti is hosszú volt.
+0:5353 secondsVagyis a fordítás relatíve hosszú.
+0:5555 secondsMondtam, hogy eltérnek a fordítások az eredetítől, de mégiscsak van hosszuk, és mindennek van hossza, rövid meg
+1:031 minute, 3 secondsrövid, tehát relatíve rövid, relatíve rövidhez fog annak a fordítása lesz relatíve hosszú relatíve hosszúnak. Itt nyilván a mértéken múlik minden. Egy
+1:111 minute, 11 secondsbiztos, hogy így teljes szinkronizációt tudunk kapni, vagyis a szöveg egészének, minden egyes elemének tudunk párt
+1:191 minute, 19 secondsrendelni. Hát nyilván nem úgy csináljuk, hogy első az elsőnek, második a másodiknak, mert egy idő után lehet, hogy elsúszunk, de valami globális módszerrel majd erről beszélünk, össze
+1:271 minute, 27 secondstudjuk kapcsolni, és mindenkinek lesz 012 párja, és akkor teljes szinkronizáció, néha elrontjuk. Ugye
+1:341 minute, 34 secondserről beszéltünk az előbb. A másik, hogy hát lehetne olyat csinálni, hogy kicsit bevonjuk a szótárakat, ahogy mondtam,
+1:421 minute, 42 secondshogy megmondtuk, hogy ennek a szónak milyen fordítása lehet a célnyelvben, és hogyha ilyen fordítási párjaink vannak, akkor azt keressük, hogy melyik
+1:501 minute, 50 secondsmondatban szerepel egy szó, és keressük a másikat, amiben ez szintén előfordul.
+1:551 minute, 55 secondsÉs akkor ha elég sok mondatbeli szónak elég sok megfelelő fordítás egy mondatban a párja, akkor azt párba fogom
+2:032 minutes, 3 secondsállítani. Hátrány, hogy ehhez kell egy külső adatbázis, tehát egy szótár, és nyilván nem lesz minden mondatnak minden szava meg elég hangsúlyosan
+2:122 minutes, 12 secondstulajdonnevek nem lesznek meg, meg sok minden nem lesz meg. De mégis csak azt lehet mondani, hogy részleg nagyon jó részleges szinkronizációt tudunk, csak
+2:212 minutes, 21 secondsigen nagy hátrány, hogy kell hozzá egy külső adatbázis, egy szótár, egy lexikai forrás, ahol a szópárok ott vannak.
+2:282 minutes, 28 secondsEzzel szemben kitalálták a horgonyt, a horgony enkor. A horgony az egy olyan módszer, ahol a hasonló szavakat, az
+2:382 minutes, 38 secondsabszolum egyformán írt szavakat használjuk ki. Tehát egy olyan szótár, ahol nem nekünk kell kívülről bevinni egy szószó párból álló adatbázist, hanem
+2:472 minutes, 47 secondsa szövegbe észreveszi, hát mik az ilyenek, amik tipikus horgonyok. Hát az előző angol szövegre gondoljunk, egy email cím, egy webc, hát az biztos
+2:552 minutes, 55 secondsugyanaz lesz a másik nyelven is. Ha egy hosszú szövegben csak egyszer szerepel ugyanaz a webcím, akkor van esély, hogy az a két mondat, amiben ez benne van,
+3:033 minutes, 3 secondsazok valahol egymás fordításai, vagy legalábbis van közük egymáshoz. Hát ezeket összekapcsoljuk, és akkor lesz egy ilyen horgonyunk. Na de nyilván csak
+3:113 minutes, 11 secondsvalahány ilyen lesz. Még lesz egy-két szám, egy-két tulajdonnév, de ezek csak részleges szinkronizációk. Nyilván nem lesz minden mondatban ilyen.
+3:203 minutes, 20 secondsA hibrid módszer meg az, hogy ezeket valahogy kombináljuk. Ugye a drága az, hogy szótár van benne. Az olcsóbb, hogy csak észrevesszük az azonosságot
+3:293 minutes, 29 secondshorgonyként. Viszont annak vannak hibái, és mindenképpen hibája az, hogy csak részlegesen tud párba állítani. Ez pedig
+3:363 minutes, 36 secondsitt éppen azt mondja, hogy minél többet szeretnénk. Na azt a hosszú lapók megteszik, ők meg olykor eltévednek. Hát ezekből kell valami hibrid jószágot csinálni.
+3:463 minutes, 46 secondsInduljunk ki át a hosszalapúból. A hosszalapú blanks based alignment, tehát ez a hosszalapú szinkroniz. Ezt Gale és
+3:533 minutes, 53 secondsChurch vezette be 90-es évek elején, amikor úgy indultak a nagy szövegek, amikor egyre több szöveg indult a
+4:014 minutes, 1 secondvilágban, akkor tulajdonképpen megpróbáltak valamit, ami a mai napig is
+4:104 minutes, 10 secondsműködik. Ebből Kent Church nevé terem nem az a Church, akinek a tézisét esetleg az informatikusok már hallották, hogy ő csak egy Church nevű ember. Van
+4:184 minutes, 18 secondsilyen az angolban, de azért Kencsön is egy fontos számítógépes nyelvészig a 90-es évek elején, tehát a nevével mindenképpen jól találkoznak. Szóval ők
+4:274 minutes, 27 secondsazik azt mondták, hogy fogjuk a hosszakat, megszámoljuk karakterrel a szövegegységeket, fölépítünk egy
+4:354 minutes, 35 secondsvalószínű modellt, és megmondjuk, hogy a nagyon valószínűen hosszúak, azok a nagyon valószínűen hosszúaknak a párjai, ami kevésbé hosszúak, kevésbé hosszúnak,
+4:434 minutes, 43 secondsés valahogy ezeket úgy az egészre nézve elrendezzük. Ez a dinamikus programozás, amiről már egyszer volt szó, és még
+4:504 minutes, 50 secondstalán lesz máskor is, és mondom, hogy ez egy nagyon fontos programozási módszer, de nem a programozásnak nem abban az
+4:574 minutes, 57 secondsértelmében van a dinamikus programozás, hogy ez egy program, bár hát számít program benne van, hanem hogy
+5:045 minutes, 4 secondselőrejelzés. Ez egy közgazdaságinak is nevezhető modell, tehát azt, hogy ezt szoftverről megcsinálják, az tök jó.
+5:115 minutes, 11 secondsMaga az a játék, amivel végül is az egészet lebonyolítom, az emlékeztet a programozás algoritmikus lépésére,
+5:185 minutes, 18 secondshiszen a globálisan optimális megoldásra törekszik, vagyis úgy próbálja összerakni, hogy az egész legyen jó,
+5:265 minutes, 26 secondstehát az egész munkám eredménye legyen elég jó. Elég sok mondatnak találjak nagyon valószínű párt annak az árán,
+5:345 minutes, 34 secondshogy némelyiknek esetleg nem olyan valószínűt találok. Nem pedig, hogy elindulok és elcsúszik, és akkor már akkora lesz a csúszás, hogy semmi közük
+5:415 minutes, 41 secondsegymáshoz a mondatoknak, hanem állandóan megnézem, hogy ki kinek mekkora esélyel a párja, és esetleg ugrok egyet, ha ott kevésbé, és szép lassan a globálisan
+5:505 minutes, 50 secondsoptimális megoldás létrejön. Ez a lényege, és ez ahányszor előforul, annyiszor elmondom, hogy az egészre nézve optimális. Konkrét esetben lehet,
+5:595 minutes, 59 secondshogy jobbat is tudnék mondani, de az egész két szöveg szinkronizálásánál ez egészen biztosan, hogy működni fog.
+6:096 minutes, 9 secondsHát ugye az biztos, hogy az egészre nézve ez a legjobb megoldás. Az, hogy minden mondatnak vagy minden szövegettségnek lesz párja. És az
+6:176 minutes, 17 secondsbiztos, hogy mivel mindennek van hossza, mindig mond valamit. hátránya, hogy ugye egy kicsit el tud tévedni, esetleg
+6:246 minutes, 24 secondsvannak rövidebek, akkor azokat nem tudja, hogy két mondat együtt, az a két rövide mondat együtt, a másik oldalon egy hosszabb, vagy valahogy, tehát el
+6:326 minutes, 32 secondstud tévedni. Sőt, hát a beszúrt mondat meg a kihagyott mondat, ugye mondtuk, hogy van, amikor nulla vagy 01 vagy null
+6:406 minutes, 40 secondsfordítás van, tehát a szövegnek megfelel egy semmi, vagy a semminek felel meg egy beszúrt mondat. Ezekkel gondja van.
+6:476 minutes, 47 secondsRáadásul egy ilyen négyzetet kell elképzelni. Egyik oldalon van az egyik nyelvnek a szövege. Mondjuk azok adják a
+6:556 minutes, 55 secondssorokat, fölül meg az oszlopokat a másik nyelv szövegei. És akkor ugye úgy kell elképzelni az eredményt, hogy ott vannak
+7:037 minutes, 3 secondsa fordítások nagyjából, ahol nagyjából az átló van. azért mondom, hogy nagyjából, mert nem mondtam, hogy ugyanolyan. Tehát ez nem egy négyzet,
+7:117 minutes, 11 secondshiszen ez egy n xzer m-es valami. N az egyik nyelv, m a másik. De hát nagyjából azért az n meg az M az ugyanannyi. Hát úgy nem anny, tehát nincs olyan, hogy
+7:197 minutes, 19 secondskét mondatos szövegnek 1000 mondatos fordítása van, de azért egy 71 mondatos szövegnek lehet, hogy 70 vagy 72 mondatos fordítása van. nagyjából
+7:277 minutes, 27 secondsugyanannyi és ezért van hát ugye csak a négyzetnek van igazi átlója, tehát valami diagonális játék, merthogy ugye
+7:357 minutes, 35 secondsabbó kiindulhatunk első mondatnak azért nagy esélyel az első mondatú fordítása, utolsónak meg az utolsó is. A 98-nak azért ugye a 90-val a hanyadik, ugye?
+7:467 minutes, 46 secondsSzóval azt az így megsejtjük. Tehát valahol az átlóküri elemeket kell kiszámolni. Vagyis nem kell a teljes n x m, vagy ha vesszük ezt a kvázi
+7:547 minutes, 54 secondsnégyzetet, négyzetes kiindulást, hogy mindennek minden lehet, mert a másodiknak nem lehet a 821 a farítása,
+8:018 minutes, 1 secondtehát az kimarad inkább csak a másodiknak ugye az első vagy a harmadik.
+8:058 minutes, 5 secondsÉs akkor ez a kialakuló átlókörüli elemek ezeknek a számolása. És ha ezt nem csinálom, akkor m négyetes, ami
+8:148 minutes, 14 secondsiszonyatos. Tehát nyilván ezt rögtön valahogy ügyesen le kell szabni. Erről lesz majd szó, hogy hogy is csináljuk.
+8:208 minutes, 20 secondskicsit később. A horgonyalakú szinkronizáció az más. Tehát ugye az a egymásnak megfeleltethető azonos név, webes webcím, email cím, szám, valami.
+8:318 minutes, 31 secondsHát az biztos, hogy a mondat első vagy a szöveg első eleme és a másik szöveg első eleme az egy horgony. Utolsó elemel, utolsó elemel az egy horgony. Tehát
+8:398 minutes, 39 secondskettőn hár. És akkor elkezdünk közte keresni ilyeneket, ami mindkét oldalon ugyanaz. És akkor azokat is párba
+8:478 minutes, 47 secondsállítjuk. Na jó, de ha kétszer szerepel az, hogy Lajos, mert mondjuk másik nyelvve is lefarították, jó esetben, hogy Lajos,
+8:548 minutes, 54 secondsmert nem tudták, hogy azt kell lefordítani, ugye csak a korábbi magyar szokás ugye 100-200 évvel ezelőtt minden keresztnevet is lefordítottak és kis
+9:039 minutes, 3 secondskitérő, csak hogy ne unják annyira, vagy hogy nyelvészeknek is kedveskedjünk.
+9:079 minutes, 7 secondsAzért belegondoltak abba, hogy hány olyan nevünk van, amit valami miatt fordítunk, és hány olyan, amit nem.
+9:139 minutes, 13 secondsTehát általában az uralkodók nevét amennyire lehet magyarrá tesszük. Hát nem Erzsébet az a királynő, hanem hát Lizabet, de hát
+9:229 minutes, 22 secondsmindegy, mi Erzsébet királynő. Nagyon érdekes, hogy amikor a Vilmos, aki ugye William volt addig, amíg nem került
+9:299 minutes, 29 secondsnagyon elő, aztán Keit volt a mennyasszonja, majd Katalin lett a felesége, mert addigra már bekerült annyira a királyozből, hogy a magyarban
+9:379 minutes, 37 secondsúgy gondolták, hogy ezt lefítják. Tehát míg William meg két, akkor a szövegbe ezek már jó horgonyokat adnának. Ha már William Wilmos két Katalin, akkor már
+9:459 minutes, 45 secondsnem lesznek horgonyok. Akkor már szótár kell, hogy ezt a kettőt összerakjam.
+9:499 minutes, 49 secondsNagyon érdekes, hogy bizonyos neveknél még a mai napig is él. Mindannyian tudjuk, hogy Verne Gyula vagy Mike
+9:579 minutes, 57 secondsKároly nem magyarok voltak, de elég úgy néz ki a nevük. Persze volt egy idő, mikor Kotára Bétó Lajos meg Molcárt Farkast írtak. Tehát nyilván azt, hogy
+10:0510 minutes, 5 secondsha nem fordítjuk, hanem megmarad az eredeti forma magyarban is Wolfgangus mód, akkor az szerencsés módon a
+10:1210 minutes, 12 secondstúloldalt is, és akkor ez egy jó kis horgony lehet nekünk. Na most nyilván, ha kétszer fordul elő egy szövegbe, akkor azzal a heurisztikával érünk, hogy
+10:2010 minutes, 20 secondsnyilván az első előfordulások az első szinkronpár és a második a második.
+10:2410 minutes, 24 secondsTehát a horgonyok nem fogják így keres ker keresztezni egymást. Tehát az előfordulási sorrendjükbe kapcsolom őket össze, amennyiben mindkét oldalon
+10:3310 minutes, 33 secondsugyanannyi példány van belőlük. Na most nyilván ezzel érezzük, hogy kisebb egységekre tudom bontani, és akkor azon belül újabb horgonyt keresek és így
+10:4110 minutes, 41 secondstovább. És előbb-utóbb valahány horgonyom van. Ezek általában mivel szövegazonosság, szövegi részletazonosságon alakulnak, 100%-osak,
+10:5010 minutes, 50 secondstehát pontosságuk óriási. Felésünk pedig kicsiny mert csak néhány horgonyunk van.
+10:5510 minutes, 55 secondsTehát részleges szinkronizációt csinálunk. Az eredmények részleges szinkronizáción nyilván nem lehetnek elég jók. Bár a pontosság az
+11:0311 minutes, 3 secondsfantasztikus, de egy szövegben három-négy szinkron ilyen pár horgony van. Az nagyon jó. Azok biztos, hogy igazak. Na de hol van az a szöveg 1000
+11:1211 minutes, 12 secondsmondatához képest? Most hogy választunk horgonyt?
+11:1711 minutes, 17 secondsHát ugye nagyon könnyen a latin írást használó nyelvek esetében mondhatjuk, hogy a nagybetűs szavaknál nagy eséllyel
+11:2411 minutes, 24 secondsott lehet kutakodni, mert egy tulajdonnév ugye azért ami kivétel német, mert ahol a minden főnév nagy betűvel iratik, ott bizony nem a
+11:3311 minutes, 33 secondstulajdonnevek lesznek az egyedüli nagy betűsek.
+11:3711 minutes, 37 secondsHát aztán azt lehet mondani, hogy ha ugyanaz a szó fordul elő, és tényleg lehet, hogy ugyanaz fordult elő, de ha az van ott, hogy
+11:4511 minutes, 45 secondsto mozart és az, hogy mózart hoz, akkor az már nem azonos, mert az egyik oldalon zart van, a másik az meg a hozz
+11:5211 minutes, 52 secondsis bele van írva. Tehát akkor már legalább morfológia kell, hogy előbb egy tövet visszaállítsa. Ha már tövesítőkel, akkor megette a fene, miért meg a fene?
+12:0012 minutesEzt már többször elmondta, mert a szoftver nyelvfüggetlen akar lenni, hiszen a mindenfajta írásnál disjunt
+12:0812 minutes, 8 secondsszimbólumok vannak egymás után. Egy fordító világban mindenhol el lehet adni egy szoftvert, ha az nem tud a nyelven, csak az eszköz a karaktereket kezeli.
+12:1912 minutes, 19 secondsTehát még a kínai, japán bármilyen írás, ideografikus írás is működik ezen az alapon. karakterek egymás utánja. Abba a
+12:2712 minutes, 27 secondspillanatba, hogy belopom a nyelvet, morfológia szótár, már rögtön kötöttem egy szűkebb piacot, és egy másik piacon
+12:3412 minutes, 34 secondskevésbé adható el. Tehát ez szinte ki van zárva, hogy morfológiát működtessünk ezen a szinten. Azért az viszont igaz,
+12:4212 minutes, 42 secondsmert az előbb is a levegőben volt, hogy olyan nagyon hasonló szavak. A parlament, ugye parlament vagy Europe,
+12:4912 minutes, 49 secondsEurópa, Európa, hát ezek nagyon hasonlóan íródnak. Most vehetem-e a lelki erőt és mondhatom azt, hogy ezek
+12:5612 minutes, 56 secondsakkor is azonosak, ha csak egy valahány százalékban azonosak. Hát egy kicsit bátraknak kell lennünk, ha az ember tragédiájára gondolnak. Homaúion, homoion embereket küldtek halálb miatt.
+13:0713 minutes, 7 secondsEz csak egy karakterben különbözik.
+13:0913 minutes, 9 secondsTehát ezek a kognétek, amik nagyon hasonlóak, csak akkor kognétek, ha ember kezeli őket.
+13:1613 minutes, 16 secondsNyilván a parlamentről tudjuk, hogy az akkor is parlament, ha egy van benne, és Európáról akárhogy írjuk, hogy Európa, de ezér vannak ilyenek, mint amúgy és
+13:2413 minutes, 24 secondsegy nagyon pici különbséggel teljesen mást jelent. És erre a mai magyarban is rengeteg példa van, mindenki gondolkozzon ilyenen, hogy két szó, ami
+13:3313 minutes, 33 secondshasonlít, és a műveltebb emberek mindig kicsit megmosolyogják a mű műveletlenebbeket, akik ezt esetleg rosszul használják. Tehát mit tudom én,
+13:4113 minutes, 41 secondsazt, hogy a mamusz meg a manusz hasonlít egymásra.
+13:4513 minutes, 45 secondsErre azt mondjuk, hogy hát ezek nem kognétek. Azért most akkor ugye nem csak magyar van, mert ott vannak a civiril
+13:5213 minutes, 52 secondsírása, görög satöbbi, más írásrendszerű nyelvek, ott már a transzliterációnak kell bejönnie, hiszen nem lesznek soha
+14:0014 minutesazonosak az egyik írásb leírt karaktersorozat a másik. Bár ugye a távolkeletéknél sokszor ugye ahogy van literálisan beidézik a latin betűs
+14:0814 minutes, 8 secondsformát, tehát ott van kínai karakterek, aztán puff, ott van egy latin betűs írás. Adott esetben ez igaz
+14:1614 minutes, 16 secondshéber arabra is, hogy bekerül egy jobbról balra írásban egy balról jobbra ír inzert. Ezekkel mindig probléma van.
+14:2514 minutes, 25 secondsNem latin írást használom, hanem ezekkel általában. Tehát ott már ha párban van egy latin írással, akkor ott már csak szótárral lehet valamit kezdeni, meg
+14:3414 minutes, 34 secondscsak úgy tudjuk megondolni, hogy minek a párt azonosságról nem lehet beszélni.
+14:3914 minutes, 39 secondsÉs hát nyilván rengeteg ilyen szótárbeli megfeleltetési probléma jön ilyenkor elő. Tehát a nem latin írásnál ez nem
+14:4614 minutes, 46 secondsnagyon ajánlott, hogy ilyen horgonyválasztós játékot játszunk, de egyelőre bőven elég nekünk a sok latin betűs nyelv is. Na, mi történik?
+14:5514 minutes, 55 secondsTehát először nagyjából összekapcsoljuk ugye a horgonyjelöltekkel, tehát a szövegegységeket, ahol össze
+15:0215 minutes, 2 secondslehet őket kapcsolni, és akkor egy ilyen lineáris regressziós egyenest rakunk közé, és akkor ezek alapján ettől az
+15:1115 minutes, 11 secondsegyenestől mért távolságok alapján készítenek egy histogramot, leszűrik a horgonyokat és akkor egy ilyen konfidencia sávot, amibe elég sokan
+15:1915 minutes, 19 secondsbeleesnek, megtartunk és ami azon kívül van, azzal nem foglalkozunk. Tehát a bizonytalan horgonyetek azok kívülebbre
+15:2615 minutes, 26 secondskerülnek. Nyilván ezek mint szubjektív lépések, hogy mennyire hozzuk közel a ehhez a regressziós egyeneshez, ezt a
+15:3415 minutes, 34 secondskonfidencia sávat jobbról balról, de amik abban vannak, azok nekünk elég jók lesznek. Tehát így a ezt ugye mindenkinek a vizuális
+15:4315 minutes, 43 secondselképző vagy működésére bízom, hogy ezt így elképzeli, ahogy a sok pötty pötty pötty között egy lineáris regressziós egyenes van, majd körülötte egy
+15:5115 minutes, 51 secondskonfidenci, és akik nagyon távol esnek, hiszen az egyik nyelv, másik nyelv az kicsi az esély, hogy ez ugye annak a megfelelője legyen, azokat elveszítjük.
+16:0116 minutes, 1 secondViszont így akkor többé-kevésbé vannak horgonyaink részlegesen szinkronizálva és vannak minden további nélkül hossz
+16:1016 minutes, 10 secondsalapú szinkronizációs módszerok, amik meg eltévednek. Ugye okos ember mit csinál? fogja először, ugye, hogy lesz
+16:1716 minutes, 17 secondsebből hibrid, fogja először a horgonyalakút, kijelöli a kicsike szakaszokat, megtaláljuk a szűkebb
+16:2416 minutes, 24 secondsszövegységeket, és a szűkebb szövegységeken belül már van értelme hosszalapú szinkronizációnak, hogy négy-5 nyolc mondatnál nem téved el,
+16:3216 minutes, 32 seconds2000-nél meg eltéved a hosszalakú szinkronizáció. Tehát van esély, hogy ilyen kisebb egységekben hatékonyabban tudom használni, tehát a kettőből együtt
+16:4016 minutes, 40 secondshozok létre egy ilyet, és akkor tudok szinkronizálni. Na, a sok lehetséges alkalmazási terület közül ugye mi a fordítómemóriákkal akarunk tovább
+16:4916 minutes, 49 secondshaladni. Mi a fordító memória? Ezt gyorsan itten ismerthetjük. Hát translation memory TM egyébként ezt nagyon szeretik ezt a TM-et használni.
+16:5916 minutes, 59 secondsBelegondolnak, hogy itt az ember fordít és ez csak a kező alá dolgozik. Szembe a gépi fordítás al gép dolgozik. És a
+17:0617 minutes, 6 secondskettő machine translation, az MT MT és translation memory meg TM is ezt nagyon szeretik. Ez nem a trademark, ez a
+17:1417 minutes, 14 secondstranslation memory és ezt a párt játszani. Most a fordítómem tulajdonképpen ezeket a szegmenseket,
+17:2017 minutes, 20 secondsmond általában mondat párokat tárolja, kiegészítve néhány olyan dologgal, hogy mikor, ki csinálta satöbbi, mert ugye
+17:2817 minutes, 28 secondsakkor le lehet szűrni, hogy ki hányott fordított, mert azért gondoljuk meg a fordítóirodát, hogy azt nézi, hogyha már egy fordítómemóriát odavágott egy
+17:3617 minutes, 36 secondsfordítóhoz, akkor a fordító munkája csak az, ami olyan fordítások, amik nem szerepeltek eddig a fordítómemóriában, tehát lehet olcsóbban, hatékonyabban
+17:4417 minutes, 44 secondsfordítatni, hiszen még egyszer nem ír irodalomról van szó, hanem a általam nagyon kedvelt fűtésszerelési útmutatóról azt fordítják, az nagyon
+17:5217 minutes, 52 secondshasonlít az előzőre. Rengeteg olyan fordulat lesz, amit már valaki lefordított. Azért mi nem fizetünk a fordítónak, csak azért, amit ő vitt be a
+18:0018 minutesfordítómemóriába. Tehát ez nagyon hasznos dolog, hogy itt a fordító neve, státusza ott legyen. Ő egy megbízható fordító, egy team for együtt. egyiknél
+18:0918 minutes, 9 secondsbekerül egy javaslat, az még nem emelkedett jogerőre, de azért a többiek is láthatják ilyen hálózatos eszközökbe, amilyen a nemok is. Tehát ez egy
+18:1818 minutes, 18 secondskollektív munka, amiben megjelennek ezek a dolgok.
+18:3218 minutes, 32 secondsTehát egy fordítómemába a szegmensek meg a célnyevi megfelelők páronként vannak
+18:3918 minutes, 39 secondsettől párhuzamos korpuszekkel kiegészítő információkkal, amiket itt az előbb elmondtunk.
+18:4618 minutes, 46 secondsÉs az nagyon lényeges, hogy a forító van egy kereső, amelyik képes megtalálni a forrásnyelvi oldalon valamit, és
+18:5318 minutes, 53 secondsfölkálja hozzá a meglevő fordítás fordításokat. Na most ez a keresés nem mindegy, hogy mekkora finomsággal,
+19:0019 minutespontossággal működik, hiszen mikor találjon meg egy hasonló dolgot. Erre mindenféle algoritmusok vannak. Ha teljes mondat teljesen rendben van. Ha
+19:0919 minutes, 9 secondsmeg csak hasonló, akkor ugye kis belenyúlás, ahogy mondtam. Ha teljesen rossz, akkor kézzel beírja. És erre
+19:1719 minutes, 17 secondsmondtam az előbb azt, hogy sajnos a farítók egy része azt mondja, hogy gyorsabb vagyok én forítómemória nélkül, mint azzal. Ez igaz bizonyos
+19:2419 minutes, 24 secondshelyzetekben, de azért két-három karaktert átírni, pláne akinek rájár az ujja, az sokkal hatékonyabb, mint egy
+19:3219 minutes, 32 secondstöbb 100 karakterben mondatot legépelni, méga ha gyorsan gépel is az illető. És különben is, ahogy az előbb mondtam, a fordító cégek ma már elvárják, hogy ezzel működjenek a fordítók.
+19:4319 minutes, 43 secondsTehát valahonnan behozzuk a szövegeket, export, import van, optimális esetben a szöveget előfeldolgozzák, mert ugye ezek nincsenek gyárilag összerakva.
+19:5519 minutes, 55 secondsValami módon egységeket tudnak, esetleg ilyen horgontijelölés van, kódolt szövegrészeknek az azonosítása, aztán a
+20:0420 minutes, 4 secondsszegmenseket állítja elő valahogy, majd szinkronizálja a forrásnyelvet, szélnyelvet. optimális már szinkronizált
+20:1220 minutes, 12 secondspárhuzamos korpuszt adnak neki és még terminológia adatbázist is működtet, amit vagy azért, mert már valaki
+20:2020 minutes, 20 secondsbelerakott valamit, vagy egy ilyen indulószoltár, és akkor ilyen statisztikákal megpróbálnak kicsalni további hasonlóságokat és javaslatokat,
+20:2920 minutes, 29 secondsvagy pedig ugye az maga a fordító viszi be a terminológiai egységeket, ami a másik fordítóknak, akik vele párhuzamosan vagy időbe utána dolgoznak,
+20:3820 minutes, 38 secondsezzel tudnak dolgozni. Tehát ezek az alapeszközök, amik kiegészítik a párhuzamos korpuszelést,
+20:4520 minutes, 45 secondsúgynevezett előfordítás, szövegelőfordulás, feldolgozás.
+20:4920 minutes, 49 secondsGondoljuk arra, itt abszolút üzleti szempont és nem nyelvtechnológiai, de nagyon lényeges, hogy meg kell becsülni, hogy mennyibe
+20:5620 minutes, 56 secondsfog kerülni egy forítás. Tehát milyen komplex az a szöveg, amit kaptunk. Erre lehet egy ilyen előbecslő eszközt használni. végigelemzi, és azt mondja,
+21:0421 minutes, 4 secondshogy ahhoz, hogy jól tudjak fordítani, ennek ennyi részét tudnám a jelenlegi fordítómemóriákból nagy hatásokkal be felajánlani, hanem is behelyettesíteni.
+21:1321 minutes, 13 secondsÉs akkor erre lehet már valamit mondani egy ilyen előkalkulációra, hiszen ugye azért ez egy állandó probléma, hogy a szövegek egészét nem
+21:2121 minutes, 21 secondsadják addig oda, amíg nincs megkötve a szerződés. Viszont valami kis mintát muszáj, hogy abból valami kalkulációt tudjon csinálni egy ilyen típusú
+21:2921 minutes, 29 secondsszoftver. Na most a fordítómemóriák ugye nyilván amikor keresnek, akkor nem csak azt a konkrét stringet keresik, ami hogy
+21:3721 minutes, 37 secondsegy kicsit emlékeznek a szótári előadás utolsó slajdjaira, ahol ahol ugye hát egy nagy
+21:4421 minutes, 44 secondseurópai uniós terminológiai adatbázisból egy ilyen hosszú 10 szavas azonosító volt a szótári egység, és ennek részei
+21:5421 minutes, 54 secondsnem adnak találatot, az egész hét meg sose írják be pontosan. Tehát mekkora pontosság kell, mennyit lehet elmozdulni
+22:0222 minutes, 2 secondsaz eredetbeírt eredetileg beírt stringből, hogy nyilván ha toldalékok vannak, kicsit belenyúlunk, erre fázik keresések alkalmasak, vagy
+22:1122 minutes, 11 secondsnyelvileg, tehát ugye megint csak az van, hogy nyelvileg morfológiak kezeljük a dolgot, de akkor bekerül az a nyelvi szoftver az eddig nyfüggetlen
+22:1922 minutes, 19 secondsfortómemória eszközbe, amitől a drágábbá teszi, b szűkebb piac lesz.
+22:2622 minutes, 26 secondsHát aztán ugye nyilván az fontos, hogy bele lehessen nyúlni, bele lehet-e nyúlni, vagy csak javaslatot lehet tenni, hogy a meglevő fordítások nem
+22:3322 minutes, 33 secondsjók. Ugye ez is rendszerre válogatja. És hát ugye akkor az, hogy az automatikus forítást hozzáadják-e ehhez vagy sem,
+22:4122 minutes, 41 secondsugye nyilván nagyon vonzó, hogyha semmilyen módon nincsen példa a eddig meglevő fordítómemóriában arra, amit éppen fordítani akarnak, akkor nagy
+22:5022 minutes, 50 secondskérdés, hogy hogy ezt hogy lehet megtalálni. Tehát az automatikus, ez az igazi gépi fordítás. Az, hogy
+22:5822 minutes, 58 secondsautomatikusan cseréljünk valamit, az egy triviális dolog. Csak gondoljanak arra, hogy a stringeket nem tudjuk cserélni, hanem a nyelvtani funkcióval együtt. Ez
+23:0523 minutes, 5 secondsis kevés eszköznek a sajátja. Ezt még a morfológiánál beszéltünk erről.
+23:1123 minutes, 11 secondsAz intelligens varitómemória funkciók pedig azok, hogy tulajdonképpen olyan szöveget is ki tud adni magából egy jó forítómemória, amelyik explicite nincs
+23:1923 minutes, 19 secondsis benne, hanem a részekből összekombinálja. Itt megint nyelvi mondatszerkesztési tudás is hozzáadó.
+23:2723 minutes, 27 secondsMegint nyelvspecifikussá válik. Az egyébként nem nyelvspecifikus forítómemória szoftver. Előnye tehát, hogy nagy
+23:3523 minutes, 35 secondsprojekteknél ma már nem lehet megkerülni. Mindenki ugyanazokból a sémákból fordít, mindenki ugyanazokat a fordulatokat használja, terminológiát
+23:4223 minutes, 42 secondsis, meg nyelvi egységeket is. Egyszer kell lefordítani, többiek csak kapiznak.
+23:4823 minutes, 48 secondsPersze ettől olcsóbban, ahogy mondtam, mert a fordítóiroda azt nem számolja föl, amit a fordítómemóriából emeltek be.
+23:5623 minutes, 56 secondsÉs aztán hát nyilván hatékony, mert már egy szöveg ismétlődésnél a későbbiekben nekünk nem kell fordítani, csak
+24:0324 minutes, 3 secondsentereket nyomogatni. Viszont ugye minden abból indul, és ezek a negatívumok, hogy minden mondat újra felhasználható, de ez nem igaz. Ugyanaz
+24:1124 minutes, 11 secondsa mondat egy más kontextusban máshogy fordul. szavaknál is láttuk, hogy a change kontextuálisan nem mindegy, hogy
+24:1824 minutes, 18 secondspénzváltásról szól, vagy szövegcseréről adott esetben.
+24:2424 minutes, 24 secondsAz, hogy ma már természetes legtöbb helyen, de azért a hagyományos szót egy fordítói működést teljesen át kell
+24:3224 minutes, 32 secondsszervezni, tehát a a fordító cégek ma az utóbbi egy-két 10 évben rendesen átalakultak. Aztán nyilván, hogy vannak
+24:4024 minutes, 40 secondsolyan formátumok, gondoljunk csak a nem tudom én, különböző játékszoftvereknek a felületére, annak a fordításánál hát
+24:4824 minutes, 48 secondsolyanfajta formátumok jelennek meg, amiket nem támogatnak még ma sem a forítómemóriák.
+24:5324 minutes, 53 secondsIszonyú időigényes, amíg egy freelance fordító erre rászokik, de ma már egyre többen ezt használják, meg bonyolult is
+25:0225 minutes, 2 secondsnekik. Meg hát ugye ez természetes, hogy minden bemenetnek elektronikusnak kell lennie, de mindig elmondom, hogy ez a Dominózus 2004. május 1je előtti munka
+25:1125 minutes, 11 secondsaz úgy működött, hogy az Európai Unió elküldte papíron a fordítását, azt mondta, hogy ez az autentikus és elektronikusan kéri vissza. Most nyilván
+25:2025 minutes, 20 secondsközben elérhetők voltak elektronikus verziók is, de azt mindig össze kellett vetni a papírral, mert a pontos a papír volt. Tehát ha valamit elütöttek
+25:2825 minutes, 28 secondselektronikusan, akár azért, mert OCRzték, akár azért, mert egy másik farítást kaptunk meg elektronikusaban, mint papíron a papír kiinduló alatt. Ez
+25:3825 minutes, 38 secondsma már egyre természetesebb, hogy elektronikus szövegeket fordítunk, de még mindig vannak régebbi szövegek, ahol csak a papírra kiinduló alap.
+25:4725 minutes, 47 secondsHát aztán az, hogy rengeteg farítás elkészül, de hogy utólag elég sokat rakunk-e szinkronizálva forítómemóriában elérhető formában, vagy nem? Mert
+25:5525 minutes, 55 secondsnyilván ami ma már ezzel készül, az automatikusan ott van, de a régebbieket is valakinek be kell venni, és ha
+26:0226 minutes, 2 secondsegyszer bekerül egy szerencsétlen szerkezet, akkor utána ezt nagyon sok ember fogja használni. Tehát nagyon nagy kontroll alatt kellene ezeket
+26:0926 minutes, 9 secondsműködtetni. Ez nem mindig van meg. Na, hogy keresünk egy farító memóriába?
+26:1526 minutes, 15 secondsHát tulajdonképpen végtelen egyszerűen ugye a fázi keresés egy fazi kulcsnak a generálása. Tehát bizonyos fordítómá
+26:2326 minutes, 23 secondsfordítómemóriai mondatokhoz egy numerikus értéket állítunk elő és ez a numerikus, ha ez jól van létrehozva
+26:3226 minutes, 32 secondsez a fazikulcs, akkor azt és csak azt találjuk meg, amit keresünk. Tehát lefordítjuk a karaktersorozatunkat egy numerikus értékre, és amikor keresünk,
+26:4126 minutes, 41 secondsakkor a mi mondatunknak, amit keresünk, és van egy fázi értéke, és akkor ezt az értéket megkeressük abba a numerikus adabásba, és megmutatjuk, hogy ezek a hasonlóak.
+26:5026 minutes, 50 secondsHát igen, persze a fázi az azt jelenti, hogy a hold udvarában van.
+26:5526 minutes, 55 secondsNem biztos, hogy megtaláljuk. És pont ez a lényeg, hogy a mekkora távolság az, ahol
+27:0327 minutes, 3 secondsmég elfogadható a dolog. Hála Istennek, mivel itt az ember a szűk keresztmetszet, hát ha zöldségeket ajánlunk föl, akkor ránéz, azt mondja, á
+27:1127 minutes, 11 secondsmajd én, mint a helyesírás ellenőrzőnél mondtuk, hogy aláhúz olyat is, amit nem kéne, ember ért hozzá, nevet egyet és
+27:1827 minutes, 18 secondsmegy tovább. Tehát mivel nem automatikusan, nem a gépi fordítás használja, hanem az ember, ez a fazikulcs megengedhet picit lazaságot,
+27:2627 minutes, 26 secondsodaad egy-két zöldséget is, de ha odaadja a jót, akkor azt gyorsan megtalálva enter, és már megyünk is tovább. Na most, mint minden ilyen
+27:3427 minutes, 34 secondsrendszerben, a normalizálás nagyon fontos. Ugye nyilván egyrészt egyféle betűtípust használnak itt a keresésnél kis betű, nagy betű, véletlen mondat
+27:4327 minutes, 43 secondselejére került, de hasonlít, akkor vegyük le. Tehát ez kivesszük belőle a nem alfabetikus karaktereket, sőt a betűközöket is össze lehet nyomni.
+27:5227 minutes, 52 secondsSzóval egy teljesen technikai string lesz, aminek a numérikus értékét kiszámoljuk, és akkor kisebb karakterhalmazzal tudjuk ezt
+28:0028 minutesreprezentálni, és akkor hatékonyabban tudjukni. Itt egy példa, hogy hogy néz ez ki. Pláne, ha van két stringünk, amit
+28:0728 minutes, 7 secondsössze kell hasonlítani. Hát a Lővenstein távolság, amit már jól ismerünk, tehát minimális számú törlés, beszúrás, helyettesítés,
+28:1528 minutes, 15 secondsés gyakorlatilag a két string, az egyik, amit keresünk, a másik az amihez hasonlítjuk. Hát itt a loves és a hates
+28:2328 minutes, 23 secondsstringeket hasonlítjuk össze. Hát nem meglepő módon ugye ha elindulok az egy az ugye a számok azt mutatják, hogyha az
+28:3128 minutes, 31 secondsegyik szó egyik szónak a mondjuk a hétnek a h-jával elindulok, akkor az-nél egy eltérés van, az O-nál kettő és így
+28:4028 minutes, 40 secondstovább. De ha lefele megyek és a HA, akkor ugye a HA és az LO is kettő távolságra van egymásra. De például ha
+28:4728 minutes, 47 secondsaz ha mondjuk a végén nézem a dolgot, ott ugye a három-4 eltérés a legutolsó kis legalsó négyzetben kétszer kettes
+28:5628 minutes, 56 secondsjobb alsó sarokba, azt mutatja, hogy az LAS és a HE már nagyon hasonlít egymásra. Tehát amikor a LAV meg a hét
+29:0529 minutes, 5 secondshárom betű első három betűvel eltávoltam, az elsel meg közelebb kerülök egymáshoz. Tehát egy ilyen
+29:1229 minutes, 12 secondsegymástól hány cserével tudom elérni, hány Lővenstein lépéssel, beszúrással, helyettesítéssel, cserével azt a
+29:2029 minutes, 20 secondsstringet, amelyik és hála Isten, ott már könnyebben tudok haladni, míg az elején hát óhatatlan, hogy távolabb vannak
+29:2829 minutes, 28 secondsegymástól, mert LOV meg a Hat az elég távolab van egymástól. Na most nyilván ezt nem szavakkal csináljuk, hanem hosszabb egységekkel, csak itt a hely miatt mutattam egy szóra.
+29:3829 minutes, 38 secondsÉs ugye nyilván azt is lehet, hogy rögtön a két összehaszonítható stringéből kivágjuk az elejéről végéről azt, ami különbözik, ami egyforma is, csak azt hagyjuk meg, ami különbözik.
+29:4829 minutes, 48 secondsTehát ez a fölső mátrixban tök fö fölösleges ez a e-nél levő 444 55öt, illetve a másiknál 4445öt, mert
+29:5629 minutes, 56 secondsgyakorlatilag csak arra van szükségünk, ami a LOV meg a H. Utána már az es azonos, tehát levágjuk a LASból meg a H-ből az ES-t, és akkor egy sokkal
+30:0530 minutes, 5 secondskisebb mátrixal tudunk tovább menni. És hogyha veszünk két mondatot, úgy ehhez a tipikus mondat, tehát itt vannak a
+30:1230 minutes, 12 secondstipikus mondatok, EU fordítás. Hát ebben a szövegben ugye az az érdekesség, hogy látjuk a számokat. Egy két jegyű
+30:2030 minutes, 20 secondsszerepel a két slash közt az elsőben, 93 és egy három jegyű 107. Na most ettől kezdve a hetes a slashnek, a slash az
+30:2830 minutes, 28 secondse-nek és így tovább felel meg, ha karakteresen hasonlítom össze. Miközben ránézés, látjuk, hogy ez ugyanaz a mondat.
+30:3530 minutes, 35 secondsEzért a fordítómemóriákban sokszor ezeket úgy tárolják, hogy amikor lefordították mondjuk az elsőt, a
+30:4130 minutes, 41 seconds7793-ast mondjuk, akkor azt a részét, ami nem nyelvi, azt egy ilyen white carddal helyettesik, mondván, hogy oda
+30:4930 minutes, 49 secondsbármibe kerülhet, akár egy terminológiai adatbázis bármely eleme, akár egy tetszőleges ilyen name entity valamilyen karaktersorozat.
+30:5830 minutes, 58 secondsEttől a mondatfordítása annak a kihagyásával pont olyan lesz, mint a másik, ahol csak be kell írni a 83 107
+31:0531 minutes, 5 secondsEC-t, a többi azonos. Na karakterenként raknám össze, akkor a elejétől jövet a
+31:1231 minutes, 12 seconds77 meg a 83, a hetes meg a nyolcas lesz az első, ahol különbözik. Jobbról jövett meg a hármas és a hetes a 93- 107 végén
+31:2031 minutes, 20 secondsodáig az ELC előtti szessig mindenki azonos. Vagyis a eredeti 82-83
+31:2731 minutes, 27 secondskarakteres 6806-os lapsates mintájára 8283-as 6806-os cella helyett csak egy ilyen redukált 5 x6-ost
+31:3631 minutes, 36 secondskell használni és általában két szöveg összehasonlításánál ilyen kis szakaszokkal kell manipulálni. Ráadásul
+31:4431 minutes, 44 secondsugye kitalálták azt, amit mi a helyesírásző ajánlóáján már többször emlegettünk, hogy nem mindegy, hogy mit cserélünk. A Lövensteinnek elvileg
+31:5231 minutes, 52 secondsmindegy, de nagybetű, kisbetű az nem egy igazi komoly csere. Még az ékezetes, nem ékezetes az már ugye különbözik, mert az
+31:5931 minutes, 59 secondsa meg a z nem azonos, de azért még ott hajóág van. És a a Z-t, a Q-val csak akkor cserélem össze, ha valami különleges okom van, tehát annak nagyobb
+32:0732 minutes, 7 secondsa súlya. És akkor nyilván ezeket a karaktermanipulációkat, hogy hogy érem el az egyiket a másikból, hány lőensteény cserével, pláne még ilyen
+32:1632 minutes, 16 secondssúlyozottal, sokkal jobb távolság definíciót kapok, és így a fizérsonlítás jobban fog működni.
+32:2432 minutes, 24 secondsEzt az egészet egyfajta sztenderdbe is beleoperálták. Tehát itt a
+32:3132 minutes, 31 secondsTMX egy olyanfjta XML formátum, ami tulajdonképpen mind a
+32:3832 minutes, 38 secondsfordítási egységeket, amiket majd itt látjuk a translation unitokat, mind az alacsony szintű részleek, a kis
+32:4732 minutes, 47 secondsszegmenseket egy standard módon tudom reprezentálni. két implementációs szint.
+32:5332 minutes, 53 secondsSzóval, hogy fönt vannak a a szegmensek, amik belül a picike teljesen sima szövegek vannak. Semmi már mark nincs
+33:0133 minutes, 1 secondbennünk, tehát gyakorlatilag ők azok, amiket ténylegesen formáznunk kell. És ha van a content markup, az a szint, ami
+33:0833 minutes, 8 secondsegyütt az egész maga a dokumentumban, hogy néz ki. Tehát ugye akkor ki tudjuk szedni a tartalmas részeket, ha így
+33:1633 minutes, 16 secondslenne minden szövegben, de hát nem így van, mert nagyon sokszor meg HTML-ből hozzuk be, ahol rengeteg dolog összekeveredik, a
+33:2433 minutes, 24 secondsformázási jelölés, a tényleges tartalomjelölése, de mondjuk, hogy normális körmények között a TMX egy
+33:3133 minutes, 31 secondsolyan tisztázó szint, ahol amit fordítok és az egész körítés az két különböző
+33:3833 minutes, 38 secondsemeleten van. Hát itt látni ilyeneket, hogy néz ki TMX-be egy szöveg, ugye nyilván itt egy háromnyelvű, tehát
+33:4633 minutes, 46 secondsangol, kanadai, francia, francia francia szöveg. kicsit ugye abból indulunk ki, mint a eredetileg a a rozatakből ott is
+33:5533 minutes, 55 secondshárom szöveg volt. Hát ugye rengeteg, hát egy igazi ilyen markup nyelven van megfogalmazva a dolog, de mégiscsak
+34:0334 minutes, 3 secondslétezik a translation memory exchange formátum, és így két fordító memory között lehet kommunikálni, de hát oda valahogy be kell jutni, és ha már benne
+34:1134 minutes, 11 secondsvagyunk, ki tudja rakni ilyenbe, és egy másik meg tudja enni.
+34:1534 minutes, 15 secondseszméletlen sok standard van még, tehát van a TMX-ről beszéltünk, a turnbaserről is, tehát a terminológia része is egy
+34:2234 minutes, 22 secondsstandbe van beépítve, a segmentation rules exchange az is egy ilyenbe. Aztán mindenféle metrikák meg szótári
+34:3134 minutes, 31 secondssztenderdek vannak, meg lokalizációs standard, meg webes. Tehát rengeteg rengeteg olyan
+34:3934 minutes, 39 secondsalakult ki az utóbbi időben, ami már abba az irányba mutat, hogyha ezeket mind követjük, akkor a farítómak egymás
+34:4734 minutes, 47 secondsközt kommunikáció képesek. Tehát ha valaki adott esetben egy cégnél az egyikkel dolgozott, és utána így át kell térni a másikra, akkor rá tudja vinni az
+34:5434 minutes, 54 secondsösszes fordítómemóriáját, vagy a cégek fölvesznek egy újabb szoftvert és átalakítják, ez ma már nem gond. Tehát a
+35:0235 minutes, 2 secondsgyakorlatba a forítómenemóriákat gyakorlatilag a fortócékek 100%-a használja. Most itt van néhány, amik
+35:0935 minutes, 9 secondsközül korábban mindenféle okokbal említettem a nem okot, meg a Tradoszt. A Tradoszt, amit az SDL fordító végig
+35:1835 minutes, 18 secondsidőközben megvásárolt, de itt láthatóak a legfontosabbak, és meg lehet őket keresni.
+35:2535 minutes, 25 secondsNa, itt egy nagyon régi trados felület látható, de amit al akarok vele illusztrálni, az, hogy az egyik lehetőség az, hogy a fordítást, mint
+35:3335 minutes, 33 secondsolyat, valamilyen eszközhöz integrálom, és nem hozom létre az eszközt magát, vagyis nem csinálok egy újabb Wordöt, ez egy régi Microsoft Word, hanem annak egy
+35:4235 minutes, 42 secondskiegészítéseként hozom a fordítókörnyezet, Radoszt, kiinduló mondat, fordítás, és mindenfajta dolog
+35:4935 minutes, 49 secondsvalójában a Wordben történik. Azzal van egy szerves kapcsolatban. lefordítandó szöveg kék fordítás sárga, utána kitörli
+35:5735 minutes, 57 secondsa kékeket és megmarad a sárga. Ez egy integráció makrókon vagy bármi módon. A másik a memók, ami saját felületet ad,
+36:0436 minutes, 4 secondsegy pici mini editort, ami ma már nem nagy csoda, mert le lehet tölteni tölteni innen-onnan kész
+36:1136 minutes, 11 secondsilyen editor darabkákat, és szövegszerkesztő opciókkal tud manipulálni. Tehát a kis cellákban vagy felajánlja a fordítást, hogy oda bele
+36:2036 minutes, 20 secondslehet írni. Ott vannak az ötletek, jobb oldalon mindenféle példák. És akkor odajutok, megnyomom az entert, jobb oldalról belöpül az üres téglalapba egy
+36:2936 minutes, 29 secondsszövegrész, vagy ott írogatok. Tehát teljes editor a memukban önálló farítókörnyező.
+36:3536 minutes, 35 secondsAmit az előbb mondtam, hogy igazán a vágy, hogy egy intelligens forítómemóriát tudjunk előállítani, az már régóta megvan az emberekben. Ami nem
+36:4436 minutes, 44 secondsmás ugye az intelligens fordítómemória, mint egy olyanfajta integrációja a fordítómemóriának, ahol a teljesen karakteres literális szövegek elkezdenek
+36:5336 minutes, 53 secondsönálló életet élni, mint nyelvi egységek. Ezt nem győzöm hangsúlyozni, hogy a fortómemória valójában a szó eredeti értelmében nem nyelvtechnológia
+37:0237 minutes, 2 secondseszköz azért, mert a nyelvelmi csinál valamit nyelvi szövegekkel, és nekünk ezzel foglalkoznunk kell itt, hiszen
+37:1037 minutes, 10 secondsnyelvtechnológus cégek csinálnak fordítómemóriákat, de itt inkább a nyelvi egységeket kezelik. Na, az intelligens forítómemória volna az, ahol
+37:1837 minutes, 18 secondselindulunk, és mi egy tervet is készítettünk annak idején, a metamorfó, az a fordítórendszer, amit kifejlesztettünk, hogy a metamorfa fordítórendszert, hogy integráljuk.
+37:2737 minutes, 27 secondsUgyanis amikor az előbb mondtam, hogy akár gépi fordítást is integrálnak a fordítómemóriákhoz, azokra a szövegekre, amiket maga a fordítómemória nem
+37:3537 minutes, 35 secondstartalmaz. Ezek valójában nagyon félrevezetőek, mert a fordítómemória fordításai elég jó. amikor a gépi fortítás küzködik valamivel, akkor nagy
+37:4337 minutes, 43 secondszöldségeket is feljánhat. És itt pont azt akarjuk kiküszövölni, tehát a fordítóeszközt arra lehet itt használni, hogy
+37:5237 minutes, 52 secondsmegpróbálja a meglevő szegmensekből úgy össze ragasztózni a részszegmenseket,
+37:5937 minutes, 59 secondshogy a fordítómemáriumban megtalált egységekből egy olyan fordítást adjon, amivel a végén a fordító tényleg boldogan tovább tud menni. Tehát nem a
+38:0738 minutes, 7 secondsgépi fordító for, csak a sorjázást a két szegmensnek az egymáshoz illesztését csinálja a forítómemória. Valójában a
+38:1538 minutes, 15 secondsigazi fordítás azért a forítómemóriában levő szegmensekből jön össze. Csak mivel ott mondatokat tárolunk, és mondjuk mi itt benne levő főnévi csoportokat
+38:2338 minutes, 23 secondsakarunk máshogy átstrukturálni, kell hozzá egyfajta nyelvi intelligencia, hogy hogy lehet főnévű csoportokat fölcserélni vagy átalakítani. És erre ez
+38:3238 minutes, 32 secondsaz intelligens fordítómemória, mint lehetőség nagyszerű eszköz volna. Ugye valahogy az alapötlet az, hogy itt a a
+38:4038 minutes, 40 secondsfőnévi csoportok, amik a mondatban sok helyen előfordulnak, azokat úgy kiemelnénk, azokat külön lefordítanánk egy ilyen szegmensfordítóval, és az ige
+38:4838 minutes, 48 secondsés az általa elrendezett argumentumok egy másik fordításba mennek bele, és ha valamelyik elem nincsen meg, akkor azt
+38:5538 minutes, 55 secondsegy gépi fordító létrehozza. Ha pedig megvan, akkor azt kivesszük a fordítómemóriába, és újból összerakjuk a fordítómemória szegmenseit, meg egy-két
+39:0339 minutes, 3 secondsgéppel fordított részszerkezetet, úgy mintha az világ életében a forítómemory outputján lett volna. Ez egy terv volt,
+39:1239 minutes, 12 secondsmai napig is terv. Nem sikerült nagyon profin integrálni a két eszközt, ezért van az mondom, hogy megnyomom a gombot, és akkor egy teljesen indifferens
+39:1939 minutes, 19 secondshelyről Google vagy bármelyik fordító elindul, és azt a szöveget, amit nem tudott a forítómemória elég hatékonyan kezelni, valamilyen fordítással ellátja.
+39:2839 minutes, 28 secondsEz sokkal-sokkal intelligensebb, egy tényleges integrációja a TM-nek meg az MT-nek.
+39:3439 minutes, 34 secondsNa most azért jön ide az automatikus kiértékelés, mert annak a eldöntése, hogy mi egy forításban jó meg
+39:4239 minutes, 42 secondsnem jó, ez egy nagyon régi probléma, és igazán nincs is rá megoldás, viszont kéne. Tehát az kéne, hogy valaki megmondja, hogy mennyire jó egy
+39:5039 minutes, 50 secondsfordítás, mennyire vagyok én távol attól, ami kellene. Na most a fordítómemóriában végül is valami olyan dolog van, hogy az én szövegem, amit
+39:5739 minutes, 57 secondsfordítani akarok, és annak a szövegnek, amit a fordítómemória tárol, annak a kettőnek a viszonyáról szól a keresés.
+40:0540 minutes, 5 secondsMeg kell mondani, hogy az én mondatom mennyire hasonlít egy fordítómemóriában levő mondathoz. Legább annak az egyik feléhez.
+40:1340 minutes, 13 secondsAmikor automatikusan össze akarjuk hasonlítani a jó fordításokat az aktuális fordítással, akkor azt feltételezzük, hogy van egy jó
+40:2040 minutes, 20 secondsfordításunk, és valami olyanfjta távolságot számolunk, amivel meg tudjuk mondani, hogy mennyire van ez attól.
+40:2740 minutes, 27 secondsNagyon hasonlít a két feladat, ezért került ide, meg azért is, mert a későbbiekben gépi fordításról is lesz majd szó, és a gépi fordításban
+40:3440 minutes, 34 secondseztatlan, hogy az automatikus kiértékelés ott legyen. Na most nyilván az emberi fordítást se tudjuk így kiértékelni, de egyszerűen ott az ember ránéz és azt mondja, jó vagy nem jó.
+40:4540 minutes, 45 secondsNagyon sokszor persze elfogadnak olyat is, akik nem beszélik a nyelvet, amit egy profi azt mondja, jaj istenem, ezt nem kellett volna. Mégis elfogadják. Hát itt egy picit ezt meg akarjuk előzni.
+40:5640 minutes, 56 secondsazzal, hogy a géppel beadunk egy kis segítséget. Tehát végül is a fordítások vagy a szövegek hasonlóságán alapul a
+41:0341 minutes, 3 secondskiértékelés is, meg a fordítómemóriában való keresés is. Kézzel ez reménytelen, ezért megpróbálunk egy olyat csinálni,
+41:1141 minutes, 11 secondsami hát a hasonlóság, a szövegrészek hasonlóságából áll össze. És ezt az IBM
+41:1841 minutes, 18 seconds18 évvel ezelőtt 2002-ben bevette be a Blt, amik hát a Bilingual Aviliation Under Study névre.
+41:2841 minutes, 28 secondskereszteltek ezt a blőt sokszor blue-nak mondják, de attól még blue. Tehát a blue rendszert, amelyik ugye azt mondja, hogy vannak nekünk referenciafordításaink,
+41:3741 minutes, 37 secondsoptimális esetben sok szerencsétlen esetben egy. És megnézzük, hogy mennyire hasonlít, amit mi csináltunk arra, amit a referencia. Na most itt ugye a példa
+41:4641 minutes, 46 secondsis. Az egyik emberi fordítás a referenciafdítása, a másik gépé. Na de két emberi farítást is össze lehet hasonlítani. És az elég durva volna,
+41:5541 minutes, 55 secondshogy a szövegegységek alapján próbáljuk megnézni, hogy hány betűbe vagy hány szóba
+42:0342 minutes, 3 secondshasonlít az egyik a másikra. És mint látjuk, hát itt relatíven nem olyan sokba, de úgy mindenki látja azt is,
+42:0942 minutes, 9 secondshogy ez hasonlít. Tehát ha a két szöveget összevetem, azért látom, hogy ugyanannak a forítása mégis nagyon kicsi a tulajdonképpeni hasonlóság.
+42:2242 minutes, 22 secondsA jó fordítások tehát nem szükségszerűen hasonlítanak. Itt van egy mondat, amit aki győző kivételével nem tud elolvasni,
+42:3042 minutes, 30 secondsnagy esélyel bár lehet, hogy más is tud kínálni. Mindenesetre ott van egy néhány olyan angol fordítás, amelyikről azt gondoljuk, hogy többé-kevésbé ugyanazt
+42:3842 minutes, 38 secondsfejezik ki. Van benne valami safety, van benne valami airport, van valami Israel
+42:4642 minutes, 46 secondssecurity responsibility officials, de azért összességében a szereplők nagyjából megvannak. Ez
+42:5442 minutes, 54 secondsiszonyú sok fortás. És ha nem tudom, hogy az eredeti mi, és szándékkal hoztam ide kínait, akkor nem tudom, hogy melyik a jó fordítás, de azt látom, hogyha
+43:0243 minutes, 2 secondssokféle fordítás van, akkor mi lehet ennek a tartalmak?
+43:0643 minutes, 6 secondsVan valami repülőgé biztonság, meg valami felelősség, meg valami Izrael.
+43:1143 minutes, 11 secondsEzek vannak valamilyen viszonyban is. Szerintem a legtöbb helyen ez ugyanez jön ki. Most kérdés,
+43:1843 minutes, 18 secondshogy melyik volt igazán? Van-e benne mondjuk az eredeti government, vagy nincs?
+43:2543 minutes, 25 secondsTehát nem tudjuk megmondani, hogy mennyire hasonlítanak egymásra, de hát ez van.
+43:3043 minutes, 30 secondsÍgy aztán a fordítás minőségét eléggé furcsa úgy és szándékkal megint az eredeti mondat azért kínai, hogy még véletlenül se értsük, vagyis kicsit
+43:3843 minutes, 38 secondsátérezzük azt a szerepet, amit a gép csinál, hogy fogalmam nincs, hogy mit csinál, csak kapott egy referenciafarítást annak ez a fordítása, hogy the gon sh by the palis.
+43:4943 minutes, 49 secondsÉs akkor ha ilyen mondatok lennének valahol, hogy Gamus Polis kill, ilyen socialáltó ott is lennének, találatok,
+43:5643 minutes, 56 secondsmert lá hát a gunman wars az az első három string, sőt a polic is valahol benne van, a kill meg sehol.
+44:0344 minutes, 3 secondsA gum was shot dead by the police. Az már csak shot dead, shot to death. Ez már hasonlít. Ez ez ott már a zöld nagyon nagy szakaszokban hasonlít. Ugye
+44:1244 minutes, 12 secondsa hatos az nyilván pont ugyanaz a mondat, hát az a legjobb lőt fogja kapni. És lehet látni, hogy mennyi furcsaság van tehát a különböző
+44:2144 minutes, 21 secondsreferenciafordítások vagy különböző fordít különböző gépi fordításokban, hogy hogy hasonlít a referenciaszövegre,
+44:2844 minutes, 28 secondstehát mennyire illeszkedik jól, mennyire egyáltalán. Nyilván a ötösbe meg hetesbe ugye az öy vagy kettő meg egy darab
+44:3744 minutes, 37 secondsolyan valami van, ami az eredeti szövegben tök másút szerepelt.
+44:4344 minutes, 43 secondsEsélyk nincs megmondani, hogy azok mik, mert úgy úgy tűnik, mintogyha hát olyan karaktersorozatok, amit szemmel úgy
+44:4944 minutes, 49 secondslátjuk, hogy a gunman meg a gunman, a többes számú man meg a man, azok hasonlítanak egymásra, de hát a gép
+44:5744 minutes, 57 secondsszámára ugye ez két különböző string. Ez egy nagyon bizonytalan dolog, ha ezeknek a távolságát akarom. Ám nem tudunk
+45:0645 minutes, 6 secondsjobbat. Tehát nem tudunk olyat, hogy valaki majd megmondja nekünk, hogy mi a tuti. Legföljebb nem egy referenciafarítást, hanem többet kérünk,
+45:1345 minutes, 13 secondsés ezekből fölépítünk valami hálózatot, és az azokra való hasonlósággal próbálunk operálni, de csak a karakterekkel tudunk valamit kezdeni.
+45:2145 minutes, 21 secondsTehát a baj az, hogy a karakteres összehasonlítás, két string összehasonlítása egy valamire való
+45:2845 minutes, 28 secondseredeti egy stringgel vagy egy ilyen hálózat, több stringből álló hálózattal, az reménytelenül
+45:3645 minutes, 36 secondshogy mondjam? Hát szakmaiatlanná teszi a tényleges fordításminőség mérését, de nincs jobb. győzőerő sokat tudna
+45:4345 minutes, 43 secondsbeszélni, hiszen egy egész disszertációt írt arról, hogy milyen a referencia nélküli minőség biztosítás, hogy lehet úgy fordítani,
+45:5245 minutes, 52 secondshogy tudjuk, hogy elég jók vagyunk anélkül, hogy látnánk, hogy mit jelent az eredeti mondat, de én ezt szándékkal vettem ide azokat a példákat, hogy mi ne tudjuk meg, már aki nem tud kínaiul,
+46:0146 minutes, 1 secondhogy miknek a farítását láttuk az előtt, vagyis stringeket hasonlítunk stringekhez, és ebből próbálunk valami
+46:0946 minutes, 9 secondsfordítási minőséget kikalkulálni. Ez borzasztóan nehéz. Vagyis ezek az automatikus mérések. Jó lehet, mindenki a blőt használja, mert nincs jobb.
+46:1946 minutes, 19 secondsLegfeljebb arra valók, hogy egy adott szinten kialakított blőértéket egy további javítással a blőértéknek a
+46:2646 minutes, 26 secondsváltozása követ. A saját fordító rendszerünkben erről majd jövő alkalmról lesz szó. ebbe a metamorfóba, amit annak
+46:3346 minutes, 33 secondsidején kidolgoztunk, egy olyanfajta eszközrendszer volt beépítve, hogy volt
+46:4046 minutes, 40 secondsnéhány ezer példamondat, amit minden éjjel lefuttatott a rendszer az aznapi
+46:4746 minutes, 47 secondsállapoton, tehát a gépi for rendszer aktuális állapotán, és a blőt mérte, és ebben nagyon sok zöldség volt, de ha hozzányúltunk valamihez, akkor a blő is
+46:5646 minutes, 56 secondsmegváltozott, és próbáltunk korrelációt keresni a blőált által adott számváltozások és a minőségek között.
+47:0547 minutes, 5 secondsTehát azt reméltük, hogy a több szabályt bevezetve egyre jobb lesz a fordítórendszer, ezért a blő értéke azt fogja mutatni, hogy mennyivel jobbak
+47:1247 minutes, 12 secondsvagyunk, mint tegnap meg tegnapelőtt. És talán saját magához képesti változásokat lehet vele mérni, de objektív változás vagy objektív tényeket nem. Tehát
+47:2147 minutes, 21 secondsténylegesen azt, hogy mennyire jó a farítás, azt nem lehet. Mindenesetre látszik, hogy ezeknek a stringes
+47:2847 minutes, 28 secondsösszehasonlító dolgoknak van világa a nyelvtechnológiában, hiszen a fordítómemóriában is a keresésnél, a
+47:3747 minutes, 37 secondsgépi fordításnál, a minőségmérésnél ugyanazokat próbáljuk valahogy, de erről majd majd a gépi fordításról szóló órán lesz szó igazán. Most köszönöm a
+47:4647 minutes, 46 secondsfigyelmüket és elnézést az akadozásért, de mai felvétel ilyenre sikerül. Találkozunk a jövő héten.
+
+https://www.youtube.com/watch?v=yGdBR66ZFzw&list=PLvLI66ieiidhOULovlk35bwn9Dz6LGVFC&index=7

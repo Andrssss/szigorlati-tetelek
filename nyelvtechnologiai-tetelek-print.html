@@ -18,12 +18,12 @@
         <div class="toc">
             <h2>Tartalom</h2>
             <ol>
-                <li><a href="#tema-1">Karakterek és betűreprezentáció. Nyelv­statisztikai törvények. n-gramok.</a></li>
-                <li><a href="#tema-2">Reguláris kifejezések a gépi nyelvészetben. FSA, FST. Véges állapotú automaták kiterjesztései (RTN, ATN).</a></li>
-                <li><a href="#tema-3">Kétszintes és unifikációs morfológia. Szófaji egyértelműsítés. Alkalmazások.</a></li>
-                <li><a href="#tema-4">Mondatreprezentáció, jegyszerkezetek, unifikáció. Mondatelemzési módszerek.</a></li>
-                <li><a href="#tema-5">Szintaktikai szerepek és jelentés. Fogalmi reprezentációk. Ontológiák, WordNet.</a></li>
-                <li><a href="#tema-6">Korpuszok. Gépi tanulás. Szóbeágyazás. Gépi fordítás (szabályalapú, statisztikai, neurális).</a></li>
+                <li><a href="#tema-1">Karakterek és betűreprezentáció, nyelvstatisztikai törvények, n-gramok</a></li>
+                <li><a href="#tema-2">Reguláris kifejezések, véges automaták és kiterjesztéseik</a></li>
+                <li><a href="#tema-3">Kétszintes morfológia, unifikációs morfológia és alkalmazások</a></li>
+                <li><a href="#tema-4">Mondatreprezentáció, jegyszerkezetek. Mondatelemzési módszerek.</a></li>
+                <li><a href="#tema-5">A szintaktikai szerepek és a jelentés viszonya. Esetek, WSD, WordNet, Ontológiák</a></li>
+                <li><a href="#tema-6">Korpuszok, gépi tanulás, szóbeágyazás, fordítómemóriák, gépi fordítás</a></li>
             </ol>
         </div>
     </div>
@@ -588,65 +588,71 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
         <h2><a href="#tema-4">Mondatreprezentáció, jegyszerkezetek. Mondatelemzési módszerek.</a></h2>
     </div>
 
-    <h3>Mondatreprezentáció</h3>
+    <h3>A mondatszerkezet reprezentálása — faszerű gráfok</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1m25s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A mondatban az elemek közötti viszonyt leggyakrabban <strong>faszerkezettel</strong> ábrázoljuk. A fa egy irányított, körmentes gráf, amelyben minden csomópontnak pontosan egy szülője van; a csomópontok címkézettek, legfelül a gyökér, legalul a levelek.</p>
+    <div class="definicio">
+        A fa egyszerre két információt kódol:<br>
+        — <strong>dominancia</strong> (immediate dominance): ki kinek van alárendelve (hierarchia)<br>
+        — <strong>előzés / sorrend</strong> (precedence): a testvércsomópontok lineáris elrendezése (pl. magyar névelő mindig megelőzi a főnevet, a tő megelőzi a toldalékot)
+    </div>
+    <p>Ez a két tulajdonság független, ezért egyetlen fa egyszerre fejezi ki őket. Egy fa <strong>projektív</strong>, ha az élek nem keresztezik egymást — a környezetfüggetlen nyelvtanok zárójelezésével pontosan ez érhető el (egymásba ágyazott vagy diszjunkt szerkezetek).</p>
 
-    <h4>Szintaktikai reprezentációk</h4>
-    <p>A szintaktikai reprezentációk gyakorlatilag fák. Három fő típus: közvetlen összetevős, függőségi és X-vonás.</p>
-
+    <h3>Közvetlen összetevős szerkezet (Chomsky)</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=5m32s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A Chomsky által bevezetett <em>immediate constituency</em> elv szerint a mondat (S) közvetlenül két összetevőre bomlik: egy főnévi (NP) és egy igei (VP) csoportra. Ezek <strong>testvércsomópontok</strong>: nem alá-fölé rendelten, hanem egymás mellett állnak, a hierarchia csak a beágyazódásból adódik. Példa: <em>I know that Jane thinks that Bill likes beer</em> — beágyazott mondatokkal építkező rekurzív szerkezet.</p>
     <ul>
-        <li><strong>Közvetlen összetevős reprezentáció:</strong> egy szép egyoldalra rendezett fa.</li>
-        <li><strong>Funkcionális (függőségi) reprezentáció:</strong> ki van egyensúlyozva.</li>
-        <li><strong>X-vonás:</strong>
-            <ul>
-                <li>S → NP VP</li>
-                <li>Az összetevős szerkezetben az NP és a VP „testvérek", azaz mindketten az S „gyermekei", de ezt nem fejezi ki a függőségi leírás.</li>
-                <li>Azt viszont a közvetlen összetevős leírás nem fejezi ki, hogy testvérek bár, de nem egyforma súllyal: a VP a szerkezet feje.</li>
-                <li>X-vonás szabályként: V'' → N'V'</li>
-                <li>Azaz: a V'' a V maximális projekciója, tehát a mondat feje az ige!</li>
-                <li>Csak endocentrikus.</li>
-            </ul>
-        </li>
+        <li><strong>Erőssége:</strong> a csoportoknak nevet ad (NP, VP, PP…), így a részfa egészére hivatkozhatunk.</li>
+        <li><strong>Gyengesége:</strong> a relációk jellege (alany, tárgy, határozó) nem jelenik meg explicit címkékkel — csak a fában elfoglalt helyzet hordozza.</li>
+        <li>Az angolban a sorrend (SVO) erősen jellemző; a magyarban a szabad szórend miatt a funkcionális szerkezet (alany–állítmány–tárgy) sokkal hangsúlyosabb.</li>
     </ul>
 
-    <p>Az X-vonás tulajdonságai:</p>
+    <h3>Függőségi (dependencia) szerkezet (Tesnière)</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=22m01s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A franciaországi Lucien Tesnière 1957-es elképzelése: az elemek <strong>nem ágaznak el</strong> új szülőcsomópontokba, hanem közvetlenül egymásra mutató, <strong>címkézett élekkel</strong> kapcsolódnak. A mondat központja az ige (a finitum); minden más bővítmény (alany, tárgy, határozó, kiegészítő) közvetlenül rajta vagy egymáson lóg.</p>
     <ul>
-        <li>Megőrzi mind az összetevős, mind a függőségi leírás előnyeit.</li>
-        <li>Szófajok feletti általánosítás: X = V/N/P/Adj/Adv/Det/Q/…</li>
-        <li>Az X-nél magasabb szerkezeteket is egységesen lehet vele leírni.</li>
-        <li>Megkülönböztethetők a különféle jellegű bővítmények (pl. előtte, mögötte).</li>
-        <li>Szintjei: lexikális szerkezet, köztes szerkezet, maximális szerkezet.</li>
+        <li><strong>Erőssége:</strong> a szintaktikai viszony neve közvetlenül az élen jelenik meg (subject, object, det, adjunct…).</li>
+        <li><strong>Gyengesége:</strong> nem nevez meg csoportokat — nem lehet közvetlenül hivatkozni arra, hogy „a kutya" mint egész egy NP.</li>
+        <li>Történetileg francia, német és kelet-európai (cseh, szovjet) iskolák kedvelték; ma <strong>az angol nyelvtechnológia is széles körben használja</strong> (Universal Dependencies).</li>
     </ul>
 
-    <h3>Jegyszerkezetek</h3>
+    <h3>X-vonás (X-bar) elmélet — a két szemlélet ötvözése</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=27m02s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>Az X-vonás nyelvtan ötvözi a közvetlen összetevős és a függőségi szemléletet. Az <em>X</em> bármely szófaji kategória helyettesítője (V, N, P, A…); a szerkezet vonásszámmal nő, ahogy a fej egyre több bővítményét veszi fel.</p>
+    <div class="definicio">
+        <strong>X</strong> = lexikonból előjövő, „üres" fej (még nincsenek bővítményei).<br>
+        <strong>X′ (X-vonás)</strong> = a fej + kötelező <strong>complement</strong> (jobbra), pl. tárgy.<br>
+        <strong>XP (X″, maximális projekció)</strong> = X′ + <strong>specifier</strong> (balra), pl. alany.<br>
+        <strong>Adjunct</strong> (opcionális kiegészítő, pl. szabadhatározó) — <em>nem</em> emeli a vonásszámot, bárhol becsatlakozhat.
+    </div>
+    <p>Példa: <em>he studies computational linguistics at the university</em> — <em>studies</em> (V) → <em>studies computational linguistics</em> (V′, mert a tárgyat kötelezően felveszi) → <em>he studies …</em> (VP / V″, a specifier alany megérkezik); az <em>at the university</em> PP adjunkt, nem változtat a vonásszámon.</p>
+    <p><strong>Endocentrikus vs. egzocentrikus szerkezet:</strong> az X-vonás az endocentrikus szerkezeteknél működik (van egyértelmű fej, amely átviszi a kategóriát). A koordináció (pl. <em>Jancsi és Juliska</em>) egzocentrikus: nincs igazi fej — sem Jancsi, sem Juliska, sem a kötőszó nem hozza önmagában a főnéviséget.</p>
 
-    <h4>Jegyszerkezetek a szintaxisban</h4>
-    <p>A kategóriák (szófajok) nem atomiak, tovább alosztályozhatók: VPto, Sthat, Non3sgAux… Az efféle jegyek hierarchiába rendezhetők; a szabályok így szabályosztályokká válnak.</p>
-    <ul>
-        <li>Jegy-érték párok: jegyek = nyelvtani tulajdonságok; értékek: atomi szimbólumok és jegyszerkezetek.</li>
-        <li>Jegy-ösvény: nem egyetlen jegynek van értéke, hanem az ösvénynek. Pl. [egyeztetés[szám]] = Plur.</li>
-        <li>Fej-jegyek és láb-jegyek.</li>
-    </ul>
-    <p>Ösvényekre vonatkozó egyenletekkel: &lt;cat&gt; = v, vagy &lt;finite&gt; = +. Jegy-érték mátrixokkal:
-    <code>[ cat : v ; finite : + ]</code> (mátrixok a mátrixban lehetnek).</p>
-
-    <h3>Unifikáció</h3>
-
-    <p>Az unifikációra már jó sok algoritmus létezik, pl. Earley-algoritmus. További kiterjesztések: negáció, diszjunkció, ösvény-egyenlőtlenség, halmaz-értékű jegyek, jegyszerkezet-leíró metanyelv.</p>
-    <p>A DAG több mint fa, és épp ezáltal használhatóbb nyelvi szerkezetek leírására, hogy egy csomópontnak a nyelvi szerkezetben sokszor kell, hogy több szülője lehessen. A közös csomópontok elsősorban a szintaktikai szerkezet kezelésénél válnak fontossá.</p>
+    <h3>Funkcionális szerkezet — a magyar hagyomány</h3>
+    <p>A magyar iskolai nyelvtani hagyomány nem a sorrendből, hanem a <strong>funkcióból</strong> indul ki: a mondatnak alanya, állítmánya, tárgya, határozója, jelzője van. A toldalékok (esetragok) hordozzák ezt az információt, ezért a magyar szabad szórend mellett is azonosíthatók a mondatrészek (<em>a kutya ugatja a holdat</em> ↔ <em>a holdat ugatja a kutya</em>).</p>
 
     <h3>Mondatelemzési módszerek</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=39m21s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A formális nyelvtan négyes <em>(N, T, P, S)</em>: <strong>N</strong> = nem-terminálisok (szófaji és mondatrész-kategóriák), <strong>T</strong> = terminálisok (szótári elemek), <strong>P</strong> = újraíró szabályok (pl. S → NP VP), <strong>S</strong> = mondat-szimbólum. A szabályok alkalmazásának irányától függően:</p>
+    <ul>
+        <li><strong>Felülről lefele (top-down):</strong> S-ből indulunk, a szabályokat balról jobbra alkalmazva levezetjük a bemenetet.</li>
+        <li><strong>Alulról felfele (bottom-up):</strong> a bemenet szavainak kategóriáiból építjük fel a fát, redukciókkal jutunk el S-ig.</li>
+        <li><strong>Vegyes (chart parser, Earley):</strong> mindkét irányt kombinálja, részeredményeket tárol, így kerüli a többszöri elemzést.</li>
+    </ul>
+    <p>A morfológiailag gazdag nyelveknél (magyar) gyakori, hogy a fa levelei nem szavak, hanem <strong>morfémák</strong>, és a szintaxis „belenyúl" a szó belsejébe — pl. a <em>szemben lakó szomszéd</em> elemzéséhez a <em>lak-ó</em> melléknévi igenév összetétel megbontása szükséges.</p>
 
-    <div class="definicio">
-        <strong>Alulról-felfelé (BU — Bottom-Up) elemzés:</strong> a bemenettel inkonzisztens szabályokkal nem tölt időt; nincs olyan részszerkezet, mely ne lenne kompatibilis a bemenet valamely részével.<br><br>
-        <strong>Felülről-lefelé (TD — Top-Down) elemzés:</strong> nem fordulhat elő, hogy ne mondat-szimbólummal végződő elemzéssel töltsük az időt; nincs olyan részszerkezet, melynek ne lenne helye a végső fában.<br><br>
-        <strong>Optimális megoldás:</strong> valamilyen kombináció, pl. BU-elemzés előfordulási valószínűségekkel; TD-elemzés „BU jóslással".
-    </div>
-
-    <h4>Az RTN szintaktikai elemzéshez</h4>
-    <p>Az RTN egymást hívó FSA-k hálózata; az élek címkéi közt megjelenik más FSA-k „neve". A szokásos FSA működtetésen túl figyelni kell az aktuális bemeneti pozícióra, az aktuális állapotra és a visszatérési helyre — veremkezelés szükséges. Az RTN valójában veremautomata, azaz O(n³) elemzési idő garantálható.</p>
+    <h3>Jegyszerkezetek a szintaxisban</h3>
+    <p>A morfológiánál bevezetett <strong>jegy–érték párokon</strong> alapuló reprezentáció a szintaxisban is használható: a csomópontokhoz egyezési jegyeket (szám, személy, eset, határozottság) rendelünk, és az összekapcsolásnál <strong>unifikációval</strong> ellenőrizzük az összeillést (alany–állítmány egyeztetés, vonzatkeret kielégítése). Így a szintaktikai elemzés ugyanazzal a műveletkészlettel végezhető, mint a morfológia.</p>
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 4. Téma</div>
 </div>
+
+
+
+
+
+
+
 
 
 <!-- ═══════════════════════════════════════════════════════════ TÉMA 5 -->
@@ -656,66 +662,99 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
         <h2><a href="#tema-5">Szintaktikai szerepek és jelentés. Fogalmi reprezentációk. Ontológiák, WordNet.</a></h2>
     </div>
 
-    <h3>Szintaktikai szerepek és jelentés</h3>
+    <h3>Jelentés, modell, világ</h3>
+    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1m21s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        A jelentésábrázolás háromrétegű:<br>
+        — a <strong>való világ</strong> dolgai (denotátumok),<br>
+        — a <strong>modell</strong>, amellyel a világot közelítjük,<br>
+        — az <strong>elmélet / formális leírás</strong>, amely a modellt formálisan jellemzi.
+    </div>
+    <p>Sosem a világgal, mindig a modellünkkel dolgozunk. A számítógépes nyelvészet számára a nyelvi jelentés és az enciklopédikus világismeret összemosódik: pl. <em>Péter megvette az Ember tragédiáját</em> mondatban tudni kell, hogy nem a művet, hanem egy <em>példányát</em> vásárolta meg.</p>
 
-    <h4>Jelentésreprezentáció</h4>
-    <p>Jelentés vagy világismeret? Fontos mind a kettő, hiszen a környezet nélkül esélytelen a jelentést reprezentálni. A világismeret reprezentáció mindig a környezet megismerésére fókuszál — nem szó szinten akarja megérteni az élet nagy dolgait, hanem mondat, vagy még ennél is nagyobb egységek szintjén.</p>
+    <h3>Logikai reprezentációk</h3>
+    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=10m17s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>Az <strong>elsőrendű logikában</strong> predikátum + argumentumok formájában írjuk le a mondatot (pl. <em>asztal(x)</em>, <em>zöld(x)</em>, <em>ül(x)</em>). Logikai szempontból ezek egyformák, nyelvészetileg viszont nagyon különbözőek — itt feszül az ellentét.</p>
+    <p>Magasabb rendű logikában a <strong>predikátum is lehet változó</strong>, így bonyolultabb jelenségek (kvantorok, modalitás, intenzionalitás) is leírhatók.</p>
 
-    <p>A számítógépes jelentésábrázolás területei:</p>
+    <h4>Montague-grammatika — kategoriális nyelvtan + lambda-absztrakció</h4>
+    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=11m20s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>Richard Montague elve: <em>minden szintaktikai szabályhoz tartozik egy szemantikai szabály</em> (rule-to-rule). A részjelentések <strong>lambda-absztrakcióval</strong> kombinálhatók: a λ kiemeli a predikátumot mint változót, és későbbi behelyettesítéssel kapcsoljuk hozzá a konkrét érveket.</p>
     <ul>
-        <li>Matematikai logikai reprezentációk</li>
-        <li>Konceptuális reprezentációk: fogalmi gráfok, fogalmi függőség</li>
-        <li>Lexikális szemantikai reprezentációk: lexikális szemantikus hálók, ontológiák</li>
-        <li>Mélytanulás, neurális hálók</li>
+        <li><strong>Modalitás:</strong> a kifejezés mely világokban (szükségszerűen / lehetségesen) igaz.</li>
+        <li><strong>Intenzionalitás:</strong> a fogalom milyen kiterjedésű, hány világban értelmezhető.
+            <br><span class="note">Klasszikus példa: <em>keres</em> (extenzionálisan üres tárgy is lehet — pl. boszorkány) vs. <em>talál</em> (csak létező tárgya lehet).</span></li>
     </ul>
+    <p>Matematikailag tiszta, de számítógépes alkalmazása nehézkes — ma inkább demonstratív szerepe van.</p>
 
-    <p>A logikák fejlődési sorrendje: elvi problémák → elsőrendű logika → magasabb rendű logikák → modális logikák → intenzionális logikák → Montague elmélete (1970).</p>
-
-    <h4>Montague-nyelvtanok</h4>
-    <p>Az alapfeltételezés: a mondatok jelentése igazságfeltételekkel megadható. Pl.:</p>
-    <p style="margin-left:20px;"><em>Péter olvas egy könyvet</em> ↔ ∃x(könyv(x) ∧ olvas(p*, x))</p>
-    <p>Indirekt interpretáció: TNY → logika → modellek. A <strong>kompozicionalitás elve:</strong> egy komplex kifejezés jelentése a részei jelentéseinek és az őket leíró szintaktikai szerkezetnek a függvénye.</p>
-    <p>Kategorizálás a szavakra (Mondat: S, intranzitív igék: V, főnevek: N). Levezetett kategóriák:</p>
-    <ul>
-        <li>Főnévi csoportok: S/V</li>
-        <li>Tranzitív igék: V/(S/V)</li>
-        <li>Determinánsok: (S/V)/N</li>
-    </ul>
-
-    <h3>Fogalmi reprezentációk</h3>
+    <h3>Fogalmi (konceptuális) reprezentációk</h3>
+    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=6m11s" target="_blank">▶ Előadás ezen a részen</a></p>
 
     <h4>Szemantikus hálók</h4>
+    <p>Olyan gráfok, amelyek <strong>csomópontjaiban</strong> nyelvi egységek (szavak, kifejezések), <strong>élein</strong> pedig címkézett relációk állnak (alá-fölérendelés, rész-egész stb.). A legelső szemantikus hálókban kevés él-típus volt; később sokféle reláció jelent meg.</p>
+
+    <h4>Conceptual Dependency (Roger Schank)</h4>
+    <p>Schank elmélete kis számú <strong>fogalmi primitívvel</strong> dolgozik, amelyekre minden ige visszavezethető:</p>
+    <ul>
+        <li><strong>PTRANS</strong> — fizikai helyváltoztatás (pl. <em>megy</em>, <em>visz</em>)</li>
+        <li><strong>MTRANS</strong> — információátadás (pl. <em>mond</em>, <em>tanít</em>)</li>
+        <li><strong>ATRANS</strong> — birtokváltás (pl. <em>ad</em>, <em>elad</em>)</li>
+        <li><strong>INGEST</strong> — testbevitel (pl. <em>eszik</em>, <em>iszik</em>)</li>
+        <li><strong>PROPEL, MOVE, GRASP, ATTEND</strong> stb.</li>
+    </ul>
+    <p>A primitívekhez <strong>skálák</strong> (intenzitás, irány, idő) és <strong>scriptek</strong> (sztereotip eseménysorok) társulnak. Klasszikus példa az <strong>étterem-script</strong>: belépés → asztalfoglalás → étlap → rendelés → fogyasztás → fizetés → távozás — a hiányzó lépéseket a rendszer automatikusan kikövetkezteti.</p>
+
+    <h4>Conceptual Graphs (John Sowa)</h4>
+    <p>Sowa 70-es évek közepi elmélete: a fogalmi gráfoknak <strong>grafikus</strong> és <strong>lineáris</strong> formája is van, és a logikai következtetések egy része is alkalmazható rajtuk. A Conceptual Graphs ISO-szabvánnyá vált.</p>
+
+    <h3>A szintaktikai szerepek és a jelentés viszonya — esetek</h3>
+
+    <h4>Felszíni esetek vs. mélyesetek (Charles Fillmore)</h4>
     <div class="definicio">
-        <strong>Szemantikus háló:</strong> címkézett gráf. Csúcsai: objektumok (fogalmak). Élei: a csúcsok közötti különféle lehetséges relációk. Az attribútumokat egyes relációk közvetíthetik a relációk mentén.
+        A <strong>felszíni eset</strong> az, amely a mondat nyelvtanában morfológiailag megjelenik (alany, tárgy, részeshatározó, eszközhatározó stb.). A <strong>mélyeset</strong> (case role / thematic role) ezzel szemben szemantikai szerep, amely független a felszíni alaktól.
     </div>
+    <p>Fillmore mélyesetei (tematikus szerepek):</p>
+    <ul>
+        <li><strong>Ágens</strong> — szándékos cselekvő (<em>Péter olvas</em>)</li>
+        <li><strong>Páciens / Theme</strong> — az érintett entitás (<em>elolvassa <u>a könyvet</u></em>)</li>
+        <li><strong>Experiencer</strong> — élmény alanya (<em><u>Jonesnak</u> tetszik a film</em>)</li>
+        <li><strong>Instrument</strong> — eszköz (<em><u>villával</u> eszik</em>)</li>
+        <li><strong>Location, Source, Goal, Time</strong> — térbeli / időbeli szerepek</li>
+        <li><strong>Beneficiary</strong> — kedvezményezett</li>
+    </ul>
+    <p>Ugyanaz a mélyeset különböző nyelvekben más felszíni alakban jelenhet meg (pl. az experiencer az angolban alany — <em>Jones likes the film</em> —, a magyarban és németben részeshatározó — <em>Jonesnak tetszik</em> / <em>Jones gefällt</em>). Ezért a fordításnál és az interlingua-alapú reprezentációknál a mélyesetekkel dolgozunk.</p>
 
-    <h4>Fogalmi gráfok (Sowa)</h4>
-    <p>Sowa fogalmi gráfjai: gráf-alapú tudásreprezentáció és következési modell, illetve grafikus interfész az elsőrendű logikához. Az egész mondatból levezetünk egy csini gráfot úgy, hogy a fogalmakat tekintjük és ezekből következtetünk. <span class="note">(a módszer részletesen az előadás 6. diáján a 28. slide-tól)</span></p>
-
-    <h3>Ontológiák</h3>
-
-    <h4>Ontológia</h4>
-    <div class="definicio">
-        <strong>Ontológia</strong> = „a felfogás leírása". Filozófiai tudományág, a létezést, létező dolgokat vizsgálja, megadja a vizsgált univerzumban létező fogalmak kategóriáit, metafizikai kereteket. A cél: a világnak (leggyakrabban egy alkalmazás szemszögéből történő) formális leírása. Az ontológia értelmezésével érvényes logikai következtetések végezhetők. Az informatika több területén népszerű (nem csak a nyelvtechnológiában).
-    </div>
+    <h3>Szójelentés-egyértelműsítés (Word Sense Disambiguation, WSD)</h3>
+    <p>Egy szóalakhoz több jelentés (sense) tartozhat (pl. angol <em>spirit</em> = lélek / szesz, <em>bank</em> = bank / partszakasz). A WSD feladata a kontextus alapján kiválasztani a helyes jelentést.</p>
+    <ul>
+        <li><strong>Tudásalapú</strong> WSD: szótár, ontológia (pl. WordNet) alapján — Lesk-algoritmus: a környező szavak definícióinak átfedését nézi.</li>
+        <li><strong>Statisztikai / gépi tanulás alapú</strong>: annotált korpuszból tanulja meg a jelentésválasztást a kontextusból.</li>
+        <li><strong>Korpuszalapú</strong>: együtt-előfordulások (kollokációk) alapján.</li>
+    </ul>
+    <p>A WSD a gépi fordítás, információkinyerés, kérdés-válasz rendszerek és kereső motorok kulcsfeladata.</p>
 
     <h3>WordNet</h3>
-
-    <h4>A WordNet felépítése</h4>
     <div class="definicio">
-        <strong>A legelső WordNet (1990):</strong> a Princeton WordNet. Eredetileg az emberi agy nyelvi tudásreprezentációjának modellje. A legnagyobb ingyenes egységes gépileg feldolgozható lexikai adatbázis. Ma: WordNet 3.0.<br><br>
-        <strong>A WordNet legfőbb jellemzői:</strong>
-        <ul>
-            <li>Szemantikus háló</li>
-            <li>A csúcsok címkéi: a „jelentések" mint szinonímahalmazok (synset)</li>
-            <li>Az élek címkéi: a leggyakoribb lexikai relációk</li>
-            <li>Az élcímkék szófajfüggőek: főneviek, igeiek, melléknéviek</li>
-        </ul>
-        A WordNet-ben relációk: hiponímia, hiperonímia, meronímia, antonímia stb. Főnévi, igei, melléknévi és határozószói szófajokat is tartalmaz.
+        A <strong>WordNet</strong> a Princeton egyetemen George A. Miller vezetésével létrehozott lexikális adatbázis, amelyben a szavakat nem ábécé-rendben, hanem <strong>jelentés szerinti hálózatba</strong> szervezik. Alapegysége a <strong>synset</strong> (synonym set) — azonos jelentésű szavak halmaza, amely egy fogalmat reprezentál.
     </div>
+    <p>A synsetek között szemantikus relációk feszülnek:</p>
+    <ul>
+        <li><strong>Hipernima ↔ Hiponima</strong> — fölé- / alárendelt fogalom (<em>állat → kutya → puli</em>)</li>
+        <li><strong>Holonima ↔ Meronima</strong> — egész / rész viszony (<em>autó ↔ kerék</em>)</li>
+        <li><strong>Troponima</strong> — speciális megvalósítás (igéknél: <em>megy → siet</em>)</li>
+        <li><strong>Antonima</strong> — ellentét</li>
+        <li><strong>Entailment</strong> — logikai következés (<em>horkol → alszik</em>)</li>
+    </ul>
+    <p>A WordNet sok nyelvre elkészült (EuroWordNet, Magyar WordNet); széles körben használt a WSD-ben, információkeresésben és szemantikus következtetésben.</p>
 
-    <h4>EuroWordNet</h4>
-    <p>Többnyelvű ontológia a WordNet modellje alapján. A nyelvek közti kapcsolódást egy nyelvközi indexszel oldják meg: <strong>Inter Lingual Index (ILI)</strong>. EuroWordNet Core: PWN 1.5. Két különböző nyelvi synsetet nyelvközi (ekvivalencia) reláció köt össze, ha mindkettő ugyanahhoz a PWN synsethez van csatolva.</p>
+    <h3>Ontológiák</h3>
+    <p>Filozófiailag az <em>ontológia</em> a létezés tudománya — itt viszont a számítógépes nyelvészetben <strong>több ontológia is van</strong> (innen a többes szám furcsasága). Egy ontológia <strong>fogalmak és köztük lévő relációk formális leírása</strong>, amely világismereti és nyelvészeti tudást egyaránt rögzít.</p>
+    <ul>
+        <li><strong>Felső (upper) ontológia</strong>: a legáltalánosabb fogalmakat (entitás, esemény, állapot, idő, hely) rögzíti. Példa: <strong>SUMO</strong> (Suggested Upper Merged Ontology), DOLCE, BFO.</li>
+        <li><strong>Tartományi (domain) ontológia</strong>: egy adott szakterület fogalmai (orvosi, jogi, biológiai stb.).</li>
+        <li>A <strong>szemantikus web</strong> alapja: RDF, OWL formátumokban kódolt ontológiák.</li>
+    </ul>
+    <p>Az ontológiák és a WordNet közötti különbség: a WordNet elsősorban <strong>nyelvi</strong> (lexikális) hálózat (synsetek köré szervezve), az ontológia inkább <strong>fogalmi</strong> (a világ entitásainak hálózata) — a gyakorlatban a kettő gyakran összekapcsolódik.</p>
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 5. Téma</div>
 </div>
@@ -744,98 +783,116 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
         <h2><a href="#tema-6">Korpuszok. Gépi tanulás. Szóbeágyazás. Gépi fordítás.</a></h2>
     </div>
 
-    <h3>Korpuszok</h3>
+    <h3>Korpuszok és korpusznyelvészet</h3>
+    <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=1m30s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        A <strong>korpusz</strong> elektronikus, géppel kereshető, reprezentatív szöveggyűjtemény, amely egy nyelv vagy nyelvváltozat tanulmányozásához ad mintát. A <em>reprezentativitás</em> azt jelenti, hogy különböző műfajokat, regisztereket és időszakokat arányosan tartalmaz.
+    </div>
+    <p>J. R. Firth elve: <em>„You shall know a word by the company it keeps"</em> — egy szó jelentése a környezetéből ismerhető meg. John Sinclair a 70-es évektől építette ki a modern korpusznyelvészetet (COBUILD-szótár).</p>
+    <p>Magyar előzmény: <strong>Simonyi Zsigmond</strong> már 1888-ban induktív, szöveggyűjtésen alapuló nyelvtanírást szorgalmazott — ez a mai korpusznyelvészet előfutára. A korpusszal való munka egyik értéke a <em>serendipity</em>: olyan jelenségekre is rátalálunk, amelyeket nem kerestünk.</p>
 
-    <h4>Párhuzamos korpuszok</h4>
+    <h4>Klasszikus angol korpuszok</h4>
     <ul>
-        <li>Egy könyvben átlagosan néhány százezer szó van.</li>
-        <li>Egy művelt ember átlagosan napi tízezer szót olvas.</li>
-        <li>Ez összesen évi 3,5 millió és egy életben hozzávetőlegesen néhány százmillió.</li>
-        <li>Sok lefordított szöveg akár többszázmillió szava elektronikus úton elérhető.</li>
-        <li>A gép tehát több szóval tud találkozni, mint egy ember egész életében…</li>
-        <li>Egy lehetséges konklúzió: a fordítási probléma a minták alapján statisztikai alapon megoldható, de legalábbis a fordító munkája másokéval jól támogatható, ha megtaláljuk az épp fordítandóhoz leghasonlóbb mondatot.</li>
-        <li>Van magyar–angol párhuzamos korpusz is (<strong>Hunglish:</strong> szoftverdokumentáció, jogi szövegek, szépirodalom, film, újságok — 54,2m token, 2,07m mondat — BME MOKK, MTA NYTI).</li>
+        <li><strong>Brown korpusz</strong> (1961, USA): az első millió szavas elektronikus korpusz — lyukkártyán kódolva. 500 db 2000 szavas szöveg, 15 műfaj.</li>
+        <li><strong>LOB korpusz</strong> (Lancaster-Oslo-Bergen): a Brown brit változata.</li>
+        <li><strong>Susanne</strong> (200 ezer szó): a Brown részleges, szintaktikailag annotált változata.</li>
+        <li><strong>BNC</strong> (British National Corpus, 100 millió szó): kiegyensúlyozott írott + beszélt brit angol.</li>
+        <li><strong>Penn Treebank</strong> (3 millió szó): szintaktikailag (fa-szerkezettel) annotált — a statisztikai parserek alapja.</li>
     </ul>
 
-    <h4>Szövegszinkronizáció</h4>
-    <p>„Alignment": kétnyelvű szövegpárban az egymás fordításának tekinthető szövegegységek meghatározása.</p>
+    <h4>Magyar korpuszok</h4>
     <ul>
-        <li>Nyelvi egységek szerinti szövegszinkronizáció-típusok: bekezdésszintű; mondatszintű; szószintű.</li>
-        <li>Pontosság/fedés szerinti típusok: teljes; részleges.</li>
-    </ul>
-    <p>Módszerek csoportosítása: hossz-alapú, lexikai alapú, horgonykereső módszerek, hibrid módszerek.</p>
-    <ul>
-        <li><strong>Hossz-alapú szinkronizáció:</strong> teljes szinkronizáció, valószínűségi modell, dinamikus programozás. Pozitívumok: globálisan optimális megoldást keres, teljes szinkronizációra képes, robosztus. Negatívumok: nem elég a szövegegységek hosszait vizsgálni, a beszúrásokat és az elhagyásokat rosszul kezeli, költséges O(n²).</li>
-        <li><strong>Horgony-alapú szinkronizáció:</strong> a horgonyok a szövegegységek egymásnak nagy pontossággal megfeleltethetó pontjai. Kezdetben két horgony a szövegpár végpontjait köti össze. Ezek után olyan szavakat keres, amelyek gyakran fordulnak elő együtt a szövegpár két oldalán nagyjából azonos pozícióban. A horgonyok által kisebb szinkronizálandó szegmensekre bontható a szöveg.</li>
+        <li><strong>Szeged korpusz</strong> (1,2 millió szó): kézzel ellenőrzött morfológiai annotáció. Erre tanították a <em>HMM TnT</em> tagelőt, amely 96,95%-os pontosságot ért el magyarra.</li>
+        <li><strong>Szószablya</strong> (≈1,5 milliárd szó, később fél milliárdra szűrve): nagy webes korpusz.</li>
+        <li><strong>Magyar Nemzeti Szövegtár (MNSz)</strong>: kb. 1,2 milliárd szó, kiegyensúlyozott referencia-korpusz.</li>
+        <li><strong>Pázmány korpusz</strong>: kb. 1 milliárd szó.</li>
     </ul>
 
-    <h4>Fordítómemóriák</h4>
+    <h4>Korpuszalapú eszközök — Mazsola</h4>
+    <p>Sass Bálint <strong>Mazsola</strong> vonzatkereső eszköze magyar igék vonzatkereteit (alany, tárgy, határozós bővítmény) keresi vissza a korpuszból. Pl. <em>„bocsánatot kér"</em> — kiderülnek az idiomatikus szerkezetek (<em>„ad", „hány", „alá"</em> stb.).</p>
+
+    <h3>Gépi tanulás és szóbeágyazás</h3>
+    <p>A korpuszok teszik lehetővé a statisztikai és neurális modellek tanítását. Az annotált korpuszokon felügyelt tanulással készülnek POS-taggerek, NER-rendszerek, szintaktikai elemzők; az annotálatlan korpuszokon önfelügyelt tanulással szóbeágyazások és nyelvi modellek.</p>
     <div class="definicio">
-        A <strong>fordítómemória</strong> (fordítási memória, translation memory, TM) szegmenspárokat (általában mondatpárokat) tárol. A TM forrásnyelvi szegmensek és célnyelvi fordítások párjait tárolja, némi adalékinformációval (rögzítés dátuma, fordító neve, fordítás státusza stb.). Ha később egy hasonló forrásnyelvi szegmenst kell fordítani, a TM program megtalálja és felkínálja a szegmens korábbi fordítását.<br><br>
-        A javasolt mondat: (1) teljes egészében megfelelhet — egy az egyben el lehet fogadni; (2) jó kiindulópont lehet — némi módosítással fel lehet használni; (3) teljesen rossz — elvethető.
+        <strong>Szóbeágyazás (word embedding):</strong> szavak ábrázolása sűrű, valós értékű vektorként egy néhány száz dimenziós térben. A vektorok úgy tanulódnak, hogy <strong>hasonló kontextusban előforduló szavak közel kerüljenek</strong> egymáshoz (disztribúciós szemantika — Firth elve számszerűsítve). Klasszikus modellek: word2vec (CBOW, Skip-gram), GloVe, FastText; ma a kontextuális beágyazások (BERT) terjedtek el.
     </div>
-    <p><strong>Keresés a fordítómemóriában:</strong> minden TM-beli mondathoz egy numerikus értéket generálnak (fuzzy kulcs) és egy speciális indexfájlban tárolják egyértelmű azonosítóval. A fuzzykulcs általában valamilyen n-gram (leggyakrabban a trigram-) technológián alapul. Normalizálás: a hosszú mondatok kis helyen való tárolását meg kell oldani (kisbetűsítés, nem alfabetikus karakterek, pl. betűközök eltávolítása stb.).</p>
-    <p><strong>Szabványok:</strong> TMX (Translation Memory Exchange), TBX (Termbase Exchange), SRX (Segmentation Rules Exchange), GMX (GILT Metrics).</p>
+    <p>Tipikus tulajdonság: a szóvektorok között a szemantikai-szintaktikai relációk lineárisak (pl. <em>király − férfi + nő ≈ királynő</em>).</p>
+    <p>További korpuszalapú feladatok: tulajdonnévfelismerés (NER), anafora- és koreferencia-feloldás, témafelismerés, hangulatelemzés (sentiment analysis), automatikus összefoglalás (extractive vs. abstractive), kérdés-válasz rendszerek (Watson), OCR, beszédfelismerés.</p>
 
-    <h3>Gépi tanulás</h3>
-
-    <h4>MI, gépi tanulás, mélytanulás</h4>
+    <h3>Párhuzamos korpuszok</h3>
+    <p><a href="https://www.youtube.com/watch?v=58M0q1lWA00&t=2m" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
-        <strong>Mesterséges intelligencia:</strong> bármely technika, ami lehetővé teszi a számítógépek számára az emberi intelligencia utánzását.<br><br>
-        <strong>Gépi tanulás:</strong> statisztikai technikák, amelyek lehetővé teszik a gépek számára a tanulást (tapasztalat általi fejlődést), anélkül, hogy kifejezetten erre lettek volna programozva. (Többféle gépi tanulás létezik, pl. felügyelt tanulás, felügyelet nélküli tanulás.)<br><br>
-        <strong>Mélytanulás:</strong> olyan algoritmusok, amelyek lehetővé teszik a szoftverek számára, hogy megtanítsák magukat különböző feladatok elvégzésére. Az emberi agy működéséhez csak távolról hasonló neurális hálók és minden eddiginél nagyobb adathalmazok jellemzik rá.
+        <strong>Párhuzamos korpusz:</strong> két (vagy több) nyelvű egymásnak megfeleltetett szöveggyűjtemény. A megfeleltetés általában mondat-, ritkábban kifejezés- vagy szószintű.
     </div>
+    <p>Klasszikus példa: a <strong>Rosetta-kő</strong> (i.e. 196) — egyiptomi hieroglifa, démotikus és ógörög változat egymás mellett. Champollion ennek alapján fejtette meg a hieroglifákat. A <strong>Biblia</strong> a legrégebbi, sok nyelven fennmaradt párhuzamos korpusz.</p>
+    <p>Modern párhuzamos korpuszok:</p>
+    <ul>
+        <li><strong>Hunglish</strong>: ≈54 millió tokenes magyar–angol párhuzamos korpusz. Pl. <em>university</em> ↔ <em>egyetem</em>, <em>college</em> ↔ <em>főiskola</em>.</li>
+        <li><strong>JRC Acquis Communautaire</strong>: az EU joganyaga 22 nyelven.</li>
+        <li><strong>Orwell „1984"</strong>: a kelet-közép-európai nyelvek párhuzamos korpusza.</li>
+    </ul>
+    <img src="img/nyelvtech/parhuzamos.png" alt="Párhuzamos korpuszok" style="max-width:500px;width:60%;">
 
-    <h3>Szóbeágyazás</h3>
+    <h4>Mondatszinkronizálás (sentence alignment)</h4>
+    <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=1m" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A párhuzamos korpusz építéséhez először <strong>mondatra kell szegmentálni</strong> (nehéz: a pont nem mindig mondatvég — <em>U.S.</em>, <em>Smith Corp.</em>, URL-ek). Utána a mondatokat egymásnak meg kell feleltetni (1:1, 1:2, 2:1, 1:0 stb.).</p>
+    <ul>
+        <li><strong>Hosszalapú</strong> (Gale–Church, 1990): a megfeleltetett mondatok hossza erősen korrelál. Gyors, nyelvfüggetlen, jó kiindulás.</li>
+        <li><strong>Szótáralapú</strong>: kétnyelvű szótár segítségével keresi a szóegyezéseket.</li>
+        <li><strong>Horgony (anchor) alapú</strong>: nyelvtől független fix elemek (számok, dátumok, tulajdonnevek, e-mail-címek, URL-ek) használata rögzítési pontként.</li>
+        <li><strong>Hibrid</strong>: a fentiek kombinációja — ez a gyakorlatban használatos.</li>
+        <li>Szóláncok és karaktereltérés mérésére a <strong>Levenshtein- (szerkesztési) távolság</strong> a klasszikus eszköz.</li>
+    </ul>
 
-    <h4>Szóbeágyazás (Word Embedding)</h4>
-    <p>A szavak jelentése összefügg azzal, hogy milyen más szavak környezetében használjuk őket.</p>
+    <h3>Fordítómemóriák (Translation Memory, TM)</h3>
+    <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=15m" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
-        <strong>Szóvektorok:</strong> a szavak egy vektortér különböző pontjaivá válnak. A szavak szóvektorrá alakítása elemzetlen szövegkorpuszokból automatikusan történik a mondatok minden szavához a környező szavak megjegyzésével. Két szó hasonlósága a két szó vektorainak egymástól való távolsága.<br><br>
-        <strong>Statikus nyelvmodell:</strong> nem kezeli a többértelműséget és a többszavas kifejezéseket.<br><br>
-        <strong>Dinamikus nyelvmodell:</strong> ugyanahhoz a nyelvi egységhez a szövegkörnyezet függvényében különböző vektorokat rendel.
+        A <strong>fordítómemória ≠ gépi fordítás</strong>. A TM korábbi emberi fordítások forrás–cél szegmenspárjait tárolja, és új mondat fordításakor a hasonló korábbi szegmenseket ajánlja fel a fordítónak.
     </div>
-    <p><strong>Szóbeágyazás: egyetlen rejtett réteg</strong> (Word2Vec alapja). Ha v a w szót az n-dimenziós vektorreprezentációba képező függvény, akkor pl.:</p>
-    <p style="margin-left:20px;"><code>v(főváros<sub>i</sub>) ≈ v(ország<sub>i</sub>) + v(ország<sub>k</sub>) − v(főváros<sub>k</sub>)</code></p>
-    <p>ahol a jobboldala a baloldal értékének legközelebbi szomszédja. <span class="note">(ez az analógiás kapcsolat — pl. Párizs:Franciaország = Berlin:Németország — a szóbeágyazás egyik legismertebb tulajdonsága)</span></p>
+    <ul>
+        <li><strong>Szegmens:</strong> általában egy mondat — forrás- és célnyelvi változatban együtt tárolva.</li>
+        <li><strong>Fuzzy match:</strong> a kulcs normalizálva (kis/nagybetű, írásjelek, számok kicserélése placeholderre), így a hasonló mondatokra is illeszkedik.</li>
+        <li><strong>Előfordítás (pre-translation):</strong> új szöveg automatikus végigfuttatása a TM-en — 100%-os egyezések kész fordítást kapnak.</li>
+        <li><strong>Terminológiakezelés:</strong> rögzített szakszótár, amely a fordítás során automatikusan felajánlódik.</li>
+        <li>Szabványok: <strong>TMX</strong> (memóriacsere), <strong>SRX</strong> (mondatszegmentálási szabályok), <strong>XLIFF</strong> (fordítandó dokumentum-csere).</li>
+    </ul>
+    <p>Vezető termékek:</p>
+    <ul>
+        <li><strong>Trados</strong> (ma SDL Trados): hagyományosan Word-be ágyazva működött.</li>
+        <li><strong>MemoQ</strong>: önálló editorral; magyar fejlesztés, a <em>Kilgray</em> cégtől (Kis + Lengyel + Ugrai alapítók nevéből).</li>
+    </ul>
 
-    <h3>Gépi fordítás (szabályalapú, statisztikai, neurális)</h3>
+    <h3>Gépi fordítás (Machine Translation, MT)</h3>
+    <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=2m" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>Anekdota a kezdetekről: a korai szóalapú gépi fordító a <em>„The spirit is willing but the flesh is weak"</em> mondatból állítólag <em>„The vodka is good but the meat is rotten"</em> oroszt csinált — a WSD és kontextuskezelés hiányának klasszikus illusztrációja.</p>
 
-    <h4>Szabályalapú fordítás</h4>
-    <p>Szabályalapú fordítási stratégiák három fő típusa:</p>
-    <ol>
-        <li><strong>Közvetlen fordítás:</strong> soha nincs kész semmilyen állapot sem, csak a végén; rengeteg lépésből áll; minden lépés egy adott nyelvi jelenséget dolgoz fel; a legfontosabb eszköz a kétnyelvű szótár; komoly probléma a helyes kimeneti szórend és a megfelelő toldalékolás előállítása. Pl. METEO (1977 óta napi használatban, 1990 óta 45 000 szót fordít gyakorlatilag minden nap).</li>
-        <li><strong>Közvetítőnyelves fordítás:</strong> nem létezik mindent kielégítő közvetítőnyelv; kísérletek: a logikai formalizmusoktól a formalizált eszperantóig; soknyelveű rendszerek esetén vonzó (n &gt; 3 esetén: n*(n−1) &gt; 2*n).</li>
-        <li><strong>Transzfer fordítás:</strong> morfológiai elemzés → egyértelműsítés (POS, WSD) → lexikális transzfer: kétnyelvű szótárakkal → szerkezeti transzfer: frázisok, csonkok → morfológiai generálás. Szintaktikai/felszíni transzfer hasonló struktúrájú, különösen rokon nyelvek között; szemantikus/mély transzfer távolabbi rokonságban lévő nyelvek között.</li>
-    </ol>
+    <h4>Szabályalapú MT — a Vauquois-háromszög</h4>
+    <p>Három alapstratégia (Vauquois-háromszög, alulról felfele egyre absztraktabb):</p>
+    <ul>
+        <li><strong>Direct (közvetlen) fordítás:</strong> szó-szó megfeleltetés + minimális átrendezés. Pl. <strong>Meteo</strong> rendszer Kanadában — korlátozott időjárás-tartomány.</li>
+        <li><strong>Transfer:</strong> a forrásnyelvet szintaktikai (és részben szemantikai) reprezentációra hozzuk, <em>lexikális</em> + <em>szerkezeti</em> transzferrel átalakítjuk a célnyelvi reprezentációra, majd abból generálunk. Példa: <strong>Eurotra</strong> EU-projekt.</li>
+        <li><strong>Interlingua:</strong> egy nyelvfüggetlen közvetítő reprezentációba elemzünk, majd onnan generálunk. Az <em>Esperanto-interlingva</em> kísérlet kudarcot vallott — túl nehéz nyelvfüggetlen reprezentációt találni.</li>
+    </ul>
+    <p>További korai rendszerek: <strong>SYSTRAN</strong> (Peter Toma) — sok nyelvpárra, sokáig az EU és a Google használta.</p>
+    <p>Köztes paradigmák: <strong>példaalapú</strong> (EBMT) — korábbi fordítási mintákból illeszt; <strong>MetaMorpho</strong> — magyar fejlesztésű hibrid (szabály + statisztika).</p>
 
-    <h4>Statisztikai fordítás</h4>
-    <div class="definicio">
-        <strong>A statisztikai GF lényege (naiv Bayes-tétel alapján):</strong> az ötlet a beszédfelismerésből jön. Csak egy fordítási modell (feltételes valószínűségi rész) és egy nyelvmodell (teljes valószínűségi rész) kell, meg a dekóder, ami számol. A legtöbb „minőségi" probléma a korpusz méretéből adódik.<br><br>
-        <strong>A fordítási modell</strong> feladata megtalálni a legjobban illeszkedő bemenetet az e (angol) kimenethez. P(f|e) tanulása párhuzamos korpuszból lehet csak megoldani.<br><br>
-        <strong>A nyelvmodell</strong> kialakítása azoknak a mondatoknak a halmazából indul ki, amit az adott nyelven mondani szoktak. Trigramm-valószínűségekkel szokás közelíteni. Pl. p(witch|the green) ≈ p(green|the witch). A nyelvmodell kiindulhat a web n-gramjaiból is.
-    </div>
-    <p>Ha nem elég nagy a korpusz: simítás (back-off). A statisztikai GF problémái és a továbblépés: tulajdonnevek, számmal alkotott kifejezések, főnévi csoportok; hibrid rendszerek előtérbe kerülése; 2010-es évek: elindul a világ a neurális hálós fordítás felé…</p>
-    <p>A fordítások értékelése: a kézi kiértékelés lassú és szubjektív. 2002, IBM: <strong>BLEU (Bilingual Evaluation Understudy)</strong> — a lényeg: átfedés a referenciafordításokkal.</p>
+    <h4>Statisztikai gépi fordítás (SMT)</h4>
+    <p>Az IBM csapata (<em>Frederick Jelinek</em> és társai) a 90-es években bevezette a tisztán statisztikai modellt — Bayes-szabály alapján:</p>
+    <p style="text-align:center"><em>P(e | f) ∝ P(f | e) · P(e)</em></p>
+    <p>ahol <em>e</em> a célnyelvi (pl. angol), <em>f</em> a forrásnyelvi (pl. francia) mondat. A modell két komponense:</p>
+    <ul>
+        <li><strong>Fordítási modell</strong> <em>P(f | e)</em>: párhuzamos korpuszból tanulja a szó- és kifejezéspárok valószínűségét. Tanítás <strong>EM (Expectation-Maximization)</strong> algoritmussal — pl. <em>la maison ↔ house</em> illesztését iteratív becsléssel finomítja.</li>
+        <li><strong>Nyelvi modell</strong> <em>P(e)</em>: a célnyelv <strong>n-gram</strong> valószínűségeit tárolja — biztosítja, hogy az eredmény nyelvtanilag természetes legyen.</li>
+    </ul>
+    <ul>
+        <li><strong>Sparse data problem:</strong> a korpuszban nem látott n-gramok valószínűsége 0 lenne — ezt <strong>simítással</strong> (Laplace, Good-Turing, Kneser–Ney) kerüljük el.</li>
+        <li><strong>Phrase-based SMT:</strong> nem csak szavakat, hanem rögzített kifejezéseket (frázisokat) is illeszt — jobban kezeli az idiomatikus szerkezeteket.</li>
+        <li>Klasszikus hiba: <em>Las Vegas</em> magyarra fordítva <em>Kecskemét</em> lett, mert mindkettő gyakori városnév-helyettesítő a tanítóanyagban — a kontextusvesztés tipikus példája.</li>
+        <li><strong>Matrix-projekt:</strong> sok nyelvpárra párhuzamosan készült SMT — a magyar (agglutináló morfológiája miatt) jellemzően kilóg a sorból.</li>
+    </ul>
 
-    <h4>Neurális fordítás</h4>
-    <div class="definicio">
-        <strong>Enkóder-dekóder alapú neurális gépi fordítás:</strong> a forrásnyelvű mondat vektorrá alakítódik (enkóder), majd abból generálódik a célnyelvű mondat (dekóder).
-    </div>
-    <div class="definicio">
-        <strong>Figyelmi mechanizmus (Attention):</strong> lehetővé teszi a transzformer számára, hogy súlyozza az egyes bemeneti sorozatok elemeinek fontosságát, amikor minden elemet feldolgoz.<br><br>
-        <strong>Transzformer (Google, 2017):</strong> mélytanuló architektúra nyelv- és képfeldolgozásra, párhuzamosan működő ún. figyelmi mechanizmusokkal, mely az egymást követő adatokat (például szöveget) hatékony kontextuális információval dolgozza fel. Többfejes figyelem és pozíciókódolás.<br><br>
-        Példa a kontextusfüggőségre:<br>
-        <em>„A medve lejött a hegyről. Ott volt egy út, és átment rajta."</em><br>
-        <em>„A medve lejött a hegyről. Ott volt egy úthenger, és átment rajta."</em><br>
-        <span class="note">(mindkét mondatban az „átment" alanya kontextusfüggő; a transzformer a figyelem révén kezeli ezt)</span>
-    </div>
-    <div class="definicio">
-        <strong>Előtanítás (pre-train) és finomhangolás (fine-tune):</strong><br>
-        — Előtanítás (felügyelet nélküli tanítás): maszkolás (szavakra) és rákövetkezés (a két mondat egymás utáni vagy véletlenszerűen kiválasztott).<br>
-        — Finomhangolás (felügyelt tanítás): névelem-felismerés, kivonatokás, szöveg osztályozás, ékezetesítés, keresés, kérdés-megválaszolás, gépi fordítás, …<br><br>
-        A nagy nyelvmodellben nincsenek szavak: a szövegből számok lesznek (vektorok), hogy a neurális hálózat fel tudja őket dolgozni, és ezekből a számokból, a hálózat súlyaiból áll elő a kimeneti szöveg. Ehhez jelentős GPU-kapacitás kell.
-    </div>
+    <h4>Neurális gépi fordítás (NMT) — rövid kitekintés</h4>
+    <p>A 2014 utáni paradigma: encoder-decoder neurális hálók (eleinte LSTM, ma Transformer) végpont-végpont tanulnak párhuzamos korpuszból. A szóbeágyazások és a figyelmi (attention) mechanizmus tette lehetővé a hosszabb kontextus jó kezelését — ma minden vezető fordítórendszer (Google Translate, DeepL) ezen alapul.</p>
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 6. Téma</div>
 </div>

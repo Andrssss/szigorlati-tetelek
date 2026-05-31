@@ -1,0 +1,860 @@
+Kedves hallgatóság, múltkor a jelentéseket jártuk valamennyire körül, és ezeknek a
+0:1212 secondsjelentéseknek ugye az ember fejében van az egyik fele. Erre mondtuk azt, hogy mondat jelentésre reprezentáció, tehát
+0:2020 secondshogy hogy építjük fel a részjelentésekből az egészt.
+0:2424 secondsviszont vannak a részjelentések, amik hát egyszerűség ezért mondjuk azt, hogy a szavak jelentései, amiket már
+0:3131 secondshagyományosan évszázadok óta tárol az emberiség valahol.
+0:3636 secondsEz pedig a szótári világ. Itt rögtön ugye jeleznünk kell, hogy ilyen furcsa helyzetben vagyunk, hogy magyarul
+0:4545 secondsa lexikon az az enciklopédiát jelenti, ami más nyelveken enciklopédia.
+0:5151 secondsÉs a magyarban pedig ugye a szótár, a dictionary az a
+0:5858 secondsszulttár. És nekünk az enciklopédiát bár néha használjuk, de azért azt lexikon jelentésbe. A kettő között ugye az a
+1:061 minute, 6 secondskülönbség, hogy a világismeretet próbáljuk leírni a számunkra lexikonnak nevezett enciklopédiába, és a nyelvi
+1:131 minute, 13 secondsismereteket pedig a szótárba, és komoly viták vannak arról, hogy hol a határ.
+1:181 minute, 18 secondsEzt már mondtuk korábban is, hogy nehéz, hiszen itt a kis egyszerű szóváldozós példákban is a múlt előadásban lehetett látni, hogy mennyire
+1:271 minute, 27 secondsáthallatszik a világismeret és a nyelvi ismeret. Hát ugye a nyelv az a világnak a része. Na most azt mondom, hogy fordítástámogatás,
+1:351 minute, 35 secondsvagyis hogy a fordítást támogatás közben használjuk a szótárat, tehát amikor egy másik nyelvet akarunk jobban
+1:431 minute, 43 secondsmegérteni, de hát a szótárok nem feltétlen kétnyelvűek, viszont mégis csak a fordítást támogató környezetből indulunk ki, hogy mire való egy szótár.
+1:501 minute, 50 secondsTehát itt azt tudjuk mondani, hogy a nyelvtechnológia segít a szótári
+1:591 minute, 59 secondshasználaton, illetve a fordítási folyamatban.
+2:032 minutes, 3 secondsÉs eddig ezek kizárólag ember számára készültek. Az eddig az nem ez az év, hanem mondjuk mit tudom én, 30-40 évvel ezelőttig, és hát ma már gép számára is.
+2:122 minutes, 12 secondsNa most ilyeneket úgy szoktak létrehozni, hogy ugye hát a gépi szótárakat, hogy valamilyen eszközökkel,
+2:212 minutes, 21 secondsmint például a múltkor emlegetett és ma is tárgyalandó mélygtanulásos módszerek, vagy pedig
+2:292 minutes, 29 secondsegyszerűen csak valami technikai támogatás, és akkor a intuíció, hát a semmiből hozzuk létre, az ember fejében van a világ, de leginkább ez a harmadik
+2:382 minutes, 38 secondseset szokott lenni. Szótárokat úgy hoznak létre, hogy vannak más szótárok.
+2:422 minutes, 42 secondsHát ma már ezeket is gépi támogatással hozzuk össze. Tehát kirakja az ember a kd darab létező adott nyelvi nyelvpára
+2:492 minutes, 49 secondsvonatkozó szótári halmazt, és akkor abból megpróbál összerakni egy új szótárat. Ha ez nagyon mechanikus és
+2:562 minutes, 56 secondsnagyon primitív, akkor jogos lenne az az észrevétel, hogy új szótárat úgy csinálunk, hogy összemörcsöljük a
+3:033 minutes, 3 secondsmeglevőket. De ennél sokkalsokkal bonyolultabb egy szótárépítési folyamat.
+3:073 minutes, 7 secondsÚgyhogy ezt jobb elfelejteni és azt kellene mondani, hogy a a nyelvészet egyik legkomplexebb tevékenysége a szótára létrehozása,
+3:153 minutes, 15 secondsde sokan nem tekintik ennek. Na most a géppel, hát mi azért vagyunk itt, hogy a géppelt támogatott szótárkészítésről is
+3:233 minutes, 23 secondsszóeség. Hát ugye nyilván azért is csinálhatunk szótárot, hogy ember számára legyen, és az embernek leírt forrásokban mit tudom, beszkenneljük a
+3:323 minutes, 32 secondsszótárokat, könnyebb legyen kezelni és legóczük, és akkor csinálunk belőle egy M plusediket.
+3:393 minutes, 39 secondsA másik, hogy nem az embernek csináljuk, hanem ezekből valahogy a gép számára.
+3:433 minutes, 43 secondsÍgy sok probléma lesz, erről lesz többek közt ma is szó. És a másik, hogy gépi forrásokból csináljuk. Tehát nem az ember által létrehozott kinyitom a
+3:523 minutes, 52 secondsszótárt, ott van egy szócikk és azt szépen leírom, hanem hát a gép által hozott adatbázisból építek egy ember
+4:004 minutesszámára tipikus szótárat, vagy egy olyat, amit sose lát majd ember, hanem a gép fogja használni. Hát az a négy alap lehetőség van. Na most akárhogy is van a
+4:094 minutes, 9 secondsszótár, valahol egy fordítási folyamatnak a része. Tehát azért induljunk ki abból az alaphelyzetből, hogy a szótára azért van szükség, mert le akarok farítani egy
+4:184 minutes, 18 secondsvalamilyen nyelvi szöveget egy másikra, és akkor támogatás kell, hogy bizonyos nyelvi egységek, hogy szerepeljenek a
+4:264 minutes, 26 secondsfordításomban. És nem mindent tudok, mert nem akkora a fejem, hogy minden benne lenne. Tehát támaszkodom a szótárra.
+4:344 minutes, 34 secondsNormális körülmények közát van egy forrásszöveg.
+4:384 minutes, 38 secondsAmit hát most az írásbeli fordításról beszélünk, de hát nyilván magamnak is valahogy lefordítom a szöveget, de a megértés az egy picit azért ettől
+4:464 minutes, 46 secondskülönbözik. Tehát van egy forrásszöveg és a végén ki kellene jönnie egy szép fortításnak. Forító van közben, leh
+4:544 minutes, 54 secondskézre létrehozza a forrítást és optimális esetben ebben a fordítási folyamatban benne van egy lektor is. Ak megnézi, mit csinált ez az ember. Neki
+5:015 minutes, 1 secondkell a forrásszöveg, hogy ebből fordította ezt és végül kijön az ellenőrzött fordítás.
+5:075 minutes, 7 secondsEz az álom, mert ma mindenki rohan, és a lektorálás akár a könyvkiadásba, akár a fordításoknál hát elég kevéssé van jelen.
+5:185 minutes, 18 secondsHát akkor nézzük, hogy mi is tulajdonképpen hoppá egy kicsit komplexebben ez a világ.
+5:285 minutes, 28 secondsVan a forrásszöveg, hogy az előláttuk, van a fordító, hogy kiadja a fordítást a kezéből. De ha vannak gépi támogatások,
+5:355 minutes, 35 secondsitt balfele elindulunk, például van az előfordító rendszer, ami nem egy nagy kunct, kvázi kiszótárazza a szöveget. Na
+5:425 minutes, 42 secondsmost nyilván egy profi fordítónak erre iszonyan nincs szüksége, de egy amatőrnek esetleg lehet, tehát hogy megadja a szavak kifejezések jelentését,
+5:515 minutes, 51 secondsakkor van egy kiszót árazott forrásszöveg itt alatta, és ez jut el a fordítónkhoz. előfordító rendszer mire épít? Hát, hogy szótárai vannak, és a
+6:006 minutesszótárokból kapja a tudást, és annak a segítségével fordít. Na de lesz olyan, amit nem tud lefordítani, tehát ő
+6:076 minutes, 7 secondslétrehoz egy ismeretlen szavak listát is. És akkor kérdés, hogy az ismeretlen szavak azért nincsenek benne a
+6:146 minutes, 14 secondsszótárban, mert gyenge a szótár. Hát ilyen mindig előfordul, vagy azért, mert egyszerűen a ható körén kívül esik, hiszen egy szakkifejezésnek nem kell
+6:226 minutes, 22 secondsbenne lennie egy szótárba. Itt csak zárójelben jegyzem meg, hogy azért egy szótárt, prototipikus szótárt az ember
+6:286 minutes, 28 secondselővesz, ha az ilyen jó, nagy, vastag, akkor azt látja, hogy olyan dolgok is vannak benne, amit hát nagy eséllyel nem
+6:376 minutes, 37 secondstud. Betegségek nevei, gombanevek, nem tudom én, különbö. Na igen. Hát szóval azért a szótáraknál
+6:446 minutes, 44 secondsmondjuk ki egyszerűen, hogy sokszor a szócik darab számára fizetik a szótárszerzőt, tehát létrehoz olyat is,
+6:536 minutes, 53 secondsamire hát akkora szükség nincs. Tehát azt lehet mondani, hogy egy igazán jó szótár az olyan 70-80000 entryből áll.
+7:007 minutesNem mintogyha ez a szám be lenne égetve valahova, de nagyjából lehet seíteni.
+7:037 minutes, 3 secondsAmi efölött van, a nagy szótárak 140000, 300000, abba valójában szakszótárak, terminológia adatisok vannak beledugva.
+7:147 minutes, 14 secondsÉs akkor így persze, hogy vannak olyan gombák, amiket az ember nem tud, meg vannak olyan különleges kifejezések, amit nem tud. Ezek nem mindig
+7:217 minutes, 21 secondskiegyensúlyozottak. Bocsánat, hogy a gombákat elővettem, de lehet, hogy nem tudom, építészeti szakkifejezésre kevésbé vannak benne. Tehát mindenképpen
+7:297 minutes, 29 secondsvan egy olyan terminológiai adatbázis, amiben ezek benne vannak, és hát azt a terminológiai kezelőrendszer mozgatja,
+7:367 minutes, 36 secondsés az ismeretlen szavainkat odaküldjük el, hátha az okosabb. Na most a szótárak sem maguktól szótárak, hanem őket is mozgatja egy intelligens szótár kezelő
+7:457 minutes, 45 secondsrendszer, ami persze a forítónak is rendelkezésére áll, hogy ha nem találja meg az előfordító rendszer, amit akarunk, akkor egy kicsit körülnézve a
+7:537 minutes, 53 secondskörnyéken, tehát intelligensen használja, és akkor esetleg rájon, hogy mi lehet a ismeretlen szumnak, vagy a rosszul fordítható résznek az oka.
+8:018 minutes, 1 secondmásik irányban, tehát a farástövegfító függőleges vonaltól jobbra látható a fordító memória, ami majd egy következő
+8:108 minutes, 10 secondsóra témája lesz. Ez az utolsó évtizedeknek a terméke. Itt egyszerűen fordító memória, fordítási memória,
+8:188 minutes, 18 secondstranslation memory néven egy olyan eszközt hoztak létre, hogy amit az ember lefordított, az legyen meg legközelebb
+8:268 minutes, 26 secondsis. Tehát ha még egyszer ugyanazzal a mondattal találkozom, akkor ne kelljen lefordítani. Ez persze nagyon ritka, hogy pont ugyanazzal, bár mondjuk egy
+8:348 minutes, 34 secondsszoftver kézikönyvben azért sokszor vannak nagyon hasonló mondatok.
+8:398 minutes, 39 secondsÉs akkor ha nem egészen az van ott, akkor esetleg a hasonlókat, valamilyen technikai módon összehasonlítva
+8:478 minutes, 47 secondshasonlókat is fölkínálja. És mivel a fordító az ember ránéz erre, és hogyha kap valami jó ötletet, akkor azt kicsit
+8:548 minutes, 54 secondskézzel módosítja, és akkor az visszarepül a fordítómemóriába. Egy halványan perturbált eredeti mondat, egy
+9:019 minutes, 1 secondhalványonan perturbált, megváltoztatott célmondattal. Tehát akkor egyre finomab fordítások lesznek benne. És amikor jó sok fordító, jó sok ideje fordít, akkor
+9:109 minutes, 10 secondsez a fordítómemória már nagyon-nagyon sok mindent tud egy azt szakterületről.
+9:159 minutes, 15 secondsMiből áll ez? Hát mondatpárokból vagy valamiknek a párjából, amiket legokosabb mondatnak tekinteni, tehát amiket az
+9:229 minutes, 22 secondsember úgy egybe lefordít, tehát ilyen szinkronizált, tehát hogy párba állított, tehát minden mondatnak van egy
+9:299 minutes, 29 secondsfordítása ilyen párokból, amit hát vagy így hozom létre, hogy ennek a mondatnak, aminek még nincs fordítása, eléírom a
+9:379 minutes, 37 secondsforítását, vagy valahonnan a szövegekből, már lefordított szövegekből mondott párokat csinálok. Erről is lesz
+9:449 minutes, 44 secondsszó majd a következő órán. És akkor ezek kerülnek a fordítómemóriába, és ő is ad javaslatot. Előfordítórendszer is, szótárak is, és a fordító így jól érzi
+9:539 minutes, 53 secondsmagát. És akkor az előbbért megnyomtam, most már látszik, hát a lektor is jól érzi magát, ő is megkapja a forrásszöveget, megkapja azt a
+10:0010 minutesfordítást, amit csinált a fordító. Ő összevetheti ezzel a szövegpár szinkronizáló rendszerrel, hogy azok a fordítási mondatpárok, azok hogy
+10:0910 minutes, 9 secondsviszonyulnak ahhoz, amit eddig tudtunk, tehát az eddigi összegyűjtött ilyenek.
+10:1410 minutes, 14 secondsMeg hát nyilván bejönnek olyan javaslatok is, amik korábban nem szerepeltek se az alapszótárba, se ebbe a szakszótári világba. Tehát az új
+10:2210 minutes, 22 secondsterminológiai egységek. Tehát egy terminológiai kezelőrendszer, egy szakszótárkezelőrendszer ott áll a háttérben, meg hát ugye egy alapszótárkezelőrendszer.
+10:3110 minutes, 31 secondsÉs hát akkor azt lehet csinálni, hogyha elő van írva mondjuk egy adott fordítási világba Európai Unió, hogy ezt a dolgot
+10:3810 minutes, 38 secondsmindig így kell fordítani, akkor lehet azt mondani, hogy vífordítónak óriási a szabadságod, de azért egy szakfordító úgy fordít, hogy az kötelező. Tehát egy
+10:4710 minutes, 47 secondsEU-s fordításban ennek mindig ez fel. És akkor ilyen konzisztencia ellenőrzést lehet csinálni. a terminológiai párokat,
+10:5510 minutes, 55 secondstehát egyik nyelv, másik nyelv megkeresni, hogy egy adott mondatban, ha megjelenik az egyik, vajon az ő fordításában megjelenik-e a másik. És
+11:0311 minutes, 3 secondsakkor ilyen konzisztenciálést is csinál a vektor. És ha látja, hogy valahol ez nem jött össze, akkor figyelmezteti a fordítót, hogy nem konzekvensen fordított.
+11:1411 minutes, 14 secondsAkkor lépjünk tovább, és mondjuk azt, hogy ebben a folyamatban létezik egy terminológus is, aki az ismeretlen
+11:2011 minutes, 20 secondsszakszavakat, kifejezéseket megpróbálja megfejeltetni. Na most jó esetben ez egy önálló személy. Sokszor maga a farító
+11:2911 minutes, 29 secondsvállalja fel azt a munkát, hogy ő létrehoz új dolgokat. Tehát megnézi a szótárat, azokban nincs benne, és létrehoz egy új terminológiát, amit tehát valakinek szintén lektorálni kell.
+11:3911 minutes, 39 secondsEz egy nagyon komplex folyamat, de az EU szövegek fordításánál időről időre megjelennek új terminusok,
+11:4611 minutes, 46 secondsamiket valahogy fordítani kell, de hát a szavaink végesek, mármint véges sokan vannak, és esetleg egy kicsit már más jelentésekkel terhelt
+11:5511 minutes, 55 secondsszót szeretne oda választani, akkor inkább kifejezést, több szóbal álló egységet választ, és akkor ez jó lenne, ha valaki ezt állandóan kontrollál, mert
+12:0312 minutes, 3 secondsezeknek a száma egyre szaporodik, és nem könnyű konzisztensen meghagyni az eddigi és bevenni az új terminológiát.
+12:1312 minutes, 13 secondsEz a magyar esetében eset, de azért talán kevesen tudják, és mint érdekességet mondom, hogy ugye egy olyan nyelv, mint a latin, amelyiknek hát úgy
+12:2212 minutes, 22 secondstűnik, hogy lezárult már az élete, mert nem csak a római birodalomszintnek, hanem a középkori latinhasználat jó még föllelhető orvosi jogi területeken, de
+12:3112 minutes, 31 secondsazért alapvetően már kihad nyelvnek tekinthető, de mondjuk Vatikánnak a hivatalos nyelve is a terminológiát
+12:3712 minutes, 37 secondsévről évre frissítik, mert a hivatalos nyelv, akkor ki kell tudni rajta fejezni, nem tudom én, egy mosogatógép
+12:4512 minutes, 45 secondsajtajának a leírását, és a latin nyelvben azért nagy eséllyel eredetileg nem volt, tehát a terminológiát létre
+12:5212 minutes, 52 secondskell hozni. Egy picit megmosolyogtató, de hát azért lássuk be, hogy a magyar is ilyen, nem ilyen mértékben is a nyelv
+12:5912 minutes, 59 secondsél, de azért egy rakásfogalomnak világban megjelenő új fizikai vagy jogi egységnek a megfelelője az bizony
+13:0813 minutes, 8 secondslétezett eddig. Tehát a terminológia menedzselés az egy nagyon komoly dolog, ha azt szeretnénk, hogy mondjuk a
+13:1613 minutes, 16 secondsprofesszionális fordításokban, államigazgatásban mindig minden egységesen és jól legyen, és ne itt így fordítsák, ott meg úgy, mert ebből
+13:2413 minutes, 24 secondsállandó probléma tud lenni. Tehát a terminol egy nagyon fontos terület.
+13:2813 minutes, 28 secondsEzért jó, ha van önálló terminológus, de mint mondom, ezt az esetek nagy részében maga a fordító vállalja föl, csak a profiirodákba létezik az, aki kimondottan a szaknyelvvel foglalkozik.
+13:3913 minutes, 39 secondsNa, lépjünk tovább egy ilyen szótár tipológiai irányba. A szótár tipológia hát nagyon egyszerű. Ugye nyilván a
+13:4813 minutes, 48 secondsnyomtatott szótár volt eddig a szótár, már nem eddig, de ugye néhány évtizedel ezelőttig megjelent az elektronikus.
+13:5613 minutes, 56 secondsHogy jelent meg? Hát körülbelül úgy, mint a az első autó. Tehát, hogyha meggondolják, hogy az első autó az úgy
+14:0314 minutes, 3 secondsnézett ki, hogy a lovaskocsiból kifogták a lovat, és Benz oda betette a motort.
+14:1014 minutes, 10 secondsTehát nem a szél csatorna határozta meg az új eszköznek a formáját, hanem az
+14:1714 minutes, 17 secondselőző technológia, a lovaskocsiság. és iszonyú sok idő kellett. Hát az egy évszázadnál is több, amíg kialakult,
+14:2414 minutes, 24 secondshogy hát szélcsatornából okos dolog bemérni ezt, és hova kell tenni a motort, előre vagy hátra. És ugye azért
+14:3114 minutes, 31 secondskialakult egy olyan sztenderd, amelyik javában nem alakult ki az elektronikus szótáraknál. Tehát átvesszük a
+14:3714 minutes, 37 secondspapírszótáraknak a nyomdászok, tipográfusok által
+14:4414 minutes, 44 secondsdeterminált világát, és megjelenítjük a számítógép felületén. Én nem mondom, hogy így is nem sokkal gyorsabb keresni benne, de azért nem ez az igazi elektronikus szótár, amelyik a
+14:5314 minutes, 53 secondsnyomtatott szótárnak a virtuális papíron a képernyőn való megjelenítése, de hát egyelőre még nagyrészt itt tartunk. Egy másik
+15:0215 minutes, 2 secondsfelosztás, hogy vannak a szótárak és a előbb azt mondom, hogy szakszótárak, de a terminológiai adatbázisok sokkal szebb
+15:0915 minutes, 9 secondsígy mondani. Ugyanis a sima szótáraknál általában egy egységnek rengeteg
+15:1615 minutes, 16 secondsalegysége, jelentése jelentés módosulata lehet. Tehát egy egy nagyon korpus szó cikkben sokféle
+15:2415 minutes, 24 secondsszinonimaság meg részdolog jelenik meg, míg mondjuk egy terminológiai adatbázist úgy kell elképzelni, megjelenik egy új tárgy, vagy egy tárgynak egy része,
+15:3315 minutes, 33 secondsaminek van egy neve. Tehát a fogalmi egység jelenik meg a világban, és azt általában szerencsés esetben egy szóval
+15:4015 minutes, 40 secondsvagy egy kifejezéssel jellemzi egy nyelv. Egy másik is, egy harmadik is.
+15:4415 minutes, 44 secondsTehát a fogalom van középen, és címkézzük egyértelműen a szótárokban.
+15:5015 minutes, 50 secondspláne ugye két nyelvi szulttárok van egyik nyelv másik és hát sose lehet teljesen pontosan megfeleltetni, mert azért a hétköznapi szavak azok egyik
+15:5815 minutes, 58 secondsnyelvben egy kicsit más jelentés többlettel vagy éppen hiánnyal rendelkeznek a másikban máshogy. Tehát nincs egy az egyben megfeleltett és még
+16:0716 minutes, 7 secondsa terminológiai adatbázisok kiindulhatunk abból, hogy minden egy az egyhez megfeleltetés, mert hiszen nem a nyelvi fogal nyelvi leírások felelnek
+16:1516 minutes, 15 secondsmeg, hanem a fogalomnak van minden nyelven egy neve.
+16:2016 minutes, 20 secondsÉs nagyon ritkán esetleg, ha több neve, de addig amíg egy van, addig a terminológiai adatbázisok jelentősen különböznek struktúrájukban az egy, az n
+16:2916 minutes, 29 secondsvagy n az mfeleltetést tartalmazó szótárakkal szemben. Ők egy az egyhez megfeleltetéseket tartalmaz. É
+16:3716 minutes, 37 secondsharmadik felosztás az, hogy közvetlen vagy közvetett szótárak. Tehát ugye arról van szó, hogy közvetlen szótra
+16:4516 minutes, 45 secondskiolvasom benne, hogy mi van ott, aztán azzal megyek tovább azzal a tudással.
+16:5116 minutes, 51 secondsMég mondjuk az elektronikus szótárak, amiket a számítógépes rendszerek használnak, azok ugye tehát papíron
+16:5816 minutes, 58 secondsnincsen közvetett szótár, mert az a fogalom az elektronikus szótár alkal alakult ki, de az elektronikus szótárak nagy része közvetlen szótár, mert hát a
+17:0617 minutes, 6 secondsképernyőre kirakunk valami szépen formázott szöveget, kívülről ránéz a felhasználó, megörül neki és már ki is kapcsolja, vagy el is tekint a továbbiak
+17:1517 minutes, 15 secondsmegnézésétől. A közvetett szótár egy olyan szótár, ami állandóan az elektronikus rendszer rendelkezésé áll.
+17:2117 minutes, 21 secondsNem kimondottan ugye úgy human readable, tehát hogy nem emberek számára készül, mert readable.
+17:2817 minutes, 28 secondsAz a lényeg, hogy egy háttérrendszer állandóan tudja őket használni és nem a napi szókincsünk bővítésére szolgál,
+17:3617 minutes, 36 secondshanem a gépek működtetéséhez egyfajta háttértár. Na most ez a szótárak ugye mint kiindultunk, hát az ember fejébe a
+17:4317 minutes, 43 secondsszótár, amit leveszek persze angol szótár polcról az két nyelvű angol, magyar, magyarangol, német, magyar német
+17:5117 minutes, 51 secondssatöbbi. Úgy tűnik, hogy az egynyelvű szótárak az ilyen úri huncutság, pedig valójában egyáltalán nem erről van szó.
+17:5717 minutes, 57 secondsMinden nyelvnek a saját szókincsét mindenféle aspektusból illik leírni történetileg,
+18:0518 minutes, 5 secondsetimológiailag, mindenfajta finomságot figyelembe véve ann vannak helyesírási szótárok, hogy hogy kell
+18:1318 minutes, 13 secondshasználni egy szót. Persze nyilván azok nagyon nagyrészt szólisták, de ott is vannak magyarázatok. Yog az egyemi szótáraknak is nagyon nagy jelentősége
+18:2118 minutes, 21 secondsvan, pláne ha egyértelmű volna egy szó egységnek vagy egy entryek, egy ott ott szereplő címszónak a jelentése, mert
+18:3018 minutes, 30 secondsakkor ha valaminek egy kettő három jelentése van, akkor minden két nyelvű szótár azon a nyelven például magyarban
+18:3718 minutes, 37 secondslenne egy szó, aminek megvan szépen jelentése egy ilyen mindenki által elfogadott egyelvi szulttárba, akkor arra kellene referáljonni, és a másik
+18:4518 minutes, 45 secondsnyelvnek az egyes, kettes, hármas jelentést kellene valahogy közvetítenie. Ehelyett ahány szótár van, ahány kétnyelvű szótár, annyiféleképpen van benne a magyar is.
+18:5418 minutes, 54 secondsTehát nagyon nehéz egy egységes magyart elképzelni. Bár hosszútávon ez nyilván cél lehetne. Nyilván megint az egy az
+19:0219 minutes, 2 secondselektronikus világban lehet ezeknek a egymással összekapcsolt link data egy nyelvű szótáraknak a kétnyelvű,
+19:1119 minutes, 11 secondstöbbnyelvű vetét megtalálni. Most a több nyelvű az oda van írva harmadiknak, de valójában ilyen nincs. Tehát normálisan
+19:1919 minutes, 19 secondsvan egy szöveg, meg akarom érteni, és egy másik nyelv, amire le akarom forítani, ami az én anyanyelvem, vagy az a célnyelv, amin beszélünk, olyan nincs,
+19:2719 minutes, 27 secondsha egyszerre hét nyelvre akarok fordítani. Pontosabban van ilyen, de ezek két nyelvűek. Tehát van egy kiinduló szöveg, le kell fordítani egyik
+19:3519 minutes, 35 secondsnyelvre, egyik ember feladat, a másikra másik ember feladata. Tehát sok darab két nyelvi szótár valójában van a többnyelvű, ahol az egyik nyelv adott
+19:4419 minutes, 44 secondsesetben egybe esik. Tehát a kény többny szótán nem olyan, hogy egy kötetben van egy angolm meg egy német francia, hanem
+19:5219 minutes, 52 secondsvan egy kiválasztott nyelv, mondjuk a magyar és annak van angol német francia ekvivalense, amit képtelenség megcsinálni, mert ugye nincs ekvivalens.
+20:0120 minutes, 1 secondA legegyszerűbb szavak is más lefedéssel bírnak a denotátumok világában. Tehát
+20:0920 minutes, 9 secondsmást fed le a szónak a világban való használata az egyik nyelvbe, mint a másikba. És ezt nagyon
+20:1620 minutes, 16 secondsnehéz úgy kezelni, hogy tényleg elküvelensek legyenek. Tehát induljunk abból, hogy elsősorban két nyelvű szótáraink vannak,
+20:2520 minutes, 25 secondsde ezeket az egyik nyelv mentén össze tudjuk kapcsolni, és ebből állnának a többnyelvűek.
+20:3020 minutes, 30 secondsNa most a forrásnyv és a célnyelv, tehát forrásnyv amin keresek, ami normálisan egy ilyen papírszótárba, ABC-be van
+20:3720 minutes, 37 secondsrendezve. És a célnyelv az, ami a restli leírom róla, hogy mit tudok a másik nyelven. Ez egyértelműen aszimmetrikus, mert nagyon kicsi a forrásnyelv.
+20:4720 minutes, 47 secondsGondoljunk, hogy fejbe egy ilyen szótára. Ott van egy ilyen vastag betűs szó a a szóciknek a feje. Ugye az a címszó,
+20:5420 minutes, 54 secondsés van hozzá másik nyelven egyes, kettes, hármas jelentés. esetleg még jobban strukturálva római, egy arab, egy
+21:0121 minutes, 1 secondmit tudom én. Tehát nyilván aszimmetrikus a dolog, mert egy dologról rengeteg mindent mondok a célnyelven.
+21:0921 minutes, 9 secondsNa most ezt papírszótárban úgy kell elképzelni, hogy a forrásnyelv az egyetlen, ami alapján ezeket rendezni tudom. Tehát kiindulok a forrásnyelvi
+21:1721 minutes, 17 secondsABC-ből, lerendezem a szavakat, szócikkeket a címszavuk ABC sorrendjébe. ABC sorrendről már sokat tudunk.
+21:2621 minutes, 26 secondsÉs ott van mögötte a resli, ami a másik nyelvű megfeleltetés, ami a rendezésben nem vesz részt.
+21:3321 minutes, 33 secondsTermészetesen, ha egy szótáríró akar csinálni egy ellenkező irányú szótárt, akkor úgy meg kell ráznia egy kicsit a szócikek másik oldalát, és valahogy
+21:4221 minutes, 42 secondsvissza kellene találni ahhoz, hogy ellenkező irányba kell szótárat inni, de az rengeteg munka, mert egy ilyen sok
+21:4921 minutes, 49 secondsszav sok szavas jobb oldalból ugye ezt mondom, hogy szótári jobb oldal, tehát a másik a célnyelvi oldalnak az egyes
+21:5821 minutes, 58 secondsegységeit elég nehéz a másik olyan egységgel összerendelni, ahol a másik nyelven, a kiindulón
+22:0522 minutes, 5 secondsnyelven szintén, mármint a aktuális szótár kiinduló nyelvén, a jövendőbeli célnyelven egy másik szónak felel meg.
+22:1222 minutes, 12 secondsTehát amikor a K-nál a kutya megfelel a dolgnak, akkor meg kell találni, hogy az Ebnél is a kutya megfelel a dolgnak, és két dolgot össze kellene kapcsolni.
+22:2122 minutes, 21 secondsVagyis azt látjuk, hogy aszimmetrikusak a szulttáraink, mert van egy fej és utána van rengeteg információ. A fej pedig a forrásnyelv, a maradék a
+22:3022 minutes, 30 secondscélnyelv. És így az a képe alakul ki az embernek, hogy a szótárak ilyen aszimmetrikus jószágok, mert egy szűkebb
+22:3922 minutes, 39 secondsdologról rengeteg mindent leírnak a másik nyelven. Aztán persze ha megvan az ellenkező irány, nem csak angolról, magyarra lehet így, akkor magyar angolba
+22:4622 minutes, 46 secondsis. Valójában gondoljunk bele, hogy a címszónak van egy jelentése, meg ugye a címszónak van
+22:5622 minutes, 56 secondsegy másik jelentése, meg a címszónak van egy kiejtése, meg a címszónak vannak mindenféle változatai, írását meg
+23:0323 minutes, 3 secondsragozásai. Ezek mind mind mind mind párok, ahol címszó forrásnyelven, valami a
+23:1023 minutes, 10 secondscélnyelven. És ezeket a párokat úgy rendezem egy ilyen szép szócikbe, amiről innentől kezdve szó lesz, hogy egyszer
+23:1723 minutes, 17 secondsírom le csak a címszót ott fölül, de valójában ezeket a párokat, amik önmagukban szimmetrikusak lehetnének, azáltal mutatom meg az aszimmetriájukat,
+23:2623 minutes, 26 secondshogy a párok ugyan szimmetrikusak, de csak egyszer írom le az egyik felét és sokszor a másikat. Így aztán úgy tűnik, hogy nagyon sok van a célnyelven és
+23:3423 minutes, 34 secondsnagyon kevés van a forrásnyelven. Hát erről is lesz szó majd a következőben.
+23:3923 minutes, 39 secondsHát akkor szoltár típusok, ugye ezt már az előbb megelőlegeztem, hogy a lexikon enciklopédia, tehát
+23:4723 minutes, 47 secondsleírjuk a világot. Kérdés, hogy a kutyánál azt kell leírni, hogy mély hangrendű, vagy azt, hogy dagnak mondják angolul, vagy azt, hogy ugat és szőrös.
+23:5523 minutes, 55 secondsNa most nyilván a világ ismere azt, jó, hát az ugat és szőrö azt nem. De például mondjuk, hogy azt, hogy semleges nemi az a magyarba
+24:0424 minutes, 4 secondsnem kell, de már mondjuk egy másik nyelvbe kellhet. Szóval ez az, amire mondtam, hogy keverednek a dolgok. És akkor az egy nyelvű szótárakról is
+24:1224 minutes, 12 secondsbeszéltünk az imént. Most mondhatom, hogy vannak értelmezők. Tehát egy darab címszóról elmesélem valamilyen nyelven, mely valamilyen
+24:2024 minutes, 20 secondsnyelv ugyanaz a nyelv, mint amin a címszó van leírva, hogy az mit jelent valójában. Tehát az értelmezése,
+24:2724 minutes, 27 secondskifejtése több szó van a jelentésének, a használatának, és ez lehetne másik nyelven, de ha egy nyelven van, akkor
+24:3424 minutes, 34 secondsugye értelmező szódának hívjuk, meg elmondjuk a történetét, meg hogy milyen fajta ősei vannak, hogy alakult ki, vagy
+24:4224 minutes, 42 secondsmilyen nyelvjárási változatai vannak, vagy milyen szólásokban szerepelő, vagy a slengben mit jelent egy ugyanolyan szó, ami a hétköznapi szótáron más
+24:5024 minutes, 50 secondsjelent, vagy egy idegen szó mit jelent magyarul, hogy hogy fejezze ki egy magart olyan idegen szó, amit a magyarban is lehet használni, mert ugye itt is rémgetik az embereket, hogy nem
+24:5924 minutes, 59 secondsszabad. Hát de szabad. Hát de most nyilván azt, hogy printer, azt nyugodtan mondhatom úgy, hogy nyomtató, nem esik fel semmilyen korona a fejemről. A
+25:0825 minutes, 8 secondskoronaszót nem is szívesen használom mostanában. Tehát, hogy gyakorlatilag arról van szó, hogy hát van egy ilyen purista törekvés, hogy ne mondjuk idegen
+25:1625 minutes, 16 secondsszóval, de vannak olyan idegen szóvak, amik tényleg mást jelentenek. Tehát a pubot bármilyen szerencsétlen szó, ugye
+25:2225 minutes, 22 secondsszerencsétlen korábban a még ott a nyelvi törvényeknél a egyik első első előadáson mondtuk, hogy
+25:3125 minutes, 31 secondsnagyon rövid szó a PAB. És ugye egy magánzó van benne, amit formailag ú-val írnak, aztán azt nem szívesen írjuk át.
+25:3725 minutes, 37 secondsEgy biztos, hogy nem jó szórá, hogy kocsma. Hát mondjuk, hogy angol kocsma.
+25:4125 minutes, 41 secondsTehát az, hogy ott fá fabrútorok vannak és szőnyegek vannak és barna sört szolgálnak leginkább, ez mind benne van a papba. Ez nem azonos. Tehát
+25:5025 minutes, 50 secondsakármennyire szeretné valaki azt mondani, hogy ez ugyanaz, mint a kocsma, az nem ugyanaz. Vagyis lesznek olyan idegen szavak, amik megjöttek, és nem
+25:5825 minutes, 58 secondsszeretjük őket, mert például rövidek, és nem tudjuk, hogy kell őket írni.
+26:0326 minutes, 3 secondsMásoknál egy kicsit szerencsésebb a helyzet, mert milyen jó az, hogy egérpad, ugye a pad a pad nekünk az,
+26:1026 minutes, 10 secondshogy pad. Hát egérpad, hát látjuk az egeret, ahogy oda rátelepszik. Hát nyilván nem, de de az egérpadó az már
+26:1726 minutes, 17 secondsteljesen meghonosult, mert az a PAD az a magyarban is létezik, és átértelmeztük egy kicsit. egyébként ha mostanában itt
+26:2526 minutes, 25 secondsvírusügyileg tájékozódnak, akkor megjelent az angolban a ennek, ami most nincs rajtam, mert ugye nem fertőzök így
+26:3426 minutes, 34 secondsonline. Mousepad, ahol hát a mouse az a száj és nem az egérke, de hát ez is egy lehetséges játékkapdel.
+26:4326 minutes, 43 secondsNa mindegy, csak azért mondtam, hogy hát megjelenek idegen szószóval ugye el kell magyarázni. Itt vannak a helyesírási szótárak magyarázattal, miért úgy írjuk.
+26:5126 minutes, 51 secondsGyakoriságiak, mindenféle numerikus adattal, ragozásiak, hogy az adott szónak milyen paradigmába tartozás morfológián beszéltünk róla, a sajátja.
+27:0127 minutes, 1 secondSőt, vannak ezek az attergó szoltárak, amikről sokan azt hiszik, hogy a gyenge költőknek egy ilyen támogatás, hogyha hátulról van rendezve, akkor hogy kell
+27:1027 minutes, 10 secondsrémeket találni. Egyébként arra is marha jó, de nem erre valók az Atgó szoltárok.
+27:1527 minutes, 15 secondsÁltalában az olyan nyelvekben, mint amilyen a magyar is, a szavak vége bizonyos viselkedésekre utal. Tehát azt
+27:2327 minutes, 23 secondslehet tudni, nyilván ennek egy jelentős része a nyelvújítástól került be, tehát hogy a mánymény vagy a ványvény típusú
+27:3127 minutes, 31 secondsszavaknak a toldalékolása mindenhol ugyanaz. És teljesen mindegy, hogy mi van előtte, hogy alkotmány vagy hirdetmény. A végén azok a toldalékok
+27:4127 minutes, 41 secondsmindig olyanok lesznek, mint a nem tudom én a kér fény vagy a ingovány. Tehát
+27:4927 minutes, 49 secondsnagyon-nagyon érdekes, hogy hogy a szóvégmutató szótárok inkább a morfológiához kapcsolódnak, és nem a költészethez. Pláne egy ragozó nyelvnél
+27:5827 minutes, 58 secondsugye pillanatok alatt megváltozik a szó vége, itt pedig tökről van szó. Tehát rengeteg egynyű szótár típus van,
+28:0528 minutes, 5 secondsamiknek van hasznuk, de azért mégis csak a default szótár az emberek fejében az, hogy a szótárt mondom, akkor az kétnyelvű. És ugye hát a jelenlegi
+28:1428 minutes, 14 secondsvilágban nyilván nyilván angol, magyar meg magyar angol. Ha megkérdeznek egy szótárkiadót, ő is ezt mondja, mert azt
+28:2128 minutes, 21 secondsel tudja még ma is adni papíron vagy elektronikusan, de már a nem mondom ilyen nyelvpár esetét már nem tudja eladni, ezért ki se nyomtatják, sőt
+28:2928 minutes, 29 secondslétre se hozzák. ami nagy baj, mert kulturálisan és és tudományosan egyáltalán nincs különbség a nyelvek köz, de a piac az ilyen.
+28:4028 minutes, 40 secondsNa most a több nyelvi szótára már mondtuk, hogy párba állított két nyelvűek.
+28:4528 minutes, 45 secondsÉs akkor az egy nyelvűeknél is megkülönböztettük ugye a címszó nyelvét meg a szócikk nyelvét, ami hát lehet azonos, tehát lehet magyarból választani
+28:5428 minutes, 54 secondscímszót meg a szóciket. koron az egy nyelvű szótár, vagy angolból, vagy bármilyen nyelvből, de azért mégis csak máshogy írok le egy szótári jobb oldalt,
+29:0229 minutes, 2 secondsahol magyarázok, mint azt a szótári baloldalt, ami alapján indexelek.
+29:0729 minutes, 7 secondsMost ami alapján indexelek, azok nagyrészt konkrét stringek, betűsorozatok, de időnként vannak olyanok, hogy lásd. Most a lásd az itt
+29:1629 minutes, 16 secondsnagyon primitív dolog a mai világban, de azért pap ésánál a lásd azt felti, hogy akkor el kellett menni a másikhoz. Ma már egy link, az teljesen természetes,
+29:2429 minutes, 24 secondsde a papírszótárban így jelent meg a link, hogy nem írom le még egyszer tejfölás tejfelé. Elég közel van hozzá, de mondjuk nem tudom én.
+29:3729 minutes, 37 secondsVolt, lásd van, pláne lesz, lásd van. Elég messze kell lapozni.
+29:4429 minutes, 44 secondsNa most a szóciknek az eleje, a feje az ugye alapdolgokból ezt mondtam az előbb, hogy szótári baloldal és jobb oldal,
+29:5329 minutes, 53 secondstehát ami szerint indexelek mondjuk hát van maga a címszó, tehát az a vastag betűs általában esetleg mellette vannak
+30:0130 minutes, 1 seconda amonimái, tehát alakváltozatai, a kiejtése vagy egy fonetikus átirata,
+30:0830 minutes, 8 secondsaz elválasztása, a szófaja, hogy az egy főnév, így kell elválasztani. Néhány toldalékos alakja ugye létezik egy olyan
+30:1730 minutes, 17 secondsfogalom a magyarban, hogy bázis. Ezt Pap Ferenc talán az első magyar számítógépes
+30:2430 minutes, 24 secondsnyelvész vezette be ezt a fogalmat, hogy például a magyar főneveknél a tárgy a többes szám és az egyes szám harmadik
+30:3230 minutes, 32 secondsszemű birtokos az egy ilyen bázist alakít ki. Tehát eléggé szóról odaírni, hogy T k ja, tehát nem tudom én.
+30:4130 minutes, 41 secondsMondjalak szó autó. Autó autó autó. Ja.
+30:4830 minutes, 48 secondsÉs ha van itt a megnyúlult oldalék, akkor itt erre a kis tildérre, amelyik a autószóhelyeett táraknak egy
+30:5530 minutes, 55 secondsvesszőcskét, és akkor akkor már megnyúlik. Tehát ha véletlen lenne olyan szavunk, aminek valami
+31:0331 minutes, 3 secondsrövid, magánhangzó a vége, mondjuk Kecske, akkor a kecskét az is egy száll tötan a TDén utolsó magáhangzó
+31:1231 minutes, 12 secondsmegnyúlására utaló veszőcske van. Szóval ilyenek jelennek meg a szócikfej mellett. Tehát például, hogy ezt a
+31:2031 minutes, 20 secondsbázist odaírjuk, a legtöbb magyar szótárba, a külföldiek kedvéér ott van, hogy hogy csinálok tárgyasített több számot és a jae alakból melyik jár neki.
+31:2831 minutes, 28 secondsEzek független szempontok, ha visszaemlékeznek a unifikációs morfológián a mondottakra, akkor ez három teljesen függ ezen szempont, hogy
+31:3731 minutes, 37 secondshogy alakítjuk ki a tárgyesetet, a többes számot és a jajet, illetve hát mondtuk, hogy a t meg a k között képzésbeli különbség, de bizonyos
+31:4531 minutes, 45 secondsrokonság is van, tehát azért nem teljesen függetlenek, hogy van-e maghangzó vagy nincs, de egyszerűség kedvére érdemes odaérni.
+31:5431 minutes, 54 secondsMég esetleg ott van, hogy stílusminősítés.
+31:5931 minutes, 59 secondsEz azt jelenti, hogy ezt a szót nem használjuk általában csak bányászatban és odaírjuk, hogy bány. És akkor tudjuk,
+32:0632 minutes, 6 secondshogy ennek a szónak halanyadik jelentése ilyen. És akkor a magyarázat, a túloldal, a jelentés, a szótáli jobb
+32:1432 minutes, 14 secondsoldal, az áll ugye az alapjelentésből, ami nem föltétlen egy dolog, hanem több.
+32:1932 minutes, 19 secondsÉs akkor ezeket hierarchiába rendezzük mindenféle római, arab kis B, Cöbbi alapján. Egymás mellé kerülnek a
+32:2832 minutes, 28 secondsjelentés árnyalatok, és akkor ilyen szinonimaszerűen egymás mellett vannak. Egyes jelentés,
+32:3432 minutes, 34 secondsting dong, kettesen és bam bam bam. És akkor azt lehet tudni, hogy az egyeseknek több közük van egymáshoz, mint a ketteseknek.
+32:4432 minutes, 44 secondsTehát, hogy azok olyan szinonimaszerűek, visszagondolnak a wordnetre, ahol hát egy színszetet pont egy ilyen határoz
+32:5132 minutes, 51 secondsmeg, de nincsen beleírva ám, hogy mi az, hogy egyes meg mi az, hogy kettes. Tehát a szótáraink nagy részében föltételezi a szótáríró, hogy nyilván a szótár
+33:0033 minuteshasználója tud azon a nyelven. Na most ha annyit tudunk, hogy az egyik szó ismerős mondjuk a három egy szinten
+33:0833 minutes, 8 secondshozott ekvivalensből, akkor megörülünk neki, hogy a másik kettő is biztos valami ilyesmi, bár azokat sose használtuk még az életben, de nincs
+33:1533 minutes, 15 secondsmagyarázat, és igazán csak sejteni lehet a viszonyt.
+33:2133 minutes, 21 secondsRáadásul a nagyon bonyolult a dolog, akkor ilyen kis csúcskás izékbe magyarázatot adnak, mert mondjuk egy olyan dolgot kell lefordítani, aminek
+33:2933 minutes, 29 secondsnincs ekvivalense. Tehát egy, nem tudom én, egy albán népviseletnek a része, azt valahogy csak úgy lehet elmondani, hogy
+33:3733 minutes, 37 secondselmondom, hogy melyik része, mert olyan szó a magyarban nincs, hogy a lányok a fejükre ünnepeken nem tudom,
+33:4533 minutes, 45 secondsilyet tesznek, és akkor se tudom kimondani magyarul, mert nem nincsen ekvivalens. Tehát ilyenek léteznek. Sőt
+33:5133 minutes, 51 secondsmost kicsit előreugrok, de hát a képes szoltárok azokról azt hiszi mindenki, valószínűleg maguk is, hogy az olyan
+33:5833 minutes, 58 secondsgyerekeknek való, mert hát hogy nem tudnak még eléggé, és akkor odarajzolnak nekik egy tevét, hátha nem voltak még az állatkárben, egy teve. De nem,
+34:0834 minutes, 8 secondsodarajzolnak nekünk egy három árbócos hajót, mondjuk a 18. századból, ami brit világban annyira ismert volt, hogy
+34:1534 minutes, 15 secondsminden árbolcnak saját neve volt, meg az árbolcok keresztlécének is saját neve volt. És
+34:2334 minutes, 23 secondsilyen nyilakat rajzolnak be, hogy ez az angol szó, az az angol szó meg ezt jelenti. Nem tudjuk lefordítani, mert nekünk nincs ilyenünk, csak körül lehet
+34:3134 minutes, 31 secondsírni, egyszerűbb rajzolni. Tehát adott esetben kilépünk a eddig egydmenziós nyelvi világból, és egy ilyen 2D-s
+34:3834 minutes, 38 secondsrajzocskát rakunk oda. És akkor ugye nyilván megyünk tovább, példákat, szólásokat, közmondásokat írunk, vagy ezzel a szóval alkotott további
+34:4734 minutes, 47 secondsképződményeket, ami nem egyszerű dolog, ugyanis nagyon nehéz a szólások, közmondások és a
+34:5534 minutes, 55 secondspéldák elkülnítése. És a legtöbb szótárunkban ez nem is szabályosan van, majd erre is lesznek példák. ugyanis a példa, az értelmezés az annak a szónak,
+35:0435 minutes, 4 secondskifejezésnek, amelyik címszavában vagyunk, a leírását adja, de a többi szó, amit használok hozzá, az esetleges.
+35:1435 minutes, 14 secondsTehát a behajózikhoz, hogy hogy kell használni. Adok egy példát, hogy behajózik Leavr kikötőjébe, de Löav az
+35:2135 minutes, 21 secondsnem része ennek a szerkezetnek. Tehát hogyha egy szótárban azt hiszem, hogy a leavr is része, akkor hibázok. És
+35:2935 minutes, 29 secondsemberként tudom is, hogy nem része, ha az lenne ott, hogy London kikötő, az is jó lenne. Ezzel szemben a gépnek, aki
+35:3635 minutes, 36 secondsezt értelmez, akinek ezt értelmeznie kell, fogalma nincs, hogy melyik a példa, és melyik az, ahol tényleg így kell mondani. A makó Jeruzsálemtől ben a
+35:4335 minutes, 43 secondsJeruzsálem iszonyű fontos. Az nem olyan, hogy Makó Telavívtól, annak a kifejezésnek így kell lennie.
+35:5135 minutes, 51 secondsMakoro meg úgy se tudják sokan, hogy az nem is a helység, hanem a Vitéza, aki ment a keresztes hadjáratba, de biztos sokan tudják maguk közül, hogy valójában
+35:5935 minutes, 59 secondsMakó vitéz volt milyen messze Jeruzsálemtől a szent földtől, amikor mentek arra és így alakult ki a kifejezés, nem pedig ott Szeged mellett
+36:0836 minutes, 8 secondsdekkoltak és megnézték, hogy milyen messze van. Szóval a magyarázat, egy szólás, egy közmondás esetében, az is odakerülhet
+36:1636 minutes, 16 secondsa Makó vagy Jeruzsálem szócikbe, feltéve, ha ez egy szótárba szerepel.
+36:2236 minutes, 22 secondsEsetleg igen, esetleg nem. Pont itt van a szótár meg az Enciklopédia közötti határ, miközben a Mapó Jeruzsálemtől teljesen nyelvi.
+36:3036 minutes, 30 secondsSzóval rengeteg ilyen alapvető dolgot tartalmaz egyszerű szó szerkezet.
+36:4036 minutes, 40 secondsMenjünk tovább akkor és nézzük meg, hogy nyelvtechnológiában melyik részét egy szócnak hogy tudjuk
+36:4736 minutes, 47 secondskihasználni. Tehát ha adnak nekünk egy szótárat elektronikusan, vagy ha nem majd azzük, beszkenneljük, OCRZ, hát a
+36:5436 minutes, 54 secondscímszó, ugye nyilván, ha egy címszó egy szótárba föl van sorolva, akkor az a szó létezik a nyelvben. Tehát mondjuk, ha azokat összegyűjtöm, akkor van egy
+37:0137 minutes, 1 secondalapszótár, amiből ki tudok indulni egy teljesírás program. Ráadásul oda van írva, hogy hogy toldalékolom őket, vagy
+37:0937 minutes, 9 secondsmilyen variánsai vannak. Az előbb említett táj többes számtokosból, akkor a morfológiai rendszert tudom megalapozni ezzel. Ha például a
+37:1837 minutes, 18 secondsszótagulása ott van, ami sok szótárban, nagy szótárban ott van, hogy a szót így kell elválasztani, az elválasztórendszert tud tanulni belőle.
+37:2537 minutes, 25 secondsHa ott van a fonetikus átirat, amit sokan nem szeretnek, mert olyan ijesztő karakterek vannak benne, akkor például egy beszédkeltő rendszert lehet vele
+37:3437 minutes, 34 secondsbetanítani, legalábbis egy fajtát. Ha ott a szófaja márpedig ott van zárójában mindig ott vannak a szófajok, akkor az
+37:4137 minutes, 41 secondsegyértelmű közt, hogy vár főnév, vár ige. És akkor ezt aminek egy szófaja van, ott nem kell egyértelmesíteni. Na,
+37:4937 minutes, 49 secondsott van ez a téma, kód, tehát hogyha ez a bányászatot említettem az erőb, vagy bármilyen speciális megjegyzése, akkor
+37:5737 minutes, 57 secondskülönböző szövegtípusokban gyakrabban fordul elő, akkor lehet azt mondani, hogy könnyebben azonosítjuk ezt a szövegtípust.
+38:0538 minutes, 5 secondsOtt vannak a definíciók, mondjuk egy értelmezés szótárban.
+38:0938 minutes, 9 secondsAkkor ugye beszéltünk róla, hogy az asztal olyan bútor, am a az asztal bútor, tehát jelentés egyértelműsítéshez
+38:1738 minutes, 17 secondstudom használni, ki tudom építeni azt a egyértelműsítő rendszert, hogy mondjuk daru olyan madár, a daru madár, daru
+38:2538 minutes, 25 secondsolyan gép, a daru gép, és akkor a daru gép, daruadár hipernéma, hiponima párt tudom használni később jelentés egyértelmisítéshez.
+38:3538 minutes, 35 secondsvagy példák vannak, amit az előbb is említettem, és akkor a többszas kifejezések azonosításához tudom használni ezeket a példákat, de nyilván
+38:4438 minutes, 44 secondsma már korpuszokkal dolgozunk, de ez az első szótároknál még amikor elindult az elektronikus szótárvilág még nem így volt. A lásd még né nyilak vannak.
+38:5338 minutes, 53 secondsNyilván a nyilak azt jelenti, hogy valamilyen értelemben szinonima vagy esetleg az ellenkező ellentétje van.
+38:5938 minutes, 59 secondsEzek nagyon veszélyes fogalmak. Ezt már a múltkor is mondtam. Ugye a szinonimák nagyon veszélyesek. Például a azem a
+39:0639 minutes, 6 secondsmagyar angol szótárban van, hogy végigvágódik és nyíl. Lásd még végigdől.
+39:1539 minutes, 15 secondsDe azért úgy elképzelem stílus szempontból nem azonos, amikor azt mondom, hogy a hölgy végigt a pamlagon,
+39:2339 minutes, 23 secondsés azt, hogy a hölgy végigvágódott a pamlagon. Tehát nyilván ez csak addig szinonima, amíg hát úgy nagyjából az antonimák meg talán a múltkor is
+39:3139 minutes, 31 secondsemlítettem, hogy még veszélyesebbek, mert kinek melyik aspektus jut eszébe egy
+39:3839 minutes, 38 secondsszóról talán említettem a dolgoznak a angolban és a magyarban a különböző antonimáját, hogy
+39:4739 minutes, 47 secondspihen vagy enyél, tehát hogy az aspektusa, mi annak az de mégis csak ez a láss még valamit segített, tehát ahhoz, hogy egy
+39:5539 minutes, 55 secondsszótárból kiinduljunk, rengeteg mindenhez föl tudjuk használni a benne levő adatot. Sok szótárunk van, akkor már egy olyan adatbázist építhetünk
+40:0340 minutes, 3 secondsbelőle, ami későbbiekben sok más alkalmazásban is működik. Még egyszer, ez volt a kezdet. Ma már javarészt a
+40:1140 minutes, 11 secondskorpuszokból csináljuk nagyrészteszt. Na most ugye a segédszótárak vagy szakszótárak, ugye
+40:1840 minutes, 18 secondsezek a amikre mondtam, hogy leginkább mi már terminológiai adatbázisoknak hívnánk
+40:2440 minutes, 24 secondsőket, ugye ezek a nagyon érdekesen keverednek, ugye amit mondtam, hogy nagy szótárakban a 70-80000 szócik fölött már inkább ilyen terminológiaiak vannak.
+40:3640 minutes, 36 secondsViszont ezek azért kerültek bele, mert egyszer jó drága pénzér megvesz valaki egy nagy szótárt, akkor ha valamilyen speciális területen érdeklődik, akkor az
+40:4440 minutes, 44 secondsis nagy eséllyel, az alapszavai annak a speciális területnek is benne lesznek.
+40:4840 minutes, 48 secondsNyilván nem a fűtésszerelői útmutatóban előforduló speciális kifejezések, de mondjuk egy általános orvosi, általános
+40:5640 minutes, 56 secondsbiológiai kifejezés ott megvan. Ma már egészen más a helyzet, hiszen az elektronikus szótárak elvileg, és ez nagyon fontos, hogy ez most már
+41:0441 minutes, 4 secondsgyakorlat is kövesse, megengedhetik magnak azt, hogy van egy szó, alapjelentését az alapszótár írja le.
+41:1141 minutes, 11 secondsUgyanennek a szónak speciális asztalos ipari vagy nem tudom én milyen orvosi jelentését egy másik szótár.
+41:1941 minutes, 19 secondsAmikor én bekapcsolom a egymást szerető, tehát egy felületen is egymást megtű
+41:2641 minutes, 26 secondsszótárakat, akkor ugyanannak a szónak az egyik szótárból az alap, a másikból a speciális A, a harmadikból a speciális B
+41:3441 minutes, 34 secondsjelentése jön le. Kikapcsolom, nincs ott papíron. Ezt nem lehet megcsinálni. nem raktam bele, az nem lesz ott. Ha pedig 10 szótár van az asztalomban, és
+41:4141 minutes, 41 secondsmindegyiket egyszerre föl kellene lapozni, az egy képtelenség. Tehát azt, hogy én egyszerre föl tudok lapozni 11
+41:4841 minutes, 48 secondsvagy 231 szótárat, és ha abból három-4 van talál, azt megmutatom, ez az egyidejű használat teljesen természetes az elektronikus világból, de ennek
+41:5741 minutes, 57 secondskorábban nem volt ilyen lehetőség, tehát ennek nem lehetett meg a papírszótár alapja.
+42:0342 minutes, 3 secondsTehát a dinamikus szakszótár kiegészítés az azt jelenti, hogy az alapszótárak mellett bármikor hozzá tudok tenni
+42:1042 minutes, 10 secondsspeciális szakszótárokat, és abba az irányba elviszem a szótári tartalmat, miközben az alapszótárt nem váltom.
+42:2142 minutes, 21 secondsNa nézzünk akkor hát egy pár trivialitást, amit mindenki ezek után vagy ettől függetlenül is tud. Tehát
+42:2942 minutes, 29 secondsnyilván nyomtató szótárokban annyi van benne, amennyi. Az elektronikusban elvileg lehetne több is. Tehát például megcsinálhatjuk azt, hogy ahogy az előbb
+42:3742 minutes, 37 secondsmondtam, hogy a szakszótárak egyidejűleg kinyílhatnak egy alapszótárral, az én kiegészítő szótáram, ami mondjuk
+42:4442 minutes, 44 secondsinduláskor nulla tartalmú szintén. És akkor, amikor valamit nem találok elég jónak egy adott szótárba, akkor azt én beírhatom, és a rendszer úgy találja
+42:5342 minutes, 53 secondsmeg, hogy ezt kérem, az alapszótárból jön, ez pedig a Kószégi Gábor megjegyzése. Na most nyilván ez nem kerül bele a szótárba, de nincs is az
+43:0243 minutes, 2 secondsugye attól, hogy én egy megveszek egy szótárat és ceruzával vagy tollal ugye Oribia nem tud tollal beleírni egy papírszótárba, nekem ez mindig nagyon
+43:1143 minutes, 11 secondsidegen, de megteszik emberek odaírják, attól az nem lesz indexelve, az nem kerül be legfeljebb. Én oda beírtam valamit, de itt rögtön úgy fog
+43:1943 minutes, 19 secondsviselkedni, mintha a szótárnak része volna. Ám copyright szempontjából semmi gond, mert az eredeti szótár intakt az enyém megnyitott. Tehát akár lehet egy
+43:2843 minutes, 28 secondsnyitott szerkezetű kiegészítése, ami ugyanolyan szócékeket hoz, ha van lelki erőm olyat csinálni, mint ami egy nagy
+43:3543 minutes, 35 secondsszótár van, és akkor át tudom adni másnak, vagy mást tudok kapni egy kiegészített speciális szultárot, mielőtt még az jogerőre emelkedne és
+43:4443 minutes, 44 secondskiadná egy kiadó, már hasznosan egy fordítóirodán belül, vagy egy csoporton belül már tudjuk használni ezeket a nyitott szótárokat, amiknek a
+43:5343 minutes, 53 secondsfellapozása pontosan úgy történik, mint a zárts szótáraké. Tehát ez egy jelentős különbség. Hát nyilván ez megint csak trivialitás, hogy hát persze, hogy a
+44:0244 minutes, 2 secondsterjedelmi korláta a papírszultárokat behatárolt, vegyük észre, hogy a rövidítések azért alakultak ki, hogy ne
+44:0944 minutes, 9 secondskelljen annyi ólombetűt használni. A bibliapapír vagy a vékony papír az alakult ki, hogy össze lehessen fűzni egy ilyen sok 10000 szóból álló
+44:1844 minutes, 18 secondsszótárat. Hát nekünk ilyenünk nincs. Mit tudunk tenni? A szótári baloldalt tudjuk
+44:2444 minutes, 24 secondsindexelni. ABC rend. Táadará. És mit tud ez az ABC rend? Hát a többé-kevésbé
+44:3144 minutes, 31 secondshasonló betűalakú szavakat, de hogyha van egy szó, aminek van egy furcsa módosulata, akkor az már nagyon messze
+44:3844 minutes, 38 secondsesik ABC-ben. És esetleg máshol kell keresnem pusztán azért, mert a morfológia nem teszi lehetővé, hogy egymás mellé rakjam őket. És az ABC
+44:4744 minutes, 47 secondsrendezt követi is, ahogy az első órán megtanultuk. Na most mi úgy keressük, ahogy akarjuk a gépet. Akarom ABC rendbe, akarom más szempontból. Tehát
+44:5544 minutes, 55 secondsmegadok mindenféle jegyeket, és az alapján is tudom keresni, ami egyszerűen képtelenség a papírszótárban.
+45:0345 minutes, 3 secondsRáadásul a szótári rész ugye csak azt tudja, hogy a szótárészben vagy egy teljes szócik van, vagy egy utaló. Na
+45:1145 minutes, 11 secondsmost mi bármikor ugye hiperlinkkel elmehetünk, sőt olyan helyre is rakhatunk hiperlinket, ahol eddig ez nem is kellett, de most megtehetjük, mert ugrálhattunk a szócékek között, nem?
+45:2045 minutes, 20 secondsCsak ABC-be lehet használni.
+45:2345 minutes, 23 secondsAztán ugye azt mondtuk, hogy megjelenhetnek, mondtam ezt az angol hajó példát, megjelenhetnek olyanfajta
+45:3045 minutes, 30 secondsdolgok, mint például egy kép, de azokat egyszer odarakták. Mi meg sima megtehetjük azt, hogy egy mai szótárba,
+45:3745 minutes, 37 secondsebbe sincs semmilyen csoda, képet vagy valami dinamikus, akár egy kis filmet teszek oda. Így kell ezt érteni, vagy így kell ezt használni.
+45:4645 minutes, 46 secondsAztán azt, hogy a keresés az ugye hát azt jelentette, hogy hát nagyjából tudom az ABC-t és akkor nagyot lapozok és
+45:5445 minutes, 54 secondsodaugrom. Van abban jó egyébként egy papírszótárba tudok ilyet csinálni. Így összefogok 320 oldalt és így nézegetem.
+46:0246 minutes, 2 secondsEzt egy kicsit nehezebb az elektronikusba. Viszont a gépi keresésnek a lehetőségei sokkal nagyobbak. Ugye nyilván az indexelt
+46:1046 minutes, 10 secondskeresést azt mindenki érti. A legtöbb mai szótár, erre mondtam a Benz féle gavaskocsit, hogy hát akkor teljes szövegű keresést csinál. A teljes
+46:1946 minutes, 19 secondsszövegű keresés az nem ugyanaz, mint amire nekünk szükségünk van. Persze több, mint amit a papírszultán lehet csinálni, mert ott az index az csak a
+46:2846 minutes, 28 secondsegyik nyelvi, a forrásnyelvje, a szótári baloldalnak megfelelő szavaknak kifejezésen amikor az indexe volt. Most bármit leindexelhetek, de ennél sokkal intelligensebb indexelésre van szükség.
+46:3946 minutes, 39 secondsGondoljanak a példára a szópárokkal, tehát amikor egyiknyelvi, forrásnyelvi kifejezés, célnyelvi kifejezés ezeknek
+46:4746 minutes, 47 secondsaz indexelését egész máshogy kell csinálni, mintha csak úgy a n-us szó, ami nem a címszónak a feje, az úgy egy
+46:5546 minutes, 55 secondsilyen nagy teljes szövegű indexnek a részét alkotja. De hát, hogy mondjam, gyorsabb, olcsóbb is ezért szokták ezt
+47:0347 minutes, 3 secondscsinálni. Meg hát azért nem legzikográfusak csinálnak elektronikus szótárakat, hanem olyan szoftveresek, akik ebbe nem gondolnak bele. Hát
+47:1147 minutes, 11 secondsnyilván akkor nem csak sz címszó szerint tudok ki keresni, mert a címszó az ugye az első betű, és hogyha szavam egy
+47:1947 minutes, 19 secondskifejezés része, ugye megint ezt a tildét használják, tehát ott van, hogy csatabárd és tilde, akkor van egy olyan
+47:2647 minutes, 26 secondskifejezés, hogy elásta a tildek és hullámvonal kötőjel ott. Na most ha ez a csatabárt szónál van benne, akkor az
+47:3547 minutes, 35 secondséletben nem találja meg az elásnál. És azt magának kéne tudnia, mármint a felhasználónak, hogyha van egy olyan kifejezése, amiből ő nem biztos, mert
+47:4347 minutes, 43 secondsnem arról van szó, hogy ő tudja, hogy van elás a csatabárdot, hanem nézi a szöveget és nem érti. Ha a csatabárra kikkell, akkor eljön a csatabárd
+47:5047 minutes, 50 secondsalapszó, és ott van mellette, hogy létezik egy olyan kifejezés, ami az elással van. De ha vért az elásra kattint, akkor a szótár nem fogja azt
+47:5847 minutes, 58 secondshozni, hogy és ez is van csatavárdal, hanem valahova a szótáríró betette, aki a Cs betűnél volt, az odatette. Jó
+48:0548 minutes, 5 secondsesett, mert esetleg a bárthoz tette, hogy csataildet. Tehát még az összetett szavaknál is van ilyen móka. A Elás készítője eszébe se jutott, hogy ezt neki kéne bevenni. Teljesen mindegy.
+48:1648 minutes, 16 secondsGépi úton minden eleme egy több szavas kifejezésnek kvázi indexétel. És ez nem oldható meg papíron. És amit már sokszor
+48:2448 minutes, 24 secondsmeséltünk, az utolsó szempont előzőkben sokat emlegettük. Hát több szótár együttes használata én döntöm el, hogy a
+48:3148 minutes, 31 secondsmegveszem őket, b amit megvettem, be is kapcsolom, vagy most nem fontos, mert én most nem orvosi szöveget akarok, tehát kikapcsolom, de nem tudom én, üzemgazdás
+48:4148 minutes, 41 secondsszöveget azt bekapcsolom, és akkor azok együtt ugyanúgy működnek meg a saját vagy a kollégáim kiegészítései, mintha egy szótár volna. Ez megint képtelenség.
+48:5148 minutes, 51 secondsTehát azért nem hiszem, hogy informatikusokat kell erről meggyőzni, sőt talán a bölcsész kollégákat se, de azért ez mindenképpen fontos, hogy
+48:5848 minutes, 58 secondsteljesen másik világ az elektronikus szótáraké, bár kiindulásból még mindig a nyomtatott szótáraknak a egyedi
+49:0649 minutes, 6 secondsarculatát hozzuk magunkkal, ilyeneket. Hát ezek csak példák, jók, rosszak.
+49:1449 minutes, 14 secondsNyilván általában van egy ilyen címszólista, hogy könnyebb legyen kattintgatni, meg be lehet írni egy ablakba,
+49:2149 minutes, 21 secondsés akkor zsum kiönti a szóciknek a környezetét optimális esetben, vagy nem tudom, hogy optimálise. Tehát
+49:2949 minutes, 29 secondsegyik esetben a teljes szótári környezet mint a papíroldalonnék valahol, a másik innál csak az aktuális szót, de ugye nem
+49:3649 minutes, 36 secondscsak a fanatikus átiratot, hanem a kis hangszóró mutatja, hogy a multimédia a kiejtést vagy akár egy képet, videót is
+49:4449 minutes, 44 secondsmeg tud jeleníteni. Hát ezt mindenki érti. A dolog pillanatok alatt fölpakolódott a webre, megjelent a
+49:5149 minutes, 51 secondsmobilok. Nyilván mindennek van könnyebb és nehezebb oldala, hát egy pici képernyőn azért nehezebb ugyanazt kezelni. És nyilván az se mindegy, hogy
+50:0050 minutescsak egy alapszótárat kezelek, vagy mint itt a jobb oldalt látják, hát a Nellen Websag nagy szótárba, ott már azért a
+50:0750 minutes, 7 secondsvegyészeti kémiai kifejezések, amiknek ugye hát ezek a numerikus elemek is részei, tehát ez nem valami index, hanem
+50:1550 minutes, 15 secondstehát itt egy ilyen szótár látható, amelyik inkább egy terminológiai adatbázis. És itt aztán azok a szótárak
+50:2350 minutes, 23 secondsláthatók, amik úgy indulnak ki, majd a későbbiek beszélünk róla, hogy a szöveget indí, szöveget tartják a
+50:3150 minutes, 31 secondskiindulásnak, tehát nem a felhasználó fejét, mert ugye azért egy papírszoltár olyan, jaj, mit jelent ez a szó, odamegyek, megkeresem fejembe a
+50:3950 minutes, 39 secondskulcszót, fellapozom, a szövegből kiindulva pedig csak oda kell böknöm, hiszen a számítógép képernyője egy új
+50:4750 minutes, 47 secondsterep az elektronikus szótároknak. Nem arról van szó, hogy én egy papírkönyvet olvasok, és akkor kinyitom a gépet, és bepöntyögöm, mintha egy papírszótárba
+50:5650 minutes, 56 secondskeresnék, hanem a gépről indítom a dolgokat, és látjuk itt egyszerűen a több szótáros használatot, mondjuk itt a
+51:0451 minutes, 4 secondsjobb oldalt fölül, hogy több szótár van nyitva, és akkor a tőzsdeszó, ami öt különböző szótárban megjelenik, vagy itt
+51:1151 minutes, 11 secondsalul a morfomausban látható, hogy egyik szótárban ez a szóc cikk járat tőzsdé, ez a másik az. És akkor rögtön láthatom
+51:1951 minutes, 19 secondsmár most mondom, hogy ennek nyilván van egy olyan szűk keresztmetszete, hogy maguk a kiadók, akik a szótárokat kiadják, nem szívesen mutatják meg a
+51:2851 minutes, 28 secondssaját szóciküket egy másik szótárral egy oldalon, mert hátha nem olyan jó. Tehát amíg ő egymagában van papírszoltáron,
+51:3551 minutes, 35 secondshát én megvehettem a másik cég papírszótárát, ha volt, de nagyon nehéz azt úgy párhuzamosan nyitogatni. Itt viszont rögtön látszik, jé, de érdekes.
+51:4351 minutes, 43 secondsAz egyiknél benne van az, hogy élink tőzsde, meg lanyőzsde. A másiknál meg az van, hogy jegyez a tőzsdén. És ez a másikban csak áttételesen, hogy
+51:5151 minutes, 51 secondstőzsdéjegyzet úgy van benne. Tehát össze tudom vetni. Nekem a felhasználónak minél többféle van, annál jobb, de maguknak a kiadóknak ez nem mindig ilyen lelkesítő.
+52:0152 minutes, 1 secondNa, akkor itt van egy ilyen terminológiai valami. Tehát látszik, hogy a fogalom van bal oldalt a lista.
+52:0852 minutes, 8 secondsleírva, hogy mi a definíciója, hogy kell használni, mit jelent az, hogy two key speed dialing
+52:1552 minutes, 15 secondsés így tovább. Azt jelenti, hogy abbreviated és ez egy szinonimája, de egyébként az abbreviatednak ott van a leírása.
+52:2352 minutes, 23 secondsHát erre is való egy szótári felület, hogy elmagyarázzon. A szakszótára termottatbázisok mindig ilyenek.
+52:3052 minutes, 30 secondsRáadásul nem csak kevés nyelven, hanem sok nyelven. Úgy az előbb mondtuk, hogy nincs is sok nyelvi szótár vagy több nyelvi szótár, de például az egyik ilyen
+52:3852 minutes, 38 secondsleghíresebb interaktív terminológia szótára az európai közösségnek, ez a Yat, The Yate Interactive Terminology
+52:4652 minutes, 46 secondsfor Europe. Hát ebben sok nyelven, például magyaron is lehet keresni. És akkor eldönthetem, hogy hány másik nyelven, célnyelven akarom látni a
+52:5452 minutes, 54 secondspéldát, vagy éppen most Bulgár a kiinduló nyelv, és be fogom xelni, hogy bulgár film és bulgár szlovén
+53:0153 minutes, 1 secondszaltárokat akarok csak látni. Hát mindent lehet, legyen hozzá elég anyag, az európai közösség azért szolgáltat elég sok terminológia egységet ahhoz,
+53:1053 minutes, 10 secondshogy ennek van értelme. Készült korábban, és mai napig megvan a Yan Bank. Ebbe több társal volt szerencsénk
+53:1853 minutes, 18 secondsbenne lenni. Ennek az az érdekessége, hogy nem ők akarták kitalálni, vagy mi akartuk kitalálni, hogy milyen szótárok legyenek, hanem ami elektronikusan
+53:2653 minutes, 26 secondsmegszerezhető volt szakszótár, azt rakjuk föl. És ebbe a nagy közös indexelősdbe, amiről beszéltem, hogy egy konkrét példát is mondjak, mindenki megkereshet.com.
+53:3953 minutes, 39 secondsegy-egy kifejezés, hányféle szótárban, milyen értelemben, milyen célnyelvi ekvivalenségekkel jelenik meg, és akkor
+53:4553 minutes, 45 secondsazt lehet szűkíteni meg bővíteni a már meglevőt. Tehát nem erre az alkalomra találják ki, vagy fogják építeni, hanem amit föl lehetett vinni, azt rakjuk be a
+53:5453 minutes, 54 secondsnagy közösbe, és így sok milliós adatbázisról van szó. Ennyi entry, ennyi
+54:0254 minutes, 2 secondsalapegység van benne, szavak vagy kifejezések, hiszen mondjuk a magyarban értékpapírtős, de az egy szó, vagy a
+54:1054 minutes, 10 secondspapírbőző, az is egy szó, de a stock exchange az például két szó, hogy kvant látjuk a megfelelőt.
+54:2054 minutes, 20 secondsNa, szóval egy korszerű elektronika szótárszolgáltatásnak következők a kritériumai legyen folyamatosan bővíthető. Tehát, hogy valahogy
+54:2854 minutes, 28 secondsrakhassak hozzá, hogy aztán később ezt beküldöm, hogy nem akarjátok betenni az igaziba. Tehát egy ilyen saját szótárkészítési lehetőség plusz a
+54:3654 minutes, 36 secondsmeglevő szótárakban minél többet ugyanazon a platformon, tehát a meglevőket párhuzamosan használni, saját szótárt készíteni pedig hozzá, aztán tetszőleges webes tartalmat integrálni.
+54:4854 minutes, 48 secondsHát a multimédia az ma már nem akkora meglepetés. Intelligen kezelék kifejezéseket, ezeket nyelvi dolgok.
+54:5354 minutes, 53 secondsErről majd külön beszélünk, hogy a keres milyen keresések vannak. Tehát ugye nem csak az, hogy csonkol, beírom a szót, pont azt keresi, vagy nem pont azt
+55:0155 minutes, 1 secondkeresi, jobb vége akármi lehet, beírok egy white cardot, vagy valahol a stringbe előfordul az enyém, hanem is sokkal intelligensebb, mint nyelvi
+55:0955 minutes, 9 secondskezelésről van szó. Azért tanultuk a mindenfajta morfológiai nyelvi dolgokat korábban, hogy azt itt is lehet használni. Na most a közösségi jelenlét,
+55:1855 minutes, 18 secondsami megint teljesen érthető, nem csak az az érdekes, hogy ki mit keres, tehát mondjuk, ugye velem egyidejűleg mások mit keresnek, hanem hogy mit találnak,
+55:2655 minutes, 26 secondsmit nem találnak. Tehát rögtön egymással is meg tudják beszélni. Itt nem föltétlen az utca emberéről van szó, hanem egy közösség, egy forhító közösség
+55:3355 minutes, 33 secondstagjairól. Tehát olyanfajta dialógus, ami rögtön a szótárban való entrik megjelenésére is hat. kritizálják
+55:4155 minutes, 41 secondsegymást, meg és akkor ugye valahányadik emeleten jogerőre emelkedik a szónak a fordítása, vagy a kifejezés fordítása. A
+55:4955 minutes, 49 secondsközösség ezt elfogadta, valaki végén ráüti a pecsétet, és innentől kezdve ezt már kötelessége használni egy adott esetben, mit tudom én, a magyar EU fordító csoportnak.
+56:0156 minutes, 1 secondNa most az nagyon érdekes, hogy amit keresnek, mit keresnek, mivel keresnek, egy el is lesznek példák. Így a rendszer
+56:0856 minutes, 8 secondsjelentéstani szemantikus része megerősödhet, mert a felhasználó nem össze-vissza keres. Tehát persze beütök ezt, beütök azt, ezt elvileg lehet, de
+56:1656 minutes, 16 secondsáltalában valamit fordítanak és tematikusan akkor egy szűkebb világban vannak. Tehát egy szersen alatt egy
+56:2356 minutes, 23 secondsember általában egy szakterületnek egy dokumentumát fordítja. Tehát ebből tanulhat a rendszer, majd erre lesz példa. Másik, hogy nagyon fontos, hogy
+56:3256 minutes, 32 secondsha én egy ilyen teljes képernyőn odarakok egy ilyen gyönyörű web többnyelvi szótáratot, akkor nem tudom, hogy hol van a fordítása. A fordítást
+56:4056 minutes, 40 secondsodateszem, az eltakarja. Tehát, hogy gyorsan tudja indítani a szótározást, ne takarja el a szövegemet, de azért hatékonyan vissza tudjak menni. Erre is
+56:4956 minutes, 49 secondsmár jobbnál jobb megoldások vannak. Ez is a következőknek a témája lesz.
+56:5456 minutes, 54 secondsÉs hát nyilván ha én belépek a rendszerbe, akkor számomra legyen személyre szabva. Ha más lép be ugyanabba, akkor az ő számára. Tehát ne az legyen, mint ahogy egy papírszó.
+57:0357 minutes, 3 secondsTehát az egységes. Kinyomtatták, megveszem, tetszik, nem tetszik, az enyém. Tehát ezeket ma már mindegyiket el lehet várni. Na hát akkor menjünk
+57:1057 minutes, 10 secondsebbe egy kicsit jobban bele. Itt az előzőre egy példa. Ez Marfavis cégnek egy korábbi webes
+57:1957 minutes, 19 secondsfelületű ilyen szótári rendszere, hogy például mit keresnek a többiek, mik azok az ismeretlen szavak, amiket beírtak és nem találtak meg. Ugye ez elég
+57:2757 minutes, 27 secondsveszélyes, mert adott esetben elütök valamit, vagy hülyeséget írok be, az is itt megjelenik. Hát ez nyilván valami
+57:3457 minutes, 34 secondsmódon érdemes kontrollat csinálni, ha pláne egy szűkebb társaság használja, hogy hopp, ez nem volt benne, vagy ez
+57:4257 minutes, 42 secondsnincs benne, miért nincs benne, javasoljunk rá valamit, vagy milyen kifejezések tartalmazzák. Ugye itt a lószóról van szó, és akkor milyen
+57:4957 minutes, 49 secondskifejezésekben van benne ez a ló. Tehát, hogy egy ilyen erre utaló webes felület, ami egy közösséget kiszolgál.
+57:5757 minutes, 57 secondsNa, akkor azt mondtuk, hogy a keresés az a leg egyik legnyelvibb dolog a szótárban, hogy lehet okosan és szépen nyelvileg keresni. Hát kell ismernünk
+58:0658 minutes, 6 secondsmindkét karakterkészletet, tehát az ma már teljesen elvárható jogosan, hogy nincs olyan, hogy jaj, hát nem lehet magyarul beírni egy keresőbe. Azért még
+58:1558 minutes, 15 secondsmindig van egy rakás olyan felület, ahol kérik, hogy mondjuk ékezet nélkül írjak.
+58:1958 minutes, 19 secondsDe mondjuk ezt a szulttári világban már lehet elvárni. Sőt, hát hogyha egy másik karakterkészletet esetleg teljesen más írásrendszert használ, az is működjön.
+58:3058 minutes, 30 secondsMindegyikre legyen jó rendezés. Tehát ugye azt egészen más mondjuk egy magyar héber szótánál a héberrendezése, mint a
+58:3758 minutes, 37 secondsmagyar sorrendjét tekintve is a benne levő szimbólumokat. Ezt ne kelljen elmagyarázni a rendszernek. És ha magyar angolt használok, akkor az angol
+58:4558 minutes, 45 secondsrendezés bár hasonlít a magyarra, de az se azonos vele.
+58:4958 minutes, 49 secondsEz nagyrészt igaz, de azért még mindig nem mindenhol. Hát általában az ilyen leszűkített szótárpár, szótár
+58:5758 minutes, 57 secondsnyelvpároknál a két nyelvre meg van ez csinálva, de egy ilyen multi több nyelvi rendszernél sokszor az egyik nyelvnek a rendezése van mindenre, és ez nagy baj.
+59:0659 minutes, 6 secondsFonetikai információ kezelése, tehát a nem beszélő szótáraknál az egy állandó probléma, hogy az a font, ami a kiejtéshez tartozik, az nem mindig
+59:1559 minutes, 15 secondsjelenik meg jól, és akkor nagyon nem értik azt a krixot az emberek. Tehát az tipikusan ilyen, hogy hát egyik nyelv,
+59:2359 minutes, 23 secondsmásik nyelv, és akkor még van ez a nemzetközi fonetikai átírás, ami egy kvázi harmadik írásrendszer a nálunk.
+59:3159 minutes, 31 secondsÉs ugye hát a legfontosabb volna, ami teljességgel nincs meg, ugye itt az a Eurot Banknél mondtam, hogy megpróbáltuk
+59:3959 minutes, 39 secondsösszerakni a európai terminológiai adatbázisokat, ami csak elérhető, de azt azért lehetett megcsinálni, mert mint
+59:4659 minutes, 46 secondsmondtam a terminológiában, többé-kevésbé egy az egyben párok vannak. Ezzel szemben a szótáraknál n az m-hez vagy
+59:5359 minutes, 53 secondsegy az n-hez párok vannak. Na most azt mondani, hogy ez a szó ebben az értelemben, mondjuk csak ebből, tehát
+1:00:011 hour, 1 secondtudom, hogy ez a vár, igei vár és ez a főnévi vár, és amikor fordítok, akkor nekem nagyon nem mindegy, hogy a Wit vagy a Council jön föl. És ezt
+1:00:091 hour, 9 secondsnyilvánvalóan úgy kéne jelölni, hogy pontosan tudjam, hogy az angolban ilyen nincsen. Tehát a we meg a CL két teljesen különböző szó, de a magyarban
+1:00:181 hour, 18 secondsaz egyes meg a kettes különbözik. És amikor angolban állok az egyiken, akkor könnyen megmutatom a várt, de ne mutassam meg a másik jelentését, mert
+1:00:261 hour, 26 secondsarra nem kíváncsi senki, ami most itt nincs. Még egyszer, tehát a elektronikus felületen nem az a bravúr, ami a
+1:00:331 hour, 33 secondspapírszótáraknál, hogy ennyi mindent mondok a szóról, hanem aktuálisan itt most, ahol állok, melyik van. Tehát kicsit sem érdekel, hogy van egy
+1:00:421 hour, 42 secondshomonim, egy egybe eső alak, van másik vár. Az nagyon jó pofa, ha nézegetem, így olvasgatom a szótárat. De ha ott a
+1:00:501 hour, 50 secondscounc van, akkor nekem ne magyarázza el, hogy a vég mit jelent, mert nem érdekel.
+1:00:541 hour, 54 secondsNa, ezért kell az, hogy pontosan egységesen a egyes jelent és kettes, vagy pláne, ahol a másik nyelven is vannak finom megkülönböztetése mit
+1:01:021 hour, 1 minute, 2 secondsjelent az? Tehát a tart ugye az mindig igéket mondunk, és már egyszer mondtam is talán tartót.
+1:01:081 hour, 1 minute, 8 secondsSzóval nem mindegy, hogy a tart kettő három-ból melyik tartnál vagyok, hogy az csak azt jelenti, hogy keep értelemben
+1:01:171 hour, 1 minute, 17 secondstart, vagy valami felé tart. Tehát folyamatosan megy keep angol, tehát megy arrafelé, hogy hogy valahol odaérjen,
+1:01:251 hour, 1 minute, 25 secondsvagy a kezében tart valami. Ugye ezek különböző jelentések, és ezek máshogy fordulnak a másik nyelven. És hogyha több szótárat össze akarok mergeölni, az
+1:01:341 hour, 1 minute, 34 secondsegyikben benne van, ak tartnak a sok jelentése, a másikban nincs, vagy nem annyi, vagy nem olyan sorrendű, ezért nem tudom őket összeehíteni. Vagyis egy nyelven belül se tudok rendesen működni.
+1:01:451 hour, 1 minute, 45 secondsEzért volna szükség, amit mondtunk, nagyon központi kialakított egynyelvi szótárokra, hogy mindig az legyen a szónak a egyes, kettes, ötös jelentése.
+1:01:541 hour, 1 minute, 54 secondsLegfeljebb a szótár szerzője azt mondja, hogy engem a hatos jelentés már nem érdekel, mert ez egy kisebb szótár. De ne lehessen azt mondani, hogy én találom
+1:02:011 hour, 2 minutes, 1 secondki a hatost ahelyett, ami központilag van. Tehát ez a grammatikai információval való kompatibilitás, ez sajnos nem adott max a terminológia adatbázisoknál.
+1:02:111 hour, 2 minutes, 11 secondsNa, hogy keresünk? Hát betű szerint ezt mondjuk triviális. Felejtsük ezt mindenki tudja. Csonkoltan. Hát az kezdő string valameddig és utána ha nem írok
+1:02:201 hour, 2 minutes, 20 secondssemmit, akkor bármi jöhet, vagy kell egy white cardot írni, és akkor valami minimál reguláris kifejezés belefér.
+1:02:281 hour, 2 minutes, 28 secondsHát a hasonlósági keresés azt jelenti, hogy nem azt a stringet keresem, amit beírtam, hanem legyártok valami holdudvart, ugye a fázi keresés
+1:02:371 hour, 2 minutes, 37 secondsfáziról. Hát most nem tudnak visszajelezni, ugye, hogy volt-e szó vagy nem. Ugye a fázi az egy halmazba tartozás mértéke nulla és egy
+1:02:461 hour, 2 minutes, 46 secondsközött. Tehát a fazi halmazba tartozás nem azt jelenti, mint a normálisan egy halmazba, ha valami benne van, akkor egy, ha nincs benne,
+1:02:551 hour, 2 minutes, 55 secondsakkor nulla, hanem hogy valamennyire beletartozik. Mivel null és egy közötti szám, többen azt gondolják, hogy a valószínűséghez van, közepe nincs, mert
+1:03:031 hour, 3 minutes, 3 secondsitt nem eloszlásról nincsen szó, úgyhogy ilyeneket nem tudunk.
+1:03:081 hour, 3 minutes, 8 secondsTehát a faziságnak a valószínűséghez nincsen kapcsolata, mert az eloszlásokról itt nem lehet beszélni, de
+1:03:151 hour, 3 minutes, 15 secondsaz biztos, hogy hát valamennyire része, tehát valamennyire ilyen egy betű, de nem egészen, tehát hogy mondjuk hasonló
+1:03:221 hour, 3 minutes, 22 secondsa kiejtése, és akkor esetleg valamennyire a P az valamennyire B is persze bizonyos körülmények között. A
+1:03:291 hour, 3 minutes, 29 secondssound exenés sokkal konkrétabb. Az egy konkrét algoritmus, az angol írott és kiejtett formák közötti kapcsolat. rá
+1:03:371 hour, 3 minutes, 37 secondslehet keresni a webben, hogy milyen a sounddex algoritmus. Tehát hogyha elírják az angol szavakat, akkor is
+1:03:431 hour, 3 minutes, 43 secondsmegtalálhatók. Tehát az, hogy a te meg a teir meg a tere, tehát a két az ott és
+1:03:501 hour, 3 minutes, 50 secondsaz övék alak az ugyanúgy hangzik, de különbözően iratik. Ez egyfajta spell probléma, amely spell problémát ugye más
+1:03:581 hour, 3 minutes, 58 secondsnyelven is lehet ismerni. És a helyesírásnál sokat beszéltünk róla, hogy hát ha valami véletlenül rövid óval
+1:04:061 hour, 4 minutes, 6 secondsvagy hosszúval, rövid ível vagy hosszú évvel van, akkor azt nem találná meg a karakteres keresést, de hát egy kis ráhagyással a spellel tudunk mahinálni,
+1:04:151 hour, 4 minutes, 15 secondsvagy mondjuk ugye a neveknél az Y cserével. Tehát a hasonlósági keres azt jelenti, hogy vagy a stringet megváltoztatjuk, valami mértéket
+1:04:221 hour, 4 minutes, 22 secondsrendelünk hozzá, vagy egy karaktersorozat halmazt rendelünk hozzá.
+1:04:271 hour, 4 minutes, 27 secondsDe ami igazán lényeges, ez a következő kettő, hogy nyelvi alakú keresés. Tehát ez az, amit kevés szótár tud, de egyre
+1:04:341 hour, 4 minutes, 34 secondsinkább errefele megyünk a bemeneti oldalon. Hát persze. Tehát én egy toldalékolt szó írok be, mert nem tudom,
+1:04:411 hour, 4 minutes, 41 secondshogy toldalékolt a szó, és így nincs benne a szótárban, de tessék megtalálni nekem a tövét. Mázlink van, ha csak a vége változik, mert akkor csonkoltan is
+1:04:491 hour, 4 minutes, 49 secondsmegtaláljuk. Könyv könyvet, hát persze, hogy megtaláljuk, de már a bagoly baglyotba a bagoy szog sose jön ki az,
+1:04:561 hour, 4 minutes, 56 secondshogy bagyot. Tehát a nyelvi alaperesés világos, hogy kell. A baglyotnál a bago címszót kell mutatni. Az, hogy a találati oldalon is kell, ez sokkal
+1:05:051 hour, 5 minutes, 5 secondsérdekesebb. Ugye mondtuk, hogy a találati oldalon is lehet egy intelligens szótárba keresni. Nem a teljes indexelés, a teljes szöveg
+1:05:131 hour, 5 minutes, 13 secondsindexelés, hanem amikor ez a szópárasd van.
+1:05:161 hour, 5 minutes, 16 secondsÉs akkor amikor megtalálok egy kifejezést a szótári jobb oldalon, hozza, hogy mely címszónak a hasában van
+1:05:251 hour, 5 minutes, 25 secondső, és hoz egy másikat is, amelyik egy másik címszóban van. És meg tudom nézni, hogy az egyiknél ő első jelentés, a másikban a harmadik jelentés második
+1:05:331 hour, 5 minutes, 33 secondseleme, tehát egyfajta súlyozás is van a jobb oldalon való nyelvi keresésnél.
+1:05:391 hour, 5 minutes, 39 secondsmegtaláltam a szó tövét egy szócik belsejében úgy, hogy ő egy forrásnyelvű kifejezésnek a valahanyadik jelentése.
+1:05:471 hour, 5 minutes, 47 secondsÉs ezt szépen meg tudom mutatni.
+1:05:511 hour, 5 minutes, 51 secondsTehát úgy tudom megmutatni, hogy a saját szinonimái között, hiszen ami mellette van, a saját szinonimai között jelenik
+1:05:591 hour, 5 minutes, 59 secondsmeg. Tehát nagyon fontos, hogy nem csak az ABC rend szerint jelenik meg, mintogyha a bal oldalon keresnék, hanem
+1:06:051 hour, 6 minutes, 5 secondslátom, hogy a szó ezt jelenti még nagyjából, míg az ABC-ben megtalálom ugyan, de az, hogy előtte meg mögötte mi
+1:06:131 hour, 6 minutes, 13 secondsvan, az csak optimális esetben a rokon néha teljesen más szavak közé keveredik. Itt mindig jelentés közé.
+1:06:201 hour, 6 minutes, 20 secondsÉs akkor nyilván azért vannak további problémák, a több szavas kifejezés. Ugye mondtam, hogy annak elvileg minden szava
+1:06:281 hour, 6 minutes, 28 secondskulcs kifejezés, tehát úgy tekintem elás csatabár példát mondtam,
+1:06:361 hour, 6 minutes, 36 secondsde hát ugye itt arról van szó, hogy ki kellene választanom a kulszót a szótárírónak, ha szótárat írok. viszont
+1:06:441 hour, 6 minutes, 44 secondsnekem nem kell kiválasztanom, hanem megkeresem Elásnál is, meg Csatabárnál is, és ahogy megtalálom, azt adom előre.
+1:06:511 hour, 6 minutes, 51 secondsTehát több címszó alatt is megtalálhatok egy kifejezést, és ami meglepő, az előbb azt mondtam, hogy a szóci írók nem nagyon tudnak egymásról, az a szerkesztő
+1:07:001 hour, 7 minutesvagy a főszerkesztő dolga, hogy koordinálja őket. Egy nagyon nagy szótárnál simán előfordul, hogy két helyen is, az elás vagy az ás írójánál,
+1:07:091 hour, 7 minutes, 9 secondsmeg a csatabárd, meg a bárd írójánál is ben lesz ez a kifejezés, és optimális esetben ugyanazt az ekvivalenst rendelik hozzá. De van
+1:07:171 hour, 7 minutes, 17 secondsamikor nem, és ez nagyon munkás, hogy egy szótáron belül esetleg ellentmondó vagy kiegészítő információk vannak, ami soha nem derült volna ki, ha nem ilyen
+1:07:251 hour, 7 minutes, 25 secondsszótárról lenne szó, hogy el többszos kifejezést sokféleképpen lehet
+1:07:321 hour, 7 minutes, 32 secondsugye keresni. Hát karakteresen betű szerint ugye mármint mondtuk ezt reguláris kifejezéssel, de ami nagyon lényeges, az az utolsó, mert nem az az
+1:07:411 hour, 7 minutes, 41 secondsérdekes, hogy a karaktereket keresek, vagy reguláris kifejezést keresek, hanem az az érdekes, hogy hol és mikor keresem, tehát a készítéskor vagy
+1:07:501 hour, 7 minutes, 50 secondselemzési időben keresem. ugyanis vannak szótárok, amibe én nem tudok belenyúlni, ezért készítésekor én nem vagyok jelen.
+1:07:571 hour, 7 minutes, 57 secondsMeg kell találnom azt, amit ők leírtak, úgy, hogy az én felhasználóm intelligens kereséssel jusson el oda. De sajnos
+1:08:051 hour, 8 minutes, 5 secondsabban a szótárban a nem úgy hozták létre az indexeket. A másik, hogyha én ho létre, akkor olyan indextételeket teszek le, hogy akkor is megtalálom a szót,
+1:08:141 hour, 8 minutes, 14 secondshogyha nagyon faramuci a dolog. Na most ugye nyilván az egyik arról szól, hogy amikor generálom a szótárt, akkor kell
+1:08:211 hour, 8 minutes, 21 secondsott lennie az indexelésnek. A másik pedig, hogy elemzési időben is ott kell lennie, hiszen a másiknál is az el, tehát amikor beírom a szót, akkor azt én
+1:08:301 hour, 8 minutes, 30 secondstoldalékot leválasztom, a tövét megkeresem és visszaadom, amiket találok. De esetleg az a szótár, amelyikben nincs ilyen index, tehát
+1:08:391 hour, 8 minutes, 39 secondsgyárilag van lexelve, az visszaad zajos szavakat is. Tehát majd lesznek ilyen példák, hogyha én beírom az almát, és csak csonkoltan lehet egy adott szótárba
+1:08:471 hour, 8 minutes, 47 secondskeresni, akkor az almaak szót is visszaadja. Az jó, hogy visszaadja azt is, hogy almaként, de azt, hogy almát,
+1:08:551 hour, 8 minutes, 55 secondsazt nem. És ha viszont valahogy sikerül nekem kitalálni, hogy van a szónak egy almá tő allomorfia, akkor az almát
+1:09:031 hour, 9 minutes, 3 secondsalmának alakok visszajönnek, és még az almárium is, ami megint nem odatartozik.
+1:09:071 hour, 9 minutes, 7 secondsErre lehet, hogy majd egy kicsit később visszatérünk.
+1:09:101 hour, 9 minutes, 10 secondsA többszos kifejezéseket látjuk itt a képernyőn. Tehát ugye a a head szónál megtalálom azt is, hogy heads ors, vagy
+1:09:191 hour, 9 minutes, 19 secondsa headset meg a talet beírom, és akkor minden olyan kifejezés, amiben ő szerepel, előjön. független attól, hogy headnél, télnél, mnél, Tasnál, bármi
+1:09:291 hour, 9 minutes, 29 secondsmásnál szerepelt. Tehát az nem érdekes egy ilyen kifejezés megkeresésénél, hogy hol hova tette a szoltáríró. Ezek nagyon
+1:09:371 hour, 9 minutes, 37 secondslényegesek egy modern szótárnánál, hogy minden olyat megtaláljak, bárhol van is, ami független attól, hogy melyik az ő
+1:09:451 hour, 9 minutes, 45 secondsfeje, mint szócikfeje. Tehát a jobb oldalról azt lehet mondani, összefoglaló, hogy a papírszótáraknál ennek csak tipográfia jelentőségem.
+1:09:531 hour, 9 minutes, 53 secondsfölsoroltam wrestlit. A ezek a jelentések az elektronikusan ugye ez amit szinonimák, amit az előbb elmondtunk, tehát nem ABC környezetben
+1:10:011 hour, 10 minutes, 1 secondjelenik meg a szó, hanem a saját rokonai között azon jelentés szinten, mondjuk ő a hármas jelentésen belül a középső, akkor előtte meg mögötte szinonimai állnak.
+1:10:121 hour, 10 minutes, 12 secondsEzt akkor a többféle jelentést, egyik szótári baloldalnak a hármas jelentése, másiknak az egyes jelentése. Ki tudom
+1:10:201 hour, 10 minutes, 20 secondsfordítani a szótárat, megjelenik egy további találati ablak, ahol minden olyan címszónak a leírása megjelenik,
+1:10:281 hour, 10 minutes, 28 secondsaminek a belsejében az én célnyelvi kifejezésem ott van. Tehát a kifordítás elektronikusan lehetséges. Nagyon fontos
+1:10:361 hour, 10 minutes, 36 secondsdolog. Ez már nem ugyanaz, mint a hagyományos szótár.
+1:10:401 hour, 10 minutes, 40 secondsTehát itt egy példa erre, hogyha én beírom egy németmagyar szótárba, hogy eszik, akkor ott hozza, hogy az essens hesky kézi szótárb essen. Hát nyilván az
+1:10:491 hour, 10 minutes, 49 secondsaz eszik alapszó. Az is, hogy mumfen oda be van írva elé, hogy teriszájal eszik.
+1:10:541 hour, 10 minutes, 54 secondsTehát eszik, eszik, de az egy kicsit ilyen rossz ló, de az is van, hogy fresszen, mert ha az állat eszik, amit mi inkább azt mondunk, hogy zabál, ott
+1:11:011 hour, 11 minutes, 1 secondis van a harmadik ablakban, hogy eszik, zabál, és esetleg egy olyan teljesen komplex kifejezésbe is, hogy ami ott
+1:11:111 hour, 11 minutes, 11 secondslátszik, hogy fűren, tehát hogy valami nagyon finomat
+1:11:181 hour, 11 minutes, 18 secondsenni, ami hát a finomat a kifejezőben benne van, de ez az eszik szócikben van benne. Tehát látszik, hogy négy
+1:11:241 hour, 11 minutes, 24 secondskülönböző mampfen fressen és güt kifejezésekben jelenik meg jobb oldalon.
+1:11:301 hour, 11 minutes, 30 secondsAz persze kicsit helyigényes így. És nyilván azért okos dolog mégiscsak létrehozni egy magyar-német szótáratot ebből, ami itt létezik is, de hogy a
+1:11:381 hour, 11 minutes, 38 secondsszónak a specifikus jelentése, hogy ő egy valami finomat eszik, vagy az állat zabálásáról van szó, az sokkal jobban kijön, mintogyha csak föl vannak sorolva
+1:11:471 hour, 11 minutes, 47 secondsegymás alatt, hogy 1 kett 3 egy essen kettő máfen három fen. Arról is beszélve, hogy itt látszik egy másik ilyen nyelvtani apróság, amit mi
+1:11:561 hour, 11 minutes, 56 secondsmindannyian tudunk, hogy a szótári alapalakok, a magyarban egyes szám harmadik személy egy igénél, a németben meg az infinitus, tehát az még meg se
+1:12:031 hour, 12 minutes, 3 secondsfeleltethető nyelvileg egymásnak. Ezt amikor fordításra használunk ilyen eszközöket, akkor erről erről tudni kell.
+1:12:111 hour, 12 minutes, 11 secondsNa most az egésznek egy nagyon fontos eleme, hogy hogy néz ki a felületen, tehát milyen az a szótár, amit én látok. Tehát a felhasználó mivel találkozik.
+1:12:191 hour, 12 minutes, 19 secondsHát eddig a szótár készítés az egyszerre volt az a kettő, hogy hogy néz ki a szótár és mit rakok bele. De ugye mi
+1:12:261 hour, 12 minutes, 26 secondsnekünk van egy struktúra, amelyik egy belső leírás, ugye most már XML-lel eléggé el vannak látva, tudják, hogy
+1:12:331 hour, 12 minutes, 33 secondsmiről szól. Tehát egy egy szép leírása van technikai és hozzá van rendelve valami, tehát egy olyanfajta felület,
+1:12:431 hour, 12 minutes, 43 secondsami a képernyőn megjelenik. Na most ennek a belső struktúrának ma már izószabványok felelnek meg. Ez az LMF, a Lexig Mark
+1:12:511 hour, 12 minutes, 51 secondsFramework, tehát az összes létező szótárt, ami akkor volt, amikor ez a szabvány kialakult, 2000-es évek,
+1:12:581 hour, 12 minutes, 58 seconds2008-ban jött ki ez a szabvány, földolgozták és szép lassan kialakítottak egy rendszert, ami a összes nyelveknek a lexikális
+1:13:071 hour, 13 minutes, 7 secondsleírásában, szótárokban előfordul, és olyan metastruktúrát definiáltak, amivel a szótárok ma leírhatók.
+1:13:141 hour, 13 minutes, 14 secondsSőt, van egy ilyen univerzális leíró nyelv is, a UML,
+1:13:211 hour, 13 minutes, 21 secondsamelyikben ez leírható, tehát hogy gyakorlatilag a szótári struktúra leírható. És akkor
+1:13:291 hour, 13 minutes, 29 secondsehhez rendelünk hozzá valamilyen XSLT vagy más technikai felületi megjelenítést, és akkor úgy néz ki, mint
+1:13:371 hour, 13 minutes, 37 secondsegy papírszótár, vagy úgy néz ki, mint egy szép web elektronikus szótár. Ez már ránk van bízva. A tartalom egy és ugyanaz.
+1:13:451 hour, 13 minutes, 45 secondsNa most ez nagyon lényeges. Suetkén jó is, hogy itt van a neve. Ő mondjuk a modern szótárkészítésnek, elektronik szótárkészítésnek egy nagyon fontos
+1:13:541 hour, 13 minutes, 54 secondsszemélyisége volt ez a ö ő azt mondja, hogy az nagyon nem mindegy, hogy mi az elektronikus
+1:14:021 hour, 14 minutes, 2 secondsszótárból azt hozzuk ki, ami csak elektronikusan működik jól, vagy azt hozzuk ki, ami papíron is. Na most itt egy ilyen angol-német szótárral hoztam példákat.
+1:14:121 hour, 14 minutes, 12 secondshogy ugye ha én a feel szót szeretném megérteni, ami ott a szövegben van, és arra rámutatok, ugye mondtam, hogy majd
+1:14:201 hour, 14 minutes, 20 secondslesznek szótárok, mint amilyen a Mobi Mouse, Morpomous is, hogy úgy indul el, hogy a szövegből, akkor ő a szövegkörnyezetet is látja és
+1:14:291 hour, 14 minutes, 29 secondsazt is látja, hogy a field megelőzi egy second és akkor a second field az, sőt a
+1:14:361 hour, 14 minutes, 36 secondssecondot megjelőzi egy play, de play second field, hát akkor megpróbálja azokat kifejezéseket idehozni, amiben
+1:14:431 hour, 14 minutes, 43 secondsezek legjobban benne vannak. És talán a play second fidal to somebody az létezik az Oxford szótárban, és még a második,
+1:14:521 hour, 14 minutes, 52 secondsharmadik jelentés is. És hogyha már a play nincs second field, vagy a second sincs feedle, egyre lejjebb megyek, akkor megmutatom a mag jelentését a
+1:15:011 hour, 15 minutes, 1 secondfeedlnek, de a szövegben látom, hogy egy picit kiegészítőbb konkrétan ez a dolog.
+1:15:051 hour, 15 minutes, 5 secondsHa pedig úgy szeretné megjeleníteni az egészet, mint egy hagyományos szótár, annak is helyet kell adni, helyt kell adni. Tehát itt látszik pirossal a play
+1:15:141 hour, 15 minutes, 14 secondssecond field to somebody, ugyanaz, mint amit az előbb láttunk az első sorban, de az eredeti szócik belsejébe, ami a
+1:15:211 hour, 15 minutes, 21 secondshagyományos szótár, ugye az ember nagyon konzervatív szereti, azt a formát közvetíti csak sajnos mondjuk itt olyan is van, hogy
+1:15:291 hour, 15 minutes, 29 secondsfész az long a fé, ami hát egy egészen más kifejezés az is ott van fölötte, mert hiszen a szótáríró nem tudtatta, hogy honnan közelítek. Tehát ha én a
+1:15:381 hour, 15 minutes, 38 secondsgéppel csináltatom, akkor csak azt hozom le, ami nekem fontos, legszélesebb, szűkebb, szűkebb jelentést, vagy pedig megmutatom. Tehát ez a
+1:15:461 hour, 15 minutes, 46 secondskétféle szótármegjelenítés van, hogy a hagyományosat is kiemelem benne highlightal, vagy pedig én csinálok egy olyat, ami csak erről szól. Na most ez valahogy létre kell hozni a szótárakat.
+1:15:571 hour, 15 minutes, 57 secondsHát erre felületek kellenek. Ugye itt a Morphology a Lexicographers workbenchét
+1:16:031 hour, 16 minutes, 3 secondstudom mutatni, mint kiinduló alapot, ami egy olyan szótárszerkesztő. Ennél vannak komplexebbek, de ez egy webes sok ember
+1:16:111 hour, 16 minutes, 11 secondsszámára egyideileg szótárírásra alkalmas eszköz, aminek a tartalmi struktúráját
+1:16:181 hour, 16 minutes, 18 secondsegy-egy szótárhoz meghatározza az, aki a rendszernek a annak az adott szoltári rendszernek a gazdája. fölépül egy struktúra, és csak oda lehet beírni,
+1:16:271 hour, 16 minutes, 27 secondsahol a mezők vannak, és generálja a szócéket. Tehát én nem, tehát az XSLT-t vagy bármilyen megjelenítő eszközt a
+1:16:351 hour, 16 minutes, 35 secondsvégén hozzávág, és ezért a jobboldali fehér ablakba látható a Brandonnak a leírása, de azt nem én írtam, és nem is
+1:16:431 hour, 16 minutes, 43 secondslehet belenyúlni, mert az generálódik egy sty segítségével ebből a struktúrából. Rengeteg ilyen eszköz van, csak ez mondjuk itt közel áll hozzánk.
+1:16:541 hour, 16 minutes, 54 secondsAztán van olyan, hogy segédeszköz ahhoz, hogy létrehozzak szótárat. Erről már korábban említés történt, de most akkor
+1:17:041 hour, 17 minutes, 4 secondsismét talán említettem röviden. A Mazsola vonzatkereső, amelyik egy olyan eszköz, hogy a korpuszokból megtaláljam
+1:17:121 hour, 17 minutes, 12 secondsa szavaknak azon tulajdonságát, amik normális körülmények között a szavak valahogy hát, hogy mondjam?
+1:17:211 hour, 17 minutes, 21 secondsA szóem szó a hagyományos szótárak nehezebben tartalmaznak. Tehát mindannyian tudjuk, hogy vannak kifejezések. Hoppá! De a kifejezések
+1:17:291 hour, 17 minutes, 29 secondsazok mindig az előző szótárból ugye említettem jönnek át és egy-kettő intuitíven megjelenik. De például azt
+1:17:361 hour, 17 minutes, 36 secondsmondom, hogy ad és megnézem az adot ezzel a Mazsola vonzatkeretével, amit hát megtalálhatnak a weben és majd
+1:17:431 hour, 17 minutes, 43 secondssegítséget is adunk rá. Akkor milyen, mit lehet adni? És nagyon érdekes, hogy az ember azt gondolja, hogy könyvet ad,
+1:17:511 hour, 17 minutes, 51 secondsvagy kenyeret ad, de nem ám a leggyakoribb ad az, hogy hangot ad, lehetőséget ad, választ ad, otthontad, tájékoztatást ad írtad, okot ad valamire
+1:18:001 hour, 18 minutessatöbbi. Ráadásul ami nagyon érdekes, hogy ezeket a technikákat,
+1:18:081 hour, 18 minutes, 8 secondshogy mi egy szónak a gyakori kiegészítő vonzata. úgy kell tekinteni,
+1:18:151 hour, 18 minutes, 15 secondsö szónak a története ne befolyásolja a szótárkészítőt. Tehát nem arról van szó,
+1:18:231 hour, 18 minutes, 23 secondshogy előbb volt az ad és aztán bizonyos tárgyakkal együtt már gyakorivá vált mondjuk a hangotad, hanem az a lényeges, hogy a hangot ad egy olyan valami,
+1:18:321 hour, 18 minutes, 32 secondsamiben az adnak, mint jelentés alig van szerepe, hiszen a hangot ad, a lehetőséget ad a lehetőséget a
+1:18:391 hour, 18 minutes, 39 secondsszemantikus tartalmi szó, választ ad, otthont ad.
+1:18:451 hour, 18 minutes, 45 secondsRáadásul itt a képernyőn két dolog látszik. Az egyik ez a fölső blok, fölső négy sor. ahol be vannak sárgítva a
+1:18:541 hour, 18 minutes, 54 secondsszavak, az csak annyi mindössze, hogy az egyik ad az egy olyan korpuszból való,
+1:19:001 hour, 19 minutesamit a Magyar Nemzet napilapnak a földolgozásával, a másik pedig a talán a HVG-jével történt. És látszik, hogy a
+1:19:091 hour, 19 minutes, 9 secondsgyakoriság különbözik, és ami be van sárgítva, azt mutatja, hogy az egyikben gyakran volt otthontad és írtad, a másikban pedig igazat ad és tippet ad.
+1:19:181 hour, 19 minutes, 18 secondsÉs a egyikben ez nagyon alacsony gyakorisággal jelent meg. Tehát nem mindegy, hogy milyen korpuszból indulunk ki, de az biztos, hogy vannak gyakori
+1:19:271 hour, 19 minutes, 27 secondsadárgyak, és nem csak az adnak, hanem az összes igéninknek vannak gyakori tárgyai. És ezek a tárgyak olyanok, hogy az ad szinte eltörpül mellettük, mint
+1:19:351 hour, 19 minutes, 35 secondsjelentés. Ergo, úgy kell fölépíteni a szótárat, hogy ezek önálló egységek.
+1:19:411 hour, 19 minutes, 41 secondsÖsszefoglalva, tehát egy szónak a környezete olykor hozzáad, és a többszas kifejezések úgy születnek, hogy a
+1:19:501 hour, 19 minutes, 50 secondsgyakori együtt előfordulásnál ők már önálló egységet alkotnak. Tehát nem a hangot adott nem az adnál, hanem a
+1:19:581 hour, 19 minutes, 58 secondshangot adnál kell fölsorolni. És Sasbálinték ebből a munkából építettek egy igei szerkezetek gyakorisági szótárát ezzel a technikával, ahogy itt
+1:20:061 hour, 20 minutes, 6 secondslátható. És így arra tesznek kísérletet, hogy önálló egység legyen, a hangot ad meg a lehetőséget ad, ne a hangnál és ne az adnál legyen, hanem a hangot ad egy
+1:20:151 hour, 20 minutes, 15 secondsolyan kifejezés, amit a gyakorisága indokol, hogy önálló egység legyen.
+1:20:211 hour, 20 minutes, 21 secondsTermészetesen a múltkor bemutatott World rendszerrel, tehát ezzel a szóbeágyazásossal is lehet keresni,
+1:20:301 hour, 20 minutes, 30 secondslehet gyűjteni hasonló fogalmakat, és a szótárírást lehet hatékonyabbá tenni. Ha beírom, hogy PPK, anné, hogy tudná a rendszer,
+1:20:381 hour, 20 minutes, 38 secondshogy micsoda, hozza azoknak a felsőoktatási intézményeknek a betűszavát, amiát vagy kell egy szótárba, vagy nem. Csak akartam jelezni, hogy milyen érdekes pillanatok
+1:20:471 hour, 20 minutes, 47 secondsalatt begyűjtöm, ha esetleg nem tudok fejből ilyet kitalálni, vagy beírom, hogy bionika, akkor jönnek azok a
+1:20:541 hour, 20 minutes, 54 secondskifejezések, amik a bionica környékén léteznek, és esetleg máshol kevésbé léteznek, és én majd eldöntöm, hogy szeretném-e tenni a szótárba ezeket,
+1:21:031 hour, 21 minutes, 3 secondsvagy sem. Sőt, egy kicsit komplexebb dolgot is tudunk már ezzel a rendszerrel csinálni, hogy különböző
+1:21:121 hour, 21 minutes, 12 secondsmás nyelvű szótárakból tudunk kinyelni információt. Ez úgy történik, hogy a az
+1:21:181 hour, 21 minutes, 18 secondsegy térkép készül a valahol mondjuk elrendezzük ebbe a nagy n dimenziós térbe, amit hát mint mondtunk, a mi
+1:21:261 hour, 21 minutes, 26 secondsmodellünk, aminhez alapul a magyar modell, az 300 dimenziós, vagyis 300 független szempont összerakásával
+1:21:341 hour, 21 minutes, 34 secondskészülnek a hasonlósági mértékek. És akkor veszünk egy más nyelvű adott esetben angol nyelvű hasonló méretű
+1:21:421 hour, 21 minutes, 42 secondskorpuszt. Ugye 3 milliárd szó volt a magyar korpusz, amiből kiindultunk. Az angolban a Wikipédiát dolgoztuk föl.
+1:21:491 hour, 21 minutes, 49 secondsAnnyi a különbség, hogy a magyar korpusz az a webről szedett szövegekből van, míg az angol az egy viszonylag normatív szöveg, hiszen a Wikipédián azért
+1:21:581 hour, 21 minutes, 58 secondsnem a tipikus elírások vannak, hanem többé-kevésbé az normatív. Két és negyed milliárd szó az angol, tehát hasonló mértékű. és megpróbáltuk egymásra
+1:22:061 hour, 22 minutes, 6 secondsképezni a kettőt, tehát bizonyos szavaknak a felhas szópárok felhasználásával egymásra helyeztük a kettőt. Kiakultak klusterek, olyan
+1:22:161 hour, 22 minutes, 16 secondsklusterek, amik a környező szavak összevonása után keletkeztek. És akkor ha egy új szó megjelenik a magyar
+1:22:241 hour, 22 minutes, 24 secondsrendszerben, megnézzük, hogy melyik klaszterbe esik bele. Na most a Bionica főnév, azért oda kellett írni, hogy főnév, mert ez egy ilyen kísérleti
+1:22:321 hour, 22 minutes, 32 secondsrendszer. Az egyik rendszerben odaesik, ahol az atom chemistry, science method knowledge van. A másikban chemistry
+1:22:401 hour, 22 minutes, 40 secondsbiology education. Tehát, hogy a bionika az egy ilyesmi. Tehát segít abban, hogy elhelyezzünk szavakat. A PPK egy olyasmi, hogy Educate Institution
+1:22:491 hour, 22 minutes, 49 secondsScience vagy College Education. Ugye egyik rendszer másik. Az egyik rendszert egyébként a a
+1:22:561 hour, 22 minutes, 56 secondsezeket a kategóriákat az angol Wikipédiában a Longman szótárnak illetve a a Roger Tezarusnak a
+1:23:041 hour, 23 minutes, 4 secondssegítségével kategorizáltuk. Tehát mondtuk meg, hogy egy-egy ilyen klaszterhez milyen kulcsszó tartozik.
+1:23:101 hour, 23 minutes, 10 secondsTehát ez a science vagy chemistry, ez egy ilyen klusternek a kulcsszava. És abban esetben a Bianika vagy a PPK, vagy
+1:23:171 hour, 23 minutes, 17 secondsadott esetben a Pázmány, amelyik hát a Holly Christian Book Religion, illetve Christianity, tehát nagyjából azért
+1:23:241 hour, 23 minutes, 24 secondsolyan helyre teszi, vagy a dudsákot, aki hát ugye most nem annyira ismert már, de azért teams sport, futball, valahova oda
+1:23:341 hour, 23 minutes, 34 secondsa teátrális dologról most nem beszélek, tehát hogy elhelyezi valahol, és akkor ott keresünk olyanfajta kiegészítő fogalmakat, tehát hatékonyabbá tesz
+1:23:421 hour, 23 minutes, 42 secondsolyan kifejezéseknek az osztályz ásánál, amiben magunk sem vagyunk teljesen járatosak. És akkor abból a környezetből
+1:23:491 hour, 23 minutes, 49 secondspróbáljuk valahogy a szótári információt gazdagabbá tenni. Tehát ugye van a kútfejünk, van a sima korpusz, ahol
+1:23:581 hour, 23 minutes, 58 secondstechnikai keresés, van ez a mazsolaszerű vonzatkiegészítő, ami hát más egységekkel együtt kezeli a szavakat, és
+1:24:071 hour, 24 minutes, 7 secondsakkor vannak ezek a szemantikus vagy világismeretre utaló neurális módszerek, és még sok más is van. Most mutatunk néhány más nyelvészető megoldást, amiből
+1:24:151 hour, 24 minutes, 15 secondsitt kapcsolat alakulhat ki szótár és nyelvtechnológia között. Hát ez a környezetből kiinduló
+1:24:231 hour, 24 minutes, 23 secondsszótáratnak az ötlete. Tehát ugye azt mondtuk az előbb, hogy ha a szótárat létrehozták, tehát eddig a létrehozásról
+1:24:301 hour, 24 minutes, 30 secondsvolt szó, hogy milyen nyelvtechnológiai eszközök segítik a létrehozást. Most arról beszélünk, hogy a kommunikációs helyzet, amikor egy kész szótárat akar valaki használni, hogy lehet hatékony?
+1:24:391 hour, 24 minutes, 39 secondsHát a legnagyobb baj, hogy ott a szöveg fordítanám. Abból ki kell lépnem, el kell hagynom, elindítani, vagy valahogy belépni egy másikba. Kicsi, fölnagyítom,
+1:24:471 hour, 24 minutes, 47 secondsbeírom, klikkelek, visszajövök, átviszem, lekicsényítem és megjelenik az eredeti. Ez végtelen macerás.
+1:24:551 hour, 24 minutes, 55 secondsEmiatt alakultak ki egy olyan 20 évvel ezelőtt a gyorsfordítók. Tehát amikor valami kell nekem, akkor Pak mondja meg, és azt mondja meg, amit szeretnék. Itt
+1:25:041 hour, 25 minutes, 4 secondsaz előző példa a morfomusból pont erről szólt, hogy ott áll a fidle zone és azt, hogy play second, akkor a play second
+1:25:131 hour, 25 minutes, 13 secondsfidle kifejezést hozza ide. Tehát amióta kifejezés a környezetben, azt hozza, ami nem jelenik meg, azt ne hozza, gyorsan és ne vigye el az aktuális alkalmazást.
+1:25:231 hour, 25 minutes, 23 secondsTehát ugye ott a konkrét alkalmazás fölött, mint egy rávetítés, kívülről ugye fölugrik egy ilyen popup valami. Ha elhúzom az egeret, el is tűnik.
+1:25:341 hour, 25 minutes, 34 secondsTehát nagyon lényeges, hogy kevés művelet odamutatok mondjuk, vagy kattintok. Van a billentyűzeten néhány
+1:25:411 hour, 25 minutes, 41 secondsolyan billentyű, amit kevésbé használunk ilyen ilyensmire. Például most a default beállítása morfumózna az, hogy kétszer
+1:25:491 hour, 25 minutes, 49 secondsnyom meg a kontrollt. Ugye a kontrollt a kontrol billentyűnek a kétszeri önmagában való megnyomása nem egy tipikus, mert valamit mindig hozzányomunk.
+1:25:581 hour, 25 minutes, 58 secondsA legtöbb ilyen billentyűkombináció, mert el van vve, de van olyan működési forma is, hogy nem kell megnyomni semmit, hanem ha ott van, nem tudom, két másodpercig egy adott szó fölött, akkor már automatikusan olvassa a képernyőt.
+1:26:091 hour, 26 minutes, 9 secondsTehát ő jelöli ki, nem én jelölöm ki, nem én írom be.
+1:26:141 hour, 26 minutes, 14 secondsAutomatikusan elindul azzal, hogyha a háttérben fut és két másodpercig a kurzort ottgyom, vagy megnyomom a két kontrollt, vagy bármi mást, amire
+1:26:211 hour, 26 minutes, 21 secondsváltoztatom ezt. Elindul, feldobja, elolvasom, és ahogy elkezd gépelni, eltűnik. Na, ez nagyon lényeges. Tehát
+1:26:281 hour, 26 minutes, 28 secondsfölismeri azt a szövegrvést, ami fölött áll. Ez nagyon sokszor korábban ilyen OCRszerűen ment. Ugye arra kell
+1:26:361 hour, 26 minutes, 36 secondsgondolni, hogy a képernyőn levő szövegeknek valahány pixelből álló karakterek a megtestesítői a felületen.
+1:26:451 hour, 26 minutes, 45 secondsNyilván ennek előnye, hátránya is van.
+1:26:481 hour, 26 minutes, 48 secondsElőnye, hogy egy normális OCR-hez képest csak valahány méret van egy képernyőn.
+1:26:521 hour, 26 minutes, 52 secondsTehát tudjuk, hogy a létező betűfontoknak milyen fajta megjelenítése lehetséges, és mely betűfontok vannak
+1:26:591 hour, 26 minutes, 59 secondsmeg a gép adatbázisában. Viszont tehát ezért nem egy általános ócér, csak egy specifikus, viszont pej, hogyha egy másik ablak lefedi a szöveg egy részét,
+1:27:081 hour, 27 minutes, 8 secondsakkor az csak ami látszik, az csak a fele, és akkor nem biztos, hogy a szoltári program a környezetet jól le tudja tapogatni. Igen ám, de olyan
+1:27:171 hour, 27 minutes, 17 secondseszközökkel dolgozunk, ahol egy textbfferben ott van a szöveg. Tehát ha felismerem a képernyőn levő szöveget, hogy az hol jelenik meg, abban a
+1:27:251 hour, 27 minutes, 25 secondsmegjelenítőben, ami ide kirakja nekem a képernyőre, ott a szöveg folytatását is látom. Tehát lassan a szövegfelismerés
+1:27:311 hour, 27 minutes, 31 secondsaz OCR jellegűből elment a szöveget az gép megfelelő memóriájában megtalálható
+1:27:391 hour, 27 minutes, 39 secondsterületnek az azonosítására, ahol ott volt egy nagyobb egység. Tehát ott megtalálom a szót is, amin a kurzarál, meg a környezetét is. Tehát nem csak a
+1:27:481 hour, 27 minutes, 48 secondsmorfológiáját tudom, leválasztom a toldalékot, megkeresem a lemmáját, ugye az alapalakját, hanem még a körülötte levő kapcsolatokat, play second field példa környezetet is tudom elemezni.
+1:28:001 hour, 28 minutesAztán a szótári keresés mehet úgy, hogy mindig a tőre szeretnék visszamenni, vagy ugye hát mint a hagyományos
+1:28:071 hour, 28 minutes, 7 secondskeresőkben a macskakörömbe írom be, akkor ugye literálisan azt a stringet szeretném, csak azt a stringet, amit most látok, ne menjen vissza tőre. Hogy
+1:28:161 hour, 28 minutes, 16 secondsjelenítem meg? Ugye megint a suetkéns példája. a buborékban megjelenítem azt, ami aktuálisan nekem a legfontosabb,
+1:28:241 hour, 28 minutes, 24 secondshogy egy kvázi fix ablakban jelenítem meg azt, ami szokványosan a szótári adatbázisokból a képernyő megjelenik.
+1:28:321 hour, 28 minutes, 32 secondsRáadásul lehetőség van arra is, hogy lockfálok készüljenek, tehát hogyha használják ezt az emberek és megfelelő
+1:28:411 hour, 28 minutes, 41 secondsbeleegyezés van, tehát ma itt ebbe a furcsa GDPR világban nyilván mindennek utána kell menni. Ez nem csak a rávetítős, tehát ezeknél a popup
+1:28:481 hour, 28 minutes, 48 secondsszótároknál bárminél lehetne használni, vagy lehet használni, hát a weben pláne, hogy mit írnak be az emberek, és mit szeretnének még, mi az, amit nem tudnak.
+1:28:571 hour, 28 minutes, 57 secondsTehát a lockfilok segítségével tudjuk, hogy mire használják és mire nem, erről is mindjárt lesz szó. Sőt, javaslatokat is tehetnek, és esetleg azokat be lehet
+1:29:051 hour, 29 minutes, 5 secondsépíteni. Tehát mi a felhasználóval kapcsolatban vagyunk, mert ő odanyúl, nem kap választ, mi már tudjuk, hogy az ő adatbázisában az nem volt benne. Nem
+1:29:141 hour, 29 minutes, 14 secondskell panaszkodnia, ha a lockfight megengedi időről időre elküldeni, akkor ebből mi tudunk építkezni. Erre is lesz példa a következőkben. Hát ez a
+1:29:221 hour, 29 minutes, 22 secondsrávetítéses móka. Tehát hogyha ráállok egy szóra, mondjuk ott m ott bal oldalt fölül, akkor a egy-kettő akárhány
+1:29:301 hour, 29 minutes, 30 secondsszótárbal a múze legyen az lengyelnémet vagy éppen magyar szótár hozza. Hát ez nyilván egy ilyen fiktív példa, mert egyszerre nem akarok három nyelven
+1:29:371 hour, 29 minutes, 37 secondsfordítani, de ott van. A másik, hogy bárhol, tehát a képernyőnek bármely részén tudok ilyen információt szerezni,
+1:29:461 hour, 29 minutes, 46 secondstehát amit a képernyőre ráírtak, azzal én el tudok indulni. Tehát nem csak az ember fejébe, ugye korábban kizárólag úgy ment a szulttárhasznál, az ember
+1:29:541 hour, 29 minutes, 54 secondsfejébe kialakult egy keresőkérdés és megkereste maga. Most pedig a gépképernyőn is megkeres. Az előbb említettem a logálokat. Hát például a
+1:30:031 hour, 30 minutes, 3 secondsloogfálok nagyon jók, hogy a szótárhasználatnak a visszajelzései. Hát mit használnak az emberek? Ez a mi saját
+1:30:101 hour, 30 minutes, 10 secondsszótári felmérésünk volt most már 10 évekkel ezelőtt. Hát nyilván az angolt.
+1:30:161 hour, 30 minutes, 16 secondsMagyarországon azt szeretnék, hogy az angol legyen. És az arány is látszik, hogy nagyon angol, kicsit német és nagyon pici spanyol, olasz francia meg az összes többi, ami még szóba jön.
+1:30:271 hour, 30 minutes, 27 secondsMost ezt lehet örülni vagy sem, de egyszerűen tényszerűen látni kell, hogy a piac az angol-magyar magyarangol irányt kell, hogy igazán támogassa. És
+1:30:351 hour, 30 minutes, 35 secondsmég Magyarországon, mint német érdeksfére, a németnek is van valamekkora szerepe, de a 15 része mondjuk az angolénak és a többieknek
+1:30:431 hour, 30 minutes, 43 secondspedig a teljes hogy mondjam elengedésével szinte lehetne ilyet csinálni. Ettől persze a világ nagyon igazságtalan, mert
+1:30:521 hour, 30 minutes, 52 secondskulturálisan ezek nagyon fontos nyelvek ám és olyan kicsi nyelvek, mint a kínai.
+1:30:561 hour, 30 minutes, 56 secondsUgye az nincs is itt jelen, mert egyelőre Magyarországon a Kína iránt olyan mértékű érdeklődés, ami hát a nyelv beszélőinek a számával arányos
+1:31:051 hour, 31 minutes, 5 secondslehetne, egyáltalán nincs. Másik, hát ez egy még rég 16 évvel ezelőti kísérletünk, de a példa ma is nagyon jó.
+1:31:131 hour, 31 minutes, 13 secondsEgy mobil alkal mobil szótár alkalmazásnak a log fából lehetett annyit megtudni, a partner odaadta
+1:31:201 hour, 31 minutes, 20 secondsnekünk azt a az információt, hogy egy sessionben, tehát amikor valaki használta a szótárat, akkor ő abban az
+1:31:291 hour, 31 minutes, 29 secondsegy alkalommal miket írt be. És aztán ezt mi szummáztuk, és kijött az, hogy abban az időben olyan kifejezéseket
+1:31:361 hour, 31 minutes, 36 secondskerestek a mobilon, ami az akkori film és zeneipari csúcsoknak megfelelt. Tehát abban az
+1:31:441 hour, 31 minutes, 44 secondsidőben jelent meg a Mátrix, a gyűrűkura és a Harry Potter, és lehet látni a különböző görbéken, hogy az abban szereplő szavak, amik hát nagyrészt vagy
+1:31:521 hour, 31 minutes, 52 secondsbenne voltak a szótárban, vagy nem, de mindenképpen az érdeklődés ott volt, vagy éppen a Rasmus együttes
+1:32:001 hour, 32 minutesmegfelelemezének a megjelenése. Tehát ezeket mind lehetett látni, tehát ezeket szociológusok nagyszerűen tudják használni. Persze ez nem csak
+1:32:071 hour, 32 minutes, 7 secondsszótárhasználatnál van így, han nyilván a mindenfajta keresben is így van. Csak nagyon érdekes, hogy ezt a magyar emberek, akik mobilt használtak, nagyon
+1:32:151 hour, 32 minutes, 15 secondsszerették volna tudni, hogy az mit jelent, hogy tehát rögtön lehetett látni, hogy érdemes volna kiegészíteni a szótárakat azokkal a szavakkal, amitől
+1:32:241 hour, 32 minutes, 24 secondsmegnő a szótárhasználati kedv. Mondjuk ezek idővel arrébb csúszva a 10 vagy 15 évvel már más szavaknak a csúcsait
+1:32:331 hour, 32 minutes, 33 secondslehetne itt látni, de az biztos, hogy a jelenséget ugyanúgy lehet bármelyik korban. Másik nagyon érdekes dolog, hogy amikor az első fordítóprogramunk
+1:32:411 hour, 32 minutes, 41 secondsmegjelent, tehát az a program, amelyik szövegeket, mondategységeket fordított, ugye nem teljes szöveget, hanem mondaton
+1:32:491 hour, 32 minutes, 49 secondsfordította a szöveget, akkor a ennek az előbb látott web szótári felületnek a fülé füle mellé föltettünk egy másik
+1:32:571 hour, 32 minutes, 57 secondsfület, hogy gépi fordítás, és alapértelmezésben a gépi fordítás jött föl. Na most amikor valaki látta, hogy
+1:33:041 hour, 33 minutes, 4 secondsföljön neki egy ilyen nyelvi felület, én remélem, hogy a hallgatóság tudja, mi a különbség a szótár és a forítóprogram
+1:33:111 hour, 33 minutes, 11 secondsközött, de azért elmondom, ugye akkor ő azt látta, hogy itt fordít valami. Tehát ha én beírok egy szót fordításra, hogy
+1:33:191 hour, 33 minutes, 19 secondskutya, akkor lefordítja, hogy dob. Most nyilván az történt, hogy ezt kicsi betűvel írta, meg nem írta a végére pontot, és ezek nem is nagyon
+1:33:271 hour, 33 minutes, 27 secondstartalmaztak space-t, vagy nem túl sokat. Vagyis nem mondatot írt be. Mi a különbség? Hát ha beír valaki egy mondatot, akkor ugye kialakítja a gép,
+1:33:351 hour, 33 minutes, 35 secondsmajd szó lesz róla a lehetséges fordítások világát, és ebből a sok lehetséges fordításból a legjobbat, ami szerinte a legjobb, kiválasztja. Mindig
+1:33:441 hour, 33 minutes, 44 secondsegyet, mert a legjobbat kell adnia. A szótár ezzel szemben elmondja, hogyha így gondolod, ezt jelenti, úgy gondolod, azt jelenti. Ott pedig az alternatívákat
+1:33:521 hour, 33 minutes, 52 secondsfölsorolja amennyire lehet, ugye dinamikusan, de valójában a szótál egy statikus dolog. Egy szótál biztos, hogy statikus dolog. Tehát amikor valaki egy
+1:34:011 hour, 34 minutes, 1 secondfordítóprogram felületére kis betűvel rövid dolgokat pont nélkül, záró pontozás nélkül beír, akkor ő azt hiszi,
+1:34:091 hour, 34 minutes, 9 secondshogy ez egy szótárprogram. Ezért kitaláltuk, hogy a 2008-9-ben volt ez a kísérlet, hogy lehetett látni, hogy
+1:34:171 hour, 34 minutes, 17 secondsjönnek a látogatók és nagyjából ilyen 800 körüli napi látogató jött be, és
+1:34:241 hour, 34 minutes, 24 secondsezek a a fordítóprogramot használták. A szótár nem nagyon változott a szótározás. Igen ám, de
+1:34:321 hour, 34 minutes, 32 secondsabban a pillanatban, amikor mi automatikusan a szótárinak látszó keresést a fordítóprogram a másik fűre, a szótári fűre átdobtuk, akkor hirtelen
+1:34:411 hour, 34 minutes, 41 secondskiderült, hogy az emberek szótárazni akarnak 2009 októberében, és abban a pillanatban megjő megnőtt a szótározások
+1:34:501 hour, 34 minutes, 50 secondsszáma, hiszen a fordítóprogram mondatokat, szövegeket, fordítők még egy szót kerestek, de nem tudták, tehát átvittük. Az egy másik kérdés, csak úgy
+1:34:571 hour, 34 minutes, 57 secondsmagunk ezt jegyzem meg. Jöttek olyan kritikák, hogy eddig olyan jó volt, mert megmondta a jelentést, gondolta a felhasználó. Most meg ilyen nagyon
+1:35:061 hour, 35 minutes, 6 secondskomplex, bonyolult szótári struktúrát adő jobban szerette, amikor pont annakra szól. Tehát ahányszor beírta, hogy vár, mindig megkapta mondjuk azt, hogy
+1:35:131 hour, 35 minutes, 13 secondscastle, és soha nem kapta meg, hogy v őt ez nem érdekelte még akkor nem értette a szöveget. De ez úgy tűnt, hogy ez a tuti megoldás szembe azzal, hogy most leírja,
+1:35:221 hour, 35 minutes, 22 secondshogy castlom így meg úgy és minden. Ezt olyan nehéz értelmezni. De tény, hogy innentől kezdve a szótári keresések a
+1:35:301 hour, 35 minutes, 30 secondsszótári fülön jelentek meg, a fordítások a farítása. Tehát kvázi segítjük az embereket arra, hogy a szótározás is egy
+1:35:381 hour, 35 minutes, 38 secondsvilág, ahol meg lehet tanulni valamit, mégha néha az elején meg is ijed valaki tőle. Aztán nagyon érdekes, hogy egyszerön belül, tehát annyi információt
+1:35:461 hour, 35 minutes, 46 secondskaptunk, hogy egy adott telefonról egyszeresen belül mit kerestek, és mint mondtam, ha valamit az ember olvas, akkor annak a szókincsébe próbál valamit
+1:35:541 hour, 35 minutes, 54 secondstenni. És nagyon érdekes, hogy aki egy szövegben nem tudta, hogy mit jelent az, hogy nem tudom én hétfő, az sokszor a
+1:36:021 hour, 36 minutes, 2 secondstöbbi hét többi napját se tudta. Tehát beírta, hogy hétfő meg hogy szerda.
+1:36:061 hour, 36 minutes, 6 secondsMásik beírta, hogy szerda meg keld. A harmadik, hogy kelt hétfő és csütörtök.
+1:36:101 hour, 36 minutes, 10 secondsÉs a 1 millióik már egyszerűen amit beírt, annak alapján kiderült, hogy amikor ezeket a szavakat keresik,
+1:36:191 hour, 36 minutes, 19 secondskeresnek valami mást. Vagyis hát a Amazonról vagy bármely ilyen webes felületről, ahol valamit eladnak.
+1:36:261 hour, 36 minutes, 26 secondsHát aki ezt csinálta, az még mit csinált hasonlót. Aki ezt a szót kérdezte, mit kérdezett még. Alapon elkezdtük csoportosítani, hogy egy ember, ha ezt
+1:36:341 hour, 36 minutes, 34 secondskérdezte, mit kérdezett még. És ebből kijött egy olyan világ, például, aki azt kérdezte, hogy szeretlek. Az látszik,
+1:36:421 hour, 36 minutes, 42 secondshogy itt körülötte mi minden találkozott. Még az nem azt jelenti, hogy ezek föltétlen hasonló jelentésűek, de jól láthatóan egy olyan kontextusba,
+1:36:501 hour, 36 minutes, 50 secondsamikor mobilon valami idegen ajkunak akart írni valamit, akkor ezek a szavak jelentek meg. Megjelentek persze ilyenek
+1:36:571 hour, 36 minutes, 57 secondsis, amik hát nehezebben nyilván a boot failure vagy nem tudom én a
+1:37:041 hour, 37 minutes, 4 secondsaz insert meg a correct, tehát ezek úgy összefüggő kis valamik, amik olykor szironimák, olykor antonimák, large
+1:37:121 hour, 37 minutes, 12 secondssmall, disable, enable, kevés sok, de olyan is van, hogy iron na, meg olyan is van, hogy tools bluetooth. Tehát ha
+1:37:191 hour, 37 minutes, 19 secondshasonlóan azt is beírom. Vagy ugye a a Terminátornak az egyik rokona mondjuk a
+1:37:271 hour, 37 minutes, 27 secondsNagy Sándor, a másiknak a Predátora, melyik hát ugye hasonló végződésű vagy egy rövidítés TV televízió, tehát a
+1:37:341 hour, 37 minutes, 34 secondsszűk, aki az egyiket beírta, beírta a másikat. Több millió lekérdezésnél, asszem 3 millió lekérdezést kaptunk már
+1:37:431 hour, 37 minutes, 43 secondslehetett látni, hogy miket szoktak együtt kérdezni. Ezeknek a szavaknak valamilyen közük van egymáshoz. Az élnek itt nincs neve, csak nagyon érdekes
+1:37:501 hour, 37 minutes, 50 secondsezeknek a részgráfoknak a miben léte. És azt nem raktam ide, de hát ugye el tudják képzelni az előbbi szeretlek
+1:37:581 hour, 37 minutes, 58 secondspéldával, hogy egy összefüggő ilyen világ, ahol a love szownak az egyik
+1:38:061 hour, 38 minutes, 6 secondsirányába ezek a hiányzol magán beszélgetés jellegű szavak. A másikb ezt mondjuk mi azt úgy hívtuk őket, hogy ez
+1:38:141 hour, 38 minutes, 14 secondsaz angol köztársaság, merthogy itt ilyen teljesen közszavak vannak. És a másik pedig mondjuk a pornograf birodalom, ahol a LAFtól elmozdultunk abba az
+1:38:221 hour, 38 minutes, 22 secondsirányba, amik a szótárban nem voltak benne, olyan szavak, mert alapszótárral indultunk ebben a szolgáltatásban. És
+1:38:291 hour, 38 minutes, 29 secondsnagyon érdekes, hogy a szó volt róla, hogy egy hatalmas nagyszótárt is berakhatnánk, de úgy tűnt volna, hogy a nagyszótárral semmit nem javult volna a
+1:38:381 hour, 38 minutes, 38 secondstalálati arány, hiszen annak a 8-10 szónak kellett csak a bevitele, amitől megnyugodott a közösség, hogy ezeknek a
+1:38:451 hour, 38 minutes, 45 secondsszavaknak mégha ezek négybetűsek és sokszor nincsenek is benne az alapszótárakban, van jelentésük. És akkor szívesen használták az eszközt,
+1:38:531 hour, 38 minutes, 53 secondsmert följavult a találati arányuk. Míg a Nagys Szótát beraktam volna a maga gomba neveivel, nem jutottunk volna el ide. Na
+1:39:011 hour, 39 minutes, 1 secondmost akkor így egy kicsit egy pár szót a hagyományos és intelligens szótárok viszonyáról. Hát ugye azt, hogy még mindig nyomtatáscentrikusak a szótárak,
+1:39:101 hour, 39 minutes, 10 secondsezt sokszor elmondtam ma, és nyilván azzal, hogy XML változatot hozzunk létre, hát elindulunk a
+1:39:171 hour, 39 minutes, 17 secondsnyomtatáscentrikusságból, a tartalomcentrikusság felé, még mindig az van, hogy a szótárainkat, az elektronikusat és az emberek, mint irány
+1:39:261 hour, 39 minutes, 26 secondspróbálják valahogy befogni, és nem a gépnek készülnek a legtöbb ilyen szótárak.
+1:39:341 hour, 39 minutes, 34 secondsÉs hát ugye a papír szótára a gépi felületen még mindig mit látunk, amikor kapunk egy olyan
+1:39:421 hour, 39 minutes, 42 secondselektronikus anyagot, ami egy szótárnak a megfelelője, vagy ha nem kapunk, akkor beoczzük. Azt látjuk, hogy van bennük
+1:39:491 hour, 39 minutes, 49 secondsnéhány tipikus probléma. Az egyik az ez a
+1:39:551 hour, 39 minutes, 55 secondsperjel. A perjel minden embernek jelent valamit. Itt a pirossal kiemelt dologban nem eszi meg a farkas vagy a kutya a telet. Nem eszi meg a farkas a telet.
+1:40:061 hour, 40 minutes, 6 secondsNem eszi meg a kutya a telet. A mi fejünkben így van föloldva. illetve a some hard, some cold, some ICy, some frosty. Tehát az ezt jelenti.
+1:40:151 hour, 40 minutes, 15 secondsIgen, de ezzel a logikával egy olyan tilde, ami itt az ábra alatt van, a nem
+1:40:231 hour, 40 minutes, 23 secondsszavazó szavazásra nem jogosító részvény esetében, bizony ugyanezzel a logikával azt olvasnánk ki, hogy nem szavazó, nem
+1:40:311 hour, 40 minutes, 31 secondsjogosító részvény, illetve nem szavazásra nem jogosító részvény. Tehát valamilyen módon a két
+1:40:401 hour, 40 minutes, 40 secondsslash, amelyiknél az egyik szavakat, farkast és kutyát különí el, a másiknál pedig a nem szavazót, a szavazásra nem jogosít. Hát meg kellene különböztetnünk
+1:40:481 hour, 40 minutes, 48 secondsegy olyan zárójelezéssel, hogy a nem szavazó is egy zárójelpárban van, meg a szavazásra nem jogosító is. De nem ez történik. Az arcára fagy, ráfagy az
+1:40:571 hour, 40 minutes, 57 secondsarcára, lefagy arcáról a mosoly. Na de arcára fagy, az arcára, az arcáról a mosoly. Ha ezt így fölbontom, kell a zárójelpár, ami nincs benne.
+1:41:081 hour, 41 minutes, 8 secondsSenki eddig hagyományosan ezeket ki nem tette. Tehát azok a számítógépes programok, amiknek ezekkel a perjelekkel kell megküzdeniük, rengeteg zöldséget
+1:41:171 hour, 41 minutes, 17 secondsállítanak elő azért, mert az ember ezeket a szövegeket érti. A gép számára pedig ilyen nagyják, technikai problémák
+1:41:261 hour, 41 minutes, 26 secondsjelentkeznek. Ezzel, ha már a csatabárdot annyiszor mondtam, ezzel analóg probléma a tilde, ugye az nyilván
+1:41:331 hour, 41 minutes, 33 secondsaz pedig azért probléma nekünk, mert ha a csatabárnál is ott van az elás a csatabár, ott meg az elásnál is, meg a
+1:41:391 hour, 41 minutes, 39 secondsbárnál is, ugye ez volt a példa, hogy három helyen van benne, mert ezek akik a Cs-nél, az E-nél meg a B-nél dolgoztak a szó
+1:41:481 hour, 41 minutes, 48 secondsangol ekvivalenseknek a fölsorolásával, hát azok nem tudták, hogy a másik is ezt csinálja. És ez a mi mázlink, hogy itt
+1:41:551 hour, 41 minutes, 55 secondsbury the hatchet van az alsó kettőnél és a pesünk, hogy dig up the tomahawk, tehát az elsőnél más van odaírva. Tehát
+1:42:031 hour, 42 minutes, 3 secondsa kiás csatabárdot jelentései egy szótáron belül is különbözőek. Nem biztos, hogy ellentmondóak, de érdekes, hogy ezeket valahol kezelnünk kell tudni.
+1:42:131 hour, 42 minutes, 13 secondsAztán ugye van egy ilyen helyzet, mint amit az angol nagyszótárba csináltak, hogy bizonyos kifejezések
+1:42:221 hour, 42 minutes, 22 secondsátkerültek a szó belsejéből a szócik fejbe, tehát címszóvá váltak. A lehet tudni, hogy a korábbi nagyszótárba,
+1:42:311 hour, 42 minutes, 31 secondstehát az angol magyar nagyszótár átdolgozása előtt volt egy nagy get, és azon belül volt az összes kiegészítője.
+1:42:381 hour, 42 minutes, 38 secondsItt get a head, amelyik itt a képernyőn van. önálló szócikké lett, mint ahogy a hangot az is lehetne ugye a magyarban egy önálló szócikk.
+1:42:471 hour, 42 minutes, 47 secondsviszont megvan, ahol hoza azt az információt, hogy ő egy valahai getnek
+1:42:541 hour, 42 minutes, 54 secondsvolt a része, szemben ott mondjuk az alsóban, ahol az headnek volt a része.
+1:42:591 hour, 42 minutes, 59 secondsÉs itt ellentmondó információ van, hiszen a get ahead, mint önálló szó a getből előhozva, illetve az head
+1:43:081 hour, 43 minutes, 8 secondsbelsejében a get ahead. Egész másokat mond boldogul viszi valamire. volt azt mondja, hogy hát előrejut, boldogul, de itt még olyan is van, hogy megelőz,
+1:43:171 hour, 43 minutes, 17 secondslehagy túltesz, felülmúl. Tehát itt már jóval több alternatív jelentés jelenik meg az egyiknél meg a másiknál, ahogy az
+1:43:241 hour, 43 minutes, 24 secondselőbb még egy picit csak a elás csatvárdotnál kicsit itt egészen bonyolultan
+1:43:331 hour, 43 minutes, 33 secondsjelenik meg új jelentés, amit hát ha egy szótárban van, akkor nekünk föl kell ajánlani, és kérdés, hogy a felhasználó mit ért abból, hogy neki két Gathe, vagy
+1:43:421 hour, 43 minutes, 42 secondshárom vagy négy, mint itt a képernyőn látszik, jelenik meg, amikor hát egy szótárban normálisan egy neked kell csak lennie.
+1:43:501 hour, 43 minutes, 50 secondsAztán itt van egy olyan, hogyha nagyon hosszú a szó cikk, akkor ugye a fölsőben azt látjuk, hogy valaki keresett az
+1:43:581 hour, 43 minutes, 58 secondsApple-re, és az Apple mind jött elő, és az Apple TILD van a jobb oldalon, de azok a szótárprogramok, amelyik csak az
+1:44:061 hour, 44 minutes, 6 secondsApple Tildét mutatják, azok nem tudják elmondani, amit a mi kis fölső ablakba látható szótábogunk, hogy ő a mint belsejében, a menta belsejében van. És
+1:44:151 hour, 44 minutes, 15 secondsaz Apple mint az a mentának az egyik a kereklevelő menta formája. Tehát ő amikor Apple-t keresett, akkor ő a mind belsejébe találta meg, de azt valahogy
+1:44:241 hour, 44 minutes, 24 secondsjelni kell szerencsére itt a bal oldalán a fölső ablaknak ott van, hogy a mind belsejében vagyunk. Ezzel szemben
+1:44:321 hour, 44 minutes, 32 secondsa tilde elhagyásával, hogy Apple mint, akkor teljesen mindegy, minek a belsejében vagyok, az alsó ablakban látszik, hogy a tildét
+1:44:401 hour, 44 minutes, 40 secondskiegészítve az a szócik fejjel tök mindegy, hogy hol található meg az Apple, mint látszik, ez teljesen rendben
+1:44:481 hour, 44 minutes, 48 secondsvan, és a felhasználók ezt igényelnék, viszont a szótárkészítők szeretik a hagyományt, és ők kérik ezt a tildés megjelenítést, vagyis dinamikusan két
+1:44:571 hour, 44 minutes, 57 secondsugyanannak a tartalomnak kétféle megjelenítés és két különböző XSLT hozzárendelésével úgy történik, hogy fölül megvan a tilde,
+1:45:051 hour, 45 minutes, 5 secondsegy gombnyomására meg beíródik a szóciknek a feje a címszó.
+1:45:101 hour, 45 minutes, 10 secondsNem nagy gond ez, csak érdekes, hogy a számítógépes felhasználók az alsóra, mert persze hát ír írja ki, hát nem kell nekünk ez a tildesség. Viszont aki ír a
+1:45:191 hour, 45 minutes, 19 secondscopyright, azt mondja, hogy ő így szokta megjeleníteni, kell neki az. Tehát mondjuk egy másik ilyen probléma, hogy a tildével küzdenünk kell. Csak az a baj, hogy a tildérre vesszőt is lehet tenni.
+1:45:291 hour, 45 minutes, 29 secondsUgye itt a tőzsde és ott van az a bizonyos paperenc fére bázis, amiről beszéltem. Tőzsdé tőzsdéje tőzsdék.
+1:45:351 hour, 45 minutes, 35 secondsKicsi vessző van a tildén. Speciális kar értékpapír tőzsd n jegyez. Tőzsdén
+1:45:431 hour, 45 minutes, 43 secondsjegyzett részen és így tovább. Tehát akkor ennek a tildének a vesszős alakja az nem mindig az utolsó.
+1:45:531 hour, 45 minutes, 53 secondsEz egy szerencsés eset, hogyha az utolsó. De van amikor nem az utolsó hang vagy utolsó betű az, amit meg kell toldékolni. Tehát a morfológia ismerete
+1:46:021 hour, 46 minutes, 2 secondsis kell ahhoz, hogy én egy ilyen rendszert jól tudjak működtetni, mert bár látszik, hogy ez egy technikai móka, de ha valaki azt írta be, hogy tőzsde,
+1:46:111 hour, 46 minutes, 11 secondsakkor a tőzsdék tőzsdéje alakban már ugye egy másik alamorf van meg. Tehát ez a morfológia probléma, hogy én a
+1:46:201 hour, 46 minutes, 20 secondsképernyőn mit mutatok meg, és hogy a tilde beírásakor hogy néz ki. Tehát amikor én megnyomom azt a gombot, ahol a
+1:46:271 hour, 46 minutes, 27 secondstilde kiváltódik, akkor ezek jól jelenjenek meg tőzsdén alakba, ami itt jól van, de esetleg egy másik szónál már
+1:46:341 hour, 46 minutes, 34 secondsbonyolultabb volna. Vagy mondjuk a bagoy, ahol hangzó kiesés van, ott minden többes számú esetben a bagok volna a megfelelő alak, amit oda a tilda
+1:46:421 hour, 46 minutes, 42 secondshelyébe be kell írni. Ráadásul még a tildét kiegészítik azzal, hogy a nagy betűs variáns az elé van írva. Tehát
+1:46:491 hour, 46 minutes, 49 secondsGod, amikor Isten nevéről van szó, akkor nem a tildben, hanem elé van írva, hogy nagy G betű, de technikailag ezok úgy
+1:46:571 hour, 46 minutes, 57 secondsvannak fölva, hogy nagy G, kis G, OD, de nem itt a nagy G helyettesíti az első karaktert. Tehát a tilde is a
+1:47:051 hour, 47 minutes, 5 secondshagyományban rengeteg technikai macerának a forrása. És pusztán az a játék, hogy meg kell mutatni tildével
+1:47:121 hour, 47 minutes, 12 secondsvagy tilda nélkül a szótárat, rengeteg olyan problémát vett föl, ami normálisan az embernek nem probléma.
+1:47:221 hour, 47 minutes, 22 secondsEzt pedig ezt a problémát meg úgy hívjuk, hogy vagy úgy úgy mutatjuk, hogy a
+1:47:301 hour, 47 minutes, 30 secondsvonzat probléma, ami az angolba, magyarra nagyon tipikus, hogy vmi valaki valami vagy syody, vagy SB Somebody, vagy sth something, vagy SG something.
+1:47:431 hour, 47 minutes, 43 secondsTehát ilyen rövidítések hoznak olyan vonzott elemeket, amik karakteresen soha nem fordulnak elő szövegben. Get off
+1:47:521 hour, 47 minutes, 52 secondssomebody. Most az sy nem lesz ott, tehát azonosításnál az SY nem úgy viselkedik, mint a get meg az af, mert ugyanúgy, ahogy utána abbahagyja VK kritizálását.
+1:48:041 hour, 48 minutes, 4 secondsA V k se lesz a szövegrésze, az abbahagyja meg a kritizálását.
+1:48:071 hour, 48 minutes, 7 secondsVagyis a vonzat, az alany, a tárgy nagyon sokszor csak ilyen white carddal, amit adott esetben ilyen
+1:48:161 hour, 48 minutes, 16 secondskaraktersorozatokkal, hogy vöm vök, sg írunk. Na de ezzel kizárjuk azt, hogy a
+1:48:241 hour, 48 minutes, 24 secondsgettof találatot hozna a get of somebodyál abba az irányba igen, hogy ez hosszabb. Tehát a get of találod, de a get of
+1:48:341 hour, 48 minutes, 34 secondsmy friend, akkor azt, hogy abbahagyja a barátom kritizálását, azt nem tudom lefordítani ezzel, mert a get of my friend nincs benne. A my friend nem
+1:48:431 hour, 48 minutes, 43 secondsazonos az snal, tehát valahol ezeket állandóan ki kéne vágni, és ez is történik, hogy kidobom, úgy
+1:48:501 hour, 48 minutes, 50 secondstekintem, mintha nem volnának itt. Tehát ezeket a technikai vonzatokat ki kell venni a szótárból, nem úgy, mint mondjuk
+1:48:571 hour, 48 minutes, 57 secondsa képernyű energiad afteryes of latin, amire meg ugye korábban mondtuk, hogy tipikusan olyan példa, aminek nem minden
+1:49:051 hour, 49 minutes, 5 secondsrésze számít. Get of somebody számít, hogy kell hozzá egy valaki a get of 20 lines se a 20 lines,
+1:49:141 hour, 49 minutes, 14 secondsse a latin nem integráns része ennek a kifejezésnek.
+1:49:211 hour, 49 minutes, 21 secondsTehát ez, amit az előbb is mondtam, bármelyiket itt megnézhetjük. Itt példák vannak, ahol a run most be van tilde
+1:49:311 hour, 49 minutes, 31 secondshelyett be van írva a szövegbe. Hát ugye azt, hogy itt is he who runs the show.
+1:49:371 hour, 49 minutes, 37 secondsHát azt, hogy valaki runs the show, az kell, de it is he who ez nem biztos, hogy annyira fontos része. Vagy mondjuk
+1:49:451 hour, 49 minutes, 45 secondsnem tudom én, po third. Most az, hogy harmadik gyenge harmadiknak az eg second, az már nem
+1:49:531 hour, 49 minutes, 53 secondsrésze a rendszernek, és ezt már nincs az a számítógépes szoftver, amelyik kitalálja. Tehát ezek a kifejezések csak akkor adnak találatot, ha a szövegben a
+1:50:011 hour, 50 minutes, 1 secondserge szerepel, mert senki nem jelzi, hogy a sd az egy kevésbé lényeges része, mint a ren meg a pur. Ugyanúgy a he,
+1:50:091 hour, 50 minutes, 9 secondsmint egyes szám harmadik személy hívnemű alany szintén nem része ennek. Tehát nagyon nehéz a példákat jól felhasználni, mert túl sok olyan konkrét
+1:50:181 hour, 50 minutes, 18 secondselem van benne, amitől a szövegegység nem fog tudni illeszkedni ezekre.
+1:50:241 hour, 50 minutes, 24 secondsA lásdal szerencsésebb a helyzetünk, mert a hagyományos szótárokban levő lásd ugye azt már mint beszéltük, az egy sima hiperling, ami viszont talán a
+1:50:321 hour, 50 minutes, 32 secondslegnagyobb probléma és ez nem csak a szótáraknál, vagy nem elsősorban a szótáraknál, hanem a terminológia adatbázisoknál van, hogy hosszú nagy
+1:50:401 hour, 50 minutes, 40 secondsegységek vannak egy EU-s területnek a környezetminőség megőrzése, védelme és javítása. Ez a neve. Ezt így kell
+1:50:481 hour, 50 minutes, 48 secondsfordítani. Na most nyilván ezeknek a részei is igazak, de a részei nincsenek benne. Tehát a környezet minőségének
+1:50:551 hour, 50 minutes, 55 secondsmegőrzése az ugyanúgy preservation of the quality of the environment, de itt
+1:51:021 hour, 51 minutes, 2 secondsnem az van. Preservation, protection and improvement. És ez már olyan, hogy ez nagyon ritkán fog pontosan így előfordulni, hogy csak nem valami
+1:51:091 hour, 51 minutes, 9 secondscikkeinek a fejében. Tehát nem tudjuk, hogy melyik részét kell. Tehát a példánál tudnánk, hogy ki kell dobni belőle a heat meg a thirdöt az előző
+1:51:191 hour, 51 minutes, 19 secondspéldákban, de innen aktuálisan lehet, hogy a preservationnel vagy a protectionnel vagy az improvement egymagába is létezik a quality of the
+1:51:281 hour, 51 minutes, 28 secondsenvironment. Tehát ezt ha valaki pont így beírja, tök jó. Ha meg nem ezt írja be, csak majdnem ezt, akkor nem fog
+1:51:341 hour, 51 minutes, 34 secondstudni illeszkedni. Tehát a gépi szótárak hosszú kifejezéseket kellene nekik azonosítani, akkor a literális azonosság, vagy legalábbis a minden szó
+1:51:441 hour, 51 minutes, 44 secondselőfordulása valamilyen alakban, mert hiszen lehet, hogy morfológiát ismer, de azt, hogy mekkora szabadsági fogok van, hogy melyik eleme elhagyás, akkor még
+1:51:521 hour, 51 minutes, 52 secondsugyanez az a kifejezés, erre nem tud semmit mondani. Tehát kevesebbszer adnak az ilyen típusú szótárok találatot, mint
+1:51:581 hour, 51 minutes, 58 secondsamennyit tudhatnának, ha egy rövidebb egységet keresnénk. Tehát ha csak annyit keresek, hogy minőség megőrzése, vagy
+1:52:061 hour, 52 minutes, 6 secondsnem tudom én, preservation of quality, és a preservation meg a quality lesz beírva, vagy ugye itt már annyit kerestem, hogy erhunk és az eraltunkra
+1:52:141 hour, 52 minutes, 14 secondsnémetbe bejött ez is, és még sok minden itt a világos kék területen, ami az erhitunknak a találatai közé egy ilyen
+1:52:231 hour, 52 minutes, 23 secondseus szótárba beilli, de ha már hosszút keresek, akkor csak akkor találom meg, ha pont az van beírva. Úgyhogy látszik,
+1:52:311 hour, 52 minutes, 31 secondshogy még a szótárok, termogadott bázisok és ez az intelligencia még azért akadozik a kapcsolatuk, de valahol ezekkel kell találkoznia egy
+1:52:381 hour, 52 minutes, 38 secondsszótárkészítőnek, amikor szeretne ma modern hatékony szótárat csinálni. Következő alkalmal majd a fordítónak a további feladatairól fogunk beszélni. Viszontlátásra! Ja.
+
+https://www.youtube.com/watch?v=LhcIrMWi1uw&list=PLvLI66ieiidhOULovlk35bwn9Dz6LGVFC&index=9

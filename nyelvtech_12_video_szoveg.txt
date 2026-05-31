@@ -1,0 +1,413 @@
+Viszont néhány dolog, amit itt említek, azok korábbi tételekhez illetve korábbi előadásanyagokhoz kapcsolódnak.
+0:4747 secondsA korpusznyelvészet, amit ugye már sokszor emlegettünk itt, hiszen a korpusznyelvészet az, ahol a nagy szövegek előkerülnek,
+0:5656 secondsaz tulajdonképpen a korpuszon alapul am nincs definíciója, tehát ugye ez egy valamekkora szöveg együttes, amin
+1:031 minute, 3 secondsvalamilyen vizsgálatot végzünk, és hát általában ez valamilyen meghatározott szempontok alapján lesz összerakva, tehát valamifajta hasonlóság a
+1:121 minute, 12 secondsszövegekben, vagy ugyanarról a fórumról, vagy webről, vagy valamilyen irodalmi világból való, vagy valamilyen
+1:201 minute, 20 secondstípusú szövegeknek az együttese, de definíció nincs. Na most nagyon érdekes, hogy a korpusnyelvészet előtt már voltak
+1:271 minute, 27 secondsilyen definíciók, hogy ahhoz kell a nagy szöveg, hogy megnézzük, hogy a szavaknak milyen környezetük van.
+1:341 minute, 34 secondsFirst, aki nyelvész volt, írta ezt, hogy on the word by the company keeps, tehát, hogy a környezeté alapján ismerni meg a
+1:431 minute, 43 secondsszót, vagy John Sintler, aki viszont már számítógépes nyelvész volt, ha tetszik, a korpusz nyelvészet atyjának is mondják, hogy hát a nyelv az nem arra
+1:521 minute, 52 secondsvaló, hogy ugye azt valahogy itten fölfedezzük, hanem tulajdonképpen meg kell fogni a abból a konkrét valóságból,
+2:012 minutes, 1 secondami ugye a szövegekben van. Tehát a capture az azt jelenti, hogy ugye meg kell valami módon szerezni a létezőből,
+2:092 minutes, 9 secondski kellene szedni azt az információt. És ugye hát ezek a korpuszalapú módszerek, ahol a szövegkorpusz arra segédez közt, hogy van valami intuícióm elvészként, és
+2:192 minutes, 19 secondsakkor azt valahogy megszámolom, megnézem és akkor ezzel alátámasztom, vagy cáfolom az elméletemet. Ez volt az
+2:262 minutes, 26 secondsalapvet, hogy ezért kell sok szöveget gyűjteni, hogy a nyelv tulajdonságait valójában valami módon a szöveg
+2:332 minutes, 33 secondsvisszaigazolja. Én már tudom, hogy így van, de azért amikor konkrét számok vannak, akkor az segít. És szép lassan kialakult a korpusznyelvészetnek egy
+2:432 minutes, 43 secondsmásik iránya, ahol tulajdonképpen akkor veszem észre az ötleteket, amikor nézegetem a korpus. Tehát a korpusz adja az ötletet, vagy adott esetben egy
+2:512 minutes, 51 secondselméletet is. Tehát leülök, nézem az adatokat és megdöbbenek.
+2:552 minutes, 55 secondsUgye hát ma már van data mining, text mining, de azért a korábbi időkben ez nem volt. Tehát a következtetést megfigyelem a korpuszt, és abból vonom
+3:033 minutes, 3 secondsle. Méghozzá nagyon sokszor úgy, hogy nem azt akartam, hanem csak nézegettem és akkor jöttem rá. Erre vonatkozik ez a
+3:113 minutes, 11 secondsfogalom, hogy surrendibility principle, tehát hogy valamit véletlenül veszek észre tőlük, mert nem ez volt a szándékom. Tehát nem egy meglevő
+3:183 minutes, 18 secondselméletemet igazolom, hanem valami módon azokat a megfigyeléseket, amiket ott a
+3:253 minutes, 25 secondskorpusznéetések látok, azokat valahogy rendezem, és akkor jön az ötlet, amikor a korpusz előtt ülök.
+3:323 minutes, 32 secondsEz egy nagyon régi dilemma egyébként, hogy a nyelvtankönyvben már ugye szumázva ott vannak a dolgok. Talán a szótára emlékeztek, hogy azt mondom, hogy amit az ember a szavakról tud, azt
+3:403 minutes, 40 secondsúgy belerakja egy ilyen nagy kötetbe, vagy ma már inkább egy programba, és akkor azt úgy egyszerre odarakják az emberek elé azt a kumulált tudást. Pedig
+3:493 minutes, 49 secondsvalójában ezt úgy kellene kezelni, hogy mindent az eredeti formájában keresek meg, csak annyi példát nem lehet fölsorolni. Tehát a szótár az egy ilyen
+3:573 minutes, 57 secondsösszegző dolog. Hát a nyelvtankönyv is egy összegző dolog, ahelyett, hogy a korpuszt adnám oda, macerás, hogy annyi szöveget olvasgassok, hanem a levont konklúziót rakom bele a nyelvtankönyvbe.
+4:084 minutes, 8 secondsMost nagyon érdekes, hogy már az 1800-as évek végén Simoni, aki ugye nem a mi Simony, ezt tehát Simonyi Zsigmond, az
+4:164 minutes, 16 secondsnem a Simonyi terem névadójáról, vagy a Microsoftról Charles Simoniról ismert ő
+4:244 minutes, 24 secondsegy másik Simonyi azt mondja Simonyi Zsigmond művéről Ridel Frigyes, aki akkor ezt megírta 188 képzeljék el az
+4:314 minutes, 31 secondsember, ez a Simonyi úgy akarja bevezetni ezt a nyelvtani elképzelést, hogy könyve induktíve halod. Tehát példákból kiindulva tanítja a szabályt, tehát nem
+4:404 minutes, 40 secondsa szabályt írja le a könyvben, hanem mutatja a példákat, és nem ilyen dogmatikusan dogmatiz.
+4:464 minutes, 46 secondsÉs így a tanár a diákjaival együtt ott vonja le a következtetéseket a szövegkorpusz előtt, mondom én. És így
+4:544 minutes, 54 secondsez sokkal jobb, mintogyha készen kapnánk, mert akkor maga a hallgató is ezt megérti, hiszen ő év vette észre a problémákat.
+5:055 minutes, 5 secondsTetszik, akkor ez maga a korpusznyelvészetnek az alapja, miközben se korpusz nem volt, se számítógép abb az időben. Na most a korpuszok azok ugye
+5:125 minutes, 12 secondsakkor jók, ha jó nagyok. Tehát ha ezt a zöldséget még nem mondtam volna, de mindig elmondom a korpuszn
+5:205 minutes, 20 secondskorpusznyelvészet csak egy adott léptéken túl tud korpusznyelvészet lenni. Tehát a kicsik a korpuszok, egyszer nem működnek a módszerek, a
+5:285 minutes, 28 secondsstatisztika, a tanulómszerek, mert hiszen nincs elég mintánk, tehát vannak olyan feladatok, ahol a lépték, a méret
+5:365 minutes, 36 secondsnagyon erősen számít. Tehát a említett zöldség az, hogy vagy vidámság, hogy ugye rudugrani azt úgy kell megtanulni,
+5:455 minutes, 45 secondshogy azt nem lehet 1 mteren. Tehát a rúdugráshoz kell a magasság, azt nem lehet úgy, hogy 1 menen egy olyan marha nagy bottal nekifutok, az nem rúdugrás.
+5:525 minutes, 52 secondsTehát annak, hogy az úugrás működjön, több méter magasságot kell átvinni.
+5:565 minutes, 56 secondsUgyanezon a korpusznyelvészetben, ahhoz, hogy ez működjön, ahhoz soknak kell lennie. Na mi az a sok? Hát mindig ez a kérdés, hogy mekkora egy korpuszt. Na
+6:046 minutes, 4 secondsmost az, hogy mi egy token, ugye ezt az elején is körüljártuk, többször beszéltünk róla. Hát most ez itt nyilván egy ilyen
+6:126 minutes, 12 secondsa dollárjál meg a pont meg mind, de mondjuk, hogy két space között van. New Kate Space között van a George is, a W is, meg a Bush is. Kérdés, hogy ez a
+6:206 minutes, 20 secondshárom dolog, hogy George W meg George Bush meg Bush azonos. Hát nekünk igen, a gépnek nyilván nem. Ha nem normalizáljuk
+6:286 minutes, 28 secondsa korpuszt, akkor kérdés, hogy a nagy betűk csupa nagy betű, csupa kis betű, rövidítés, nem rövidítés,
+6:366 minutes, 36 secondsazonos saját magával vagy semmi. Egy egység az most, hogy Kalifont és Kalifornia vagy MTA és magyart sokat
+6:446 minutes, 44 secondsazonosak vagy nem. Hát akarom, igen akarom. Nem, ráadásul az MTA 1 token, a magyar took három. Úgyhogy inkább az
+6:526 minutes, 52 secondslenne a jó, ha azt tudnánk megkérdezni, hogy hány type van benne. Ugye emlékszünk a type és token kettősségére.
+6:576 minutes, 57 secondsHát mi a type? Ugye a token azok a mondjuk, hogy a widespace közötti dolgok. De hát mik a type-ok? Hát mondjuk azt, hogy amik különbözőek. Hát
+7:067 minutes, 6 secondsakkor nyilván a MTA az egy magyar is, a tudományos és az akadémia és ezt meg tudjuk számolni. Na és akkor mondjuk a
+7:147 minutes, 14 secondsragozott alakok, hát az nyilván string szerint különböző literálisan. Na de akkor azok ugyanazok, ha azt írom, hogy
+7:217 minutes, 21 secondsMagyarános Akadémiát, akkor az két szó szintjén azonos, a harmadiknál meg nem, vagy mind a három azonos, vagy egyik se,
+7:287 minutes, 28 secondsvagy az egyegység, és akkor az aranyeset és a tárgyeset az két. Szóval nagyon nehéz ezt így elmondani. Tehát, hogy mik a type-ok és azoknak mi a tényleges
+7:377 minutes, 37 secondsgyakoriságuk, hát ezt már csak nyelvtechnológiai eszközökkel lehet valami módon megszámolni. De ugye hát ez egy macerás dolog, mert ahhoz, hogy a
+7:467 minutes, 46 secondskiinduló anyagomat megszámoljam, már élvészeti kutatást kell végeznem. Kell morfológia meg több szavas kifejezések összevonása. Ez meg macerás. Tehát marad
+7:557 minutes, 55 secondsaz, hogy a tokeneket számolják általában és így mondják meg, hogy ekkora egy korpusz. mondva, hogy milliárdos nagyságrendből, amiben most vagyunk,
+8:038 minutes, 3 secondshogy inkább már milliárd és 10 milliárd felé megyünk, ott elenyészül az ilyen egyéb zavaroknak a mennyiségi aránya.
+8:148 minutes, 14 secondsÖ egy kis tájékoztatás, hogy mi mekkora.
+8:188 minutes, 18 secondsTehát ugye egy ilyen A4-es oldal, hát egy ilyen normális gépelt, tehát ma nem tudják kettő sor, de mindegy. Szóval egy normális worlddel megcsinált oldal, az körülbelül 250 szó.
+8:308 minutes, 30 secondsA sok fórum a legnépszerűbbnek mondott magyar regény az 135000. Szóval az első igazi korpusz, a Brown Corpusz, amiről
+8:388 minutes, 38 secondsmég volt szó lesz. Szóval az 1 millió szavas volt. A Covid, amelyik ugye hát egy alapkorpusz volt a 80-as években, az
+8:468 minutes, 46 secondsmár 18 millió szavas. Aztán jöttek a nagyok, az igazi nagyok, a British National Korizon a 100 millió szavas volt. Aztán jött az első magyar nemzeti szövegtár. Ez már ennél is nagyobb volt.
+8:568 minutes, 56 secondsHát a Covid közben növekedett, aztán az amerikaiak is beszálltak. Aztán most már az MRS2 is, és ma már ugye milliárd
+9:039 minutes, 3 secondsfölött van az is. Kobild is, és akkor jött a Pázmánykorpusz, és utána most már a magyar nemzeti szövektár is elérte a
+9:109 minutes, 10 secondsmilliárdot. Na most nyilván egy 1 milliárd 200 millió szavas korpuszban annyi szöveg van, amit az
+9:189 minutes, 18 secondsember életében nem olvas el. Tehát nyilván a korpusz valamilyen értelemben több karakteres tudást tartalmaz, mint amit
+9:259 minutes, 25 secondsegy ember látni tud. Ezzel szemben nyilván nem tud róla annyi mindent.
+9:319 minutes, 31 secondsNagyjából csak ezt úgy így éreztessük, hogy mit jelent az, hogy milliárd szó.
+9:359 minutes, 35 secondsEgyébként a milliárd szó azt jelenti, hogy mégis csak valahogy az ember úgy belegondol, hogy hogy egy szobában van 1
+9:429 minutes, 42 secondsmillió papr, na hát az nehéz elk és minden papliban van 1000 szó. Hát azért ez elég sok, de hát ezek folytonos szövegek, amiben hát így a darabszámat
+9:519 minutes, 51 secondsszámoljuk csak meg, és nagy. Azt kell mondani, hogy nagy. Ha például egy ezrelik hiba lenne benne,
+9:589 minutes, 58 secondsmondjuk, hogy a webről szedem és azt mondom, hogy hány, ami helyesen van írva, és hány ami eltér a normától, akkor az 1 hiba az nagyon-nagyon pici.
+10:0710 minutes, 7 secondsEnnél jóval hívásabbak a szövegek. Ez már egy jól lektorált szöveg az ezrelék szintű. Azredelik is azt jelenti, hogy van egy millió hibás szó benne. Tehát
+10:1510 minutes, 15 secondsmár egy millió hibás elütött szóval már lehet helyes írásenző programot építeni.
+10:2110 minutes, 21 secondsTehát, hogy olyan nagy ez a korpusz, hogy az elenyésző része is óriási.
+10:2610 minutes, 26 secondsMost nyilván ez egy példa az előbb említett CBIL, hogy ugye a szóalakok száma itt angolról
+10:3410 minutes, 34 secondsvan szó. Hát úgy többé-kevésbé lineárisan növekszik. Ugye ez a a kis sarkáraáitott
+10:4210 minutes, 42 secondsö négyzettel látszik, hogy valamennyire ez növekszik. Úgy egyenletesen nyilván nyelvenként ez máshogy. És a Halpax,
+10:5010 minutes, 50 secondsamiből viszont csak egy van. Tehát a Halpax az egy olyan halx legumenum, tehát egy olyan fogalom,
+10:5810 minutes, 58 secondsamiből ugye a olyan ritka szavak, amiből csak egyszeri előfordulás van, hát azok is rengeteg. Tehát nyilván ennek az egyik oka az, hogy úgy ütöttek el félre
+11:0711 minutes, 7 secondsegy szót, hogy abból csak egyféle van, vagy nagyon ritka a szó. Hát azoknak a száma is lineárisan, de mondjuk szublénárisan
+11:1511 minutes, 15 secondsnövekszik. Tehát tulajdonképpen ez csak azt akarja mondani, hogy hogy ahogy neveljük a korpuszt, úgy növekszik benne
+11:2311 minutes, 23 secondsa szavaknak a száma, de nyilván egészen máshogy növekszik a magyarban, vagy a finnben, vagy a törökben, mint az angolban, de erről is az első órán esett
+11:3111 minutes, 31 secondsszó. Mindenesetre a korpusz mérete az akárhogy nézzük is meghatározó arra nézve, hogy mi van benne. Tehát
+11:3811 minutes, 38 secondssemmelyik korpusz elég nagy. Hát a korpuszokat általában annotálják. Erről is menet közben több szó esett, tehát van csak sima egyszerű szöveg, odaadom a
+11:4711 minutes, 47 secondsszöveget, azt jó napot. Illetve, hogy beleteszek mindenféle teszteléshez, kiegészítést, rászalok valami nyelvtechnológia eszközzel,
+11:5611 minutes, 56 secondsmorfológiailag megelemzem, szófailag egyértelmű.
+12:0012 minutesnévkifejezéseket, ugye name dentitet, amik részben tulajdonnevek, részben dátumok, webcímek, tehát olyan dolgok,
+12:0712 minutes, 7 secondsamik úgy egy egységként kezelendők, azokat bezárójelezem, esetleg egész szintaktikai szerkezeteket, főnévű csoportokat bejelölök, vagy jelentés
+12:1612 minutes, 16 secondsegyértelműsítek erről is, szó esetleg korreferenciákat, tehát utalásokat előre hátra,
+12:2312 minutes, 23 secondsami a ugyanarra az entitásra utal a valós világban. De hogy ezt előreutalok, vagy visszautalok, azokat így be lehet rajzolni.
+12:3212 minutes, 32 secondsKomolyabb dialógus korpusz azért kevés van, de ugye nyilván arról is szó van, hogy amikor több ember beszél,
+12:4012 minutes, 40 secondsakkor bizony hogy veszik át a szót egymástól, hogy vágnak egymást tovább, az is egyfajta lehetséges annotáció.
+12:4712 minutes, 47 secondsSzoingvisztikában ez nagyon fontos. Hát csak röviden fölobunk itt néhány korpuszt. Ugye nem tudtam, hogy a Bran
+12:5512 minutes, 55 secondsCorpus volt az első. Ezt is már korábban talán jeleztük, de ugye ez az 1 millió szó, ez azt jelenti, hogy
+13:0313 minutes, 3 secondsegy ilyen lyukkártyás dobozban, mert ugye 1961-ről van szó, tehát lyukkártyás doboz 2000
+13:1013 minutes, 10 secondslyukkártya fért bele. Tehát már az is egy szép feladat, hogy 500 dobozt össze kellett rakni. És ugye nyilván ennek a
+13:1713 minutes, 17 secondsminden egyes szó egy-egy lyukkártyán volt, és akkor így 2000-ével szépen sikerült ezt valahogy felhozni 1 millióra.
+13:2713 minutes, 27 secondsNyilván a 120 sokkal kisebb, hiszen ezt a Brown szedték ki, viszont ezeket szintaktikailag elemezték. Tehát a Suzanban már vannak szintaktikai kódok.
+13:3613 minutes, 36 secondsAztán az Egyesült Királyságban megindult egy ilyen angol norvég együttműködésbe ez a Lob Langester Slowbergen Corpus.
+13:4313 minutes, 43 secondsUgyanakkor brit angolra, majd a tengeren túl elindult Philadelphia Pennsylvania egyetemen a
+13:5213 minutes, 52 secondsPentre Bank, aminek már teljes egészében szintika jellemzett tartalma volt. Aztán jöttek a még nagyobb korpuszok Brit és
+13:5913 minutes, 59 secondsNational Korpusz, amit már szófailag egyértelműk, tehát különböző annotációkkal készült. Magyarországon az első ilyen alapkorpusz az a Szeged
+14:0714 minutes, 7 secondskorpusz volt mai napig a leghíresebb, bár picike, 1200000 szó.
+14:1314 minutes, 13 secondsÉs ebbe hát mindenféle volt, irodalom, meg iskolai dolgozatok, meg szoftver
+14:2014 minutes, 20 secondskézikönyvek, meg jogi szövegek valahogy 200000-ként, tehát hatféle területről.
+14:2414 minutes, 24 secondsErről is lesz majd szó. És ezek is morfológia elemzettek későbbi változatban. Szeged Triangben már
+14:3214 minutes, 32 secondsszintaktikai elemzett ilyen volt. Aztán mint a bevezető részt említettem, nemzeti szövegtár, amelyik hosszú ideig volt
+14:3914 minutes, 39 secondsezen a 187 milliós méreten, aztán a fél milliárdon, és most már átlépte az 1 milliárdó, vagy a Pázmány korpusz, amit
+14:4714 minutes, 47 secondsitt kollégáinkkal kutató csapatban létrehoztunk néhány éve. Itt ez pont ezerszer akkora, mint a Szegedorpusz.
+14:5414 minutes, 54 secondsIgaz, hogy kézzel nem lehetett átnézni, a Szegedkorpusználnál lényeges volt, hogy kézzel is átnézték. Hát pár dolog akkor konkrétan ugye a Brown Corpuszról
+15:0215 minutes, 2 secondsmost már sok mindent mondtam. Ez egyáltalán azzal, hogy a korpusz fogalmát kézzelf foghatóvá tették
+15:0915 minutes, 9 secondsezekből a témakerekből és ugye part of speech teag, tehát morpológiai kódok voltak. Az, hogy 87 osztály az azt jelenti, hogy olyanok voltak a kódok,
+15:1715 minutes, 17 secondshogy hát ezek nem voltak hierarikusan rendezve, hanem azok a híres kódok, amiket sokszor láttak, ezek Close nevű címkekészlet már itt ott láthatták.
+15:2715 minutes, 27 secondsEzek csak így nemonikusan emlékeztetek egymásra. Tehát nyilván egy olyan dolog, hogy hogy a B, mint létige, annak a
+15:3715 minutes, 37 secondsmúltidej kapott ugyanúgy egy D-t, mintha legutolsó nézik, hogy a verb, a sima ige, múlt időben VBD kóddal van, és
+15:4515 minutes, 45 secondsnyilván szemmel látjuk, hogy a VB vagy a BE az egymásnak rokona. Mégis azt kell mondani, hogy hát ezeket a rendszert
+15:5315 minutes, 53 secondscsak technikailag tudta kezelni úgy, ezek különbözőek voltak. Nyilván egy z-vel jelezték az egyes szám harmadik személy, tehát a VBZ a harmadik
+16:0116 minutes, 1 secondszemélyige, vagy a B Z is, a B dz amire a múltiidő van, ugye a B után a múltiidő
+16:0816 minutes, 8 secondsD-je és a harmadik személy Z-ja az meg a VZ, és így tovább. És mivel az a betűnél lefoglaltak egy csomó mindent azzal,
+16:1616 minutes, 16 secondshogy article meg a legelején, ezért a adjective, a melléknév az ugye ahogy
+16:2316 minutes, 23 secondsmondom, tehát két ye adjective, az már egy j kódot kapta. Ezek annyira elterjedtek, hogy gyakorlatilag a mai
+16:3016 minutes, 30 secondsnapig mindenki ezt használja szinte, még akkor is, ha ez kicsit butácska, de ennél egyszerűben nem lehetett az elején
+16:3816 minutes, 38 secondskódolni. Hát ezek áthitatták az amerikai számítógépes nyelvészetet, és akkor egy ilyen tegelés ugye minden szó megé oda volt slashel rakva a kódja.
+16:4816 minutes, 48 secondsTöbb értelmiséget meg hát úgy próbálták valahogy jelezni, hogy ugye hát a dő az csak egy névelő, a men az tud ige is
+16:5516 minutes, 55 secondslenni nem csak főnév. A stil még határozó szó is. A szó ugye egy főnév
+17:0317 minutes, 3 secondsvagy egy múltidei végige hát fűrész vagy látott.
+17:0917 minutes, 9 secondsés így tovább. És akkor több kód volt, és akkor abból valamilyen módon ki kellett választani kézzel vagy később géppel azt, hogy egyértelműen melyik az,
+17:1717 minutes, 17 secondsami itt adel szó höv mondatban melyikek a azok a pasztegek, amik jogosak.
+17:2617 minutes, 26 secondsEz körülbelül ilyen rákövetkezési gyakorisággal történt az elején, tehát nem nagyon vacakoltak, hanem hát általában a dőut után levő szót azt
+17:3317 minutes, 33 secondsnagyobb eséllyel tekintették. Ugye az a valószínűsége annak, hogy egy névvel után jön egy főnév, az jóval nagyobb, mint egy névvel után jön egy ige a
+17:4317 minutes, 43 seconds186000ed, illetve ezred. Tehát mindenki látja, hogy akkor annak kell jönnie. Ez nagyon statikus. Tehát ha valami egy
+17:5017 minutes, 50 secondssorrendben valahogy volt, akkor az mindig úgy volt. És nyilván három egymás
+17:5617 minutes, 56 secondsután következésre pedig a két B valószínűségnek a szorzatát vették.
+18:0218 minutes, 2 secondsHát egy ilyen első egyszerű egyértelmű volt. A Suzan, ugye amelyik a Brownnak a szintaktikai legnemzett formája, az így
+18:1118 minutes, 11 secondssoronként egy szót mutatott a kódját, magát a szót, a tövét, meg valami nyelvtani információt írta ki ide a végére. És ugye egy-egy ilyen soroz
+18:1918 minutes, 19 secondsegy-egy lyuk kártya volt, mint már mondtam.
+18:2218 minutes, 22 secondsA Lancaster, tehát ez a lob, a Lancaster Lobergen, amit az angolok csináltak, az is ilyesmiket használt. Egy picit
+18:3018 minutes, 30 secondselőtértek attól a kódolástól, de ugye itt a szögletes zárójel mutatja, hogy itt nagyobb egységek, szintetikai egységek is be vannak zárójelezve, tehát
+18:3818 minutes, 38 secondsazoknak is van kódjuk, nem csak a szavaknak. Tehát van főnévi csoport és van főnév. Tehát a The World az egy, várjál, van egy MP, amiben a World az
+18:4718 minutes, 47 secondsegy főnév. Tehát ez a kettő itt már megkülönböztetődik.
+18:5118 minutes, 51 secondsAztán a British National Corpussal kialakult addigra már ugye ezek a formanyelvek megvoltak, markup nyelvek,
+18:5818 minutes, 58 secondsés akkor ott már kialakult egy ilyen BNC formátum, de hát ez valójában egy XML kódolás volt arra nézve, hogy hogy kell
+19:0619 minutes, 6 secondskorpuszokat kódolni. Itt minden csak de facto sztend igazi sztend alakult hosszú ideig ki. És akkor nyilván lehetett az a
+19:1419 minutes, 14 secondsBritish National Corpusban már olyat csinálni, hogy együtt előfordulások.
+19:1819 minutes, 18 secondsTehát például megkérdeztem, hogy a turnó mely más valamikkel szokott együtt előfordulni, és hogyha szintatika elemzés, mert ugye itt az is volt
+19:2719 minutes, 27 secondskésőbb, akkor ez lehetett tudni, hogy a törnek mik szoktak lenni leggyakrabban ebben a korpuszban, az alanyai, a
+19:3319 minutes, 33 secondstárgyai, milyen módosítójuk van és így tovább.
+19:3719 minutes, 37 secondsTehát le lehetett kérdezni okosan azokat a korpuszokat, amiket eddig nem lehetett így, és eddig mindig a nyelvész fejébe jelent meg egy szintaktikai szerkezet,
+19:4619 minutes, 46 secondsmost meg a gyakoriság alapján előugrott a korpuszból.
+19:5019 minutes, 50 secondsMost azért az első ilyen az a Pentry Bank volt, mint a felvezetésben jeleztem. És az az, hogy 3 millió szót megcsináltak, és ezt nyilván kiindultak
+19:5819 minutes, 58 secondsa Brownból, meg hozzátettek a a Pendry Bankben, a Wall Street Journalból kaptak anyagot, és azt is megelemezték, és
+20:0620 minutes, 6 secondsakkor ezeket mindenféle ilyen grabszerű Tigreb interface-el látták el, és ezt használni lehetett már. Tehát az első
+20:1320 minutes, 13 secondsilyen komolyabb méretű, nem 2000 vagy 200000 szavas, mint a Suzan Corpus, hanem már egy 3 millió szavas Trebank,
+20:2220 minutes, 22 secondstehát ahol a szintaktikai szerkezetek teljes egészkel a nyelvész számára lehetőséget adtak arra, hogy
+20:3020 minutes, 30 secondsszintaktikai szerkezeteket kezeljen. Hát valami itt látszik, hogy a mondat azon belül van egy N, hogy az a zölden az az MP, aztán így kiegészítve és így tovább.
+20:4020 minutes, 40 secondsÉs mindenféle szintézet záróélésnél megfelelően egy fastruktúra, amiben egy fa alapon kereső
+20:4720 minutes, 47 secondseszközzel lehetett szintaktikai szerkezetekre rákérdezni.
+20:5220 minutes, 52 secondsSok ilyen tren kereső alakult ki, akár a közvetlen összetevőkre, hogy lehet
+20:5920 minutes, 59 secondsügyesen keresni, amin a pentrybank is, meg más korpuszok is, illetve függőségi szerkezetekre, ami ugye elsősorban
+21:0721 minutes, 7 secondsvalaha DK területén is, Csehszlovákiában, aztán később Németország keleti területén és Csehországban alakultak ki. Hát ezek
+21:1621 minutes, 16 secondskülönböző létező illesztések a címkézet zárójelezésre, és így lehetett a nyelvészek számára
+21:2321 minutes, 23 secondselérhetővé tenni hatalmas mennyiségű jellemzőtt szöveget. Most Magyarországon ugye mint említettem, a Szeged korpusz volt az első, ezt a szegedi egyetemú a
+21:3221 minutes, 32 secondsnyelvtudományi intézet és morfolyik csinálta együtt. Amit lehetett, akkor megpróbáltunk beszerezni. Ebben voltak
+21:4121 minutes, 41 secondsszép irodalom már amennyire piszkos dal, de nyilván Szerbanttal meg ugye Orvellnek a minden kelet-európai
+21:4821 minutes, 48 secondsországban megvolt a farítása, amit korábban is jeleztem az 1984-nek.
+21:5321 minutes, 53 secondsEz korábban még szamizdat volt, de aztán utána már igazi fadétások. És ezt azért tette bele minden kelet-európai ország,
+22:0022 minuteshogy összehasonlítható korpusza legyen, hiszen az eredeti angolt aztán a keleturópai nyelvekre össze lehetett hasonlítani, és egy több nyelvű korpuszt
+22:1022 minutes, 10 secondsis lehetett inélni. Maradjunk egyelőre az egy nyelvinél. Belekerültek középiskolai fogalmazások, amiket digitalizáltak, újságcikkek,
+22:1822 minutes, 18 secondsszámítógépes szövegek, jog jögi szövegek.
+22:2222 minutes, 22 secondsÉs aztán egy morfológia elemző végigelemezte ez a humor, az unifikációs morfológiából kiinduló humorrendszerre elemezte. Aztán ezt morfológiailag egyértelmisítették különböző módokon.
+22:3422 minutes, 34 secondsElkészült hozzá a Brill Tagger, elkészült hozzá egy hídemarkó modell alapú a TNT, amiről szintén volt szó
+22:4322 minutes, 43 secondskorábban, aztán egy szabályalapú rendszer is. Ezek különböző minőséget hoztak, és végül ezeknek a kombinációja adta a legjobbat, 96,95%-os.
+22:5222 minutes, 52 secondsTehát ez fut. Ha megnézik valahol, hogy Szeged korpusz néz ki, akkor az
+22:5922 minutes, 59 secondsegyértelműe ezeknek a egyértelműítőknek a kombinációval készült. Aztán ugye, mint említettük, a szintaktikai jellemzés is belebújt a Tri a Szeged Corpuszba, és ez Szegedbanknek hívják.
+23:1023 minutes, 10 secondsEz az első magyar ilyen tribank. És hát ami lényeges, hogy a szintaktikai szerkezeteket is egyetemisták kézzel kódolták. be vannak jelölve tarzói
+23:1923 minutes, 19 secondsszerkezetek, nagy jelzősszerkezetek, névutósak, igenvek és hát mindenfajta egyedi szavak.
+23:2623 minutes, 26 secondsÚgyhogy ez egy nagyon érdekes kísérlet, de hát nyilván nagyon kicsi ez a korpusz ahhoz, hogy erre az egész magyar nyelvre vonatkozóan
+23:3623 minutes, 36 secondslehessen valamit mondani. De addig amíg ilyen nem volt, addig ez sem lehetett talán ez a kifejezés. Na most volt egy sokkal nagyobb korpus még a 2000-es évek
+23:4423 minutes, 44 secondselején, most már több mint 15 éve készült el a Szószabja projekt keretében, a Műletem médiaokató és kutató központjában.
+23:5323 minutes, 53 secondsA szószabja az talán furcsa szó.
+23:5723 minutes, 57 secondsEz a fordítása annak a szójátéknak, hogy Words word. És ugye hát a word az egyik
+24:0324 minutes, 3 secondsszó, tehát a word és egy esés word. És nyilván ez az angolban alakult ki először is. Hát a szó szabja az ennek a
+24:1024 minutes, 10 secondsfordítása, szard szabja. Na és ez ugye megpróbálta leszedni, ami a pont home van, ahol
+24:1824 minutes, 18 secondspersze rengeteg nem magyar szöveg is van, mert ugye hát nyilván az angol weblapfordítások már a 2000-es évek elején is megjelentek, és azok is a
+24:2624 minutes, 26 secondsponthu-n jelentek meg. Tehát ez másfél milliárd token volt, ami abb az időben őrületesen nagynak számított, de gyakorlatilag ennek a 40%-át mindenféle
+24:3524 minutes, 35 secondstechnikával kidobták, tehát vettek egy mintát, és ha abba valamilyen idegennek látszó, vagy nem magyar
+24:4324 minutes, 43 secondselemzővel nem kezelhető szavak túlsúlyban voltak, azt kidobták, tehát 40%-át helyből, mert az biztos. Aztán utána
+24:5124 minutes, 51 secondsaz ékezet nélküli szövegeket is kidobták, tehát ahol csak ekezet nélkül volt a szöveg, és aztán utána próbáltak
+24:5824 minutes, 58 secondsegy kevesebb elütéssel rendelkezőt. Most ennek a 4%-a az még mindig fél milliárd
+25:0625 minutes, 6 secondsszó, tehát hogy az egésznek, tehát hogy a 1220 millió,
+25:1525 minutes, 15 secondstehát az 1,2 milliárd magyar weboldal volt és ugye ezek a a tokenek azok csak azt mondják, hogy ez egyszerű,
+25:2325 minutes, 23 secondstehát a másfél milliárd elévesztőmések ez nem a mérete, hanem annyi egyedi, tehát annyiféle szó volt benne. 1220
+25:3025 minutes, 30 secondsmillió magyar weboldal volt, és fél milliárd szó lett ez a 4%, ami hát még abban az időben 4 GB is jelentős volt.
+25:3825 minutes, 38 secondsItt látszik, itt vannak, hogy hány oldalnyi A4-esbe számolva, hány token és hány type. Hát nagyjából
+25:4625 minutes, 46 secondstehát, ugye az a 7,2 millió type az mutatja azt, hogy körülbelül mennyi alap elem lehet egy ilyen szóba.
+25:5625 minutes, 56 secondsmég ez a 4% is óriási volt, és ez sokat kíséret, ez teljesen elemzetlen volt. A Magyar Nemzeti Szövegtár viszont nagy
+26:0426 minutes, 4 secondsméretű és már elemzett szövegeket tartalmazott. Ezt most már több mint 20 éve építi nyelvtudományi intézet. Ebbe
+26:1126 minutes, 11 secondselőször belekerültek autentikus irodalmi szövegek, digitális irodalmi akadémia szövegei, magyar elektronik könyvstár
+26:1826 minutes, 18 secondsszövegei, indexekre jött fórumoknak a szövegei és más joganyagok, amiket hivatalosan meg lehetett szerezni. És
+26:2626 minutes, 26 secondsígy az első verzió 187 millió szóval állt, amihez a határon túl magyarok is ilyen értékben hozzájárultak. Tehát,
+26:3426 minutes, 34 secondshogy a egyedi nyelvjárásokat, a határon túli dialektusokat is valahogy kezelni lehetett benne. Nyilván a méretük kicsi,
+26:4126 minutes, 41 secondsde mégiscsak vannak benne olyan típusú tartalmak, amiket a magyarországi magyarban sose lehetne megtalálni.
+26:4826 minutes, 48 secondsAztán a második magyar nemzeti szövegtármány fél mjárd, és most már az 1 milliárd szó körül jár.
+26:5626 minutes, 56 secondsEz azért számít természetesen a méret, de ugye nyilván a hála Istennek már a fél milliárdban is elég sok minden benne
+27:0327 minutes, 3 secondsvan, az 1 milliárdban még több. És mint mondtam, soha nem lesz olyan korpuszunk, amivel minden benne van, de itt már azért komolyabb nyelvészeti munkákat
+27:1127 minutes, 11 secondslehet ezzel végezni. Hát nem annyira komoly, de mégis csak ilyen első kísérlet, hogy na mik a szó
+27:1827 minutes, 18 secondsgyakoriságok. Na most az mutatja itt a baloldali ávra, hogy hát ezek a mondjuk, hogy töltelékszavak vagy stopdök, amiket
+27:2827 minutes, 28 secondsugye hát nyelvészeti elemzésnél, ha csak úgy egyszerű analitikát csinálunk, akkor azokat inkább kidobjuk, hogy a meg és
+27:3527 minutes, 35 secondsmeg hogy meg ilyeneket vís, mert azzal nem. Tehát nyilván a a részletes elemzésnél kell. Csak az első igazi
+27:4227 minutes, 42 secondstartalmas szó nyilván a Van, amelyik hát tartalmas, tartalmas, de azért nem a legtipikusabb
+27:4927 minutes, 49 secondsegyértelmű ige, de hogy van, a kell, a lesz. És lehet látni, hogy a listában 30 helyeneknek az első főnév az, hogy év.
+27:5827 minutes, 58 secondsHát nyilván itt sok a dátumra vonatkozó infó a nemzeti szövegtárba, ember, idő, rész, szóval ezek azért nem a leg hogy
+28:0628 minutes, 6 secondsmondjam egyértelműbb szavak, hiszen sok mindent jelentenek. melléknevek pedig 35, 44, 462. helyén jelennek meg
+28:1428 minutes, 14 secondselőször. Nyilván a 27000 meg a 185000 ott már sok van belőlük, de a legtipikusabbak azok hát, hogy mondjam,
+28:2228 minutes, 22 secondsmeglehetősen üres vagy nehezen definiálható tartalmúak.
+28:2628 minutes, 26 secondsNa most egy sokkal érdekesebb dolog, hogy nem csak ilyeneket lehet csinálni a nemzeti szevektáron, hanem amit már korábban is emlegettünk.
+28:3428 minutes, 34 secondsSas Bálint, aki a nyelvtud intézett munkatársa, és itt a mi korunkon, ezt már említettem is,
+28:4128 minutes, 41 secondsvégezte a doktoriát, ő építette fel ezt a Mazsola vonzatkeresőt, hogy a Nemzeti szövegtár tartalmába olyanfajta dolgokat
+28:4928 minutes, 49 secondslehessen, elvileg máshol is, de az MNS-re épített megtalálni, amiket korábban elképzelhetetlen lett volna. A
+28:5728 minutes, 57 secondspélda itt mutatja is, hogy mit szokott kérni a magyar. Tehát beírom, hogy a kér igeő bármely morfológiai állapotában van is a szövegben, de a kér ige. És akkor
+29:0629 minutes, 6 secondsazt kérem tőle, hogy mondja meg, hogy mi az az akkuzatívus, mi az a tárgy, amit igazán a kér magához szokott vonzani
+29:1429 minutes, 14 secondsleggyakrabban. És akkor ebben a in fél, illetve ma már egy milliárdos szöveg azt mondja, hogy az emberek általában bocsánatot kérnek meg segítséget, meg
+29:2229 minutes, 22 secondselnézést, meg engedélyt, meg tájékoztatást, vagyis nagyon ritkán kér tárgyi dolgot az ember. Bár azt szoktuk mondani, hogy kéri a nem tudom én a
+29:3229 minutes, 32 secondskönyvet, de nem csupa ilyent. Tehát a bocsánatot kérből azért a bocsánat viszi a szemantikus lényeget, és a kér az egy kiegészítője, ha lehet ilyet mondani.
+29:4129 minutes, 41 secondsSegítséget kér, elnézést kér. Tehát olyan, mintogyha az a kér az csak egy ilyen rag van a bocsánaton, segítségen, elnézésen. Mi pedig úgy indulunk neki,
+29:5029 minutes, 50 secondshogy a kér az ige, és nézzük meg, hogy milyen tárgya van, és ott föl is sorolja a rendszer, hogy ezek az előfordulások hogy néznek ki. Tehát adat úgy fordult
+29:5929 minutes, 59 secondselő, hogy a kérrel, hogy ezek a ez a hat példa van, amire tehát az adatot kér valaki, vagy adatgyűjtést
+30:0830 minutes, 8 secondskér, vagy adóigazolást kér. Tehát sok minden ilyet is lehet kérni, a leggyakrabban, bocsánatot. És ebből egy komoly szótár készült, tehát a Mazsola
+30:1730 minutes, 17 secondslekérdezővel kialakított rendszerbe kiderült, hogy mik azok a gyakori, együtt előforduló adatok, alakok. Tehát
+30:2430 minutes, 24 secondsmondhatnám itt is, hogy nem a kérnél kell érni, hogy bocsánat, hanem a bocsánatot kér az egy önálló egység, gyakoribb, mint maga a
+30:3230 minutes, 32 secondsegy szál magába előforduló kér. Tehát a legfontosabb tárgyi kiegészítések, vagy azok a főnevek, amik tárgyas tárgyasetbe
+30:4130 minutes, 41 secondsforgalak elő kér előt, azok valójában önálló egységként a bocsánatkérés, segítségkérés, elnézéskérés, engedélykkérés satöbbi helyén kellene,
+30:4930 minutes, 49 secondshogy legyenek a szulttárba, és nem pedig a kér mellett, mint potenciális tárgyak.
+30:5530 minutes, 55 secondsItt van egy kis ilyen szociolingvisztikai kísérlet vele, hogy mire való egy ilyen. Tehát meg lehet kérdezni, hogy mit szokott adni az
+31:0231 minutes, 2 secondsember. És hogyha különböző korpuszokban nézzük, más jön elő. Tehát nyilván a itt két irányból a Magyar Nemzet korpuszban
+31:0931 minutes, 9 secondsmeg az Indexfórum korpuszában néztük, akkor nagyon érdekes, hogy sárgával vannak a tipikus eltérésekbe rajzolva, tehát ami a másikban nem is fordul elő.
+31:1831 minutes, 18 secondsTehát mit ad? Hangot ad? Lehetőséget ad, választot, otthont ad, és a magyar nem tájékoztatás hírt ad. Tehát az otthont hírt az annyira gyakori a magyar
+31:2631 minutes, 26 secondsnemzetben. Ezzel szemben a indexen pedig az igazat, tippet ad az az adnak a igazi
+31:3431 minutes, 34 secondstárgya. Persze választott tanácsotat hangod, de ez a másikban is előfordul.
+31:3831 minutes, 38 secondsTehát a két szövegvilágnak a különbözőségére utal az, hogy az adddal az otthont ad és a hírt ad, a gyakori vagy az igazat ad is típet ad.
+31:4931 minutes, 49 secondsNyilván ebben messze menő következtetéseket még nem lehet levonni, csak mutatjuk a példát, hogy ilyeneket lehet csinálni ezzel a mozarendszerrel,
+31:5631 minutes, 56 secondsamelyik ezeken a korpuszokon egyszerűen használható.
+32:0132 minutes, 1 secondÉs akkor itt látszanak azok a dolgok, amik az ember fejében megvannak, de azért a nyelvésznek ez eddig nehezebben volt, kézzel fogható, hogy ezek hasonló
+32:0832 minutes, 8 secondsszavak. Tehát valamik nőnek, növekednek, emelkednek. Igen, de mi az, ami nő? Valaminek a száma, aránya, ára tud nőni.
+32:1732 minutes, 17 secondsÉs ha mondjuk a növekedik, az érdeklődés ott igen gyakor, de például az érdeklődés nem tud emelkedni. És az emelkedik persze pénzösszeg ott van,
+32:2532 minutes, 25 secondshogy forintra, valamilyen forintra emelkedik, valamilyen forint összegre drágul, de például a növekedik esetében
+32:3332 minutes, 33 secondsa rare az év, tehát 2020-ra növekedik annyira, hogy tehát ott a RARE a növekedik esetében sokkal jobban
+32:4032 minutes, 40 secondskülönbözik a RARE vonzatnak a tartalma, mint az emelkediknél, ahol valahány forintra vagy jogerőre emelkedik, vagy valahány százalékra emelkedik.
+32:5132 minutes, 51 secondsÉs ez így megy mindegyiknél. Tehát miközben a Valver mindegyiknél valahány százalékkal, valahány forinttal nő, növekedik, emelkedik, drágul az utolsó
+32:5932 minutes, 59 secondsvonzat. Jól láthatóan a valamilyen az alanyok például, hogy a részvény az,
+33:0733 minutes, 7 secondsami drágul, de a számok vagy az arányok növekednek, tehát hogy szemantikus kategóriák jelennek meg az ügyben, hogy
+33:1433 minutes, 14 secondsa négy elég hasonló jelentési szó mégis csak különbözik egymástól. És ezt most konkrétan lehet itt látni, és ebből nyelvészek tudnak cikkeket írni.
+33:2433 minutes, 24 secondsÉs akkor nyilván a szótárgyártásnál az hamar előjött, hogy a hány szó, amég hát nem egy túl szerencsés szó, mert az
+33:3233 minutes, 32 secondsember betegségével kapcsolatos valójában egyáltalán nem az. Tehát amikor a hánynál ott van, hogy valami tárgya van neki, akkor kiderül, hogy ami igazán a
+33:4033 minutes, 40 secondstárgya, az a fity hány, meg a szemre hány, meg esetleg a falra hány. Az inkább csak a borsó. Tehát, hogy a hány
+33:4833 minutes, 48 secondsaz már teljesen tartalmát elveszítve a fityhánynál vagy a cigány kereket hánynál nem tűnik föl, hogy a hánys szó
+33:5633 minutes, 56 secondsszerepel ott. Vagyis kár lenne a hány vamit igének a belsejébe betenni ezeket a dolgokat,
+34:0434 minutes, 4 secondshiszen a fittyet a fitynél, a cigány kereketány a cigány keréknél kell legyen. És hát mi alá kerül valami? Hát víz alá kerül, áros kalapács alá kerül,
+34:1334 minutes, 13 secondsugye a éppen a valamilyen tárgy, ami egy ami ilyen
+34:2134 minutes, 21 secondsárverésen van, vagy valaminek fennhatósága alá kerül, az egy ilyen politikai, technikai kifejezés. Valami
+34:2934 minutes, 29 secondsalá rejteni az mindig véka lesz. Valami alá hozni az mindig a tető lesz. Tehát ezek ilyen idiomatikus kifejezések, hogy
+34:3634 minutes, 36 secondsvék aláhely, tető alához, vád alá helyez, gorcső alá vesz, egykalap alá vesz, tűz alávesz, de ezek nagyon különböző szavak, csak azért látszik,
+34:4534 minutes, 45 secondshogy a ige és az alá együtt teljesen megszünteti az igeeredeti jelentését, és nyilván az az alany, vagy az, ami a alán
+34:5534 minutes, 55 secondsnévutó előtti főnév, az lesz a meghatározója szemantikusan. Tehát nyilván a szótárnál nem a rejthez kell tenni a vég alá
+35:0335 minutes, 3 secondsrejtet elsősorban, hanem a véka alá, vagy a nem a hzhoz kerül a tető, hanem a tető alához a tetőnél van és így tovább.
+35:1135 minutes, 11 secondsTehát ez nagyon hasznos technikai eszköz. Na most a pármánykorpusz készült el a magyar korpuszok közül legutoljára, és mint mondtam, a cél az volt, hogy
+35:1935 minutes, 19 seconds1000erszer akkora legyen, mint a Szegedpusz egyfajta ilyen üzenet, hogy 1200000 eltelt néhány év és 1 milliárd
+35:2735 minutes, 27 seconds200 millió. Itt rendes szöveg korpusz internetről gyűjtve. Na most ugye a
+35:3435 minutes, 34 secondssztendve azt jelenti, hogy elvárhatóan normatív, tehát közelebb van ahhoz, amit a helyesírási sztenderd előír. A kommentek azok, ahol ezt nem tartják be,
+35:4335 minutes, 43 secondsde nagyon fontos szövegek, csak ott az emberek fütyülnek a kis betű, nagy betűre, ott valamit írnak. Az egyéb tartalmat meg inkább úgy kell elképzelni, hogy vannak ilyen
+35:5135 minutes, 51 secondsfelsorolások, listaszerű dolgok, ahol rengeteg nomenklatúrában rengeteg fogalom jelenik meg, de környezetük nincs. Tehát ott inkább arra kell
+36:0036 minutesfigyelni, hogy a szó gazdagságot hozzuk be, de nem tudjuk megmondani a szónak a környezetét, mert ha egy ilyen adatbázis
+36:0936 minutes, 9 secondsrekordokban jelenik meg, akkor azok környezet nélkül kvázi fölsorolásosak.
+36:1336 minutes, 13 secondsDe azért az is nyelvi tartalom, de mégsem olyan, mint az összefüggő szöveg. Nagyjából ilyen szófai megoszlás van.
+36:2036 minutes, 20 secondsEzt ki lehetett találni, hogy azért a nominális elemek vannak jelentősen túlsúlyban.
+36:2636 minutes, 26 secondsSzerkezete az, hogy van egy szóalak, annak van egy tömített változata a humorrendszernek a címkéje, van egy ilyen módosított humor szófaj címké, ami
+36:3636 minutes, 36 secondsmindenfélére használható. És ugye vannak ezek a főnév csoport határok, tehát hogy benne vagyok. Ugye a B az az eleje, egy
+36:4336 minutes, 43 secondsilyen főnév csoportnak az E a vége, az O pedig alt. Tehát az nem rész. Tehát látszik, hogy a nem tudom az eget, a
+36:5236 minutes, 52 secondsföldet, azok szerkezetek, tehát a minimális főnévi csoportok vannak benne.
+36:5736 minutes, 57 secondsMíg mondjuk azt, hogy az a rendszer, amelyik az eget és a földet egy darab főnév csoportnak tekinti, tehát a maximális főnévi csapatok, azt erre rá
+37:0537 minutes, 5 secondskell definiálni, hiszen ez magától a legrövidebbet tudja. Csak így működik a párvány korpusz címkérzése.
+37:1437 minutes, 14 secondsÉs akkor a benne levő főnévi csoportokra rá lehet kérdezni, hogy milyen, melyikből milyen gyakori. És itt példák vannak. Ezek a legegyszerűbbek, de
+37:2237 minutes, 22 secondsmondjuk jelentős mennyiségű szerepel bennük, tehát itt azért már lehet keresülni.
+37:2837 minutes, 28 secondsLekérdezhetősége, mint minden korpuszi, mint a nemzeti szövegtáré. Ezt megfelelő módon, tehát rá lehet erre a
+37:3537 minutes, 35 secondskonkordanciára keresni. Megkeresem azt, hogy a vár szó, sőt arra is tudok keresni, hogy a vár főnév az a baloldali fölső, vagy a vár ige, és bár V az
+37:4437 minutes, 44 secondsfizikailag nagyon hasonló. Itt a szemon vagy a morfológiai kódolás miatt és a fard kód miatt el tudjuk a kettőt
+37:5237 minutes, 52 secondskülöníteni. Nem csak a betűket, hogy V, hanem és nyilván a várunk az mind a kettőben előfordul, de igei várunk vagy
+38:0038 minutesfőnévi várunk még mondjuk a várát az csak főnév és a vártal meg csak ige.
+38:0738 minutes, 7 secondsNa hát szóval ezt csak azért mondtam, hogy tehát a korpuszok azok Magyarországon is megjelentek és ebből dolgozik ma a nyelvész. Persze nyilván a
+38:1638 minutes, 16 secondstanulórendszereknek kevésbé kell hát ez a sok kézi előfeldolgozás vagy néhány helyen jó volna de ugye sietünk
+38:2538 minutes, 25 secondskapkodunk gyorsan dolgozunk és ezért nincs idő arra hogy ezeket az annotációkat elvégezzük tehát egyre jobban arra megy ki a kusz nyelvészet hogy ezeket az őrült mennyiségű
+38:3338 minutes, 33 secondsszövegeket a gép annotálja és ne pedig kézzel előannotáljuk vagy csak minimális tanulóanyagunk van aztán arra ilyen
+38:4038 minutes, 40 secondsbootstrap megtanítjuk aztán azt egy kicsit korrigáljuk és arra tanítunk továbbiakat, tehát hogy így saját magát
+38:4838 minutes, 48 secondsfölépítő, mint egy ilyenépítő daru, úgy működik. Hát a nyelvtechnológiának rengeteg területe van, amit nem említettünk, vagy csak érintőlegesen
+38:5638 minutes, 56 secondsebben a fél évben. Ugye az előbb már mondtam a névelemfelismerést, Named entity recognition, aminek ugye
+39:0439 minutes, 4 secondsrövidítése ner, amit többen ismernek, de az nem lesz. Az anafora felismerés ugye az, hogy visszautalok valamire,
+39:1239 minutes, 12 secondstehát a különböző vonatkozó névmások meg referenciális elemek, amik hát
+39:2039 minutes, 20 secondstávoli elemeket kapcsolnak egy korábbihoz össze. Illetve ennek egy általosabb verziója a
+39:2739 minutes, 27 secondskorreferenciafeloldás. Tehát ugye az anafora az csak egyszerű utalás. A korreferencia rengetegszer olyanfjta dolog, ami ugyanarra utal. Tehát amikor
+39:3539 minutes, 35 secondsazt mondom, hogy hogy nem tudom én van egy kutyám, sokszor járok vele sétálni, hát ez egy olyan kedves állat.
+39:4439 minutes, 44 secondsMost nyilván az állat is referál, de az nem ugyanaz, mint amikor azt mondom, hogy a kutyám amelyik, és akkor az amelyik mint nyelvi elem referál a
+39:5239 minutes, 52 secondskutyára, hanem hát egy olyan másik szemantikai egység, amit én a fejemben összekapcsolok, hogy semmi más állat nem volt itt. Tehát egy sokkal szélesebb dolog a korenciáknak a világa.
+40:0340 minutes, 3 secondsÉs hát még szélesebb dolog, hogyha egy szövegnek az egészét kell valahogy nem csak egy-egy szónak a vonulatát, hogy
+40:1040 minutes, 10 secondskutya, állat satöbbi, hanem hanem az egész szövegegységnek a tartalmára kell valami módon véleményt mondani, hogy
+40:1740 minutes, 17 secondsmilyen témáról szól. Tehát fölismerem, hogy tudjam kategorizálni. Ez egy komoly terület kiadóknál,
+40:2540 minutes, 25 secondsnapilapoknál, újságoknál. Hát nyilván, hogy a cikkekre felismerem, hogy ez sporttartalmú, ez meg politikai. A nehéz az, amikor politikai is, meg sport is,
+40:3440 minutes, 34 secondsmert valami olyan témáról esik szó, nem tudom, stadionépítés, hogy akkor az mind a kettő. De hát ez egy nagyon fontos
+40:4140 minutes, 41 secondsdolog, hogy nagy mennyiségű adatoknál ezt már nehéz kézzel csinálni. Tehát, hogy a téma témafelismerő programok azok
+40:4940 minutes, 49 secondsazoknak most itt az ideje, hogy használják őket, mert egyre okosabbak vannak ilyen géptanlásosek. Hát a véleményelemzése, amit ugye magyarul
+40:5740 minutes, 57 secondsáltalában opinion miningnak vagy inkább sentiment analysisnek hívnak, hát ugye az azt jelenti, hogy valamilyen
+41:0541 minutes, 5 secondsdologról, termékről általában a marketingesek szeretnék tudni, hogy mi a vélemény róla a weben, tehát milyen kontextusba fordul elő a mi művünk, a
+41:1541 minutes, 15 secondsCoca-Cola versus a másiké, a Pepsi Cola, hogy ez pozitív, negatív, milyeneket írnak róla. Ezt ma már minden cégnek a
+41:2241 minutes, 22 secondsmarketingese figyeli. Itt nagyon egyszerű algoritmusok és hatékonanyag tudnak lenni, és azért ne téveszte meg senkit. Itt nagyon sokszor a
+41:2941 minutes, 29 secondsmarketingeseket meg is téveszti a szép grafikus meg látványos interface, ami mögött a nyelvészeti tudás kisebb, de vannak nagyon okos véleményelem az
+41:3841 minutes, 38 secondsőrendszerek, hiszen nyilván az a mondat, hogy mit tudom én, alig ha érünk oda négy
+41:4641 minutes, 46 secondsórára, az valójában nem azt jelenti, hogy odaérünk négy órára, hanem azt, hogy nem. Tehát az alig a szónak az értelmét mint stopföldöt nem veszem figyelembe és kidobom, akkor az úgy néz
+41:5541 minutes, 55 secondski, minthogyha azt állítottam volna, hogy odaérünk négy órára és valójában az alikával pont. Persze ha nem van odaírva, akkor a nemet ki lehet dobni,
+42:0342 minutes, 3 secondsde tagadószó kezelése is már egy nyelvtechnológiai ügy. Tehát abban a pillanatban, hogy a véleményelemzés komolyabb nyelvészeti hátteret igényel,
+42:1142 minutes, 11 secondsakkor már drágább lesz. És akkor nagyon sokszor azok a cégek, akik egy egyszerű hatékony algoritmust akarnak, már nem is szívesen fizetik meg. Tehát, hogy ott a
+42:2042 minutes, 20 secondstudás és a napi gyakorlat azért jelentősen elválik. Na most megjelent az automatikus kivonatolás időről időre,
+42:2742 minutes, 27 secondshogy egy ekkora dokumentumot kap a cég vezetője, és azonnal tudnia kell, hogy mi van benne. Ha valami absztrakt vagy summary itt van, akkor azt még el tudja
+42:3542 minutes, 35 secondsolvasni. Ha nincs ilyen, akkor valaki csinálja meg. Ahhoz el kéne egy másik embernek olvasnia. És ma a gépek ezt el
+42:4342 minutes, 43 secondstudják olvasni, és tudnak belőle, ugye kétféle kivonatolás van, amelyik a benne levő mondatokat megpróbálja összerakni
+42:5142 minutes, 51 secondsegy rövidebb szöveggé és összeegeszteni valahogy. Ugye ez a kiveszem belőle extractive summary, vagy pedig
+42:5942 minutes, 59 secondsegyszerűen elolvassa, megérti és csinál egy másikat, az abstractive summary, tehát egy abstraktot gyár belőle. Ezek most a gépitanulás világában nagyon menő
+43:0843 minutes, 8 secondsdolgok. diskurzuselemzés, tehát az, amikor a szövegfelépítés, hogy hogy épül föl, mire, ez egy nagyon komoly
+43:1543 minutes, 15 secondsrésztudomány a nyelvészetnek, és nyilván a nagy méretű korkuszok segítségével ezt is lehet géppel támogatni. Na most ugye eddig mindent elemeztünk, tehát
+43:2343 minutes, 23 secondsdiskurzust, szövegeket kivettünk belőlük, kapcsolatokat kerestünk, de valóban elő is kell állítani szöveget, ami miatt ez
+43:3143 minutes, 31 secondsegy picit mostább. Jó lehet a nyelvészetben a generatív gramatika generál és az állandó azt állítja elő,
+43:3843 minutes, 38 secondsami ugye most nem tudok mást mondani, mint azt, hogy gyakorlatilag az összes szöveget mi előállítjuk, csak ez két szinten van.
+43:4643 minutes, 46 secondsEgyszer egyszer a fejünkből megfogalmazódik valami dolog, és aztán azt linearizáljuk egy technikával. Tehát a nyelvgenerálásnak az első lépése az,
+43:5443 minutes, 54 secondshogy valamit ki akarok mondani, és a másik, hogy egy ilyen komplex szerkezetet hogy kell lineárisan kiraknom.
+44:0144 minutes, 1 secondHát azt kell mondani, hogy a számítógépes rendszereknek ugye a legfontosabb felhasználásuk az, hogy léteznek szövegek és azt a gép is el tudja olvasni, nem csak én. És erre
+44:0944 minutes, 9 secondsmondjon valamit. Ha valami konzervszöveget mond, rosszul strukturált szöveget ad ki a végeredménybe, picit megmosolyogjuk, de mi emberek fogjuk ezt olvasni, és mi ezt
+44:1844 minutes, 18 secondsmegértjük. Tehát ha a szövegeket ő nem érti meg, akkor rossz eredményt ad. Ha ő azt megérti és rosszul számol be, akkor
+44:2644 minutes, 26 secondsröhögünk, kritizáljuk, de alapvetően használni tudjuk. Tehát egy kicsit a generálás az a gépi nyelvészetben
+44:3344 minutes, 33 secondskevésbé fontos szerepel bír, mint az elméleti nyelvészetből a mai napig is a az ideális beszélő fejéből megjelenő
+44:4244 minutes, 42 secondsgenerátumokat. Tehát ténylegesen azokat a mondatokat, amik a nyelvben vannak, azokat kell, hogy előállítsa. A mi esetünkben ez inkább csak egy technika,
+44:5144 minutes, 51 secondsamiben nagyon sokszor mondom, konzervmondat, és néhány elemét lehet dinamikusan cserélgetni. Az se olyan nagy baj. A lényeg, hogy megértse azt,
+44:5944 minutes, 59 secondsamit odaadtunk elé. Aztán ugye egy másik irány, amiről nem esett szó, az mindenfajta felismerő rendszereknek a támogatása, mondjuk a karakter
+45:0745 minutes, 7 secondsfelismerőjé, mert ugye nem arról van szó, hogy jól működik-e a vizuális része a dolognak, fölismeri-e a pixeleket,
+45:1545 minutes, 15 secondsvagy azokat a massatokat, hogy milyen betűt alkotnak, hanem ezekből a betűkből összeáll egy nyelvi egység, és hogyha zsíros a papír, vagy valami nagy massat
+45:2345 minutes, 23 secondsvan benne, és nagyobb hiányok vannak, akkor az már karakteres alapon nem ismerhető föl. A karakteres felismerésnek a lényege, hogy mintha egy
+45:3245 minutes, 32 secondsszuper nyomtatóval kinyomtatott szöveget akarnék visszaállítani, azokat fog sikerülni. De amikor hiányok vannak a kevésbé, márpedig nyelvileg még ki
+45:4045 minutes, 40 secondstudjuk tölteni ezt a hiányt. Így dolgoznak a nem tudom én mindenféle régi dokumentumokkal irodalmárok történészek,
+45:4745 minutes, 47 secondshogy hát bizonyos hiányok vannak kódexekben, de azért tudják, hogy körülbelül mi lehetett ott ekkora tartalommal így kezdődik, így végződik, és ott nincs meg a papír. Ez
+45:5645 minutes, 56 secondsgyakorlatilag ez a tudás, hogy mi nyelvi egységeket keresünk, ez az iekben csak áttételesen van benne kis
+46:0446 minutes, 4 secondshibakorrekcióval. Tehát azt, hogy az M és az RN az hasonló, azt az OCR is tudja, de azt, hogy egy ekkora szövegben
+46:1246 minutes, 12 secondsmi van úgy, hogy ilyen hosszúak kell lennie, és körülbelül egy-két betűnek a teteje látszik, ezt kevésbé tudja. És hát nyilván a kézírás felismerés is így
+46:2046 minutes, 20 secondsműködik, hogy már ránézek egy egységre, és az egységről tudom, hogy abban a kontextusban ez mi lehet. Tehát ha ilyen hosszú,
+46:2946 minutes, 29 secondsés mondjuk így a közepén vannak ilyen cikcakok, akkor biztos az van odaírva, hogy minisztérium, mert az M, az I, az N, az I, azok mind egy formák úgy
+46:3746 minutes, 37 secondsnagyjából. De ha ilyen hosszú, és az elején van egy-két fölálló betű, akkor már csak a belügyminisztérium meg a külügyminisztérium lehet, pláne, ha van
+46:4546 minutes, 45 secondsutána lefele menő GY. És ezt akkor is tudom, hogyha a szöveg kevésbé látszik.
+46:5046 minutes, 50 secondsMárpedig ezek a teljesen rákövetkezéses OC rendszerek ezt nem tudhatják. Tehát a nyelvnek nagy szerepe van. Majdnem azt mondom, hogy először nyelvileg kell
+46:5846 minutes, 58 secondselemezni, és utána megnézni, hogy van-e hozzá olyan látható információ, ami megerősíti, vagy megcáfolja azt a hipotetikus
+47:0747 minutes, 7 secondsstringet, amit én előállítottam, hogy valószínűleg az van odaírva. Na most nyilván kereséstámogatás az triviális, de
+47:1547 minutes, 15 secondsnyilván a keresésben nem az az érdekes, hogy Ctrl F és akkor megtalálom azt a stringet, amit szeretnék, hanem hogy ennek a holdudvarába is ügyesen tudjak
+47:2347 minutes, 23 secondskeresni. Csak ez a holdudva ne legyen az, hogy bármelyik betű helyett bármi lásd Lővensteinkor, hanem ügyesen a
+47:3047 minutes, 30 secondsnyelvre tekintettel. Tehát nyilván egy ékezetes betű ékezet nélküli párja az közelebb van. Tehát a keresésnél azt
+47:3747 minutes, 37 secondsokosabb azt először föajánlani. Erre emlékeztek a helyes írás ellenőről is beszéltünk, de ez ma a keresésnél
+47:4447 minutes, 44 secondsegészen odáig megy, hogy komplexebb szerkezeteket, mondatokat is be lehet írni. És hát azt kell mondjam, hogy a legnépszerűbb keresőbe is, ha beírnak
+47:5347 minutes, 53 secondsolyan dolgokat, amire azt gondolják, hogy nem fog jó választ adni, próbálják ki. Egészen meglöventő kísérleti szinten az, hogy már miket tudnak ezek a
+48:0148 minutes, 1 secondrendszerek. Pedig ez a legkommercebb és ingyenes rendszer. Ennél sokkal jobb lehet egy célirányos, valamilyen konkrét helyzetben használt keresőrendszer.
+48:1048 minutes, 10 secondsHát az előbb említettük az OCRT és a kézírást, tehát nyilván a beszédalakú rendszereknél ez ugyanígy van, hiszen a beszédinformációnak vannak olyan részei,
+48:1948 minutes, 19 secondsamiket a zaj miatt, szuperpanálódott jelek miatt akár több ember beszél egy időben. Nagyon nehéz jól értelmezni. De
+48:2648 minutes, 26 secondsha tudom, hogy miről van szó, és nagyjából hallom az elejét meg a végét, kitalálom a közepanehami képi információ is csatlakozik ehhez. Ugye ezt az
+48:3548 minutes, 35 secondsegészet egy ravasz ember egyszer elnevezte koktélparti effektusnak. Tehát a koktél óriási a zaj és ott valaki beszél
+48:4448 minutes, 44 secondshozzám, látom a száját, fele hang eljön hozzá és mégis tudom, hogy miről szól.
+48:4848 minutes, 48 secondsTehát egy komplex fölismerő rendszer egy videó szignálban esetleg a hiányzó hang részekhez is tudja helyettesíteni a szájmozgás vagy a kontextus ismeretében.
+48:5948 minutes, 59 secondsÉs aztán vannak a kérdésválasz rendszerek. Ugye a leghíresebb ilyen a Watson rendszer volt
+49:0749 minutes, 7 secondsugye az IBM-nek 2011-ben bemutatott olyan rendszere, ahol hát a kérdést angol nyelven föl lehetett tenni, és a
+49:1449 minutes, 14 secondsrendszer egy óriási komplex sok ezzer PC összekapcsolásával fölépített szupertudásbázison megtalálta a választ ehhez.
+49:2449 minutes, 24 secondsEzt nyilván a kérdést is jól kell tudni elemezni, de utána egy okos algoritmus kell, hogy pontosan mit kérdeztek. És nyilván amikor egy konkrét hiányzó elem
+49:3349 minutes, 33 secondsvan, tehát ki írta az ember tragédiát, azt könnyebben lehet megválasztani, mint a hogyan és a miért kérdéseket. És nyilván az a
+49:4149 minutes, 41 secondskérdésválaszrendszereknek a tesztje, hogy ilyen emberszerű, miért, hogyan kérdésre is egész okos válaszokat tudnak adni. És még 1000 dolgot lehetne itt
+49:5049 minutes, 50 secondsfölsorolni, hogy hol van a nyelvtechnológiának napi alkalmazása, de hát erre vanom a következő fél év arról is beszélgetünk majd, hogy mik vannak még. Na most néhány további információ.
+50:0150 minutes, 1 secondHát keressenek mindent az ACL weben. Ez az Association for Caputation Linguisticsnek a weboldala, ahol hát egy
+50:0850 minutes, 8 secondsegész komoly például videóarchívumot működtetnek, vagy ugye ez a kedvencem az ACL antológia, amelyik egy olyanfjta
+50:1650 minutes, 16 secondsösszegzése az összes valamire való számítógépes nyelvészeti konferenciának és folyóiratoknak, ami nagyon
+50:2450 minutes, 24 secondsegyedülálló, hiszen ha nem ezt a témát választják, mint kedvenc témájukat, akkor egy másik területen ez vagy drága, vagy nem elérhető. Itt pedig ingyenesen
+50:3350 minutes, 33 secondsa gyakorlatilag ami megjelent ebben a világb az elmúlt évtizedekbe, az PDF formájából, olvasható PDF formájában, de
+50:4150 minutes, 41 secondsmögötte egy kereshető tartalommal, tehát lehet rendesen keresni benne. előáll
+50:4850 minutes, 48 secondscikkeknek a 100zrei és mindezt ingyenesen bárki számára ez az antológia de ott van a Deutsche Forsing Centrum fő
+50:5650 minutes, 56 secondsköztelligen tehát a mesterséges intelligencia németországi központja ott is rengeteg minden található vagy
+51:0451 minutes, 4 secondsPrágában, ahol a számítógépes nyiszed egyik kelet-európai központja van volt a Park Bulletin of Mathematical
+51:1251 minutes, 12 secondsLinguistics. Az is egy olyan kiadvány, amit lehet nézegetni, olvasni. A Meta egy európai, európai uniós kezdeményezés, a Metan, ahol sok tartalom található.
+51:2251 minutes, 22 secondsÉs ezeket még sorolhatnám, ez csak néhány felvillantott dolog volt, de hát úgy is megkapják majd a slajdokat, és akkor azt megnézhetik. Na most még
+51:3051 minutes, 30 secondsinformáció van. Ez talán érdekli önöket, mert mindjárt itt a vizsgaidőszak. Tehát végső osztályzatunk ezen a tár ennek a tárgynak a keretében úgy alakul ki, hogy
+51:3951 minutes, 39 secondsugye jártak egy ideig fizikailag is, aztán utána egyre bonyolultabban gyakorlatra, de a gyakorlat az tudja a
+51:4751 minutes, 47 secondsgyakorlat esetünkre győző, hogy ki mennyiszer, hogy volt. Tehát ez fontos, hogy azt beleszámít a jegybe. Ha volt
+51:5551 minutes, 55 secondsházi és megcsinálták, akkor annak nyoma van, és az is beleszámít jegybe pozitív értelembe. A két zárt helyének az
+52:0152 minutes, 1 seconderedménye természetesen tudja mindenki, hogy hányast ért el. Rosszabb ez a pództárhely, de ez is. És a végén
+52:0952 minutes, 9 secondseljönnek vizsgázni. Ezzel pedig nyilván javítanak, mert miért akarnák elrontani.
+52:1452 minutes, 14 secondsTehát a jegy, amit kvázi ez olyan, mint egy megajánlott jegy, de nem egész.
+52:1852 minutes, 18 secondsTehát a jegy fele abból áll elő, hogy fél éven keresztül jártak gyakorlatra, és bizonyos dolgokat már bizonyítottak.
+52:2552 minutes, 25 secondsEzzel ez a belépő. Akinek van jegye, az belép. A vizsgára, akinek nincs, az nem jön. Tehát a szórás az ott történik,
+52:3252 minutes, 32 secondshogy mindenkinek el kell érnie egy minimál szintet, és az ő segít, hogy ezt elérjék. Utána eljönnek vizsgázni a
+52:3952 minutes, 39 secondsNeptubba fönt, megtalálják, hogy mikor vannak a vizsgaidőpontok.
+52:4352 minutes, 43 secondsA vizsgázás úgy fog történni. Szóv, hogy úgy nagyjából egy alkalommal úgy van kiszámolva a dolog, hogy körülbelül 20
+52:5152 minutes, 51 secondspercet tölt egy hallgató előttem, és akkor 20 perces etapokba belép, bevizsgázik, és következő 20 perc múlva
+52:5852 minutes, 58 secondsjön. Nyilván ha ott sorakoznak és valaki rövidebb idő alatt végez, akkor be tudok hívni egy következő vízgázatot egy picit előbb, de a 20 perces etapot tartjuk, tehát óránként három ember megy át.
+53:1053 minutes, 10 secondsPicit elbeszélgetünk. Miről? Hát valójában a vizsgatételekről, amik az előadásoknak úgy többé-kevésbé, azt
+53:1853 minutes, 18 secondslehet mondani, a összegzése. Tehát nem az lesz a vizsgalényege, mert odaülnek. Én tőlem nyilván én hallgató
+53:2753 minutes, 27 secondsvagyok, én is biztosítanám magamat, hogy nehogy leessek a szikláról, tehát mindenféle kötelekkel ott állok, de valójában nem ez lesz a feladat, hogy
+53:3653 minutes, 36 secondsfelolvassanak egy tételt, hanem beszélgetünk, és a beszélgetésnél óhatatlan, hogy ugrálunk a tételek között, tehát nem az a cél, hogy egyet
+53:4453 minutes, 44 secondsvégigmondjanak, ezért nem felkészülési idő van, hanem beszélgetés. ne felejtsék el hoznak egy remélhetőleg jó gyakorlati jegyet, és nekem az a célom, hogy
+53:5353 minutes, 53 secondsmegmutassam, hogy ennél többet tudnak, csak sajnálatos módon nem jött össze ez, akkor én lennék nagyon szomorú, hogyha
+54:0054 minutesezt el kéne rontanom azt a jegyet, amivel a gyakorlatról átjönnek ide hozzám. Hát ez lesz akkor a menet. Nem
+54:0854 minutes, 8 secondstudunkba ellenőrizzik, akik még idén akarnak vizsgázni, azok meg a következő hét második felében már van is egy ilyen alkalom. Ha bárkinek kérdése van,
+54:1654 minutes, 16 secondsmegtaláljuk Győzőt is, megtalálnak is, engem is. Remélem, hogy tudták követni az előadásainkat a fénév folyamán, és vigyázzanak magukra.
+
+https://www.youtube.com/watch?v=NtTVkcGo5-A&list=PLvLI66ieiidhOULovlk35bwn9Dz6LGVFC&index=2
