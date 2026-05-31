@@ -99,3 +99,29 @@ function highlightTerms(root, regex, color) {
         node.parentNode.replaceChild(frag, node);
     });
 }
+
+// 4. Becsúkható h4 szekciók (alapból becsukva)
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('h4').forEach(function(h4) {
+        var siblings = [];
+        var next = h4.nextElementSibling;
+        while (next && !['H2', 'H3', 'H4'].includes(next.tagName)) {
+            siblings.push(next);
+            next = next.nextElementSibling;
+        }
+        if (siblings.length === 0) return;
+
+        var wrapper = document.createElement('div');
+        wrapper.className = 'h4-content';
+        wrapper.style.display = 'none';
+        h4.parentNode.insertBefore(wrapper, siblings[0]);
+        siblings.forEach(function(s) { wrapper.appendChild(s); });
+
+        h4.classList.add('collapsible');
+        h4.addEventListener('click', function() {
+            var open = wrapper.style.display !== 'none';
+            wrapper.style.display = open ? 'none' : '';
+            h4.classList.toggle('open', !open);
+        });
+    });
+});

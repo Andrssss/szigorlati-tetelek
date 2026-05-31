@@ -18,12 +18,12 @@
         <div class="toc">
             <h2>Tartalom</h2>
             <ol>
-                <li>Karakterek és betűreprezentáció. Nyelv­statisztikai törvények. n-gramok.</li>
-                <li>Reguláris kifejezések a gépi nyelvészetben. FSA, FST. Véges állapotú automaták kiterjesztései (RTN, ATN).</li>
-                <li>Kétszintes és unifikációs morfológia. Szófaji egyértelműsítés. Alkalmazások.</li>
-                <li>Mondatreprezentáció, jegyszerkezetek, unifikáció. Mondatelemzési módszerek.</li>
-                <li>Szintaktikai szerepek és jelentés. Fogalmi reprezentációk. Ontológiák, WordNet.</li>
-                <li>Korpuszok. Gépi tanulás. Szóbeágyazás. Gépi fordítás (szabályalapú, statisztikai, neurális).</li>
+                <li><a href="#tema-1">Karakterek és betűreprezentáció. Nyelv­statisztikai törvények. n-gramok.</a></li>
+                <li><a href="#tema-2">Reguláris kifejezések a gépi nyelvészetben. FSA, FST. Véges állapotú automaták kiterjesztései (RTN, ATN).</a></li>
+                <li><a href="#tema-3">Kétszintes és unifikációs morfológia. Szófaji egyértelműsítés. Alkalmazások.</a></li>
+                <li><a href="#tema-4">Mondatreprezentáció, jegyszerkezetek, unifikáció. Mondatelemzési módszerek.</a></li>
+                <li><a href="#tema-5">Szintaktikai szerepek és jelentés. Fogalmi reprezentációk. Ontológiák, WordNet.</a></li>
+                <li><a href="#tema-6">Korpuszok. Gépi tanulás. Szóbeágyazás. Gépi fordítás (szabályalapú, statisztikai, neurális).</a></li>
             </ol>
         </div>
     </div>
@@ -32,10 +32,10 @@
 
 
 <!-- ═══════════════════════════════════════════════════════════ TÉMA 1 -->
-<div class="page">
+<div class="page" id="tema-1">
     <div class="topic-header">
         <span class="topic-num">1. Téma</span>
-        <h2>Karakterek és betűreprezentáció. Alapvető nyelvstatisztikai törvények. n-gramok.</h2>
+        <h2><a href="#tema-1">Karakterek és betűreprezentáció. Alapvető nyelvstatisztikai törvények. n-gramok.</a></h2>
     </div>
 
     <h3>Betűk és karakterek</h3>
@@ -240,10 +240,10 @@
 
 
 <!-- ═══════════════════════════════════════════════════════════ TÉMA 2 -->
-<div class="page">
+<div class="page" id="tema-2">
     <div class="topic-header">
         <span class="topic-num">2. Téma</span>
-        <h2>Reguláris kifejezések, FSA, FST, RTN, ATN</h2>
+        <h2><a href="#tema-2">Reguláris kifejezések, FSA, FST, RTN, ATN</a></h2>
     </div>
 
     <h3>Reguláris kifejezések a gépi nyelvészetben</h3>
@@ -368,13 +368,26 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
 
 <!-- ═══════════════════════════════════════════════════════════ TÉMA 3 -->
-<div class="page">
+<div class="page" id="tema-3">
     <div class="topic-header">
         <span class="topic-num">3. Téma</span>
-        <h2>Kétszintes és unifikációs morfológia. Szófaji egyértelműsítés. Alkalmazások.</h2>
+        <h2><a href="#tema-3">Kétszintes és unifikációs morfológia. Szófaji egyértelműsítés. Alkalmazások.</a></h2>
     </div>
 
     <h3>Kétszintes morfológia</h3>
+
+    <p>Kimmo Koskenniemi által kifejlesztett modell, amely két reprezentációs szintet különböztet meg:</p>
+    <ul>
+        <li><strong>Lexikális szint:</strong> Az alaki változást nem tartalmazó, absztrakt reprezentáció.</li>
+        <li><strong>Felszíni szint:</strong> A tényleges, megfigyelhető szóalak.</li>
+    </ul>
+    <p>A két szint közötti megfeleltetést véges állapotú fordítókkal (FST) írja le. A módszer előnye, hogy ugyanazok a szabályok használhatók elemzésre és generálásra is.</p>
+    <div class="definicio">
+        <strong>Példa (magyar):</strong><br>
+        <em>Lexikális: h á z + b a n</em><br>
+        <em>Felszíni: h á z b a n</em><br>
+        <em>(A '+' morfémathatár jelölése a lexikális szinten)</em>
+    </div>
 
     <h4>A számítógépes morfológia célja</h4>
     <p>A számítógépes morfológia olyan számítógépes technológiák és algoritmusok kialakításával foglalkozik, melyek segítségével különféle nyelvű toldalékolt szóalakok elemzése és generálása megoldható. A számítógépes morfológia az írott alakokkal foglalkozik. </p>
@@ -427,6 +440,16 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     <h3>Unifikáció és jegyszerkezetek</h3>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=5m27s" target="_blank">▶ Előadás ezen a részen (gráf fogalmak, DAG, jegyszerkezetek)</a></p>
 
+    <ol>
+        <li><strong>DAG</strong> = adatstruktúra — jegyszerkezetek ábrázolására</li>
+        <li><strong>Jegyszerkezet</strong> = mit tárolunk benne — jegy–érték párok strukturált leírása</li>
+        <li><strong>Unifikáció</strong> = hogyan vetjük össze — két jegyszerkezet összeegyeztethetőségének ellenőrzése</li>
+        <li><strong>Szóalaktani alapséma</strong> = mire alkalmazzuk — tő + toldalék(ok) kompozíciója</li>
+        <li><strong>HuMor</strong> = a teljes elemző rendszer — unifikálhatósági relációk morfológiai jegyszerkezeteken</li>
+        <li><strong>Bináris jegyrendszer</strong> = hogyan van implementálva — hierarchikus +/− kérdések sorozata</li>
+        <li><strong>Guesser</strong> = mit csinál ha hiányos az adat — ismeretlen tövek becslése toldalékvisszafejtéssel</li>
+    </ol>
+
     <p>Az unifikáció <strong>NEM a morfológia része</strong> — DAG-okon értelmezett absztrakt művelet, amelyet morfológiában, szintaxisban és máshol egyaránt alkalmaznak. A morfológiánál tárgyaljuk először, de vizsgán nem szabad morfológiai műveletnek mondani.</p>
 
     <div class="definicio">
@@ -454,11 +477,6 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
 <img src="img/nyelvtech/szoalak.png" alt="Verem automaták" style="max-width:500px;width:60%;">
 
-    <ul>
-        <li><strong>Terminális toldalék:</strong> a szóalak legvégén áll; utána semmi sem következhet (pl. esetragok, finit igeragok). Abszolút toldalék — sohasem viselkedhet tőként.</li>
-        <li><strong>Nem-terminális toldalék:</strong> köztes elem; <em>kettős arca</em> van: az előző elemhez toldalékként, a következőhöz tőként kapcsolódik (<strong>relatív toldalék / relatív tő</strong>). Pl. a múlt idő jele: <em>ül-t-em</em> — a <em>-t</em> az <em>ül</em>-höz toldalék, de az <em>-em</em>-hez tőként viszonyul.</li>
-    </ul>
-
     <h3>Unifikációs morfológia (HuMor = <em>High-speed Unification Morphology</em> )  </h3>
     <div class="definicio">
        A <strong>HuMor</strong>  lényege, hogy <strong>minden nyelvi tulajdonság egy jegy</strong>. A morfológiai elemzés nem string-manipuláció (nem „lépj vissza két betűt, vágj egyet"), hanem: a szóalak tő- és toldalékrészeit felismerjük a szótár segítségével, és mindkettőhöz <strong>jegy–érték párokat</strong> rendelünk. Ezután megnézzük, hogy a tő és a toldalék jegyei <strong>unifikálhatók-e</strong> — ha igen, a szóalak grammatikus. A HuMor tehát nem más, mint <strong>unifikálhatósági relációk működtetése</strong> morfológiai jegyszerkezeteken.
@@ -482,7 +500,7 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     </ol>
     <p>Így a literális alak (betűsorozat) elveszti jelentőségét — az számít, hogy a jegyszerkezetek összeillenek-e. A HuMor ma is számos helyesírási program morfológiai motorja.</p>
 
-    <h4>Bináris jegyrendszer (magyar névszókra)</h4>
+    <h4>Bináris jegyrendszer <small style="font-weight:normal; color:#555">— a HuMor belső jegykészlete</small></h4>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=35m37s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>A HuMor a hagyományos kategóriacímkék helyett hierarchikus, bináris (+/−) kérdések sorozatával osztályozza a szótöveket és toldalékokat. Néhány kulcskérdés magyar névszókra:</p>
     <ul>
@@ -501,7 +519,7 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
 <br><br>
 
-    <h4>Guesser — ismeretlen szavak kezelése</h4>
+    <h4>Guesser <small style="font-weight:normal; color:#555">— a HuMor modulja ismeretlen szavak kezelésére</small></h4>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h04m54s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>A morfológiai elemző csak a szótárában szereplő töveket ismeri fel. Ha egy tő nincs benne az adatbázisban (pl. új tulajdonneveket, neologizmusokat), a <strong>guesser</strong> (becslő modul) lép működésbe:</p>
     <ol>
@@ -509,90 +527,33 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
         <li>A toldalékosztályok korlátai alapján szűri a lehetetlen elemzéseket (pl. az igék zárt osztályt alkotnak: új igét csak igekötővel/képzővel lehet alkotni, önállóan nem jöhet létre).</li>
         <li>Többértelmű esetben (pl. <em>kacsónak</em>: datívusz vagy igei alak?) a korpuszgyakoriság segít: ha a feltételezett tőhöz sok toldalékolt alak található a szövegkorpuszban, az megerősíti az elemzést.</li>
     </ol>
+<img src="img/nyelvtech/guesser.png" alt="Verem automaták" style="max-width:500px;width:40%;">
     <p>Egyetlen előfordulásból sokszor nem dönthető el az elemzés — elegendő kontextus és szövegkorpusz szükséges.</p>
 
-    <h3>Szófaji egyértelműsítés (POS tagging)</h3>
-    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h16m24s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A morfológiai elemzés után egy szóalakhoz több lehetséges elemzés tartozhat (pl. <em>vár</em>: főnév vagy ige; <em>szemetek</em>: <em>szem</em> vagy <em>szemét</em> töve). A <strong>szófaji egyértelműsítő</strong> az egész mondat kontextusát figyelembe véve rendel egyetlen morfológiai/szófaji címkét minden tokenhez.</p>
 
-    <h4>Rejtett Markov-modell (HMM)</h4>
-    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h22m40s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <div class="definicio">
-        <strong>Markov-folyamat:</strong> a jövőbeni állapot csak az aktuális állapottól függ, nem a teljes előzménytől.<br><br>
-        <strong>Rejtett Markov-modell (HMM):</strong> a belső állapotok (szófaji címkék) nem közvetlenül megfigyelhetők; csak a kibocsátott szimbólumok (szóalakok) láthatók.
-    </div>
-    <p>Cél: megtalálni a legjobb T = (t₁…tₙ) <strong>teljes</strong> címkesorozatot a megfigyelt W = (w₁…wₙ) szósorozathoz. Bayes-tétel alapján:</p>
-    <p style="margin-left:1.5em"><code>argmax<sub>T</sub> P(T|W) = argmax<sub>T</sub> P(W|T) · P(T)</code></p>
-    <ul>
-        <li><strong>P(wᵢ | tᵢ)</strong> — kibocsátási valószínűség: adott szófajhoz mekkora valószínűséggel tartozik a szóalak?</li>
-        <li><strong>P(tᵢ | tᵢ₋₁)</strong> — átmeneti valószínűség: egy adott szófaj után mekkora valószínűséggel következik a következő szófaj?</li>
-    </ul>
-    <p><strong>Másodrendű HMM:</strong> két korábbi címkét vesz figyelembe: P(tᵢ | tᵢ₋₁, tᵢ₋₂). Simítás szükséges, ha egy hármas nem fordul elő a tanítókorpuszban (lambda-súlyozás).</p>
 
-    <h4>Maximum entrópia modell</h4>
-    <p>Nem választja szét a kibocsátási és az átmeneti valószínűségeket, hanem a teljes kontextust (szóalak + előző címkék) együtt kezeli: P(tᵢ | wᵢ, tᵢ₋₁, tᵢ₋₂, …). Így nagyobb kontextuális ablak fogható meg egyszerre.</p>
 
-    <h4>Megszorításos módszer (Constraint Grammar)</h4>
-    <p>A Helsinki Egyetemen fejlesztett, nem valószínűségalapú módszer. Szabályok sorozata egyre szűkebb megszorításokat alkalmaz, kivéve az inkonzisztens elemzéseket. Kb. 3600 szabály az angolra. Pl.: ha az előző szó modális segédige (<em>might</em>), a rákövetkező igének infinitívuszi alakban kell állnia.</p>
+    <h3>Alkalmazások</h3>
+    <p>A morfológiai elemző (pl. HuMor) önmagában nem „végterméke" semminek — más rendszerek használják fel.</p>
 
-    <h4>Transzformációs módszer (Brill-tagger)</h4>
-    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h28m14s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>Eric Brill módszere: annotált korpuszból tanult átíró szabályok sorozata. Alakja: „ha X szóhoz Y szófajcímke van rendelve, és a környezetben Z áll, akkor írd át W-re." A szabályokat iterálva alkalmazzák, amíg változás lehetséges. Magyar változata Megyesi Beáta munkája.</p>
-
-    <h4>TNT, MSD-kód és PurePos</h4>
-    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h29m42s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <ul>
-        <li><strong>TNT</strong> (Thorsten Brants): simított másodrendű HMM-tagger. Oberon programozási nyelven íródott, ami megnehezítette a korai magyarországi adaptációt.</li>
-        <li><strong>MSD-kód</strong> (<em>Morphosyntactic Description</em>): pozicionális kódrendszer — a morfológiai jegyeknek (szófaj, szám, eset stb.) rögzített pozíciójuk van, nem nevük. Nyugat-európai nyelvekre tervezték; keleti, agglutináló nyelvekre (pl. magyar) kiegészítésekkel bővítették. A szegedi egyetem és a magyarLánc 2.x ezt használta.</li>
-        <li><strong>HuMoS</strong> (2007, PPKE MIK): a TNT Java-portja, HuMor morfológiai elemzővel integrálva, MSD-kóddal.</li>
-        <li><strong>PurePos</strong> (2012, Orosz György &amp; Novák Attila, PPKE IK): nyílt forráskódú (Java/Python); egyszerre egyértelműsítő és tövesítő, HuMor-integrált. A magyarLánc 3.0 és az <strong>emagyar.hu</strong> teljes feldolgozórendszer egyértelműsítő modulja.</li>
-    </ul>
-
-    <h3>Számítógépes morfológia alkalmazásai</h3>
+    <h4>Helyesírás-ellenőrzés</h4>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h42m19s" target="_blank">▶ Előadás ezen a részen</a></p>
-
-    <p><strong>Helyesírás-ellenőrzés vs. nyelvhelyesség-ellenőrzés:</strong></p>
     <ul>
-        <li><strong>Helyesírás-ellenőrzés (spell checker):</strong> szószintű — megvizsgálja, hogy az adott szóalak létezik-e a morfológiai adatbázisban. Ha nem, hibás szónak jelöli.</li>
-        <li><strong>Nyelvhelyesség-ellenőrzés (grammar checker):</strong> mondatszintű — szintaktikai és szemantikai összefüggéseket is figyelembe vesz. Lényegesen nehezebb feladat.</li>
-        <li>A proofing tools csomag általában magában foglalja: helyesírás-ellenőrző + elválasztó modul + tezaurusz. A HuMor-alapú helyesírás-ellenőrző bekerült az Office-termékekbe is.</li>
+        <li><strong>Spell checker</strong> (szószintű): megvizsgálja, hogy a szóalak létezik-e a morfológiai adatbázisban. Ha nem → hibásnak jelöli.</li>
+        <li><strong>Grammar checker</strong> (mondatszintű): szintaktikai/szemantikai összefüggéseket is vizsgál — lényegesen nehezebb feladat.</li>
+        <li>Proofing tools csomag: helyesírás-ellenőrző + elválasztó + tezaurusz. A HuMor-alapú ellenőrző bekerült az Office-termékekbe is.</li>
     </ul>
+    <p><strong>Tipikus hibák:</strong> karakterhibák/elütések, valódi helyesírási hibák, nyelvhelyességi hibák, tipográfiai hibák.</p>
+    <p><strong>Javítható:</strong> betűhibák, egybeírások, kötőjelezés, szóismétlés &nbsp;|&nbsp; <strong>Nem javítható:</strong> hibás különírások, közponozási hibák, szórendi hibák.</p>
+  
 
-    <p>A hibák és normák kezelése: a helyesírási normák, a szabályok és a gépi helyesítás-ellenőrzés viszonya; formai és jelentéstani szempontok gépi kezelése; a gép a „nyelvhelyességi tanácsadó" szerepében.</p>
-
-    <p><strong>Tipikus hibák:</strong></p>
-    <ul>
-        <li>Karakterhibák, elütések</li>
-        <li>Valódi helyesírási hibák</li>
-        <li>Nyelvhelyességi hibák</li>
-        <li>Tipográfiai hibák</li>
-        <li>A helyesírás-ellenőrzés lehetőségei és korlátai a szavak szintjén</li>
-    </ul>
-
-    <p><strong>A javítási igények két fajtája:</strong></p>
-    <ol>
-        <li>Javítható: betűhibák, egybeírások, kötőjelezés, szóismétlés</li>
-        <li>Nem javítható: hibás különírások, közponozási hibák, szórendi hibák és még sok más</li>
-    </ol>
-
-    <p><strong>A szóellenőrzés moduljai:</strong> alapszótár illetve morfológia; ajánló modul és adatbázisai; ideiglenes sajtószótár; kiegészítő szótár; kizáró szótár; ragozó nyelvek esetén hasznos a toldalékoló sajtószótárak lehetőségei és nehézségei.</p>
-
-    <p><strong>Ajánló modul:</strong> ha a szó nem ismerhető fel, az ajánló a Levenshtein/Damerau-távolság alapján keres hasonló, érvényes alakokat. Pl. <em>kérdéses</em> vs. <em>kérdése</em> — az utóbbi valódi szóalak (<em>kérdés</em> + <em>-e</em> birtokos), ezért az ajánló mindkét lehetséges javítást felkínálja.</p>
-
-    <div class="definicio">
-        <strong>Levenshtein-távolság (Hamming általánosítása):</strong> minimális számú törlés, csere és beszúrás.<br>
-        <strong>Damerau-Levenshtein-távolság:</strong> a Levenshtein-számításból úgy kapható, hogy a főciklust kiegészítjük a transzpozícióval (helycsere). Damerau annak idején (1964) azt is állította, hogy az emberi elütések 80%-a ezekkel korrigálható. <span class="note">(Damerau csak egyetlen karakteres elütésekkel számolt, szemben a Levenshtein-távolsággal)</span>
-    </div>
-
-    <p><strong>A szóellenőrzés menete:</strong> morfológiai elemzés → ajánlás → ellenőrzés a generátumok morfológiai elemzésével.</p>
-
-    <p><strong>Automatikus szövegelválasztás:</strong></p>
+    <h4>Automatikus szövegelválasztás</h4>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=2h10m28s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>Alapszabályok, plusz morfológiai felülbírálások. Figyelni kell az algoritmus „engedékenységére" hosszabb szavaknál; különleges elválasztások, pl. <em>asz–szony–nyal</em>. <span class="note">(angolban alapból nem létezik egység, ott tök mindegy)</span></p>
+    <p>Alapszabályok + morfológiai felülbírálások (morfémhatárok > puszta betűszámlálás). Pl. <em>asz–szony–nyal</em>. <span class="note">(angolban alapból nem létezik egység)</span></p>
 
-    <p><strong>Számítógépes szinonimaszótárak és tezauruszok:</strong></p>
+    <h4>Szinonimaszótárak és tezauruszok</h4>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=2h16m36s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A rokonértelmű szavak definíciója; automatikus csere problémái; tővisszaállítás; többértelműségek kezelése; a lexikai és a szintaktikai szó különbségéből adódó nehézségek.</p>
+    <p>A morfológiai elemző tőre vezeti vissza a szóalakot → a szinonima a megfelelő tőhöz kereshető. Enélkül az automatikus csere félresikerülne. Problémák: többértelműség kezelése, lexikai vs. szintaktikai szó különbsége.</p>
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 3. Téma</div>
 </div>
@@ -621,10 +582,10 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
 
 <!-- ═══════════════════════════════════════════════════════════ TÉMA 4 -->
-<div class="page">
+<div class="page" id="tema-4">
     <div class="topic-header">
         <span class="topic-num">4. Téma</span>
-        <h2>Mondatreprezentáció, jegyszerkezetek, unifikáció. Mondatelemzési módszerek.</h2>
+        <h2><a href="#tema-4">Mondatreprezentáció, jegyszerkezetek. Mondatelemzési módszerek.</a></h2>
     </div>
 
     <h3>Mondatreprezentáció</h3>
@@ -689,10 +650,10 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
 
 <!-- ═══════════════════════════════════════════════════════════ TÉMA 5 -->
-<div class="page">
+<div class="page" id="tema-5">
     <div class="topic-header">
         <span class="topic-num">5. Téma</span>
-        <h2>Szintaktikai szerepek és jelentés. Fogalmi reprezentációk. Ontológiák, WordNet.</h2>
+        <h2><a href="#tema-5">Szintaktikai szerepek és jelentés. Fogalmi reprezentációk. Ontológiák, WordNet.</a></h2>
     </div>
 
     <h3>Szintaktikai szerepek és jelentés</h3>
@@ -777,10 +738,10 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
 
 <!-- ═══════════════════════════════════════════════════════════ TÉMA 6 -->
-<div class="page">
+<div class="page" id="tema-6">
     <div class="topic-header">
         <span class="topic-num">6. Téma</span>
-        <h2>Korpuszok. Gépi tanulás. Szóbeágyazás. Gépi fordítás.</h2>
+        <h2><a href="#tema-6">Korpuszok. Gépi tanulás. Szóbeágyazás. Gépi fordítás.</a></h2>
     </div>
 
     <h3>Korpuszok</h3>
