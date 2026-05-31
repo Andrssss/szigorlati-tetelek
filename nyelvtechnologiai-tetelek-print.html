@@ -415,41 +415,30 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
    <img src="img/nyelvtech/pelda_ketszintes.png" alt="Verem automaták" style="max-width:500px;width:60%;">
 
 
-    <h4>Konvenciók, speciális szimb megfeleltetés:</strong> ha a két szalagon azonos szimbólum áll, nem kell kétszer kiírni — pl. t:t röviden t, i:i röviden i.</li>
+    <h4></h4>Konvenciók, speciális szimb megfeleltetés:</h4>
+    <ul>
         <li><strong>Dzsókerszimbólum</strong> (általában: @, „kukac"): az adott ábécé tetszőleges karaktere helyett állhat; más formalizmokban más jellel is jelölhetik. Pl. <code>t:c ↔ ___ i:@</code> azt fejezi ki, hogy t lexikálisan c-nek felel meg, ha utána bármilyen felszíni szimbólum követi az i-t.</li>
         <li><strong>Nullszimbólum</strong> (általában: 0 vagy ε): a két szalag csak egyenlő számú szimbólum esetén párosítható, ezért beszúrásnál és törlésnél az egyik szalagon üres (null) szimbólumnak kell állnia — pl. az y:i és 0:e párok egyidejű kezelésénél.</li>
         <li><strong>Határszimbólum</strong> (általában: #): jelzi a szó elejét vagy végét (kizárólag egy másik határszimbólummal párban: #:#)</li>
         <li><strong>Részhalmaz:</strong> egyszavas nevekkel jelzett karakterhalmazok, pl. C a mássalhangzók halmaza, V a magánhangzóké, T a felpattanó hangzóké, NAS a nazálisoké</li>
     </ul>
 
-    <h4>Kétszintes lexikonok</h4>
-        <p><a href="https://www.youtube.com/watch?v=l2CA0ULnVI4&t=2h02m37s" target="_blank">▶ Előadás ezen a részen</a></p>
 
-    <ul>
-        <li>Kétszintes lexikonok: a tőlexikonok, az alternációs minták lexikonjai és a toldaléklexikonok (inflexiósak és derivációsak)</li>
-        <li>Lexikon: egy név és az alábbi formájú lexikális elemek listája</li>
-        <li>Lexikális elemek: lexéma, folytatási osztály, kimeneti információ</li>
-        <li>A P folytatási osztály definíciója (ami valahol másutt van megadva): (P = PS K0 #) azt állítja, hogy az eredeti lexikális elemet vagy a PS allexikon (birtokos toldalékok), vagy a K0 allexikon (klitikumok) valamelyik eleme követheti, vagy egy határszimbólum.</li>
-    </ul>
-
-    <p> - A kétszintes leírás néhány nehézsége: a felszín és a lexikális alak kötelezően azonos hosszúsága; a szuppletív (lexikalizálódott) alakok és a nem produktív toldalékolás kezelése; mit ér a reguláris rendszer, ha vannak reguláris nyelvvel nem leírható morfológiai jelenségek? (pl. nagy, nagy+obb, leg+nagy+obb)</p>
-
-    <p> - Kétszíntes átkonvertálható TG-be.  <a href="https://www.youtube.com/watch?v=l2CA0ULnVI4&t=2h11m50s" target="_blank">▶ Előadás ezen a részen</a></p>
-
-
-
-    <h4>Unifikáció és jegyszerkezetek</h4>
-    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1m37s" target="_blank">▶ Előadás ezen a részen (gráf fogalmak, DAG, jegyszerkezetek)</a></p>
+    <h3>Unifikáció és jegyszerkezetek</h3>
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=5m27s" target="_blank">▶ Előadás ezen a részen (gráf fogalmak, DAG, jegyszerkezetek)</a></p>
 
     <p>Az unifikáció <strong>NEM a morfológia része</strong> — DAG-okon értelmezett absztrakt művelet, amelyet morfológiában, szintaxisban és máshol egyaránt alkalmaznak. A morfológiánál tárgyaljuk először, de vizsgán nem szabad morfológiai műveletnek mondani.</p>
 
     <div class="definicio">
-        <strong>DAG</strong> (<em>Directed Acyclic Graph</em>, irányított körmentes gráf): irányított gráf, amelyben nincs irányított kör. A fánál általánosabb szerkezet: egy csomópontnak <em>több szülője</em> is lehet (fában minden csomópontnak pontosan egy szülője van). Ez a tulajdonság teszi a DAG-ot alkalmassá jegyszerkezetek leírására — pl. az egyeztetési jegy (agreement) egyszerre köthető az alany és az állítmány csomópontjához.<br><br>
-        <strong>Jegyszerkezetek DAG-ként:</strong> a csomópontok a változóknak, az élcímke-sorozatok (ösvények) a jegyneveknek felelnek meg. Az ösvény végén lévő atomi érték konkrét tulajdonság (pl. SG, PL, 3); ha nincs atomi érték az ösvény végén, a jegy <em>alulspecifikált</em> — bármelyik értékkel unifikálható. A jegyszerkezeteket jegy–érték mátrixként szokás felírni.<br><br>
-        <strong>Jegyszerkezet-unifikáció:</strong> két jegyszerkezeten végzett művelet, amely csak akkor hiúsul meg, ha van olyan ösvény mindkét szerkezetben, amelyeknek <em>eltérő atomi</em> értékeik vannak. Minden más esetben (alulspecifikált + konkrét; diszjunkt ösvények; azonos értékek) a művelet sikeres, az eredmény mindkét szerkezet ösvényeit tartalmazza egybeejtve.
+        <strong>DAG</strong> (irányított körmentes gráf):  Erre a legalkalmasabb használni az unifikációt.<br><br>
+        Egy mondat alanyának lehetnek mindenféle tulajdonságai: lehet száma (egyes vagy többes) és személye (első, második, harmadik). Ezeket a tulajdonságokat <strong>jegyszerkezetekbe</strong> szervezzük — pl. [NUMBER SG], [PERSON 3]. Ezek a jegyszerkezetek DAG-okkal ábrázolhatók.<br><br>
+        <strong>Jegyszerkezet:</strong> tulajdonságok (jegyek) és értékeik strukturált leírása. Csomópontok = változók, ösvények = jegynevek, ösvény végén atomi érték vagy alulspecifikált (üres) érték. Felírása jegy–érték mátrixként.
     </div>
 
-    <p><strong>Az unifikáció művelete</strong> — az unifikáció egyedül akkor nem hajtható végre, ha ugyanazon az ösvényen egymásnak ellentmondó atomi értékek állnak:</p>
+<img src="img/nyelvtech/unific.png" alt="Verem automaták" style="max-width:500px;width:90%;">
+
+
+    <p><strong>Az Jegyszerkezet-unifikáció művelete DAG-nál</strong> — az unifikáció egyedül akkor nem hajtható végre, ha ugyanazon az ösvényen egymásnak ellentmondó atomi értékek állnak: <br><br>  <span class="note">( SG = Singular (egyes szám), PL = Plural (többes szám))</span>  </p>
     <ul>
         <li>[NUMBER SG] ∪ [NUMBER PL] = <strong>fail!</strong> (eltérő atomi értékek)</li>
         <li>[NUMBER SG] ∪ [NUMBER SG] = [NUMBER SG]</li>
@@ -460,46 +449,57 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     <p><strong>Destruktív unifikáció:</strong> az egyik kiinduló szerkezet helyén létrejön az eredmény; a másik megszűnik. Gyors, de a korábbi állapot elveszik.</p>
     <p><strong>Nem-destruktív unifikáció:</strong> valójában unifikálhatósági reláció ellenőrzése — a kiinduló szerkezetek megmaradnak, az eredmény egy harmadik, új szerkezet. Másolást igényel, de visszakövethetővé teszi a levezetést; implementációkban igen gyakori.</p>
 
-    <h3>Unifikációs morfológia (HuMor)</h3>
+    <h3>Szóalaktani alapséma  </h3>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=21m05s" target="_blank">▶ Előadás ezen a részen</a></p>
 
-    <h4>A szóalak szerkezete</h4>
-    <p>Latin betűs, agglutináló nyelvekben (pl. magyarban) a szóalak szerkezete balról jobbra: <strong>tő – [nem-terminális toldalék(ok)] – terminális toldalék</strong>.</p>
+<img src="img/nyelvtech/szoalak.png" alt="Verem automaták" style="max-width:500px;width:60%;">
+
     <ul>
-        <li><strong>Tő (abszolút tő):</strong> mindig a szóalak elején áll; balról semmi sem előzheti meg. Önállóan is érvényes szó lehet (pl. <em>kutya</em>, <em>ül</em>).</li>
         <li><strong>Terminális toldalék:</strong> a szóalak legvégén áll; utána semmi sem következhet (pl. esetragok, finit igeragok). Abszolút toldalék — sohasem viselkedhet tőként.</li>
         <li><strong>Nem-terminális toldalék:</strong> köztes elem; <em>kettős arca</em> van: az előző elemhez toldalékként, a következőhöz tőként kapcsolódik (<strong>relatív toldalék / relatív tő</strong>). Pl. a múlt idő jele: <em>ül-t-em</em> — a <em>-t</em> az <em>ül</em>-höz toldalék, de az <em>-em</em>-hez tőként viszonyul.</li>
     </ul>
 
-    <h4>A HuMor rendszer</h4>
+    <h3>Unifikációs morfológia (HuMor = <em>High-speed Unification Morphology</em> )  </h3>
     <div class="definicio">
-        <strong>HuMor</strong> (<em>High-speed Unification Morphology</em>) — a 90-es évek elején bevezetett unifikációs morfológiai rendszer. A neve eredetileg <em>Hungarian Morphology</em>-ból ered, de más nyelvekre is alkalmazható (orosz, török stb.), ezért a <em>Hu</em> a <em>High-speed Unification</em> rövidítésévé vált.
+       A <strong>HuMor</strong>  lényege, hogy <strong>minden nyelvi tulajdonság egy jegy</strong>. A morfológiai elemzés nem string-manipuláció (nem „lépj vissza két betűt, vágj egyet"), hanem: a szóalak tő- és toldalékrészeit felismerjük a szótár segítségével, és mindkettőhöz <strong>jegy–érték párokat</strong> rendelünk. Ezután megnézzük, hogy a tő és a toldalék jegyei <strong>unifikálhatók-e</strong> — ha igen, a szóalak grammatikus. A HuMor tehát nem más, mint <strong>unifikálhatósági relációk működtetése</strong> morfológiai jegyszerkezeteken.
     </div>
-    <p>Működési elv: minden morfológiai tulajdonság egy <strong>jegy</strong>. Az elemzés során:</p>
+    <p>Működési elv — példa: <em>házban</em> vs. <em>*főnökban</em></p>
     <ol>
-        <li>A szóalakot szegmentáljuk: megkeressük a lehetséges tő + toldalék(ok) felbontásait.</li>
-        <li>A tőhöz és minden toldalékhoz egy jegy-érték párokat tartalmazó mini-DAG tartozik a szótárból.</li>
-        <li>A jobboldali elem (relatív toldalék) megmondja, milyen jegyeket vár el a baloldali elemtől (relatív tőtől).</li>
-        <li>Az összeillesztést unifikálhatósági relációval ellenőrizzük: ha sikeres, a szóalak grammatikus; eredménye a teljes morfológiai leírás.</li>
+        <li>A szóalakot szegmentáljuk: megkeressük a lehetséges tő + toldalék(ok) felbontásait.
+            <br><span class="note">→ <em>ház</em> + <em>-ban</em> &nbsp;|&nbsp; <em>főnök</em> + <em>-ban</em></span>
+        </li>
+        <li>A tőhöz és minden toldalékhoz jegy–érték párok tartoznak a szótárból.
+            <br><span class="note">→ <em>ház</em>: [NÉVSZÓ +, MÉLYHANGRENDŰ +, …] &nbsp;|&nbsp; <em>főnök</em>: [NÉVSZÓ +, MÉLYHANGRENDŰ −, …]
+            <br>→ <em>-ban</em>: elvárja [NÉVSZÓ +, MÉLYHANGRENDŰ +]</span>
+        </li>
+        <li>A jobboldali elem (relatív toldalék) megmondja, milyen jegyeket vár el a baloldali elemtől (relatív tőtől).
+            <br><span class="note">→ <em>-ban</em> elvárja: MÉLYHANGRENDŰ +</span>
+        </li>
+        <li>Az összeillesztést unifikálhatósági relációval ellenőrizzük: összeillik-e a tő és a toldalék?
+            <br><span class="note">→ <em>ház</em> [MÉLYHANGRENDŰ +] ∪ <em>-ban</em> [MÉLYHANGRENDŰ +] = ✓ → <em>házban</em>
+            <br>→ <em>főnök</em> [MÉLYHANGRENDŰ −] ∪ <em>-ban</em> [MÉLYHANGRENDŰ +] = <strong>fail!</strong> → <em>*főnökban</em> helytelen, a helyes: <em>főnökben</em></span>
+        </li>
     </ol>
-    <p>Így a string-szintű összehasonlítás helyett jegyrendszeren végzett unifikáció dönti el, hogy egy szóalak érvényes-e. A HuMor ma is számos helyesírási program morfológiai motorja.</p>
+    <p>Így a literális alak (betűsorozat) elveszti jelentőségét — az számít, hogy a jegyszerkezetek összeillenek-e. A HuMor ma is számos helyesírási program morfológiai motorja.</p>
 
     <h4>Bináris jegyrendszer (magyar névszókra)</h4>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=35m37s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>A HuMor a hagyományos kategóriacímkék helyett hierarchikus, bináris (+/−) kérdések sorozatával osztályozza a szótöveket és toldalékokat. Néhány kulcskérdés magyar névszókra:</p>
     <ul>
         <li><strong>1. Névszó-e?</strong> (+ = névszó; − = ige)</li>
-        <li><strong>2. Főnév-e?</strong> (csak ha 1. = +; − = melléknév/számnév)</li>
-        <li><strong>3. Szótári alapalak?</strong> (pl. <em>kutya</em>: +; <em>bag-</em> allomorf: −)</li>
+        <li><strong>2. Főnév-e?</strong> (csak ha névszó) &nbsp;+&nbsp;= főnév (pl. <em>ház, kutya</em>); &nbsp;−&nbsp;= melléknév/számnév (pl. <em>nagy, három</em>)</li>
+        <li><strong>3. Szótári alapalak?</strong> (pl. <em>kutya</em>: +; <em>bagj-</em> (bagoj))</li>
         <li><strong>4. Hátulképzett (mélyhangrendű)?</strong> (<em>ház, bot</em>: +; <em>kecske, főnök</em>: −)</li>
-        <li><strong>5. Ajakerekítéses?</strong> (csak ha 4. = −; <em>főnök</em>: +; <em>gyerek</em>: −) → meghatározza: <em>-hez/-höz</em>, <em>-et/-öt</em> stb.</li>
-        <li><strong>6. Van-e többes száma?</strong> (pl. <em>gázművek</em>: −)</li>
+        <li><strong>5. Ajakerekítéses?</strong> (csak ha elöl képzett) &nbsp;+&nbsp;= <em>főnök</em> (<em>-höz, -öt</em>); &nbsp;−&nbsp;= <em>gyerek</em> (<em>-hez, -et</em>)</li>
+        <li><strong>6. Van-e többes száma?</strong> (pl. <em>gázművek</em>: −  , mert ő maga a többesszám)</li>
         <li><strong>7. Kötőhang a többes számban?</strong> (<em>autók</em>: −; <em>házak</em>: +)</li>
         <li><strong>8. Van-e datívusza?</strong> (<em>hó</em>: +; <em>hav-</em> allomorf: −)</li>
-        <li><strong>9. Van-e tárgyesete? / Kötőhang a tárgyesetben?</strong></li>
-        <li><em>… és további szempontok (instrumentális, képzők stb.)</em></li>
+        <li><strong>....</strong></li>
     </ul>
-    <p>n darab bináris jegy elvileg 2ⁿ kombinációt engedne meg, de a valódi nyelvi adatok messze nem töltik ki az összes lehetséges kombinációt. A „kivételek" mindössze ritka jegykonstellációjú szavak — a rendszer egységesen kezeli őket.</p>
+    <p>Bármennyi szabályt felvehetünk és ennek az n darab bináris jegy  2ⁿ kombinációt engedne meg, de a valódi nyelvi adatok messze nem töltik ki az összes lehetséges kombinációt. A „kivételek" mindössze ritka jegykonstellációjú szavak — a rendszer egységesen kezeli őket.  <br><br> Példa : </p>
+<img src="img/nyelvtech/bin_fos.png" alt="Verem automaták" style="max-width:500px;width:60%;">
+
+<br><br>
 
     <h4>Guesser — ismeretlen szavak kezelése</h4>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h04m54s" target="_blank">▶ Előadás ezen a részen</a></p>

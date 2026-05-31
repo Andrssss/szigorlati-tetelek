@@ -126,11 +126,24 @@ h3 {
     color: #2b4de6;
 }
 
+a[href*="youtube"] {
+    color: #888;
+    font-size: 9pt;
+}
+
 h4 {
     font-size: 11pt;
     font-weight: bold;
     margin-top: 12px;
     margin-bottom: 6px;
+    color: #2b4de6;
+    padding-left: 14px;
+    position: relative;
+}
+h4::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
 }
 
 p { margin-bottom: 10px; text-align: justify; }
