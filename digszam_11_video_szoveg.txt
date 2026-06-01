@@ -1,0 +1,73 @@
+pontosztály és így tovább.
+0:1212 secondsAz, hogy egy grábban van-e kör, az is világos módon egy
+0:1818 secondspolinomidő. Arra ez a probléma is benne van a P-ben. Miért ismerjük az ALR tételt?
+0:2626 secondsami azt mondja ki, hogy grábban pontosan akkor vanerkől, hogyha minden pontnak a foka páros. Hát fölírjuk a csúc gráfnak
+0:3535 secondsa csúcstáját, fölírjuk, hogy mik a fogszámok.
+0:4141 secondsMindegyik f pont fok a páros. Akkor van a gráfbaner kenkező esetben nincs.
+0:4949 secondsEzt is villámyorsan ellenúrizni tudjuk.
+0:5151 secondsTehát el tud dönteni polinomidőben, egy gráfban van-e kör. Na az, hogy egy gráf egy számá-e
+1:001 minutevagy nem? Tehát hogyha kapunk egy egy 40 jegyű számot, ugye elég nehéznek tűnik annak az eldöntése, hogy ez a szám
+1:091 minute, 9 secondsprimám-e vagy nem. Hát mondhatnánk azt az algoritmust, hogy a gyökéig megnézzük, hogy
+1:181 minute, 18 secondshogy van-e osztója, de hogyha van egy van egy 10-es alapú számrendszerben akár már egy
+1:261 minute, 26 seconds40 jegyű számom, ugye, akkor meg kell nézni az összes legfeljebb 20 jegyű számot
+1:331 minute, 33 secondsennek az algoritmusnak, ebben az algoritmusban, ami ugye 10 a 20-on külön különböző
+1:421 minute, 42 secondsesetvizsgálatot jelentene, vagy osztást, ez már rengeteg, tehát ez nem jó, ez nem egy hatékony algoritmus. És nagyon
+1:501 minute, 50 secondssokáig nyitott kérdés volt, hogy annak az eldöntése, hogy egy szám-e vagy nem,
+1:571 minute, 57 secondsaz benne van-e a P-ben, vagy nincs. Egy 20 évvel, 19 évvel ezelőtt bizonyítottál
+2:042 minutes, 4 secondsbe azt, hogy hogy el lehet dönteni egy számba hatékonyan, hogy primáme-e vagy nem.
+2:142 minutes, 14 secondsViszont annak ellenére, hogy el tudjuk dönteni, hogy egy számra primá-e vagy nem, ha az derül neki a számra, hogy ő nem
+2:222 minutes, 22 secondsprimám, az osztóit polinomidőben nem feltétlenül tudjuk megtalálni. Tehát ha kapunk egy
+2:312 minutes, 31 seconds1000erjegyű számot, akkor nagyon nehéz őt a vagy egyelőre nem ismeretes olyan polinomidei
+2:382 minutes, 38 secondsalgoritmust, ami ezt a számot a print tényezőire tudná bontani, ugye? És ezen alapszik a a az
+2:482 minutes, 48 secondsRSA kód, de eldönteni, el lehet dönteni, hogy primám egy szám vagy nem.
+2:592 minutes, 59 secondsEgyelőre nem sikerült polinomiális algoritmust találni arra, hogy van-e egy grábban Hamilton kör vagy nincs. Ugye a
+3:083 minutes, 8 secondsHamilton kör az egy olyan kör egy grábbal, amelyik átmegy az összes csúcson.
+3:133 minutes, 13 secondsÉs az sem világos, hogy létezik-e polinomidő algoritmus
+3:213 minutes, 21 secondsannak az eldöntésére, hogy egy gráfnak a csúcsai kiszínezhető-e három színnel a vagy jól színezhetők három színnel.
+3:313 minutes, 31 secondsTehát azt jelenti, hogy úgy szeretnénk három színnel kiszínezni a gráf csúcsait, hogy két, hogy bármely él, különböző végpontjai,
+3:393 minutes, 39 secondskülönböző színt kapjanak. Na, ennek az eldöntésére sincs egyelőre polinomiális algoritmus,
+3:473 minutes, 47 secondsés nem is világos, hogy valaha lesz-e ez a PNP
+3:553 minutes, 55 secondsprobléma körhöz tartozik, hogy ennek az eldöntése.
+4:034 minutes, 3 secondsJó.
+4:064 minutes, 6 secondsNa most említettem itt itt most egyelőre csak determinisztikus tyingépekről beszélünk. Azt, hogy milyen tuning
+4:144 minutes, 14 secondsgépet, milyen determinisztikus tyingépet használunk a p osztály definiálásában. Az gyakor
+4:224 minutes, 22 secondstehát gyakorlatilag a P invariáns, a különböző tuning
+4:294 minutes, 29 secondstyingép variációkra nézve. Ugye beláttuk azt, vagy könnyű belátni azt a tételt,
+4:364 minutes, 36 secondshogy egy kszallagos csuringép az mindig szimulálható egy egyszalagos csuringéppel
+4:434 minutes, 43 secondslegfeljebb négyzetes időben, az eredeti futás idejének a négyzetes idejében,
+4:504 minutes, 50 secondsilletve nem sokkal nagyobb tárban is. Tehát
+4:584 minutes, 58 secondsha egy kszallagos csuringéppel meg tudunk oldani egy problémát mn tárban, akkor
+5:075 minutes, 7 secondsegy kicsivel nagyobb tárban, tehát egy pluszes tag segítségével meg tudunk oldani, hogy
+5:165 minutes, 16 secondsekkora tárban egy egy szalagos csüingéppel és egy problémát.
+5:225 minutes, 22 secondsIgen, vettük a tár időtételt. Ugye az világos, hogyha egy probléma megoldható
+5:315 minutes, 31 secondsegy t mondjuk egy egy TN időben, akkor
+5:395 minutes, 39 secondsmegoldható TN tárban is, hiszen TN idő alatt nem tudunk több tárat teleírni, mint TNET. A kérdés
+5:495 minutes, 49 secondsaz az volt, hogy fordítva igaz-e, tehát tudunk-e időkorlátot adni
+5:565 minutes, 56 secondsa tárkorlát függvényében? Tehát a kérdés az az, hogyha tudjuk, hogy egy probléma megoldható SN tárban,
+6:046 minutes, 4 secondsakkor adható-e időklát arra nézve, hogy milyen időben oltható-e ez a probléma.
+6:116 minutes, 11 secondsEz egyáltalán nem triviális kérdés, hiszen ebben elképzelhető, hogy nagyon pici, egészen pici tárban tárat használunk, de nagyon sokáig fut a gép.
+6:256 minutes, 25 secondsA válasz az, hogy adható ez a táridőtétel.
+6:306 minutes, 30 secondsA tétel az úgy szól, hogyha L az megoldható esen tárban, eldönthető esen
+6:366 minutes, 36 secondstárban, akkor ennek az en függvénynek egy exponenciális függvényéyi idejében is megoldható az a probléma.
+6:476 minutes, 47 secondsEzt beláttuk.
+6:526 minutes, 52 secondsJó, bevezettük a nyelvosztály komplementerének a fogalmát. Ha L egy nyelv, azt akkor a KL azon nyelvekből
+7:017 minutes, 1 secondáll, amiknek a komplementere benne van az L-ben.
+7:077 minutes, 7 secondsUgye beláttuk azt, hogy a time TN az egyenlő a cotime tn-nel.
+7:157 minutes, 15 secondsUgye ez triviális és a spaceen az egyenő a cospace-nel.
+7:277 minutes, 27 secondsMég néhány nevezetes nyelvosztály. Az exp time az az Unió Time 2 az Nadikon,
+7:357 minutes, 35 secondsazaz az expenciális időben felismerhető nyelvek osztálya.
+7:427 minutes, 42 secondsÉs mi a Ppace? A PPA az a polinom tárban megoldható vagy felismerhető nyelveknek az osztálya. Az space az unió k nagyobb egyenő 1-re. Space N a k adik.
+7:587 minutes, 58 secondsAz világos, hogyha P, hogy a Pne van a pacebben és a PPA az része az ex timeak.
+8:068 minutes, 6 secondsEz miért igaz?
+8:098 minutes, 9 secondsHa valamit meg tudunk oldani polinomidőben, azt meg tudjuk oldani polinomtárban.
+8:148 minutes, 14 secondsMiért? Mert nem tudunk polinomidőben legfeljebb polinom tárnyi cellát tudunk elírni.
+8:228 minutes, 22 secondsÉs miért igaz-e ez a tartalmazás? A psace része expenak a táridőtétel miatt igaz.
+8:348 minutes, 34 secondsJó, tehát ez így, ez így igaz.
+8:428 minutes, 42 secondsJó, elnézést, itt valami történik a gépemmel.
+8:508 minutes, 50 secondsLátom, hogy lefagyott. Látják még az ablakot? Halló? Látják még a diát?
+9:049 minutes, 4 secondsIgen, látszik. Aha. Nem tudok mit csinálni.
+9:159 minutes, 15 secondsNem tudják, hogy ilyenkor a jó megoldás.
+
+
+
+https://www.youtube.com/watch?v=zLK0RrBdpXQ
