@@ -9,13 +9,13 @@
 
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            background: #f4f6f9;
+            background: #888;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            color: #222;
+            color: #eee;
         }
 
         h1 {
@@ -26,24 +26,25 @@
         }
 
         .subtitle {
-            color: #666;
-            margin-bottom: 48px;
+            color: #888;
+            margin-bottom: 24px;
             font-size: 1rem;
             text-align: center;
         }
 
         .cards {
             display: flex;
-            gap: 28px;
+            gap: 16px;
             flex-wrap: wrap;
             justify-content: center;
-            margin-bottom: 60px;
+            margin-bottom: 32px;
         }
 
         .card {
-            background: #fff;
+            background: #1e1e1e;
             border-radius: 14px;
-            box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+            border: 1px solid #333;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.5);
             padding: 36px 40px;
             width: 260px;
             display: flex;
@@ -57,7 +58,8 @@
 
         .card:hover {
             transform: translateY(-4px);
-            box-shadow: 0 6px 28px rgba(0,0,0,0.15);
+            border-color: #555;
+            box-shadow: 0 6px 28px rgba(255,255,255,0.08);
         }
 
         .card.todo {
@@ -80,7 +82,7 @@
 
         .card p {
             font-size: 0.85rem;
-            color: #777;
+            color: #999;
             text-align: center;
             line-height: 1.4;
         }
@@ -103,16 +105,16 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: #fff;
-            border-top: 1px solid #e0e0e0;
+            background: #0a0a0a;
+            border-top: 1px solid #222;
             padding: 12px 24px;
             text-align: center;
             font-size: 0.8rem;
-            color: #999;
+            color: #666;
         }
 
         footer a {
-            color: #555;
+            color: #aaa;
             text-decoration: none;
             font-weight: 600;
         }
@@ -123,16 +125,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 10px;
-            margin-bottom: 80px;
+            gap: 6px;
+            margin-bottom: 28px;
         }
 
         .video-section h3 {
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #aaa;
-            margin-bottom: 4px;
+            color: #fff;
+            margin-bottom: 2px;
         }
 
         .video-links {
@@ -156,21 +158,32 @@
             display: inline-flex;
             align-items: center;
             gap: 7px;
-            background: #fff;
-            border: 1.5px solid #dde;
+            background: #1e1e1e;
+            border: 1.5px solid #444;
             border-radius: 10px;
             padding: 10px 20px;
             font-size: 0.88rem;
             font-weight: 600;
-            color: #333;
+            color: #eee;
             text-decoration: none;
-            box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+            box-shadow: 0 1px 6px rgba(0,0,0,0.3);
             transition: background 0.15s, transform 0.15s;
         }
 
         .video-link:hover {
-            background: #f0f4ff;
+            background: #2a2a2a;
+            border-color: #666;
             transform: translateY(-2px);
+        }
+
+        .quiz-link {
+            background: #1e1e1e;
+            border-color: #444;
+            color: #eee;
+        }
+        .quiz-link:hover {
+            background: #2a2a2a;
+            border-color: #666;
         }
     </style>
 </head>
@@ -198,6 +211,14 @@
         <div class="video-links">
             <a class="video-link" href="https://www.youtube.com/playlist?list=PLvLI66ieiidjpdd-yGGrjAHYG24L4HiYY" target="_blank">🖥️ Digszám videók</a>
             <a class="video-link" href="https://www.youtube.com/playlist?list=PLvLI66ieiidhOULovlk35bwn9Dz6LGVFC" target="_blank">🔤 Nyelvtech videók</a>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <h3>🎯 Kvíz</h3>
+        <div class="video-links">
+            <a class="video-link quiz-link" href="quiz.html?subject=digszam">🖥️ Digszám kvíz</a>
+            <a class="video-link quiz-link" href="quiz.html?subject=nyelvtech">🔤 Nyelvtech kvíz</a>
         </div>
     </div>
 

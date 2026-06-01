@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kvíz – Szigorlati felkészítő</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #888;
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .quiz-wrap {
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .back-btn {
+        background: rgba(255,255,255,0.15);
+        color: #fff;
+        border: 1px solid rgba(255,255,255,0.3);
+        padding: 8px 16px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: background 0.2s;
+    }
+    .back-btn:hover { background: rgba(255,255,255,0.3); }
+    h1 { font-size: 1.5rem; text-align: center; margin-bottom: 4px; }
+    .subtitle { text-align: center; opacity: 0.85; font-size: 0.95rem; margin-bottom: 20px; }
+
+    .card {
+        background: #fff;
+        color: #1a1a2e;
+        border-radius: 16px;
+        padding: 26px 26px 30px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+
+    /* Progress / score */
+    .meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 14px;
+    }
+    .score-badge { font-weight: 600; color: #111; }
+    .progress-track {
+        height: 8px;
+        background: #e6e9f0;
+        border-radius: 999px;
+        overflow: hidden;
+        margin-bottom: 18px;
+    }
+    .progress-fill {
+        height: 100%;
+        background: #222;
+        width: 0%;
+        transition: width 0.35s ease;
+    }
+    .topic-tag {
+        display: inline-block;
+        font-size: 0.75rem;
+        background: #f0f0f0;
+        color: #111;
+        padding: 4px 10px;
+        border-radius: 999px;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+    .question {
+        font-size: 1.18rem;
+        font-weight: 600;
+        line-height: 1.45;
+        margin-bottom: 20px;
+    }
+    .options { display: flex; flex-direction: column; gap: 12px; }
+    .option {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        text-align: left;
+        width: 100%;
+        padding: 14px 16px;
+        border: 2px solid #e0e4ee;
+        border-radius: 12px;
+        background: #fff;
+        color: #1a1a2e;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.15s;
+        font-family: inherit;
+    }
+    .option:hover:not(:disabled) { border-color: #111; background: #f5f5f5; }
+    .option:disabled { cursor: default; }
+    .option .letter {
+        flex-shrink: 0;
+        width: 28px; height: 28px;
+        border-radius: 50%;
+        background: #e8e8e8;
+        color: #111;
+        display: flex; align-items: center; justify-content: center;
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+    .option.correct { border-color: #22c55e; background: #f0fdf4; }
+    .option.correct .letter { background: #22c55e; color: #fff; }
+    .option.wrong { border-color: #ef4444; background: #fef2f2; }
+    .option.wrong .letter { background: #ef4444; color: #fff; }
+
+    .next-row { margin-top: 22px; text-align: right; min-height: 48px; }
+    .next-btn {
+        background: #111;
+        color: #fff;
+        border: none;
+        padding: 12px 28px;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s, transform 0.1s;
+        font-family: inherit;
+    }
+    .next-btn:hover { background: #333; }
+    .next-btn:active { transform: scale(0.97); }
+
+    /* End screen */
+    .end { text-align: center; padding: 10px 0; }
+    .end .emoji { font-size: 4rem; margin-bottom: 10px; }
+    .end h2 { font-size: 1.6rem; margin-bottom: 8px; color: #1a1a2e; }
+    .end .final-score {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #111;
+        margin: 10px 0;
+    }
+    .end .pct { color: #555; margin-bottom: 24px; }
+    .end-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+    /* Start screen */
+    .subject-choice { display: flex; flex-direction: column; gap: 14px; margin-top: 10px; }
+    .subject-btn {
+        display: flex; align-items: center; gap: 14px;
+        padding: 18px 20px;
+        border: 2px solid #e0e4ee;
+        border-radius: 14px;
+        background: #fff;
+        color: #1a1a2e;
+        cursor: pointer;
+        font-size: 1.1rem;
+        font-weight: 600;
+        transition: all 0.15s;
+        font-family: inherit;
+    }
+    .subject-btn:hover { border-color: #111; background: #f5f5f5; transform: translateY(-2px); }
+    .subject-btn .ic { font-size: 1.8rem; }
+
+    #confetti {
+        position: fixed; inset: 0;
+        width: 100%; height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+    }
+    @media (max-width: 600px) {
+        h1 { font-size: 1.25rem; }
+        .card { padding: 20px 16px 24px; }
+        .question { font-size: 1.05rem; }
+    }
+</style>
+</head>
+<body>
+<canvas id="confetti"></canvas>
+
+<div class="quiz-wrap">
+    <div class="top-bar">
+        <a href="index.html" class="back-btn">← Vissza</a>
+        <div></div>
+    </div>
+    <h1 id="quizTitle">Kvíz</h1>
+    <p class="subtitle" id="quizSubtitle"></p>
+
+    <div class="card" id="card"><!-- dynamic --></div>
+</div>
+
+<script src="quiz-questions.js"></script>
+<script>
+/* ---------- segédfüggvények ---------- */
+function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+function getParam(name) {
+    return new URLSearchParams(window.location.search).get(name);
+}
+
+/* ---------- állapot ---------- */
+let state = { subject: null, questions: [], index: 0, score: 0, answered: false };
+
+const card = document.getElementById('card');
+const titleEl = document.getElementById('quizTitle');
+const subtitleEl = document.getElementById('quizSubtitle');
+const LETTERS = ['A', 'B', 'C', 'D'];
+
+/* ---------- kör felépítése: tételenként 3 random kérdés ---------- */
+function buildRound(subjectKey) {
+    const data = QUIZ_DATA[subjectKey];
+    let pool = [];
+    data.topics.forEach(topic => {
+        const picked = shuffle(topic.questions).slice(0, 3); // 3x annyi kérdés mint tétel
+        picked.forEach(qObj => {
+            // válaszok keverése, helyes index követése
+            const correctText = qObj.a[qObj.correct];
+            const opts = shuffle(qObj.a);
+            pool.push({
+                topic: topic.name,
+                q: qObj.q,
+                opts: opts,
+                correct: opts.indexOf(correctText)
+            });
+        });
+    });
+    return shuffle(pool); // teljes lista random sorrendben
+}
+
+/* ---------- indítás ---------- */
+function startSubject(subjectKey) {
+    state.subject = subjectKey;
+    state.questions = buildRound(subjectKey);
+    state.index = 0;
+    state.score = 0;
+    state.answered = false;
+    const data = QUIZ_DATA[subjectKey];
+    titleEl.textContent = data.icon + ' ' + data.title;
+    subtitleEl.textContent = 'Kvíz – ' + state.questions.length + ' kérdés';
+    renderQuestion();
+}
+
+function renderStart() {
+    titleEl.textContent = '🎯 Válassz témát';
+    subtitleEl.textContent = 'Minden körben tételenként 3 véletlen kérdés';
+    card.innerHTML = `
+        <div class="subject-choice">
+            <button class="subject-btn" onclick="startSubject('digszam')">
+                <span class="ic">🖥️</span> A Digitális Számítás Elmélete
+            </button>
+            <button class="subject-btn" onclick="startSubject('nyelvtech')">
+                <span class="ic">🔤</span> Nyelvtechnológia alapjai
+            </button>
+        </div>`;
+}
+
+/* ---------- kérdés megjelenítése ---------- */
+function renderQuestion() {
+    state.answered = false;
+    const total = state.questions.length;
+    const cur = state.questions[state.index];
+    const pct = Math.round((state.index / total) * 100);
+
+    card.innerHTML = `
+        <div class="meta">
+            <span>${state.index + 1} / ${total}</span>
+            <span class="score-badge">Pont: ${state.score}</span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div>
+        <span class="topic-tag">${cur.topic}</span>
+        <div class="question">${cur.q}</div>
+        <div class="options" id="options"></div>
+        <div class="next-row" id="nextRow"></div>`;
+
+    const optWrap = document.getElementById('options');
+    cur.opts.forEach((text, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'option';
+        btn.innerHTML = `<span class="letter">${LETTERS[i]}</span><span>${text}</span>`;
+        btn.onclick = () => selectAnswer(i, btn);
+        optWrap.appendChild(btn);
+    });
+}
+
+/* ---------- válasz kezelése ---------- */
+function selectAnswer(i, btn) {
+    if (state.answered) return;
+    state.answered = true;
+    const cur = state.questions[state.index];
+    const buttons = document.querySelectorAll('.option');
+    buttons.forEach(b => b.disabled = true);
+
+    buttons[cur.correct].classList.add('correct');
+    if (i === cur.correct) {
+        state.score++;
+        fireConfetti();
+    } else {
+        btn.classList.add('wrong');
+    }
+    // pont frissítése
+    document.querySelector('.score-badge').textContent = 'Pont: ' + state.score;
+
+    const nextRow = document.getElementById('nextRow');
+    const isLast = state.index === state.questions.length - 1;
+    const nb = document.createElement('button');
+    nb.className = 'next-btn';
+    nb.textContent = isLast ? 'Eredmény →' : 'Következő →';
+    nb.onclick = () => {
+        if (isLast) { renderEnd(); }
+        else { state.index++; renderQuestion(); }
+    };
+    nextRow.appendChild(nb);
+}
+
+/* ---------- záróképernyő ---------- */
+function renderEnd() {
+    const total = state.questions.length;
+    const pct = Math.round((state.score / total) * 100);
+    let emoji = '😅', msg = 'Még gyakorolj!';
+    if (pct >= 90) { emoji = '🏆'; msg = 'Kiváló! Szigorlat-kész!'; }
+    else if (pct >= 75) { emoji = '🎉'; msg = 'Szép munka!'; }
+    else if (pct >= 50) { emoji = '👍'; msg = 'Jó alap, csiszolj rajta!'; }
+
+    if (pct >= 75) setTimeout(fireConfetti, 100);
+
+    card.innerHTML = `
+        <div class="end">
+            <div class="emoji">${emoji}</div>
+            <h2>${msg}</h2>
+            <div class="final-score">${state.score} / ${total}</div>
+            <div class="pct">${pct}% helyes válasz</div>
+            <div class="end-actions">
+                <button class="next-btn" onclick="startSubject('${state.subject}')">🔄 Új kör</button>
+                <button class="next-btn" style="background:#64748b" onclick="renderStart()">Téma váltás</button>
+            </div>
+        </div>`;
+}
+
+/* ===================================================================
+   KONFETTI – canvas alapú, külső könyvtár nélkül
+   =================================================================== */
+const confettiCanvas = document.getElementById('confetti');
+const cctx = confettiCanvas.getContext('2d');
+let confettiPieces = [];
+let confettiRAF = null;
+
+function resizeCanvas() {
+    confettiCanvas.width = window.innerWidth;
+    confettiCanvas.height = window.innerHeight;
+}
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+
+function fireConfetti() {
+    const colors = ['#fff', '#eee', '#22c55e', '#f59e0b', '#ef4444', '#a855f7', '#ec4899'];
+    for (let i = 0; i < 120; i++) {
+        confettiPieces.push({
+            x: Math.random() * confettiCanvas.width,
+            y: -20 - Math.random() * confettiCanvas.height * 0.3,
+            w: 6 + Math.random() * 6,
+            h: 8 + Math.random() * 8,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            vx: -3 + Math.random() * 6,
+            vy: 3 + Math.random() * 4,
+            rot: Math.random() * Math.PI,
+            vr: -0.2 + Math.random() * 0.4,
+            life: 0
+        });
+    }
+    if (!confettiRAF) confettiLoop();
+}
+
+function confettiLoop() {
+    cctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+    confettiPieces.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.05; // gravitáció
+        p.rot += p.vr;
+        p.life++;
+        cctx.save();
+        cctx.translate(p.x, p.y);
+        cctx.rotate(p.rot);
+        cctx.fillStyle = p.color;
+        cctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+        cctx.restore();
+    });
+    confettiPieces = confettiPieces.filter(p => p.y < confettiCanvas.height + 30);
+    if (confettiPieces.length > 0) {
+        confettiRAF = requestAnimationFrame(confettiLoop);
+    } else {
+        cctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+        confettiRAF = null;
+    }
+}
+
+/* ---------- belépés ---------- */
+(function init() {
+    const sub = getParam('subject');
+    if (sub && QUIZ_DATA[sub]) { startSubject(sub); }
+    else { renderStart(); }
+})();
+</script>
+</body>
+</html>

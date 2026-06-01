@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<a class="back-btn" href="index.html">← Főmenü</a>
+<a class="back-btn" href="index.html">← Vissza</a>
 
 <!-- COVER PAGE -->
 <div class="page">
@@ -938,6 +938,22 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
             </li>
         </ul>
 
+        <h4>Pontosság és fedés</h4>
+        <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=10m50s" target="_blank">▶ Előadás ezen a részen</a></p>
+        <p>A szövegszinkronizáció eredményét — mint minden nyelvtechnológiai feladatét — két egymásnak feszülő szempontból lehet mérni:</p>
+        <ul>
+            <li><strong>Pontosság (precision):</strong> az összerendelt mondatpárok közül hány a valóban helyes megfeleltetés? — <em>Amink van, az tényleg jó-e?</em></li>
+            <li><strong>Fedés (recall / teljesség):</strong> az összes lehetséges helyes párból hányat sikerült megtalálni? — <em>Mindent megtaláltunk-e?</em></li>
+        </ul>
+        <p>A kettő egymással <strong>ellentétes irányban mozog</strong>:</p>
+        <ul>
+            <li>Ha <strong>teljes szinkronizációra</strong> törekszünk (mindennek legyen párja) → magas fedés, de a rendszer néha téved, pontossága csökken. Erre a <em>hosszalapú</em> módszer tipikus példa.</li>
+            <li>Ha <strong>részleges szinkronizációt</strong> csinálunk (csak a biztosan helyes párokat adjuk meg) → közel 100%-os pontosság, de a szöveg nagy része lefedetlen marad. Erre a <em>horgonyalapú</em> módszer tipikus példa: a horgonyok (URL, szám, tulajdonnév) szinte mindig pontosak, de egy hosszabb szövegben csak néhány ilyen akad.</li>
+        </ul>
+        <div class="definicio">
+            <strong>Összefoglalva:</strong> a <em>pontosság</em> a részlegességgel, a <em>fedés</em> (teljesség) a relatív pontatlansággal jár együtt. A <strong>hibrid módszer</strong> pontosan ezt az ellentétet hidalja át: a horgonyok biztosítják a magas pontosságot, a hosszalapú komponens pedig kitölti a hézagokat, és biztosítja a teljes fedést.
+        </div>
+
 
 
 
@@ -969,20 +985,27 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     <h3>Fordítómemóriák (Translation Memory, TM)</h3>
     <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=16m47s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
-        A <strong>fordítómemória ≠ gépi fordítás</strong>. A TM korábbi emberi fordítások forrás–cél szegmenspárjait tárolja, és új mondat fordításakor a hasonló korábbi szegmenseket ajánlja fel a fordítónak.
+        A <strong>fordítómemória ≠ gépi fordítás</strong>. A TM korábbi emberi fordítások forrás–cél szegmenspárjait tárolja, és új mondat fordításakor a hasonló korábbi szegmenseket ajánlja fel a fordítónak. Fő haszna:
+        <ul style="margin-top:6px;">
+            <li><strong>Konzisztencia:</strong> nagy projekteknél mindenki ugyanazokat a fordulatokat és terminológiát használja — amit egyszer lefordítottak, azt a többi fordító már csak átveszi.</li>
+            <li><strong>Hatékonyság &amp; költségcsökkentés:</strong> ismétlődő mondatoknál elegendő jóváhagyni a javaslatot; a fordítóiroda csak az új szegmenseket számolja fel.</li>
+            <li><strong>Csapatmunka:</strong> több fordító párhuzamosan dolgozhat közös TM-en és terminológia-adatbázison.</li>
+            <li><strong>Előkalkuláció:</strong> a TM előre meg tudja becsülni, mekkora részét lehet memóriából fedezni, így a fordítás ára és ideje tervezhető.</li>
+        </ul>
     </div>
     <ul>
         <li><strong>Szegmens:</strong> általában egy mondat — forrás- és célnyelvi változatban együtt tárolva.</li>
-        <li><strong>Fuzzy match:</strong> a kulcs normalizálva (kis/nagybetű, írásjelek, számok kicserélése placeholderre), így a hasonló mondatokra is illeszkedik.</li>
+        <li><strong>Fuzzy match:</strong> minden TM-mondathoz numerikus <em>fuzzy kulcsot</em> generálnak (általában trigram-alapú) és indexfájlban tárolják. Kereséskor kiszámítják a lekérdező mondat fuzzy-indexét, és a <strong>legkisebb távolságú</strong> indexbeli mondat lesz a találat — egy megengedett maximális „fuzzyságon" belül. A normalizálás (kisbetűsítés, nem-alfabetikus karakterek eltávolítása) a kompakt tárolást szolgálja.</li>
         <li><strong>Előfordítás (pre-translation):</strong> új szöveg automatikus végigfuttatása a TM-en — 100%-os egyezések kész fordítást kapnak.</li>
         <li><strong>Terminológiakezelés:</strong> rögzített szakszótár, amely a fordítás során automatikusan felajánlódik.</li>
-        <li>Szabványok: <strong>TMX</strong> (memóriacsere), <strong>SRX</strong> (mondatszegmentálási szabályok), <strong>XLIFF</strong> (fordítandó dokumentum-csere).</li>
     </ul>
-    <p>Vezető termékek:</p>
+    <h4>Szabványok</h4>
     <ul>
-        <li><strong>Trados</strong> (ma SDL Trados): hagyományosan Word-be ágyazva működött.</li>
-        <li><strong>MemoQ</strong>: önálló editorral; magyar fejlesztés, a <em>Kilgray</em> cégtől (Kis + Lengyel + Ugrai alapítók nevéből).</li>
+        <li><strong>TMX</strong> (Translation Memory eXchange) – XML-alapú formátum TM-ek eszközök közötti cseréjére (aktuális verzió: 1.4b). Két szint: <em>Translation Unit</em> (<code>&lt;tu&gt;</code>) és <em>Segment</em> (<code>&lt;seg&gt;</code>). 1. szint: sima szöveg (szoftverüzenetekhez elég); 2. szint: Content Markup (formázott dokumentumokhoz). Lehetővé teszi az eredeti forrás- és céldokumentum visszaállítását.</li>
+        <li><strong>SRX</strong> (Segmentation Rules eXchange) – kiegészíti a TMX-et: azokat a szegmentálási szabályokat rögzíti, amelyekkel a TM-et eredetileg felépítették, így a kicserélt memória-adat másik eszközben is ugyanolyan hatékonyan hasznosítható.</li>
+        <li><strong>XLIFF</strong> (XML Localization Interchange File Format) – egyetlen egységes XML-csereformátum lokalizációs feladatokhoz; bármely lokalizációs szolgáltató fel tudja dolgozni. Az iparban ez a preferált XML-alapú adatátadási mód.</li>
     </ul>
+
 
 
 
