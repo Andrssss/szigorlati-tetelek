@@ -1,3 +1,482 @@
+gen. Tehát az is világos, hogy a spaceen az egyenlő a cospace-nel. Ezt is beláttuk.
+1:421 minute, 42 secondsIgen. Tehát itt ezt a tartalmazást, azt ezt előbb mondtam el.
+1:501 minute, 50 secondsÉs ugye az exp time, hát ugye ami exponenci időben megoldható, ugye hát ez már egy óriási idő, de azért még mindig
+2:002 minutesezek még valódi részét képezik a rekurzív nyelvek osztályában. Tehát
+2:062 minutes, 6 secondsvan olyan probléma, amit nem tudunk megoldani még. Még nem lehet megoldani exponenciális időkorláttal sem,
+2:162 minutes, 16 secondsde azért eldönthető. Tehát valódi része az exp time, a rekurzív nyelveknek az osztálya. Az, hogy benne van az ex time
+2:232 minutes, 23 secondsa rekurzív nyelveknek az osztálya. Mi a rekurzív nyelvek osztálya?
+2:282 minutes, 28 secondsAzok nyelvek, amik eldönthetők a ting géppel, ugye? Tehát ha kapunk egy
+2:352 minutes, 35 secondsolyan inputot, ami a nyelvnek eleme, akkor megáll és elfogadja. Ha egy olyan stringet kapunk, ami a nyelvnek nem eleme, akkor megáll és elutasítja.
+2:442 minutes, 44 secondsAz X time Time azért ennél többet tud, tehát azt is tudjuk, hogy egy exponenciális időkorláttal megáll és elfogadja.
+2:522 minutes, 52 secondsUgye ugyan hatalmas, ugye tudjuk, hogy az a a
+2:592 minutes, 59 secondsaz exponenciális robbanás az az egy tehát nagyon gyorsan tart a végtelen ez az exponenciális függvény. Ennek
+3:073 minutes, 7 secondsellenére még vannak olyan problémák, amiket ugyan nem tudunk eldönteni
+3:133 minutes, 13 secondsexponenciális időben, de de rekurzívak.
+3:233 minutes, 23 secondsJó.
+3:253 minutes, 25 secondsÉs akkor most rátérünk az
+3:323 minutes, 32 secondsMP nyelvosztály tanulmányozására.
+4:164 minutes, 16 secondsIgen. Tehát a mai órán az MP nyelvosztályt fogjuk tanulmányozni.
+4:244 minutes, 24 secondsUgye említettem, hogy hogy a P =-e az NP-vel vagy nem, az egy
+4:324 minutes, 32 secondsaz egy nagyon nehéz probléma, vagy nehéznek tűnő probléma.
+4:384 minutes, 38 seconds2000 körül volt egy, vagy illetve 2000 előtt a CLintézet hét millene problémát tűzött ki.
+4:484 minutes, 48 secondsMindegyiknek a megoldására 1 millió dollárt ajánlott.
+4:554 minutes, 55 secondsA P egyenlő-e az MP-vel, vagy nem egyenlő az MP-vel problémára is többek között? Tehát ez egyike annak a hét
+5:035 minutes, 3 secondsproblémának, amikre ki van tűzve ez a pénzdíj. Tehát pénzdíjon túl ez egy nagyon
+5:135 minutes, 13 secondsfontos kérdés, hogy egyenlő-e az MP vagy nem a P-vel.
+5:195 minutes, 19 secondsAz MP nyelvosztályt egy kicsit úgy kell érteni, tehát mi is ez az M PM MP dilemma?
+5:275 minutes, 27 secondsUgye mi a P? A P az az nyelvosztály, amit polinomidőben, azon problémáknak az osztály, amiket polinom időben el tudunk dönteni.
+5:415 minutes, 41 secondsMost a polinomidő említettem, az gyakorlatilag azt jelenti, hogy hogy úgy épkézláb fut, tehát tudunk rá olyan épkézláb futásny idő futás idejű algoritmust csinálni.
+5:545 minutes, 54 secondsA kérdés az az, hogy hogy egy problémának a megoldása
+6:026 minutes, 2 secondsés az ellenőrizhetősége időkorláton belül az annak a bonyolultsága megegyezik-e vagy nem.
+6:126 minutes, 12 secondsTehát a következőre gondolok, az MP nyelvosztály az tulajdonképpen egy olyan
+6:196 minutes, 19 secondsnyelvosztály, amihez van polinomiális időben ellenőrizhető tanú. Mit értek ezalatt?
+6:306 minutes, 30 secondsTegyük föl, hogy ez egy ilyen úgy kell elképzelni, mint mint egy ilyen Arthur Merlin játékot.
+6:416 minutes, 41 secondsArthur nak Arthur egy ilyen egy értelmes ember, de polinomiális idejű agya van. Tehát
+6:506 minutes, 50 secondsúgy úgy általában azt tudja megcsinálni, amit az átlagemberek.
+6:546 minutes, 54 secondsMerlin azonnal látja bárminek a megoldását.
+7:007 minutesViszont Arthur nem bízik Merlinben, mert mert Merlin gyakran csal.
+7:077 minutes, 7 secondsTehát a következő játék zajlik le közöttük. Mondjuk, hogy Arthur nak van egy 1000erj jegyű száma.
+7:177 minutes, 17 secondsMegkérdezi Merlintől, hogy ez a szám primám-e vagy nem. Amit Merlin rávágja, hogy ez a szám nem primám,
+7:277 minutes, 27 secondsakkor azok a problémák vannak benne az MP-ben, amiket
+7:347 minutes, 34 secondsakkor úgy, hogy Merlin meg tudja győzni Artur polinom időben az igazáról, arról,
+7:417 minutes, 41 secondshogy ő ő nem füllentett. Tehát konkrétan ebben az esetben hogyan tudná meggyőzni Artur
+7:507 minutes, 50 secondsMerlin, hogy egy szám valóban nem primám, tehát hogy nem hazudott?
+7:597 minutes, 59 secondsEz egy kérdés az osztályhoz.
+8:068 minutes, 6 secondsMutat egy osztót hozzá. mutat egy osztót. Ha már mutatott egy osztót, akkor Arthur elosztja az osztóval. Hát
+8:158 minutes, 15 secondsha nem keletkezik maradék, akkor ez valóban egy osztó is, és akkor a szám az valóban nem prim. Tehát ha már megvan az
+8:258 minutes, 25 secondsosztó, ha már Merlin megmutatta az osztót Arturnak, akkor Artur ellenőrizni tudja, hogy igazat mondott-e Merlin vagy nem. Tehát ez a tanú.
+8:388 minutes, 38 secondsTehát az MP-t úgy kell elképzelni. Tehát az a kérdés, hogy egy egy
+8:458 minutes, 45 secondsugye világos, hogyha már megvan a megoldás, tehát tehát sokkal nehezebb megtalálni
+8:538 minutes, 53 secondsegy megoldást, mint ellenőrizni egy egy lehetséges megoldássa, vagy megá
+9:019 minutes, 1 secondmegoldássa, vagy nem. A kérdés, a nagy kérdés az, hogy hogy igazából elképzelhető, hogy
+9:089 minutes, 8 secondsugyanolyan nehéz ellenőrizni, mint rátalálni a megoldásra. Tehát ez a PMP problémakör dilemma.
+9:189 minutes, 18 secondsTehát ugye a P =enő lenne az MP-vel, akkor nem lenne szükség Merlinre. Az azt jelentené, hogy
+9:279 minutes, 27 secondsa hogyha adott egy megoldás jelölt, ennek erről leőrizni, hogy megoldása vagy nem,
+9:369 minutes, 36 secondsaz gyakorlatilag ugyanolyan időben meg tudjuk csinálni, mint ahogy megoldjuk a problémát.
+9:459 minutes, 45 secondsIgen. Tehát ez a ez a PNP problémakör. majd ezeket precízen látjuk nemsokára.
+9:549 minutes, 54 secondsNa most az MP nyelvosztályon belül vannak az MP teljes problémák.
+10:0010 minutesEnnek a precíz definíciója majd következik. Az MP teljes problémák lényegében azok a problémák, amik valamilyen módon nagyon nagyon nehezek.
+10:1310 minutes, 13 secondsTehát még az NP-n belül is, még az MP-n belül is ilyen ne nagyon
+10:2010 minutes, 20 secondsnehezen megoldható problémák. Mit értek ezatt, hogy nehezen megoldhatók? Ha egy darab ilyen problémát meg tudnánk oldani
+10:2910 minutes, 29 secondspolinomidőben, akkor ezt subrutinként használva az
+10:3510 minutes, 35 secondsösszes mpbeli problémát meg tudnánk oldani polinomidőben.
+10:4110 minutes, 41 secondsJó, tehát ezek az úgynevezett MP teljes problémák, de ezeknek a definícióját majd majd
+10:5110 minutes, 51 secondsmindjárt vesszük. Tehát ugye most áttérünk ahhoz, hogy definiáljuk az MP-t, most áttérünk a nemeterminisztikus tuningépekre.
+11:0111 minutes, 1 secondTehát miben különbözik a nem determinisztikus tuningép, a determinisztikus tyingép. Hát az, hogy a gép az meg tudja sokszorozni magát.
+11:1211 minutes, 12 secondsTehát az átmenet függvény ugye attól függe, hogy milyen állapotban
+11:1811 minutes, 18 secondsvagyunk és éppen mi van a a fej alatt a cellán, át tudunk menni sok különböző
+11:2611 minutes, 26 secondsállapotba, át tudjuk írni sok különbözőféleképpen a cella tartalmát, illetve jobbra vagy balra is tudunk különbözőképpen lépegetni.
+11:3811 minutes, 38 secondsegy nemerisztikus csuringép működését egy fa írja le.
+11:4311 minutes, 43 secondsNa most persze, hogyha a gép meg tudja sokszorozni magát mindig, akkor elképzeld, hogy az egyik
+11:5111 minutes, 51 secondságon elfogadja az inputot, a nem determisztikus tuningép, egy másik ágon nem fogadja el a ting, gép, nem
+11:5911 minutes, 59 secondsdetermisztikus ting, gép, a az adott stringet lehet, hogy egy harmadik ágonetleg végtelen ciklusba
+12:0812 minutes, 8 secondskerül, mikor mondjuk azt, hogy elfogad egy adott stringet, termisztikus tuning gép, ha létezik
+12:1512 minutes, 15 secondsegy olyan ág, amin a tingép elfogadó állapotba kerül. Jó, tehát ha már egy
+12:2212 minutes, 22 secondságon elfogadó állapotba kerülünk, akkor elfogadjuk azt a stringet.
+12:2912 minutes, 29 secondsEgy tehát ez az, ahogy egy nemerminisztikus csuringép el tud ágazni, vagy elágazik, megsokszorozza minden lépésben magát.
+12:4112 minutes, 41 secondsÉs hát ugye egy adott számítási útvonalt egy meg tudunk címkézni. Tehát például itt a 213
+12:5112 minutes, 51 secondscímke, itt a 2 és itt a harmadikákban lévő számítási útvonalat reprezentálja.
+13:0313 minutes, 3 secondsLáttuk, hogy a nem, ha eltekintünk az időkorláttal, tehát minden nem determinisztikus tyingéphez van vele ekvivalens determinisztikus tuningép.
+13:1413 minutes, 14 secondsEz láttuk.
+13:1913 minutes, 19 secondsMi egy nemeterminisztikus tuning gép időkorlátja?
+13:2313 minutes, 23 secondsLegyen t egy olyan függvény, amelyikre a tn nagyobb = n minden-re. Tehát megint csak el akarjuk olvasni az inputot.
+13:3113 minutes, 31 secondsLegalább annyi időt akaradunk a gépnek, hogy el tudja olvasni az inputot.
+13:3713 minutes, 37 secondsAzt mondjuk, hogy az M determinisztikus tuning gép, tn időkorlátos, ha az Nosszú bemenvek esetén minden számítási út
+13:4513 minutes, 45 secondsmentén legfeljebb TN lépést megtéve megáll.
+13:5113 minutes, 51 secondsAz n hosszúbb emeletek esetén, azazosszú bemeletek esetén legfelbb TN + 1 mély a
+13:5813 minutes, 58 secondsszámítási fa. Hát, hogyha visszamegyünk erre a képre, vagy erre az ábrára, akkor ugye egy adott inputra egy fa
+14:0814 minutes, 8 secondsreprezentálja a számítási útvonalat.
+14:1414 minutes, 14 secondsTehát megnézzük a de különböző inputokra esetleg különböző f reprezentálhatja a
+14:2114 minutes, 21 secondsszámítási útvonalat. Tehát itt ugye, hogyha az n hosszú inputokon
+14:2914 minutes, 29 secondsvan, hogyha ezek mondjuk bináris inputok, elképzelhető, hogy két kettő az
+14:3614 minutes, 36 secondsnedeniken darab különböző a különböző inputokra. Ugye kettő az nedeniken darab különböző input van, kettő az nedeniken
+14:4514 minutes, 45 secondskülönböző fa fogja reprezentálni a különböző számítási útvonalakat.
+14:5314 minutes, 53 secondsÉs ezek közül a legmélyebb fát fogjuk venni. Tehát két helyen maximalizáljuk.
+15:0015 minutesEgyrészt tehát vesszük vesszük az összes inputon a lehető
+15:0715 minutes, 7 secondslegmélyebb számítási útvonalakat és ezen legmélyebb számítási útvonal
+15:1415 minutes, 14 secondsmaximumát vesszük. Akkor mondjuk azt, hogy t időkorlátos egying, egy nem determinisztikus tuning gép. hogyha ez a
+15:2315 minutes, 23 secondskétszeresen vett maximum lényegében ez legfeljebb tjen. Világos az, amit
+15:3015 minutes, 30 secondselmondtam most, ez egy fontos vagy vagy ezt jól meg kell érteni.
+15:4415 minutes, 44 secondsHalló? Ugye két max a determinisztikus tuning gépek esetén csak egy helyen kellett maximumot venni. Itt most
+15:5115 minutes, 51 secondsvesszük az összes lehetséges inputot, és az összes lehetséges inputon még
+15:5815 minutes, 58 secondsráadásul vesszük az összes lehetséges mélységet ezeken és azt mondjuk, hogyha ez a
+16:0616 minutes, 6 secondsmaximum ez legfelebb tjenne, akkor t időkorlátos a a nem determinisztikus csuringépünk.
+16:1516 minutes, 15 secondsVilágos-e ez a fogalom?
+16:1916 minutes, 19 secondsHalló? Egy visszajelzést szeretnék kérni, mert nem látom önöket. És
+16:3416 minutes, 34 secondsHelló, helló.
+16:4216 minutes, 42 secondsÉrthető, érthető. Jó.
+16:4916 minutes, 49 secondsdefiniáljuk, mint a nem determinisztikusing gépek esetén az nime tnnet.
+16:5616 minutes, 56 secondsazok a azok a nyelvek, amik felismerhetők ordó ten, időkorlátos, nem
+17:0317 minutes, 3 secondsdeterminisztikus tuning gépe. Tehát amikor, hogyha itt van az N, akkor a nemeterminisztikus
+17:1217 minutes, 12 secondstyingépekkel tn időkorlátban fölismerhető nyelvekről beszélünk.
+17:2317 minutes, 23 secondsÉs hát itt van az híres MP nyelvosztálynak a definíciója.
+17:2817 minutes, 28 secondsAz NP az unió kyabb = NY n a k adik,
+17:3717 minutes, 37 secondsazaz polinom időben egy szagos nem determinisztikus tyingépe eldönthető nyelveknek az osztálya.
+17:4517 minutes, 45 secondsJó, tehát ez a ez az end time tér
+17:5417 minutes, 54 secondsnagyon fontos, hogy tehát ez egy buktató jellegű dolog, hogyha valaki azt mondja az NP-re, hogy
+18:0318 minutes, 3 secondspolinom időben, hogy nem polinom időben felismerhető nyelveknek azt, ez nem jó.
+18:1018 minutes, 10 secondsTehát ez egy ez egy ha valaki ezt válaszolja, az az egy az egy nagyon
+18:1618 minutes, 16 secondsrossz válasz. És egy ilyen válasz az igen tehát ez egy buktató jellegű dolog.
+18:2318 minutes, 23 secondsAz MP az a polinomi nemerisztikus tuningépekkel felismerhető nyelveknek az
+18:3018 minutes, 30 secondsosztálya. Jó, ezt ezt nagyon szépen kérem, hogy ez ez legyen tiszta.
+18:3818 minutes, 38 secondsTermészetesen a P az benne van az MP-ben. Miért? Hát ugye a nem determinisztikus csuringépek
+18:4818 minutes, 48 secondsazok ugye legalább annyit tudnak, mint a determinisztikus csuringépek, hiszen el tudnak ágazni, de nem muszáj nekik
+18:5618 minutes, 56 secondselágazni. Tehát ugye amit nem determisztikus polinom időben ki tudunk számolni, azt nem
+19:0419 minutes, 4 secondsdeterminisztikus polinóban is ki tudunk számolni. Tehát time az n a káadikon az része az n time enn a kodikonnak.
+19:1319 minutes, 13 secondsÉs az előbb említettem nem tudjuk egyelőre, hogy a pódi része-e az MP-nek, vagy egyenlőre az MP-vel.
+19:2319 minutes, 23 secondsEz egy nyitott kérdés. És ha valaki megoldja, ezért a dicsőségen kívül még 1 millió dollár is jár.
+19:3719 minutes, 37 secondsNéhány egyszerű tétel, tehát ez a tehát a P része MP vagy a P = MP-vel ez a ez a
+19:4619 minutes, 46 secondshíres PNP probléma. Ugye ez egy nagyon fontos kérdés. Még egyszer, tehát ugye a hét legfontosabb vagy legnehezebb
+19:5519 minutes, 55 secondsezredfordulóbeli probléma közé választották be ezt a kérdést.
+20:0620 minutes, 6 secondsAzt könnyű belátni, hogy a P része az MPZ KMP-nek. Miért? Hát a P az persze
+20:1320 minutes, 13 secondsrésze az MP-nek, de a P ugye egyenlő a KP-vel is.
+20:2120 minutes, 21 secondsTehát akkor a P az benne van a KMP. A KP az része a KMP-nek, de akkor a P is része a KMP-nek.
+20:3120 minutes, 31 secondsEbből következik, hogy a P az része az MPZ KMP-vel.
+20:3620 minutes, 36 secondsJó. Akkor most tartsunk egy szünetet, és akkor folytatjuk neyed óramba. Köszönöm szépen.
+36:0736 minutes, 7 secondsHalló! Hallanak?
+36:1636 minutes, 16 secondsAkkor köszönöm szépen. Akkor folytassuk.
+36:2536 minutes, 25 secondsvezettük az NP nyelvosztát.
+36:2836 minutes, 28 secondsÉs akkor most ezt az Arthur Merlin játékot fogjuk körbejárni egy picit precízen,
+36:3636 minutes, 36 secondshogy mit is jelent az, hogy polomiálisan bizonyítható egy probléma.
+36:4336 minutes, 43 secondsAz MPV tartozás megmutatása bizonyítékkal.
+36:5036 minutes, 50 secondsAz MP-t egyrészt úgy definiáltuk, mint a nemeterminisztikus polinomkorlátos nemeterminisztikus
+36:5736 minutes, 57 secondsgéppel megoldható problémák nyelvosztálya. Adunk egy másik definíciót is. Az MP-be tartozást meg
+37:0437 minutes, 4 secondstudjuk mutatni bizonyítékkal is. Tehát állítás, egy x szó benne van a nyelvben. Tehát
+37:1437 minutes, 14 secondsMervin azt mondja, hogy egy xzó az az ez egy nyelvbeli string,
+37:2137 minutes, 21 secondsés azt mondja, hogy y pedig a tanú, a bizonyíték. Milyennek kell lennie a
+37:3037 minutes, 30 secondstanunak? Hát a bizonyíték nem lehet hosszú, ugye, mert mert
+37:3837 minutes, 38 secondsmert mert Arthur nakak csak polinom ideje, illetve polinom tára is van,
+37:4537 minutes, 45 secondsés hatékonyan kell, hogy ellenőrizhető legyen.
+37:5037 minutes, 50 secondsÖ hát például ugye Merlin lovagjai és udvarhölgyei
+37:5737 minutes, 57 secondsa kérdés az az, hogy mondjuk van egy páros gráf, ugyanannyi pont van, tehát a hölgyeket reprezentálja az A pontosztály, az urakat a B pontosztály.
+38:0938 minutes, 9 secondsÉs van-e olyan házasítás, ahol mindenki összeházasodik valakivel, tehát létezik egy teljes párosítás.
+38:2038 minutes, 20 secondsArthur lovag és Udvar és Udvarölgyei megkérdezi Artur Merlintől, hogy hogy
+38:2938 minutes, 29 secondsvan egy párosítás, egy teljes párosítás egy párosgrádban.
+38:3338 minutes, 33 secondsMerlin azt mondja rá, hogy igen, hogyan tudná Merlin megmutatni az igazát?
+38:4238 minutes, 42 secondsHát megmutatja, hogy mi az a teljes párosítás.
+38:4638 minutes, 46 secondsmutat egy egy teljes párosítást abban a páros gráfban. Tehát megmondja azt, hogy X házasodjon Y-nal és így tovább.
+38:5738 minutes, 57 secondsArthurnak csak azt kell megnéznie, hogy ugye vannak-e élek
+39:0639 minutes, 6 secondsaz eredeti gráfban? Olyan élek, amik benne vannak a Merlin által mutatott párosításban? Érthető-e ez így? Nagyon
+39:1639 minutes, 16 secondsfontos, hogy ezt jól megértsék, mert ez szinte az egyik legfontosabb
+39:2239 minutes, 22 secondstanana rész, amit veszünk ebben a fél évben.
+39:3139 minutes, 31 secondsHalló? Érthető?
+39:3739 minutes, 37 secondsIgen, köszönöm szépen.
+39:4139 minutes, 41 secondsVagy vegyük azt, hogy van-e egy Hamilton kör egy gráfban.
+39:4639 minutes, 46 secondsMegkérdezi Arthur Merlint, hogy van-e Hamilton kör ebben az 1000 pontú gráfban.
+39:5339 minutes, 53 secondsUgye az 1000 pontnak 1000 faktoriális különböző sorrendje van. Aztán az 1000 faktoriális
+40:0040 minuteskülönböző sorrendjeet lehetetlen végignézni. Tehát az a olyan óriási szám, hogy
+40:1040 minutes, 10 secondshogy sokkal sokkal sokkal nagyobb, mint a mint az elemi részecskék száma az univerzumban.
+40:1940 minutes, 19 secondsMerlin azt mondja, hogy igen, hogyan tudná hatékonyan megmut meggyőzni Artur
+40:2740 minutes, 27 secondsellenőrizhetően meggyőzni, hogy van-e a van a van a hogy valóban van a gráfban Hamilton kör. megmutatja, azt mondja,
+40:3640 minutes, 36 secondshogy menjél az x1 pontból az x2-be, az x2-ből az x3-ba,
+40:4240 minutes, 42 secondsaz xn-ből az x1-be. Ugye Arthurnak mit kell végignéznie? Csak annyit kell végignéznie,
+40:5040 minutes, 50 secondsannyit kell megnéznie, hogy az ez valóban Hamilton köre.
+40:5640 minutes, 56 secondsTehát mit kell ellenőriznie? azt, hogy a Merlin által mutatott pontsorozatban
+41:0441 minutes, 4 secondsebben a sorrendben az xi és az xi + 1 között van-e él. Ha van él, és hát ha
+41:1241 minutes, 12 secondsfelsoroltuk a gráf ösedfban és felsoroltuk az összes pontot, akkor bizony ez egy Hamilton kör. Tehát
+41:2241 minutes, 22 secondsmost, hogyha nekem adnak n darab pontot, és csak annyit kell megnéznem, hogy az xi és az xi + 1 között van-e él az
+41:3141 minutes, 31 secondseredeti grább. Hát ezt villámgyorsan meg tudom nézni, ugye? Tehát mindegyik
+41:3741 minutes, 37 secondspontnak felírom a szomszédait, és hát megnézem, hogy a Hamilton kör vagy az adott körben, amit Merlin
+41:4641 minutes, 46 secondsmegnevezett, az xi és az xi + 1 között az eredeti grábban van-e csúcs. Világos?
+41:5541 minutes, 55 secondsTehát ellenőrizni Arthur tudja villámgyorsan, hogy Merlin hazudott-e vagy nem.
+42:0142 minutes, 1 secondmagától nem tudja megtalálni feltétlenül a Hamilton kört.
+42:0742 minutes, 7 secondsJó, érthető ez a érthető ez így? Halló?
+42:1842 minutes, 18 secondsRemélem, hogy minden világos.
+42:2242 minutes, 22 secondsMerlin, megint csak Arthur kap egy 10000 ponton egy gráfot.
+42:3042 minutes, 30 secondsAz a kérdés, hogy ez a gráf síkba rajzolható-e? Tehát lerajzolhatók-e úgy a lerajzolható-e úgy a gráf a
+42:3842 minutes, 38 secondssíkban, hogy hogy az élek nem metszik egymást?
+42:4642 minutes, 46 secondsUgye Merlin azt mondja, hogy igen, hogyan győzi erről meg Artur? Lerajzolja
+42:5342 minutes, 53 secondsa síkba. Lerajzolja a síkba ezt a gráfot. Arthurnak csak azt kell ellenőriznie, hogy semelyik két él nem metszi egymást.
+43:0443 minutes, 4 secondsHát ugye, hogyha n darab pontunk van, akkor legfeljebb n alatt a kettő darab
+43:1143 minutes, 11 secondsél van. Ugye ez polinom időben ellendőrizni tudja, hogy van-e metszéspont vagy nem. Illetve azt is,
+43:1843 minutes, 18 secondshogy az eredeti gráfot rajzolta-e síkba Merlin vagy nem. Tehát ami megvan az
+43:2543 minutes, 25 secondsegyik gráfban, a síkba rajzolt gráf, az ugyanaz, mintha neki absztrakt módon meg van adva mondjuk egy egy mátrixszal, hát
+43:3343 minutes, 33 secondsazt is ellenőrizni tudja, ugye? Tehát itt
+43:4343 minutes, 43 secondshogyha már van egy lerajzolt, síkba rajzolt gráf, akkor bizony Artur ellenőrizni tudja,
+43:5243 minutes, 52 secondshogy hogy ez a gráf síkba rajzolható-e.
+43:5643 minutes, 56 secondsJó, most ezt a fogalmat, a tanú fogalmát szeretnénk precízen definiálni.
+44:0744 minutes, 7 secondsLegyen el egy szigma feletti polinomiálisan szigma feletti nyelv. Azt mondjuk, hogy ez a nyelv polinomiálisan bizonyítható.
+44:1644 minutes, 16 secondsHa van olyan V algoritmus, hogy L azon VV szavakból állt,
+44:2644 minutes, 26 secondshogy VV elfogadja a VVC-t valamely szigma csillag feletti C-re, és V polinomidejű a VV hosszát illetően.
+44:3944 minutes, 39 secondsTehát ugye mit jelent ez? Itt a C lesz a tanú. A C lesz a tanú.
+44:4744 minutes, 47 secondsÉs a V algoritmusnak le kell futnia polinomidőben
+44:5344 minutes, 53 secondsa V hosszát tekintve. Ugye ez egyben azt is mondja, hogy a a tanunak rövidnek kell lennie, mert hogyha a C az túl
+45:0245 minutes, 2 secondshossz, akkor a V nem tud lefutni gyorsan, ez se tudja olvasni a C-t.
+45:0845 minutes, 8 secondsTehát vétnek vét V polinom idejű algoritmus kell, hogy legyen VV hosszát tekintve.
+45:1745 minutes, 17 secondsÉs akkor íme a tétel. Az MP pontosan azokat a nyelveket tartalmazza, amelyek polinomiálisan bizonyíthatóak.
+45:2645 minutes, 26 secondsÉrthető-e a polinomiális bizonyíthatóságnak a fogalma?
+45:4245 minutes, 42 secondsHalló?
+45:4645 minutes, 46 secondsAz osztálytól kérdezem, hogy a polinomiális bizonyíthatóság fogalma mennyire mennyire világos. Érthető.
+45:5645 minutes, 56 secondsÉrthető. Nagyon jó. Köszönöm.
+46:0246 minutes, 2 secondsNo hát tegyük föl, hogy ugye azt kell belátnunk, hogy MP pontosan azokat a nyelveket tartalmazzak, melyek
+46:0946 minutes, 9 secondspolinomiálisan bizonyíthatóak. Hát tegyük fel, hogy egy először belátjuk azt, hogyha egy nyelv polinomiálisan bizonyítható,
+46:1746 minutes, 17 secondsakkor akkor az benne van az MP-ben.
+46:2546 minutes, 25 secondsUgye miről van szó? Itt arról van szó, hogyha egy nyelv polinomiálisan bizonyítható,
+46:3346 minutes, 33 secondsakkor a tanunak a hossza az legfeljebb N a k adik lehet egy N hosszú bemenet esetén.
+46:4146 minutes, 41 secondsHát legeneráljuk az összes lehetséges a kádikon tanut, és
+46:5046 minutes, 50 secondsaz el és a az elágazásokkal reprezentáljuk a megfelelő
+46:5946 minutes, 59 secondslehetséges tanút. És akkor enn a kádikon nézségben meg fogjuk tudni oldani a nyelvet.
+47:0847 minutes, 8 secondsUgye? Tehát itt, hogyha végignézzük ezt a ezt a ezt a problémá, ugye egy
+47:1547 minutes, 15 secondsnemermisztikus tuning az egy ilyennak a működése egy fával reprezentálható.
+47:2447 minutes, 24 secondsTehát hogyha van egy polinomiális tanú, az azt jelenti, hogy itt azt mondja, hogy itt most menjél erre, menjél erre.
+47:3247 minutes, 32 secondsTehát kövesd ezt a számítási útvonalt.
+47:3547 minutes, 35 secondsTehát itt akkor, hogyha legeneráljuk az összes lehetséges tanut, akkor itt megkapjuk az összes lehetséges
+47:4347 minutes, 43 secondságat, ugye? Tehát akkor egy nemerminisztikus tyingépet kapunk, amelyiknek a mélysége
+47:5047 minutes, 50 secondslegfeljebb annyi, amennyi ugye a tanunak a hossza, a tanunak a hossza nem lehet több, mint enn a
+47:5947 minutes, 59 secondskadikon. Tehát megkaptunk egy olyan nem determinisztikus tuning gépet, ami az összes lehetséges tanot legenerálja, és
+48:0748 minutes, 7 secondsha van polinomiális tanú, akkor ez a tyingép fel fogja ismerni azt a nyelvet polinomidőben.
+48:1748 minutes, 17 secondsÉrthető ez a dolog? Tehát hogyha itt itt van egy olyan polinom, tehát hogyha ez polinomiális tanúval megoldható, akkor
+48:2548 minutes, 25 secondsugye azt mondja, hogy hát itt ágazzál erre, erre, erre és így tovább. De hát a mindegyik tanut lehet ő generálni itt az elágazási folyamattal.
+48:3848 minutes, 38 secondsJó, tehát akkor ez a része világos. Na, a másik dolog,
+48:4448 minutes, 44 secondshogyha hogyha egy probléma megoldható, talán itt az ábrán látható a formális
+48:5348 minutes, 53 secondsbizonyítás az megvan, de de itt egyszerűen lehet látni. Tehát ugye tegyük föl most a fordítottját,
+49:0249 minutes, 2 secondshogy egy nyelv az
+49:1149 minutes, 11 secondsaz felismerhető egy nemerminisztikus csuringéppel.
+49:1949 minutes, 19 secondsEz mit jelent?
+49:2149 minutes, 21 secondsEz mit jelent? Tehát tegyük föl, hogy egy szó benne van a nyelvben.
+49:2649 minutes, 26 secondsEz mit jelent? van egy olyan számítási útvonal, akkor
+49:3449 minutes, 34 secondsamelyik amelyik elfogadja ezt a szót, és ez a fa polinom mély,
+49:4349 minutes, 43 secondsugye mi lesz a tanú? Hát akkor adjuk meg itt azt a
+49:5049 minutes, 50 secondscímke sorozatot, amelyik az elfogadó útvonalat biztosítja.
+49:5649 minutes, 56 secondsEz polinom hosszú lesz. És hogyha itt megyünk végig, akkor ez a program, ez a nemágazó program most már polinomidőben.
+50:0850 minutes, 8 secondsTehát itt van a tanú, ez lesz a tanú.
+50:1150 minutes, 11 secondsTehát egy ilyen tanú segítségével már egy determinisztikus géppel, polinom időben meg tudom mondani, hogy a szó az valóban benne van a nyelvben, ugye?
+50:2450 minutes, 24 secondsTehát megsúgja nekem, hogy hogy melyik mely ágakon menjél.
+50:3250 minutes, 32 secondsVilágos ez így.
+50:4350 minutes, 43 secondsHalló, halló. Ez a bizonyítás világos. Nem
+50:5350 minutes, 53 secondsvilágos. bereng valami, vagy vagy
+51:0251 minutes, 2 secondsteljesen homályos. Tehát a tétel az, hogy az MT azokat a nyelveket tartalmazza, amelyek polinomiálisan bizonyíthatóak.
+51:1251 minutes, 12 secondsUgye először belátjuk azt, hogyha egy nyelv polinomiálisan bizonyítható, akkor benne van az MP-ben. Ha polinomiálisan
+51:1951 minutes, 19 secondsbizonyítható, akkor van hozzá ugye enn a Kadikon hosszú tanú legfeljebb.
+51:3151 minutes, 31 secondsRegeneráljuk az összes lehetséges tanút.
+51:3451 minutes, 34 secondsÉs az elágazó folyamattal reprezentáljuk mindegyik. Ezek mindegyikét, ugye, és akkor kapunk egy olyan nem
+51:4451 minutes, 44 secondsdeterminisztikus turing gépet, amely pont azt a nyelvet fogadja el, tehát a el lesz fogadva a szó.
+51:5251 minutes, 52 secondsUgye ez a egyik része a bizonyításnak.
+51:5851 minutes, 58 secondsA másik része tegyük föl, hogy benne van a nyelv az MP-ben, és tegyük föl, hogy egy szót
+52:0752 minutes, 7 secondsakkor ez mit jelent? Akkor van olyan nem determinisztikus tuning gép. Tegyük fel, hogy egy a egy szó az benne van a nyelvben.
+52:1652 minutes, 16 secondsAkkor hogyha ez a nyelv benne van az MP-ben, akkor van egy olyan polinom korlátos
+52:2352 minutes, 23 secondsnem determinisztikus tűép, amelyik elfogadja ezt a szót. Ez azt jelenti, hogy hogy az elágazási folyamatban az összes
+52:3252 minutes, 32 secondság az tehát a famélysége az legfeljebben a káadikon.
+52:3952 minutes, 39 secondsDe akkor adjuk meg az elfogadó útvonalat, és akkor ez egy polinomhosszú tanú lesz.
+52:4752 minutes, 47 secondsHa már valaki megsúgja, hogy menjél ebből a konfigurációból, ebből a konfigurációba,
+52:5452 minutes, 54 secondsebből a konfigurációból a következő konfigurációba, akkor az bizony már determinisztikusan
+53:0153 minutes, 1 secondmegoldható. Tehát itt a tanú az az lesz, hogy azt mondják, hogy menj menjél most ezen az ágon, aztán számoljál ezen az
+53:0953 minutes, 9 secondságon, tehán számoljál ezen az ágon, és így tovább. Jó, tehát ez ez van leírva
+53:1853 minutes, 18 secondsitt itt precízen, de nézzék meg a precíz bizonyítást, de a lényeg az, amit elmondtam ennen kapcsán.
+53:3153 minutes, 31 secondsÉrthető ez valamennyire legalább. Helló!
+53:4153 minutes, 41 secondsAzt hiszem ért jó. Azért nézzék meg precízen is.
+53:4953 minutes, 49 secondsJó, tehát akkor Igen, azért jó tudni néhány dolgot. Egy
+53:5853 minutes, 58 secondsMP-beli nyelv komplementere nem feltétlenül MPbeli.
+54:0454 minutes, 4 secondsEz a nem mindig MPbeli. Ez itt rossz megfogalmazás.
+54:0754 minutes, 7 secondsNem világos, hogy MP inkább az lett volna itt a jó megfogalmazás.
+54:1754 minutes, 17 secondsNa, Merlin lovagjai és udvarhölje adható-e tanú arra, hogy nincs teljes párosítás?
+54:2654 minutes, 26 secondsTehát arra, hogy van teljes párosítás, tehát van egy páros gráfunk. A kérdés az az, hogy van-e benne teljes párosítás.
+54:3454 minutes, 34 secondsUgye ha van benne, akkor a tanú az maga a párosítás lesz. Mi a helyzet,
+54:4254 minutes, 42 secondsha Merlin azt mondja, hogy ránéz erre a páros gráfra, és azt mondja, hogy ebben a gráfban nincs teljes párosítás, meg tudná-e győzni erről Artinomidőben?
+55:0655 minutes, 6 secondsTehát még egyszer kérdés, grában van-e teljes párosítás?
+55:1255 minutes, 12 secondsPáros grábban mondjuk válasz az, hogy igen. Merlin azt mondja Arthurnak, hogy igen.
+55:2155 minutes, 21 secondsArthur azt mondja, hogy bizonyítsd be.
+55:2355 minutes, 23 secondsMit fog csinálni Merlin? Megad egy teljes párosítást.
+55:2755 minutes, 27 secondsArthur leellenőrzi, készen vagyunk.
+55:3255 minutes, 32 secondsMi történik akkor, ha következő a helyzet, hogy megint csak adott egy páros gráfunk? Megkérdezi Artur
+55:4055 minutes, 40 secondsMerlintől, hogy van-e ebben teljes párosítás? Arthur Merlin azt mondja, hogy nincs.
+55:4955 minutes, 49 secondsMeg tudja-e győzni?
+55:5255 minutes, 52 secondspolinomidőben Artur Merlin arról, hogy ebben a páros
+55:5855 minutes, 58 secondsgráfban nincs párosítás, tehát adható-e a nincsre polinomiális tanú? Ez a kérdés.
+56:1656 minutes, 16 secondsAz első gondolat az az, hogy felsoroljuk az összes párosítást és megmutatjuk, hogy egyik sem teljes az túl sok.
+56:2756 minutes, 27 secondsAz a helyzet, hogy ez pont exponenciálisan sok lesz. Tehát nagyon-nagyon sok párosítás lehetséges.
+56:3456 minutes, 34 secondsEnnyi sajnos ennyi ideje nincs Arturnak. Nem ennyire nem ennyire gyors.
+56:4156 minutes, 41 secondsUgye itt a polinomiális az lényeges.
+56:4456 minutes, 44 secondsJa, hogy kőnik tétel. Nem kőnikétel. Kőnikétel lehet. Így van.
+56:5156 minutes, 51 secondsMondjuk a kőnikételt, de lehet a haltétel is.
+56:5556 minutes, 55 secondsArthur azért intelligens, tehát ért a matekhoz.
+56:5956 minutes, 59 secondsAzt mondja Merlin, hogy hogy nincs teljes párosítás. Hogyan győznél meg? Hát mondjuk a kőnik tétel azt mondja ki,
+57:0757 minutes, 7 secondshogy egy páros gráfban a független élek, a maximális párosítás mérete
+57:1457 minutes, 14 secondsaz megegyezik a minimális pontfedésnek a a
+57:2257 minutes, 22 secondsminimális pontfedéssel, ugye? Tehát hogyha egy gráfban, mondjuk egy n xzer n csúcsú páros gráfban pontosan akkor nincs teljes párosítás.
+57:3557 minutes, 35 secondsHa van olyan ponthalmaz, aminek a számossága kisebb, mint n,
+57:4157 minutes, 41 secondsés ezek a pontok lefogják az összesért, ugye? Tehát ha nincs párosítás, akkor
+57:5157 minutes, 51 secondsMerlin megad egy egy pontlefogást, aminek a mérete kisebb, mint
+58:0058 minutesha ez egy lefogó ponthalmaz, akkor meg tudja győzni Artur polinom időben, hogy
+58:0758 minutes, 7 secondshogy a grábban nincs párosítás. Ugye a polinom időben már könnyű ellenőrizni,
+58:1458 minutes, 14 secondshogy az a hogy az a azok a pontok azok minden élnek, legalább egy végpontját tartalmazzák-e, vagy nem?
+58:2558 minutes, 25 secondsNa, akkor azt, hogy gráfban van-e Hamilton kör?
+58:3258 minutes, 32 secondsEz a kérdés. Arthur megkérdezi Merlint. Merlin azt mondja, hogy van.
+58:3858 minutes, 38 secondsGyőzzél meg. megmutatja a Hamilton kört, meg tudja győzni Artut Polinom időben.
+58:4558 minutes, 45 secondsMi a helyzet akkor, hogyha azt mondja Merlin, hogy nincs a grábban Hamilton kör?
+58:5158 minutes, 51 secondsMeg tudja-e erről győzni Artur?
+58:5658 minutes, 56 secondsUgye nem világos, nem világos. Nem tudunk arról, hogy ilyen tanú adható-e vagy nem.
+59:0959 minutes, 9 secondsTehát igen, a gráf. Következő kérdés. Adott egy gráf
+59:1959 minutes, 19 secondssíkba rajzolható-e vagy nem? Arthur azt m Merlin azt mondja Arthurnak, hogy ez a gráf síkba rajzolható. Azt mondja Arthur
+59:2759 minutes, 27 secondsMerlinnek, győzzél meg. Mit csinál Merlin? Lerajzolja a síkban a grá a síkba a gráfot.
+59:3659 minutes, 36 secondsNagyon könnyű ellenőrizni, hogy sem kétél nemszi egymást, meg tudja győzni Artur Polinumidőben.
+59:4459 minutes, 44 secondsMi a helyzet akkor, hogyha a válasz az, hogy a gráf nem síkba rajzolható?
+59:5159 minutes, 51 secondsMeg tudja-e győzni Merlin Arthur erről? Ugye nem tudja megmutatni az összes síkba rajzolást,
+1:00:001 hourhogy egyik se jó, hiszen végtelen sokféleképpen lerajzolható egy gráfasíkban.
+1:00:061 hour, 6 secondsUgye egy, hanem egyszerűen arról van szó, illetve hát ig igen most
+1:00:161 hour, 16 secondsnem topológikusan nézem. Tehát hogyha egy gráf nem sikba rajzolható, arról is meg tud győzni Artur polinomi időben. Hogyan?
+1:00:291 hour, 29 secondsHát megmutatja. Ugye tanultuk a Kuratovski tételt, vagy tanulták a Kuratovski tételt, amelyik azt mondja
+1:00:361 hour, 36 secondski, hogy egy gráf akkor és csakis akkor síkba rajzolható, ha nincs benne
+1:00:441 hour, 44 secondsK5 vagy K33 topologikus invariánsa,
+1:00:501 hour, 50 secondsugye? Tehát hogyan győzné meg Arthur Art Merlin, hogy egy gráf nem síkba rajzolható.
+1:01:011 hour, 1 minute, 1 secondHát úgy, hogy megmutatná egy példányt a gráfból
+1:01:081 hour, 1 minute, 8 secondsK5 vagy a K3 valamely topikus invariánsára meg tudja mutatni.
+1:01:171 hour, 1 minute, 17 secondsPolinomidőben Artur már erről a gráfról ellenőrizni tudja azt, hogy hogy ott van-e az eredeti gráfban. Készen vagyunk.
+1:01:281 hour, 1 minute, 28 secondsNem ismert általában, hogy a KMP = MP-vel teljesül-e.
+1:01:371 hour, 1 minute, 37 secondsJó.
+1:01:401 hour, 1 minute, 40 secondsNa, most jön az MP teljesség. Tehát valahogy az MP-n belül vannak olyan problémák, amik nagyon nehezen
+1:01:471 hour, 1 minute, 47 secondsmegoldhatók. Ezek az úgynevezett MP teljes problémák.
+1:01:521 hour, 1 minute, 52 secondsEz ami ide van írva, nem a definíciója, mert valahogy ezt szokták mondani definíció.
+1:01:591 hour, 1 minute, 59 secondsEz csak egy jellemzés, ami itt van. Van.
+1:02:031 hour, 2 minutes, 3 secondsTehát egy LMP-beli nyelv MP teljes abból a feltételezésből, hogy LP-beli
+1:02:101 hour, 2 minutes, 10 secondskövetkezik az is, hogy az összes MP-beli nyelv P-beli az az NP az = a p-vel.
+1:02:181 hour, 2 minutes, 18 secondsEz egy ez hangsúlyozom, hogy nem ez a definíció, de valahogy ezek az MP-beli problémák, MP teljes problémák, ha már
+1:02:271 hour, 2 minutes, 27 secondsegy darab ilyet meg tudnánk oldani polinóidőben, akkor az összeset meg tudnánk oldani. És ebben az esetben, ha
+1:02:341 hour, 2 minutes, 34 secondsmár egy algoritmust adnánk egy ilyen problémára, ami gyorsan lefut, akkor megoldanánk a p egyenlő mp problémát pozitív irányba.
+1:02:471 hour, 2 minutes, 47 secondsTehát akkor már P = az MP-vel és bezsebelhetjük az 1 millió dollárt.
+1:02:551 hour, 2 minutes, 55 secondsTehát ilyen szempontból ugye elég az MPTs problémákat vizsgálni, ha azt hisszük, hogy a P
+1:03:021 hour, 3 minutes, 2 seconds= MP-vel, tehát elég egyszerűen problémára adni egy polinomideű algoritmust, egy darab problémára.
+1:03:101 hour, 3 minutes, 10 secondsÉs másrészt azért általában a közhiedelem az az, hogy a P az valódi része az MP-re.
+1:03:191 hour, 3 minutes, 19 secondsTehát igazából, hogy egy problémáról kiderül, hogy MP teljes akkor azért nem nagyon érdemes azon törni a fejünket,
+1:03:271 hour, 3 minutes, 27 secondshogy találjunk rá polinomideű algoritmust. Persze.
+1:03:361 hour, 3 minutes, 36 secondsHát aztán lehet, ki tudja, lehet, hogy találnak rá és belátják, hogy P egyenlően P-vel, de azért nem ez a közedelem.
+1:03:481 hour, 3 minutes, 48 secondsJó, most szeretnénk a precízen definiálni az MP teljességet.
+1:03:571 hour, 3 minutes, 57 secondsLegyen A és B két szigma csillag feletti nyelv. Azt mondjuk, hogy az A polinomidőben visszavezethető B-re,
+1:04:061 hour, 4 minutes, 6 secondshogyha létezik fma csillagot a szigma csillagba képező
+1:04:131 hour, 4 minutes, 13 secondspolinomidőben kiszámítható függvény, amelyik a nyelv szavait, az A-beli
+1:04:201 hour, 4 minutes, 20 secondsnyelvnek a szavait pontosan a B-beli nyelv szavaiba képezi és fordítva.
+1:04:281 hour, 4 minutes, 28 secondsTehát, hogyha VV az benne van az A-ban, pontosan akkor, hogyha az FV Bne van a
+1:04:341 hour, 4 minutes, 34 secondsB-ben. Ekkor mondjuk azt, hogy az A polinomiálisan visszavezethető B-re.
+1:04:441 hour, 4 minutes, 44 secondsÉs ezt így jelöljük.
+1:04:491 hour, 4 minutes, 49 secondsVan egy nagyon egyszerű tétel, hogyha az A polinomiálisan visszavezethető B-re és
+1:04:561 hour, 4 minutes, 56 secondsBne van a P-ben, akkor az A is benne van a P-ben. Miért? Tehát az A egy szaváról akarjuk eldönteni, hogy benne van-e a
+1:05:041 hour, 5 minutes, 4 secondsnyelvben. Egy stringerről el akarjuk dönteni, hogy benne van-e az A-ban vagy nem. Hogyan tudjuk ezt eldönteni? Hát vesszük azt a vevész stringet,
+1:05:131 hour, 5 minutes, 13 secondsképezzük az F vevét. Ezt polinomi időben meg tudjuk tenni. És utána mivel a B az
+1:05:201 hour, 5 minutes, 20 secondsbenne van a P-ben, erről az FV stringről polinomidőben el tudjuk dönteni, hogy benne van-e a B-ben vagy nem. De ez azt
+1:05:281 hour, 5 minutes, 28 secondsfv ez pontosan akkor lesz benne a B nyelvben, hogyha a VV benne van az A-ban. Tehát akkor a el tudnánk dönteni
+1:05:381 hour, 5 minutes, 38 secondspolinomidőben a VVéről, hogy benne van-e az A-ban vagy nem.
+1:05:441 hour, 5 minutes, 44 secondsUgye? Tehát ez ez világos. És akkor most következik
+1:05:511 hour, 5 minutes, 51 secondsegy nagyon fontos definíció. Azt mondjuk, hogy egy nyelv az MP teljes.
+1:06:001 hour, 6 minutesHa nagyon fontos, benne van az NP-ben, benne kell, hogy legyen az NP-ben.
+1:06:091 hour, 6 minutes, 9 secondsÉs tetszőleges MP-beli probléma polinomidőben visszavezethető erre a nyelvre.
+1:06:181 hour, 6 minutes, 18 secondsTehát még egyszer, egy nyelv az MP teljes egyrészt, hogyha benne van az MP-ben, és minden MP-beli probléma polinomidőben visszavezethető erre.
+1:06:311 hour, 6 minutes, 31 secondsJó. Érthető-e az MP teljességnek a definíciója?
+1:06:411 hour, 6 minutes, 41 secondsHelló!
+1:06:441 hour, 6 minutes, 44 secondsRemélem, hogy nem vesztettem még el a Érthető. Érthető. Tökéletes.
+1:06:521 hour, 6 minutes, 52 secondsNo, nevezetes MP teljes problémák. Hát az első kérdés az, hogy egyáltalán létezik-e MP teljes probléma. Mik azok a bull kifejezések?
+1:07:021 hour, 7 minutes, 2 secondsHát ugye vannak a vagyok és az és ugye ezek a a bullváltozók.
+1:07:101 hour, 7 minutes, 10 secondsÉs hogyha egy ilyen bull formula, egy ilyen bullformula, az vagy
+1:07:191 hour, 7 minutes, 19 secondsmegoldható, vagy nem. Tehát úgy, hogy van-e az xyz-nek és az összes változónak olyan
+1:07:261 hour, 7 minutes, 26 secondsértékadása, amire a kérdés az az, hogy amire ez a formula egyet fog adni. Tehát például ez
+1:07:331 hour, 7 minutes, 33 secondsa formula, hogyha az x-re azt mondjuk, hogy hogy nulla, az y-ra azt, hogy 1,
+1:07:411 hour, 7 minutes, 41 secondsakkor már itt a zárójelben, ami itt van, az egy lesz. És hogyha azt összevagyoljuk bármivel, akkor már egyet
+1:07:491 hour, 7 minutes, 49 secondsfogunk kapni. Tehát ez a formula, ez a konkrét formula, ez kievégíthető.
+1:07:551 hour, 7 minutes, 55 secondsTehát adhatók olyan xy z értékek, amikre az értéke egy lesz.
+1:08:011 hour, 8 minutes, 1 secondkérdés az az, hogy egy bullformula kielégíthető-e, vagy nem. Legyen a szatnyelv
+1:08:081 hour, 8 minutes, 8 secondsa kielégíthető bullkifejezéseknek a nyelve.
+1:08:121 hour, 8 minutes, 12 secondsAz első olyan nyelv, amire belátták, hogy hogy
+1:08:211 hour, 8 minutes, 21 secondsMP teljes az a szat. Tehát Kuk és Levin a 60-as évek vég 70-es évek elején belátták azt, hogy
+1:08:311 hour, 8 minutes, 31 secondshogy a szat az MP teljes. A bizonyítást nem réteszletezzük.
+1:08:391 hour, 8 minutes, 39 secondsMi a három szat? az ilyen háromtagú vagyokból összeállított és tehát az ilyen alakú
+1:08:471 hour, 8 minutes, 47 secondsburformulák az ilyen alakú kielégíthető bullformulák alkotják a háromszatot.
+1:08:571 hour, 8 minutes, 57 secondsEz is egy mpeljes probléma.
+1:09:001 hour, 9 minutesTehát az, hogyha látnak egy ilyen alakú bullformulát, az kielégíthető-e vagy nem, ez mpeljes.
+1:09:131 hour, 9 minutes, 13 secondsUgye az, hogy benne van az MP-ben, az világos, ugye? Tehát Artur a ugye Merlin
+1:09:221 hour, 9 minutes, 22 secondsazonnal látja, hogy ilyen bullformula kielégíthető-e, vagy nem. Azt mondja Arturnak, hogy az a bullformula kielégíthető.
+1:09:301 hour, 9 minutes, 30 secondshogyan győzi meg, megadja a megoldást, ugye? Tehát hogyha megvan a megoldás, ugye Arthur behelyettesíti,
+1:09:401 hour, 9 minutes, 40 secondsés ha ez megoldás, akkor egyet fog kapni. Mi tört? Azért rájönni a megoldásra nem világos, ugye, mert mert
+1:09:491 hour, 9 minutes, 49 secondsminden változónak az értéke lehet nulla vagy egy. Tehát hogyha van n darab változónk, az kettő az nikel különböző lehetőség. végigpróbálni nem tudjuk. Ha
+1:09:581 hour, 9 minutes, 58 secondsmár valaki megmondja, hogy ez egy megoldás, akkor ellenőrizni tudjuk, hogy az megoldása vagy nem. De
+1:10:071 hour, 10 minutes, 7 secondsde egyelőre nem világos, nem tudjuk megmondani magunktól
+1:10:141 hour, 10 minutes, 14 secondssegítség nélkül, hogy egy bullformula az kielégíthető-e vagy nem.
+1:10:221 hour, 10 minutes, 22 secondsÉs ugye tehát itt akkor most a SAT az polinom, tehát ugye az első MPTes probléma,
+1:10:301 hour, 10 minutes, 30 secondsamiről látták, hogy az MPTs, ez a nevezetes szat probléma. Szóval a három szat és mp teljes ezt úgy bizonyították
+1:10:381 hour, 10 minutes, 38 secondsbe, hogy a szatot polinómidőben visszavezették a három szatra. Na most ezek után ugye egy csomó problémáról
+1:10:481 hour, 10 minutes, 48 secondsbelátták, hogy MP teljes. Tehát van egy van egy könyv, ami Gary Johnson, Computers and Interctability.
+1:11:011 hour, 11 minutes, 1 secondEz ez ez már jó régen íródott szerintem. Egyen 30-40 éves a könyv.
+1:11:081 hour, 11 minutes, 8 secondsDe az egész könyv lényegében kizárólag MPTs problémákból áll, tehát több 100 problémáról van ott belátva,
+1:11:171 hour, 11 minutes, 17 secondshogy MPTS. És hát azóta is nagyon sok problémáról belátták, hogy MPTS. A technika az mind igaz, ugye, mint amit
+1:11:251 hour, 11 minutes, 25 secondsrekurzivitásnál is alkalmaztuk. Ha már van néhány MP teljes problémánk, akkor elég egy darab ilyet, ha egy problémáról
+1:11:351 hour, 11 minutes, 35 secondsazt gyanítjuk, hogy MPT teljes, elég kivenni egy darab már ismerten MPTs problémát, és visszavezetni arra, amiről
+1:11:441 hour, 11 minutes, 44 secondsazt hisszük, hogy MPTs polinomidőben, akkor az új problémáról is be lesz
+1:11:511 hour, 11 minutes, 51 secondslátva, hogy MP teljes, ugye? Tehát ez miért igaz? Hogyha egy probléma egy
+1:12:001 hour, 12 minutesBMP teljes, azt tudjuk, hogy és Bne van a polinomidejű algoritmust találunk rá, akkor az MP az = a p-vel.
+1:12:101 hour, 12 minutes, 10 secondsMiért? Mert ha B-t meg tudjuk oldani, mindent vissza tudunk vezetni B-re, hát akkor az MP-ből, hát akkor mindenre
+1:12:181 hour, 12 minutes, 18 secondsminden MP-beli problémára találtunk polinomidai algoritmust. Tehát akkor az MP az = P-vel.
+1:12:261 hour, 12 minutes, 26 secondsMost ez is a következő is egy fontos állítás, hogyha B az MP teljes és CP-beli
+1:12:351 hour, 12 minutes, 35 secondsés B visszavezethető polinomiálisan C-re, akkor C is MP teljes. Hát miért?
+1:12:451 hour, 12 minutes, 45 secondsHát hogyan tudnánk, tegyük föl, hogy meg tudnánk oldani polinomidőben C-t?
+1:12:521 hour, 12 minutes, 52 secondsHát akkor meg tudnánk oldani B-t is polinomidőben, amiről tudjuk, hogy MP teljes. Miért? Hát vesszünk egy polinomiális visszavezethetőség.
+1:13:021 hour, 13 minutes, 2 secondsVisszavezetjük B-t C-re, az adott függvényt kiszámítjuk, az injektív függvényt, megoldjuk C-t, de ezzel együtt megoldottuk B-t is polinomidőben.
+1:13:151 hour, 13 minutes, 15 secondsJó, világos ez eddig. Helló!
+1:13:291 hour, 13 minutes, 29 secondsTehát ugye itt most hogyha hogyha meg kell valamit oldanunk, tehát
+1:13:371 hour, 13 minutes, 37 secondsszeretnénk hatékonyan megoldani egy problémát egy algoritmussal, és nem tudunk hatékony algoritmust
+1:13:461 hour, 13 minutes, 46 secondsírni, akkor elképzelhető, hogy hogy ez a probléma MP teljes. Hogyan bizonyítjuk rá, hogy ez a probléma MP teljes?
+1:13:571 hour, 13 minutes, 57 secondsÚgyhogy belátjuk, hogy MPbeli és egy már ismerten MPTes problémát visszavezetünk erre a problémára.
+1:14:091 hour, 14 minutes, 9 secondsHa ez sikerül, akkor beláttuk az új problémáról, hogy MP teljes. És ez egyben bizonyítja azt, hogy nem mi vagyunk ügyetlenek,
+1:14:171 hour, 14 minutes, 17 secondshogy nem tudunk a problémára polinomide algoritmust adni. Az égvilágon senki nem tud egyelőre, ha kiderül róla valóban, hogy
+1:14:271 hour, 14 minutes, 27 secondsMP teljes, akkor nem létezik most jelen pillanatban olyan ember a világon, aki erre hatékony, vagyis polinom idejű algoritmust tudna adni.
+1:14:401 hour, 14 minutes, 40 secondsNéhány nevezetes MPS probléma például, hogy egy lefogó ponthalmaz, ha
+1:14:491 hour, 14 minutes, 49 secondsadott egy gráf, akkor ebben egy lefogó ponthalmaz, az egy olyan ponthalmaz, amelyik minden élnek legalább az egyik végpontját tartalmazza.
+1:15:031 hour, 15 minutes, 3 secondsAz a vertex cover az a kérdés, hogy lefogható-e G mindenre legfeljebb K ponttal. Az MP teljes az, hogy MP belé az világos. Miért?
+1:15:131 hour, 15 minutes, 13 secondsHát mert ha lefogható egy gráf minden éle k ponttal, akkor megadjuk a legfelebb K ponttal megadjuk azt a
+1:15:201 hour, 15 minutes, 20 secondspontmaz. ellenőrizni már tudjuk, hogy ez a legfeljebb K pont lefogja-e a gráf összes élét, de magunktól nem tudjuk megtalálni.
+1:15:341 hour, 15 minutes, 34 secondsAz, hogy egy gráf k színezhető, kiszínezhető-e gráf minden pontja legfelebb k színnel, kob = 3 esetén.
+1:15:431 hour, 15 minutes, 43 secondsTehát kiszínezhető gráf összes pontja mondjuk három színnel, úgy, hogy egy
+1:15:511 hour, 15 minutes, 51 secondsélnek, bármely élnek a különböző végpontjai különböző színűek legyenek.
+1:16:001 hour, 16 minutesEz is egy erről is belátták, hogy ez MP teljes.
+1:16:051 hour, 16 minutes, 5 secondsUgye az, hogy MP belé az világos. Tehát megkérdezi Arthur Merlintől, hogy kiszínezhető három színnel ez a gráf.
+1:16:141 hour, 16 minutes, 14 secondsMerlin rávágja, hogy igen.
+1:16:171 hour, 16 minutes, 17 secondsMi lesz a tanú? Egy jó színezés. Tehát megadja az összes pontnak egy olyan legfeljebb háromszínnel való színezését,
+1:16:251 hour, 16 minutes, 25 secondshogy bármely két szomszédos pont, tehát bármely élnek a két különböző végpontja, azok
+1:16:331 hour, 16 minutes, 33 secondskülönböző színűek lesznek. Ha már megadta Merlin a színezést, akkor Arthur
+1:16:401 hour, 16 minutes, 40 secondsvillámgyorsan el tudja dönteni, hogy ez ez a színezés, ez három színezése és jó színezése a gráfnak.
+1:16:511 hour, 16 minutes, 51 secondsmagától nem tud rájönni, mert ugye hát egyelőre nem ismert, hogy magától rá
+1:16:581 hour, 16 minutes, 58 secondstud-e jönni helyesebben. Így így ugye lehetne egy olyan algoritmust, hogy végignézi az összes lehetséges
+1:17:061 hour, 17 minutes, 6 secondsszínezést, de ha n pont a gráf, akkor három szín esetén három az niken különböző színezése van a gráfnak. A
+1:17:161 hour, 17 minutes, 16 secondshárom azediken az az exponenciális függvény, tehát nem tudja végignézni az összes lehetséges színezést magától.
+1:17:241 hour, 17 minutes, 24 secondsArthur azt is belátták, hogy a az is ismert,
+1:17:311 hour, 17 minutes, 31 secondshogy hogy az a kérdés, hogy grábban van-e Hamilton
+1:17:371 hour, 17 minutes, 37 secondsút, az is MP teljes ugye
+1:17:461 hour, 17 minutes, 46 secondsadott egy 1 millió pontú gráf. A kérdés az, hogy van-e egy gráfban Hamilton út, tehát olyan út, ami átmegy a gráf összes pontján.
+1:17:551 hour, 17 minutes, 55 secondsHa válasz igen, akkor Merlin meg tudja adni a Hamilton utat, és ezzel poénom időben meggyőzi Artur, hogy a grábban
+1:18:031 hour, 18 minutes, 3 secondsvalóban van Hamilton út. Ugye magától Arthur egyelőre egyelőre nem világos,
+1:18:101 hour, 18 minutes, 10 secondstehát magától egyelőre nem tud Arthur rájönni, hogy van-e a gráfban Hamilton út, vagy nem, mert nagyon sok sorrendje lehetséges a pontoknak.
+1:18:211 hour, 18 minutes, 21 secondsHát egyelőre nem ismert olyan polinomidei algoritmus, amely megmondani rában, van-e Hamilton út,
+1:18:301 hour, 18 minutes, 30 secondsvagy nem. Ha P nem egyenlő P, akkor ilyen nem is létezik.
+1:18:361 hour, 18 minutes, 36 secondsDe ellenőrizni lehet polinomidőben, hogy van, hogy valóban egy adott út az Hamilton út egy grában, vagy nem.
+1:18:491 hour, 18 minutes, 49 secondsJó.
+1:18:501 hour, 18 minutes, 50 secondsÉrthető-e, érthetőek ezek a fogalmak, ezek a nagyon fontos fogalmak.
+1:18:581 hour, 18 minutes, 58 secondsHalló, halló, halló. Van-e kérdés
+1:19:101 hour, 19 minutes, 10 secondsaz MP teljességgel, MPISgel, tehát ezen fogalmak kapcsán?
+1:19:271 hour, 19 minutes, 27 secondsAz a lehet kérdésem. Jó, nézzék át, gondolják át.
+1:19:341 hour, 19 minutes, 34 secondsEzek nagyon fontos kérdések, ugye. Na most, hogy tartalmazzák egymást ezek a problémaosztályok? Hát az MP az
+1:19:431 hour, 19 minutes, 43 secondsrésze a PAC-nek. Ugye világos, hogy itt polinomide, ugye itt az elágaszó fstruktúrát
+1:19:521 hour, 19 minutes, 52 secondsmindegyik ágat space-ben végig tudjuk nézni polinomtárban. Tehát ez a része ez világos. Az MP része pace-enek.
+1:20:021 hour, 20 minutes, 2 secondsÉs akkor valahogy tehát itt van legbelül a P. Ezek a polinomidőben megoldható
+1:20:091 hour, 20 minutes, 9 secondsproblémák. Vannak a QMP-beli problémák, vannak az MP-beli problémák.
+1:20:171 hour, 20 minutes, 17 secondsA Pne van az MP metsz KMP-ben. Persze.
+1:20:221 hour, 20 minutes, 22 secondsÉs vannak az MP teljes problémák, ezek a nagyon nehéz MP-beli problémák, de aztán lehet, hogy ez mind egy problémaosztály.
+1:20:311 hour, 20 minutes, 31 secondsSőt azt is tudjuk, hogy az MP meg a KMP az benne á van a pace-ben, de még az is lehet, hogy a P egyenlő a
+1:20:381 hour, 20 minutes, 38 secondsPac-el. Tehát itt óriási a bizonytanság, és a PPACE az benne van a táridőtétel miatt, az exp-ban.
+1:20:491 hour, 20 minutes, 49 secondsTehát nagyjából ez a ez az, amit eddig lehet tudni. Az is
+1:20:561 hour, 20 minutes, 56 secondsigaz, hogy a P az valódi része az expenak.
+1:21:021 hour, 21 minutes, 2 secondsTehát ebben a az ábrában valahol kell, hogy legyen valódi tartalmazás, de hogy hol van, azt nem tudjuk.
+1:21:111 hour, 21 minutes, 11 secondsTehát ezek itt ez egy ez egy ilyen vázlat, ahol ahol szinte bármi lehetséges.
+1:21:231 hour, 21 minutes, 23 secondsJó, akkor ennyit szerettem volna elmondani az MP-ről. Van-e kérdés ezzel kapcsolatban?
+1:21:321 hour, 21 minutes, 32 secondsNekem az lenne a kérdésem, igen, hogy arra példát fogunk látni, hogy valami az
+1:21:391 hour, 21 minutes, 39 secondsMP-ben van, de nem MP teljes, vagy nem ismert, hogy MP teljes? hogy valami benne van az NP-ben.
+1:21:491 hour, 21 minutes, 49 secondsDe nem, de nem bizonyított róla, hogy az, hogy MP teljes.
+1:21:521 hour, 21 minutes, 52 secondsPersze. Tehát eleve minden, ami P-ben van, az benne van MP-ben. És nem MP, feltétlenül MP és nem MP teljes világos
+1:22:011 hour, 22 minutes, 1 secondmódon. Tehát bármi, ami benne van a P-ben, az benne van az MP-ben is, ugye?
+1:22:101 hour, 22 minutes, 10 secondsHát igen, de hogy van olyan probléma, amiről tudjuk, hogy benne van az NP-ben.
+1:22:241 hour, 22 minutes, 24 secondsNem tudjuk, hogy MP teljes, de azt se tudjuk, hogy benne van-e a P-ben. Ühüm.
+1:22:311 hour, 22 minutes, 31 secondsTehát ilyenre fogunk látni példát. Ez a gráf izomorfizmus kérdése.
+1:22:381 hour, 22 minutes, 38 secondsJa, az Ühüm. Az a kérdés, hogy két gráf ugyanaz-e vagy nem.
+1:22:451 hour, 22 minutes, 45 secondsA az egy ilyen típusú kérdés. Szerintem gyakorlaton ezt ezt át fogjuk gondolni.
+1:22:521 hour, 22 minutes, 52 secondsJó, jó, rendben. Köszönöm.
+1:22:551 hour, 22 minutes, 55 secondsKérem, köszönöm a kérdést. Van-e más kérdés?
+1:23:031 hour, 23 minutes, 3 secondsJó, ha nincs több kérdés, akkor akkor egy neyed óra múlva folytatjuk a gyakorlattal. Köszönöm szépen.
 
 
-https://www.youtube.com/watch?v=bLn8hAtuSUM
+https://www.youtube.com/watch?v=KkvCbPk4Wz8

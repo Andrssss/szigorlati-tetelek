@@ -1,286 +1,288 @@
-No, akkor folytassuk.
-0:1414 secondsTehát látnak-e, hallanak-e, vagy látják-e a képernyőt?
-0:2626 secondsIgen, köszönöm szépen.
-0:3131 secondsTehát ha ott egy környezetfüggetlen grammatika, akkor a gré gramatika szerinti levezetés egy olyan fával ábrázolható, aminek a gyökere ugye a kezdőszimbólum.
-0:4343 secondsOtt kezdjük a levezetést.
-0:4747 secondslevelei, balról jobbra levezetett szó betű betűi további csomópontjai nem
-0:5555 secondsterminálisok, és az elágazások egy-egy alkalmazott szabálynak felelnek meg. Tehát ez a levezetési fa.
-1:061 minute, 6 secondsJó, tehát például az a az a mondat, hogy the boy sees the girl
-1:141 minute, 14 secondswith the binoculous, ez levezethető ilyen módon. Tehát egy
-1:201 minute, 20 secondsmondat az egy az egy főnévi kifejezés, meg egy igei
-1:271 minute, 27 secondskifejezés. egy főnévi kifejezés, az egy névelő
-1:361 minute, 36 secondsmeg egy főnév, vagy állhat egy név előből, meg egy főnévből, egy igei kifejezés állhat egy
-1:441 minute, 44 secondsigéből és egy főnévi kifejezésből.
-1:501 minute, 50 secondsEz állhat egy névelőből meg egy főnévből, illetve egy prepozíciós kifejezésből és így tovább.
-2:012 minutes, 1 secondUgye tehát a végén így ugye levezetjük The Boys the girl the
-2:092 minutes, 9 secondsbinocular mondatot a azok mentén a szabály azok szabályok
-2:152 minutes, 15 secondsalkalmazásával amiket az óra elején vázoltunk.
-2:232 minutes, 23 secondsNo, azt mondjuk, hogy egy környezetfüggetlen grammatika szerinti levezetés baloldali,
-2:312 minutes, 31 secondsa levezetés egyes lépésiben mindig a legbaloldali nem terminálist helyettesítjük be. Tehát most ugye ugye
-2:402 minutes, 40 secondsgondol, amikor az idént kérdeztem, hogy egyértelmű-e egy levezetés. És hát azt
-2:492 minutes, 49 secondsláthattuk, hogyha ugye több nem terminális is szerepe egy adott sorozatban,
-2:572 minutes, 57 secondsakkor tetszés szerint megválaszthatjuk azt a terminálist, amire nem terminálist, amire éppen alkalmazztuk a levezetési szabályt.
-3:093 minutes, 9 secondsDe mi van akkor, hogyha mindig a legbaloldalibb nem terminálist helyettesítjük?
-3:193 minutes, 19 secondsUgye ekkor egyértelmű-e egy levezetés.
-3:263 minutes, 26 secondsEz se világos, ugye? Tehát azt mondjuk, hogy egy nyelvtalan egyértelmű. Ha minden generált szabálynak egyetlen baloldali levezetése van, különben több
-3:353 minutes, 35 secondsértelmű. Tehát ugye az még az sem teszi feltétlenül egyértelművé a levezetést, hogyha mindig a baloldali szabályt vagy
-3:443 minutes, 44 secondsa baloldal legbaloldalabbi nem terminálist helyettesítjük.
-3:523 minutes, 52 secondsUgye az világos, hogy minden bal oldal levezetés meghatároz egy levezetési fát.
-3:583 minutes, 58 secondsTehát egyértelmű nyelvtalan esetén minden generáció az egyetlen levezetési fa tartozik.
-4:054 minutes, 5 secondsÉs azt mondjuk, hogy egy környezetfüggetlen nyelv az eredendően több értelmű,
-4:124 minutes, 12 secondsha nem generálható egyértelmű grammatikával.
-4:214 minutes, 21 secondsEgyértelműen mindig egy még egyszer egy baloldali levezetés. Hát láthatjuk, hogy nem mindig például
-4:304 minutes, 30 secondsugye, hogyha vesszük ezeket a levezetési szabályokat,
-4:394 minutes, 39 secondsakkor az ID plus ID csillag id
-4:464 minutes, 46 secondsszót a szónak ez két baloldalire levezetése.
-4:514 minutes, 51 secondsTehát láthatjuk, hogy a fa az nem nem ugyanaz.
-5:005 minutesNa most, hogyha adott egy környezetfüggetlen nyelvtan, ugye az világos, illetve
-5:065 minutes, 6 secondsdefiníció alapján annak a bal oldalán egyetlen nem terminális áll mindig,
-5:155 minutes, 15 secondsazért az jó lenne, hogyha valahogy a szabályok még még szebbek lennének, tehát még egyszerűbb lenne a akkor még egyszerűbb lenne alkalmazni őket.
-5:275 minutes, 27 secondsEgy környezetfüggetlen grammatika azt mondjuk, hogy Csomsziféle normálakban adott.
-5:385 minutes, 38 secondsHogyha a szabályok azok úgy festenek, hogy a
-5:445 minutes, 44 secondsnyíl BC, A nyíl A, S nyíl Y, ahol az A,
-5:515 minutes, 51 secondsB és a C azok terminál, nem terminálisok, az A, a kis A terminális
-5:595 minutes, 59 secondsés a B a és a C nem kezdő szimbólumok, tehát a jobb oldalon nem áll kezdő szimbólum. Jó, tehát vagy egy nem
-6:076 minutes, 7 secondsterminálishoz két nem terminálist rendel hozzá a szabály, vagy pedig egy nem
-6:156 minutes, 15 secondsterminálishoz egyszerent terminálist, és a jobb oldal nem szerepel a kezdő szimbólum.
-6:246 minutes, 24 secondsJó.
-6:286 minutes, 28 secondsÉs a tétel az, hogy hogy bármely környezetfüggetlen grammatikához megadható őt generáló grammatika som féle normál alakban.
-6:456 minutes, 45 secondsA bizonyítás azt röviden vázolnám, de megint csak egy példán fogjuk látni, hogy hogy adható meg egy
-6:546 minutes, 54 secondskörnyezetfüggetlen gramatika csomszki féle normálatban, mert talán úgy egyszerűbb átlátni, mint mint
-7:017 minutes, 1 secondformálisan, de azért próbáljuk meg egyszer formálisan is átlátni.
-7:137 minutes, 13 secondsTehát adott egy környezetfüggetlen grammatikánk, akkor át szeretnénk azt írni
-7:217 minutes, 21 secondsCsomszki féle normálakban. Mit jelent az, hogy a gramatikán környezet független? Az azt jelenti, hogy a bal oldalán
-7:297 minutes, 29 secondsminden levezetési szabály baloldalán egy szem nem terminális áll.
-7:377 minutes, 37 secondsEgy ilyen grammatikát hogy fogunk átírni Csomski féle normálatban? Hát egyrészt bevezetünk egy új kezdő szimbólumot.
-7:487 minutes, 48 secondsSn nyíl s lesz egy új kezdő szimbólum.
-7:537 minutes, 53 secondsNa most, hogyha ugye a csomszki féle normálak szerint csak a kezdő szimbólumból vihet az üresbe nyíl, ugye?
-8:048 minutes, 4 secondsTehát hogyha s nyil csak a kezdő szimbólumból lehet,
-8:118 minutes, 11 secondselkezdjük törölgetni az a nyíl y szabályokat. Tehát töröljük
-8:198 minutes, 19 secondsaz a nyíl kezdő szimbólumot, a nyíl szabályt, ahol az a nem kezdő szimbólum.
-8:278 minutes, 27 secondsNa most akkor viszont hát ha törölünk egy ilyen szabályt,
-8:348 minutes, 34 secondsakkor egy csomó potenciálisan ennek a szabálynak az alkalmazásával
-8:408 minutes, 40 secondslevezethető szótól elesnénk. Tehát akkor pótolni kell egyéb szabályokkal ezt a szabályt.
-8:528 minutes, 52 secondsNevezetesen, hogyha van egy bnyíl a alfa ab
-9:019 minutes, 1 secondszabály, ugye most az a nyíl y töröltünk, tehát akkor el elestnénk attól, hogy hogy b nyíl például alfa béta.
-9:139 minutes, 13 secondsTehát ezeket ezeket pótolni kell úgy, hogy újabbakat adunk hozzá,
-9:219 minutes, 21 secondsúgy, hogy az a-t töröljük minden lehetséges módon. Tehát például, hogyha töröljük az a nyíl y szabályt és van egy
-9:299 minutes, 29 secondsbnyil alfa a b a gamma szabályunk, akkor a következő három
-9:399 minutes, 39 secondsszabályt iktatjuk be. Tehát min az A-t minden lehetséges módon törvöljük.
-9:459 minutes, 45 secondsB nyíl alfa bet a gamma, B nyil alfa a bet gamma és bnyil alfa b gamma. Ugye?
-9:559 minutes, 55 secondsTehát hogyha itt itt kettő,
-10:0110 minutes, 1 secondhogyha itt k helyen áll az a, akkor kettő a k adik -1 újabb szabállyal kell újabb szabályt
-10:1010 minutes, 10 secondskell hozzáadnunk, hogyha törünk egy ilyen szabályt.
-10:1710 minutes, 17 secondsBila A esetén a B-nyil E szabályt csak akkor iktatjuk be, ha korábban még nem töröltünk ilyen szabályt.
-10:2810 minutes, 28 secondsJó, tehát ez a második lépés.
-10:3410 minutes, 34 secondsUtána, hogyha van egy A- nyílt C szabályunk, tehát ahol mind a kettő nem terminális,
-10:4210 minutes, 42 secondsakkor töröljük ezt a szabályt. És ha van cyl alfa szabály, akkor beiktatjuk
-10:5010 minutes, 50 secondsaz a nyíl alfát, kivéve azt már valamikor töröltük az A folyamán. Jó, tehát ez a harmadik lépés.
-11:0211 minutes, 2 secondsÉs végül konvertáljuk a megmaradt és a beszúrt szabályokat maximum kettő hosszú
-11:0811 minutes, 8 secondsjobb oldalas alakra. Tehát hogyha van egy a nyil
-11:1511 minutes, 15 secondsalfa 1 alfa 2 alfa k, ahol k az legalább három terminális vagy nem terminális. Ezt az
-11:2411 minutes, 24 secondsegy szabályt hetettesítjük. ezt egy új terminálisok és szabályok beiktatásával.
-11:3211 minutes, 32 secondsTehát ilyen rekurzív módon azt mondjuk, hogy a nyíl alfa 1 a1 a1 nyíl alfa 2 a2 és így tovább.
-11:4611 minutes, 46 secondsA2 nyíl al 3 a3 és akkor
-11:5711 minutes, 57 secondsminden a hozzáadatva, amit legalább kettő hosszú.
-12:0212 minutes, 2 secondsjobboldalú szabályban helyettesítjük a az alfai nem terminális új nem
-12:1112 minutes, 11 secondsterminálissal és beiktatjuk még az új nyílalfai szabályt. Jó, tehát ez a ez a
-12:1812 minutes, 18 secondshárom lépés van, amit ahogy Csomszki féle normálalakra tudunk hozni
-12:2712 minutes, 27 secondsegy generatív grammatika, egy egy környezetfüggetlen generatív grammatikát.
-12:3512 minutes, 35 secondsEzt gondolják át, ez így jó. Majd csinálunk erre példát, és ebből világos lesz.
-12:4912 minutes, 49 secondsNa most a következő kérdés az az, hogy hogy minden nyelv ugye tudjuk, hogy
-12:5612 minutes, 56 secondsminden reguláris nyelv az környezetfüggetlen.
-13:0013 minutesÉs azt is láttuk, hogy a nulla az niken egy az niken alakú szavakból álló nyelv
-13:0913 minutes, 9 secondsaz környezetfüggetlen, de nem reguláris. Tehát környezetfüggetlen nyelvek az egy bővebb halmaz, mint a
-13:1813 minutes, 18 secondsreguláris nyelvek halmaza. A kérdés az az, hogy minden nyelv környezetfüggetlen-e. Mit gondolnak?
-13:3613 minutes, 36 secondsTehát létezik-e olyan nyelv, ami nem környezet független? Ez a kérdés.
-13:5313 minutes, 53 secondsHát a nevéből ítélve biztos. A nevéből ítélve biztos. Ez nagyon jó. Igen.
-14:0314 minutes, 3 secondsTudnál-e más érvet mondani? És a válasz is jó. Az érvelés az
-14:0914 minutes, 9 secondsazért gyönge lábakon áll. esetleg egy vagy legalábbis formálisan,
-14:1714 minutes, 17 secondstehát tudna egy kicsit matematikaib érvet mondani. Hát azt azt már nem biztos.
-14:2514 minutes, 25 secondsAha. Tehát ugye hát azt lehet mondani, hogy
-14:3114 minutes, 31 secondsegy környezetfüggetlen nyelv, ugye az egy ilyen
-14:3814 minutes, 38 secondshány darab környezetfüggetlen nyelv? Hát van, hát ez leírható egy véges sorozatal, ugye fölsoroljuk a nem
-14:4614 minutes, 46 secondsterminálisokat, fölsoroljuk a terminálisokat, fölsoroljuk a levezetési szabályokat,
-14:5414 minutes, 54 secondsés fölsor és kijelöljük a kezdő szimbólumot. Tehát ez a négyes, ez leírható egy véges sorozattal,
-15:0315 minutes, 3 secondsugye? Tehát akkor hány eleve hány generatív gramatika van? Mondjuk még az is kevés van, nem hogy környezetfüggetlen.
-15:1315 minutes, 13 secondsHát kevés generatív gramatika van, hiszen a véges
-15:2115 minutes, 21 secondsa véges sorozatokból álló
-15:2715 minutes, 27 secondsgrammatikáknak a a véges sorozatokból álló sorozatoknak a halmaza az megszámláltan végtelen.
-15:3715 minutes, 37 secondsviszont nem megszámlálhatóan végtelen darab nyelv van.
-15:4415 minutes, 44 secondsTehát ebből következik, hogy kell, hogy legyen olyan nyelv, amelyik amelyik nem környezetfüggetlen,
-15:5315 minutes, 53 secondsmég csak nem is generálható gramatikával. Tehát látjuk, hogy a környezetfüggetlen
-16:0316 minutes, 3 secondsnyelveknek a halmaza bővebb, mint a reguláris nyelveknek a halmaza. azért nem minden nyelv nem minden nyelv környezetfüggetlen.
-16:1616 minutes, 16 secondsTehát vannak olyan nyelvek, amik ne kell, hogy legyen olyan nyelv, az imént beláttuk, ami nem környezetfüggetlen.
-16:2616 minutes, 26 secondsÖ, hogyha megadok egy nyelvet
-16:3616 minutes, 36 secondsés a kérdés mondjuk zárt helyén és a kérdés az az, hogy környezet független-e ez a nyelv, akkor mi a mi a milyen megoldás lehetséges?
-16:5016 minutes, 50 secondsTehát az egyik megoldás az az, hogy megadnak egy környezetfüggetlen grammatikát,
-16:5716 minutes, 57 secondsazaz egy olyan grammatikát, aminek a bal oldalán egyetlen levezetési szabályok, minden levezetési szabálynak a bal
-17:0517 minutes, 5 secondsoldalán egyetlen egy darab nem terminális áll, amelyik ezt a nyelvet generálja. hogyha
-17:1417 minutes, 14 secondstalálnak egy ilyen gramatikát, akkor belátták, hogy ez a nyelv környezetfüggetlen, hiszen egy környezetfüggetlen gramatika generálja a nyelvet.
-17:2617 minutes, 26 secondsMásik lehetőség az, hogy ugye nem sikerül ilyen gramatikát találnunk. Hát ilyenkor két variáció van, vagy vagy
-17:3517 minutes, 35 secondsügyetlenek voltunk, vagy vagy nem is lehet, nem is létezik olyan grammatika, környezetfüglen grammatika, ami ezt a
-17:4317 minutes, 43 secondsnyelvet generálja. Hát ilyenkor jól jön a környezetfüggetlen nyelvek
-17:5117 minutes, 51 secondsjellemzésére vonatkozó pumpáló lenba.
-17:5717 minutes, 57 secondsUgyanúgy, mint a reguláris nyelvekre vonatkozó pumpálási lemma, ez is egy elégséges feltétel, de nem szükséges.
-18:1018 minutes, 10 secondsTehát azt mondja ki, ha egy nyelvkörnyezet független, akkor létezik egy olyan pstans, hogy minden legalább p hosszú szava pumpálható.
-18:2218 minutes, 22 secondsNa most itt a pumpálhatóság egy kicsit más, mint a reguláris nyelvek esetében.
-18:3318 minutes, 33 secondsJó, tehát itt a pumpálás az azt jelenti, hogy hogy minden legalá tehát hogyha egy
-18:4118 minutes, 41 secondsnyelv környezet független, akkor létezik egy olyan p konst, hogy minden legalább
-18:4818 minutes, 48 secondsp hosszú szava fölírható uvx alakban.
-18:5818 minutes, 58 secondsTehát így öt részre bontható, hogy u viken, x y az niken, z benne van a nyelvben minden n-re.
-19:1019 minutes, 10 secondsAz amit pumpálunk, tehát van mit pumpálnunk, annak az összhossza. Ugye itt a v-t meg az yt pumpáljuk egyszerre.
-19:1819 minutes, 18 secondsA vy összhossza az legalább az több mint nulla, tehát legalább egy.
-19:2319 minutes, 23 secondsés a Vxy-nak az összhossza is legfeljebb Pé, tehát egy kicsivel
-19:3119 minutes, 31 secondsbonyolultabb lemma, mint a reguláris nyelvekre vonatkozó pumpálás silemma.
-19:3819 minutes, 38 secondsUgye itt öt hosszú öt része tudjuk fölbontani a szót.
-19:4419 minutes, 44 secondsÉs ezt a azt nem tudjuk, hogy hol van, tehát valahol középen van a pumpálható
-19:5019 minutes, 50 secondsrész, ugye? á ennek ahz legfél hogyan használjuk a pumpáló lemmát?
-20:0120 minutes, 1 secondA pumpálólemmát még egyszer ezt csak arra tudjuk használni, hogy belátjuk egy nyelvről, hogy ez a nyelv nem-e környezetfüggetlen.
-20:1120 minutes, 11 secondsIndirekt módon szoktuk használni, tehát föltesszük, hogy mégis csak a környezet független egy p egy p konstanssal, egy pumpáló konstanssal.
-20:2520 minutes, 25 secondsÉs mégis találunk egy olyan szót, aminek a hossza
-20:3220 minutes, 32 secondslegalábbi, de nem pumpálható ebben az értelemben. Ugye akkor a akkor ha már
-20:3920 minutes, 39 secondsegyetlen egy ilyen szó van, akkor az a nyelv az nem környezetlen.
-20:4520 minutes, 45 secondsJó, ez így érthető-e a lemma kimondása? Halló?
-20:5620 minutes, 56 secondsÉrthető az, hogy mit mond ki a lemma. Egy visszajelzést kérek.
-21:0721 minutes, 7 secondsHalló? Halló? Hallanak még? Vagy helló?
-21:1821 minutes, 18 secondsJa, igen, igen.
-21:2021 minutes, 20 secondsJó, akkor jó. És érthető is remélem,
-21:2921 minutes, 29 secondshogyan tudnánk bizonyítani a pumpáló lenemvát.
-21:3421 minutes, 34 secondsHát a következőképpen bizonyítjuk, és lényegében ez a trivialitás az egésznek a
-21:4121 minutes, 41 secondsbizonyítását. Tegyük föl, hogy egy nyelv környezet független, és egy adott szónak akkor hogy néz ki a levezetési fája? Hát
-21:5121 minutes, 51 secondsúgy, hogy a a levelekben, tehát az s az kezdő szimbólum a gyökér.
-21:5821 minutes, 58 secondsUtána a belső pontok azok a nem terminálisok, a levelek pedig a
-22:0822 minutes, 8 secondslevelekből álló a levelekben terminálisok vannak. és a levezetett szót azok a levelekből összeállított szimbólumsorozat adja.
-22:2222 minutes, 22 secondsTehát akkor mindig egy ilyen egy ilyen fával állunk szemben, ugye? Tehát mindig egy levezetési fánk adja meg azt, hogy mit vez éppen melyik szót vezettük le.
-22:3322 minutes, 33 secondsNa most, hogyha ez a szó, ez nagyon hosszú, akkor
-22:4222 minutes, 42 secondsugye, hogyha ez exponenciálisan hosszú, tehát ugye hány darab nem a nem terminálisok
-22:4922 minutes, 49 secondshalmaza az véges. Tehát mondjuk, hogyha hogyha
-22:5622 minutes, 56 seconds10 darab vagy 20 darab nem terminálisunk van, akkor
-23:0523 minutes, 5 secondsakkor egy levélben itt mindig nem terminálisok vannak. Akkor ugye, hogyha a szó hossza, az
-23:1423 minutes, 14 secondsnagyon-nagyon hosszú, tehát exponenciálisan hosszú a nem terminálisok függvényében,
-23:2223 minutes, 22 secondsakkor kell, hogy legyen két olyan nem terminális, amelyik megismétlődik egy adott szónak a levezetésében.
-23:3023 minutes, 30 secondsHát ha nem ismétlődne meg két nem terminális, akkor akkor ugye nagyon kevés, tehát véges sok szót vezethetnénk csak le.
-23:4123 minutes, 41 secondsEbből következik, hogyha elég hosszú szót választunk, akkor akkor lesz két nem terminális,
-23:4723 minutes, 47 secondsamelyik megismétlődik itt a a levezetésben. Érthető ez?
-23:5723 minutes, 57 secondsRemélem. Igen. És ha ezek megismétlődnek, akkor készen is vagyunk.
-24:0224 minutes, 2 secondsMiért? Mert hát akkor csináljuk meg ugyanezt az utat még egyszer. Hát akkor ha ezt a
-24:1124 minutes, 11 secondsmegismételjük ezt a levezető szakaszt még egyszer, akkor megkapjuk azt a szót, hogy tehát hogyha itt kaptuk ebben a
-24:2024 minutes, 20 secondsszakaszban a vér rész szót, itt meg az y, ezt még egyszer megismételjük,
-24:2724 minutes, 27 secondsakkor megkapjuk az u vxy zót. Tehát ezt a v-t meg az y részt
-24:3724 minutes, 37 secondstudjuk iterálni. Ugye? Tehát ezt a megismételt szakaszt, ezt a levezetési szakaszt, ezt ismételgetni tudjuk akárhányszor.
-24:4724 minutes, 47 secondsTehát ilyen módon megkapjuk az összes u vn x y az nen z alakú szót,
-24:5824 minutes, 58 secondsahol az n egy tetszőleges, nem negatív egész szám. Jó, érthető-e ez a levezetés?
-25:1125 minutes, 11 secondsHalló, halló, halló.
-25:1625 minutes, 16 secondsPersze ezt a szakaszt Tessék. Halló? Érthető.
-25:2125 minutes, 21 secondsÉrthető. Persze ezt a szakaszt ki is vághatjuk. Akkor viszont megkapjuk az u Xz-t.
-25:2925 minutes, 29 secondsÉs ez is egy nagyon nagyon fontos tulajdonság. Itt van formálisan
-25:3625 minutes, 36 secondslevezetve, hogy milyen mélynek kell lennie a fának.
-25:4125 minutes, 41 secondsEksponenciálisan mélynek kell lennie a a nem terminálisok számának a függvényében.
-25:4925 minutes, 49 secondsTehát mindössze ennyi. Itt most ugye ismétlés. Itt azt írom le, hogy miért kell, hogy legyen ismétlés gyakorlatilag. De hát látszik, hogyha
-25:5825 minutes, 58 secondselég hosszú a szó, akkor nagyon kevés szót tudnánk legenerálni.
-26:0326 minutes, 3 secondsÚgyhogy nincs itt ismétlés a nem terminálisok között. Ha van, ha elég hosszúszó, akkor kell, hogy
-26:1026 minutes, 10 secondslegyen ismétlés. És ezt a levezetési szakaszt, ezt akárhányszor tudjuk ismételni.
-26:1726 minutes, 17 secondsTulajdonképpen erről van szó. Ö
-26:2626 minutes, 26 secondsna. Tehát azt állítom, hogy az a az niken, B az Nediken, C az
-26:3426 minutes, 34 secondsNediken. Tehát az ABC az az AB meg a C. Az ilyen alakú
-26:4226 minutes, 42 secondsszavakból álló nyelv, az nem környezetfüggetlen. Be tudjuk-e látni?
-27:4327 minutes, 43 secondshasználhatjuk a pumpáló lennemmel, illetve ezt kellene használnunk indirekt módon. bizonyítjuk. Tehát
-27:5127 minutes, 51 secondstegyük föl, hogy környezetfüggetlen, akkor
-27:5727 minutes, 57 secondsugye tehát elő akkor van egy Pumpálási konstans,
-28:0728 minutes, 7 secondshogy minden legalább P hosszú szó az pumpálható.
-28:1228 minutes, 12 secondsTehát fölírható UVXY Z alakban. Úgyhogy UV az Nedéneken
-28:2128 minutes, 21 secondsX Y az Niken Z minden nre itt szintén ilyen alakú lesz.
-28:3428 minutes, 34 secondsMelyik szót választjuk meg, ami esetleg nem pumpálhat? Tehát válasszuk meg azt, hogy A piken, B a piken, C a piken. Az
-28:4328 minutes, 43 secondsegyszerűség kedvéért. Itt a ugye ez egy 3P hosszú szó, tehát ennek a hossza legalább P. A lem az szerint ennek pumpálhatónak kellene lennie.
-28:5628 minutes, 56 secondsÁllhat-e ugye mondjuk a a valamelyik pumpált rész
-29:0429 minutes, 4 secondsállhat-e? Mondjuk ugye tehát az uvx y z
-29:1029 minutes, 10 secondsalakúak ezek a tehát öt részre bontható
-29:1729 minutes, 17 secondstudjuk felbontani ezt a szót. Mondjuk a V az állhat-e kétféle szimbólumból,
-29:2429 minutes, 24 secondsamit tehát az a rész a kettőből, vagy legfelebb kettőből, amit pumpálunk, mondjuk állhat-e A-ból is, meg B-ből is.
-29:3629 minutes, 36 secondsHalló?
-29:4229 minutes, 42 secondsÁllhat-e A, illetve B szimbólumokból is?
-29:5129 minutes, 51 secondsHát nem. Miért?
-29:5429 minutes, 54 secondsMert az Mert nem azért, mert terminálisnak kell lennie.
-29:5929 minutes, 59 secondsNem, nem. Hát hogyha egy ilyen egy olyan szót pumpálnánk, egy olyan részszót, amik mondjuk a amiben van a is, meg B
-30:0830 minutes, 8 secondsis, ezt ismételnénk, akkor B után még A is következne,
-30:1530 minutes, 15 secondsugye? Tehát képzelj el, hogy azt a részt pumpáljuk, hogy 2a után egy b következik,
-30:2430 minutes, 24 secondsakkor ugye beiktatnánk, betennénk azt, hogy a utána megint
-30:3030 minutes, 30 secondsbetennénk azt a bán, hogy a tehát B után még A is következne, tehát kilépnénk a nyelvből. Érthető?
-30:4330 minutes, 43 secondsJa, igen, köszönöm. Tehát az, amit pumpálunk, az nem állhat. Tehát amit az iterált rész,
-30:5130 minutes, 51 secondsegyik rész sem állhat kétféle szimbólumból.
-30:5630 minutes, 56 secondsTehát mind a V, mind az Y, az csak egyfajta szimbólumból áll.
-31:0631 minutes, 6 secondsIgen ám, de hát ha azokat pumpáljuk, akkor a harmadik részt nem pumpáljuk.
-31:1331 minutes, 13 secondsTehát akkor a harmadik, tehát mondjuk tegyük föl, hogy az A
-31:1831 minutes, 18 secondsrészbe nem nyúlik át se az Y, se a se a
-31:2531 minutes, 25 secondsse a másik rész, amit pumpálhattunk, akkor az áknak a száma ugyanannyi, a többi pedig nő.
-31:3431 minutes, 34 secondsTehát akkor ellentmondássra jutunk. Érthető-e ez a bizonyítás?
-31:4431 minutes, 44 secondsMajd még gyakorlat vesszünk ilyen bizonyításokat, de ez egy nagyon egyszerű bizonyítás.
-31:5131 minutes, 51 secondsTehát azért ezt jó lenne, hogyha most megértenénk.
-32:0032 minutesTehát még egyszer tegyük föl, hogy pumpálható.
-32:0332 minutes, 3 secondsAkkor minden legalább fél hosszú szava pumpálható.
-32:1032 minutes, 10 secondstekintsük azt a szót, hogy a a piken, b a pediken, c a pediken. Ennek a hossza 3p
-32:1832 minutes, 18 secondslema szennypumpálhatónak kell lennie, akkor fölírható uvxy z alakban. Na most ugye ebből a v-t és az y-t fogjuk iterálni.
-32:3232 minutes, 32 secondsA V, mert vagy a akár a V, akar az Y, állhat-e ák-ból és B-kből is. Nem, mert
-32:4032 minutes, 40 secondshogyha a egy ák-ból és B-kből álló részt iterálunk, akkor a B után A is fog következni.
-32:4832 minutes, 48 secondsUgyanúgy B-kből és C-kből sem állhat.
-32:5132 minutes, 51 secondsTehát a V és az Y az csak az A-ból vegy tisztán, az A-ból vegy tisztán a B-ből
-32:5932 minutes, 59 secondsés vagy vegy tisztán a C-ből állhat, ugye? Na de akkor van itt egy szimbólum,
-33:0733 minutes, 7 secondski ki kell, hogy maradjon. Tehát hogyha mind a V, mind az Y, amit iterálunk,
-33:1433 minutes, 14 secondscsak egy-egy szimbólumot tartalmaz, akkor a harmadik szimbólumot azt nem, valamelyik a kimaradó szimbólumot nem pumpáljuk.
-33:2433 minutes, 24 secondsEbből következik, hogy a a pumpált szimbólumból vagy szimbólumból egyre
-33:3033 minutes, 30 secondstöbb lesz a azt, amit nem pumpálunk, márpedig ilyen van, abból az pedig marad ugyanaz a p
-33:3933 minutes, 39 secondsugyanannyi, tehát p-nyi abból ebből következik, hogy ellentmondásra
-33:4533 minutes, 45 secondsjutunk. Érthető-e ez a ez a gondolatmenet? Egy picit azért látszik, hogy bonyolultabb, nehezebb használni a
-33:5433 minutes, 54 secondsa környezetfüggetlen nyelvekre vonatkozó pumpálás lemmát, de az elv az
-34:0134 minutes, 1 secondgyakorlatilag ugyanaz. Jó, érthető ez a gondolatmenet?
-34:0834 minutes, 8 secondsHalló?
-34:1034 minutes, 10 secondsIgen, igen, szuper. Nagyon jó.
-34:1534 minutes, 15 secondsJó, akkor a csomszki féle nyelvosztályuk a generáló grammatika szabálytet
-34:2434 minutes, 24 secondsmegkötések alapján ugye hogyha egy nyelv reguláris, akkor
-34:3134 minutes, 31 secondsláthatjuk, hogy a a levezet, amikor beláttuk, hogy minden reguláris nyelv egyben környezetfüggetlen is, akkor a
-34:4134 minutes, 41 secondsazokat tudjuk ilyen alakú szabály generálni ailáb alakú szabályokkal.
-34:5034 minutes, 50 secondsHa egy nyelv környezet független, akkor a nyíl alfa alakú szabályokkal generálható definíció alapján, ahol az a az egy nem terminális.
-35:0335 minutes, 3 secondskörnyezetfüggő.
-35:0635 minutes, 6 secondsHa az egyes nyelv az tehá, hogy Bayl
-35:1235 minutes, 12 secondsbéta A gamma nyíl béta alfa gamma alakú szabályokkal generálható,
-35:2235 minutes, 22 secondsahol az alfa hossza az kisebb egyenlő, mint béta, tehát nem csökken, ugye?
-35:3035 minutes, 30 secondsvagy pedig ilyen szabályokkal generálható.
-35:3535 minutes, 35 secondsEz tehát ezek a környezetfüggőek, ezeket nem fogjuk tanulmányozni.
-35:4335 minutes, 43 secondsÉs vannak olyan vannak olyan nyelvek, amik vagy vannak olyan generatív grammatikák, amikre egyáltalán nincs vagy megkötés.
-35:5435 minutes, 54 secondsTehát ha semmit nem kötünk meg, azok a grammatikák ugye a nullás nyelvosztályt generálják,
-36:0236 minutes, 2 secondstetszes alakú szabályok, tehát ezek itt egyre bővebb nyelvek, vagy egyre bővebb
-36:1036 minutes, 10 secondsnyelvosztályok, és az ötgenáló gramatikák alapján jellemezzük őket.
-36:2036 minutes, 20 secondsMég esetleg itt érdemes annyit megjegyezni, hogy hogy ezeket a generatív grammatikákakat
-36:2936 minutes, 29 secondsazért használták BNF programozási nyelvek definiálására,
-36:3836 minutes, 38 secondsha ez egy szintisz BNF formában vannak eszközök, amelyik automatikusan generálnak egy elemzőt, amely
-36:4736 minutes, 47 secondsszintatikus helyességét ellenőrz, és levezetési fát produkál, sőt le is fordítja a programot. Tehát erről
-36:5636 minutes, 56 secondstudni kell, ez egy metanyelv az algol és a fontan definiálására vakus tying díjat kapott.
-37:0737 minutes, 7 secondsÉs hát össze ezek a nyelvtanú vagy ezeknek az elemzése ez
-37:1437 minutes, 14 secondsilyen értelemben fontos. Ö jó, nagyjából ezt akartam ma elmondani. Ö
-37:2337 minutes, 23 secondsa többit majd a gyakorlatokon fogjuk látni. Van-e kérdés a mai a ma elhangzottak kapcsán?
-37:3437 minutes, 34 secondsTehát a lényeg az az, hogy mi egy generatív grammatika.
-37:3937 minutes, 39 secondsTehát vannak nem terminálisok, terminálisak levezetési szabályok. Egy kezdőszimbólum.
-37:4737 minutes, 47 secondsEgy grammatika által generált nyelvtalan az azon terminális sorozatokból áll, amiket a kezdő szimbólon le tudunk vezetni.
-37:5837 minutes, 58 secondsEgy nyelv az környezetfüggetlen, hogyha környezetfüggetlen gramatika generál. Egy környezetfüggetlen
-38:0638 minutes, 6 secondsgrammatika az úgy épül föl, hogy a szabályai azok a nyíl alfa alakúak, ahol az alf, ahol az a az egyetlen egy szem.
-38:1838 minutes, 18 secondsNem terminális, hanem környezetfüggetlen grammatikák, azok
-38:2538 minutes, 25 secondsszép alakra hozhatók, vagy jól elemezhető alakra hozhatók, úgynevezett csomszki féle normál alakra.
-38:3638 minutes, 36 secondsÉs hát vannak természetesen nem környezetfüggetlen nyelvek, és erre beláttuk a
-38:4538 minutes, 45 secondstehát ezeknek a kezeléséhez, vagy egy jó eszköz, tehát ahhoz egy jó eszköz, hogy belássuk, hogy egy nyelv
-38:5338 minutes, 53 secondsnem környezetfüggetlen, a bárhillemma, vagy a környezetfüggetlen nyelvekre vonatkozó pumpálási nyelv lemma, amelyik
-39:0139 minutes, 1 secondazt mondja ki, hogy ha egy nyelvkörnyezet függ, Akkor létezik hozzá egy olyan p konstans, hogy minden
-39:0839 minutes, 8 secondslegalább p hosszú szava környezetfüggetlen lemértelemben pumpálható.
-39:1639 minutes, 16 secondsEz azt jelenti, hogy fölbontható öt részre, tehát uv x y z részre,
-39:2439 minutes, 24 secondshogy hogy u ven, x y az niken azért minden nem negatív nre benne van a nyelvben.
-39:3839 minutes, 38 secondsAmit pumpálunk, az van mit pumpálunk. Tehát annak az össz az
-39:4539 minutes, 45 secondsnagyobb mint nulla. Tehát a V-nek és az Y-nak az össz az legalább egy,
-39:5439 minutes, 54 secondsilletve a nem tudjuk, hogy hol helyezkedik el ez a ez a pumpált rész. Azt azért tudjuk,
-40:0440 minutes, 4 secondshogy ennek az összhossza az legfeljebb P. Tehát a V
-40:1140 minutes, 11 secondsy Z-nek az össz legfeljebb P. Jó, tehát nagyjából ezt akartam elmondani. Van-e
-40:1940 minutes, 19 secondskérdés, vagy ez a lényege, amit ma hallottunk. Van-e kérdés?
-40:2940 minutes, 29 secondsHalló?
-40:3540 minutes, 35 secondsJó, ha nincs kérdés, akkor köszönöm a figyelmüket, és találkozunk 15 perc múlva gyakorlaton.
-40:4340 minutes, 43 secondsKöszönöm. Viszontlátásra. Köszönjük. Köszönjük.
+vizsgálni a generatív grammatikákat.
+1:051 minute, 5 secondsEgy G V Jól hallanak és látják a képernyőt?
+1:121 minute, 12 secondsIgen, köszönöm szépen.
+1:141 minute, 14 secondsIgen, tehát egy G V RS4-es generatív gramatika,
+1:211 minute, 21 secondsahol V1 véges halmasz a gramatikai változók vagy nem terminálisok halmazza.
+1:271 minute, 27 secondsSigma1 véges halmaz. Tiszungum Vtől ez a terminálisok halmaza.
+1:351 minute, 35 secondsÉs RG véges halmaz, a levezetési szabályok halmaza. ahol egy levezetési
+1:421 minute, 42 secondsszabályok alfa levezetési szabály az ilyen alfanyíl béta alkal alfa és béta terminálisok és nem terminálisok sorozata.
+1:531 minute, 53 secondsJó? És akkor van egy s kezdő szimbólum, amelyik nem terminális.
+2:012 minutes, 1 secondÉs azt mondjuk, hogy egy kappa terminálisokból és nem terminálisokból
+2:092 minutes, 9 secondsálló sorozatból levezethető egy nű terminálisból és nem terminálisokból
+2:162 minutes, 16 secondsálló sorozat. közvetlenül, hogyha
+2:222 minutes, 22 secondslétezik olyan gamma delta v uniós szigmas csillag részorozatok
+2:332 minutes, 33 secondsés alfa béta szabály, hogy a kappa az gamma alfa delta és a nő az
+2:422 minutes, 42 secondsgamma bta delta. Tehát egyszerűen az alfát kicseréljük a műre.
+2:492 minutes, 49 secondsÉs akkor azt mondjuk, hogy egy V1-ből levezethet egy VN, hogyha
+2:562 minutes, 56 secondsvéges sok ilyen lépéssel levezethető, vagy n lépésben levezethető.
+3:043 minutes, 4 secondsJó, tehát ezek azt hiszem, hogy definíciók, és azt mondjuk, hogy
+3:163 minutes, 16 secondsegy veviált egy, hogyha adott egy grammatika, akkor az által generált nyelv azokbal a vevé terminálisokból
+3:253 minutes, 25 secondsálló sorozatokból, az a szavakból áll, amelyek levezethetőek a kezdő szimbólumból.
+3:333 minutes, 33 secondsEz a G gramatika által generált nyelv.
+3:423 minutes, 42 secondsJó, ezek és azt mondjuk, hogy egy grammatika az környezetfüggetlen,
+3:493 minutes, 49 secondsha a levezetések bal oldalán legfeljebb a legfeljebb egy darab nem terminális
+3:563 minutes, 56 secondsáll, azaz a szabályok a nyíl béta alakúak, ahol az a az egy nem terminális, és a
+4:034 minutes, 3 secondsbéta pedig a egy tetszőleges és terminálisokból és nem terminálisokból álló sorozat.
+4:154 minutes, 15 secondsJó, hát itt még érdemes megjegyezni, hogy hogy egy ilyen gazdaságos szabály, tehát
+4:234 minutes, 23 secondsösszevonjuk a szabályokat, amikor jelöljük a a jelölésrendszerünkben.
+4:284 minutes, 28 secondsTehát az a nyíl béta gamma delta az azt jelenti, hogy az a-ból levezethető a béta gamma meg a delta is.
+4:394 minutes, 39 secondsJó.
+4:414 minutes, 41 secondsÉs láttunk példát környezetfüggetlen grammatikákra.
+4:494 minutes, 49 secondsBeltuk, hogy egy reguláris nyelv az környezetfügget mindenképpen környezetfüggetlen is, viszont fordítva nem igaz, ez nem igaz.
+4:594 minutes, 59 secondsTehát létezik olyan nyelv, amelyik környezetfüggetlen, de nem reguláris.
+5:055 minutes, 5 secondsTehát a környezetfüggetlen nyelveknek a halmazza az bővebb, mint a reguláris nyelveknek a halmaza. Tud valaki mondani
+5:135 minutes, 13 secondspéldát olyan nyelvre, amelyik környezetfüggetlen, de nem reguláris?
+5:295 minutes, 29 secondsHát például a nulla az nedeniken egy az nödiken, tehát ahol amely azokból a szavakból áll, ahol
+5:385 minutes, 38 secondsvalahány darab nulla után ugyanennyi egyes szerepel. Erről a nyelvről beláttuk, hogy ez nem reguláris, viszont
+5:465 minutes, 46 secondskörnyezetfüggetlen, hiszen könnyedén generálható egy környezetfüggetlen grammatikával.
+5:555 minutes, 55 secondsJó, láttuk, hogy a levezetések azok ilyen faszszerűen néznek ki egy
+6:036 minutes, 3 secondskörnyezetfüggetlen grammatikában, és
+6:116 minutes, 11 secondskörnyezetfüggetlen gramatikáknak van egy ilyen jól áttekinthető csomszkiéle normálakja,
+6:196 minutes, 19 secondsahol minden szabály a következőképpen ben adható meg, illetve hát ez már egy
+6:266 minutes, 26 secondstétel, hogy beadható minden környezet független grammatika ilyen módon, de ha adott egy grammatika annak az csomszki
+6:346 minutes, 34 secondsféle normálakban adott, a szabályai a nyíl b a nyil a s nyíl alakúak,
+6:446 minutes, 44 secondsahol a b azok nem terminálisok, b és cező szimbólumok. Ok.
+6:536 minutes, 53 secondsA terminális és ez a kezdő szimbólum.
+6:586 minutes, 58 secondsÉs akkor a tétel az, hogy minden környezet független grammatikához megadható őt generáló grammatika csomszki féle normál.
+7:117 minutes, 11 secondsJó, erre majd fogunk látni példát.
+7:167 minutes, 16 secondsÉs környezetfüggetlen gramatikákra is tanultunk egy pumpáló lámmát. A pump
+7:227 minutes, 22 secondsbárhill ma azt mondja, hogy egy ha egy nyelv környezet független, akkor létezik egy olyan p konstans,
+7:317 minutes, 31 secondshogy minden p-nél hosszabb szava a nyelvnek pumpálható.
+7:377 minutes, 37 secondsEz mit jelent? Hogy bármely p-nél hosszabb szó fölírható uv xyz alakban.
+7:467 minutes, 46 secondsÚgyhogy u V az niken X Y az Niken Z mindenre benne lesz a nyelvben
+7:547 minutes, 54 secondsn = 0 esetén van mit pumpálnunk. Tehát a V és az Y összhossza az
+8:038 minutes, 3 secondstöbb mint nulla, tehát legalább egy. És a Vxy-nak az összhossza, tehát ennek a középső résznek az összhossza az legfeljebb P.
+8:138 minutes, 13 secondsItt is elmondanám, hogy hogy még egyszer, hogy ez nem egy akkor és
+8:208 minutes, 20 secondscsakis akkor tétel, hanem ez egy elégséges feltétel.
+8:288 minutes, 28 secondsTehát ha egy nyelv környezetfüggetlen, akkor akkor pumpálható.
+8:368 minutes, 36 secondsEz azt mondja ki, az nem igaz, hogyha egy nyelv pumpálható ilyen értelemben, akkor
+8:438 minutes, 43 secondskörnyezetfüggetlen is. Mire használjuk a környezetfügget, tehát a pumpálás lemmát, a környezetfüggetlen nyelvekre vonatkozó
+8:528 minutes, 52 secondspumpálási lemmát arra használjuk, hogy ha arra gyanakszunk,
+8:598 minutes, 59 secondshogy egy nyelv nem környezet független, akkor a pumpálóma segítségével ezt aránylag könnyen rá tudjuk bizonyítani.
+9:089 minutes, 8 secondsHogyan? Hát úgy, hogy föltesszük indirekt, hogy környezetfüggetlen, akkor minden legalább p hosszú szava pumpálható.
+9:209 minutes, 20 secondsÉs választunk P függvényében egy olyan legalább P hosszú szót,
+9:289 minutes, 28 secondsamire rá tudjuk könnyen bizonyítani, mégse pumpálható. És rá rá is bizonyítjuk.
+9:349 minutes, 34 secondsEz esetben ellentmondásra jutunk a lemmával, és beláttuk, hogy a nyelv az mégsem környezetfüggetlen.
+9:519 minutes, 51 secondsA bizonyítása a környezetfüggetlen pumpáló lemálak az nagyon egyszerű.
+10:0010 minutesHát hogyha egy szó az nagyon hosszú.
+10:0410 minutes, 4 secondsAkkor persze a levezetési fának elég mélynek kell lennie, ha elég mély a fa.
+10:1010 minutes, 10 secondsUgye itt a fa belső pontjaiban nem terminálisok vannak,
+10:1810 minutes, 18 secondsakkor egy akkor lesz egy olyan nem terminális, ami ismétlődni fog. Viszont ugyanazt a levezetési utat, ezt akárhányszor meg tudjuk ismételni, ugye?
+10:2810 minutes, 28 secondsTehát ha itt tartunk, akkor ez is egy jó szó lesz. Tehát ez is egy levezethető
+10:3510 minutes, 35 secondsszó lesz. Még egyszer megismételjük ezt a levezetési szakaszt, akkor a az uvxy
+10:4310 minutes, 43 secondsz is a nyelvnek egy eleme lesz, és így tovább. Jó, tehát
+10:5110 minutes, 51 secondsvagy akár ha visszafele pumpálunk, akkor az u elgyhatjuk ezt az egészet. Tehát
+10:5910 minutes, 59 secondsakkor vagy ezt a részt, tehát akkor az UXZ is benne lesz a nyelvben.
+11:0811 minutes, 8 secondsÉs még beláttuk azt is, vagy hát láttunk egy példát arra nézve, hogy hogyan
+11:1611 minutes, 16 secondshasználjuk a környezetfüggetlen nyelvekre vonatkozó pumpáló lá. Már beláttuk, hogy az a az neden
+11:2411 minutes, 24 secondsb az niken, c az niken nyelv az nem környezetfüggetlen.
+11:3211 minutes, 32 secondsUgye itt kicsit azért nehezebb használni a környezetfüggetlen pumpálás lámát, hiszen nem tudjuk, hogy
+11:4111 minutes, 41 secondshogy hová esik a pumpálandó rész a szóban. A reguláris
+11:4811 minutes, 48 secondsreguláris változatállt ennek a lemmának kicsit könnyebb használni, hiszen
+11:5511 minutes, 55 secondstudjuk, hogy hogy a pumpáló rész az első P karakter közé fog esni. Itt nem ez a helyzet.
+12:0312 minutes, 3 secondsEnnek ellenére ez egy nagyon jól használható állítás. Jó.
+12:1112 minutes, 11 secondsTehát a lényeg az, hogy mindig mi válassjuk meg azt, mi tud válasszuk meg
+12:1812 minutes, 18 secondsúgy azt a szót, hogy könnyű legyen rábizonyítani, hogy hogy ő mégse pumpálható.
+12:3012 minutes, 30 secondsÉs hát itt láttunk egy ilyen láttunk egy ilyen hierarchiát. Mi a hármas nyelvosztáza?
+12:4012 minutes, 40 secondsCsomszki féle nyelvosztályk az a reguláris nyelvek halmaza. A kettes nyelvosztályk az a környezetfüggetlen
+12:4912 minutes, 49 secondsnyelvek osztálya, ugye tehát a reguláris nyelveknek az osztája az valódi része a környezetfüggetlen nyelveknek
+12:5712 minutes, 57 secondsnyelvek osztályának. Aztán vannak a környezetfüggő nyelvek, ahol
+13:0413 minutes, 4 secondsezekkel külön nem fogunk foglalkozni, de ezek azok a nyelvek, amikre
+13:1413 minutes, 14 secondsúgy szintén vannak megkötések a szabályokra.
+13:2213 minutes, 22 secondsDe ezek, tehát a környezetfüggetlenek, ezek valódi részét képezik a környezetfüggő
+13:3013 minutes, 30 secondsnyelveknek. És olyan nullás nyelvosztály, ahol a szabályok azok tetszőleges alakúak lehetnek, meg ezek egyre bővebb nyelvosztályok.
+13:4413 minutes, 44 secondsÉs és hát még megemlítettük a BNF programozási nyelveket is. Tehát
+13:5313 minutes, 53 secondsnagyjából ennyit ennyit vettünk át a múlt órán.
+14:0214 minutes, 2 secondsÉs akkor most a következő kérdés merül fölünk, hogy
+14:0914 minutes, 9 secondshogy reguláris nyelvek esetén ugye
+14:1914 minutes, 19 secondsugye mik a reguláris nyelvek? Azok amik generálhatók reguláris kifejezéssel. De azt is tudjuk, hogyha, hogy egyben azok
+14:2914 minutes, 29 secondsa reguláris nyelvek, amikhez létezik olyan véges automata, determinisztikus vagy
+14:3614 minutes, 36 secondsnem determinisztikus, amely generálja őket.
+14:4214 minutes, 42 secondsHát a kérdés az az, hogy hogy létezik-e automóata
+14:5114 minutes, 51 secondskörnyezetfüggetlen nyelvekhez. hogy a determinisztikus véges automaták vagy nem determisztikus véges automaták nem
+14:5814 minutes, 58 secondsjók, hiszen azok csak a reguláris nyelveket tudják elfogadni.
+15:0915 minutes, 9 secondsTehát egy kicsit kicsit erősebb automatára lenne szükségünk.
+15:1615 minutes, 16 secondsÉs ezek az úgynevezett veremautómaták, amikről most egy kicsit amiket egy kicsit most körbe fogunk járni.
+15:2915 minutes, 29 secondsLátják-e az új diákat? Halló?
+15:3815 minutes, 38 secondsIgen, látjuk. Köszönöm szépen.
+15:4415 minutes, 44 secondsJó, tehát akkor még egyszer a környezetfüggetlen nyelvek bővebb halt alkotnak, mint a reguláris nyelvek.
+15:5415 minutes, 54 secondsReguláris nyelvek pontosan azok, amiket fel tudunk ismerni
+16:0316 minutes, 3 secondsvéges automatákkal, determinisztikussal vagy nem determinisztikus automatákkal.
+16:0816 minutes, 8 secondsMost ahhoz, hogyha hogy olyan automatákat gyártsunk, vagy vagy olyan automatánk legyen, ami fölismeri a
+16:1616 minutes, 16 secondskörnyezetfüggetlen nyelveket is, annak egy kicsit többet kell tudnia, hiszen a környez többen vannak a
+16:2316 minutes, 23 secondskörnyezetfüggetlen nyelvek, mint a mint a reguláris nyelvek.
+16:3016 minutes, 30 secondsEzek az úgynevezett veremautómatomaták.
+16:3416 minutes, 34 secondsUgye látjuk, az előbb elmondtam, hogy ez az etermisztikus véges automóata nem alkalmas környezetfüggetlen nyelv
+16:4216 minutes, 42 secondsfelismerésére hogyan kellene módosítanunk.
+16:4916 minutes, 49 secondsPéldául hogyan is tudnánk fölismerni a nulla az neden egy az neden nyelvet,
+16:5616 minutes, 56 secondsamelyekről már bebizonyítottuk, hogy nem reguláris.
+17:0117 minutes, 1 secondHát itt van egy egy itt van egy nagyjából idáig ez egy véges automóata.
+17:0917 minutes, 9 secondsTehát van egy véges sok állapotunk, van egy bemenőszallag, van egy kezdőállapot, és attól függően,
+17:1817 minutes, 18 secondshogy milyen állapotban vagyunk, és mi éppen a bemenőjel elugrunk egy másik állapotba,
+17:2617 minutes, 26 secondsezt egy kiegészítjük egy egy veremtárral. Tehát van még egy verem ABC is, vagy egy verem memória.
+17:3717 minutes, 37 secondsEz a verem memória, ez egy last in first out elérés,
+17:4417 minutes, 44 secondstehát mindig a legesleutolsó, leges legutoljára felírt
+17:5217 minutes, 52 secondsbithez van hozzáférésünk.
+17:5617 minutes, 56 secondsHogy működik egy veremautómata? Egy veremautomata úgy működik, hogy attól függően, hogy
+18:0218 minutes, 2 secondsmilyen állapotban vagyunk, éppen mi a bemeneti jel és éppen milyen jelenlát látunk a Verem ABC-ben.
+18:1718 minutes, 17 secondsátugrik egy másik állapotba, és és átírja, tehát vagy átírja ezt a
+18:2718 minutes, 27 secondsjelet, vagy kitörli, vagy vagy egy vagy ideír egy következőt, tehát ilyen típusú dolgokat tehet, vagy nem csinál semmit.
+18:3718 minutes, 37 secondsJó, tehát itt ezt a verem ABC-t tudjuk használni.
+18:4518 minutes, 45 secondsformális definíciója a veremautómatának.
+18:5018 minutes, 50 secondsTehát egy veremautómata ugye nagyjából úgy néz ki, mint egy determinisztikus véges automóata. Tehát
+18:5718 minutes, 57 secondsvan egy Q véges halmaz a az állapotok halmaza, szigma a bemeneti ABC,
+19:0519 minutes, 5 secondsa gamma. Na ez az, amivel többet tud a veremautomata.
+19:1019 minutes, 10 secondsEgy véges halmaz a verem ABC. A delta az az átmenet függvény, melyik ettől attól
+19:1819 minutes, 18 secondsfüggően, hogy milyen állapotban vagyunk, mi a bemeneti jel, amit éppen
+19:2619 minutes, 26 secondsleolvasunk, és mit látunk a a Verem ABC tetején
+19:3319 minutes, 33 secondsátugorhatunk egy másik állapotba, és a verem tetején ott törlünk, vagy vagy hozzáérünk egy másik
+19:4219 minutes, 42 secondsjel, vagy nem csinál cinálunk éppen semmit. Igen ám, de mindezt nem determinisztikus módon, tehát többféle
+19:4919 minutes, 49 secondsállapotba ugorhatunk át, és a verem tetején is többféle dolgot tehetünk meg. Ezt megint csak úgy
+19:5619 minutes, 56 secondskell elképzelni, hogy a a számítási folyamat elágazik. Tehát itt nincsenek valószínűségek, egyszerűen megsokszorozza magát a gép.
+20:1020 minutes, 10 secondsVan egy Q0 kezdeti állapot. meg egy F végállapotok halmaza, az elfogadó állapotok halmaza.
+20:1920 minutes, 19 secondsJó, tehát nagyjából ez a ez a veremáb veremautomaták definíciója. Érthető-e a definíció?
+20:3820 minutes, 38 secondsHalló?
+20:4420 minutes, 44 secondsHelló, helló. Érthető veremutomat definíciója.
+20:5020 minutes, 50 secondsIgen, köszönöm szépen.
+20:5420 minutes, 54 secondsA hát itt a jelölés, ez a szokásos jelölés. A sigma y az a sigma unió y és
+21:0121 minutes, 1 seconda gamma y az a gamma unió y.
+21:0921 minutes, 9 secondsMi egy felismert jel sorozat?
+21:1221 minutes, 12 secondsTehát veremutomata felismer egy egy VV1, VV2, VVN sig belé jelek sorozatát.
+21:2421 minutes, 24 secondsHa léteznek olyan, ha létezik felismerőút, tehát ha létezik, ha létezik olyan R0 R1
+21:3121 minutes, 31 secondsRN kubeli állapotok sorozata és S0 S1Sen
+21:3721 minutes, 37 secondsgamma yeli jelek sorozata,
+21:4321 minutes, 43 secondshogy az R0 az a Q az a kezdőállapot, az S0
+21:4921 minutes, 49 secondsaz üres, tehát üres veremmel kezdődik a számítási folyamat.
+21:5621 minutes, 56 secondsés az ri + 1b az = delta riv
+22:0622 minutes, 6 seconds+ 1a. Tehát ez azt jelenti, hogy
+22:1322 minutes, 13 secondshogy az hogy az átmeet függvény szerint, hogyha Ri állapotban vagyunk, a vei
+22:2222 minutes, 22 secondsplusz egy bemeneti jelet olvassuk, és a
+22:2922 minutes, 29 secondséppen az átlátjuk, az a jelet a verem tetején, akkor át tudunk ugrani.
+22:3722 minutes, 37 secondsaz ri plus állapotba, és át tudjuk írni az a-t
+22:4722 minutes, 47 secondsb-re a és az renn az elfogadó állapot.
+22:5722 minutes, 57 secondsJó, azt hiszem, hogy ez ez így világos.
+23:0223 minutes, 2 secondsÉs és akkor mondjuk, hogy egy M verema felismeri az a nyelvet, ha
+23:1123 minutes, 11 secondsha az a nyelv azon szavakból áll, amiket a veremautómata felismer ez alapján.
+23:2023 minutes, 20 secondsTehát ami az olyan stringekből áll, egy veremautó által felismert nyelv, amikhez
+23:2823 minutes, 28 secondsvan olyan számítás jut, amivel a veremutómata elfogadó áállapotba kerül.
+23:3823 minutes, 38 secondsNa nézzük mondjuk egy
+23:4523 minutes, 45 secondsegy nézzünk egy példát egy verem automatánra.
+23:5623 minutes, 56 secondsItt van mondjuk egy veremautómata, természetesen veremautómaták átlátfüggvényét is le tudjuk írni egy táblázattal.
+24:0624 minutes, 6 secondsTehát itt van egy van egy Q1 kezdőállapot.
+24:1624 minutes, 16 secondsAz üres nyelv és az üres verem szimbólum hatására.
+24:2124 minutes, 21 secondsLeírunk egy dollárt. Ez egy formai dolog, h csak a verem ABC aljára, csak hogy megismerjük a veremnek a az alját.
+24:3424 minutes, 34 secondsÉs amíg jönnek a nullák, nullák, addig
+24:4224 minutes, 42 secondsaddig maradunk ebben az állapotban, és
+24:5324 minutes, 53 secondsés és így beírunk egy nullát a a verembe.
+25:0225 minutes, 2 secondsNa. Ö, aztán hogyha jön egyes, akkor áttírunk a áttérünk a átmegyünk a
+25:1225 minutes, 12 secondsQ3 állapotba, és ahogy jönnek az egyesek,
+25:2125 minutes, 21 secondsakkor elkezdjük elkezdjük mindig a verem tetejéről kidobálni a nullákat, ugye?
+25:3125 minutes, 31 secondsÉs ha így leérünk a verem aljára, akkor ugye mi történik? Tehát minden egyes hatással, ugye az elején, ahogy jönnek a
+25:4025 minutes, 40 secondsnullák, minden nulla, minden bejövő nullával beírunk egy nullát a verembe,
+25:4725 minutes, 47 secondsvagy bármilyen szimbólumot a verembe, ahogy jönnek az egyesek, ezeket fölülről elkezdjük egyenként törölgetni,
+25:5525 minutes, 55 secondsletörölni, és hát akkor fogjuk elfogadni a szót, ha pont leérünk a verem aljára,
+26:0226 minutes, 2 secondsamikor befejeződik a sorozat. Azaz ugyanannyi egyes van, mint ah hány nulla. Tehát még egyszer
+26:1226 minutes, 12 secondsminden egyes esetén beírunk egy szimbólumot a verembe, ahogy jönnek a nullák.
+26:1826 minutes, 18 secondsEzek egyenként kitörölgetj egyenként kitörölgetjük.
+26:2326 minutes, 23 secondsUgye mi történik? Hogyha ugyanannyi egyes van, mint nulla,
+26:3026 minutes, 30 secondsakkor a kitörölgetésekkel, akkor a kitörölgetésekkel pont a veremjára fogunk kérni, és akkor
+26:3826 minutes, 38 secondselfogadjuk ezt a szót. Egyébként meg nem.
+26:4226 minutes, 42 secondsHát ez a veremautomata, ez bizony pont a nulla az nedeniken, egy azen nyelvet fogadja el, amiről láttuk, hogy ez a nyelv nem reguláris. Jó.
+26:5626 minutes, 56 secondsNem tudom, érthető-e ez a ez a vagy átlátható-e ez a veremutomata?
+27:0527 minutes, 5 secondsHalló? Igen.
+27:1527 minutes, 15 secondsÉrthető eddig az, amit elmondtam.
+27:2227 minutes, 22 secondsIgen, köszönöm szépen. Na, itt van egy másik verema.
+27:3327 minutes, 33 secondsTulajdonképpen ebben, ha visszagondolunk, vagy vagy megnézzük ezt a veremautómatomatát,
+27:4127 minutes, 41 secondsigazából nem is nagyon használjuk ki a nemeterminizmust, ugye? Tehát mindig
+27:4827 minutes, 48 secondsahogy jönnek a nullák, pakolunk be minden egyes nullával valamit a veremben. Ahogy jönnek az
+27:5427 minutes, 54 secondsegyesek, dobáljuk ki egyessével ezeket a jeleket a veremből. És akkor, hogyha a végén a verem verem az üres lesz, akkor
+28:0328 minutes, 3 secondselfogadjuk a szót. Tehát itt nincsen semmilyen nem determinizmusról szó gyakorlatilag. Tehát ez
+28:1128 minutes, 11 secondslátni fogjuk, hogy ez egy úgynevezett determinisztikus vereme
+28:1928 minutes, 19 secondsazért viszont a nemeterminizmusra néha szükségünk van. Tehát mondjuk nézzük a következő veremautomatát. Na, ez melyik nyelvet fogadja el?
+28:4928 minutes, 49 secondsHát ha jön egy nulla, akkor a verembe
+28:5728 minutes, 57 secondsnullát írok, ha j tehát ugye Ugye egyrészt átugrok,
+29:0729 minutes, 7 secondsüresről indulok, üres veremmel megjelölöm a verem alját, átugrok a Q2 állapotba. Ha jön egy nulla, akkor a
+29:1629 minutes, 16 secondsverembe beírok egy nullát, és maradok itt ebben az állapotban, ha jön egyes, akkor
+29:2429 minutes, 24 secondsbeírok egy egyest a verembe, és utána bárhol még át is ugorhatok, ha
+29:3129 minutes, 31 secondsQ2-ben vagyok. a Q3 állapotba, és hogyha nulla
+29:3829 minutes, 38 secondsjel jön be, és nulla van a verem tetején, akkor akkor letörlöm ezt a nullát.
+29:4929 minutes, 49 secondsHa egyest látok, ha egyes a bejövőjel, és egyest látok a verem teteén, akkor is
+29:5829 minutes, 58 secondsletörlöm a verem tetején lévő egyest, és maradok ebben az állapotban.
+30:0530 minutes, 5 secondsÉs ha éppen a verem aljára érek, akkor el lesz fogadva ez a szó. Na miket fogok így elfogadni? Melyik nyelvet? Milyen szavakat fogok így?
+30:1530 minutes, 15 secondsA szimmetrikus a szimmetrikus szavakat. Pontosan. Így van. Nagyon jó. Köszönöm szépen. Ugye, tehát itt megtippelem, hogy hol van a
+30:2330 minutes, 23 secondsközepe, ugye? És akkor hogyha ugyanazt ugye itt pontosan még
+30:3130 minutes, 31 secondsegyszer lemásolom a verembe a a az eddigi szót, és ugye amikor itt
+30:3830 minutes, 38 secondsjön egy karakter, akkor összehasonlítom ugye az előző karakterrel. Ha ugyanaz, akkor letörlöm.
+30:4830 minutes, 48 secondsegyenként törlöm őket, és hát pontosan akkor lesz elfogadva a szó, hogy közepérről elindulva összehasonlítgatva
+30:5630 minutes, 56 secondsjobbra-balra a karaktereket, azok ugyanazok lesznek. Érthető-e ez így?
+31:0431 minutes, 4 secondsHalló, halló, halló mindenkinek remélem, hogy érthető. Tehát például a 0ullát el fogjuk-e fogadni? A nullát elfogadjuk.
+31:1931 minutes, 19 secondsUgye, mert mert átugrunk ide, az üresen jön az első nulla, beírunk egy nullát.
+31:3131 minutes, 31 secondsNem determinisztikus módon még maradunk itt is, de egyben át is ugorhatunk ide is. Tehát megkettőzi magát itt az automata Q3-ba. Na, jön a második nulla.
+31:4431 minutes, 44 secondsA második nulla esetében a verem tetején már látunk egy nullát, azt letörö, tehát
+31:5331 minutes, 53 secondsés van egy bemenő nulla, tehát a verem tetején egy nulla meg egy bemenő nulla.
+31:5931 minutes, 59 secondsA kettő ugyanaz, tehát letörlöm a verem tetején lévő nullát. Igen ám, de pont
+32:0632 minutes, 6 secondselfogyott a bemenő jelek sorozata, és a verem aljához értem, tehát el lesz fogadva ez a szó. Tehát elfogadom ezt a szót.
+32:1732 minutes, 17 secondsA 01-et nem fogom elfogadni. Miért?
+32:2132 minutes, 21 secondsMert mondjuk az üres hatására átugrok ide a Q2-be, jön a nullám.
+32:3032 minutes, 30 secondsBeírok ide egy nullát, ugye?
+32:3532 minutes, 35 secondsNa most itt itt, hogyha akár átugrom, akár nem, de
+32:4232 minutes, 42 secondsnézzük, mi történik, hogyha átugrom a a Q3-ba.
+32:4932 minutes, 49 secondsUgye itt nulla van a verem tetején, és egyes a bejövő, következő bejövő szimbólum
+32:5832 minutes, 58 secondselhal a számítási folyamat, ugye? Tehát nem fogom elfogadni. És és ez a másik ágra is igaz. Az 1-0át se fogom elfogadni.
+33:0833 minutes, 8 secondsMi van az egyegyel? Hasonló módon, mint a 0-0át el fogom fogadni.
+33:1433 minutes, 14 secondsMi a helyzet a 00-val?
+33:2133 minutes, 21 secondsNa mindegy. Hát pont a pont a szavakat, a szimmetrikus szavakat fogom így elfogadni. Jó.
+33:3233 minutes, 32 secondsTehát helyesebben a pároszimmetrikus szavakat, ugye, tehát mert mert mindig a közepétől hasonlítatok össze kettőt.
+33:4533 minutes, 45 secondsJó.
+33:5333 minutes, 53 secondsÉs akkor a tétel az a következő, hogy minden el környezetfüggetlen nyelvhez létezik öt felismerő veremautómata.
+34:0334 minutes, 3 secondsMost ez ennek a tételnek a bizonyítása az az elég hosszadalmas. Ide le van írva.
+34:1334 minutes, 13 secondsÉn most nem szeretném belátni. Ö nem trükkös a bizonyítással igazából.
+34:2434 minutes, 24 secondsMi történik, hogyha egy nyelv gramatika, hogyha egy nyelv környezetfüggetlen,
+34:3334 minutes, 33 secondsakkor van őt generáló környezetfüggetlen grammatika, és akkor lényegében a grammatika
+34:4234 minutes, 42 secondslevezetési szabályait leszimuláljuk a gép működésével.
+34:5234 minutes, 52 secondsTehát ezt ezt most én teljes részlet vagy nem akarom
+34:5834 minutes, 58 secondselmondani, mert mert nagyon sok időt veszítenénk ezzel.
+35:0535 minutes, 5 secondsEz egy legalább félra 40 perc, amíg az egészet elmondom részletesen.
+35:1735 minutes, 17 secondsÉs fordítva is igaz, tehát hogy minden veremautomatához létezik egy olyan G grammatika, amely éppen az M által
+35:2635 minutes, 26 secondsfelismert nyelvet generálja. Tehát
+35:3235 minutes, 32 secondslényegében a tétel azt mondja ki, hogy a környezetfüggetlen grammatikák
+35:3935 minutes, 39 secondsát, tehát a környezetfüggetlen nyelvek éppen azok, amik generálhatók veremautomatákkal.
+35:5035 minutes, 50 secondsJó, tehát ezt ezt megint csak nem mondom el, mert mert hosszú és é egy kicsit unalmas is ennek a bizonyítása.
+36:0736 minutes, 7 secondsJó, tényleg ez inkább
+36:1436 minutes, 14 secondsinkább 60 perc lenne ennek az egésznek a levezetése. De
+36:2236 minutes, 22 secondsazért lássuk, lássuk még egy-két dolgot környezetfüggetlen nyelvekről, mégpedig a
+36:3136 minutes, 31 secondsmi művelet mi a helyzet a reguláris műveletekkel?
+36:4036 minutes, 40 secondsA tétel az, hogy az legyen el a környezet független nyelvek
+36:4736 minutes, 47 secondshalmaza. Ekkor az el nyelvcsalád az zárt a reguláris operátorokra nézve. Tehát ez
+36:5636 minutes, 56 secondsmit jelent? hogy ha A1, A2, A1 és A2 is környezetfüggetlen, akkor az unióuk is környezetfüggetlen.
+37:0737 minutes, 7 secondsHa A1 és A2 környezet független, akkor a két nyelv konkációja is független.
+37:1437 minutes, 14 secondsIlletve az A1 egy környezet független, akkor az A1 klíni csillag lezárása is környezetfüggetlen.
+37:2437 minutes, 24 secondsÉs hogyan tudjuk ezt belátni?
+37:3037 minutes, 30 secondsHát a az uniónak a belátása az nagyon
+37:3637 minutes, 36 secondsegyszerű. tegyük fel, hogy hogy L1, illetve L2 környez A1, illetve
+37:4337 minutes, 43 secondsA2 környezet független, akkor vannak olyan G1 és G2 környezetfüggetlen
+37:5037 minutes, 50 secondsgrammatikák, amik generálják a két nyelvet.
+37:5637 minutes, 56 secondsMost megadunk egy olyan grammatikát, ami a két nyelv unió fogja generálni. Mi lesz ez a gramatika?
+38:0638 minutes, 6 secondsA nem terminális halmaz az álljon a V1 Unió V2 Unió S-ből,
+38:1438 minutes, 14 secondsahol a V1 az a G1 nem terminálisainak a halmaza, beleértve a kezdőszimbólumot is. V2
+38:2338 minutes, 23 secondsaz a G2 gramatika nem terminálisainak a halmazza. És fölveszünk egy még hozzáveszünk ehhez egy új S kezdő szimbólumot.
+38:3638 minutes, 36 secondsA terminálisok halmazagében legyen a két grammatika terminálisainak az unió.
+38:4838 minutes, 48 secondsTovábbá az új kezdő szimbólum
+38:5438 minutes, 54 secondslegyen ez az új felvett új nem terminális az S. És még meg kell adni az levezetési szabályokat.
+39:0539 minutes, 5 secondsHát az R levezetési szabályhalmazba vegyük
+39:1239 minutes, 12 secondsbele az összes G1 levezetési szabályt, tehát az R1-et.
+39:1839 minutes, 18 secondsVegyük be a G2 összes levezetési szabát, az R2-t.
+39:2539 minutes, 25 secondsTehát ugye itt le tudjuk generálni továbbá
+39:3139 minutes, 31 secondsaz Snyil S1 és az Snyil S2 szabályokat, ahol az S1 és az S2, a G1 és a G2
+39:4039 minutes, 40 secondsgrammatika kezdő szimbólumai. Hát tegyük föl, hogy
+39:4739 minutes, 47 secondshogy van egy vevészó, amit legenerál a G1 grammatika.
+39:5239 minutes, 52 secondsAzt állítom, hogy ezt a szót az legenerálja a G grammatika is. Milyen módon
+40:0040 minutesSny S1? És utána használhatom az R1-beli szabályokat. Ugye már itt vagyok a G1
+40:0840 minutes, 8 secondsgrammatikán belül. Akkor vagy a G1 grammatika levezetési szabályot használva le tudom vezetni a a vevés
+40:1840 minutes, 18 secondsszót. Hasonló módon, hogyha adott-e egy vevé, ami benne van az A2-ben, azaz a G2
+40:2640 minutes, 26 secondsgrammatika generálja, akkor hogy fogom levezetni ezt a szót? Megvan az a szabálym az S nyíl Snyil S2.
+40:3540 minutes, 35 secondsAz S2 az a G2 gramatika kezdőszimbóluma.
+40:4040 minutes, 40 secondsMivel VV benne van a G2 által generált nyelvben, ezzel a G2 levezetési szabályai alapján az S1-ből
+40:4940 minutes, 49 secondslevezethetőek, tehát a VV is lez vezethető ezen szabályok alkalmazásával.
 
-https://www.youtube.com/watch?v=DaLyIbms98A
+https://www.youtube.com/watch?v=_eVShbDYjqI

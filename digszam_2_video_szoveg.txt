@@ -1,3 +1,442 @@
+Először is a te múltkor már említettem, hogy a hogy az előadásnak az anyagát azt fönt
+1:101 minute, 10 secondselőadások anyagai a fóliák fönt vannak a a tárgnak a weboldalán. A másik dolog
+1:191 minute, 19 secondspedig, hogy a az előadások és a gyakorlatoknak a
+1:251 minute, 25 secondsvideóit föltettem a távoktatás.pk.hu-ra, úgyhogy ott mindez elérhető.
+1:351 minute, 35 secondsA másik dolog, amit szeretnék kérni, hogy engem berendeltek ma oltásra 119:30-re.
+1:451 minute, 45 secondsNagyon közel van hozzám a rendelőintézet. Tehát most megint csak ugyanazt csinálnám, mint a múltkor, hogy
+1:531 minute, 53 secondsolyan 920 körül abbahagynám az előadást, addig egyfolytában tartanám, elrohanok
+2:012 minutes, 1 secondbeoltatni magam, és utána szerintem visszaérek már gyakorlatra 10-15-re már itt vagyok.
+2:082 minutes, 8 secondsHa egy-két percet csúszom, akkor elnézést kérek. Ugye rendben van.
+2:132 minutes, 13 secondsÚgyhogy ma most akkor így tartanák meg ezt az órát, hogy egyfolytában nyomjuk mondjuk 9: 20 percig.
+2:232 minutes, 23 secondsHalló, kérek egy visszajelzést. Halló? Halló?
+2:332 minutes, 33 secondsHallanak, ugye?
+2:342 minutes, 34 secondsIgen, igen. Köszönöm szépen. Akkor ez a kérésem, hogy hogy ezt az oltási tervet
+2:412 minutes, 41 secondsnyilván nem borítja az ember szívesen, hogy hogy akkor egy rövidebb lenne az előadás. Jó,
+2:512 minutes, 51 secondsakkor folytatjuk a
+2:572 minutes, 57 secondsdetermisztikus véges automatát, amit a gatag, ami amiket a mai órán fogunk venni.
+3:043 minutes, 4 secondsEgyrészt jól látják-e a fóliákat most, tehát meg van osztva, mindent rendben látnak a képernyőn.
+3:123 minutes, 12 secondsIgen.
+3:133 minutes, 13 secondsNagyon köszönöm. Tehát egyrészt fogunk arról beszélni, hogy
+3:203 minutes, 20 secondshogyha föl szeretnénk ismerni egy adott nyelvet valahogy nem mindegy, hogy azt
+3:273 minutes, 27 seconds2000 állapottal ismerjük-e föl, vagy öttel. Tehát valahogy minél egyszerűbben
+3:343 minutes, 34 secondsegyszerűbb, jól átlálható determinisztikus véges automatákkal szeretnénk fölismerni egy nyelvet, és
+3:423 minutes, 42 secondsezt a kérdéskört fogjuk körüljárni, hogy mik azok a minimális automaták.
+3:513 minutes, 51 secondsUtána be fogjuk látni, hogy vannak nem reguláris nyelvek. Ezt úgy fogjuk
+3:593 minutes, 59 secondsbelátni, hogy jellemezni fogjuk a reguláris nyelveket a párhiller lemmával, a pumpáló lemmával. Ez egy nagyon egyszerű kis állítás.
+4:114 minutes, 11 secondsHalló? Igen, de nagyon jól használható.
+4:184 minutes, 18 secondsArra van hivatva bizonyítani, arra lehet jól használni ezt a lemmát, hogy hogy belássuk egy adott nyelvről, hogy nem reguláris.
+4:274 minutes, 27 secondsÖ és hát ezekre fogunk példákat látni. Jó, először is a minimális automatát. Tehát
+4:364 minutes, 36 secondsnézzük meg, hogy itt látható az ábrán egy determinisztikus véges automata. Tehát
+4:444 minutes, 44 secondsmelyik az a nyelv, amit ez az automata felismer?
+5:015 minutes, 1 secondHelló! Van erre gyors válasz?
+5:145 minutes, 14 secondsKi tudja gyorsan kitalálni, hogy melyik az a nyelv, amit ezt az automata fölismer. Hát ez az AB Unió BA csillag.
+5:245 minutes, 24 secondsKönnyű látni, hogy ez a az automata éppen az AB Unió BA csillag nyelvet fog ismeri föl.
+5:335 minutes, 33 secondsVannak ezen az automatán nyilvánvalóan felesleges a állapotok. Tehát ha
+5:405 minutes, 40 secondsletöröljük azokat az állapotokat, akól még ugyanezt a nyelvet fogjuk felismerni.
+5:485 minutes, 48 secondsEz is egy kérdés. Helló!
+6:026 minutes, 2 secondsHát kérdés még egyszer nem.
+6:046 minutes, 4 secondsTehát vannak-e ugye itt látunk egy állap egy automatát, amelyik az AB Unió BA csillaggyelvet
+6:116 minutes, 11 secondsezekkel a ezekkel az állapotokkal ismeri föl. Az a kérdés, hogyha
+6:186 minutes, 18 secondsránézünk erre az ábrára, vannak-e rajta felesleges állapotok?
+6:256 minutes, 25 secondsTehát meg tudnánk-e adni egy olyan automatát
+6:346 minutes, 34 secondsebből, amelyik ugyanezt a nyelvet fogadja el, de kevesebb állapottal, úgyhogy letörlünk egy-két állapot ebből.
+6:466 minutes, 46 secondsVilágos-e a kérdés?
+6:496 minutes, 49 secondsIgen. Például a Q5 állapot az felesleges, mert nem végállapot, viszont nincs belőle kifele mutató
+6:586 minutes, 58 secondsátmenet. Tehát hogy mindegyik nyíl csak befele mutat, de nem vagy önmagába, de hogy nem tud tovább menni egy végalapot felé.
+7:097 minutes, 9 secondsHát az annyira nem nyilvánvaló, hogy ez nem rossz, mert lehet, hogy ez ahhoz
+7:157 minutes, 15 secondskell, hogy kinyírjuk mondjuk a BB szócskát, vagy ami BB-vel kezdődik. Bocsánat a BB
+7:257 minutes, 25 secondsAB csillagot, ugye? Tehát elképzelhető, hogy ez arra van, hogy azokat mindenképpen ne utasítsuk, de
+7:357 minutes, 35 secondstulajdonképpen van abban igazság, amit mond nagyon is. Mi az, ami egy kicsit kicsit egyértelműbben látszik, vagy
+7:427 minutes, 42 secondsegyszerűbben, nem is kell hozzá meggondolás. Igen. A Q7-be nem lehet eljutni sehogy sem.
+7:497 minutes, 49 secondsNem tudunk. Így van. Tehát a Q7-ben még csak el se tudunk jutni. Ugye ha ezt egy irányított gráfnak tekintjük,
+7:577 minutes, 57 secondsaminek mondjuk ugye a Q1 állapotból indulunk el irányított éleken, akkor akkor el se
+8:058 minutes, 5 secondstudunk jutni a Q7 állapotba. Hát ha el se tudunk jutni, akkor simán letörölhetjük. És ugyanez érvényes a Q8-ra is. Tehát ha elindítjuk bármilyen
+8:148 minutes, 14 secondsszóval az automatát, akkor se a Q7-be, se a Q8-ba nem tudunk eljutni.
+8:218 minutes, 21 secondsÚgyhogy ha ezt a kettőt letöröljük, akkor pontosan ugyanazt a nyelvet fogjuk felismerni.
+8:278 minutes, 27 secondsNa most már azért kezd nehezedni a kérdés. A következő az, hogy meg lehet-e adni egy olyan automatát,
+8:348 minutes, 34 secondsami még ennél a hat állapotnál is kevesebb állapottal ismeri föl az AB Unió BA nyelvet.
+8:428 minutes, 42 secondsÖ ennél az aránylag egyszerű nyelvnél még szerint vagy valószínűleg könnyű lenne
+8:518 minutes, 51 secondsmeggondolni, hogy megadható valóban kevesebb állapot, de
+8:588 minutes, 58 secondsazért, hogyha van egy nyelv, ami egy bonyolultabb nyelv és 2000 állapottal van, az, hogy fölismerhető-e ez a nyelv
+9:079 minutes, 7 seconds1974 állapottal, az már nem lenne annyira világos. Tehát ahhoz, hogy hogy lássuk, hogy hogy
+9:169 minutes, 16 secondsmindig létezik egy minimális számú állapot, amivel egy adott nyelv felismerhető,
+9:249 minutes, 24 secondsahhoz egy kicsit körül kell járni ezeket a az úgynevezett minimális automatáknak az elméletét.
+9:339 minutes, 33 secondsTehát azt mondjuk, hogy ehhez először és a
+9:409 minutes, 40 secondskövetkező definícióra van szükség. És most nem automatákról van szó. Tehát azt
+9:469 minutes, 46 secondsmondjuk, hogy X és Y string. Tehát adott egy ABC és két string meg egy nyelv.
+9:549 minutes, 54 secondsTehát adott egy ABC, egy nyelv és két string. Azt mondjuk, hogy két string
+10:0210 minutes, 2 secondsa nyelvre ekvivalens, az L nyelvre ekvivalens. A bármely z stringet hozzáírva az X-hez
+10:1210 minutes, 12 secondsis, meg az Y-hoz is, az XZ pontosan akkor lesz benne a nyelvben, amikor az YZ is. Stimmel.
+10:2310 minutes, 23 secondsTehát adott, ez egy nagyon fontos definíció, két string, két sorozat x és y. Mondjuk a a szigma csillag az legyen
+10:3110 minutes, 31 secondsa a 01 csillag, tehát sigma legyen a 01.
+10:3610 minutes, 36 secondshogyha egy null 2 01 sorozat ekvivalens, hogyha az el nyelvre nézve, hogyha bármilyen
+10:4410 minutes, 44 secondsbármi mást hozzáírunk, de ugyanazt, tehát hogyha az x és az yz ugyanazt a z-t konkáljuk hozzá,
+10:5210 minutes, 52 secondsakkor az xz az pontosan akkor lesz benne a nyelvben, mikor az yz.
+11:0111 minutes, 1 secondNa, először is azt állítom ugye, hogy ez egy ekvivalencia reláció a szigma csillagon.
+11:1211 minutes, 12 secondsUgye az ekvivalencia relációnak ahhoz, hogy belássuk, hogy az ekvivalencia reláció, három
+11:1911 minutes, 19 secondstulajdonságot kell észrevennünk vagy tisztáznunk. Az egyik, hogy ugye mikor ekvivalencia egy reláció, hogyha reflexív, szimmetrikus és tranzitív.
+11:3011 minutes, 30 secondsUgye világos, hogy ez szimmetrikus, hiszen ha az y-t x-zel helyettesítjük a
+11:3911 minutes, 39 secondsdefinícióban, akkor az xz meg az xz azok pontosan akkor vannak benne a nyelvben. Tehát
+11:4611 minutes, 46 secondsreflexív szimmetrikus is, hiszen ha az XZ
+11:5511 minutes, 55 secondsés az YZ is benne van a nyelvben, akkor az YZ és az XZ is benne van a nyelvben.
+12:0112 minutes, 1 secondA szimmetria is érvényesül, és a tranzitivitás is érvényesül, hiszen ha az XZ benne van, pontosan akkor van benne a nyelve, mint az YZ.
+12:1212 minutes, 12 secondsAz yz pontosan akkor van benne, mint egy WZ, akkor az XZ is pontosan akkor van benne,
+12:1912 minutes, 19 secondsmint a WZ. Tehát ez, tehát a reláció az tranziti, azaz ez egy valóban egy ekvivencia reláció.
+12:3112 minutes, 31 secondsTudjuk, hogy az ekvivalencia reláció azon a halmazon, amin értelmezünk, egy partíciót ad meg.
+12:3912 minutes, 39 secondsNevezetesen ez a reláció az egész szigmacsillagon, tehát az összes stringek halmazán
+12:4712 minutes, 47 secondsföl fogja vágni, tehát particionálni fogja valamilyen módon.
+12:5312 minutes, 53 secondsÉs egy partíciótályt azt jelölhetjük bármelyik reprezentánsával.
+12:5912 minutes, 59 secondsTehát, hogyha az x az egy string, akkor azt az ekvivalenciaosztályt, amiben ő benne van, jelölhetjük egy ilyen xzögletes zárójellel.
+13:1413 minutes, 14 secondsJó.
+13:2113 minutes, 21 secondsmeg lehet né, mik a az AB Unió BA ekvivalenciaosztályai.
+13:2713 minutes, 27 secondsTehát egyrészt nyelvbéli a a az üres string ekvivalenciaosztálya lesz maga a nyelv.
+13:3713 minutes, 37 secondsAzok a stringek lesznek benne, amik magát a nyelvek alkotják.
+13:4513 minutes, 45 secondsAz a ekvivalenciaosztályban lesznek azok a stringek, amik úgy épülnek föl, hogy egy lbeli stringhez hozzá konkálok egy A-t.
+13:5813 minutes, 58 secondsA B ekenciaosztálya az úgy ép az azon stringekből áll, amikben egy nyelvbeli
+14:0514 minutes, 5 secondsszóhoz hozzákatenálok egy B-t, és az A-ba mondjuk
+14:1414 minutes, 14 secondsazok a stringek lesznek, ahol egy nyelvbeli szóhoz hozzá hozzárakok két
+14:2114 minutes, 21 secondsegymás után követő AA-t vagy BB-t, és utána következik egy tetszőleges
+14:2814 minutes, 28 secondsszigma csillagrés string. Ugye ez egy ez négyekőendszerosztály.
+14:3714 minutes, 37 secondsEz ig igen most ezt könnyű ellenőrizni mondjuk igen.
+14:4814 minutes, 48 secondsHát legyen házi feladat jó, hogy ezt ezek ez a négy osztály ezekenciaosztály.
+14:5514 minutes, 55 secondsJó, tehát most particionáltuk a nyelvet, particionáltuk az összes stringet
+15:0515 minutes, 5 secondsnyel nyelv szerinti ekvensenciaosztályra négy darab osztályra.
+15:1015 minutes, 10 secondsTehát az összes stringet négy darab részre vágtuk szét.
+15:2115 minutes, 21 secondsJó, ezt most ellenőrizni nem fogom, de egy picit gondolják át.
+15:3015 minutes, 30 secondsNa most jön, most egy pillanatra félretesszük a nyelvs szerinti ekvivalenciaosztályokat,
+15:3715 minutes, 37 secondsés bevezetjük egy automata, egy m automóata konfigurációjának a definícióját.
+15:4615 minutes, 46 secondsTehát az áll egy R állapotból és egy és egy X stringből.
+15:5515 minutes, 55 secondsJó, tehát egy automata állapota az A1.
+16:0016 minutesAz, hogy ilyen egy R állapotban vagyunk és mi az, amit mi olvasni fogunk?
+16:0916 minutes, 9 secondsAzt mondjuk, hogy egy determinisztikus egy m determinisztikus véges automóata
+16:1716 minutes, 17 secondsRX konfiguráció rákövetkezője, az R vessző Xvessző konfiguráció.
+16:2616 minutes, 26 secondsTehát tulajdonképpen ez azt mondja, hogyha az R-ben vagyunk, és éppen még a az a az X stringet kell majd még
+16:3416 minutes, 34 secondsbeolvasnunk, akkor a következő lépésben melyik konfigurációba jut az automata? Tehát
+16:4116 minutes, 41 secondsegyrészt ö a itt az Xstringet akkor fölírjuk úgy, hogy a az Xstring első bitje hozzákonatenálva a maradékot.
+16:5516 minutes, 55 secondsÉs akkor azt mondjuk, hogy akkor rákövetkezője
+17:0117 minutes, 1 secondaz x az r vessző x vess az rx-nek, hogyha az automata, hogyha az r
+17:0817 minutes, 8 secondsállapotban van és az a string az amit a következő betű, amit beolvasunk ugye az
+17:1617 minutes, 16 secondsXstringből, tehát a az R állapotból az A
+17:2417 minutes, 24 secondsbetűjel hatására az Ressző állapotba jutunk át. És a jelölés az az ez lesz.
+17:3317 minutes, 33 secondsTehát, hogy az RX-ből nek a az e az RX
+17:4117 minutes, 41 secondsM automat konfigurációjának a rákövetkezője az Resső Xösző. Érthető-e ez a definíció? Kérek egy gyors visszajelzést.
+17:5317 minutes, 53 secondsHalló!
+17:5517 minutes, 55 secondsAz a baj, hogy itt nem látom a tekinteteket, de szeretném azt inni, hogy értik. Kérek egy gyors egy gyors reflexiót. Halló?
+18:0918 minutes, 9 secondsIgen. Igen, értik. Tökéletes. Jó.
+18:1318 minutes, 13 secondsAzt mondjuk, hogy az RX-ből elérhető az R konfigurációból elérhető az RS X vessző, hogyha véges sok ilyen
+18:2218 minutes, 22 secondsrákövetkezéssel elérhető az RX-ből az Ressző X vessző.
+18:2918 minutes, 29 secondsJó. Na most akkor azt mondjuk, hogy most
+18:3618 minutes, 36 secondsdefiniálunk egy automóata szerinti relációt. Tehát ha adott egy automóata
+18:4518 minutes, 45 secondsés xy azok a szigma csillagbeli elemek, tehát két string, akkor azt mondjuk, hogy ez a két string
+18:5418 minutes, 54 secondsaz automatára nézve ekvivalensek.
+19:0119 minutes, 1 secondhogyha a Q0-ból kiindulva, tehát hogyha ugye a Q0, ez a kezdeti
+19:1119 minutes, 11 secondsállapot, Q0X az egy konfiguráció.
+19:1619 minutes, 16 secondsA Q0X-ből, hogyha elindítjuk az automattát, akkor ugyanabba a konfigurációba kerül, tehát
+19:2419 minutes, 24 secondsa Q állapotba, Q állapot Y string, tehát amikor leketják, a Q állapotba kerül, mint
+19:3219 minutes, 32 secondsamikor az Yból indítanánk el a Q0 állapotban. Tehát a Q0
+19:4019 minutes, 40 secondsQ0-nak Q0Y
+19:4719 minutes, 47 secondsazból eljutunk a Q0 Y
+19:5319 minutes, 53 secondsQ0 Q0Y konfigurációba eljutunk a Q üres konfigurációba.
+20:0120 minutes, 1 secondTehát ugyanabba a végállapot, ugyanabba az állapotba, ugyanabba a Q állapotba fogunk eljutni. Jó, érthető-e ez a definíció?
+20:1020 minutes, 10 secondsTehát elindítjuk az automatát az X-en meg az Y-on, akkor ugyanabba az
+20:1620 minutes, 16 secondsállapotba jutunk el. Ez azt jelenti, azt állítom, hogy ugye az előbb
+20:2420 minutes, 24 secondsdefiniáltunk egy ekvivalencia relációt egy nyelvre nézve. Most definiálunk egy ekvivalenciarelációt
+20:3320 minutes, 33 secondsegy automatára nézve. Tehát itt két különböző relációról van szó. Azt mondjuk először is lássuk be, hogy ez egy ekvivalenciareláció.
+20:4420 minutes, 44 secondsAz, hogy ekvenser reláció, úgy látjuk be,
+20:5320 minutes, 53 secondsbe kell látnunk, hogy reflexív, szimmetrikus és tranzitív.
+20:5920 minutes, 59 secondsHát ha elindítjuk egy xstringen, akkor ugyanoda üt, mintha még egyszer elindítanánk egy xstringen. Tehát reláció reflexió.
+21:1221 minutes, 12 secondsHa ugyanoda ugyanabba az állapotba jutunk el az x stringből, mint az y stringből, akkor ez úgy is igaz, hogy
+21:2121 minutes, 21 secondsugyanabba az állapotba jutunk el, hogyha elindítjuk az y stringből, mint az x stringből, ugye? Tehát szimmetrikus ez a
+21:2921 minutes, 29 secondsreláció, tranzitív is egyben. Miért? Ha ugyanabba az állapotba jutunk,
+21:3721 minutes, 37 secondsaz X-ből elindulva, mint az Y-ból elindulva, vagy vagy az Y stringet beolvasva,
+21:4521 minutes, 45 secondsmeg az Y stringet beolvasva és a Z stringet lefuttatva az automatát,
+21:5321 minutes, 53 secondsakkor ugyanabba az állapotba jutunk, amikor az X stringet és a az X stringen és a Z stringen futtatjuk le az automómat.
+22:0222 minutes, 2 secondsEz megint csak egy ekvivalencia reláció, hiszen reflexív, szimmetrikus és tranzitív az egész szigmacsal van. Tehát
+22:1022 minutes, 10 secondsitt definiáltunk két relációt, amik
+22:1722 minutes, 17 secondsami ugyanazon az halmazon, a szigma csillagon ekvivalencia reláció.
+22:2722 minutes, 27 secondsÉs akkor mik lesznek az ekvivalenciaosztályok ebben az esetben?
+22:3122 minutes, 31 secondsHát minden Q állapothoz definiáljuk azt, definiálhatjuk azokat a stringeket,
+22:3922 minutes, 39 secondsamikből tehát a egy
+22:4422 minutes, 44 secondsamikbe eljutunk, hogyha a Q állapotból
+22:5122 minutes, 51 secondsjuthatj jut indítjuk el a a
+22:5822 minutes, 58 secondsa az autóba. Tehát elnézést, tehát hogy is ugye még egyszer,
+23:0623 minutes, 6 secondstehát minden elérhető, tehát hogyha adott egy
+23:1323 minutes, 13 secondsel egy olyan állapot, amibe belekerülhet egyáltalán az automata, akkor tulajdonképpen mi lesz ennek a Q állapotnak az ekvenciaosztálya?
+23:2423 minutes, 24 secondsEz azon stringekből fog állni, amiken ha elindítjuk az automatát, akkor pontosan ebbe az állapotba fog jutni.
+23:3723 minutes, 37 secondsJó, ez egy szigma, ez egy ez egy partíció a szigmacsillagon.
+23:4223 minutes, 42 secondsNa, akkor megvan, megvan a két relációnk.
+23:4823 minutes, 48 secondsAkkor itt, hogyha megnéznénk, hogy mik a itt volt az az automatánk, ami az AB
+23:5723 minutes, 57 secondsUnió BA csillagot fogadja el.
+24:0424 minutes, 4 secondsMik lesznek itt a például mi lesz a Q1 állapot? Hát milyen stringekből fogunk eljutni a Q1-ből a Q1-be?
+24:1424 minutes, 14 secondsHát pontosan azokból a stringekből, amik úgy állnak, hogy átjutunk a Q1-ből a Q2
+24:2124 minutes, 21 secondsegy a Q4-be, és visszajutunk a Q4-ből egy A-n a Q1-be. Tehát ez a BA csillag,
+24:3224 minutes, 32 secondstehát hogyha egy B csillag bel stringen futtatom le ezt az
+24:3824 minutes, 38 secondsautomatát, akkor mindig a Q1-ből a Q1 állapotba fogok eljutni, visszajutni.
+24:4724 minutes, 47 secondsTehát akkor a Q1 ekvivalenciaosztály
+24:5224 minutes, 52 secondsazon stringekből fog állni a B csillagbeli stringekből fog állni. Jó.
+25:0125 minutes, 1 secondMiből fog állni? Mondjuk a mondjuk a Q2.
+25:1125 minutes, 11 secondsMiből fog állni mondjuk a Q2? Hát ugye
+25:2025 minutes, 20 secondsigen. Tehát akkor ez valahogy úgy fog kinézni, hogy B
+25:2825 minutes, 28 secondsés akkor az elfogadó állapotokból oda csak az A visz, tehát akkor azért L és utána egy A.
+25:3825 minutes, 38 secondsÍgy van. Így van. Tökéletes.
+25:4025 minutes, 40 secondsFantasztikus. Akkor úgy látom, hogy ez érthető. Ugye, tehát lényegében ez most
+25:4625 minutes, 46 secondsitt az állapotok szögletes zárójelben mindegyik állapot a stringeknek egy-egy
+25:5325 minutes, 53 secondsrészhalmazát fogja jelölni. Az összes lehetséges stringet így hat osztályba vágtuk szét, hat ekvenciaosztályba
+26:0226 minutes, 2 secondssoroltuk be. Jó, ez így érthető, ugye? Halló?
+26:1226 minutes, 12 secondsJó. És akkor most következik egy tétel, ami viszont fontos.
+26:2226 minutes, 22 secondsLegyen nem egy determinisztikus véges automóa, ekkor, hogyha egy x és egy y string
+26:3026 minutes, 30 secondsesetén az x az ekvivalens, az x és y stringek ekvivalensek az m automatára nézve.
+26:4226 minutes, 42 secondsAkkor az X és az Y ekvivalensek az automata által felismert nyelvre nézve.
+26:5126 minutes, 51 secondsEz ez miért jó nekünk? Ugye
+26:5926 minutes, 59 secondstehát itt van két reláció. Az egyik az automata szerint van definiálva, másik az automata által felismert nyelv szerint van definiálva.
+27:0927 minutes, 9 secondsHa itt két string relációban van az automatára nézve, ugy tehát az az a két string ugyanabban az
+27:1727 minutes, 17 secondsekvivalenciaosztályban van az automata szerinti definícióban,
+27:2327 minutes, 23 secondsakkor a az automata által felismert nyelvre nézve is ugyanabban az ekvensciaosztályban vannak.
+27:3227 minutes, 32 secondsEz azt jelenti, hogyha hogyha itt
+27:4027 minutes, 40 secondsveszünk egy ekvivalenciaosztályt, ugye, akkor akkor itt egy ekvivalencia, tehát
+27:4927 minutes, 49 secondsitt az ekvivalenciaosztályok a itt az ekvivalencia osztályok, az automata szerinti ekvivenciaosztályok,
+27:5927 minutes, 59 secondsazok finomításai lesz. lesznek a nyelv szerinti ekvivalenciaosztályoknak.
+28:0528 minutes, 5 secondsÉrthető-e, hogy ez mit jelent? Tehát tegyük föl, hogy hogy a nyelv szerint van
+28:1228 minutes, 12 secondsmondjuk négy ekvivalenciaosztályunk, ugye? Tehát először is a nyelv szerinti ekvivalenciaosztályok száma kisebb egyenlő, mint az automata szerinti ekvivalenciaosztályok száma.
+28:2428 minutes, 24 secondsÉs mondjuk, hogyha van négy automata négy nyelv szerinti ekvensciaosztályunk, meg hat automata szerinti ekvivenciaosztályunk,
+28:3328 minutes, 33 secondsakkor ezt a hat autó hat állapotot ezt úgy nyerjük, hogy valahogy a négy állapotot még tovább daraboljuk
+28:4228 minutes, 42 secondshat felé, ugye? Tehát valahogy vagdossuk tovább, és így a négy autóm négy ekvivenciaosztályból nyerünk hatot.
+28:5328 minutes, 53 secondsÉrthető-e az, amit elmondtam?
+28:5628 minutes, 56 secondsHalló, halló, halló.
+29:0629 minutes, 6 secondsKérek egy visszajelzést, hogy Igen, érthető. Jó, nagyon jó. Miért lesz ez nekünk jó?
+29:1529 minutes, 15 secondsUgye tegyük föl, hogy konstruáltunk egy automatát, tehát meg fogunk konstruálni egy,
+29:2229 minutes, 22 secondstehát ha adott egy nyelv, akkor tudunk hozzá olyan automatát konstruálni,
+29:3129 minutes, 31 secondsamelyik annyi állapottal fogja felismerni ezt a nyelvet,
+29:3929 minutes, 39 secondsány nyelv szerinti ekvivalenciaosztály van.
+29:4729 minutes, 47 secondsTehát ahány részre particionálja a nyelv az egész szigma csillagot.
+29:5629 minutes, 56 secondsNa most azt állítom, hogy ennél kevesebb állapottal nem ismerhetünk föl egy egy
+30:0430 minutes, 4 secondsnyelvet. Miért igaz ez? Mert a nyelvszerinti ekvivalenciaosztályok
+30:1130 minutes, 11 secondsszáma az kisebb egyenlő, mint az automata az öt fölismerő automata
+30:1830 minutes, 18 secondsszerinti ekvivenciaosztályok száma, hiszen finomítása, az automaták szerinti
+30:2530 minutes, 25 secondsekvivalenciaosztályok, azok finomításai a nyelv szerinti ekvivalenciaosztályoknak.
+30:3130 minutes, 31 secondsTehát annál kevesebb nem ismerhetjük föl. És akkor ez a minimális automóata.
+30:3730 minutes, 37 secondsTehát hogyha a főnökünk azt mondja nekünk, hogy konstruáljunk egy automatát, amely egy adott nyelvet a
+30:4530 minutes, 45 secondslegkevesebb állapottal ismeri föl, mi a teendő? megadunk egy automatát,
+30:5330 minutes, 53 secondsmondjuk fölismeri 2000 állapottal azt az adott nyelvet.
+30:5830 minutes, 58 secondsA főnökünk azt mondja, hogy nem hiszem, de lehet, hogy ez lehet jó is, meg rossz is. Hát most vagy ügyetlenül dolgoztunk,
+31:0731 minutes, 7 secondsvagy valóban a lehető legkevesebb állapottal ismeri föl ez az automata az adott nyelvet. Hogy tudnánk belátni,
+31:1631 minutes, 16 secondsvagy hogy tudnánk, hogy tudnánk bizonyítani a főnökünknek, hogy valóban jól dolgoztunk? Hát úgy,
+31:2431 minutes, 24 secondshogy megmutatjuk, hogy az adott nyelvszerinti ekvivalenciaosztályok száma pontosan annyi, ahány
+31:3331 minutes, 33 secondsahány állapottal ismeri föl az automata az adott nyelvet.
+31:4031 minutes, 40 secondsEzt bevátjuk és megmutatjuk a főnökünknek ezt a tételt.
+31:4431 minutes, 44 secondsakkor akkor meggyőztük őt. Tehát akkor ez nincs messe. Akkor matematikailag meggyőztük
+31:5331 minutes, 53 secondsőt, hogy ennél jobban az égvilágon senki nem fogja tudni megoldani ezt a problémát. Jó, tehát ezért fontos ez a
+32:0132 minutes, 1 secondez a tétel, amit itt látunk, ez egy triviális tétel, hogy hogy ennél jobban nem oldható meg ez a feladat.
+32:1132 minutes, 11 secondsTehát azt állítom, hogyha két string ekvivalensa
+32:2032 minutes, 20 secondsegy M automata szerint, akkor ekvivalens az őt felismert a ekvivalens az automata által felismert nyelvszerintés.
+32:3332 minutes, 33 secondsEnnek a bizonyítása le van írva, de nagyon egyszerű nézzük végig, tehát tegyük föl, hogy egy a és egy b string,
+32:3932 minutes, 39 secondsgondoljunk bele, egy x és bocsánat, egy x és egy y string, azok ekvivalensek az m automómata szerint. Hát ez mit jelent?
+32:5132 minutes, 51 secondsEz azt jelenti, hogy hogyha elindítjuk az x-en és az y-on,
+33:0033 minutestegyünk hozzá, bocsánatl tegyünk hozzá egy tetszőleges z stringet, az xz és az y nézzük az xz-t és az yz-t.
+33:1133 minutes, 11 secondsIndítsuk el az M automatát az XZ-n.
+33:1633 minutes, 16 secondsTehát az X hatására, meg az YZ-n is, az X hatására
+33:2333 minutes, 23 secondsugyanabba az egyszem állapotba, ugyan pontosan ugyanabba az állapotba fogunk fog fognak kerülni, ugye? Tehát akkor a
+33:3233 minutes, 32 secondsZ-n ugyanabból az állapotból fognak tovább menni. Tehát az XZ az pontosan akkor fog
+33:4233 minutes, 42 secondseljutni elfogadó állapotba az automata. Amikor
+33:4933 minutes, 49 secondsaz yz, mivel az X és az y kezdeti stringek hatására eljutunk egy
+33:5833 minutes, 58 secondsadott ugyanolyan állapotba definíció szerint, azaz az XZ pontosan akkor lesz a nyelvben, amikor az yz minden z-re.
+34:0934 minutes, 9 secondsÉrthető-e ez a bizonyítás? Halló? Igen.
+34:1734 minutes, 17 secondsHa van kérdés, most kérdezzenek, mert azért könnyű ezeket át kell gondolni, de
+34:2434 minutes, 24 secondsnagyon egyszerű. Jó, hogyha belegondol az ember a fogalomba, akkor akkor egyszerű.
+34:3234 minutes, 32 secondsÉs akkor például, ha itt van ez az AB Unió biány,
+34:4034 minutes, 40 secondsakkor itt négy nyelv szerinti ekvivalenciaosztály van.
+34:4434 minutes, 44 secondsAz L az, az A az la, a B az az LB, LA
+34:5034 minutes, 50 secondsUnió A konkatja AA Unió BB sigma csillag. Ezt jelölöm az AA
+35:0035 minutesrés stringgel és ugye egyelőre hat állapotunk van, tehát akkor tovább csökkenthető az állapotoknak a száma.
+35:1335 minutes, 13 secondsÉs azt fogjuk észrevenni, hogy az egyes ekvivalenciaosztály
+35:2235 minutes, 22 secondsaz disjunktuniója a Q1-nek Q1 Q3 ekvivalenciaosztálynak.
+35:3035 minutes, 30 secondsÉs az RB nyelvosztály, vagy ez a B nyelvosztály, az disjunktúja négyes hatosnak.
+35:3635 minutes, 36 secondsTehát úgy nyerjük a hatállapot, úgy nyerjük ezt ez a hatállapot, vagy ezt ez a hat felé vágás az összes stringnek.
+35:4835 minutes, 48 secondsEzt úgy értük el, hogy itt volt egy négy felévágása az összes stringnek, és utána még ezt az ekvensenciaosztályt két felé
+35:5635 minutes, 56 secondsvágtuk, meg ezt az ekvensenciaosztályt is két felé vágtuk. Jó, tehát akkor
+36:0336 minutes, 3 secondstudunk konstruálni négy állapotból is egy olyan négy állapot, egy olyan négy állapottal rendelkező automatát, amelyik
+36:1136 minutes, 11 secondspontosan ugyan ezt a nyelvet fogja felismerni. Jó.
+36:2036 minutes, 20 secondsAha. Jó.
+36:2736 minutes, 27 secondsÉs akkor tehát amint említettem, ez a tétel azonnal következik,
+36:3436 minutes, 34 secondshogy legyen el egy reguláris nyelv, akkor létezik egy olyan automata, ahol az
+36:4236 minutes, 42 secondsamelyik az el nyelvet ismeri föl, és állapotainak száma a nyelv szerinti
+36:5036 minutes, 50 secondsreláció által meghatározott ot ekenciaosztályok száma az előző tétel alapján akkor
+36:5936 minutes, 59 secondsviszont itt az állapotak száma minimális kell, hogy legyen.
+37:0737 minutes, 7 secondsRáadásul m az állapotainak a számozásától eltekintve egyértelmű.
+37:1237 minutes, 12 secondsTehát létezik mindig egy minimális automata. Jó.
+37:1937 minutes, 19 secondsÉs pedig és annak az á annyi állapota van annak az automatának, amennyi nyelvszerinti ekvivalenciaosztály van.
+37:2937 minutes, 29 secondsNa hát akkor legyen. Itt van a bizonyítás.
+37:3537 minutes, 35 secondsMost definiálunk egy olyan minimális automatát, amelyik egy adott nyelvet
+37:4137 minutes, 41 secondsannyi állapottal fog elfogadni, ahány a nyelvre nézőre, ahány a nyelvre ekvenciaosztály van a nyelvre nézve.
+37:5437 minutes, 54 secondsMik lesznek a Mik lesznek az állapotai?
+37:5937 minutes, 59 secondsHát az állapotai azok egyrészt mi lesznek a stringek által, stringek reprezentánsaival.
+38:1038 minutes, 10 secondsTehát ugye itt itt állapotrész, bocsánat string részhalmazok lesznek az állapotai.
+38:2138 minutes, 21 secondsUgye mindegyikből kivesszünk egy reprezentánst. Mi lesz a kezdeti állapot?
+38:2738 minutes, 27 secondsaz az ekvivalenciaosztály lesz, amiben benne van az üres string.
+38:3438 minutes, 34 secondsMik lesznek az elfogadó áállapotok? Az elfogadó állapotok
+38:4038 minutes, 40 secondsazon stringmazok lesznek, ahol az x stringek azok benne vannak a
+38:4738 minutes, 47 secondsnyelvben. Ez egy jó definíció, mert hogyha egy automata
+38:5438 minutes, 54 secondshogyha két állapot hogyha hogyha az automata elfogadja a
+39:0239 minutes, 2 secondskét állapotot, ak tehát hogyha két string ugyanabba a szekvenciaosztályba
+39:0839 minutes, 8 secondsesik az automata szerint, akkor a nyelv szerint is. És mi lesz a az átmenetfüggvény?
+39:1739 minutes, 17 secondsHát hogyha ugye itt ekvivalenciaosztályokon ugrálunk, hogyha egy ekvivalenciaosztályban vagy vagy azzal
+39:2639 minutes, 26 secondsvannak címkézve az állapotok, hogyha egy ekvivalenciaosztályban vagyunk és az amelyik reprezentálva van egy xstringel
+39:3539 minutes, 35 secondsés jön egy és jön egy a ugye ez egy állapot most ez
+39:4239 minutes, 42 secondsa kapcsoláró x és jön egy A betű, akkor átugrunk
+39:4939 minutes, 49 secondsazon ekvivalenciaosztályba, aminek az XA string egy reprezentása.
+39:5839 minutes, 58 secondsJó?
+40:0140 minutes, 1 secondÉs akkor ebből nagyon egyszerű látni, hogy hogy hát valóban ez a determinisztikus
+40:1240 minutes, 12 secondsvéges automómata, ez pontosan az adott nyelvet ismeri föl. Világos-e ennek a
+40:2040 minutes, 20 secondsDVA-nak a definíciója?
+40:2640 minutes, 26 secondsÖ nekem az lenne a kérdésem, hogy ez az XA ekvivalenciaosztály az lehet ugyanaz is, mint az X, nem? Ekivalen
+40:3440 minutes, 34 secondspersze ez azt jelenti, hogy hogy egyszerűen az a az a nyílhatására ugyanabban az állapotban maradunk.
+40:4540 minutes, 45 secondsTehát itt az ekvivalenciaosztályok maguk azok állapotokat ckéznek.
+40:5240 minutes, 52 secondsUgye az, hogy itt ez ezt úgy kell ezt ez az X kapcsos zárója, ez egy sok-sok string, ez egy string részhalmaz.
+41:0541 minutes, 5 secondsEzzel egy állapotot címkézünk, ugye, és akkor ebből az át állapotból
+41:1141 minutes, 11 secondsátugrunk az XA által megcimkézett
+41:1841 minutes, 18 secondsállapotba. Mik lesznek ebbe? Ez ugyancsak sok-sok stringből áll, amik úgy állnak össze, hogy
+41:2841 minutes, 28 secondsamik benne vannak az XA ekvivalenciaosztályában.
+41:3241 minutes, 32 secondsPersze ez az ekvivalenciaosztály az lehet önmaga is, ami autó az automata szintjén azt jelenti, hogyha az X-ben
+41:4041 minutes, 40 secondsvagyunk és jön az a jel, akkor ugyanabban az állapotban maradunk.
+41:4741 minutes, 47 secondsJó? Ugye ez egy legális dolog. Igen, igen. Jó, világos. Köszönöm.
+41:5541 minutes, 55 secondsÉrthető. Így jó. Köszönöm szépen. És hát ugye az világos, hogyha elindítjuk egy
+42:0442 minutes, 4 secondsnyelvbeli stringen, egy nyelvbeli stringen ez az automatát. Hát mit fog csinálni?
+42:1342 minutes, 13 secondsHát ugrál, ugrál, ugrál ekvivalenciaosztályok között.
+42:1842 minutes, 18 secondsDe hát a végén definíció alapján eljut egy elfogadó áállapotba, tehát
+42:2642 minutes, 26 secondsakkor pontosan el is fogja fogadni, ami azt jelenti, hogy itt egy olyan ekvivalenciaosztályba fog jutni,
+42:3542 minutes, 35 secondsamelyiken elfogadó. Jó, tehát ez gondolják át, de ez ez azonnal következik a definícióból. Ez triviális.
+42:4442 minutes, 44 secondsNa, tehát a lényeg az, hogy hogy van egy olyan automóa, és tudjuk is, hogy hogy néz ki az
+42:5142 minutes, 51 secondsautomata, amelyik a lehető legkevesebb állapottal ismer föl egy
+42:5842 minutes, 58 secondsegy reguláris nyelvet, majd remélem lesz időnk és konstruálunk ilyen minimális automatát valamelyik gyakorlaton.
+43:0943 minutes, 9 secondsÉrthető-e ez a dolog. Tehát a lényeg az az, hogy definiáltunk két ekvivalencia relációt.
+43:1643 minutes, 16 secondsAutomata szerintit, nyelv szerint. Az automata szerinti relá, egy automó szerinti reláció az mindig finomítás a
+43:2443 minutes, 24 secondsnyelv szerinti relációnak. Tehát egy nyelvet, egy automóata
+43:3143 minutes, 31 secondslegalább annyi állapottal tud felismerni, ahány nyelv szerinti ekvivenciaosztály van. viszont egyben
+43:3943 minutes, 39 secondstudunk is egy olyan automatát konstruálni most már, amelyik ugyanannyi állapottal fogadja azt a nyelvet, ahány nyelv szerinti ekvivalenciareláció van.
+43:4943 minutes, 49 secondsEbből következik, hogy ez ez a lehető legkevesebb számú állapottal fogadja el az adott nyelvet.
+43:5743 minutes, 57 secondsJó. Na hát vannak-e nem reguláris nyelvek?
+44:0344 minutes, 3 secondsUgye ezek a determisztikus véges automaták, ezek nagyon egyszerű nyelvek.
+44:0944 minutes, 9 secondsAzért vannak-e elég elég sok nyelv tartozik ide. Például,
+44:1844 minutes, 18 secondshogyha adott mondjuk egy k konstans, akkor az a csak egyesekből álló nyelv,
+44:2644 minutes, 26 secondshogy 0 x k, tehát 0 darab 1-es, k darab 1-es,
+44:3344 minutes, 33 seconds2k darab 1-es, 3k darab 1-es és így tovább. Ez reguláris vagy nyelv nem.
+44:4444 minutes, 44 secondsMi a mi mi a véleményük?
+44:5544 minutes, 55 secondsAz az unáris nyelv, hogy
+45:0145 minutes, 1 secondmondjuk az ABC az csak az egyes és primámnyi egyesekből álló stringek.
+45:1245 minutes, 12 secondsEzek reguláris nyelvet alkotnak-e, vagy azon nyelv, amelyik azon 0 és fölötti
+45:2145 minutes, 21 secondsszavakból áll, ahol ugyanannyi nulla és egyes van.
+45:3145 minutes, 31 secondsVében azonos számú 01 és 1 résorozat van.
+45:3645 minutes, 36 secondsEzek közül melyiket tippelik regulárisnak és melyiket nem? Definiáltam négy nyelvet.
+45:4545 minutes, 45 secondsKérek egy tippet, hogy melyik reguláris, melyik nem. Az AK nyelv reguláris vagy nem szerintem?
+45:5345 minutes, 53 secondsHát az AK az igen, így van. Nagyon könnyű lenne K plus darab állapottal konstruálni egy ilyet, vagy
+46:0246 minutes, 2 secondstalán K-val is. Igen, K-val is ugye k állandódóan megyek előre, aztán
+46:1146 minutes, 11 secondsaz első az elfoglal, tehát mindig így körbepörgök akárhányszor egy k hosszú körön gyakorlatilag.
+46:2046 minutes, 20 secondsNa mi a helyzet a B-vel? Prímszámny egyes. Az reguláris vagy nem?
+46:2646 minutes, 26 secondsHát az gondolom nem igen.
+46:3046 minutes, 30 secondsEz mi a helyzet a D-vel? Az az reguláris meglepő módon.
+46:3846 minutes, 38 secondsA B az valóban nem reguláris. Meg a C sem.
+46:4746 minutes, 47 secondsUgye általában azok a dolgok úgy ugye amikor konst algoritmuselméletben
+46:5446 minutes, 54 secondsvagy inform ilyen elméleti informatikában az a nehéz
+47:0147 minutes, 1 seconda matematikai kihívás, hogy azt bizonyítsuk, hogy valamit nem lehet megcsinálni. Tehát hogyha
+47:1147 minutes, 11 secondsmegkérdezi valaki, hogy mennyi egy algorit vagy egy problémát milyen futás időben lehet megoldani?
+47:2047 minutes, 20 secondsAzt mondjuk, hogy hát négyzetes idővel meg lehet oldani, akkor aránylag egyszerű dolgunk van, mert elég egy
+47:2747 minutes, 27 secondsdarab algoritmust megadnunk, amelyik mondjuk négyzetes időben lefut.
+47:3347 minutes, 33 secondsDe ha azt kellene bizonyítanunk, hogy ezt a problémát nem lehet megoldani négyzetes időben,
+47:4147 minutes, 41 secondsahhoz azt kellene bizonyítanunk, hogy nem létezik, tehát senki soha az égvilágon 100000 év múlva se fog tudni
+47:4947 minutes, 49 secondsmegadni olyan olyan algoritmust, ami négyzetes időben futna. Ez már kihívás.
+47:5547 minutes, 55 secondsTehát ez ezek általában a nehéz az alsó korlátok, tehát és ezek azért hasznosak, mert ha megadtunk egy algoritmust, arról
+48:0448 minutes, 4 secondsjó tudni, hogy hogy ez ez optimális-e vagy nem. Tehát
+48:1348 minutes, 13 secondsitt az, hogy egy nyelv reguláris, azt könnyű belátni, mert ha úgy érezzük, hogy regulá azt a részt, hogyha reguláris,
+48:2248 minutes, 22 secondsazt könnyű belátni, mert egyszer megadunk egy automatát, ami ezt a nyelvet fogadja el, vagy egy reguláris kifejezést, amely definiálja ezt a
+48:3048 minutes, 30 secondsnyelvet, vagy pedig adunk egy nem determinisztikus véges autómat, tehát amelyik ezt a nyelvet fogadja el.
+48:3848 minutes, 38 secondsTehát ezek mind-mind most tegyük föl, hogy hogy három napig dolgoztunk, és nem
+48:4548 minutes, 45 secondstaláltunk se nyelvet, se reguláris kifejezést, sem olyan automatát, amelyik ezt a nyelvet ismernénk föl, akkor most két lehetőség van.
+48:5848 minutes, 58 secondsVagy vagy ügyetlenek vagyunk, vagy pedig vagy pedig nem is létezik ilyen. Tehát akkor a nyelv nem reguláris.
+49:0749 minutes, 7 secondsNincs olyan eszközünk egyelőre, amelyikkel azt tudnánk igazolni,
+49:1449 minutes, 14 secondshogy egy nyelv nem reguláris egyelőre, de ebben a pillanatban lett,
+49:2249 minutes, 22 secondsés ez egy nagyon egyszerűemma, de nagyon jól használható, nagyon jól használható
+49:2849 minutes, 28 secondstétel, hogy a tétel a következőt mondja ki,
+49:3649 minutes, 36 secondshogy ha egy nyelv reguláris, akkor létezik hozzá egy P konstans. Ez
+49:4549 minutes, 45 secondscsak a nyelvtől függ, hogy minden legalább p hosszú szó az pumpálható. Ezt úgy hívják, ezt pumpáló
+49:5449 minutes, 54 secondslemma. Várhilen lemma. Minden psz, legalább p hosszúszó pumpálható.
+50:0250 minutes, 2 secondsEz mit jelent? hogyha, hogy fölírható xy z alakban úgy,
+50:0950 minutes, 9 secondshogy x y az niken z minden benne van az n-re, benne van a nyelvben minden n nagyobb = nullára.
+50:2450 minutes, 24 secondsUgye tehát hogyha itt az y string, az eredeti szagunk az az XYZ,
+50:3350 minutes, 33 secondshogyha jön az, hogy X y Z, az is benne lesz a nyelvben, meg az
+50:4150 minutes, 41 secondsis, hogy x y y z az is benne lesz a nyelven.
+50:4850 minutes, 48 secondsMeg n = 0ára is benne lesz a nyelven. Tehát az X is benne lesz a nyelvben.
+50:5550 minutes, 55 secondsÉrthető-e ez az egyes pont? Tehát hogyha egy nyelv Igen. Érthető? Igen. Igen.
+51:0351 minutes, 3 secondsHa a nyelv ha egy nyelv reguláris, akkor minden elég hosszú szava, tehát
+51:1051 minutes, 10 secondsvan hozzá egy P konstans. Tehát mondjuk egy adott nyelv ez egy szám. Tehát minden 50000 hosszú szóban, legalább
+51:2051 minutes, 20 seconds50000 hosszú szóban, ez az 50000, ez a nyelvtől fog függni.
+51:2751 minutes, 27 secondsVan egy olyan rész string, ami iterálható.
+51:3251 minutes, 32 secondsA kettes tulajdonság az az, hogy van mit iterálnunk, tehát az y hossza az legalább nulla. Hát egyébként nem lenne
+51:3951 minutes, 39 secondsértelme a tételnek, tehát van mit iterálnunk.
+51:4451 minutes, 44 secondsMásrészt ez is egy nagyon jól használható tulajdonság, hogy az X ugyan nem tudjuk, hogy milyen hossza az y,
+51:5351 minutes, 53 secondsde a az x-nek, tehát a kezdőszeletnek és az y-nak az összhossza,
+52:0252 minutes, 2 secondstehát az eleje, az xy ugye az legfeljebb p.
+52:0952 minutes, 9 secondsJó? Tehát érthető-e a tételállítás?
+52:1352 minutes, 13 secondsEz ez a három tulajdonság jelenti azt, hogy a nyelv pumpálható.
+52:1952 minutes, 19 secondsTehát van egy olyan rring, amely iterálható.
+52:2252 minutes, 22 secondsÉs ez a rring ez úgy aránylag a szó elejében van valahol. Nem tudjuk, hogy milyen hosszú,
+52:3152 minutes, 31 secondsnem tudjuk, hogy pontosan mi az, de létezik. És ez ez nagyon nagy segítség nekünk.
+52:3752 minutes, 37 secondsÉs ennek a belátása az egy trivialitás.
+52:4252 minutes, 42 secondsÉs inkább ezt a rajzot használnám. Hát tegyük föl, hogy hogy egy nyelv reguláris.
+52:5252 minutes, 52 secondsEgy nyelv reguláris, akkor mit jelent?
+52:5652 minutes, 56 secondsUgye tegyük föl, hogy az automatának van mondjuk n plus darab állapota, ami ezt a nyelvet ismeri föl. Tegyük föl, hogy
+53:0553 minutes, 5 secondsbeadtunk neki egy legalább N plusz egy jó hosszú szót, amiben több állapot van.
+53:1353 minutes, 13 secondsBocsánat, amelyik hosszabb, mint az állapotok száma, akkor ugye itt minden egyes betű
+53:2253 minutes, 22 secondshatására ugrunk egyet egyik állapotból a másikba. Tehát ebben a gráfban annyi
+53:3153 minutes, 31 secondsannyi él lesz, annyi irányított él lesz, amilyen hosszú a stringünk.
+53:3853 minutes, 38 secondsAmilyen hosszú a stringünk. Ha a stringek hossza, a stringek, bocsánat, ha a stringben a betűk száma legalább
+53:4753 minutes, 47 secondsannyi, mint a az állapotok száma, hát innen akkor meg
+53:5553 minutes, 55 secondskell, hogy ismétlődjön ugyanaz az állapot. Tehát akkor az xstring hatására eljutunk egy rj állapotba.
+54:0554 minutes, 5 secondsItt vagyunk az y stringben, de innen vissza kell, hogy jussunk ide. hiszen túl hosszú ez a string. Túl az x y z
+54:1454 minutes, 14 secondsstringben több jel van, mint ahány állap volt.
+54:1754 minutes, 17 secondsTehát akkor a skatulujelv alapján lesz egy olyan rjé, amelyik ismétlődik.
+54:2454 minutes, 24 secondsHát de akkor itt iterálhatjuk ezt az yt.
+54:2754 minutes, 27 secondsTehát ugye és utána itt egy darabig pör ugye innen visszajutunk ide az rjébe és
+54:3454 minutes, 34 secondsutána tovább megyünk a zringen az elfogadó állapotba. Na de mi történik az xyz-n?
+54:4354 minutes, 43 secondsAz x-en eljutunk az rjébe.
+54:4654 minutes, 46 secondsItt kétszer körbefordulunk és ugyanúgy eljutunk az RN plus 1-be. Mi történik, hogyha kihagyjuk az y-t?
+54:5654 minutes, 56 secondsEljutunk az Xstring hatására az rjébe, nem csinálunk semmit, csak egyszerűen tovább megyünk a Z string hatására
+55:0555 minutes, 5 secondsaz RN plus egy elfogadó állapotban, tehát akárhányszor tudjuk iterálni ezt az y rés stringet.
+55:1355 minutes, 13 secondsJó. És hát nyilvánvaló, hogy az XY-nak, tehát az első ismétlésig
+55:1955 minutes, 19 secondslegfeljebb annyi lépést teszünk meg, vagy annyi karaktert olvassunk le, ahány állapota van a a nyelvet elfogadó
+55:2855 minutes, 28 secondsautomatának. Tehát kisebb egyenlő lesz egy adott P konstansnál. Érthető-e az a bizonyítás?
+55:3655 minutes, 36 secondsHalló?
+55:3855 minutes, 38 secondsIgen, igen. Tökéletes. Akkor ez a pumpáló lemma.
+55:4855 minutes, 48 secondsÉs nézzünk egy gyors példát, mert most már lassan el kellene rohannom.
+55:5855 minutes, 58 secondsA bizonyítást elmondtam. Ö a pumpáló, a bárhilellem a bizonyítását. Be szeretnénk látni, hogy az a nyelv,
+56:0756 minutes, 7 secondsamiben annyi ugyanannyi nulla egyes van. Illetve ezt ne is lássuk be, elmondom majd inkább a gyakorlat elején.
+56:1956 minutes, 19 secondsEgy vagy vagy a gyakorlaton majd elmond nézzünk erre példákat. Nagyon fontos
+56:2756 minutes, 27 secondsaz, hogy ez nem egy akkor és csakis akkor tétel. Tehát a tétel kimondása az az, hogy
+56:3556 minutes, 35 secondsha egy nyelv reguláris, akkor pumpálható, ahol a pumpálhatóság alatt ezt a három tulajdonságot értjük.
+56:4656 minutes, 46 secondsEz nem azt jelenti, hogyha egy nyelvre teljesül ez a három tulajdonság, akkor ez a nyelv reguláris. Tehát ez egy nem
+56:5556 minutes, 55 secondsakkor és csakis akkor tétel, hanem ez egy ha ez teljesül a a nyelv reguláris, akkor ez a három akkor pumpálható.
+57:0757 minutes, 7 secondsHogyan használjuk ezt a tételt arra annak a belátásához,
+57:1557 minutes, 15 secondshogy tehát kapjuk azt a feladatot, hogy
+57:2357 minutes, 23 secondsmegkapjuk azt a feladatot, hogy kapunk egy nyelvet reguláris vagy nem.
+57:3057 minutes, 30 secondsHa igen, megpróbálunk hozzákonstruálni egy automatát, sikerül, megvan a nyelv regulár. Mi
+57:4057 minutes, 40 secondstörténik akkor, hogyha nem sikerül hozzá automatát konstruálnunk, akkor elkezdünk gyanakodni, hogy hátha nem reguláris,
+57:4857 minutes, 48 secondsakkor a pumpáló lemmát próbáljuk meg használni. Hogyan?
+57:5357 minutes, 53 secondsHa reguláris lenne, akkor akkor lenne hozzá egy P konstans, hogyha
+58:0258 minutes, 2 secondshogy minden legalább P hosszú szó pumpálható lene. Tehát egy darab olyan hosszú szót, legalább p hosszú szót kell
+58:1158 minutes, 11 secondsadnunk, egy általunk választott szót, ami nem pumpálható, tehát amiből ami
+58:1858 minutes, 18 secondsnincs benne a tehát aminek valamelyik ilyen iterátja nem lesz benne a nyelvben. Ha sikerül találnunk egy
+58:2558 minutes, 25 secondsszemélyen szót, akkor ez a nyelv nem reguláris a bárhillellem alapján. Jó, tehát érthető, hogy hogy ugye hogy
+58:3458 minutes, 34 secondshasználjuk a a lemmát. Ha azt hisszük, hogy a nyelv nem reguláris,
+58:4058 minutes, 40 secondsakkor megadunk egy olyan szót, ami nem pumpálható.
+58:4658 minutes, 46 secondsÉs ha találtunk egy olyan szót, amelyik nem pumpálható, a Bárhiller lemma alapján ez a nyelv már nem reguláris. Tehát ezt a lemmát ezt
+58:5558 minutes, 55 secondsarra fogjuk használni, csak arra lehet használni, mert ez, hogy azt bizonyítsuk, hogy ez a nyelv nem
+59:0359 minutes, 3 secondsreguláris. Óriási szabadságfogunk van, hogy hogy mi választhatjuk meg a jó szót. Milyen
+59:1159 minutes, 11 secondsszót fogunk választani? Hát egy olyan szót érdemes választani, amire nagyon könnyű rábizonyítani, hogy nem
+59:1859 minutes, 18 secondspumpálható. Jó? Érthető-e így, amit elmondtam a reguláris nyelvekről?
+59:2659 minutes, 26 secondsHalló? Igen.
+59:2859 minutes, 28 secondsTehát akkor nem nem tetszőleges hosszú szót kell tudni konstruálni? Nem. A a egy legalább p hosszú szót.
+59:3859 minutes, 38 secondsHát jó, de hogy nem minden p-re kell belátni, hogy hogy nem jó.
+59:4159 minutes, 41 secondsNem, nem. Tehát tegyük föl, hogy egy nyelv reguláris, akkor van hozzá egy P konstans. Nem tudjuk, hogy mekkora ez a
+59:4859 minutes, 48 secondsP, de akkor föltesszük, hogy van egy ilyen p konstans. Mi akkor megválaszthatjuk 4p-nek 200p-nek
+59:5759 minutes, 57 secondsp függvényében kell megadni egy olyan szót, ami nem pumpálható. 
 
-
-https://www.youtube.com/watch?v=RALa01bMNvw
+https://www.youtube.com/watch?v=CR6PnTvcctI

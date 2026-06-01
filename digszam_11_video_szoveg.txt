@@ -1,73 +1,261 @@
-pontosztály és így tovább.
-0:1212 secondsAz, hogy egy grábban van-e kör, az is világos módon egy
-0:1818 secondspolinomidő. Arra ez a probléma is benne van a P-ben. Miért ismerjük az ALR tételt?
-0:2626 secondsami azt mondja ki, hogy grábban pontosan akkor vanerkől, hogyha minden pontnak a foka páros. Hát fölírjuk a csúc gráfnak
-0:3535 secondsa csúcstáját, fölírjuk, hogy mik a fogszámok.
-0:4141 secondsMindegyik f pont fok a páros. Akkor van a gráfbaner kenkező esetben nincs.
-0:4949 secondsEzt is villámyorsan ellenúrizni tudjuk.
-0:5151 secondsTehát el tud dönteni polinomidőben, egy gráfban van-e kör. Na az, hogy egy gráf egy számá-e
-1:001 minutevagy nem? Tehát hogyha kapunk egy egy 40 jegyű számot, ugye elég nehéznek tűnik annak az eldöntése, hogy ez a szám
-1:091 minute, 9 secondsprimám-e vagy nem. Hát mondhatnánk azt az algoritmust, hogy a gyökéig megnézzük, hogy
-1:181 minute, 18 secondshogy van-e osztója, de hogyha van egy van egy 10-es alapú számrendszerben akár már egy
-1:261 minute, 26 seconds40 jegyű számom, ugye, akkor meg kell nézni az összes legfeljebb 20 jegyű számot
-1:331 minute, 33 secondsennek az algoritmusnak, ebben az algoritmusban, ami ugye 10 a 20-on külön különböző
-1:421 minute, 42 secondsesetvizsgálatot jelentene, vagy osztást, ez már rengeteg, tehát ez nem jó, ez nem egy hatékony algoritmus. És nagyon
-1:501 minute, 50 secondssokáig nyitott kérdés volt, hogy annak az eldöntése, hogy egy szám-e vagy nem,
-1:571 minute, 57 secondsaz benne van-e a P-ben, vagy nincs. Egy 20 évvel, 19 évvel ezelőtt bizonyítottál
-2:042 minutes, 4 secondsbe azt, hogy hogy el lehet dönteni egy számba hatékonyan, hogy primáme-e vagy nem.
-2:142 minutes, 14 secondsViszont annak ellenére, hogy el tudjuk dönteni, hogy egy számra primá-e vagy nem, ha az derül neki a számra, hogy ő nem
-2:222 minutes, 22 secondsprimám, az osztóit polinomidőben nem feltétlenül tudjuk megtalálni. Tehát ha kapunk egy
-2:312 minutes, 31 seconds1000erjegyű számot, akkor nagyon nehéz őt a vagy egyelőre nem ismeretes olyan polinomidei
-2:382 minutes, 38 secondsalgoritmust, ami ezt a számot a print tényezőire tudná bontani, ugye? És ezen alapszik a a az
-2:482 minutes, 48 secondsRSA kód, de eldönteni, el lehet dönteni, hogy primám egy szám vagy nem.
-2:592 minutes, 59 secondsEgyelőre nem sikerült polinomiális algoritmust találni arra, hogy van-e egy grábban Hamilton kör vagy nincs. Ugye a
-3:083 minutes, 8 secondsHamilton kör az egy olyan kör egy grábbal, amelyik átmegy az összes csúcson.
-3:133 minutes, 13 secondsÉs az sem világos, hogy létezik-e polinomidő algoritmus
-3:213 minutes, 21 secondsannak az eldöntésére, hogy egy gráfnak a csúcsai kiszínezhető-e három színnel a vagy jól színezhetők három színnel.
-3:313 minutes, 31 secondsTehát azt jelenti, hogy úgy szeretnénk három színnel kiszínezni a gráf csúcsait, hogy két, hogy bármely él, különböző végpontjai,
-3:393 minutes, 39 secondskülönböző színt kapjanak. Na, ennek az eldöntésére sincs egyelőre polinomiális algoritmus,
-3:473 minutes, 47 secondsés nem is világos, hogy valaha lesz-e ez a PNP
-3:553 minutes, 55 secondsprobléma körhöz tartozik, hogy ennek az eldöntése.
-4:034 minutes, 3 secondsJó.
-4:064 minutes, 6 secondsNa most említettem itt itt most egyelőre csak determinisztikus tyingépekről beszélünk. Azt, hogy milyen tuning
-4:144 minutes, 14 secondsgépet, milyen determinisztikus tyingépet használunk a p osztály definiálásában. Az gyakor
-4:224 minutes, 22 secondstehát gyakorlatilag a P invariáns, a különböző tuning
-4:294 minutes, 29 secondstyingép variációkra nézve. Ugye beláttuk azt, vagy könnyű belátni azt a tételt,
-4:364 minutes, 36 secondshogy egy kszallagos csuringép az mindig szimulálható egy egyszalagos csuringéppel
-4:434 minutes, 43 secondslegfeljebb négyzetes időben, az eredeti futás idejének a négyzetes idejében,
-4:504 minutes, 50 secondsilletve nem sokkal nagyobb tárban is. Tehát
-4:584 minutes, 58 secondsha egy kszallagos csuringéppel meg tudunk oldani egy problémát mn tárban, akkor
-5:075 minutes, 7 secondsegy kicsivel nagyobb tárban, tehát egy pluszes tag segítségével meg tudunk oldani, hogy
-5:165 minutes, 16 secondsekkora tárban egy egy szalagos csüingéppel és egy problémát.
-5:225 minutes, 22 secondsIgen, vettük a tár időtételt. Ugye az világos, hogyha egy probléma megoldható
-5:315 minutes, 31 secondsegy t mondjuk egy egy TN időben, akkor
-5:395 minutes, 39 secondsmegoldható TN tárban is, hiszen TN idő alatt nem tudunk több tárat teleírni, mint TNET. A kérdés
-5:495 minutes, 49 secondsaz az volt, hogy fordítva igaz-e, tehát tudunk-e időkorlátot adni
-5:565 minutes, 56 secondsa tárkorlát függvényében? Tehát a kérdés az az, hogyha tudjuk, hogy egy probléma megoldható SN tárban,
-6:046 minutes, 4 secondsakkor adható-e időklát arra nézve, hogy milyen időben oltható-e ez a probléma.
-6:116 minutes, 11 secondsEz egyáltalán nem triviális kérdés, hiszen ebben elképzelhető, hogy nagyon pici, egészen pici tárban tárat használunk, de nagyon sokáig fut a gép.
-6:256 minutes, 25 secondsA válasz az, hogy adható ez a táridőtétel.
-6:306 minutes, 30 secondsA tétel az úgy szól, hogyha L az megoldható esen tárban, eldönthető esen
-6:366 minutes, 36 secondstárban, akkor ennek az en függvénynek egy exponenciális függvényéyi idejében is megoldható az a probléma.
-6:476 minutes, 47 secondsEzt beláttuk.
-6:526 minutes, 52 secondsJó, bevezettük a nyelvosztály komplementerének a fogalmát. Ha L egy nyelv, azt akkor a KL azon nyelvekből
-7:017 minutes, 1 secondáll, amiknek a komplementere benne van az L-ben.
-7:077 minutes, 7 secondsUgye beláttuk azt, hogy a time TN az egyenlő a cotime tn-nel.
-7:157 minutes, 15 secondsUgye ez triviális és a spaceen az egyenő a cospace-nel.
-7:277 minutes, 27 secondsMég néhány nevezetes nyelvosztály. Az exp time az az Unió Time 2 az Nadikon,
-7:357 minutes, 35 secondsazaz az expenciális időben felismerhető nyelvek osztálya.
-7:427 minutes, 42 secondsÉs mi a Ppace? A PPA az a polinom tárban megoldható vagy felismerhető nyelveknek az osztálya. Az space az unió k nagyobb egyenő 1-re. Space N a k adik.
-7:587 minutes, 58 secondsAz világos, hogyha P, hogy a Pne van a pacebben és a PPA az része az ex timeak.
-8:068 minutes, 6 secondsEz miért igaz?
-8:098 minutes, 9 secondsHa valamit meg tudunk oldani polinomidőben, azt meg tudjuk oldani polinomtárban.
-8:148 minutes, 14 secondsMiért? Mert nem tudunk polinomidőben legfeljebb polinom tárnyi cellát tudunk elírni.
-8:228 minutes, 22 secondsÉs miért igaz-e ez a tartalmazás? A psace része expenak a táridőtétel miatt igaz.
-8:348 minutes, 34 secondsJó, tehát ez így, ez így igaz.
-8:428 minutes, 42 secondsJó, elnézést, itt valami történik a gépemmel.
-8:508 minutes, 50 secondsLátom, hogy lefagyott. Látják még az ablakot? Halló? Látják még a diát?
-9:049 minutes, 4 secondsIgen, látszik. Aha. Nem tudok mit csinálni.
-9:159 minutes, 15 secondsNem tudják, hogy ilyenkor a jó megoldás.
+Szót szeretnék szólni még a Kolmogorov komplexitásról.
+1:061 minute, 6 secondsEzt az anyagrészt egy kicsit elnagyoltan fogjuk már venni, hiszen igen, először is ugye világos, hogy a jövő héten
+1:151 minute, 15 seconds8-tól 10-ig egy zárt helyt írunk meg.
+1:221 minute, 22 secondsÉs a két zárt helyi átlagából igyekszem adni majd,
+1:291 minute, 29 secondsaki esetleg megjánlott jegyeket. A zárhelyt nem kötelező megírni, lehet jönni vizsgázni is a megadott időpontokban.
+1:411 minute, 41 secondsVilágos-e ez a dolog? Van-e kérdés ezzel kapcsolatban? Halló!
+1:521 minute, 52 secondsNekem lehet egy olyan kérdésem, hogy ez inkább ilyen elméleti jellegűbb lesz, vagy hasonlóan gyakorlatib, mint az él?
+2:002 minutesLesz benne elmélet is, meg gyakorlat is.
+2:032 minutes, 3 secondsKicsit talán tehát struktúrában hasonlítani fog a
+2:092 minutes, 9 secondsaz EH-ra, és az egész anyag ott össze fogja, vagy magába fogja foglalni.
+2:182 minutes, 18 secondsÉs igen, tehát egy egy ilyen kvázi
+2:262 minutes, 26 secondsilyen probléma csoport struktúrájában mire használ, vagy milyenre számítsanak,
+2:342 minutes, 34 secondskészítettem és majd a gyakorlatom megoldjuk. Jó, tehát egy egy óra múlva. Van-e még kérdés ezzel kapcsolatban?
+2:452 minutes, 45 secondsNekem egy olyan kérdésem lenne, hogy akkor a teljes fél éves anyag benne lesz.
+2:492 minutes, 49 secondsIgen, ezt mondtam az előbb. Igen. Tehát ez gyakorlatilag egy egy ilyen egy ilyen
+2:582 minutes, 58 secondsválaszt, tehát egy olyan kolokvium, amit amit megírhatunk, ha akarunk. De
+3:073 minutes, 7 secondsde ha valakinek tehát igazából én bíztatnám önöket, hogy minél többen írják meg, mert
+3:173 minutes, 17 secondsazt is lehet igen tehát ugye javítható egy vizsgával, tehát nagy kockázata nincs a dolognak.
+3:273 minutes, 27 secondsÉrdemes fölkészülni. Ha fölkészülnek, akkor esetleg kapnak valamilyen megajánlott jegyet, akkor pótolja a kolokviumot. De
+3:373 minutes, 37 secondshát ha Igen, akkor ezzel kapcsolatban még meg szeretném kérdezni, hogyha részt veszünk
+3:453 minutes, 45 secondsrajta, de nem sikerül jól, viszont utána elmegyünk vizsgázni, akkor beleszámít valamennyire a végső jegyben, vagy pedig teljesen nem?
+3:553 minutes, 55 secondsHát a teljesen nemet nem merném kockáztatni, mert akkor
+4:024 minutes, 2 secondsazt hinném, hogy esetleg lesz olyan, bár lehet, hogy a rossz hiszeműség beszél velem, aki mindenfajta készülés nélkül
+4:104 minutes, 10 secondsfog eljönni, valamennyire bele fog számítani. De hát azért sokban nem. Tehát ha valaki
+4:194 minutes, 19 secondsö tehát azt mondanám, hogy készüljenek ö valaki rettenetesen rosszul írja meg,
+4:284 minutes, 28 secondsigen, valamennyire bele fogom számítani, de nem annyira, mint egy mint egy valódi kolokiumot, vagy az első ZH-t.
+4:394 minutes, 39 secondsRendben. Köszönöm szépen. Kérem, van-e még kérdés?
+4:494 minutes, 49 secondsNo, ha nincs, akkor akkor egy picit vágjunk bele a a
+4:564 minutes, 56 secondskolmogorom bonyolultságba. Tehát mi az információ? Ezt sokféleképpen próbálták definiálni.
+5:045 minutes, 4 secondsMi az, hogy véletlen? Mi az, hogy véletlen sorozat?
+5:105 minutes, 10 secondsEnnek az egyik hát algoritmikus alapokon ezeket Kolmogorov próbálta bebiz definiálni. A
+5:205 minutes, 20 secondsKolmogorov bonyolultság az egy gyönyörű fogalom.
+5:255 minutes, 25 secondsKolmogorov a valószínűség, hát a valószínűség, az ak a modern
+5:325 minutes, 32 secondsvalószínűségszámítás atja igazából.
+5:375 minutes, 37 secondsTalán talán mondhatjuk azt, hogy ő egy a legmeghatároz vagy egyik legmeghatározóbb személyisége a modern valószínűségszámításnak.
+5:485 minutes, 48 secondsÉs ő alkotta meg ezt a ezt a fogalmat.
+5:525 minutes, 52 secondsValahogy ö egy gyönyörű fogalom. Ö a 80-as90-es években
+6:006 minutessokan művelték, talán most egy picit veszített a jelentőségéből, de azért érdemes egy egy pár percet
+6:106 minutes, 10 secondseltöltenünk vele, mert ki tudja, lehet, hogy hogy megint elő fog jönni. Szóval
+6:186 minutes, 18 secondsmindenképpen érdemes tudni erről valamit. No hát ha ránézünk erre a két képre,
+6:266 minutes, 26 secondsakkor ugye azt hiszem, hogyha szóban el kellene mondani
+6:346 minutes, 34 secondsúgy, hogy úgy, hogy valaki le is tudja rajzolni a képet,
+6:426 minutes, 42 secondsugye azt látjuk, hogy lényegesen egyszerű, tehát kevesebb szót kellene fölhasználnunk
+6:496 minutes, 49 secondsennek a képnek a leírás, mint ennek a képnek a leírásához. Tehát az, hogy viszonylag pontosan vissza tudjuk
+6:586 minutes, 58 secondsadni ezt a képet, ahhoz szerintem elég lenne egy féloldal.
+7:067 minutes, 6 secondsEz pedig nagyon-nagyon sok tehát nagyon nehéz lenne leírni, úgyhogy
+7:147 minutes, 14 secondsezt valaki többé-kevésbé a a leírtak alapján így tudja visszaadni. Tehát az
+7:217 minutes, 21 secondsinformáció tartalma ennek a képnek lényelesen kevesebb, mint a jobb oldalon látható képnek.
+7:307 minutes, 30 secondsHát ugye mégis mi az az információtartalom? Hát melyik melyik sorozatnak több, illetve kevesebb az
+7:387 minutes, 38 secondsinformációtartalma? Az ember úgy érzi, hogy ennek roppant kevés az információtartalma. Csupa egyes. Ennek már egy kicsit több.
+7:477 minutes, 47 secondsUgye itt minden második, egyes és egyessel kezdődik. Ennek sem túl nagy az információ tartalma.
+7:567 minutes, 56 secondsNézzük ezt a sorozatot.
+8:008 minutesHárom ugye tehát ez a pin-nek a három után tizedes jegyei.
+8:078 minutes, 7 secondsNa, vajon ennek milyen az információtartalma? Le tudnánk ezt röviden írni?
+8:158 minutes, 15 secondsHát igen, az a kérdés, hogy milyen röviden tudjuk leírni. Adjuk meg röviden az alábbi számokat. 81 8192.
+8:298 minutes, 29 secondsMi lenne ennek egy rövid leírása?
+8:428 minutes, 42 secondsMondjuk a 832040.
+8:468 minutes, 46 secondsHát ez a 8192, ez 2 a 13. Egy kicsit spóroltuk.
+8:558 minutes, 55 seconds832040 az a 30. Fibonacci szám. fölírjuk ezt,
+9:049 minutes, 4 secondshogy fn = fn- 1 + fn- 2, akkor az f3 teljesen jól leírtuk rövidebben.
+9:159 minutes, 15 secondsUgye a pi/2-t az fölírható úgy, hogy 2n/ 2n - 1 x
+9:259 minutes, 25 seconds2n/ 2n + 1 jellegű szorzatok.
+9:319 minutes, 31 secondsAkkor azért ezt is le tudjuk írni, ugye?
+9:389 minutes, 38 secondsP/4-et akár így is le tudjuk írni. 1-13 + 1/5- 1/4
+9:449 minutes, 44 secondssatöbbi. Tehát azért ezt a sorozatot is valahogy ügyesen le tudnánk írni aránylag kevés bittel.
+9:569 minutes, 56 secondsTehát igazából röviden szeretnénk megadni dolgokat ting gépet használva.
+10:1010 minutes, 10 secondsHát ez a kolmogorok bonyolultsága.
+10:1310 minutes, 13 secondsTehát legyen m egy olyan tuning gép, amelynek bemeneti és szalag ABC-je,
+10:2110 minutes, 21 secondsés tegyük föl, hogy az Muring gép, az FM it csillagot az csillaggal képező
+10:2810 minutes, 28 secondsparciális függvényt számolja ki, ekkor egy i csillagbeli
+10:3510 minutes, 35 secondsxzó falmogorob bonyolultsága az azon y stringeknek a minimális is
+10:4210 minutes, 42 secondshossza, amelyeken elindítva a tuning gépet az xstringet kapjuk. Egyébként egyébként
+10:5010 minutes, 50 secondsvégtelen, ha nincs ilyen Y string, amire az X-et kapjuk. Tehát elnézést, ez nem a még nem a kolmogorok volt csak, ha
+10:5910 minutes, 59 secondskicsit előre szaladtam. Tehát a az X string cm bonyolultsága
+11:0811 minutes, 8 secondsaz minimuma azon y stringeknek, amelyekre az fy az = xel, ha van ilyen
+11:1511 minutes, 15 secondsy. Ugye a cmx azt adja meg tulajdonképpen, hogy milyen mértékben nyomja össze az x-et.
+11:2611 minutes, 26 secondsUgye itt van egy gond, hogy a cmx az m-től függ.
+11:3211 minutes, 32 secondsTehát itt függ a a adott tuning géptől.
+11:3811 minutes, 38 secondsÉ persze ez könnyen kiküszöbölhető a az invarianciatétes szegítségével,
+11:4711 minutes, 47 secondsamelyik azt mondja ki, hogy legyen ugye egy univerzális turing gép. Ekkor tetszeles tuning géphez létezik olyan cm
+11:5611 minutes, 56 secondspozitív egész szám, hogy minden i-beli xzó esetén az univerzális tuning gép
+12:0412 minutes, 4 secondsszerinti bonyolultsága az x-nek az kisebb egyen mint cmx + cm, ami egy m-től függő konstans.
+12:1512 minutes, 15 secondsMiért? Tegyük föl, hogy ez miért igaz ez? Tegyük föl, hogy az m kódja az a vedély. Ekkor, hogyha az u-nak beadjuk a
+12:2312 minutes, 23 secondsvevét, és legyen Y az a legrövidebb szó, vagy egy olyan
+12:3112 minutes, 31 secondslegrövidebb szó, amire az fm y = x-zel,
+12:3612 minutes, 36 secondsakkor az u a v bemenettel x-et adja meg,
+12:4212 minutes, 42 secondsazaz az fuv y = xzel. Tehát mennyi lesz?
+12:5012 minutes, 50 secondsA cux az a legfeljebb a vev és az y összhossza,
+12:5712 minutes, 57 secondsami vev összhoz plusz y összhoz plusz yhoz,
+13:0313 minutes, 3 secondsami a vevé, ez meg a tingépnek a kódja vagy a vevé hesm egészen precízen plusz
+13:1313 minutes, 13 secondsaz y, ami a a cmx ugye, tehát ez az invariancia tét étel.
+13:2213 minutes, 22 secondsÉs hogyha C1 és C2 univerzális csuringépek, akkor mindkét irányba ezt a ugye ezt a gondolatmenet
+13:3213 minutes, 32 secondshasználva kapjuk ez azt, hogy az U1 és az U2 univerzális tuning gépek szerinti
+13:3913 minutes, 39 secondsbonyolultsága az X-nek az kisebb egyenlő, mint egy C konstans.
+13:4913 minutes, 49 secondsNa most már definiálhatjuk a tehát lényegében azt kaptuk, hogyha U
+13:5613 minutes, 56 secondsuniverzális tinguring gépek, akkor a CMX nem függ lényegesen ú-tól maximál egy konstans erejéig.
+14:0514 minutes, 5 secondsTehát ha több továbbiakban rögzítünk egy univerzális tuning gépet, és azt mondjuk, hogy egy i csillabeli xzó
+14:1314 minutes, 13 secondsesetén az xzó kolmagor bonyolultsága az megegyezik az u tuningép szerint, univerzális
+14:2114 minutes, 21 secondstyingép szerinti bonyolultságával az x-nek.
+14:3114 minutes, 31 secondsÉs most azt mondjuk, hogy egy xó az összenyomhatatlan, hogyha az az, hogy az ő ha az ő
+14:3914 minutes, 39 secondsbonyolultsága az legfeljebb, legalább xn, bocsánat, egy x szó összenyomhatatlan,
+14:4714 minutes, 47 secondsha az ő bonyolultsága az legalább az x-nek a hossza.
+14:5414 minutes, 54 secondsÉs a következő tételt nagyon egyszerű belátni. Legyen k egy pozitív egész.
+15:0315 minutes, 3 secondsEkkor legfeljebb 2 a k + 1-enusz egy olyan szó van, amelyekn amelyiknek a bonyolultsága a legfeljebb k.
+15:1415 minutes, 14 secondsÉs minden n természetes számra. Ebből következik, hogy minden n természetes számra van n hosszú összenyomhatatlan
+15:2015 minutes, 20 secondsszó. Ugye az első állítás az miért igaz? Az az első
+15:2715 minutes, 27 secondsállítás az azért igaz, hogy jelöljük HK-val azon x-eknek a halmazát, amiknek
+15:3415 minutes, 34 secondsa bonyolultsága legfeljebb K. Hát ugye HK-nak legfeljebb annyi eleme van, mint
+15:4015 minutes, 40 secondsa maximum K hosszú I csillagbeli sorozatok száma. Hogyha az i csillag az tehát hogyha binárisok a
+15:4915 minutes, 49 secondssorozatok, akkor az ugye legfeljebb 1 + 2 + 2 a négyzeten plusz k a köbön +z 2 a
+15:5715 minutes, 57 secondsk ami kettő a k legfőbb egyenlő 2 a k + 1el -1el
+16:0616 minutes, 6 secondsmárpedig a és tehát ezzel az első állítást beláttuk
+16:1416 minutes, 14 secondsés az hogy van minden nre n hosszú összenyomhatatlan szó. Ugye az n hosszú szavak száma az 2 a niken. Hogyha k az
+16:2316 minutes, 23 secondsn- 1, akkor a az imén beállított egyes első állítás szerint legfeljebb kettő a
+16:3016 minutes, 30 secondsk + 1e -1 az kettő az niken -1 olyan x szó van, amelyiknek a bonyolultsága az legfeljebben -1, azaz létezik.
+16:4416 minutes, 44 secondsTehát van olyan szó, ami nincs h-1-ben, azaz nem összenyomható.
+16:5016 minutes, 50 secondsJó, egy másodperc re megszakítanám az órát. Tehát itt
+17:0017 minutestartunk, és akkor mindjárt folytatom. Egy egy másodperc türelmet szeretnék kérni.
+22:2022 minutes, 20 secondsHelló! Elnézést egy pillanatra.
+22:2822 minutes, 28 secondsIgen, abbahagytam itt. Jó. Ö, tehát akkor ott tartottunk.
+22:3822 minutes, 38 secondsMit látnak most?
+22:4122 minutes, 41 secondsIgen, most a táat látjuk.
+22:4822 minutes, 48 secondsIgen. Jó, akkor akkor térjünk vissza a
+22:5622 minutes, 56 secondstérjünk vissza a az előadásra. Igen. Tehát akkor most már remélem, hogy a a slajot látják.
+23:0923 minutes, 9 secondsTehát láttuk, hogy mindenre ott hagytuk abba, hogy láttuk, hogy mindenre van olyan szó, ami nem összenyomható.
+23:2523 minutes, 25 secondsEgyébként, hogyha az n nagyobb nyolc, akkor az n hosszú szavak több mint 99%-ának a kolmogor bonyolultsága nagyobb, mint n- 8. Ezt egy egyszerű számítás.
+23:3823 minutes, 38 secondsitt lent mutatja.
+23:4123 minutes, 41 secondsÉs akkor azt be lehet látni, hogy a konmaguró bonyolultságot megadó C függvény az nem rekurzív.
+23:5623 minutes, 56 secondsEzt nem bizonyítjuk, de érdemes tudni
+24:0524 minutes, 5 secondssajnos vagy igen, hát ez nem egy rekurzív függvény.
+24:1224 minutes, 12 secondsÉs akkor hogy jön be a véletlen a képbe?
+24:1624 minutes, 16 secondsJelölje i végtelen az összes végtelen 01 sorozatot.
+24:2524 minutes, 25 secondsEgy x végtelen sorozat esetén jelöljük xn-nel az első n elemből álló szót.
+24:3524 minutes, 35 secondsTehát hogyha van egy végtelen sorozatunk, akkor a az ennak van n darab
+24:4224 minutes, 42 secondselső bitje, az xn az az ez lesz. Tehát az ez az n első n bittjéből álló szó.
+24:5224 minutes, 52 secondsÉs akkor azt mondjuk, hogy egy végtelen sorozat az kolmogoró véletlen,
+25:0025 minutesha gyakorlatilag nem összenyomható,
+25:0725 minutes, 7 secondsami ami mit mond? Tehát hogyha megnézzük ö az első n bitből álló
+25:1625 minutes, 16 secondsö részzavának, ugye az Xn az egy véges része, az az N
+25:2325 minutes, 23 secondshossz első N hosszú bit első n bittje a szónak.
+25:2825 minutes, 28 secondsEnnek van egy kolmogorov komplexitása, hogy mennyire összenyomható ez a szó, az
+25:3525 minutes, 35 secondsa CX-en a kolmogor bonyolultsága per N arány lesz.
+25:4125 minutes, 41 secondsUgye minden n-re ez egy jól definiált szám.
+25:4725 minutes, 47 secondsHa ez a számsorozat, amennyiben n tart a végtelehez, ez egyhez tart, akkor azt
+25:5525 minutes, 55 secondsmondjuk, hogy ez a sorozat kmogoró véletlen.
+26:0126 minutes, 1 secondJó, érthető ez a definíció. Ugye
+26:0826 minutes, 8 secondsbe lehet látni, hogyha X egy kmogorom véletlen sorozat, akkor nincsen ting gép, amelyik
+26:1726 minutes, 17 secondsamely N bináris bemenettel az XNET állítja elő. Ezt be lehet látni.
+26:2426 minutes, 24 secondsNagyjából ezeket a definíciókat szerettem volna elmondani a kolmogorok bonyolultságról.
+26:3126 minutes, 31 secondsTehát ezeket érdemes tudni elég technikai jellegű fogalom, de de
+26:4026 minutes, 40 secondsazért néhány szép dolgot az algoritmus elméletben lehet bizonyítani ennek segítségével.
+26:4926 minutes, 49 secondshangsúlyoznám, hogy most mintha egy kicsit háttérbe szorult volna ennek a ennek a fogalmamnak a használhatósága és a kutatása.
+27:0227 minutes, 2 secondsMivel erről elég keveset mondtam el, ezért említettem, hogy igen, tehát azért
+27:1127 minutes, 11 secondsszeretnék mutatni egyrészt egy nagy jól használható tételt, ezt úgy hívják, hogy a mestertétel.
+27:2027 minutes, 20 secondsEz a master theorem. Tehát amikor algoritmusokat csinálunk, akkor nagyon gyakran ugye az
+27:2927 minutes, 29 secondsmi az osz meg is uralkodja el. Tehát van egy nagy problémánk.
+27:3327 minutes, 33 secondsAkkor felosztjuk sok kis problémára.
+27:3927 minutes, 39 secondsAzt a sok kis problémát megint felosztjuk még több sok kis problémára is így tovább. Az egész pici problémákat
+27:4627 minutes, 46 secondsmegújjuk, és akkor vagy összefésüljük ezeket a megoldásokat, és megkapjuk a megkapjuk a nagy probléma megoldását.
+27:5427 minutes, 54 secondsTehát az osz meg is uralkodj el. Amikor a sok kis problémát sok kisebb problémát megoldogatjuk,
+28:0228 minutes, 2 secondsakkor lényegében a futási időre egy rekurziót kapunk.
+28:0728 minutes, 7 secondsA kérdés az az, hogyha van egy rekurziónk, akkor
+28:1428 minutes, 14 secondsakkor mi lesz ennek a rekurziónak a vagy lehet-e látni, hogy milyen
+28:2228 minutes, 22 secondsfutásidőhöz vezet egy adott rekurzió azonnal? Tanulták-e a mestertételt?
+28:3128 minutes, 31 secondsHalló? Az úgynevezett master theoremet.
+28:4228 minutes, 42 secondsHalló, halló. Kérdés volt.
+28:5028 minutes, 50 secondsSzerintem nem elmondanám, mert nagyon rövid és jól használt, és érdemes tudni.
+28:5728 minutes, 57 secondsViszont tanárul most nálam szerintem nem nem látszik a megosztás, hogyha még Igen, a képernyő megosztás nem látszik.
+29:0629 minutes, 6 secondsIgen. Most mit látnak? Engem látnak, ugye?
+29:0929 minutes, 9 secondsIgen, igen, igen. Jó, akkor mindjárt.
+29:1329 minutes, 13 secondsTehát most áttérünk, most új slajra térünk át. Egy pillanat.
+29:2029 minutes, 20 secondsTehát amit el akarok most mondani, az a mestertétel.
+29:2629 minutes, 26 secondsMég ebben a pár percben
+30:0230 minutes, 2 secondsJó. Tehát ugye miről van szó? Arról van szó, hogyha hogy nagyon gyakran, hogy amit úgy old meg, hogy
+30:1130 minutes, 11 secondshogy egy nagyon egy nagy problémát, egy n méretű problémát fölosztjuk a darab N/B méretű problémára.
+30:2130 minutes, 21 secondsEzt rekurzív módon megoldjuk. És ezeknek az összefésülése, vagy valamilyen ezeknek a meg ezeket a megoldásokat majd
+30:3030 minutes, 30 secondsvalahogy még összerakjuk a teljes probléma megoldásáv lépés segítségével.
+30:4230 minutes, 42 secondsA kérdés az, hogyha van egy ilyen rekurziónk, akkor meg tudjuk-e rögtön mondani, hogy hogy hány
+30:5030 minutes, 50 secondsigazából mennyi is ez a tn lépés. Hát általában azt szoktuk föltenni, hogy a nulla méretű problémát nullaidőben
+30:5830 minutes, 58 secondsoldjuk meg, az egyméretű problémát konstans időben oldjuk meg.
+31:0331 minutes, 3 secondsUgye az A részproblémák száma, a B az, hogy milyen méretű, tehát az per B méretű problémákra osztottuk szét.
+31:1531 minutes, 15 secondsÉs az FN az pedig az, hogy mennyi ideig tart kis problémákra
+31:2331 minutes, 23 secondsosztani, illetve összefésülni a megoldásokat, ugye? Tehát így jön össze ez a egy ilyen rekurzió.
+31:3531 minutes, 35 secondsÉs akkor ugye egy ilyen rekurzió lépés számát ez a fa írja le.
+31:4531 minutes, 45 secondsTehát itt ugye a TN méretű problémát a darab TN
+31:5231 minutes, 52 secondsa darab M/ B méretű problémára válosztottuk szét és így tovább. És
+32:0032 minutesakkor tehát itt meg kell tennünk meg kell oldanunk
+32:0732 minutes, 7 secondsugye tehát itt ezek össze az első szinten
+32:1432 minutes, 14 secondsugye en a cediken problémát kell összefésülnünk itt a x m/ b a cen és így
+32:2232 minutes, 22 secondstovább. Tehát hogyha így nézegetjük ezt a mértani sort akkor mennyi lesz a lépésszál? Mert hogyha a lépésszám,
+32:3232 minutes, 32 secondshogyha az a/b a cedik rrel jelöljük, akkor a tn lépés szám az n a cedik xer i
+32:4232 minutes, 42 secondsmegy nullától log b alapú logaritmus n-ig r az iediken
+32:4932 minutes, 49 secondslesz. A b alapú logaritmus n azért van, mert ilyen mé lesz a fa.
+32:5632 minutes, 56 secondsIlyen mély lesz a fa, ugye? hiszen mindig B felé osztunk, ugye? Tehát Méletű problémát mindig
+33:0533 minutes, 5 secondsmindig B m egy a amikor k méretű a problémát, akkor k/ b méretű problémákra
+33:1233 minutes, 12 secondsosztjuk, és egy idő után tehát addig kell vennünk ezt az összeget, amíg ez a b alapú logaritmus n az egyenlő lesz eggyel, vagy körülbelül egy lesz.
+33:2333 minutes, 23 secondsJó, tehát egy ilyen rekurzió az az egy ilyen lépésszámot fog adni, és a tétel az a következő.
+33:3433 minutes, 34 secondsTehát tulajdonképpen tegyük föl, hogy hogy ez a rekurzió ez ilyen alak, hogy
+33:4133 minutes, 41 secondstn = a x t n/ b + n a ciken.
+33:4933 minutes, 49 secondsés a a az egyméretű problémát azt egy lépésben vagy konstanszámú lépésben tudjuk megoldani,
+33:5733 minutes, 57 secondsakkor a tn az egyenlő lesz nagyságrendileg n a cik-nel.
+34:0434 minutes, 4 secondsAkkor, hogyha a C az nagyobb, mint b alapú logaritmus a egyenlő lesz
+34:1334 minutes, 13 secondsn a cedzer lognel, hogyha c az eg alapú logaritmus a-val és egyenlő lesz
+34:2134 minutes, 21 secondsnagyságrendileg n a b alakú logaritmus adikon, hogyha a c az kevesebb mint
+34:2734 minutes, 27 secondskisebb mint b alapú logaritmus a És
+34:3434 minutes, 34 secondsugye ez miért igaz? Hát a bizonyítása ennek nagyon egyszerű egy mértani sorban. Ha ez az R, ez 0 és egy közé
+34:4334 minutes, 43 secondsesik, akkor tudjuk, hogy az összeg ugye a kvóciens akkor az ugye az kisebb, mint egy. Tehát akkor az
+34:5134 minutes, 51 secondsösszeg az legfeljebb 1/1 - r. Ez az összeg, hogyha az r = 0el, akkor itt csupa egyesünk van.
+35:0235 minutes, 2 secondsakkor ez k + 1 lesz. És hogyha az r az legalább egy, akkor az összeg ugye a kóciens nagyobb, mint egy. Akkor
+35:1035 minutes, 10 secondsközépiskolából tanultuk, hogy a az összeg akkor az rak + 1 -1/ r -1
+35:1735 minutes, 17 secondslesz. Tehát lényegében ezzel múlik ez a tétel aminek itt van a kimondása.
+35:2835 minutes, 28 secondsTehát ez a mestertétel. Érdemes megjegyezni, mert rögtön látjuk, hogy
+35:3535 minutes, 35 secondshogyha van egy rekurzió, akkor azt egy ilyen polinomiális rekurzió, hogy az milyen
+35:4235 minutes, 42 secondsmilyen nagyságrendhez vezet. Jó, érthető a mestertétel, ugye?
+35:5435 minutes, 54 secondsHalló? Érthető-e a mestertétel állítása?
+36:0336 minutes, 3 secondsHalló! Én majd még megnézem még egyszer.
+36:1436 minutes, 14 secondsTehát hogyha van egy ilyen rekurziunk, a lényeg az, hogy tn = a x tn/ b + n a ciken,
+36:2236 minutes, 22 secondsakkor attól függően, hogy a c a b alapú logaritmus ahoz képest
+36:3036 minutes, 30 secondskisebb, nagyobb vagy egyenlő, a lépésszámot kapásból meg tudjuk mondani. Jó, ezt mondja ki a mestertétel.
+36:4036 minutes, 40 secondsA bizonyítását csak vázoltam. Az azon múlik, hogy hogy a mértani sor összegén múlik.
+36:4836 minutes, 48 secondsNagyon egyszerű.
+36:5136 minutes, 51 secondsÉs nézzünk egy példát.
+37:0037 minutesTegyük föl, hogy van egy rekurziónk, ahol a tn az = 3x
+37:0737 minutes, 7 secondsTN/2, tehát 3 darab m/2 nagy problémára sikerült
+37:1637 minutes, 16 secondsszétforgácsolnunk az Nosszú problémát, és ahhoz, hogy hogy osztogassuk, illetve
+37:2337 minutes, 23 secondsösszeféssük a teljes probléma megoldásává, tehát a rekurzió az há TN = 3 x T/ 2 +
+37:3237 minutes, 32 seconds5en. Ha látunk egy ilyen rekurziót, mennyi a lépésszám?
+37:3937 minutes, 39 secondsMennyi itt az A? Az a itt a három.
+37:4237 minutes, 42 secondsMennyi a B? A B az 2. Mennyi a C? Az az n-nek a hatványa ebben a
+37:4937 minutes, 49 secondsebben a tagban az egy b alapú logaritmus a az kettes alapú logaritmus 3 az egy
+37:5837 minutes, 58 secondsszám valahol k az egy szám valahol egy és kettő között.
+38:0438 minutes, 4 secondsTehát ugye kettes alapú logaritmus ugye tehát ha a b-t a kettőt már
+38:1438 minutes, 14 secondsnégyzetre emeljük négyet kapunk ha első 60 mjük kettőt kapunk tehát ahhoz hogy hár hármat kapjunk ahhoz valami egy és
+38:2338 minutes, 23 secondskettő közötti számra kell hogy emeljük a kettőt. Tehát b alapú logaritmus a az körülbel 1,58.
+38:3238 minutes, 32 secondsAz 1,58 az nagyobb, mint a C = 1. Ebből következik. Tehát akkor hol vagyunk?
+38:4138 minutes, 41 secondsAkkor ebben az esetben vagyunk, hogy a C, ami 1, az kisebb, mint kettes B alapú logaritmus kettes alapú logaritmus 3.
+38:5038 minutes, 50 secondsAbból következik, hogy a lépésszám az nagysárendileg n a kettes a logaritmus 3 lesz. Tehát ha van
+38:5838 minutes, 58 secondsegy ilyen rekurzium, akkor a mestertétel segítségével kapásból meg tudjuk mondani, hogy ez hány lépéshez vezet.
+39:0539 minutes, 5 secondsJó, így érthető-e? Érthető-e az állítás?
+39:1439 minutes, 14 secondsHalló? Érthető. Érthető. Szuper. Jó. Köszönöm szépen.
+39:2239 minutes, 22 secondsAkkor nézzünk még egy példát.
+39:2639 minutes, 26 secondsHogyha a tn mondjuk, hogyha az n tn az 2n/2 méretű problémára vez osztottuk
+39:3539 minutes, 35 secondsszét, és itt van még egy lineáris tag. Akkor mi az A? Az a az 2.
+39:4539 minutes, 45 secondsMi a b? A B szintén kettő. Mi a C? A itt az n-nek a hatványa az 1.
+39:5439 minutes, 54 secondsB alapú logaritmus a az 2es alapú logaritmus 2 az 1. A c is 1. Tehát b
+40:0140 minutes, 1 secondalapú logaritmus a = c-vel. Tehát ebben az esetben vagyunk. A kettes esetbennél vagyunk. Ebből következik azonnal, hogy
+40:1140 minutes, 11 secondsa tn lépés szám nagyságrendileg az n x log n lesz, mivel a cél az 1.
+40:2040 minutes, 20 secondsJó, tehát például mondjuk a a fésüs rendezés az ugye, hogy zajlik
+40:3240 minutes, 32 secondsahhoz, hogy rendezzünk n darab elemet.
+40:3640 minutes, 36 secondsElb előbb ketté osztjuk őket 2/2 darab tömbre. Mind a kettőt különkülön
+40:4340 minutes, 43 secondsrendezzük tm/2 lépésben, majd összefésük őket n darab lépésben.
+40:5140 minutes, 51 secondsUgye itt a 17 n helyett n lesz, de mindegy. Nagyságrendjelek pontosan ezért a fésűrendezés
+40:5840 minutes, 58 secondsaz nlogen lépésben fut le. Jó, érthető.
+41:0541 minutes, 5 secondsRemélem, hogy ez így ez így világos. Ez egy nagyon jól használható állítás.
+41:1241 minutes, 12 secondsNézzünk egy ezt már ne számoljuk végig, mindenki látja, hogy mi történik itt.
+41:1841 minutes, 18 secondsJó, köszönöm szépen. Akkor folytatjuk még a akkor egy egy 15 perc múlva.
 
 
 
-https://www.youtube.com/watch?v=zLK0RrBdpXQ
+
+https://www.youtube.com/watch?v=bLn8hAtuSUM

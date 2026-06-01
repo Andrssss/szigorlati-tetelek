@@ -1,0 +1,526 @@
+No, tehát elkezdtük a a törzsanyagot a determinisztikus véges automaták vizsgálatával.
+4:004 minutesegy determinisztikus véges automata sematikusan nagyjából úgy néz ki, hogy
+4:094 minutes, 9 secondsvan véges sok állapot. Van egy bemeneti, van egy bemenő bemeneti szallag, azon bemenőjelek.
+4:194 minutes, 19 secondsÉs a kimenő jel. A formális definíciója az itt van.
+4:284 minutes, 28 secondsHát egy determinisztikus véges automata.
+4:314 minutes, 31 secondsAz egy ilyen Qz delta Q0F 5-ös fogat, ahol Q az egy véges halmaz, az állapotok halmazza. Szigma az ABC.
+4:424 minutes, 42 secondsDelta az egy átmenett függvény, tehát attól függően, hogy milyen melyik állapotban van a milyen állapotban van a
+4:494 minutes, 49 secondsgép, illetve milyen aktuális jelet olvas éppen a fej.
+4:564 minutes, 56 secondsÁtugrik egy másik állapotba, Q0 a kezdő állapot, a a kezdeti állapot,
+5:035 minutes, 3 secondsés van-e az állapotoknak egy f részmaza, ami a végállapotok vagy az elfogadó állapotoknak a halmaza. Azt mondjuk,
+5:115 minutes, 11 secondshogy egy VV x1 x2 xn
+5:205 minutes, 20 secondsszigmaveli jelsorozatot vagy szót elfogad egy detervisztikus véges automóa, hogyha
+5:315 minutes, 31 secondshogyha az R0, tehát az a Q0 kezdeti állapot, a delta Ri xi + 1 = Ri plusz 1
+5:415 minutes, 41 secondsés az rne az elfogadó állapot. Tehát ez mit jelent? Hogyha beadjuk az automatának ezt az x1, x2, x- sorozatot,
+5:515 minutes, 51 secondsakkor ugye először az r0 kezdeti állapotban van. Az
+5:575 minutes, 57 secondsR0 kezdeti állapotból az X1el hatására átugrik
+6:046 minutes, 4 secondsegy valamilyen R1 állapotba, és olvassa az X2-t.
+6:116 minutes, 11 secondsNa, átugrik egy R2 állapotba és így tovább. És hogyha lekety így ez az egész szó, ugye ez N lépés lesz,
+6:216 minutes, 21 secondsakkor a végén az automata elfogadó állapotba kerül. Tehát hogyha ez az utolsó állapot, amibe a szó végén kerül
+6:286 minutes, 28 secondsa az automata. Ez egy elfogadó állapot, akkor elfogadja ezt a szót az automómata, vagy ezt a jelsorozatot.
+6:376 minutes, 37 secondsEgyébként meg nem.
+6:416 minutes, 41 secondsMik egy Mutomata által mik milyen szavak alkotják az M automatálta
+6:486 minutes, 48 secondsfelismert A nyelvet? Hát azokból a VV ABC feletti jelsorozatokból áll,
+6:556 minutes, 55 secondsamelyeket az automata felismer. Jó, tehát ez az automata által felismert nyelv.
+7:047 minutes, 4 secondsIgen. És akkor még mi az, hogy egy absztrakt nyelv
+7:127 minutes, 12 secondstulajdonképpen, hogyha a szigma egy tetszőleges jelek, egy nemüreges, nem nem üres véges
+7:217 minutes, 21 secondshalmaza legyen az ABC, akkor a szigma csillag jelölje az összes véges sorozatoknak a halmazát.
+7:337 minutes, 33 secondsAkkor a szigma csillagnak bármilyen véges, a szigma csillagnak bármilyen részhalmaza, nem feltétlenül véges,
+7:417 minutes, 41 secondsbocsánat. A szigma csillagnak bármely részhalmaza egy nyelvet fog alkotni.
+7:497 minutes, 49 secondsUgye a szigma az véges.
+7:547 minutes, 54 secondsA szigma csillag számossága az megszámlálhatóan végtelen.
+8:018 minutes, 1 secondTehát a szigma csillag összes részhalmazainak a halmaza viszont akkor már nem megszámlálhatóan végtelen. Tehát
+8:088 minutes, 8 secondsa nyelvek száma az az nagyon nagy, nem megszámlálható.
+8:168 minutes, 16 secondsJó.
+8:198 minutes, 19 secondsHát hogyan adhatjuk meg? Tehát hogyha L része szigma csillagnak, mint már említettem, akkor ez egy nyelv. Nagyon sok nyelvünk van.
+8:308 minutes, 30 secondsHa végesednyel, akkor úgy is megadhatjuk, hogy felsoroljuk az elemeit, vagy leírjuk valamilyen tulajdonságát,
+8:388 minutes, 38 secondsde így már végtelennyelveket is megadhatunk esetleg,
+8:458 minutes, 45 secondsvagy mozthatjuk azt, hogy ez egy olyan nyelv, amit elfogad egy automómata, vagy operátorokkal, vagy generáló nyelvtanokkal.
+8:548 minutes, 54 secondsEzt majd látni fogjuk a későbbiekben, de most egyelőre operátorokkal szeretnénk megadni
+9:039 minutes, 3 secondsnyelveket, és ehhez definiáltuk a reguláris operátorokat. A reguláris operátorok a
+9:109 minutes, 10 secondsaz unió két egy A és a B nyelvnek az uniója az
+9:189 minutes, 18 secondsazon szavakból áll, amelyik vagy az egyikben, vagy a másikban benne vannak.
+9:239 minutes, 23 secondsTehát a szavak halmazainak az unió két nyelv szorzatán
+9:309 minutes, 30 secondsaz át a a x b-n az xy alakú stringek
+9:389 minutes, 38 secondshalmazát értjük, ahol az x az egy a-beli szó, az y pedig egy b nyelvbeli szó.
+9:489 minutes, 48 secondsÉs akkor így egymás után írjuk őket.
+9:509 minutes, 50 secondsTehát az x y az x1 x2 xn y1 y1 2y m
+9:589 minutes, 58 secondsegy nyelv iterátja az azon v1 v2 vevk
+10:0610 minutes, 6 secondsalakú sorozatokból áll, ahol a vevé az az szava a nyelvnek, az a az adott nyelvnek, az a nyelvnek.
+10:1910 minutes, 19 secondsÉs itt máris megjegyeztük, hogy de az üres szimbólum az benne van az a egy
+10:2710 minutes, 27 secondsbármely nyelv iterátjában, hiszen nullaszó, tehát ha semmit nem iterálunk, akkor megkapjuk éppen az üres szót.
+10:3610 minutes, 36 secondsIlletve hasonlóképpen látható, hogyha az L nyelv az maga az ABC, akkor az R csillag az egyenlő szigma csillaggal.
+10:4910 minutes, 49 secondsJó, tehát még további operátorok, az két nyelv metszete, az azon szavakból áll, amelyek mindkét nyelvben benne
+10:5810 minutes, 58 secondsvannak. Tehát ez sima halmaz méreti metszet. Az a - b nyelv azon szavakból áll, amik benne vannak az a-ban, de nincsenek benne a b-ben.
+11:1111 minutes, 11 secondsAz a nyelv komplementere azon jelsorozatokból áll, amik
+11:1911 minutes, 19 secondsbenne vannak a szigmaacsillagban, de nincsenek benne az a-ban. Tehát pont a nem ábeli
+11:2711 minutes, 27 secondsnyelv sorozatokból áll.
+11:3111 minutes, 31 secondsEgy nyelv tükörképe azon sorozatokból áll, a ahol a
+11:4111 minutes, 41 secondsahol a az eredet ennek a sor ennek a fordítottja, hogyha így rakjuk össze a szimbólumokat, akkor benne van az eredeti nyelvben.
+11:5311 minutes, 53 secondsNa most ilyen operátorokkal, tehát reguláris operátorokkal le lehet írni egy nyelvet,
+12:0312 minutes, 3 secondstehát például azt a nyelvet, hogy vev
+12:1112 minutes, 11 secondsálljon azon nulle és egy szimbólumok
+12:1812 minutes, 18 secondsfölötti szavakból, amikben vagy kettő, vagy három darab egyes szerepel úgy, hogy az első és a
+12:2612 minutes, 26 secondsmásodik egyes nem szomszédosak. Na, hogyan tudnám ezt leírni? Hát először is
+12:3312 minutes, 33 secondsegy olyan szó, amiben két vagy három darab egyes van, az kezdődhet vagy nullával, vagy egyessel.
+12:4212 minutes, 42 secondsHát ezt úgy írom, hogy nulla csillag. Tehát valahányszor iterálom a nullát.
+12:4812 minutes, 48 secondsLehet, hogy egyáltalán nem iterálom, akkor itt vagy nullasz iterálom, akkor a szó egy egyessel fog kezdődni. Egyébként valahány nullával fog kezdődni.
+12:5912 minutes, 59 secondsUtána következnie kell természetesen egy egyesnek.
+13:0513 minutes, 5 secondsNa most az első és a második egyes azok nem szomszédosak,
+13:1113 minutes, 11 secondsezért ide berakok egy nullát, tehát hogy ne legyenek ők szomszédosak. Utána egy nulla csillagot, hiszen a nem
+13:1913 minutes, 19 secondsszomszédosak az jelenti azt, hogy legalább egy nulla van közöttük, de lehet akárhány is. Tehát a nullát valahányszor iterálom, utána jön egyes.
+13:3313 minutes, 33 secondsUtána ugye ez még befejeződt egy ilyen szóban. Most vagy egyes
+13:4113 minutes, 41 secondsvagy van még egy harmadik egyes, vagy vagy két egyes van benne összesen.
+13:4713 minutes, 47 secondsHa két egyes van benne összesen, akkor még hozzárakhatok valahány darab nullát. Ez még mindig egy nyelvbeli szó lesz.
+13:5413 minutes, 54 secondsTehát ez konkennált nulla csillag.
+13:5913 minutes, 59 secondsVagy pedig valahány nulla hozzárakása után hozzárakok egy egyest, és még utána is konkálok valahogy nullát. Tehát itt,
+14:0814 minutes, 8 secondsahol ketté válik ez a dolog, ezt úgy elképezem, hogy tehát ez az egész
+14:1814 minutes, 18 secondsszor vagy vagy karika 1 x0 csillag unió
+14:2514 minutes, 25 secondsunió y világos ez így? Halló? Erre kérek egy visszajelzést. Tehát reguláris
+14:3414 minutes, 34 secondsoperátorokkal ilyen módon nyelveket tudok leírni.
+14:4114 minutes, 41 secondsVilágos ez, hogy például ebben az esetben hogy írtam le ezt a nyelvet. Az e pontosan mit takar?
+14:5114 minutes, 51 secondsAz semmit, tehát az üres halmazt. Köszönöm.
+14:5814 minutes, 58 secondsKöszönöm szépen. Tehát itt azt jelenti, hogy ugye itt a második egyes után még hozzáírunk
+15:0515 minutes, 5 secondsvalamennyi nullát, valahány nullát, és utána jön a semmi. Tehát vagy semmit nem írunk utána, vagy pedig még egy egyest
+15:1315 minutes, 13 secondsés utána valahány nullát. Tehát itt kettő ágazik a dolog. Világos így?
+15:2115 minutes, 21 secondsIgen. Köszönöm. Én köszönöm szépen.
+15:2515 minutes, 25 secondsNo, akkor most már legyünk egy kicsit pontosabbak. Tehát mik azok a reguláris kifejezések?
+15:3215 minutes, 32 secondsEz egy rekzív definíció lesz. Tehát egyrészt a az ABC minden eleme az egy reguláris kifejezés.
+15:4215 minutes, 42 secondsAz üres szimbólum is egy reguláris kifejezés.
+15:4615 minutes, 46 secondsAz üres nyelv is egy reguláris kifejezés.
+15:5015 minutes, 50 secondsÉs akkor most jön a rekurzív része definíciónak. A alfa és béta reguláris
+15:5615 minutes, 56 secondskifejezése. Akkor alf x béta is az. Ugye ez a konkelációt hivatott reprezentálni.
+16:0316 minutes, 3 secondsHa alfa és béta regulárs kifejezések, akkor alfa unió béta is az.
+16:1016 minutes, 10 secondsIlletve ha alfa reguláris kifejezés, akkor az alfa csillag is az.
+16:1716 minutes, 17 secondsÉs hát minden reguláris kifejezés az egy nyelvet reprezentál. Például az, hogy A
+16:2416 minutes, 24 secondscsillag BC zárójelben csillag AB az azt a nyelvet reprezentálja, ahol
+16:3416 minutes, 34 secondsvalahány A után jön B és C. ilyeneket
+16:4216 minutes, 42 secondsilyeneket ismétlünk akárhányszor, tehát ezt meg van csillagozva.
+16:4816 minutes, 48 secondsUtána hozzáírunk egy A-t, illetve egy B-t. Érthető ez így?
+16:5616 minutes, 56 secondsHalló? Igen. Az EP az mi volt még egyszer? Bocsánat. A Y az üres jel.
+17:0417 minutes, 4 secondsÉs akkor taladtál az akkor az más a hármas pont. Igen, igen, igen. Ez az üres jel, az üres szó tulajdonképpen.
+17:1617 minutes, 16 secondsEz pedig az üres nyelv.
+17:2217 minutes, 22 secondsJó, tehát tehát egy nyelv szavakból áll, többek között állhat az üres szóból.
+17:3317 minutes, 33 secondsDe lehet egyben, maga az üreshalmaz is nem áll semmiből. Tehát egy nyelv állhat
+17:4017 minutes, 40 secondsaz üres szóból és még ebből és még az AB-ból és így tovább. Viszont az üres nyelv az valóban nem áll egyetlen egy
+17:4917 minutes, 49 secondsszóból sem. Hát ez egy kicsit szőrözés, de azért így precíz a definíció. Érthető, ugye?
+17:5817 minutes, 58 secondsIgen, igen. Köszönöm. Én köszönöm szépen. Jó, tehát
+18:0618 minutes, 6 secondsmost jön egy fontos definíció. Mikor mondjuk, hogy egy nyelv reguláris?
+18:1118 minutes, 11 secondsEgy nyelv akkor reguláris, hogyha definiálható reguláris kifejezéssel. Jó?
+18:1618 minutes, 16 secondsTehát ez a reguláris nyelvnek a definíciója.
+18:2018 minutes, 20 secondsUgye ez azt jelenti, hogy leírható reguláris kifejezéssel.
+18:2718 minutes, 27 secondsMost megpróbálunk megpróbáljuk a reguláris nyelveket egy kicsit jellemezni.
+18:3618 minutes, 36 secondsTehát ez lesz a legegyszerűbb ilyen ilyen nyelv vagy bonyolultsági osztály, amit tanulmányozni fogunk.
+18:4618 minutes, 46 secondsÉs egy picit körbejárjuk, milyen milyen módon tudnánk ezeket jellemezni.
+18:5318 minutes, 53 secondsTehát az első tétel, amit be fogunk látni, az az, hogy legyen el azon nyelvek halmaz,
+19:0119 minutes, 1 secondamelyek felismerhetők determinisztikus véges automatákkal.
+19:0719 minutes, 7 secondsEkkor el zárt a reguláris operátorokra nézően. Tehát hogyha
+19:1519 minutes, 15 secondshogyha A1 reguláris meg A2 is reguláris, akkor a két nyelvnek az uniója is reguláris.
+19:2219 minutes, 22 secondsA két nyelvnek a konkátja is reguláris, illetve A1 klini lezárása is reguláris
+19:3019 minutes, 30 secondslesz. Jó, tehát ez a tétel érthető a tételállítása, ugye? Halló?
+19:4019 minutes, 40 secondsVan-e kérdés? Szerintem érthető.
+19:5019 minutes, 50 secondsElnézést. Azt hiszem, hogy itt most most hirtelen visszagondolva én mondtam ki egy picit
+19:5919 minutes, 59 secondsnem teljesen precízen a tételt, megelőlegezve egy másik tételt, amit csak később fogunk bebizonyítani. Tehát
+20:0820 minutes, 8 secondstehát akkor most pontosítanék, mert az előbb egy kicsit rosszul mondtam. Tehát
+20:1420 minutes, 14 secondsa legyen A1 és A2 két nyelv. amik felismerhetők determinisztikus véges automatákkal.
+20:2320 minutes, 23 secondsEkkor az unióukhoz is van egy olyan automómata, ami felismeri őket, a konkátjukhoz is, meg a klíni
+20:3020 minutes, 30 secondslezárásukhoz is. Jó, tehát az, amit mondtam, az az igaz, de csak egy később fogjuk belátni.
+20:3920 minutes, 39 secondsNézzük az uniót. Tehát tegyük föl, hogy az A1 nyelvet azt fölismeri egy M1 automata.
+20:4620 minutes, 46 secondsAz A2 nyelvet azt fölismeri az M2 automata. Hát akkor most meg kell adnunk egy olyan
+20:5420 minutes, 54 secondsdeterminisztikus véges automatát, amelyik fölismeri a két nyelvnek az unióját. Hát hogyan adnánk meg egy ilyen automatát?
+21:0221 minutes, 2 secondsA az ABC. Hát egyrészt föltehetjük, hogy ugyanaz, de különben vehetjük a két
+21:0821 minutes, 8 secondsABC-nek az unióját, tehát ez nem nagy különbség. A két
+21:1621 minutes, 16 secondsmi lesz az új állapothalmaz? Ez a két automata állapothalmazainak a direkt szorzata lesz. Tehát itt az állapotok,
+21:2621 minutes, 26 secondsállapotpárok lesznek. Úgyhogy az R1 benne van a Q1-ben, az R2 az benne van a Q2-ben.
+21:3421 minutes, 34 secondsMi lesz az átmenetfüggvény?
+21:3621 minutes, 36 secondsTehát tegyük föl, hogy az R1 R2 párral leírt állapotban vagyunk, és jön egy A
+21:4321 minutes, 43 secondsszimbólum. Megnézzük, hogy az M1 szerint, hogyha R1-ben vagyunk és jön az A szimbólum, akkor hová megyünk? Ez lesz
+21:5221 minutes, 52 secondsaz első koordinátája az új állapotnak. A második koordinátáját pedig úgy számoljuk ki,
+21:5921 minutes, 59 secondshogy megnézzük, hogyha R2 állapotban vagyunk az M2 automata szerint és jön az
+22:0522 minutes, 5 secondsA szimbólum, akkor akkor milyen állapotba jutunk át az M2-ben?
+22:1522 minutes, 15 secondsMi lesz a Q0?
+22:1722 minutes, 17 secondsHát a Q0 az az állapotpár lesz, ahol a Q1 az M1 kezdő állapota, a Q2 az M2-nek a kezdő állapota. És mik legyenek az elfogadó állapotok?
+22:2922 minutes, 29 secondsHát az álljon olyan R1 R2 párokból, ahol az R1 az benne az elfogadó állapot az M1
+22:3722 minutes, 37 secondsautomata szerint, az R2 pedig elfogadó állapot az M2 szerint.
+22:4622 minutes, 46 secondsNa most az új automata. Tehát látszik, hogy ez az automata ez természetesen pont a két nyelvnek az unió fogja elfogadni.
+22:5722 minutes, 57 secondsMiért látszik azonnal? Hát tegyük föl, hogy egy szó benne van az A1-ben,
+23:0623 minutes, 6 secondsakkor az első az állapotpárok szerint az első koordinátákon
+23:1323 minutes, 13 secondsugrálva ugye pont a az M1 automata működését szimuláljuk,
+23:2023 minutes, 20 secondstehát eljutunk egy egy F1 állapotba az első koordináta szerint, és ez pedig
+23:2723 minutes, 27 secondselfogadó állapot. ott lesz a az új automatában.
+23:3223 minutes, 32 secondsÉs hasonló módon látható, hogyha benne van a szó.
+23:3823 minutes, 38 secondsEzt egy ilyen szót elfogad az a M2 akkor a második koordinátszerű.
+23:4423 minutes, 44 secondsilletve ha egyik automata sem fogad el egy elsorozatot, akkor akkor egyik
+23:5323 minutes, 53 secondsszimuláció szerint sem jutunk el elfogadó állapotba, tehát nem fogjuk elfogadó állapot, tehát nem fogja elfogadni azt a stringet.
+24:0324 minutes, 3 secondsEz világos ugye? Halló?
+24:0824 minutes, 8 secondsNekem lenne egy olyan kérdésem, hogy az utolsó ötödik alpontnál elég csak az egyik R elfogadott legyen az adott halmazban.
+24:1824 minutes, 18 secondsIgen, igen, igen, igen. Így van. Nem muszáj nekünk, hogy a második Tehát az a lényeg, hogy nekünk akkor is
+24:2624 minutes, 26 secondsel kell fogadnunk a szót, hogyha m1-ben van benne, meg akkor is, hogyha m2-ben.
+24:3324 minutes, 33 secondsNem muszáj, hogy mind a kettőben benne legyen. Tehát itt az első koordináta
+24:4124 minutes, 41 secondsugye ez azt jelzi, hogy legyen benne az m akkor fogja elfogadni, hogyha az m1-ben van benne. Itt még akkor fogja elfogadni, hogyha az M2-ben van benne.
+24:5224 minutes, 52 secondsNem muszáj, hogy mind a kettőben benne legyen. Rendben, köszönöm. Én köszönöm szépen. Jó.
+25:0225 minutes, 2 secondsUgyanúgy be lehetne látni a kettest és a hármas állításokat is, de
+25:1025 minutes, 10 secondsezeket sokkal egyszerűbben fogjuk belátni, úgyhogy bevezetjük a nem determinisztikus véges automatákat.
+25:1825 minutes, 18 secondsa nemeterminisztikus véges automatákat. Például nézzünk egy példát.
+25:2525 minutes, 25 secondsItt ez az automómata, ha igen, tehát ezt pontosan ezt a nyelvet fogja elfogadni.
+25:3225 minutes, 32 secondsTehát a 010 csillagot,
+25:3825 minutes, 38 secondsmondjuk a 01-et elfogadjuk-e? Hát hogy van? Ö igen. Tehát hogyha mondjuk
+25:4925 minutes, 49 secondsjön egy 01, akkor 01. Mindegy. Tehát ezt higgyék el, hogy ezt a nyelvet fogja elfogadni ez az automata.
+25:5925 minutes, 59 secondsLe szeretnénk írni ezt az automatát egy picit egyszerűbben, tehát valahogy mi a helyzet, hogyha az automata meg tudna sokszorni?
+26:1026 minutes, 10 secondsTehát minden egyes lépésben nem csak, hogy egy darab állapotba juthatnánk el, hanem többféle állapotba is eljutnánk.
+26:2026 minutes, 20 secondsEzt nem úgy kell elképzelni, hogy van egy valószínűség, és valamilyen valószínűséggel eljutunk egy állapotba.
+26:2726 minutes, 27 secondsTehát ez nem egy véletlent használó gép, hanem a gép mindig meg minden lépésben megsokszorozódhat, osztódhat a gép.
+26:4026 minutes, 40 secondsTehát itt ha nézzük ezt az ábrát, akkor itt, hogyha a Q2-ben vagyunk, és jön az egyes
+26:5026 minutes, 50 secondsszimbólum, akkor átugorhatunk a Q1 állapotba is, meg a Q3 állapotba is.
+27:0427 minutes, 4 secondshogyha tehát ezen a ponton a gép megsokszorozódik.
+27:1327 minutes, 13 secondsNa most, hogyha valahonnan valamelyik szimbólumra nincs kimenőjel,
+27:2227 minutes, 22 secondsakkor vagy nincs kimeneti nyíl, akkor akkor azt a akkor ott elhal a számítási folyamat, tehát azt elutasítjuk. Tehát
+27:3127 minutes, 31 secondsha például itt vagyunk a Q2-ben, és pont jönne egy nullas szimbólum,
+27:3727 minutes, 37 secondsakkor kész. A szó el lesz utasítva. Na most aata megsokszorozza magát. Ebből következik, hogy ugye egy ilyen szám
+27:4727 minutes, 47 secondstöbb számítási útvonal, tehát ilyen fasszerűen elágaznak a számítási útvonalak. Nos, persze elképzelhető,
+27:5527 minutes, 55 secondshogy valamelyik ág alapján egy adott szót elfogad egy automata, egy másik
+28:0228 minutes, 2 secondsszámítási útvonal alapján pedig elutasítja. Mégis mikor fogjuk elfogadni azt a szót?
+28:1028 minutes, 10 secondsHát akkor, hogyha hogyha van egy olyan számítási útvonal, amelyik elfogadó állapotba viszi az
+28:1928 minutes, 19 secondsautomatát. No akkor most már tehát például ezt a nyelvet ilyen
+28:2828 minutes, 28 secondsegyszerűen le tudjuk írni, nem determinisztikus véges automatákkal.
+28:3328 minutes, 33 secondsPéldául mi a helyzet a 01 stringel? A 01 stringel hatására eljuthatunk a Q1-ből a
+28:4028 minutes, 40 secondsQ2-be 0 hatására. A Q2-ből a Q3-ba ekkor ez el lenne utasítva. Viszont
+28:4828 minutes, 48 secondseljuthatunk a Q1-ből a Q2-be, és utána visszajuthatunk az egyes hatására a Q1-be. Ez pedig egy elfogadó állapot. Akkor mi lesz a 01?
+29:0029 minutesazt el fogjuk fogadni, hiszen van egy elfogadó számítási útvonalunk.
+29:0729 minutes, 7 secondsJó? Ö akkor nézzük formálisan, hogy mi is egy nemerminisztikus véges automóa, azaz rövidítve NVA.
+29:1929 minutes, 19 secondsUgyanúgy egy Q sig delta Q0F 5-ös fogad, ahol Q egy véges
+29:2729 minutes, 27 secondsállapothalmaz, szigma egy véges halmaz, az ABC. Az átmenet függvényben van a különbség.
+29:3529 minutes, 35 secondsTehát attól függően, hogy milyen állapotban vagyunk, és mi a következő bemenőjel, ami lehet üres szimbólum is.
+29:4829 minutes, 48 secondsÁtugrunk az állapotoknak egy részhalmazába, tehát
+29:5629 minutes, 56 secondssok különböző állapotba ugrik át a gép, itt sokszorozza meg magát.
+30:0230 minutes, 2 secondsTehát egy ilyen faszszerűen működik.
+30:0630 minutes, 6 secondsQ0 egy kezdeti állapot és van a végállapotoknak egy F részma.
+30:1630 minutes, 16 secondsA itt a szigma csillag az a szigma unió üres jelet fogja reprezentálni.
+30:2430 minutes, 24 secondsÉs akkor azt mondjuk, hogy hogy egy nemerisztikus véges
+30:3130 minutes, 31 secondsautomata elfogad egy VV1, VV2, VVN jelsorozatot, hogyha az kezdeti
+30:3930 minutes, 39 secondsállapotból indítjuk az automatát, az R, tehát hogyha van egy van egy jó egy
+30:4630 minutes, 46 secondselfogadó állapotba vivő számítási útvonal, azaz ez mit jelent precízebben,
+30:5330 minutes, 53 secondsHogyha kezdeti állapotból indítjuk el az automatát, az Ri + 1-be át tudunk ugrani az ri-ből
+31:0331 minutes, 3 secondsa WVI + 1 szimbólum hatására, illetve az RN az egy elfogadó állapota az automatának.
+31:1131 minutes, 11 secondsÉs akkor egy nem determinisztikus véges automata el azon azt a nyelvet fogadja el, ami azon szavakból áll, amiket
+31:1931 minutes, 19 secondselfogad a az automóata. Ö világos-e ez a definíció?
+31:2831 minutes, 28 secondsHalló? Igen.
+31:3131 minutes, 31 secondsVilágos? Jó, tehát még egyszer mindössze az a különbség a determinisztikus véges automatákhoz képest,
+31:3931 minutes, 39 secondshogy minden egyes lépésben az automata megsokszorozhatja magát. Tehát egy darab állapot vagy megsokszorozza magát. egy
+31:4731 minutes, 47 secondsállapotból sok különböző állapotba is átugorhatunk.
+31:5431 minutes, 54 secondsÖ és akkor fogadunk el egy szót, hogyha van egy jó számít, egy elfogadó számítási útvonal.
+32:0732 minutes, 7 secondsItt van egy példa egy nemerminisztikus véges automatára. Tehát a az AB az a az ABC három állapota van.
+32:2232 minutes, 22 secondsMi történik a BA BA szóval? Elfogadja-e az automata a BA ba B szót, vagy nem?
+32:3832 minutes, 38 secondsHelló? Választ kérek. Hát igen, elfogadja. Igen. Mi lesz az elfogadó útvonal?
+32:5032 minutes, 50 secondsQ1, Q2, Q2 és Q3. Azt Q3. Igen. Tehát tehát B A B AG is
+33:0133 minutes, 1 secondvisszajutunk ide. Ugye itt le rossz lenne, tehát az lesz az elfogadó útvonal, hogy hogy itt ahelyett, hogy
+33:0933 minutes, 9 secondsátugranánk a Q3-ba, itt választás itt megkétszerezi magát az automata.
+33:1533 minutes, 15 secondsTehát itt átugrunk, ide maradunk, átugrunk és végül is a Q1-be jutunk, ami egy
+33:2333 minutes, 23 secondselfogad elfogadó állapot. Mi a helyzet az AB szóval?
+33:3633 minutes, 36 secondsHát azt nem igen, ez igaz.
+33:4433 minutes, 44 secondsEz igaz. Tehát ez nem lesz elfogladva.
+33:4733 minutes, 47 secondsUgye itt két különböző utat kellene végignézni, ugye?
+33:5433 minutes, 54 secondsTehát ugye lehet, hogy az üres szó hatására átug, tehát az üres jel
+34:0134 minutes, 1 secondhatására átugrunk ide, és akkor még a B a ide jutunk vagy ide, de semmiképpen
+34:0934 minutes, 9 secondssem fogadjuk el a az AB-t. Mi a helyzet a BAB-vel?
+34:1634 minutes, 16 secondsEl lesz-e fogadva, vagy nem? Nem.
+34:2434 minutes, 24 secondsEz így van. És mi a helyzet az AB-val?
+34:3034 minutes, 30 secondsHát az sem az se lesz elfogadva.
+34:3834 minutes, 38 secondsAz el nem, mert ez el lesz fogadva bizony. Tehát ide átugrunk üressel hatására, aztán A B A. Tehát ez jó lesz.
+34:5134 minutes, 51 secondsstimmel. Tehát ugye itt most ha jön az üres, tehát ha jön az üres szimbólum, az üres szimbólum
+34:5934 minutes, 59 secondshatására átugorhatunk a Q1-ből, a Q3-ba.
+35:0535 minutes, 5 secondsÉs utána elkezdjük a számítást már a szó valóságos betűjén. Akkor
+35:1435 minutes, 14 secondsitt vagyunk, ide átugrottunk az üres jel hatására.
+35:1835 minutes, 18 secondsA Q1-ben vagyunk, B2-ben vagyunk, még egy B a Q3-ban vagyunk, és
+35:2735 minutes, 27 secondsaz utolsó hatására visszaugrunk a Q1-be, ami egy elfogadó állapot.
+35:3435 minutes, 34 secondsStimmel, ugye? Halló? Igen.
+35:4335 minutes, 43 secondsJó, köszönöm szépen. Természetesen egy ilyen állapottal is, vagy egy táblázattal is leírható ez az átmenetfüggvény.
+35:5235 minutes, 52 secondsUgye itt látható, hogy ha Q2-ben vagyunk és jön a jön az A szimbólum, akkor a
+36:0036 minutesQ1-be is átugrunk, meg a Q3-ba is.
+36:0736 minutes, 7 secondsJó, mikor mondjuk, hogy ki hogy két automata ekvivalens, akkor mondjuk, hogyha ugyanazt a nyelvet fogadják el.
+36:1736 minutes, 17 secondsMost a kérdés a következő, hogy látszólag a nem determinisztikus véges automaták
+36:2536 minutes, 25 secondsazok elképzelhető, hogy esetleg több nyelvet fogadnak el, vagy több fajta nyelvet fogadnak el, mint a determinisztikus
+36:3336 minutes, 33 secondsvéges automaták. Miért? Mert ugye minden determinisztikus véges automata egyben
+36:4136 minutes, 41 secondsnem determinisztikus is, hiszen egyszer nem muszáj nekünk élnünk az elágazás lehetőségével.
+36:4936 minutes, 49 secondsTehát ha mindig egyfelé kényszerítjük, akkor egy olyan nem determinisztikus automat, tehát minden determinisztikus
+36:5836 minutes, 58 secondsvéges automata egyben nem determinisztikus véges automata is.
+37:0337 minutes, 3 secondsTehát az érdekes kérdés a fordítottja, hogy
+37:0937 minutes, 9 secondshogy létezhet-e olyan nyelv, amit el tudunk fogadni nem determisztikus véges automatákkal, de esetleg nem létezik
+37:1837 minutes, 18 secondsolyan determinisztikus véges automómata, ami ugyanazt a nyelvet fogadja el. És és
+37:2537 minutes, 25 secondsa válasz erre az, hogy nem. Tehát tulajdonképpen
+37:3237 minutes, 32 secondsha egy nyelvet el tud fogadni egy nem determinisztikus véges automómata, akkor konstruálható hozzá egy olyan
+37:4137 minutes, 41 secondsdeterminisztikus véges automata is, ami azt a nyelvet elfogadja. Jó.
+37:5037 minutes, 50 secondsVilágos a tétel? Igen.
+37:5737 minutes, 57 secondsJó, köszönöm. És akkor hát tegyük föl, hogy
+38:0538 minutes, 5 secondshogy van egy van egy n nem determinisztikus véges automatánk,
+38:1438 minutes, 14 secondsés ehhez most konstruálunk egy m determinisztikus véges automatát, ami ugyanazt a nyelvet fogja elfogadni.
+38:2438 minutes, 24 secondsTegyük föl egy pillanatra, hogy a nem determinisztikus véges automatánk nem tartalmazza az címkét, akkor egy picit
+38:3338 minutes, 33 secondsegyszerűbb, csak tehát könnyebb így elmagyarázni. Tehát mi legyen az állapothalmaz,
+38:4038 minutes, 40 secondsaz a nem determisztikus véges automóata állapotainak legyen a hatványhalmazza.
+38:4638 minutes, 46 secondsTehát a az itteni állapotok összes részhalmazának a halmaza.
+38:5438 minutes, 54 secondsMi legyen az állapot átmenet függvény?
+38:5738 minutes, 57 secondsUgye a delta vessző RA az
+39:0539 minutes, 5 secondsmegnézzük, hogyha valamelyik rbeli állapotban vagyunk, tehát itt sok állapot van az R-ben,
+39:1439 minutes, 14 secondsakkor az A hatására az eredeti nem determinisztikus véges á automata mely állapotokba fog ugrani?
+39:2339 minutes, 23 secondsUgye ez megint az egy állapothalmaz lesz. Ezeknek az unió, tehát ezeknek az
+39:2839 minutes, 28 secondsállapotoknak a halmaza lesz az állapot
+39:3539 minutes, 35 secondsahová ugrani fogunk. Tehát ugye most egy állapot az új automata tárban egy
+39:4439 minutes, 44 secondsállapot halmaz a régi állapotban, a régi autó az eredeti nem determinisztikus véges automatával.
+39:5439 minutes, 54 secondsÉs ez az átmenetfüggvény definiálja az állapot átmenetet.
+40:0040 minutesMi lesz a Q0 vessző? Az új kezdeti állapot? Hát ez simán a Q0-ból álló állapotból álló halmaz lesz.
+40:1540 minutes, 15 secondsÉs mi lesz, mik lesznek az elfogadó állapotok?
+40:2040 minutes, 20 secondsTehát ugye ezek megint csak az eredetiben részhalmazok lesznek.
+40:2740 minutes, 27 secondsHát az elfogadó állapotok azon
+40:3840 minutes, 38 secondsazon részhalmazból fog állni, amelyekben létezik az eredeti automatában elfogadó állapot.
+40:5140 minutes, 51 secondsJó. Tehát hogyha tehát még egyszer mi lesz egy tehát itt
+40:5740 minutes, 57 secondsez egy elfogadó állapot, tehát ez erre ez egy elfogadó állapot
+41:0441 minutes, 4 secondslesz, hogyha egy olyan részhal ő egy olyan részhalmaza lesz a Qvesszőnek, ami tartalmaz elfogadó árapot az eredeti automatából. Érthető-e ez?
+41:2041 minutes, 20 secondsHalló, halló, halló. Szerintem igen.
+41:2741 minutes, 27 secondsJó, tökéletes. Akkor menjünk tovább.
+41:3241 minutes, 32 secondsÉs most már ugye, de hát természetesen az üres címke hatására, az üres szimbólum hatására is
+41:4241 minutes, 42 secondsátmehetünk másiká egy másik állapotban, tartalmazhat üres címkét is a
+41:4941 minutes, 49 secondsaz állapotát függvény vagy gráf, akkor az egyes az ugyanaz legyen, mint
+41:5741 minutes, 57 secondsaz előző módon. egy kicsit máshogy definiáljuk az átmenet függvényt. Hát megnézzük,
+42:0542 minutes, 5 secondshogy hogy definiálunk egy
+42:1442 minutes, 14 secondser állapothalmaz, az azon qból áll, hogy q elérhető rből
+42:2142 minutes, 21 secondsegy vagy több él mentén haladva. Tehát, hogyha ez azon állapotokból fog állni,
+42:3042 minutes, 30 secondsamiket el tudunk érni üres címkékkel minden valamely erbeli állapotból.
+42:3942 minutes, 39 secondsJó, tehát akkor mi lesz itt az átmenetfüggvény? Ugyanaz, mint az előzőnél. Csak még megnézzük, hogy az
+42:4642 minutes, 46 secondsüres címkék hatására még milyen állapotokba tudunk átugrálni.
+42:5442 minutes, 54 secondsA Q a és a kezdeti állapotnak is módosulnia kell. Megint csak megnézzük, hogy az eredeti kezdőállapotból
+43:0343 minutes, 3 secondsegy vagy több üres címke hatására mely állapotokba tudunk eljutni. És ez az állapothalmaz lesz, amelyik
+43:1243 minutes, 12 secondsállapothalmaz az eredeti definícióban lesz a kezdeti állapota, a
+43:1943 minutes, 19 secondsdeterminisztikus véges automatának.
+43:2443 minutes, 24 secondsÉs hát az, hogy a két automataekvivalens az
+43:3143 minutes, 31 secondstulajdonképpen viszonylag triviális. És hát itt az elágazást, az elágazásokat
+43:3943 minutes, 39 secondsszimuláljuk ezekkel az uniókkal. Tehát itt az állapotát, a fixállapotát
+43:4543 minutes, 45 secondsfüggvényekkel most már ez picit érdemes belegondolni, de
+43:5243 minutes, 52 secondstaglalni annyira nem akarom. Örthető-e nagyjából, hogy miről van szó?
+44:0644 minutes, 6 secondsMi? Helló! Helló! Igen, azt hiszem érthető.
+44:1444 minutes, 14 secondsJó, akkor jó, tehát
+44:2244 minutes, 22 secondskövetkező állítást is be fogjuk. Tehát beláttuk azt, hogy ugye vannak a determisztikus véges automóatták által
+44:3044 minutes, 30 secondsfelismert nyelvek. Ezek pontosan azok, amik felismerhetők nem determinisztikus VS automatákkal is.
+44:4344 minutes, 43 secondsNa most beláttunk egy tételt, tegyük föl, hogy
+44:4944 minutes, 49 secondshogy egy elálljon azokból a nyelvekből, amik felismerhetők determinisztikus véges automatákkal.
+44:5744 minutes, 57 secondsUgye most már tudjuk, hogy ezek ugyanazok meg amik fölismerhetők nem determinisztikus Ves automatákkal is egyben.
+45:0545 minutes, 5 secondsHa A1 meg A2 is ilyen, tehát hogy fölismerhető automatákkal, akkor a két nyelv uniója is ilyen.
+45:1545 minutes, 15 secondsHa A1 és A2 fölismerhető automatával, akkor a két nyelv honkenátja is felismerhető,
+45:2245 minutes, 22 secondsilletve a lezárása is. Jó, tehát az e a tételnek az egyes pontját már
+45:3045 minutes, 30 secondssikerült belátnunk, de hogy lássuk, hogy mennyire célszerűek a
+45:3745 minutes, 37 secondsvagy milyen jó dolog nem determinisztikus véges automatákkal, mennyire mennyivel egyszerűbb belátni
+45:4445 minutes, 44 secondsegy ilyen tételt. Hát hogyan tudnánk belátni ezt a tételt egy sorban? Tehát tegyük föl, nem determinisztikus véges
+45:5245 minutes, 52 secondsautomatát tudjukákat fogunk használni. Tehát tegyük föl, hogy az A1 nyelvet fölismeri egy
+46:0146 minutes, 1 seconddeterminisztikus véges automómata, akkor persze őt föl fogja ismerni egy nem determinisztikus véges automata is, és
+46:0846 minutes, 8 secondsfordítva is igaz. Az előbb láttuk be. Az A2 nyelvet meg fölismeri egy N2 nem determinisztikus véges automata. Hát
+46:1746 minutes, 17 secondsmost csináljunk egy olyan automatát, ami a két nyelvnek az unió fogja elfogadni.
+46:2646 minutes, 26 secondsHát nagyon egyszerű. Definiálunk egy új kezdőállapot.
+46:3246 minutes, 32 secondsAz üres jel hatására, vagy az N1-nek a kezdőállapotába ugorjunk át, vagy az
+46:3946 minutes, 39 secondsN2-nek a kezdőállapotába, és készen vagyunk. Ez az nem determinisztikus automat, ez pont a két
+46:4646 minutes, 46 secondsnyelvnek az unió fogja felismerni. Miért? Tegyük föl, hogy
+46:5446 minutes, 54 secondshogy egy szó az benne vagy az N1ál automata által fölismert nyelvben, akkor
+47:0347 minutes, 3 secondsátugrunk az N1-nek a kezdőállapotába, és akkor a szó az egy elfogadó állapotba
+47:1147 minutes, 11 secondsfogja vinni ezt a az automatának ezt a részét. Készen vagyunk. Jó, világos így, ugye? Halló?
+47:2147 minutes, 21 secondsIgen, ez látható.
+47:2347 minutes, 23 secondsIgen. Na, mi a helyzet? Tehát akkor ez lesz az új automata.
+47:3147 minutes, 31 secondsKét nyelvnek a konk, ha fölismerhető két nyelv automatával, akkor a konkátjuk is fölismerhető.
+47:3947 minutes, 39 secondsHát tegyük fel, hogy az N1 automata fölismeri az A2 A1 nyelvet, az N2 automata az A2 nyelvet.
+47:4747 minutes, 47 secondsAkkor mi lesz az automata? ami a két nyelv konkatenátját fogja elfogadni.
+47:5447 minutes, 54 secondsHát az N1 elfogadó állapotaiból vigyeneknyilag az N2 automata kezdőállapotába.
+48:0848 minutes, 8 secondsÉs ennyi. Tehát akkor hogyha hogyha egy szót
+48:1448 minutes, 14 secondshogyha egy szó az benne van a konkált nyelvben, akkor úgy áll elő, hogy VV szórész benne van az A2-ben és A1-ben és
+48:2448 minutes, 24 secondsa VV2 szórész benne van az A2-ben. Hát a VV1 hatására eljutunk egy elfogadó állapotba.
+48:3348 minutes, 33 secondsItt az N1 automata szerint átugrunk egy kezdeti állapotba, és akkor a VV2 szórész hatására itt eljutunk az N2-ben
+48:4248 minutes, 42 secondsegy elfogadó állapotba. Tehát pontosan a két szónak a két nyelvbeli szónak a
+48:5148 minutes, 51 secondskonkátját fogja elfogadni ez az automata. Jó, érthető ez?
+48:5848 minutes, 58 secondsHalló? Kérek egy gyors visszajelzést.
+49:0249 minutes, 2 secondsIgen, igen, igen. Köszönöm. Szakítsanak félbe bármikor, hogyha valami nem világos,
+49:0849 minutes, 8 secondsmert sajnos nem látom, hogy most mennyire értik, mennyire nem. azért jobb dolog élőben előadást tartani.
+49:2249 minutes, 22 secondsÉs akkor hogy látnánk be azt, hogy hogyha egy a nyelvet elfogad egy
+49:3149 minutes, 31 secondsautomata, akkor az a csillagot is elfogadja ugye az az automata.
+49:3849 minutes, 38 secondsFölvesszük az eredeti automatát.
+49:4149 minutes, 41 secondsfölvesszünk egy új autó, egy új állapotot. Ez lesz az új kezdőállapot,
+49:4849 minutes, 48 secondsés innen vigyen egy üres nyíl az eredeti kezdőállapotba,
+49:5649 minutes, 56 secondsilletve minden elfogadó állapotból vigyen
+50:0350 minutes, 3 secondsvigyen nyíl az eredeti kezdeti állapotba,
+50:1050 minutes, 10 secondsepil címkén nyíl. Ugye ha jön egy olyan szó, ami ben tegyük föl, hogy egy
+50:1850 minutes, 18 secondsszó benne van az a csillagban, akkor mondjuk két részszónak a konkátja,
+50:2550 minutes, 25 secondsami benne van az A-ban, akkor mi történik? Átugrunk ide az eredeti kezdőállapotba. A vevi egy szó hatásá
+50:3550 minutes, 35 secondsszórész hatására eljutunk egy elfogadó állapotba, onnan visszaugrunk az itteni
+50:4250 minutes, 42 secondskezdő állapotba, az üres jel hatására, és utána a vevé2 szórész hatására, vagy
+50:4950 minutes, 49 secondseljutunk megint egy kezdőállapotra. De ugye akárhányszor tudjuk iterálni, tehát pont a nyelvnek a lezárását fogjuk megkapni. Érthető-e ez a bizonyítás?
+51:0151 minutes, 1 secondHalló?
+51:0351 minutes, 3 secondsIgen, igen. Köszönöm szépen. Itt van egy érdekes kérdés. Esetleg majd gondolják ezt át, hogy miért kell itt egy új állapot? Miért kell ezt hozzávenni?
+51:1651 minutes, 16 secondsUgye látszólag fölösleges, elindulhatnánk innen is. Erre mégis szükség van. Majd jövő órán várom erre a
+51:2351 minutes, 23 secondsválaszt. Jó, tehát akkor
+51:3051 minutes, 30 secondsmost a következő a következmény. Tehát itt most három nyelvcsaládot tudunk definiálni.
+51:4051 minutes, 40 secondsLegyen LR a reguláris nyelvek halmazza.
+51:4351 minutes, 43 secondsAz ln a nem determinisztikus véges automaták által felismert nyelvek halmazza. És az LD pedig a
+51:5151 minutes, 51 secondsdetermisztikus véges automaták által el is nyert nyelvek halmaza. Na most azt tudjuk, hogy az LN és az LD azok
+52:0152 minutes, 1 secondugyanazok, ugye? Tehát hiszen egy determinisztikus vesuta, egyben nem determinisztikus is,
+52:0952 minutes, 9 secondsés minden nem determinisztikushoz tudunk konstruálni egy determinisztikusat is.
+52:1452 minutes, 14 secondsHogyan viszonyulnak ezek a nyelv család, vagy ezek a nyelv, tehát hogyan viszonyulnak ezek a reguláris nyelvek
+52:2252 minutes, 22 secondshalmazához? Még egyszer, mik a reguláris nyelvek? A reguláris nyelvek azok a nyelvek, amik leírhatók reguláris operátorokkal.
+52:3552 minutes, 35 secondsvagy helyesebben reguláris kifejezésekkel az óra elején definiáltuk, hogy mi is az a reguláris kifejezés.
+52:4552 minutes, 45 secondsMost azt fogjuk belátni, tulajdonképpen azt fogjuk azt akarjuk belátni, hogy
+52:5552 minutes, 55 secondshogy ez a három halmaz, ez ugyanaz.
+53:0753 minutes, 7 secondsElső részben belátjuk, hogy hogy a reguláris véges automaták által
+53:1653 minutes, 16 secondsfelismert nyelvek, azok részei a
+53:2553 minutes, 25 secondsnem determinisztikus ves automaták által felismert nyelveknek. Tehát a a
+53:3353 minutes, 33 secondsde mivel a nem determisztikus véges automaták által felismert nyelvek megjegyezik, tehát ez az utó már a
+53:4253 minutes, 42 secondskettes, illetve a hármas az ugyanaz, tehát ez a két nyelvcsalád. Ezzel máris fogjuk látni, hogy az LR az része mind a kettőnek.
+53:5453 minutes, 54 secondsHogyan fogjuk ezt belátni?
+53:5853 minutes, 58 secondsHát mik a reguláris kifejezések? Mik a reguláris kifejezések?
+54:0754 minutes, 7 secondsEgyrészt a az ABC elemei, másrészt
+54:1554 minutes, 15 secondskonstruáljunk egy olyan nem egy olyan determinisztikus automat konstruáljunk egy olyan automatát,
+54:2354 minutes, 23 secondstehát tegyük föl, hogy a nyelvünk az ABC-nek egy eleme simán.
+54:3254 minutes, 32 secondsAkkor mi lesz egy olyan automata, ami ezt ismeri föl? Hát ez az automóata itt, hogy hogy
+54:4154 minutes, 41 secondsA nyil A hatására átugrunk egy elfogadó állapotba, pont a az ABC-nek az A elemét
+54:4954 minutes, 49 secondsfogadja el. Ez az automata ezt a nyelvet fogadja el.
+54:5754 minutes, 57 secondsNa, ez az automóata legyen, hogyha az R az az üles szimbólum,
+55:0655 minutes, 6 secondsakkor ez az automata, hogy van egy kezdeti állapot, és ez egyben egy elfogadó állapot is, ez pont az üres
+55:1555 minutes, 15 secondsszimbólumot fogadja el, ugye? És másrészt mi az automat, ami az
+55:2255 minutes, 22 secondsüres nyelvet fogadja el? Hát ez egy bemeneti állapot, ugye, és semmit nem fogadunk el. Tehát
+55:3155 minutes, 31 secondsez lesz az automata, ami az üres nyelvet fogadja el.
+55:3755 minutes, 37 secondsMik a reguláris nyelvek? azok egyrészt állnak a
+55:4455 minutes, 44 secondsaz ABC elemeiből, az üres szimbólumból, az üres nyelvből,
+55:5155 minutes, 51 secondsés ezen tehát ezeknek a
+55:5855 minutes, 58 secondsés azon nyelvek, tehát illetve még ráadásul azokból is, amikbe reguláris
+56:0556 minutes, 5 secondsoperátorokkal el tudunk jutni. Tehát az előbb definiáltuk egy pillanat.
+56:1856 minutes, 18 secondsIgen, itt vannak a reguláris kifejezések, tehát az ABC minden eleme, az üres jel, az üres halmaz. A alfa és
+56:2656 minutes, 26 secondsbéta reguláris kifejezés, akkor a konkátjuk reguláris kifejezés, az udiójuk és az alfa csillag is. Na most
+56:3456 minutes, 34 secondstehát itt ennél a konstrukciónál ugye amit az előbb vázoltunk,
+56:4256 minutes, 42 secondsigen, tehát ez az automata elfogadja az ABC elemeit, ez az üres szimbólumot, ez pedig az üres nyelvet. És mik a reguláris kifejezések?
+56:5256 minutes, 52 secondsTehát azok a kifejezések, amik ezekből a az unió a konkatenát, illetve a klini
+57:0057 minuteslezárás segítségével előteremthető.
+57:0657 minutes, 6 secondsDe hát ezek pedig az imént láttuk, hogy ezekre tehát ezeket meg tudunk meg
+57:1457 minutes, 14 secondstudjuk konstruálni nem determinisztikus véges automatákkal. Tehát ha adott egy bármilyen reguláris kifejezést,
+57:2257 minutes, 22 secondsrekurzív módon azonnal meg tudunk hozzáadni egy nem determinisztikus véges automatát, amelyek ugyanazt a nyelvet fogadja el.
+57:3157 minutes, 31 secondsJó, érthető ez így? Halló?
+57:3957 minutes, 39 secondsHalló, helló.
+57:4457 minutes, 44 secondsKérnék egy éppen érthető, érthető. Tökéletes. Jó.
+57:5257 minutes, 52 secondsMég fordítva is be kéne látnunk. Tehát ugye itt látjuk, hogy az egyes és a kettes nyelvosztály az ugyanaz.
+58:0058 minutesBocsánat, a kettes és a hármas az ugyanaz. És az egyes nyelvosztály, az LR az része az a kettesnek, illetve a hármasnak.
+58:1258 minutes, 12 secondsAzt azt kellene belátnunk, hogy hogy meg is egyezik ezekkel. Azt fogjuk
+58:1958 minutes, 19 secondsbelátni, hogy az LD, tehát a determinisztikus véges automaták által felismert nyelvek, azok egyben
+58:2858 minutes, 28 secondsregulárisak is. Hogyan fogjuk ezt belátni? Ezt bevezetjük az áltisztikus véges automatákat.
+58:4558 minutes, 45 secondsMik az mik azok az áltott nem determinisztikus véges automaták? Az általánosított nem determinisztikus
+58:5258 minutes, 52 secondsvéges automatákban az élek reguláris kifejezésekkel vannak megcímkézve.
+59:0159 minutes, 1 secondA kezdő állapotból minden más állapotba megyél, de bele egysetlen
+59:1059 minutes, 10 secondsa kezdőállapottól különböző végállapot van. Tehát van egy kitüntetett kezdőállapot, van egy darab végállapot.
+59:1959 minutes, 19 secondsA kezdőállapotból csak kifele élek mennek, a végállapotba csak befele élek mennek, és bármelykét
+59:2859 minutes, 28 secondsközbülső állapot között megyél mindkét irányba és saját magába is.
+59:4459 minutes, 44 secondsJó, tehát akkor ezek a nem determisztikus általánosított nem determisztikus véges
+59:5259 minutes, 52 secondsautomaták. Itt van a formális definíciója, tehát van egy Q kezdeti Q véges
+1:00:011 hour, 1 secondállapothalmaz, szigma véges ABC.
+1:00:081 hour, 8 secondsvan egy átmenetfüggvény attól függően,
+1:00:161 hour, 16 secondshogy tehát tulajdonképpen
+1:00:241 hour, 24 secondsegy reguláris kifejezés van ráírva minden élre,
+1:00:301 hour, 30 secondsugye, és a kezdeti állapotból csak kifele menő élek vannak. A végállapotban pedig csak befele bemenő élek vannak.
+1:00:421 hour, 42 secondsVan egy Q kezdőállapot és egy QVállapot.
+1:00:461 hour, 46 secondsJó, hogyan működik egy ilyen ált determinisztikus véges automóata?
+1:00:561 hour, 56 secondsAzt mondjuk, hogy egy ilyen általánosított, nem determinisztikus véges automóata el fog fogadni egy vevés stringet.
+1:01:061 hour, 1 minute, 6 secondshogyha ez feldarabolható VV1, VV2 VVK rész stringekre.
+1:01:161 hour, 1 minute, 16 secondsÚgyhogy elkezdjük
+1:01:211 hour, 1 minute, 21 secondsa számítást az R0 kezdőállapotból, akkor megnézzük, hogy valamelyik
+1:01:311 hour, 1 minute, 31 secondsreguláris kifejezés, tehát átugrunk egy Q1 állapotba,
+1:01:381 hour, 1 minute, 38 secondshogyha a VV1 részszót elfogadja tudja
+1:01:451 hour, 1 minute, 45 secondsaz a vagy tudja generálni az a reguláris kifejezés, amelyik rá van írva az adott a az adott nyílra.
+1:01:591 hour, 1 minute, 59 secondsTehát ugye elindulunk egy elő elindulunk a
+1:02:061 hour, 2 minutes, 6 secondskezdőállapotba, megnézzük, hogy a vev egy résinget elfogadja-e
+1:02:131 hour, 2 minutes, 13 secondsvalamelyik a kezdeti állapotból generálja el valamelyik reguláris
+1:02:211 hour, 2 minutes, 21 secondskifejezést, amelyik a kezdeti állapotból kimenő Ő nyilakra van ráírva.
+1:02:301 hour, 2 minutes, 30 secondsÁtugrunk egy másik állapotba, utána ugyanezt a számítást folytatjuk,
+1:02:381 hour, 2 minutes, 38 secondsés ha végén el az elfogadóállapotba kerülünk, akkor a vevészót elfogadja ez az
+1:02:471 hour, 2 minutes, 47 secondsáltalánosított nem determinisztikus véges automata. Érthető-e ennek a működése?
+1:02:581 hour, 2 minutes, 58 secondsHalló? Igen. Üüm.
+1:03:021 hour, 3 minutes, 2 secondsIgen. Tehát még egyszer mindennyi minden élen, minden irányított élen egy reguláris kifejezés van. És ha fel
+1:03:091 hour, 3 minutes, 9 secondstudjuk úgy darabolni, hogy elindulunk egy Kun a a kezdeti állapotból,
+1:03:171 hour, 3 minutes, 17 secondsés azt az első szórészt legenerálja az egy
+1:03:261 hour, 3 minutes, 26 secondsadott reguláris kifejezés, ami rá van írva egy a kezdeti állapotból kimenő élbe, akkor onnan átugrunk abba az állapotba, és így tovább.
+1:03:381 hour, 3 minutes, 38 secondsJó. És akkor a az összesen stringet, amit felismer az áltított nem determinisztikus VS
+1:03:451 hour, 3 minutes, 45 secondsautomata, azt az A által felismert nyelvnek nevezzük.
+1:03:521 hour, 3 minutes, 52 secondsJó.
+1:03:561 hour, 3 minutes, 56 secondsNa most ugye azt kell belátnunk, hogy hogy a determinisztikus véges automaták
+1:04:051 hour, 4 minutes, 5 secondsáltal felismert nyelvek részét képezik a reguláris kifejezések által, vagy a reguláris nyelveknek.
+1:04:131 hour, 4 minutes, 13 secondsEzt követ a következőképpen fogjuk belátni, hogyha
+1:04:211 hour, 4 minutes, 21 secondshogy kiindulunk egy nyelvből, amit felismer egy k állapotú determinisztikus véges automata,
+1:04:281 hour, 4 minutes, 28 secondsdefiniálunk egy K+2 állapottal rendelkező általánosított nem determinisztikus
+1:04:371 hour, 4 minutes, 37 secondsvéges automatát, ami Mm ekvivalens.
+1:04:421 hour, 4 minutes, 42 secondsUtána elkezdjük csökkenteni az állapotok halmazát.
+1:04:491 hour, 4 minutes, 49 secondsTehát valahogy az a tehát utána az ak + 2-ből kapunk egy ak + 1-et, ami azzal ekvivalens, és így tovább.
+1:05:011 hour, 5 minutes, 1 secondA végén kapunk egy A2-t, ami ekvivalens az összessel, tehát pont azt a nyelvet fogja elfolni. Ugye ez az
+1:05:101 hour, 5 minutes, 10 secondsA2, ez csak egy kezdeti meg egy végállapotból fog állni. És az egyetlen
+1:05:171 hour, 5 minutes, 17 secondsszem nyíl, ami a kezdeti állapotból, a végállapotban fog mutatni, ugye az regul, ez egy reguláris kifejezés lesz,
+1:05:261 hour, 5 minutes, 26 secondsés pontosan az a reguláris kifejezés fogja leírni a az M automata által
+1:05:331 hour, 5 minutes, 33 secondsfelismert nyelvet. Jó, tehát ez lesz a ez a folyamat.
+1:05:431 hour, 5 minutes, 43 secondsNo hát akkor hogy is csináljuk, hogy konstruáljuk meg ezt az automatát?
+1:05:511 hour, 5 minutes, 51 secondsTalán egy példán jobban lehet látni, de de azért elmondom formálisan, de majd fogunk venni
+1:05:591 hour, 5 minutes, 59 secondsaz egyik gyakorlaton erre egy példát is, hogy kiindulunk egy K állapotú determinisztikus véges automatából.
+1:06:091 hour, 6 minutes, 9 secondshozzáadunk ehhez egy új állapotot, egy Q végállapot, és
+1:06:171 hour, 6 minutes, 17 secondsminden eredetileg elfogadó állapotból onnan vigyen egy címkéjű nyíl az új
+1:06:261 hour, 6 minutes, 26 secondsQvégállapotba, illetve hozzáadunk egy új kezdőállapot, amelyből vigyen egy e címké nyíl az eredeti Q-nól kezdőállap állapotban.
+1:06:401 hour, 6 minutes, 40 secondsNa most persze itt ebben az eredeti automatában elképzelhető lehetnek többszörös élek is. Tehát egy Q1
+1:06:491 hour, 6 minutes, 49 secondsállapotból, egy Q2 állapotba átugorhatunk az A1
+1:06:581 hour, 6 minutes, 58 secondsABC meg az A2ABC, vagy az tehát két különb több különböző
+1:07:071 hour, 7 minutes, 7 secondsnyelvbeli vagy bocsánat, ABC-beli elem hatására
+1:07:141 hour, 7 minutes, 14 secondsa többszörös éleket egy szem új élel helyettesítjük.
+1:07:201 hour, 7 minutes, 20 secondsamelyre a szimbólumok unió fogjuk ráírni cinkeként.
+1:07:291 hour, 7 minutes, 29 secondsJó, tehát az lesz a reguláris kifejezés.
+1:07:311 hour, 7 minutes, 31 secondsTehát hogyha itt a Q1-ből az A meg a B meg a C hatására is az
+1:07:381 hour, 7 minutes, 38 secondseredeti automatában átugrunk a Q2-be, akkor itt a Q1 és a Q2 között egy nyíl
+1:07:461 hour, 7 minutes, 46 secondslesz, amire rá fogjuk írni azt a reguláris kifejezést, hogy Ani, B Unió, C.
+1:07:531 hour, 7 minutes, 53 secondsJó, tehát ilyen módon kaptunk egy áltott, nem determinisztikus véges
+1:08:021 hour, 8 minutes, 2 secondsautomatát. Hát természetesen, hogyha egy szót elfogad az eredeti
+1:08:111 hour, 8 minutes, 11 secondsdeterminisztikus véges automata, akkor ugyanezt el fogja fogadni az ez az új automata és az AK+ 2, mivel
+1:08:211 hour, 8 minutes, 21 secondstulajdonképpen az Mutomata működését szimuláljuk,
+1:08:281 hour, 8 minutes, 28 secondsúgyhogy a nyilakra reguláris kifejezéseket írunk rá. Jó, tehát ez ez
+1:08:351 hour, 8 minutes, 35 secondsígy világos. Miért? Mi lesz itt a szavak, hogyan osztjuk föl? Hát osszuk föl itt betükre a szavakat, ugye? Tehát,
+1:08:431 hour, 8 minutes, 43 secondshogyha jön egy nyelvbelisszó, amit elfogad az M állapot, az Mutomata, akkor ugye átugrunk
+1:08:521 hour, 8 minutes, 52 secondsaz üres címke hatására az eredeti kezdőállapotba, és aztán
+1:09:001 hour, 9 minutesugye az eredeti nyilak mentén, tehát azok megvannak, itt át tud, tehát akkor
+1:09:081 hour, 9 minutes, 8 secondslévő reguláris kifejezések azok mindig azt a a megfelelő betűt el tudják
+1:09:161 hour, 9 minutes, 16 secondsgenerálni. Jó, tehát lényegében az van rárajzolva nyílra.
+1:09:221 hour, 9 minutes, 22 secondsTehát pont el fogja fogadni ez az új automata az M által elfogadott szót.
+1:09:321 hour, 9 minutes, 32 secondsEbbe egy pillanatra gondoljanak bele, ez nagyon egyszerű elmondani. Sokkal körülményesebb, mint mint belegondolni.
+1:09:451 hour, 9 minutes, 45 secondsDe egy ha netán most nem értenék maradéktalanul, akkor azt kérem, hogy gondolják át, de fogunk látni erre egy példát is.
+1:09:551 hour, 9 minutes, 55 secondsNa most elkezdjük csökkenteni az állapotok számát. Tehát kiindultunk egy K állapotú determisztikus véges automatából.
+1:10:051 hour, 10 minutes, 5 secondsKonstruáltunk hozzá egy K+2 állapotú nem általánosított nem determinisztikus véges automatát.
+1:10:181 hour, 10 minutes, 18 secondsMost ha két állapotta van ennek, akkor legyen
+1:10:261 hour, 10 minutes, 26 secondsaz egy akkor ugye egyetlen él van egy kezdeti meg egy végállapot. Adjuk vissza, visszaadjuk a az egyetlen
+1:10:341 hour, 10 minutes, 34 secondsérzereprő reguláris kifejezést. Ha több állapot van, akkor kezdjük el törölgetni az állapotokat.
+1:10:421 hour, 10 minutes, 42 secondsTehát vegyünk ki egy tetszőleges Qvessző állapotot, ami se nem kezdő, se nem végállapot.
+1:10:501 hour, 10 minutes, 50 secondsÉs akkor egy kicsit azért át kell írni a át kell
+1:10:561 hour, 10 minutes, 56 secondscímkézni a nyilakkat. Hát hogyha hogyha
+1:11:031 hour, 11 minutes, 3 secondsmilyen típusú nyilak vannak? Egyrészt, hogyha adott egy QJ és egy QJ, akkor a
+1:11:101 hour, 11 minutes, 10 secondsközöttük levő Igen. Tehát akkor talán így jobb
+1:11:211 hour, 11 minutes, 21 secondselmondani, tehát az új állapothalmaz az úgy áll elő, hogy az eredeti állapotból kivontuk a Qvessző állapotot. Most
+1:11:291 hour, 11 minutes, 29 secondsdefiniálnunk kell az állapotát függvényt. Hogyan tudunk elütni egy i állapotból? egy Qi állapotból egy QJ állapotba.
+1:11:401 hour, 11 minutes, 40 secondsEgyrészt úgy, hogy közvetlenül átugrunk a Q-ből a QJ-be,
+1:11:471 hour, 11 minutes, 47 secondsugye? Tehát akkor a delta vesszü Qiqének tartalmazzia
+1:11:551 hour, 11 minutes, 55 secondskell ezt az R4-et, ami a delta Qi QJ volt eredetileg. Tehát a Q-ből a QJ-be el tudunk jutni közvetlenül.
+1:12:051 hour, 12 minutes, 5 secondsEz reprezentál itt az R4 reguláris kifejez Ezt reprezentál az R4 reguláris kifejezés. Másrészt a Qvesszőn keresztül
+1:12:141 hour, 12 minutes, 14 secondsezt fogja reprezentálni ez a reguláris kifejezés. Ha Qvesszően keresztül jutottunk el az i-ből a j-be, akkor az hogy történt?
+1:12:251 hour, 12 minutes, 25 secondsTehát eljutottunk a QI-ből a Qvesszőben, aztán maradtunk egy darabig a
+1:12:351 hour, 12 minutes, 35 secondsQvesszőben, akármeddig maradtunk.
+1:12:401 hour, 12 minutes, 40 secondsÉs aztán a Qvesszőből valamikor átugrottunk a Q-jébe. Tehát az összes ahhoz, hogy ne veszítsünk szót,
+1:12:491 hour, 12 minutes, 49 secondsaz összes ilyen lehetőséget hozzá kell vennünk. Mi az összes ilyen lehetőség?
+1:12:551 hour, 12 minutes, 55 secondsAz R1 reguláris kifejezés hozzá konkrétan állva az R2 csillagot ezt reprezentálja,
+1:13:021 hour, 13 minutes, 2 secondshogy akármeddig itt maradunk a Qvesszű állapotban. És utána hozzá kell vennünk
+1:13:091 hour, 13 minutes, 9 secondsaz R3-at, hozzá kell konkratenálnunk, ami a aminek hatására Qvesszőből, a
+1:13:161 hour, 13 minutes, 16 secondsQJ-be fogunk átjutni eljutni. Jó. És akkor kihagyogatjuk a
+1:13:241 hour, 13 minutes, 24 secondsilyen módon a az állapotokat.
+1:13:291 hour, 13 minutes, 29 secondsAz látszik, hogy itt nem vesztettünk szavakat, hiszen mindig figyelembe vettük azt, hogy hogy ne veszítsünk.
+1:13:351 hour, 13 minutes, 35 secondsTehát amikor kihagytunk egy állapot, akkor azért hozzávettünk olyan reguláris
+1:13:421 hour, 13 minutes, 42 secondskifejezéseket, amik ezt a kihagyó áll ezt a kihagyott állapotot pontosan pótolták.
+1:13:521 hour, 13 minutes, 52 secondsÉs akkor a végén összesen két állapotunk van, és a két egy elfogadó meg egy
+1:14:011 hour, 14 minutes, 1 secondkezdeti meg egy elfogadó állapot. ezen van egy reguláris kifejezés és
+1:14:091 hour, 14 minutes, 9 secondsara leírt reguláris kifejezés az az pontosan az, amelyik a az eredeti
+1:14:191 hour, 14 minutes, 19 secondsdetermisztikus véges automata által elfogadott nyelvet definiálja.
+1:14:281 hour, 14 minutes, 28 secondsJó, itt ezt akartam nagyjából elmondani, és most
+1:14:361 hour, 14 minutes, 36 secondsnekem most hagynám abba a az előadást, és és akkor a tehát a gyakorlatra én
+1:14:441 hour, 14 minutes, 44 secondsvissza fogok érni, ugyanúgy 10:15 perckor folytatjuk.
+1:14:491 hour, 14 minutes, 49 secondsKöszönöm szépen a figyelmünket. Akkor folytatjuk egy egy 3om-4yed óra múlva. Viszontlátásra.
+1:14:571 hour, 14 minutes, 57 secondsKöszöntását. Köszönjük szépen. Köszönöm szépen.
+
+
+https://www.youtube.com/watch?v=RALa01bMNvw 

@@ -1,3 +1,231 @@
+ Tehát éppen azt a abban a bizonyításban voltunk,
+0:3131 secondshogy hogy környezetfüggetlen a környezetfüggetlen nyelvek zártak a reguláris operátorokra részbe. Beláttuk,
+0:4040 secondshogyha a két nyelv környezet független, akkor az uniójuk is környezetfüggetlen.
+0:4848 secondsEláttuk azt is, hogy illetve most pedig belátjuk, hogy
+0:5656 secondshogyha két nyelv az környezetfüggetlen, akkor a konkertátjuk is környezetfüggetlen.
+1:101 minute, 10 secondsIgen. Tehát ha G1 és G2 környezetfügget G, ha A1 és A2 környezetfüggetlen,
+1:181 minute, 18 secondslegyen G1 és G2 az őket generáló környezetfüggetlen grammatika.
+1:241 minute, 24 secondsNa mi lesz az a grammatika, ami a két nyelv konkátját fogja generálni?
+1:311 minute, 31 secondsA G gramatika az álljon akár csak az előbb a V1 Unió V2 Unió S-ből, ahol a V1
+1:391 minute, 39 secondsV2 az a Gig V Gigmatika nem terminálisa, és
+1:461 minute, 46 secondssigma 1 Unió Sigma 2, a Sigma, a G grammatika terminálisai.
+1:541 minute, 54 secondshozzáveszünk egy új kezdőszimbólumot, egy set, és a levezetési szabályok azok a
+2:032 minutes, 3 secondskövetkezőek lesznek. Tehát egyrészt vegyük azok, vegyük a az R1 levezetési
+2:122 minutes, 12 secondsszabályokat, vegyük az R2beli levezetési szabályokat, és vegyük hozzá azt a levezetési
+2:192 minutes, 19 secondsszabályt, hogy az új kezdőszimbólumból Snyíl, S1s2. Az eredeti kezdőszimbólumok.
+2:262 minutes, 26 secondsUgye pont olyan VV1, VV2 alakú szavakat tudok így generálni.
+2:342 minutes, 34 secondshogy a VV1 az levezethető az S1-ből, a VV2 az levezethető az S2-ből. Tehát pont
+2:402 minutes, 40 secondsa két nyelv szavainak a konkátjai lesznek az új nyelv lesz az új nyelv szavainak a halmaza.
+2:512 minutes, 51 secondsJó.
+2:522 minutes, 52 secondsKlini lezárás esetel legyen a tehát tekintsük egy A1 nyelvet, ami
+3:023 minutes, 2 secondskörnyezetfüggetlen egy G1 grammatika generálja.
+3:063 minutes, 6 secondsNa most mi lesz az új grammatika, vagy az a grammatika, ami a nyelvnek a lezártját fogja generálni?
+3:143 minutes, 14 secondsvegyük a nem terminálisok halmaza legyen az eredeti V1 nem terminálisok almaza
+3:233 minutes, 23 secondsunió S. Tehát hozzáveszek egy új kezdőszimbólumot.
+3:313 minutes, 31 secondsSigma 1 az eredeti terminálisok.
+3:353 minutes, 35 secondsUgye ez lesz az új kezd az S lesz az új kezdő szimbólumok. És a szabályok fognak milyen alakúak lesznek.
+3:463 minutes, 46 secondsAz eredeti szabályok unió, s nyíl az üres, illetve
+3:543 minutes, 54 secondss nyíl s1, ugye? Tehát ilyen módon akárhányszor egymás mögé tudom írni az
+4:014 minutes, 1 secondúj kezdőszimbólumot, és a ezekből akárhány szóból álló konkretát
+4:104 minutes, 10 secondselőáll, tehát akárhány G1 át vagy A1, bocsánat. Tehát a G1 az generál szavakat.
+4:204 minutes, 20 secondstegyük föl, hogy hogy x1 x2 x-en szót, akkor ezt a szabályt szer fogom
+4:284 minutes, 28 secondsalkalmazni, vagy vagy nszer fogom alkalmazni, és akkor itt utána az s1-ből
+4:354 minutes, 35 secondslevezetem egyenként az összes szórészt, tehát hogy ez pont a lezártját, az eredeti nyelv lezártját fogja generálni.
+4:514 minutes, 51 secondsA környezetfüggetlen nyelvek nem zártak sem a metszetre, sem a komplementer képzésre nézve.
+5:045 minutes, 4 secondsHát adok egy példát.
+5:085 minutes, 8 secondsUgye az A1 nyelv az álljon a az legyen az, hogy a az
+5:175 minutes, 17 secondsniken, B az niken, c az mediken.
+5:225 minutes, 22 secondsNagyobb = 0. És az A2 nyelv az legyen az A nediken, B az Miken, C az MED.
+5:355 minutes, 35 secondsNa, az első kérdésem az az, hogy az A1 nyelv az környezetfüggetlene.
+5:455 minutes, 45 secondsTehát környezet függetlene az a nyelv, ahol valahány után, valamennyi A után
+5:535 minutes, 53 secondskövetkezik ugyanannyi B, és utána valahány C következik.
+6:036 minutes, 3 secondsmi a tipp, illetve hát ide van írva.
+6:076 minutes, 7 secondsLássuk be, hogy hogy ez környezetfüggetlen.
+6:166 minutes, 16 secondsMivel lenne nagyon egyszerű belátni, hogy az A1 nyelv az környezetfüggetlen.
+6:236 minutes, 23 secondsHát konstruáljunk hozzá egy veremautómatomatát.
+6:306 minutes, 30 secondsMi lenne egy olyan veremautómata, amelyik felismerné az A1 nyelvet?
+6:436 minutes, 43 secondsHalló?
+6:526 minutes, 52 secondsA szóban valaki elmondaná. Nem kell teljes precizitással, csak hogy lássuk a lényeget. Tehát azt kellene belátni, hogy az A1 nyelv az környezetfüggetlen.
+7:037 minutes, 3 secondsNa hát mi az a környezet, miért környezetfüggetlen az A1?
+7:287 minutes, 28 secondsHalló! Na, ötlet kell vagy ez nagyon egyszerű.
+7:387 minutes, 38 secondsHa valami nem világos, most kérdezzenek, mert ennek azért mennie kellene.
+8:048 minutes, 4 secondsHelló! Hallanak egyáltalán? Helló! Helló!
+8:158 minutes, 15 secondsKérek egy visszajelzést, hogy Igen, hallom, halljuk.
+8:208 minutes, 20 secondsNa és akkor akkor most már kérek egy hát próbálják meg belátni, hogy az A1 az
+8:298 minutes, 29 secondskörnyezet független. Hogy lehetne belátni, hogy az A1 az környezetfüggetlen?
+8:358 minutes, 35 secondsVagy adunk egy környezetfüggetlen gramatikát, vagy adunk egy,
+8:428 minutes, 42 secondsvagy adunk egy veremautomatát, ami fölismeri a az A1 nyelvet. Nem kell teljes
+8:518 minutes, 51 secondsprecizitással, csak hogy azért elhigyük azt, hogy az A1 az környezetfüggetlen.
+9:059 minutes, 5 secondsHát itt ugye tegyük föl, hogy jön egy jön egy szó,
+9:139 minutes, 13 secondsami ilyen alakul. Hát mit kell csinálni az automatának? Hát ahogy jönnek befelé az á-k, mindig beírunk egy egy
+9:219 minutes, 21 secondsszimbólumot a verembe, ugye? És utána, hogyha elkezdenek jönni
+9:299 minutes, 29 secondsa bék, akkor állapotot váltunk, és ott pedig mindig dobáljuk ki ezeket a szimbólumokat.
+9:379 minutes, 37 secondsNa most, hogyha éppen a kidobálásokkal a verem aljára értünk, tehát az azt jelentené, hogy ugyanannyiát a volt a
+9:459 minutes, 45 secondsstringben, mint ahány B. És utána akárhány C jön, akkor még mindig egy ilyen elfogadó állapotban legyünk.
+9:559 minutes, 55 secondsEgyébként pedig utasítsuk el a szót. Jó, tehát ez az A1 nyelv, ez valóban környezetfüggetlen.
+10:0310 minutes, 3 secondsMost recitzel nem akarom fölírni, de nagyjából ez a az imént vázolt veremautomata elfogadja az A1 nyelvet.
+10:1510 minutes, 15 secondsAz A2 nyelv az is környezetfüggetlen hasonló módon, hiszen
+10:2410 minutes, 24 secondsaz A-K hatására maradjunk egy állapotban, aztán ha jön egy B, akkor ugorjunk át egy másik állapotban, és
+10:3310 minutes, 33 secondsmegint csak dobáljunk be annyi szimbólumot a verembe, ahány B jön. Jön egy C, akkor
+10:4110 minutes, 41 secondsugorjunk át egy másik állapotba, és elkezdjük a C minden C belépésével kidobálni a veremből a szimbólumokat.
+10:5310 minutes, 53 secondshogyha a string végére értünk, és éppen elfolyott a éppen üres lett a verem,
+11:0211 minutes, 2 secondsakkor elfogadjuk a szót, hiszen ez azt jelenti, hogy ugyanannyi C volt a a
+11:1111 minutes, 11 secondsstringman, mint ahány B. Tehát tehát akkor ez a az imént vázolt
+11:1911 minutes, 19 secondsveremagdomata valóban az ilyen szavakat fogja elfogadni. Na most mi a mi az A1 és az A2-nek a metszete? Ugye az A1 az
+11:2811 minutes, 28 secondsaz, ahol ugyanannyi A van, mint B. A2 az az, ahol ugyanannyi B van, mint C.
+11:3611 minutes, 36 secondsTehát az A1 metszet A2 az a nyelv, ahol ugyanannyi a van, mint ahány B és mint ahány C. Tehát az A az
+11:4511 minutes, 45 secondsNiken, B az Neden, C az Niken. Ez a nyelv pedig nem környezetfüggetlen.
+11:5111 minutes, 51 secondsErről már bebizonyítottuk. Tehát hiába környezet független mind az A1, mind az A2, a két nyelvnek a metszete az nem környezetfüggetlen.
+12:0412 minutes, 4 secondsNa most, hogy lehet-e belátni azt, hogy egy nyelv nem egy a környezetfüggetlen
+12:1212 minutes, 12 secondsnyelvek családja nem zárt a komplement képzésre nézve.
+12:1812 minutes, 18 secondsHát tegyük föl, hogy A1 is meg az A2 is környezetfüggetlen. Tegyük fel egy pillanatra,
+12:2812 minutes, 28 secondshogy ellentmondást kapjuk, hogy az A1 komplementere is környezet független, akkor az A2 komplementere is
+12:3612 minutes, 36 secondskörnyezetfüggetlen, de akkor a kettőnek az uniója is környezetfüggetlen, hiszen a környezetfüggetlen nyelvek azok zártak a reguláris operátorokra nézve.
+12:4812 minutes, 48 secondsDe ha a komplement képzésre zártak a környezetfüggetlen nyelvek, és ez az, amit ami itt a zárójelen belül
+12:5712 minutes, 57 secondsvan, ez környezetfüggetlen, akkor ennek a komplementére is környezetfüggetlen lenne, ami a demorgánozóságok alapján
+13:0513 minutes, 5 secondsmegegyezik az A1 komplementer A1 metszet A2-vel.
+13:1313 minutes, 13 secondsErről viszont tudjuk, az imént láttuk, hogy az A1 metszet A2 az nem feltétlenül környezet független, tehát ellentmondáshoz jutottunk.
+13:2913 minutes, 29 secondsBe lehet látni azt is, sőt könnyű belátni azt, hogyha egy A1 nyelv környezetfüggetlen és egy A2 nyelv reguláris, akkor a két nyelvnek a metszete az környezetfüggetlen.
+13:4013 minutes, 40 secondsTulajdonképpen mit csinálunk?
+13:4513 minutes, 45 secondsDefiniálunk egy olyan veremautómatomatát, amelyik a két a két nyelvnek a metszetét fogja felismerni.
+13:5913 minutes, 59 secondsTegyük föl, hogy ha A1 környezet független, akkor van olyan M1 veremautomata, ami őt felismeri.
+14:0614 minutes, 6 secondsAz M2, az A2 reguláris, legyen M2 az a determisztikus véges automómata, amelyik az R2-t fölismeri.
+14:1714 minutes, 17 secondsAkkor mi legyen az M automata, ami a
+14:2514 minutes, 25 secondskét nyelvnek a metszetét fogja felismerni. Ez egy ez egy veremautomata lesz.
+14:3414 minutes, 34 secondsAz állapothalmaz lesz, az legyen az eredeti állapot, a két automata állapotainak a direkt szorzata.
+14:4414 minutes, 44 secondsHát tegyük föl, hogy ugyanaz a ugyanaz az ABC legyen, ugyanaz a verem ABC.
+14:5314 minutes, 53 secondsLesz egy átmenet függvény, amit mindjárt definiálok.
+14:5914 minutes, 59 secondsA kezdőállapot az a Q1, Q2 lesz, a két kezdő állapotból álló pár. És mik
+15:0815 minutes, 8 secondslesznek az elfogadó állapotok? az F1 és az F2-nek a direkt szorzata lesz.
+15:1515 minutes, 15 secondsAhol F1 az elfogadó az M1-nek az elfogadó állapotai, az F2 pedig az M2 elfogadó állapotai.
+15:2615 minutes, 26 secondsÉs az átmenet függvényt tulajdonképpen koordinátánként szimuláljuk az első
+15:3315 minutes, 33 secondskoordinátában a az M1 automatát.
+15:4115 minutes, 41 secondsa második koordinátában az M2át, a két automatának a működését.
+15:5015 minutes, 50 secondsÉs akkor ugye miért
+15:5715 minutes, 57 secondsismeri fel? De hát nem akarom teljesen formálisáni, de ez a lényeg, hogy miért pont a két
+16:0416 minutes, 4 secondsnyelvnek a metszetét fogja felismerni, mert azokat a szavakat fogja felismerni,
+16:1116 minutes, 11 secondsahol van olyan van olyan levezetési útvonal,
+16:1716 minutes, 17 secondsúgyhogy mindkét, tehát az mindkét állapotban elfogadó állapotba fogunk jutni. Tehát
+16:2516 minutes, 25 secondsaz M1 és az M2 szerint is elfogadó állapotba fogunk jutni. Ez pedig pont a két nyelvnek a
+16:3416 minutes, 34 secondsmetszetét ezek a szag pont a két nyelvnek a metszete lesz.
+16:4416 minutes, 44 secondsJó, azt hiszem, hogy ez így világos.
+16:4816 minutes, 48 secondsMég egy szót szólnék a determinisztikus véges a determinisztikus környezetfüggetlen nyelvekről. Ha nem
+16:5516 minutes, 55 secondshasználjuk ki a determinizmus erejét, akkor determinisztikus veremautomatáról beszélünk.
+17:0617 minutes, 6 secondsAzt mondjuk, hogy egy nyelv az determisztikusan környezetfüggetlen, hogyha van olyan determisztikus veremautómata, ami felismeri. A
+17:1517 minutes, 15 secondsdetermisztikus veremautóánál ugye csak arról van szó, hogy hogy a hogy az átmeneti szabály az egyértelmű.
+17:2417 minutes, 24 secondsTehát az minden szigma az csak egy egyellemű halmazba képez minden ilyen lépés.
+17:3717 minutes, 37 secondsÉs ezekről lehet tudni, a determisztikus környezetfüggetlen nyelvekről,
+17:4517 minutes, 45 secondshogy zártak a reguláris operátorokra nézve, valamint a komplement képzésre és
+17:5217 minutes, 52 secondsa metszett képzésre is láttjük be, mert annyira
+18:0018 minutesnem lényeges még azt könnyű belátni Eermisztikus környezetfüglen nyelvek
+18:0818 minutes, 8 secondsosztálya szűkebb, mint a környezetfüggetlen nyelvek osztálya. Azaz van olyan
+18:1818 minutes, 18 secondskörnyezetfüggetlen nyelv, ami nem determinisztikus környezetfüggetlen.
+18:2618 minutes, 26 secondsPéldául az a a kikon, b az mediken, c az niken.
+18:3418 minutes, 34 secondsÚgyhogy K nem = M vagy M = N-nel. Ez környezetfüggetlen nyelv, de nem determinisztikusan környezetfüggetlen.
+18:4818 minutes, 48 secondsHogyan tudnánk ezt belátni? Ez egyszerű. Az iménti tételek alapján.
+18:5918 minutes, 59 secondsEz nagyon könnyen kihozható. gondoljanak arra, hogy mi ennek a nyelvnek a komplementere.
+19:1219 minutes, 12 secondsÉs hát nagyjából ennyit akartam elmondani a veremautómatákról.
+19:2119 minutes, 21 secondsTehát definiáltuk a veremautómatomatákat.
+19:2719 minutes, 27 secondsBe nem láttuk be, de kimondtam azt a tételt, hogy a veremautomaták éppen a környezetfüggetlen nyelveket ismerik
+19:3619 minutes, 36 secondsfel. Zár a környezetfüggetlen nyelvek zártak a reguláris operátorokra nézve.
+19:4619 minutes, 46 secondsBeláttuk azt is, hogy egy környezetfüggetlen és reguláris nyelv metszete az környezetfüggetlen,
+19:5319 minutes, 53 secondsvalamint bevezettük a nemerisztikus veremautómatát, illetve nem determinisztikus
+20:0220 minutes, 2 secondskörnyezetfüggetlen nyelveknek a fogalmát is.
+20:0620 minutes, 6 secondsJó, köszönöm szépen. Akkor ez az, amit az eremautomatákról el akartam mondani.
+20:1620 minutes, 16 secondsÉs talán még akkor egy ilyen nézzük át, hogy mielőtt még új anyagba
+20:2320 minutes, 23 secondskezdenénk, hogy mi az, amit
+20:3020 minutes, 30 secondseddig automatákról, illetve nyelvekről tanultunk.
+20:5920 minutes, 59 secondsEgy kis türelmet kérek.
+21:4421 minutes, 44 secondsJó, tehát egy kicsit szóval a következő táblázat úgy
+21:5221 minutes, 52 secondsnagyjából összegzi, hogy a rekurzív és az amiket tanultunk a rekurzív és környezetfüggetlen
+22:0022 minutesnyelvekről. Tehát hogyan adunk meg egy reguláris nyelvet? Hát megadhatunk egy
+22:1022 minutes, 10 secondsreguláris kifejezéssel, de megadhatunk egy grammatikával is, ahol a szabályok
+22:1622 minutes, 16 secondsazok a nyil ab és a nyil a alakúak, ahol a nagy a és a
+22:2422 minutes, 24 secondsnagy b azok nem terminálisak, illetve a kis a az pedig terminális.
+22:3222 minutes, 32 secondsA környezetfüggetlen nyelvek azok környezetfüggetlen gramatikákkal adhatók meg. A környezetfüggetlen
+22:4122 minutes, 41 secondsgrammatikák azok a nyíl béta alakúak, ahol az a az
+22:4922 minutes, 49 secondsegy nem terminális, a béta pedig egy terminálisokból és nem terminálisokból álló tetszőleges sorozat.
+23:0023 minutesAzt is beláttuk, hogyha egy nyelv az környezetfüggetlen,
+23:0723 minutes, 7 secondsakkor megadható csomsziféle normálakban, ahol a szobályok a nyíl, b alakúak,
+23:1623 minutes, 16 secondsahol az a b és a c termin nem terminálisok
+23:2423 minutes, 24 secondss nyíl y az s az kezd kezdő szimbólum és és áynyil nagyil kissá alakulak, ahol a
+23:3323 minutes, 33 secondsnagyáz terminális a kisáz nem nagyáz nem terminális, a kisáz terminális
+23:4323 minutes, 43 secondspéldák, reguláris nyelvek például ner k darab az, hogy nzer k darab
+23:5123 minutes, 51 secondsegyes van, tehát az ner valamilyen rögzítsünk egy k-t, mondjuk legyen k = 3, hogy az az unáris
+24:0124 minutes, 1 secondnyelv, amiben mondjuk 3 n darab 1-es van, az reguláris, vagy kx n darab 1-es van, az mindig reguláris.
+24:0924 minutes, 9 secondsMiért? Mert hát fölvéve k állapotot
+24:1824 minutes, 18 secondstudjuk szimulálni azt. Tehát mindig ugrunk egyet, és utána visszaugrunk a nullába. Tehát tudjuk azt szimulálni,
+24:2524 minutes, 25 secondshogy hogy az egyesek száma az mennyi
+24:3124 minutes, 31 secondsmoduló k, ugye? És hogyha hogyha nulla lesz moduló k, akkor elfogadjuk, hogyha nem, akkor nem.
+24:4324 minutes, 43 secondsUgyanakkor a nulla az iediken, i az iediken nyelv az az környezetfüggetlen,
+24:5324 minutes, 53 secondsde a pumpáló lemma a segítségével könnyen belátható, hogy nem reguláris.
+25:0325 minutes, 3 secondsNézzünk olyan szavakat, amik vagy olyan nyelveket,
+25:0925 minutes, 9 secondsamik nem regulárisak. Beltuk azt, hogy az a nyelv, amiben amely az a 01 feletti
+25:1725 minutes, 17 secondsnyelv, amely azon szavakból áll, ahol ugyanannyi nulla van, ahány egyes, az az nem reguláris.
+25:2925 minutes, 29 secondsÉs azt is beláttuk, hogy az a az niken, b az niken, c az nediken nyelv, az nem környezetfüggetlen.
+25:3925 minutes, 39 secondsEzt a két állítást a megfelelő pumpáló lemmákkal láttuk be, amik arra jók még
+25:4625 minutes, 46 secondsegyszer, hogy belássuk egy tehát a reguláris nyelvekre vonatkozó pumpálási lemma arra jó, hogy belássuk, hogy hogy
+25:5525 minutes, 55 secondsa nyelv nem reguláris és hasonló módon a környezetfüggetlen nyelvekre vonatkozó pumpálásilme arra használható jól, hogy
+26:0326 minutes, 3 secondsbelássuk, hogy egy nyernem környezetfüggetlen. Mit is mondanak ki ezek a lemmák?
+26:1426 minutes, 14 secondsA reguláris nyelvekre vonatkozó pumpálási lemma azt mondja ki, ha egy nyelv reguláris,
+26:2226 minutes, 22 secondsakkor létezik hozzá egy P konstans, hogy minden legalább P hosszú szava az pumpálható.
+26:3126 minutes, 31 secondsMit jelent az, hogy minden P hosszú szava pumpálható? Minden p hosszú szó fölírható xyz alakban,
+26:4126 minutes, 41 secondsúgyhogy xy az nen z benne van a nyelvben minden n-ről.
+26:4926 minutes, 49 secondsAz y-nak a hossza az legalább egy, ott több mint nulla. És az x y-nak a hossza az kisebbenlő, mint p.
+27:0227 minutes, 2 secondsUgye ez egy ez egy jó kis tulajdonság nekünk, mert tudjuk, hogy valahol ez a pumpálható rész az S string elején lesz.
+27:1027 minutes, 10 secondsNem tudjuk pontosan, hogy hol, de valahol az elején így így P karakteren belül
+27:1827 minutes, 18 secondslesz az a rész, amit pumpál a a pumpálható Y rész.
+27:2427 minutes, 24 secondsA környezet független nyelvekre vonatkozó pumpálási lem az valamivel bonyolultabb.
+27:3027 minutes, 30 secondsTehát azt mondja ki, hogy ha egy nyelv környezetfüggetlen, akkor létezik hozzá egy olyan p
+27:3927 minutes, 39 secondskonstans, hogy minden legalább p hosszú szava a nyelvnek pumpálható.
+27:4627 minutes, 46 secondsEz mit jelent? Azt jelenti, hogy minden legalább p hosszú szó fölírható uvxy z alakban.
+27:5627 minutes, 56 secondsÚgyhogy az u V az Niken X, Y az Niken Z az benne van a nyelvben mindenre.
+28:0628 minutes, 6 secondsA V Y-nak az összhosszabb az legalább egy, tehát több mint nulla van. Mit pumpálnunk?
+28:1528 minutes, 15 secondsÉs a vxyn-nak az összhossza, tehát ennek a középső résznek az az kisebb egyenlő,
+28:2228 minutes, 22 secondsmint p. Ugye látszik, hogy ez egy kicsit azért nehezebben használható ez a lemma,
+28:3028 minutes, 30 secondsmint a mint a mint a reguláris nyelvekre vonatkozó pumpálási lemma. De
+28:3828 minutes, 38 secondsazért alapvetően ez is egy jól használható használható tétel.
+28:4628 minutes, 46 secondsJó.
+28:4928 minutes, 49 secondsA reguláris nyelveket ugye felismerik egyben a nem determisztikus végesutómaták is.
+29:0229 minutes, 2 secondsA környezetfüggetlen nyelveket a nemermisztikus véges automaták ismeri föl.
+29:0829 minutes, 8 secondsAlapból szükséges a nemeterminizmus a környezetfüggetlen nyelvek felismeréséhez.
+29:1829 minutes, 18 secondsA reguláris nyelvek felismeréséhez nem szükséges a determinis a determinizmus.
+29:2429 minutes, 24 secondsTehát a reguláris nyelveket fölismerik a determisztikus véges automaták is. Tehát
+29:3129 minutes, 31 secondsa nem determisztikus véges automaták nem ismernek fel több nyelvet, mint a determinisztikus véges automaták. Minden
+29:3929 minutes, 39 secondsnem determinisztikus véges automatához van egy olyan determinisztikus véges automata, amelyik ugyanazt a nyelvet ismeri föl.
+29:5129 minutes, 51 secondsEz nem igaz a veremautómatákra nézve. Tehát a veremautóáknál,
+29:5929 minutes, 59 secondshogyha vesszünk egy olyan, hogyha kiírtjuk a nemerizmust a veremautómatából,
+30:0730 minutes, 7 secondsakkor akkor gyengébb gépeket kapunk, gyengébbet kapunk, mint a nem determisztikus változat.
+30:1730 minutes, 17 secondsazon nyelvek, amiket a determisztikus veremautomaták ismernek föl, azok a determinisztikus környezetfüggetlen
+30:2530 minutes, 25 secondsnyelvek, és ezek valódi részhalmazát alkotják a környezetfüggetlen nyelveknek.
+30:3430 minutes, 34 secondsÉs akkor még beszéltünk a reguláris nyelvek esetén ugye fölvethető az, hogy
+30:4030 minutes, 40 secondshogy hát és hát egy természetes kérdés, hogy hogy egy nyelvet minél kevesebb állapottal szeretnénk determinisztikusan felismerni.
+30:5230 minutes, 52 secondsUgye erre beláttuk, hogy létezik egy egyértelmű
+30:5930 minutes, 59 secondsdeterminisztikus, egyértelmű módon létezik egy determinisztikus véges automata, ami a lehetőleg kevesebb a állapottal ismeri föl ezt a nyelvet.
+31:0931 minutes, 9 secondsEzek az úgynevezett minimálutóák.
+31:1431 minutes, 14 secondsÉs hát a környezetfüggetlen nyelvek esetén ez így igen, ez így nem egy releváns kérdés.
+31:2731 minutes, 27 secondsÉs azt is lehet tudni, hogy a reguláris nyelvek azok zártak a reguláris
+31:3531 minutes, 35 secondsoperátorokra, tehát az unióra, konkatenációra és a klíni lezárásra, de még azon túl is, tehát a reguláris
+31:4431 minutes, 44 secondsoperátorokra zártak, a metszet képzése, a különbség képzése, a komplementum
+31:5131 minutes, 51 secondsképzése és akár a megfordításra. is a
+31:5931 minutes, 59 secondskörnyezetfüggetlen nyelvek azok zártak a reguláris operátorokra.
+32:0932 minutes, 9 secondsA metszetképzésre láttuk meg, a komplementumképzésre már
+32:1532 minutes, 15 secondsnem zártak, de hogyha az a reguláris és b környezetfüggetlen,
+32:2232 minutes, 22 secondsakkor az a metzet b, illetve az a - b azok környezetfüggetlenek föltéve, hogyha az áz reguláris.
+32:3632 minutes, 36 secondstulajdonképpen akkor ilyen módon kapunk egy ilyen hierarchiát,
+32:4532 minutes, 45 secondsaminek a belsejében vannak, tehát a legkisebb halmaz az a reguláris nyelvek.
+32:5132 minutes, 51 secondsTehát a ezt tulajdonképpen ezeket eddig bebizonyítottuk, sőt a null
+33:0033 minutesa Igen. Tehát azt beláttuk, hogy a reguláris nyelvek halmaza az valódi
+33:0933 minutes, 9 secondsrésze a determisztikusan környezett független nyelvek halmazának.
+33:1533 minutes, 15 secondsEz valódi része a környezetfüggetlen nyelvek halmazának. A környezetfüggetlen nyelvek halmaza valódi részét képezik a környezetfüggő nyelvek halmazának.
+33:2733 minutes, 27 secondsÉs a környezetfüggő nyelvek halmaza az valódi részét képezik a nullás nyelvosztálynak, amelyik azon nyelvekből
+33:3533 minutes, 35 secondsáll, amik olyan gramatikákkal vezethető le, amekre nézve semmilyen megkötésünk nincs.
+33:4433 minutes, 44 secondsJó, hát akkor nagyjából ezt szerettem volna elmondani reguláris és környezetfüggetlen
+33:5233 minutes, 52 secondsnyelvekről, és a következő
+33:5933 minutes, 59 secondsórán már áttérünk a tyingépek vizsgálatára, amelyik egy nagyon fontos anyagrész. Ugye a ting gépeket Elen Turing vezette be.
+34:1234 minutes, 12 secondsA lényegében a a modern számítógép tudományban is,
+34:1934 minutes, 19 secondstehát az, hogy mi egy lépés, mi a futási idő, hogy mérjük ezeket. Ha ezt specizen
+34:2734 minutes, 27 secondsakarjuk csinálni, akkor ezeket türing gépeken keresztül tudjuk rendesen vizsgálni.
+34:3834 minutes, 38 secondsDe azt hiszem, hogy most már új anyagba nem kezdenék bele, úgyhogy kérdezem, hogy van-e kérdésük az eddig elhangzottakkal kapcsolatban.
 
-
-https://www.youtube.com/watch?v=_eVShbDYjqI
+https://www.youtube.com/watch?v=XEBOPTj_-eM

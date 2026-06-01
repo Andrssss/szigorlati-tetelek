@@ -1,3 +1,440 @@
+Jó, tehát akkor így működik egy tingt már tudjuk. Azt mondjuk, egy tuning gép
+0:3030 secondselfogadva egy levés sorozatot, hogyha van olyan C1, C2 CN konfiguráció sorozat, hogy C1
+0:3939 secondsegy kiindulási konfiguráció, a C- rá következő egy C + 1 és CN az elfogadó konfiguráció. Tehát hogyha
+0:4848 secondselfaladó állapotba jutunk valaha is a egy adott bemenetás sorozaton
+0:5656 secondsés azon sorozatok halmazát, amit egy tyingép elfogad, az a tyingép által
+1:031 minute, 3 secondsfelismert nyelvet alkotják.
+1:081 minute, 8 secondsAzt mondjuk, hogy egy nyelv az tying felismerhető vagy rekurzíve felsorolható.
+1:131 minute, 13 secondsHa van olyan turing gép, van olyan muring gép, amelyik fölismeri ezt a nyelvet.
+1:221 minute, 22 secondsÉs hát itt van egy fontos megjegyzés, hogy hogy nem biztos, hogy minden sorozaton megáll a gép. Így csak a nyelv
+1:301 minute, 30 secondselemeire kapunk feltétlenül igenlő választ. Tehát hogyha
+1:371 minute, 37 secondsegy egy tyuringép elutasíthat úgyis egy szót szón, hogy nem áll meg rajta, illetve ne nevezzük
+1:451 minute, 45 secondsezt elutasításnak, hanem ugye akkor nem lesz egy elfogadott szó az a jelsorozat, ha végtelen ciklusba kerül a tyingép.
+2:012 minutes, 1 secondIgen. És azt mondjuk, hogy egy nyelv az üring, eldönthető, vagy rekurzív, ha van olyan nyelv, amit felis, ha van olyan
+2:092 minutes, 9 secondstűép, amelyik felismeri ezt a nyelvet, és ráadásul még minden sorozat, minden szigma csillagbeli s sorozatra meg is
+2:182 minutes, 18 secondsfog állni a gép, ugye? Tehát a rekurzíve felsorolható nyelveknél arról van szó, hogy
+2:252 minutes, 25 secondshogy az igen választ azt mindig megkapjuk véges időn belül. A nem választ azt vagy megkapjukes
+2:342 minutes, 34 secondsvéges időn belül, vagy végtelen ciklusba kerül a gép.
+2:402 minutes, 40 secondsRekurzív nyelvek esetén pedig mindenképpen megáll a gép és vagy elutasítja, vagy elfogadja az adott jelorozatot.
+2:492 minutes, 49 secondsTermészetesen minden rekurzív, nyelv egyben rekurzíve felsorolható is, ugye világos, hiszen többet követelünk meg rekurzív nyelvek esetén.
+3:013 minutes, 1 secondÉs az is igaz, hogyha egy nyelv rekurzív, akkor bizony a komplementere is az, hiszen felcserélve az elfogadó és
+3:083 minutes, 8 secondselutasító állapotot egy egy olyan gépben, ami egy az elnyelvet ismeri föl, pont a az elnyelv komplementit fogja felismerni.
+3:203 minutes, 20 secondsNo, akkor nagyjából ezeket így vezettük be a tuning gépeket.
+3:333 minutes, 33 secondsÉs akkor még miket vettünk?
+3:393 minutes, 39 secondsEzeket most gyorsan ismételjük át.
+3:513 minutes, 51 secondsPillanat.
+4:164 minutes, 16 secondsJó, tehát vettünk Turingép varigációkat.
+4:214 minutes, 21 secondsEgyrészt mik voltak azok ezekről? Annyit kell tudni, hogy nagyjából ugyanarra képesek,
+4:284 minutes, 28 secondsmint mint az alapgép, amit az imén definiáltunk. Milyen ting gép variációkat vettünk?
+4:364 minutes, 36 secondsElnézést, beragadta.
+4:424 minutes, 42 secondsMi az, amit lehet ilyenkor tenni, amikor beragad a gép?
+5:005 minutesIgen. Na most most talán működik.
+5:105 minutes, 10 secondsTehát ezek a különböző türingép variációk, ezek nem tudnak lényegesen többet, mint az eredeti tuning
+5:195 minutes, 19 secondsalapvetően nem tudnak többet. Tehát mik a milyen tűringép variációkat vettünk.
+5:255 minutes, 25 secondsLe megengedhetjük azt is, hogy helyben is maradhasson a fej.
+5:315 minutes, 31 secondsAztán vannak a többszallagos turing gépek és a
+5:395 minutes, 39 secondsugye itt láttuk, hogy ezek szimulálhatók egy szalagos tuning gépekkel.
+5:455 minutes, 45 secondsA leglényegesebb tuningép variáció az a azok a nem determinisztikus tyuringépek.
+5:545 minutes, 54 secondsA nemeterminisztikus gyuringépek, akár csak a nemeterminisztikus automaták esetén a a
+6:046 minutes, 4 secondsdelta átmenetfüggvény az egy az a az állapotoknak, tehát az egy
+6:126 minutes, 12 secondsaz ugye attól függően, hogy milyen állapotban vagyunk és éppen mit olvas a fej, eredetileg átkerülhetünk egy másik
+6:216 minutes, 21 secondsállapotba, áttírjuk a fej tart a cella tartalmát, illetve jobbra vagy balra léphetünk, egy egész ilyen halmazba ugorhatunk át.
+6:316 minutes, 31 secondsTehát azt jelenti, hogy a gép megsokszorozza magát.
+6:356 minutes, 35 secondsUgye ennek megfelel egy nem determinisztikus tűringép működését egy fa írja le.
+6:416 minutes, 41 secondsHa egy na most, hogyha egy fa írja le, akkor elképzelhető, hogy az egyik ágon elfogadó állapotba kerül a másikon. nem
+6:496 minutes, 49 secondselfogadó állapotba kerül, a egy harmadik ágon pedig végt ciklusba kerül a
+6:566 minutes, 56 secondsnemerinisztikus gép, ha már egy állapotban, elfogadó állapotba kerül a gép, az a
+7:047 minutes, 4 secondsstring el van fogadva. Jó, tehát akkor egy ilyen egy ilyen fa tudja leírni a gépnek a működését.
+7:127 minutes, 12 secondsUgye mindenhol elág, minden lépésben el tudunk megsokszorozza magát a gép,
+7:207 minutes, 20 secondsde ezeket a tuning gépeket és nemeterminisztikus gépeket is tudunk szimunálni determinisztikus gépekkel,
+7:297 minutes, 29 secondsmégpedig széltében kereséssel á végignézzük az összes lehetséges ágat.
+7:397 minutes, 39 secondsA itt nagyon fontos megemlítenem, mert egy egyik legfontosabb
+7:477 minutes, 47 secondselméleti számítógéptományi matematikai kérdés áll emögött, hogy a nem determinisztikus türing gépek ugyan
+7:547 minutes, 54 secondsekvivalensek, tehát nem tudnak többet, mint a determinisztikus ting gépek.
+7:597 minutes, 59 secondsabban az türing gépek abban az esetben, hogyha eltekintünk a futási időtől, ha nem érdekel bennünk, hogy mennyi
+8:078 minutes, 7 secondsideig fut a gép, ha ezt számításba vesszük, akkor egyelőre nem tudjuk, hogy
+8:168 minutes, 16 secondslényegesen eltér a nem a demeterminisztikus tyingépek működése, determinisztikus tuningépek működése működésétől.
+8:268 minutes, 26 secondsEz a kérdés egy kicsit precízebben.
+8:298 minutes, 29 secondsA P egyenlő-e az MP-vel, vagy nem millene probléma megfogalmazásának a lényege.
+8:378 minutes, 37 secondsJó, tehát ezeket is tudjuk nem determinisztikus gépeket is tudjuk
+8:448 minutes, 44 secondsdeterminisztikus tuning gépekkel szimulálni.
+8:518 minutes, 51 secondsVannak még a felsoroló tuning gépek.
+8:568 minutes, 56 secondsEzeket is tudjuk szimulálni determinisztikusing gépekre és és
+9:029 minutes, 2 secondsfordítva is. Aztán még sok ilyen variáció van. Lehet két irányban
+9:099 minutes, 9 secondsvégtelen szalag, kétdimziós szalag, több fejmin minden szalagon, több elutasító és elfogadó állapot, ramd elérésű memóriák.
+9:199 minutes, 19 secondsAzt kell tudni, hogy a fenti variációk mind ekvivalensek az alap tuning géppel,
+9:269 minutes, 26 secondsés egy adott fajta tuning géppel konstruálható vele ekvivalens alatting gép.
+9:419 minutes, 41 secondsJó.
+9:449 minutes, 44 secondsIgen. És akkor függvényeket is tudunk számolni, számítani tuning gépekkel. Azt mondjuk,
+9:539 minutes, 53 secondshogy egy xes szigma csillag lemeneti sorozatra az muringépék outputja az y
+10:0010 minutessorozat, ha mál az x inputon és megálláskor éppen az y szerepel, valamint a feismét az első pozí a feismét az első pozíciónál.
+10:1210 minutes, 12 secondsEzt a tényt úgy írjuk, ezt a tényt úgy jelöljük, hogy y = mx.
+10:1910 minutes, 19 secondsÉs akkor egy műép által kiszámított függvény, az az FM a szigma csillagot a szigma csillagba képezzük parciálisan
+10:2810 minutes, 28 secondsértelmezett függvény, amely minden x-re értelmezett, amerre van olyan y, hogy y = mx.
+10:3710 minutes, 37 secondsÉs azt mondjuk, hogy egy F parciális függvény parciálisan rekurzív, ha van olyan tuning gép, amely kiszámolja ezt a
+10:4510 minutes, 45 secondsfüggvényt. Ha ezen felül minden fmes szigma csillagra értelmezve is van, akkor az fkurzív függvény.
+10:5710 minutes, 57 secondsJó. És hát akkor fölmerült egy nagyon az a kérdés, hogy mi is tulajdonképpen az algoritmus?
+11:0611 minutes, 6 secondsÉs hát a csős csuring tézis azt mondják ki, hogy az algoritmus az tulajdonképpen a tyingép. Tehát
+11:1711 minutes, 17 secondsami algoritmikussal algoritmussal kiszámolható vagy eldönthető, azing kiszámolható vagy eldönthető. És akkor itt van ez egy kicsit részletesen.
+11:2911 minutes, 29 secondsLegyen hát egy f szigma csillagot a szigmacsillagba
+11:3611 minutes, 36 secondsképező parciális függő algoritmussal kiszámolható. Pontosan akkor ha parciális a lekkurzív.
+11:4411 minutes, 44 secondsEgy f szigmacsillagot a szigma csillagba képező teljes függvény algoritmussal kiszámolható pontosan.
+11:5311 minutes, 53 secondsAkkor hogyha F rekurzív, illetve egy E nyelvbe való tartozás problémája pontosan akkor dönthető el algoritmussal, ha a nyelv rekurzív.
+12:0412 minutes, 4 secondsTehát ez egy ez egy fontos tézis, ez a churching tézis. És akkor
+12:1112 minutes, 11 secondsmindjárt fölmerült az, hogy tudunk-e eldönthetetlen problémákról. Hát természetesen tudunk, hiszen
+12:2112 minutes, 21 secondsszámossági meggondolással már láttuk, hogy sokkal több nyelv vagy probléma van, mint ah tyingép, hiszen a tingépek száma az megszámlálhatan végtelen.
+12:3312 minutes, 33 secondsA problémák vagy nyelvek száma pedig nem megszámlálóan végtelen, tehát kell, hogy legyen olyan probléma, amit nem tudunk eldönteni.
+12:4512 minutes, 45 secondsIlyen például Hilbert 10. problémája az, hogy egy mégpedig az, hogy egy sokváltozós diofantikus egyenletnek
+12:5412 minutes, 54 secondsvan-e megoldása. Tehát az a kérdés, hogy hogyha ránézünk egy tetszes diofantikus
+13:0313 minutes, 3 secondsegyenletre, meg tudjuk-e állapítani az egész, illetve több változós diofantikus egyenletre,
+13:1213 minutes, 12 secondsahol az függvények az egy nváltozós polinom, el tudjuk-e dönteni, hogy ennek a polinomnak van-e
+13:2013 minutes, 20 secondsmegoldása, vagy nem algoritmikusan És a válasz az, hogy általában nincs ilyen
+13:2813 minutes, 28 secondsalgoritmus, és nem is lesz. Tehát ez egy Hilber 10 problémája, az egy eldönthetetlen probléma. Tehát nem
+13:3613 minutes, 36 secondstudjuk automatizálni azt, hogy megoldható-e egy difantas egyenlet vagy nem, mert soha nem fogunk tudni olyan
+13:4213 minutes, 42 secondsprogramot írni, amelyek eldönti egy nváltozós diofantikus egyenletről, hogy megoldható-e vagy nem.
+13:5313 minutes, 53 secondsEz egy tém viszont az egyváltozósak egyváltozós
+14:0314 minutes, 3 secondstiofantikus egyenletek megoldásainak a szám tehát hogy megoldhatósága az az eldönthető.
+14:1314 minutes, 13 secondsMivel a gyökökre nézve van egy alsó és egy fölső határunk.
+14:2214 minutes, 22 secondsTehát korlátozottak, ezért elég végignézni a két korlát között lévő egészeket behelyettesíteni a polinomba,
+14:3114 minutes, 31 secondsés akkor máris tudni fogjuk, hogy az egy változós polinóm megoldható-e vagy nem, de több változósakra ezt nem tudjuk megcsinálni.
+14:4114 minutes, 41 secondsJó.
+14:4314 minutes, 43 secondsÉs akkor most egy másodperc folytatjuk mindjárt.
+15:1115 minutes, 11 secondsIgen. Tehát vettünk további nem eldönthető problémákat. Ugye Hilber 10.
+15:1815 minutes, 18 secondsproblémájáról láttuk, hogy az rekurzíve felsorolható, de nem rekurzív. Apropó, miért rekurzíve felsorolható? Az igen
+15:2615 minutes, 26 secondsválasz, hogyha elkezdjük behelyettesíteni a számenneseket mondjuk
+15:3315 minutes, 33 secondslexikografikus sorrendben, akkor valamikor véges időn belül megkapjuk.
+15:3915 minutes, 39 secondsTehát a Hilbert 10. problémája az rekurzíve felsorolható, de nem rekurzív.
+15:4915 minutes, 49 secondsViszont a dominó probléma az még csak nem is rekurzíve felsorolható. Hát mi is a domino probléma?
+15:5615 minutes, 56 secondsElnézést, megint beragadt a gépem, hátha rendbe jön.
+16:2416 minutes, 24 secondsHát mit látnak a képernyőn? Halló, halló, halló.
+16:3916 minutes, 39 secondsEgy visszajelzést szeretnék kérni, hogy azt a halmazábrát, ahol a a háttü problémát és a domino problémát rakjuk.
+16:4816 minutes, 48 secondsAha. Aha. És önök is hallanak egy ilyen elég erőteljes sustorgást a háttérben, mert nálam nagyon erőtelje.
+17:0017 minutesMost már igen, de általában nem halljuk. Aha. Aha. Most jó.
+17:0717 minutes, 7 secondsMost jó. Jó.
+17:0917 minutes, 9 secondsMost igen. Köszönöm szépen. Mit lehet ilyenkor csinálni? Nem tudják véletlenül, hogy mitől szokott ez beragadni.
+17:2717 minutes, 27 secondsNo igen. Most megint elindult.
+17:3317 minutes, 33 secondsTehát mi mi a mi is az a dominó probléma?
+17:3717 minutes, 37 secondsEgy dominó az az úgy néz ki, hogy egy négyzet oldalait megszámozzuk valahogy mondjuk egész számokkal.
+17:5017 minutes, 50 secondsEz az egyik fajta dominó. Ez egyfajta dominó. És akkor mindegyik dominó fajtából végtelen sok példányunk van.
+18:0218 minutes, 2 secondsÉs az a kérdés, hogyha megadok egy adott domino készletet, akkor ézagmentesen kiparkettázható-e ezzel a sík. A
+18:1118 minutes, 11 secondsesetben, hogyha például ezt a két fajta dominót adom meg, akkor én szépen egymás mellézhetem a dominókat. Ugye akkor
+18:1818 minutes, 18 secondsrakhatom ki egymá akkor rakhatom egymás akkor rakhatok egymás mellé két dominót,
+18:2518 minutes, 25 secondshogyha az érintkező oldalukon ugyanazzal számáll. Tehát, hogyha például ez a két domino van megadva, akkor hézagmentesen kiparkettázható a sík.
+18:3918 minutes, 39 secondsÁm az a kérdés, hogyha kapunk egy dominó készletet, amelyik mondjuk K fajta dominóból áll, hogy lefedhető
+18:4718 minutes, 47 secondshézagmentessen a a sík az nem is rekurzív, de még csak nem is rekurzív felsorolható.
+19:0219 minutes, 2 secondsJó, és még azt is vettük, hogy azt mondjuk, hogy egy számkongruens, ha van olyan
+19:1119 minutes, 11 secondsderékszögű háromszög, amelynek a területe m és oldalai racionális számok.
+19:2019 minutes, 20 secondsNa most, hogyha én megadok önöknek egy m számot, az kongruense vagy nem, annak az eldöntése egyelőre nyitott probléma,
+19:2919 minutes, 29 secondshogy az kongruense vagy nem. Az könnyen látható, hogy hogy
+19:3819 minutes, 38 secondsegy ilyen számról eldönteni, hogy egy számról eldönteni, hogy kongruense vagy
+19:4419 minutes, 44 secondsnem, az egy rekurzíve felsorolható probléma. Miért? Mert az igenválaszt meg
+19:5219 minutes, 52 secondstudjuk kapni véges időn belül. Tehát ez ilyen az ilyen sz racionális számpárok,
+20:0120 minutes, 1 secondilletve számriók, amire a Pitagorasz tétel érvényes, azok
+20:0920 minutes, 9 secondsmegszámlálhatan végtelenül, sokan vannak.
+20:1320 minutes, 13 secondsTehát az igenválaszt meg tudjuk kapni véges időn belül. viszont nem világos, hogy
+20:2120 minutes, 21 secondshogy mi történik akkor, hogyha azt nem tudjuk, hogy a nem választ az megkapható-e véges időn belül.
+20:3320 minutes, 33 secondsJó, tehát akkor természetesen vannak olyan nyelvek, amik nem rekurzív felsorolhatóak.
+20:4220 minutes, 42 secondsEzt számossági meggondoltuk számosságokkal ugye kántorféle
+20:5320 minutes, 53 secondsdiagonalizációs módszerrel ezek mind voltak.
+21:0621 minutes, 6 secondsJó egy ting gépet azt megadhatjuk a kódjával. Tehát megadhatunk egy tuning gépet egy 01 sorozattal. Hát hogyan?
+21:1521 minutes, 15 secondsUgye hát itt miből áll egy tuning gép? Hát van egy Q véges állapothalmazunk.
+21:2221 minutes, 22 secondsEzt le tudjuk kódolni bináran mindegyik elemétt. Van egy szigma véges ABC.
+21:3121 minutes, 31 secondsUgye hát erről is fölthetjük, hogy ez bináris. Van egy gamma szalag ABC. Ezt is le tudjuk kódolni.
+21:4021 minutes, 40 secondsA J az legyen, a jobbra menjen egy, a balra az nulla. És hát még mi van? Még vannak a az elfogadó, elutasítő,
+21:4921 minutes, 49 secondskezdőállapotok. Ezt természetesen ezt is le tudjuk kódolni, hogy nulla a kezdő, Q az elfogadó,
+21:5721 minutes, 57 secondsmondjuk a Q-1 az eutasító állapot legyen. Az átmenet függvényt pedig le tudjuk úgy kódolni, hogy egymás után
+22:0522 minutes, 5 secondsírjuk. mondjuk ilyen módon a megfelelő szabályokat.
+22:1222 minutes, 12 secondsÉs pedig ez azt jelenti, hogyha Q1-ben vagyunk, mondjuk és az X1-et olvassa a
+22:2022 minutes, 20 secondsfejétppen, akkor lépjen át a Q1 vesszőbe, írja át az X1-et X1 vesszőre is, és lépjen át az M1
+22:3022 minutes, 30 secondsvessző, és lépjen jobbra vagy balra az M1 vesszőnek megfelelően.
+22:3622 minutes, 36 secondsTehát így szépen felírogathatjuk sorba az összes lehetséges szabályt.
+22:4422 minutes, 44 secondsÉs hát ilyen módon mindent mindent elkódoltunk egy egy 01 sorozattal. Tehát
+22:5122 minutes, 51 secondsegy tying gép az az leírható egy véges 01 sorozattal, tehát minden egyes eleme
+22:5822 minutes, 58 secondsmegadható ilyen módon.
+23:0423 minutes, 4 secondsÉs akkor azt mondjuk, hogy hogy tulajdonképpen az MV
+23:1223 minutes, 12 secondsaz az ve kód által leírt tyuringép.
+23:1823 minutes, 18 secondsNa most mik azok a az univerzális tying gépek? Az univerzálising gépek azok lényegében programozható gépek.
+23:2823 minutes, 28 secondsTehát egy univerzális tuningép az képes
+23:3523 minutes, 35 secondsszimulálni tetszőleges vevék kódjával megadott mvevuring gépet.
+23:4323 minutes, 43 secondsA tétel az úgy szól, hogy van olyan U3 szallagos csuringép, amelyre teljesül, hogyha a VVS
+23:5223 minutes, 52 secondsaz mondjuk a 01 csillagnak az elemei, és a létezik
+23:5923 minutes, 59 secondsaz MV, tehát a vevő kód által megadott Muring gép, akkor U pontosan akkor
+24:0624 minutes, 6 secondsfogadja el, utasítja el, kerül végt ciklusba a VVS S bemenetet, amikor az MV az S bemenetet elfogadja.
+24:1924 minutes, 19 secondsJó, tehát ezt az univerzális tuning gép az tudja az összes tuning gépnek a működését
+24:2724 minutes, 27 secondsszimulálni és tulajdonképpen ezt a tételt, hogy tudnánk egyszerűen
+24:3424 minutes, 34 secondsbelátni. Hát mondjuk háromszallagos tyingépeket, de a háromszalagosakat meg persze tudjuk szimulálni egy szallagos tyingépekkel.
+24:4324 minutes, 43 secondsHát mondjuk az első szallagra ráírjuk a vevéhes márkes
+24:5024 minutes, 50 secondsbemeleti szallagot. A második szallagra az s
+24:5724 minutes, 57 secondsharmadikat egyelőre üresen hagy üresen hagyjuk.
+25:0725 minutes, 7 secondsÉs egyszerűen megnézi az univerzális tyingép, hogy az MVV tyuringép az S
+25:1425 minutes, 14 secondsbemenetten, tehát ő meg tudja nézni, hogy az S bemenetetten most éppen mit lépne az MVV Turingé, és
+25:2225 minutes, 22 secondsannak a annak a lépését reprezentáljuk valamelyik szalagon. Jó, tehát ezt ez
+25:2925 minutes, 29 secondsígy ez így egyszerű. Most itt van ez precízen leír leírva. Én azt hiszem,
+25:3825 minutes, 38 secondshogy ezt nagyon nem kell magyarázni.
+25:4425 minutes, 44 secondsJó. Érthető-e, hogy mi érthető-e, hogy mi az univerzális turing gép?
+25:5225 minutes, 52 secondsHalló? Helló, helló.
+26:0126 minutes, 1 secondA az univerzális türingépnek a definíciója érthető-e?
+26:1326 minutes, 13 secondsNagyjából igen.
+26:1426 minutes, 14 secondsNagyjából igen. Jó, szuper. Ezzel gondolják át egy kicsit. Tehát van olyan úyingép, amelyik bármely MVW tyingépnek
+26:2426 minutes, 24 secondsa működését tudja szimulálni, hiszen az Muring
+26:3126 minutes, 31 secondsbármelyes bemenetelen, hiszen meg tudja nézni ez a tuning gép, ha
+26:3726 minutes, 37 secondsbeadjuk neki a az M Turingép vevék kódját, azt meg tudja nézni, hogy az MV
+26:4526 minutes, 45 secondsTuring gép éppen mit csinálna, hogyha hogyha beadunk neki egy adott test sorozatot, tehát a lépéseit
+26:5326 minutes, 53 secondsrendre meg tudja nézni, ezáltal tudja szimulálni bármelyving gépenek a működését.
+27:0227 minutes, 2 secondsJó.
+27:0627 minutes, 6 secondsÉs akkor na a diagonális nyelv. Most definiálni fogok egy kicsit nyakatekert nyelvet, de azért elméletileg fontos.
+27:1827 minutes, 18 secondsA diagonális nyelv azon eleme azon elemekből áll. Mi az, hogy diagonális
+27:2427 minutes, 24 secondsnyelv? Azon tyingépeknek a kódja, amik nem fogadják el a saját kódjukat. Ugye
+27:3327 minutes, 33 secondsez egy nyelv. Tehát hogyha egy m vevék tingépnek beadjuk a vevé kódot, a saját kódját,
+27:4327 minutes, 43 secondsakkor azt vagy elfogadja, vagy nem. Na most az e nyelvet, a diagonális nyelvet úgy definiáljuk, hogy azon turing
+27:5127 minutes, 51 secondsgépeknek a kódja, amik elutasítják a saját kódjukat. Jó, ez a diagonális nyelv.
+28:0028 minutesTehát azon vev eleme 01 csillag, hogy az MV létezik, és a VV
+28:0928 minutes, 9 secondsaz MVV tuning gép nem fogadja el. Na most azt állítom, tétel a diagonális
+28:1628 minutes, 16 secondsnyelv az nem rekurzíve felsorolható, ugye? És hát a ennek az állításnak a bizonyítása az egy sor.
+28:2828 minutes, 28 secondsHát tegyük fel, hogy van olyan enturing gép, amelyik éppen éppen a diagonális nyelvnek a szavait ismeri föl.
+28:4128 minutes, 41 secondsJó, tehát na most akkor mi történik, hogyha ennek az tuning gépnek beadjuk a saját kódját?
+28:5228 minutes, 52 secondsHát ha ha felismeri a saját kódját,
+29:0029 minutestehát ha felismeri a saját kódját, azt mondja, hogy igen, akkor ugye a
+29:1029 minutes, 10 secondsez a saját ennek a tűépnek a saját kódja nincs benne a diagonális nyelvben, hiszen a diagonális nyelv azon ting.
+29:2029 minutes, 20 secondsgépeknek a kódjából áll, amik elutas kódjaiból áll, amik elutasítják a saját kódjukat. Tehát
+29:2929 minutes, 29 secondshogyha ez az enturing gép, amelyik arra lenne hivatott, fölismerné a saját kódját,
+29:3829 minutes, 38 secondsakkor ez a kód nincs benne a diagonális nyelvben, tehát ellentmondással jutunk ezen az ágon. Ha elutasítja a saját
+29:4729 minutes, 47 secondskódját, akkor viszont az ő kódja benne van a diagonális nyelvben,
+29:5429 minutes, 54 secondstehát akkor ismondással jutunk. Jó. Na most ez egy ez egy elég nyakatekert
+30:0230 minutes, 2 secondsnyelv, de ennek segítségével azért egy-két dolgot tudunk bizonyítani.
+30:0930 minutes, 9 secondsTehát az, hogy a diagonális nyelv nem rekurzíve felsorolható,
+30:1630 minutes, 16 secondsez egy olyan eszközünk lesz, hogy egy csomó már sok már kevésbé
+30:2430 minutes, 24 secondsö a nyakatekertnek látszó nyelvről is be tudjuk látni, hogy az a nyelv nem
+30:3130 minutes, 31 secondsrekurzíve, vagy nem rekurzív, vagy nem rekurzíve felsorolható.
+30:3930 minutes, 39 secondsÉrthető-e ez a bizonyítás? Érthető-e, hogy mi a diagonális nyelv?
+30:4830 minutes, 48 secondsÉs mi és miért igaz az, hogy a diagonális nyelv az nem rekurzív felsorolható?
+31:0331 minutes, 3 secondsIgen. Jó, szuper. Köszönöm szépen.
+31:1231 minutes, 12 secondsJó.
+31:1431 minutes, 14 secondsNa most nézzük, hogy mi az, hogy univerzális nyelv. Eldönt egy eldönthető-e most, hogy már egy sokkal
+31:2531 minutes, 25 secondsegyszerűbb nyelvek nem eldönthetőségét fogjuk belátni. Eldönthető-e, hogy egy adott tuning gép elfogad-e
+31:3331 minutes, 33 secondsegyes szót. Ugye azért jó lenne, hogyha el tudnánk dönteni azt, hogy adott egy
+31:4131 minutes, 41 secondsprogram, meg adott egy programnak egy bemenete, és el tudjuk-e dönteni arról a
+31:4831 minutes, 48 secondsprogramról, hogy az el fogja-e fogadni azt a bemenetet, vagy nem?
+31:5431 minutes, 54 secondsTehát tudunk-e írni olyan programot, amelyik bármely másik programról és bemenetről el tudja dönteni, hogy ezt el
+32:0132 minutes, 1 secondtudja-e fogadni, vagy nem tudnánk-e csinálni egy ilyen szuper algoritmust,
+32:0732 minutes, 7 secondsmert ezt a ebben a tuning nyelvezetben úgy tudnánk megfogalmazni, hogy
+32:1432 minutes, 14 secondseldönthető-e, hogy egy adott muring gép elfogad egy adott s szót.
+32:2232 minutes, 22 secondsAz univerzális nyelv az azon, hogyha precíz akarzek akarunk lenni, az azon
+32:3032 minutes, 30 secondsvevéss párokból áll, hogy m ez a VV ez egy tingép kód, hogy az M WV
+32:3832 minutes, 38 secondstingépre létezik, és S benne van az MVingép által
+32:4532 minutes, 45 secondselfordult nyelven. Tehát ez azon pároknak a halmaza, az MVV Turingép elfogadja
+32:5432 minutes, 54 secondsaz s az s szót.
+33:0033 minutesA kérdés az, hogy az univerzális nyelv az rekurzíve-e, rekurzíve felsorolható-e.
+33:0733 minutes, 7 secondsTehát tudunk-e írni olyan programot, hogy egy emberringé
+33:1433 minutes, 14 secondselfogad-e egy s szót ezt és ez minden tuning gépő
+33:2333 minutes, 23 secondsel tudná dönteni. Na hát első kérdésem, hogy az univerzális nyelv az rekzíve felsorolható-e?
+33:5233 minutes, 52 secondsHalló! Érthető-e, hogy mi az univerzális nyelv?
+33:5933 minutes, 59 secondsTehát az univerzális nyelv még egyszer az VV S stringekből áll, úgyhogy a VV az
+34:0634 minutes, 6 secondsegy M tuning gépet kódol el, és ez az MV tuning gép elfogadja az S szót.
+34:1534 minutes, 15 secondsTehát el tudjuk ez az univerzális nyelv, el tudjuk-e dönteni, hogy egy MVWV tuning elfogad-e egyes szót vagy nem?
+34:2734 minutes, 27 secondsEz az univerzális nyelv. Az a kérdésem, hogy ez a nyelv, ez rekzíve felsorolható-e vagy nem?
+34:3934 minutes, 39 secondsMit tippelnek? Mi a válasz? Halló?
+34:4534 minutes, 45 secondsHát, hogy nem, nem is rekíve felsorolható.
+34:5634 minutes, 56 secondsMiért gondolja azt, hogy nem rekuzdíve felsorolható,
+35:0835 minutes, 8 secondshogy esetleg tudná-e érvet mondani a erre nézve.
+35:2435 minutes, 24 secondsUgye hát az univerzális nyelv az igenis rekurzíve felsorolható,
+35:3235 minutes, 32 secondshiszen ugye a vevék kódból vis meg tudjuk nézni, hogy hogy működik az MWV Turing gép.
+35:4235 minutes, 42 secondsÉs hogyha az MVV Turing gépnek beadjuk az S szót, akkor vége, hogyha az S benne
+35:4935 minutes, 49 secondsvan az M veevi által felismert nyelvben, akkor az igenválaszt
+35:5735 minutes, 57 secondsazt véges időn belül megkapjuk, hiszen véges időn belül az S stringen, ha elfogadja, akkor az
+36:0636 minutes, 6 secondsMBV ringé megáll az sen és elfog fogadja. Na most a nem választ azt nem kapjuk meg
+36:1436 minutes, 14 secondsfeltétlenül. Tehát ugye az igen választ megkapjuk. Ebből következik, hogy az
+36:2036 minutes, 20 secondsuniverzális nyelv az az igenis rekurzív felsorolható.
+36:2636 minutes, 26 secondsA következő kérdés az az, hogy ez a nyelv rekurzíve-e, eldönthető-e ez a nyelv.
+36:3436 minutes, 34 secondsÉs erre nézve a válasz az, hogy hogy az EU nyelv az nem rekurzív.
+36:4336 minutes, 43 secondsEzt Turing bizonyította 1936-ban, és ezt nagyon egyszerű belátni.
+36:5836 minutes, 58 secondsTehát tegyük föl, hogy mi a bizonyítás.
+37:0237 minutes, 2 secondsTegyük föl, hogy el tudjuk dönteni bármely m vevturing gépről,
+37:1137 minutes, 11 secondshogy elfogadja-e az s stringet, vagy nem.
+37:1937 minutes, 19 secondsTehát tegyük föl, hogy van egy olyan gép, aminek a bemenete egy vevérés
+37:2537 minutes, 25 secondsstring, ami egy tingép kód, és egy s string, ami egy bemenet.
+37:3237 minutes, 32 secondsés el tudná dönteni azt, hogy az a VV által kódott Muring gép, az
+37:4037 minutes, 40 secondsMVV tuning gép elfogadja-e az S stringet, vagy nem?
+37:5037 minutes, 50 secondsTegyük föl, hogy hogy lenne ilyen tyuring gép.
+37:5537 minutes, 55 secondsHa létezne ilyen ting gép, legyen ez a legyen ez az tuning gép.
+38:0438 minutes, 4 secondsNa most akkor csináljuk egy kicsit módosítsunk az
+38:1238 minutes, 12 secondsenturing gépben, úgyhogy cserélj föl az elfogadó és az elutasító állapotokat.
+38:2438 minutes, 24 secondsÉs adjunk be neki, adjunk be neki egy vevé vev stringet,
+38:3338 minutes, 33 secondsahol a vevé egy ting gépnek a kódja.
+38:3838 minutes, 38 secondsHát ha ez az nvessző ting gép megáll és elfogadja, az mit jelent? az
+38:4538 minutes, 45 secondspont azt fogja jelenteni, hogy az M vevuring gép elutasítja a saját kódját.
+38:5538 minutes, 55 secondsViszont ha elutasítja, az azt jelenti, hogy az MV tingép
+39:0239 minutes, 2 secondsaz elfogadja a saját kódját. Tehát ha létezne olyan tuning gép, amelyik
+39:0939 minutes, 9 secondseldönti az univerzális nyelvet, akkor el tudnánk dönteni a diagonális problémát,
+39:1639 minutes, 16 secondsamiről láttuk, hogy még csak nem is rekurzíve felsorolható. Érthető-e ez a bizonyítás?
+39:2839 minutes, 28 secondsHalló?
+39:3139 minutes, 31 secondstulajdonképpen most itt bebizonyítottuk, tehát mi most a terv,
+39:3839 minutes, 38 secondsvagy mi most a a következő egy-két órának a menete. Beltuk egy
+39:4539 minutes, 45 secondsnyelvről, a diagonális nyelvről, hogy az nem rekurzíve felsorolható.
+39:5139 minutes, 51 secondsÉs most ennek segítségével, ugye ez egy elég nyakatekert probléma, ennek segítségével viszont egy csomó fontos
+40:0040 minuteslényeges problémáról fogjuk belátni, hogy azok sem eldönthetőek.
+40:0640 minutes, 6 secondsMi lesz ennek a menete? Hogyan fogjuk ezt belátni?
+40:1140 minutes, 11 secondsHát íme most az univerzális türingépől látjuk be, hogy az nem rekurzív, tehát nem eldönthető. Úgyhogy föltesszük, hogy
+40:1940 minutes, 19 secondsaz rekurzív, akkor viszont tehát eldönthető, akkor a diagonális nyelv is eldönthető lenne. Ezzel ellentmondással jutunk.
+40:3040 minutes, 30 secondsTehát ebből következik, hogy a hogy az elu, az univerzális nyelv az nem rekurzív. Tehát annak az eldöntése, hogy
+40:3740 minutes, 37 secondsegy muringét meg elfogad egyes stringet, az nem egy eldönthető programmal eldönthető kérdés.
+40:4740 minutes, 47 secondsIlyen módon most már két olyan problémánk is van, ami nem rekurzív.
+40:5240 minutes, 52 secondsÉs akkor ennek ezeknek segítségével most már tehát ugye egyre ilyen visszavezetéseket tudunk csinálni. Tehát
+41:0141 minutes, 1 secondhogyha fölmerül egy nyelv és fölmerül, hogy az esetleg nem rekurzív, akkor
+41:0941 minutes, 9 secondsa gondolat mehet az, hogy föltesszük, hogy az a nyelv rekurzi, és akkor belátjuk, hogy már egy bizonyítottan nem rekurzív nyelv is eldönthető lenne.
+41:2241 minutes, 22 secondsTehát ilyen módon jutunk ellentmondásra majd, és ilyen módon fogjuk tudni belátni, hogy hogy sok fontos
+41:3241 minutes, 32 secondsprobléma az az nem eldönthető. Érthető-e ez a gondolatmenet? Tehát mi az, amit most csinálunk?
+41:4241 minutes, 42 secondsHalló? Halló, halló?
+41:5141 minutes, 51 secondsHühüm.
+41:5341 minutes, 53 secondsNagyjából érthető. Jó, menjünk vissza még egyszer.
+41:5841 minutes, 58 secondsTehát ugye itt van egy tudjuk, hogy hogy mi a diagonális probléma. Mi a mi az
+42:0642 minutes, 6 secondserdély nyelv? Az Eldnyelv azon tyingépeknek a kódjaiból áll, amik
+42:1442 minutes, 14 secondselutasítják a saját kódjukat. Erről két sorban beláttuk, hogy ez a nyelv nem rekurzíve felsorolható.
+42:2342 minutes, 23 secondsMi az univerzális nyelv?
+42:2642 minutes, 26 secondsA diagonális nyelvre fogjuk belátni azt, visszavezetve fogjuk belátni azt, hogy az univerzális nyelv az nem rekurzív. Mi is az univerzális nyelv?
+42:3842 minutes, 38 secondsNem el. Az univerzális nyelv az az a VVS string párakból áll, ahol a VV1 tuning kód, az S az egy string, az egy bemenet.
+42:5142 minutes, 51 secondsTehát, hogy az MVing gép által elfogadott nyelven benne van-e az S,
+42:5942 minutes, 59 secondstehát olyan párokból áll, ahol az S string az benne van az MVV Turingé párttal elfordott nyelvben. Tehát
+43:0843 minutes, 8 secondstulajdonképpen amikor arról beszélünk, hogy el akarjuk dönteni az univerzális nyelvet, akkor arról beszélünk, hogy el
+43:1543 minutes, 15 secondstudjuk-e dönteni azt, hogy egy M vev tyingép elfogad-e egy s stringet.
+43:2543 minutes, 25 secondsÉs a válasz az, hogy ez ez a nyelv, az lu nyelv, az rekurzíve felsorolható. Miért?
+43:3543 minutes, 35 secondsMert az MVV Turing gép lépéseit ismerjük.
+43:3943 minutes, 39 secondsTehát akkor hogyha beadjuk ennek a programnak a ennek az MVV tingépnek az S stringet
+43:4943 minutes, 49 secondslépésről lépésre szimuláljuk, hogyha az MBV elfogadja az S stringet, akkor réges sok lépésben megáll és elfogadja. Tehát az igen választ meg fogjuk kapni.
+44:0244 minutes, 2 secondsA tétel az, hogy viszont az ámbár az univerzális nyelv az rekurzíve felsorolható,
+44:1044 minutes, 10 secondsde nem rekurzív, tehát a nem választ nem, tehát a nem választ nem tudjuk
+44:1644 minutes, 16 secondsmegkapni véges időnből. Nem tudjuk, nem tudunk olyan programot írni, amelyik
+44:2344 minutes, 23 secondseldöntené ezt a kérdést, és soha nem is fogunk tudni ilyen programot írni.
+44:3044 minutes, 30 secondsJó. És ezt hogyan látjuk be? Ezt Turing bizonyította a következő ezt a tételt.
+44:3644 minutes, 36 secondsTehát tegyük föl, hogy van olyan Nuring gép, aminek hogyha bemenetként beadok
+44:4344 minutes, 43 secondsegy vev vev meg egyes stringet, meg tudja
+44:5044 minutes, 50 secondsmondani, hogy az M veuringép elfogadja az S stringet.
+44:5744 minutes, 57 secondsTegyük föl, hogy létezik egy ilyen enturingé.
+45:0445 minutes, 4 secondsAz eldönti az azt jelenti, hogy hogy ugye a WV ugye beadtunk egy WV
+45:1345 minutes, 13 secondsting gép kódot, azaz az MWV ting gépet és egy s stringet bemenetként annak a ting gépnek, amely amellyel el
+45:2245 minutes, 22 secondsszeretnénk dönteni, hogy az MVV tuning gép elfogadja az S stringet.
+45:3145 minutes, 31 secondsAz mit jelent, hogy ez tehát az ellentmondás kedvéért föltettük, hogy ezt el tudja dönteni az enturing gép. Ez
+45:3745 minutes, 37 secondsazt jelenti, hogy hogyha az MVV turing gép az elfogadja az
+45:4645 minutes, 46 secondsST, akkor a tuning gépünk megáll és elfogadja VVS string párt.
+45:5745 minutes, 57 secondsHogyha az MV tuning gép nem fogadja el az S stringet,
+46:0446 minutes, 4 secondsakkor ez a tuning gép, amelyik ezt eldönti, akkor megáll a VV stringen, és ez VVS stringen, és elutasítja ezt.
+46:1746 minutes, 17 secondsTehát tegyük föl egy pillanatra, hogyha hogy lenne egy ilyen ting gépünk, amelyik mindig megáll és vagy meg
+46:2646 minutes, 26 secondselfogadja, vagy elutasítja a VVS string párt attól függően, hogy az MVV Turing
+46:3346 minutes, 33 secondsgép elfogadja-e az S stringet, vagy nem, akkor most legyen vev string egy ting gépnek a kódját. Akkor be. Na most igen.
+46:4746 minutes, 47 secondsTehát még egy pillanat. Itt megvan ez a gépünk, ami ezt eldönti. Tehát beadjuk egy m egy vevét és egy s adunk be neki.
+46:5746 minutes, 57 secondsElfogadja, hogyha az s az benne van az MVV Turingép által elfogadott nyelvben, és megáll és elutasítja, hogyha az S az
+47:0647 minutes, 6 secondsnincs benne az MVV által elfordadott nyelvben.
+47:1047 minutes, 10 secondsEz az enturing gép. Na most ebben az enturing gépben eszközöljünk annyi változást, hogy az elfogadó és az
+47:1847 minutes, 18 secondselutasító állapot cserélje föl.
+47:2447 minutes, 24 secondsNa most mi van akkor, hogyha ennek az nvessző tingépnek beadjuk a vev ve
+47:3347 minutes, 33 secondssorozatot, ahol a VV az a tuning gépnek a kó egy tingépnek a kódja.
+47:4147 minutes, 41 secondsUgye ezt akvesső tuning gép akkor megáll és elfogadja
+47:4947 minutes, 49 secondsezt a kódot, hogyha az mvessző tingép az elutasítja a saját vev kódját, beadva
+47:5947 minutes, 59 secondsneki bemenetként, az nvessző el fogja utasítani,
+48:0848 minutes, 8 secondsel fogja utasítani a neki kiadott VV stringet, ha az M vevingé
+48:1848 minutes, 18 secondselfogadja a saját vevékódját, ezzel mit tudtunk eldönteni? Ezzel el
+48:2648 minutes, 26 secondstudtuk dönteni a diagonális nyelvet. A diagonális nyelvről 10 percre be beláttuk, hogy nem, hogy rekurzív, de még csak nem is rekurzív felsorolható.
+48:3748 minutes, 37 secondsTehát ellentmondáshoz jutottunk. Érthető-e ez a bizonyítás?
+48:4348 minutes, 43 secondsNagyon fontos, hogy ezeket megértsék.
+48:4748 minutes, 47 secondsIlyen példákból vagy visszavezetésekből nagyon jó zárt hely és vizsgapéldákat
+48:5548 minutes, 55 secondslehet adni, és jól lemérhető, hogy valaki érti-e. Tehát ha nem értik ezt a az első ilyen visszavezetést, akkor kérem jelezzék vissza.
+49:0749 minutes, 7 secondsTehát érthető-e ez a gondolat, mert amit most próbáltam elmondani.
+49:1649 minutes, 16 secondsHalló, halló, halló, halló.
+49:3349 minutes, 33 secondsEgy visszajelzést szeretnék írni, mert nem látom önöket, tehát nem nem tudom fölmérni, hogy érthető-e az, amit elmondtam, vagy nem.
+49:4949 minutes, 49 secondsSzerintem nagyjából érthető.
+49:5149 minutes, 51 secondsNagyjából érthető. Nagyon szépen kérem mindenkitől, hogy hogy ezt gondolják át, mert elsőre egy kicsit szokatlanok ezek a gondolatmenetek.
+50:0250 minutes, 2 secondsDe ezeket meg kell tudni jól tanulni, jól kezelni. Jó, nézzünk egy másik problémát.
+50:1450 minutes, 14 secondsTehát akkor igen, most itt tartunk.
+50:1750 minutes, 17 secondsTehát vannak a rekurzíve felsorolható nyelvek, ezen belül a rekurzív nyelvek.
+50:2250 minutes, 22 secondsA diagonális nyelv még csak nem is rekurzív felsorolható.
+50:2750 minutes, 27 secondsAz univerzális nyelv az rekurzív felsorolható, de nem rekurzív. Tehát most már azért van egy arszenálunk. Most
+50:3450 minutes, 34 secondsmár két különböző nyelvre is rábizonyítottuk, hogy hogy nem eldönthetőek.
+50:4450 minutes, 44 secondsMi a megállási probléma?
+50:4750 minutes, 47 secondsEldönthető-e, hogy egy adott tyuringép megáll-e?
+50:5350 minutes, 53 secondsAz is lesz majd, hogy hogy egy minden bemenetten vagy lényegében a megállási problémát inkább
+51:0251 minutes, 2 secondsúgy szokták definiálni, hogy eldönthető-e az, hogy egy egy muring gép megáll-e egyes stringen.
+51:1451 minutes, 14 secondsTehát, hogy ugye egy fontos lenne, nagyon jó lenne, hogyha lenne egy olyan programunk, ami eldöntené egy másik
+51:2251 minutes, 22 secondsprogramról és egy bemenetről, hogy ez a program meg fog-e állni azon a bemeneten,
+51:2851 minutes, 28 secondsvagy egyáltalán eldönthető-e az a kérdés, hogy egy másik program az az
+51:3651 minutes, 36 secondsmegáll-e minden neveletre. Ez ugye két különböző probléma.
+51:4251 minutes, 42 secondsTehát jó lenne eldönteni, hogy van-e ciklus, van-e végtelen ciklus a programunkban. De elsőnek nézzük, hogy
+51:4951 minutes, 49 secondsmi is az a megállási probléma. Tehát a megállási probléma az az, hogy hogy el tudjuk-e dönteni
+51:5951 minutes, 59 secondsazt, hogy egy tuning megáll-e egyes bemenet.
+52:0452 minutes, 4 secondsTehát hogyan tudjuk definiálni a megállási nyelvet. A megállási nyelv az
+52:0952 minutes, 9 secondsa azon VVS párokból, ahol a az MVV az egy tyingv, tehát a VV
+52:2052 minutes, 20 secondsaz az MVV Turing gépnek a programja.
+52:2752 minutes, 27 secondsÉs az S az egy bemeneti string. És az a kérdés, hogy az MVV az S bemenettel
+52:3552 minutes, 35 secondselindítva megáll-e vagy nem. Tehát a az LH nyelv azon VVS string párokból áll,
+52:4452 minutes, 44 secondsahol az MVV létezik, és az S bemenettel elindítva megáll. Azt állítom, hogy na
+52:5152 minutes, 51 secondselőször is ez a nyelv, ez rekurzíve felsorolható-e.
+52:5852 minutes, 58 secondsMi a válasz erre?
+53:0453 minutes, 4 secondsA válasz az, hogy igen. Miért? Hát azért, mert indítsuk el az MVV-t az
+53:1053 minutes, 10 secondssingen. Ha ez véges időn belül, ha ez egyáltalán meg fog állni az, akkor véges időn belül megáll. Tehát az igen
+53:2053 minutes, 20 secondsválaszt meg tudjuk kapni véges időn belül. Ez a nyelv, az LH nyelv az rekurzíve felsorolható.
+53:3053 minutes, 30 secondsAzt állítom viszont, hogy ez a nyelv, ez nem rekurzív.
+53:3853 minutes, 38 secondsHogy tudnám ezt belátni?
+53:4153 minutes, 41 secondsHogy tudnám ezt belátni, hogy ez a nyelv, ez nem is, ez nem rekurzív.
+53:4653 minutes, 46 secondsVissza fogom vezetni az univerzális nyelvre. Tehát fölteszem egy pillanatra,
+53:5453 minutes, 54 secondshogy el tudnám dönteni, hogy egy adott muring gép megáll-e egyes stringen.
+54:0154 minutes, 1 secondAnnak segítségével én el tudnám dönteni azt is, hogyha egy adott ting gép elfogad-e egyes stringet
+54:0954 minutes, 9 secondsvagy nem. Tehát itt fontos, hogy jól lássák. Nekem van egy programom, ami
+54:1754 minutes, 17 secondseldönti, tehát fölteszem azt, hogy nekem van egy olyan programom,
+54:2354 minutes, 23 secondsami eldönti, hogy egy m egy egy másik program megáll-e egy s stringen.
+54:3254 minutes, 32 secondsÖnöknek van egy problémájuk, és azt mondják, hogy akkor önök ön döntse el, hogy önök adnak nekem egy tuning gépet,
+54:4154 minutes, 41 secondsés döntsem el ennek segítségével, hogy hogy az a program elfogad-e egyes stringet. Nekem ilyen programom nincs.
+54:5254 minutes, 52 secondsÉn csak a megállási problémát tudom eldönteni. Ennek ellenére azért mégis
+55:0155 minutes, 1 secondföltéve, hogy van egy olyan programom, hogy amelyik eldönti a megállási problémát, el fogom tudni dönteni azt
+55:0955 minutes, 9 secondsis, hogy egy M Turing gép vagy egy M program elfogad egyes stringet vagy nem.
+55:1455 minutes, 14 secondsHát hogyan? Hogyan? Tegyük föl, hogy el tudom dönteni a megállási problémát.
+55:2155 minutes, 21 secondsTehát nekem van egy olyan programom, ami eldönti egy egy ting gépről és egy és
+55:2855 minutes, 28 secondsegy bemenetről, hogy az Muring gép az megáll-e az Sbemet meg vagy nem. Azt
+55:3655 minutes, 36 secondsállítom, hogy ennek segítségével el fogom dön el tudom dönteni azt is, hogy egy adott Mturing gép elfogad egyes stringet vagy nem. Hogyan?
+55:4755 minutes, 47 secondsÖnök adnak nekem egy muring gépet és egy sevenetet. És azt szeretnék tudni, hogy
+55:5355 minutes, 53 secondsaz önök által adott mting gép elfogadja az s stringet, vagy nem.
+56:0156 minutes, 1 secondHát én beadom az én programomnak az önök muring gépét és az S stringet. Meg fogom kérdezni, hogy megáll-e ez a tuning gép az s stringen, vagy nem.
+56:1356 minutes, 13 secondsHa válasz az lesz, hogy nem nem áll meg az Mcuring gép az S stringen, mit fogok önöknek mondani,
+56:2156 minutes, 21 secondshogy az önök programja elfogadja-e az F stringet, vagy nem?
+56:3056 minutes, 30 secondsHát nahogy azt mondom, hogy nem. Hát ugye ahhoz, hogy egy tuning gép elfogadjon egy s stringet, ahhoz meg
+56:3856 minutes, 38 secondskell, hogy álljon és elfogadó állapotba kerüljön ezen az stringen. Tehát hogyha az én programom azt fogja mondani, hogy
+56:4756 minutes, 47 secondsaz önök által adott muring gép nem áll meg az s stringen, azt fog válaszolni, hogy az önök tuning gépe biztos, hogy nem fogadja el az stringet.
+56:5856 minutes, 58 secondsJó, tehát ezen az ágon készen vagyunk.
+57:0257 minutes, 2 secondsMásik lehetőség, azt kapom, amikor beadom az én ting
+57:0957 minutes, 9 secondsgépemnek az önök ting gépét és az s bemeneti stringet, hogy az önök tingépe
+57:1657 minutes, 16 secondsmegáll az s stringen. Hát akkor mit fogok csinálni? Hát ha már biztosan tudom, hogy megáll, akkor az önök ting gépét lefuttatom az s stringen.
+57:2857 minutes, 28 secondsHát ha már biztosan tudom, hogy megáll.
+57:3157 minutes, 31 secondsakkor az a program futni fog az s stringen, és vagy elfogadó, vagy
+57:3857 minutes, 38 secondselutasító állapotba fog kerülni, és ennek megfelelően fogok válaszolni arra a kérdésre,
+57:4657 minutes, 46 secondshogy elfogadja-e az önök programja, vagy nem az s stringet.
+57:5257 minutes, 52 secondsÉrthető-e ez a gondolatmenet? Halló?
+58:1058 minutes, 10 secondsHalló, halló.
+58:1958 minutes, 19 secondsHalló. Egy visszajelzést kérek, hogy érthető-e vagy nem. Érthető.
+58:2858 minutes, 28 secondsÉrthető. Nagyon jó. Tehát akkor a megállási probléma sem egyhető probléma.
+58:3958 minutes, 39 secondsAztán itt még sok problémáról be lehet ugyanúgy állni. Az a kérdés, hogy mondjuk megáll-e egy gép az üres
+58:4758 minutes, 47 secondsinputra, eldönthető-e, hogy egy adott temptur tuning gép megáll-e az üres bemenetre?
+58:5558 minutes, 55 secondsEz Churchnek egy tétele, hogy tehát az LE EY nyelv azon VV tyingép kódokból
+59:0459 minutes, 4 secondsáll, amelyekre MV létezik, és az üres bemenettel elindítva megáll.
+59:1259 minutes, 12 secondsAzt állítjuk, hogy hogy ez a nyelv ez rekzíve felsorolható, de nem rekurzív.
+59:2259 minutes, 22 secondsHát rekurzíve felsorolható. Miért?
+59:2659 minutes, 26 secondsHát indítsuk el az MBV Turing gépet, az S stringet. Ha megáll, akkor véges időn belül megáll.
+59:3559 minutes, 35 secondsTehát véges időn megkapjuk az igen választ.
+59:3959 minutes, 39 secondsAz, hogy az, hogy ez nem
+59:4659 minutes, 46 secondsrekurzív, azt pedig úgy lehet belátni, hogy hogy hát egyszerűen
+59:5459 minutes, 54 secondstehát hogyha én kapok egy ilyen M, tegyük föl, hogy nekem van egy olyan programom, ami megállapítja, hogy egy muring gép
+1:00:021 hour, 2 secondsmegáll-e egy az üres stringel, akkor azt is el tudnám dönteni, hogy egy Muring gép megáll egy S stringen, vagy nem?
+1:00:111 hour, 11 secondsHogyan? Hát önök adnak nekem egy ting gépet és egy S stringet, és megkérdezik, hogy megáll-e az Mturing
+1:00:191 hour, 19 secondsgép az S stringen, vagy nem. Nekem van egy olyan programom, ami el tudja dönteni, hogy Muring gép megáll-e az
+1:00:261 hour, 26 secondsüres stringen. Tehát én nem adhatok be MS string párt, csak azt uring gépenek a kódját adhatom be az én programomnak.
+1:00:361 hour, 36 secondsHát akkor egy kicsit át belenyúlnék az önök tingépébe, tehát csinálnék egy olyan nem vessző tuning
+1:00:451 hour, 45 secondsgépet, ami első lépésként felírja a szalagra az s stringet. Tehát
+1:00:531 hour, 53 secondsaz üres inputon elindítja, elindítva felírja az s stringet, és utána úgy működik, ahogy azt uringé.
+1:01:061 hour, 1 minute, 6 secondsHát ez a tyingép pontosan azt csinálja az üres stringen, mint az Muring gép az S stringen. Ezről az én programom el
+1:01:141 hour, 1 minute, 14 secondstudná dönteni, hogy megá, hogy megáll-e vagy nem. Viszont tudjunk, hogy a hting az probléma az nem eldönthető.
+1:01:231 hour, 1 minute, 23 secondsAz emailt beláttuk. Ellentmondás.
+1:01:271 hour, 1 minute, 27 secondsJó, tehát ezek a most már itt tartunk, ugye? Tehát kezdtük azzal, hogy beláttuk, bocsánat a
+1:01:361 hour, 1 minute, 36 secondsdiagonális nyelvről, hogy ez nem is rekurzíve felsorolható.
+1:01:411 hour, 1 minute, 41 secondsUtána beláttuk az univerzális nyelvről, hogy rekurzív, de nem rekurzíve felsorolható a háling, a megállási
+1:01:501 hour, 1 minute, 50 secondsproblémáról, illetve az üres inputon való megállásról, hogy az ez azok mind rekurzív felsorolhatóak, de nem
+1:01:581 hour, 1 minute, 58 secondsrekurzívak, tehát ezek egyike sem eldönthető probléma.
+1:02:041 hour, 2 minutes, 4 secondsJó, köszönöm szépen. Nagyjából ezt akartam elmondani az előadáson.
 
-
-https://www.youtube.com/watch?v=XEBOPTj_-eM
+https://www.youtube.com/watch?v=vKh94OEZ2gI

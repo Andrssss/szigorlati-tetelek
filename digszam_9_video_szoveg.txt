@@ -1,3 +1,301 @@
+Ugye egy pillanatra rád fogjuk ismételni a függvények aszimptotikus összehasonlítását.
+0:3939 secondsUtána vesszük a tár az algoritmusok idő, illetve tárigényének a precíz meghatározását.
+0:4949 secondsA nagyon fontos p osztályt, ez egy bonyolultsági osztályt, illetve a
+0:5656 secondstáridőtételt, amelyik tulajdonképpen kapcsolatot teremt az adott idő,
+1:051 minute, 5 secondsidőben, illetve adott tárban megoldható problémák között.
+1:141 minute, 14 secondsMikor mondjuk azt, hogy egy algoritmus jó vagy rossz? Tehát hogyan értelmezzük azt, hogy mennyire hatékony egy algoritmus?
+1:221 minute, 22 secondsUgye hát hogy hasonlítsunk össze egyáltalán két
+1:311 minute, 31 secondsalgoritmust. Tehát elképzelhető, hogy az egyik inputon az algoritmus fut jobban, a másikon ez fut jobban. Mégis mi lenne
+1:391 minute, 39 secondsegy olyan egy olyan mérce, amivel össze tudunk hasonlítani két algoritmust?
+1:521 minute, 52 secondsEgyáltalán milyen fajta algoritmusok vannak? Hát ugye vannak problémák. Hát vannak eldönthető eldöntendő kérdések.
+2:002 minutesEz a nyelvbetartozás primám egy adott szám, vagy
+2:062 minutes, 6 secondsvagy relatív prímekét szám, vagy van-e Hamilton kör egy gráfban. Ez egy ez egy eldöntendő kérdés.
+2:222 minutes, 22 secondsUgye vannak hozzárendelési kérdések, tehát legnagyobb közös osztó meghatározása egy listának a rendezése,
+2:312 minutes, 31 secondsvalamilyen mondjuk növekvő rendezése.
+2:362 minutes, 36 secondsTaláljunk egy konkrét Hamilton kört egy gráfban, tehát keressünk meg egy Hamilton kört. Ezek függvényszámítások,
+2:442 minutes, 44 secondsilletve vannak optimalizálási problémák, például az utazóügynök probléma, ugye hát adott egy
+2:512 minutes, 51 secondsadottak van egy térkép, amiben vannak városok, 100 város, és mindegyik várospárra van
+3:013 minutes, 1 secondegy költség, hogy mennyibe kerül innen-oda eljutni. egy az utazó
+3:083 minutes, 8 secondsügynöknek el kell indulnia valahonnan, be kell járnia az összes várost és vissza kell térni az eredeti helyre. A
+3:173 minutes, 17 secondskérdés az, hogy hogy mi az a minimális költség, ahogy ezt meg lehet tenni.
+3:263 minutes, 26 secondsNa hát az összes ilyen problématípusra valahogy szeretnénk tudni, hogy mi is az, hogy hogy hatékony egy algoritmus. Tehát
+3:353 minutes, 35 secondsvalahogy valahogy össze kellene, hogy tudnunk össze tudjuk hasonlítani két darab algoritmust.
+3:453 minutes, 45 secondsTöbb szempont van. Az egyik szempont az időigény. Ez talán a legfontosabb szempont.
+3:533 minutes, 53 secondsA másik az, hogy tárigényszerint hasonlítjuk össze az algoritmust. Tehát hány lépésben tudjuk megoldani a
+4:004 minutesproblémát, illetve milyen társ szükséges ahhoz, hogy megoldjuk azt a problémát.
+4:084 minutes, 8 secondsMinek a függvényében nézzük? mindig az input hosszának a függvénybében, tehát a feladat nagyságának,
+4:164 minutes, 16 secondsazaz a megadás hosszának a függvényében és a nagy feladatokra koncentrálva.
+4:254 minutes, 25 secondsTehát ugye nem mindegy, hogy hogy két darab 1 bites számot kell-e összeszoroznunk, vagy két darab 10
+4:324 minutes, 32 secondsmilliárd bites számot kell összeszoroznunk, ugye?
+4:374 minutes, 37 secondsTehát hogyha megadunk két egy bites számot, akkor az input hossza az kettő.
+4:454 minutes, 45 secondsMegadunk két 1 milliárd hosszú 1 milliárd bites számot, akkor 2
+4:524 minutes, 52 secondsmilliárd a az inputnak a hossza. Tehát ezeknek a függvényében fogjuk nézni, hogy milyen erőforrásokat használunk.
+5:065 minutes, 6 secondsUgye említettem azt, hogy haott két algoritmust és össze szeretnénk hasonlítani, tehát most már
+5:145 minutes, 14 secondsugye hosszú inputokra nézve, akkor
+5:225 minutes, 22 secondselkér tehát különböző szempontrendszer lehetséges. Az egyik az, hogy hogy ugye elképzelhető, hogy az egyik algoritmus
+5:305 minutes, 30 secondsaz egyik inputon fut jobban, mint a másik és fordítva.
+5:365 minutes, 36 secondsÁltalában a a bevett elemzési mód az a worst case
+5:435 minutes, 43 secondsszcenári, tehát a legrosszabb esetet tekintjük. Tehát megnézzük azt, hogyha
+5:495 minutes, 49 secondsadott egy egy A1 meg egy A2 algoritmust, ugye, hogyha beadunk, hogyha binárisak az inputok,
+5:585 minutes, 58 secondsakkor az n hosszú inputokra nézve ugye van kettő, az nik darab n hosszú input.
+6:056 minutes, 5 secondsTehát megnézzük, hogy ezek közül mind a két algoritmus
+6:136 minutes, 13 secondsmelyik n hosszú inputra számol a legtovább, tehát tesz meg a
+6:206 minutes, 20 secondslegtöbb lépést, és ezek alapján osztályozzuk az algoritmusokat. Tehát a
+6:266 minutes, 26 secondslegrosszabb esetet nézve ugye azonos fajta tuning géppel
+6:366 minutes, 36 secondsés be és kimeneti reprezentáció. Az, hogy reprezentáljuk a a bemenetet, ugye az is egy fontos szempont. Binárisan,
+6:446 minutes, 44 secondsunárisan és így tovább. Jó, tehát mondok egy példát.
+6:526 minutes, 52 secondsUgye tegyük fel, hogy egy gép, nem tudom köz 1000 művelet perzkundum sebességű
+7:017 minutes, 1 secondA és B hasonlít algoritmust hasonlítjuk össze, akkor az egy perc alatt, hogyha az
+7:097 minutes, 9 secondsidőigén 3000 x n az ötödiken, akkor az a algoritmus
+7:157 minutes, 15 secondsegy perc alatt 114 hosszú inputokat képes kezelni. Egy óra alatt pedig 260 hosszú inputokat.
+7:277 minutes, 27 secondsViszont hogyha a futási ideje az kettő azen, akkor egy perc alatt 45
+7:357 minutes, 35 secondshosszú inputokat, egy óra alatt pedig mindössze 52 hosszú inputokat tud kezelni. Tehát látjuk, hogy itt a
+7:427 minutes, 42 secondsnövekedés az az sokkal kisebb. Tehát valamilyen módon azért egy exponenciálisan működő algoritmus az
+7:507 minutes, 50 secondssokkal rosszabb, mint egy mint egy enn az ötödiken időben, 3000 enn az ötödiken időben lefutó algoritmus.
+8:048 minutes, 4 secondsMég az év elején vettük azt, hogyha FN és GN az két sorozat,
+8:138 minutes, 13 secondsakkor azt mondjuk, hogy az FN az nagyordó GN, hogyha az hogyha van olyan
+8:208 minutes, 20 secondsC és N0 pozitív egészek, hogyha Nob 0, akkor az FNS kisebb, mint C x gn. Tehát
+8:278 minutes, 27 secondsekkor mondjuk azt, hogy a GN asszimptotikus felső korlátja az FN-nek.
+8:338 minutes, 33 secondsPéldául az FN az 6n kö + 3000 x n + 10%-on,
+8:428 minutes, 42 secondsaz ugye nagyordó enn a köbön. Miért?
+8:468 minutes, 46 secondsMert hogyha mondjuk beszorozzuk ezt a az n a köböt héttel, tehát itt lenne egy
+8:538 minutes, 53 secondshéten köbünk, tehát ez a hét a C-t azt vegyük hétnek, akkor nagy elég nagy
+9:009 minutesennekre a héten köb a köbön az nagyobb lenne, mint a 6n köb plusz 3000 x n + 10 a szon.
+9:109 minutes, 10 secondsUgye tehát következik, hogy tehát hogyha a polinomokat hasonlóítunk össze, akkor az asszimptotikus viselkedés
+9:179 minutes, 17 secondsszempontjából mindig csak a legnagyobb kitevő tag.
+9:259 minutes, 25 secondsUgye, hogyha van egy olyan kifüggvényk, hogy n a száon plusz 2 az niken, az nagyordó kettő az niken, ugye? Mert
+9:349 minutes, 34 secondshogyha kettő az nikentt beszorzunk kettővel, akkor elég nagy ennekre. A kettő az neden az biztos nagyobb, mint en a
+9:429 minutes, 42 secondsszáadikon, hiszen az exponenciális függvény az gyorsan van nő, mint a mint bármelyik polinóm.
+9:499 minutes, 49 secondsTehát ez ugye tehát n a száon plus 2 az nen az egyben az nagy ordó kett az nen
+9:589 minutes, 58 secondsa log n + n közül az növekszik gyorsabban, ezért ez ordó nagy n és a
+10:0510 minutes, 5 secondslog n plusz kettesab logaritmus n + 3-as logaritmus n-nek a aszimptotikus felső
+10:1310 minutes, 13 secondskorlátja log n bármely bármilyen logaritmus alappal az igazából nem számít, mert mert átírni a logaritmust
+10:2210 minutes, 22 secondsegy másik alapra, csak egy konstanssal való szorzás.
+10:2810 minutes, 28 secondsIgen. Na, akkor azt mondjuk, hogy egy adott Muring gép esetén legyen Tmenn
+10:3710 minutes, 37 secondsaz M maximális lépés számát az n hosszúságú bemeneteken.
+10:4310 minutes, 43 secondsTehát ugye n hosszú bemenet közül van kettő azken különböző, hogyha bináris.
+10:5010 minutes, 50 secondsEzek közül a leghosszabb maximális lépésszámot nézzük. és SMen jelöli az M
+10:5810 minutes, 58 secondsáltal maximálisan elolvasott munkaszalagjel számát az Nosszúságú bemenetek esetén. Tehát minden egyes
+11:0611 minutes, 6 secondshosszú bemenetre megnézzük, hogy mennyi ideig mennyit lép a tuning gép, illetve hány munkacellát használ el. Ezek a TMN,
+11:1511 minutes, 15 secondsilletve az SMN függvények.
+11:2311 minutes, 23 secondsUgye ha M nem áll meg valamely hely n hosszúbb emenetre, akkor Tmenn végtelen is, egyben akkor SM-t is végtelennek tekintjük.
+11:3711 minutes, 37 secondsAzt mondjuk, tehát legyen t egy olyan függvény, amelyik amelyikre tn nagyobb = minden
+11:4611 minutes, 46 secondsn-re. Azt mondjuk, hogy az Muring gép TN időkorlátos, ha az N hosszú bemenetek esetén
+11:5411 minutes, 54 secondslegfeljebb TM lépést tesz meg, azaz TMN kisebb egyenlő, mint TM. Ez egy nagyon fontos definíció.
+12:0312 minutes, 3 secondsÉrtjük-e azt ezt a definíciót? Tehát még egyszer vesszük az összesen hosszú bemenetet, és
+12:1112 minutes, 11 secondsazt mondjuk, hogy hogy ezek maximuma, hogy hány lépést tesz meg az n hosszú
+12:1812 minutes, 18 secondsbemeneteken. Ezeknek a maximum a TMN. És azt mondjuk, hogy egy tuning TN időkorlátos, hogyha a TMN az kisebb
+12:2612 minutes, 26 secondsegyen mint TN minden mindenre.
+12:3312 minutes, 33 secondsItt van egy ilyen feltétel, hogy a TN az legalább N. Vajon miért van ez a feltétel?
+12:4412 minutes, 44 secondsHát a ugye a ha az input hossza el, akkor a tuning gépnek legyen legalább
+12:5112 minutes, 51 secondsideje elolvasni az inputot. Tehát ezért szoktuk ezt a feltevést föl tenni, hogy a TN az legyen legalábben.
+13:0313 minutes, 3 secondsÉs most egy nagyon fontos fogalma a time az egy problémaosztály.
+13:0913 minutes, 9 secondsAz azon nyelveknek az osztálya, hogy az el nyelv felismerhető ordót ilyen időkorlátos tűringéppel.
+13:1913 minutes, 19 secondsVilágosak-e eddig ezek a fogalmak? Ezek nagyon hosszú nagyon fontos fogalmak.
+13:2613 minutes, 26 secondsHalló?
+13:2813 minutes, 28 secondsEgy igen nemet kérek, hogy el kell-e mondanom még egyszer, mert ezt nagyon jól kell érteni.
+13:4013 minutes, 40 secondsSzerintem világos. Szuper. Nagyon jó.
+13:4513 minutes, 45 secondshasonló módon legyen azt majd látni fogjuk az sen egy
+13:5313 minutes, 53 secondslegalább logen nagyságrendű függvény azt mondjuk hogy egy muring gép s tárkorlátos
+14:0014 minutesha mindenen mindenen hosszú inputra legfeljebb esemdarab cellát használunk
+14:0714 minutes, 7 secondsföl a munkaszalagal az az SM az kisebb egyenlő mint snó
+14:1314 minutes, 13 secondstehát ez Egy mi a spaceen? A spaceesen azon nyelveknek az osztálya, amik
+14:2114 minutes, 21 secondsfelismerhetők ordóesen tárkorlátos tuningépekkel.
+14:3314 minutes, 33 secondsMost jön a híres p osztály.
+14:3514 minutes, 35 secondsUgye a Time N az a lineáris időben felismerhető nyelvek osztálya. A Time Négyzet
+14:4314 minutes, 43 secondsaz a négyzetes időben felismerhető nyelveknek az osztálya. Mi a pén? A híres nevezetes P nyelvosztály.
+14:5114 minutes, 51 secondsAz unió ky = 1-re time n a k adikon a polinom időben egy szalagos tuningéppel eldönthető nyelveknek az osztálya.
+15:0415 minutes, 4 secondsJó, tehát ez egy ez egy nagyon fontos fontos nyelvosztály.
+15:1515 minutes, 15 secondsElőször is ugye valamely az alakfal ekvivalent speciális tuning gép modellt használva,
+15:2415 minutes, 24 secondsha az polinom időben szimulálható alap tuning géppel, akkor p invariáns arra nézve, hogy az alap vagy speciális
+15:3315 minutes, 33 secondstuning gépet használjuk számítási modellként. Igen.
+15:4115 minutes, 41 secondsKettes megjegyzés. P a praktikusan számítógéppel megoldható problémáknak
+15:4715 minutes, 47 secondsfelel meg. Általában találunk a pébeli problémákra a gyors megoldást.
+15:5515 minutes, 55 secondsHát egyszerre tehát valahogy ugye azt hinni az ember,
+16:0416 minutes, 4 secondshogyha egy problémára van egy olyan algoritmusunk, ami en a 200-on időben lefut,
+16:1216 minutes, 12 secondsaz az nem nagyon nem nagyon praktikus.
+16:1816 minutes, 18 secondsmégis vagy a P-ről azt
+16:2516 minutes, 25 secondsazt azt mondanánk, vagy az a az a az az általánosan
+16:3416 minutes, 34 secondstehát mégis valahogy az igaz, hogy hogy általában találunk pébeli meg problémákra gyors megoldást.
+16:4316 minutes, 43 secondsSzóval Lovász László mondta azt egyszer, hogy hogy valahogyha van egy Pbeli megoldás, akkor arra találunk egy olyan
+16:5316 minutes, 53 secondsmegoldást, aminek a hatványkitevője nem olyan óriási.
+16:5916 minutes, 59 secondsÉs erre egy nagyon szép példa, egy ilyen ilyen térfogadt számítási
+17:0617 minutes, 6 secondsalgoritmust, ahol elindultak enn a 27-en nagyságrendről, és és most már lenne a
+17:1417 minutes, 14 secondsnégyzetes vagy köbösnél tartnak, most már pontosan nem emlékszem, de hogy valahogy azért a P az valóban a
+17:2217 minutes, 22 secondspraktikusan számítógéppen megoldható problémáknak felel meg.
+17:2817 minutes, 28 secondsPéldák P-beli problémákra.
+17:3217 minutes, 32 secondsEgy grábban van irány, van-e irányított út S-ből T-be?
+17:3917 minutes, 39 secondsKét szám az relatív príme-e, vagy nem?
+17:4417 minutes, 44 secondsGráf csúcsai, hogy kiszínezhetők-e két színnel, vagy ezzel ekvivalens módon az, hogy egy gráf az páros-e vagy nem. Van-e egy gráfbaner kör?
+17:5617 minutes, 56 secondsannak az eldöntése, hogy egy gráf, hogy hogyha adok önöknek egy 1000
+18:0418 minutes, 4 secondsjegyű számot, és csak azt kérdezem, hogy hogy ez a szám az primá-e vagy nem, jó sokáig
+18:1318 minutes, 13 secondsnyitott volt, hogy ezt el tudjuk-e dönteni polinomidőben, vagy nem, nagyjából 20 éve született meg az az eredménye egy számra eldönthető
+18:2318 minutes, 23 secondsvillámgyorsan, hogy a sprzá vagy nem. Na most ha kiderülne arról a számról, hogy ez nem prímszám, akkor viszont nem
+18:2918 minutes, 29 secondstudjuk vilámyorsan a printénhez egyelőre hála Istennek, vagy vagy vagy nem.
+18:4018 minutes, 40 secondsDe egyelőre nem tudjuk printzőkre bontani. Tehát ha kiderül egy szám egy nagyon nagy számról, hogy hogy nem
+18:4818 minutes, 48 secondsprimám, akkor még attól nem tudjuk primtényezőkre bontani, hogy tudjuk, hogy ő nem prim. Ezen múlik
+18:5718 minutes, 57 secondsegyébként a a leginkább használatos, nyilvános kulcsú titkosítás a Simódszer, az RSA kód.
+19:1019 minutes, 10 secondsPéldák mindig nem pébeli problémákra, hogy grábban van-e Hamilton kör, vagy kiszínhetők-e a csúcsai három színnel.
+19:2019 minutes, 20 secondsItt van egyszerű állítás a pztály. Ha egy nyelv n logennél rövidebb idővel nem ismerhető föl, akkor L az benne az nincs benne a P-ben.
+19:3119 minutes, 31 secondsMiért? Hát itt a hatványkitevő az a végtelenhez tart, ugye?
+19:3819 minutes, 38 secondsEgy L- nyelv akkor van benne a P-ben, hogyha valamelyik konstansa benne van az N a n a cediken.
+19:4719 minutes, 47 secondsTehát a tehát valamely tehát itt akkor akkor valamely konstansra enn a Cikennél
+19:5419 minutes, 54 secondsrövidebb időben kell, hogy felismerhető legyen.
+20:0220 minutes, 2 secondsNa most említettem, hogy azért itt vigyázni kell egy picit a amikor nézzük az időt és a tárat, hogy hogy milyen
+20:1020 minutes, 10 secondstyingép variációt használunk. Ehhez érdemes tudni a következő tételt,
+20:1920 minutes, 19 secondshogy mennyit segít, vagy mennyi mennyit.
+20:2520 minutes, 25 secondsTehát az, hogy kszallagot használtunk egy szallag helyett, az mennyit segít?
+20:3220 minutes, 32 secondsIgazából nagyon sokat nem.
+20:3520 minutes, 35 secondsTehát a tétel a következő, hogy egy NK szallagos tyingéphez mindig van olyan M tyingép, amelyik egyszallagos,
+20:4420 minutes, 44 secondsés a futási ideje legfeljebb a k szallagos csuringé futásidejének a négyzete.
+20:5320 minutes, 53 secondsTehát négyzetes időben, vagy kétszer négyzetes időben tudjuk szimulálni egy szallagal egy akárhány szallagos, 1
+21:0221 minutes, 2 secondsmillió szallagos tingépnek a működését, és a társ növekszik nagyon, tehát nem segít nagyon sokat a k darab szallag.
+21:1521 minutes, 15 secondsTehát bármelyik k szallagos tyingépet tudunk szimulálni egy szallagossal.
+21:2321 minutes, 23 secondsplusz n tárban, ugye? Tehát ez sem olyan tragikus veszteség.
+21:3221 minutes, 32 secondsezen kívül azt is érdemes tudni, viszont hát egy picit azért tud segíteni mégis a
+21:4221 minutes, 42 secondsa több szalag, de de mondom, hogy hogy nem nem igazán jelentősen.
+21:4721 minutes, 47 secondsTehát hogyha a tyingépük az lineáris időkorlátos,
+21:5621 minutes, 56 secondsakkor több szallagal az időben a liváris konstanst egy
+22:0522 minutes, 5 secondsközelébe tudjuk tolni. Tehát hogyha itt itt 1 millió n időben 1 milliósz n vagy vagy 100000 xzer n időben fut leuring
+22:1522 minutes, 15 secondsgép, akkor több szalag segítségével 1 + yz n idő tudunk olyat konstruálni, hogy
+22:2422 minutes, 24 secondsamelyek 1 + y n x 1 + y időben lefutnak, illetve hogyha szuperlineáris,
+22:3322 minutes, 33 secondstehát hogyha tn/n az a végtelenhez tart időben futatú ingépünk, akkor
+22:4122 minutes, 41 secondstöbb szalaggal tehát hogyha a futásidőt
+22:4922 minutes, 49 secondsfelezni szeretnénk, akkor több szallaggal meg tudjuk felezni vagy needelni és így tovább.
+22:5622 minutes, 56 secondsJó, tehát ezeket érdemes tudni, de tulajdonképpen a fenti tétel
+23:0323 minutes, 3 secondsmagyarázza azt, hogy miért tekintünk el a konstans szorzótól az időigénydefiniálásakor.
+23:1323 minutes, 13 secondsJó, tehát akkor most láttuk a látjuk azt, hogy mi az, hogy időkorlát és mi az, hogy tárkorlát.
+23:2523 minutes, 25 secondshogyha valamit meg tudunk oldani egy
+23:3123 minutes, 31 secondsSN tárban, ugye, tehát akkor azt meg tudjuk oldani SN időben is. Miért? Ezt most kérdezzem.
+23:4523 minutes, 45 secondsTehát vajon miért igaz az, hogy ha meg tudunk oldani egy problémát egy en tárkorlátos tyingé?
+23:5523 minutes, 55 secondsakkor azt meg tudjuk oldani egy esen időkorlátos tuning géppel is.
+24:0524 minutes, 5 secondsTehát hogyha meg tudunk oldani egy problémát négyzetes tárban, miért igaz az, hogy meg tudunk oldani
+24:1324 minutes, 13 secondsnégyzetes meg tudjuk oldani négyzetes időben is a problémát.
+24:3724 minutes, 37 secondsilletve elnézést, lehet, hogy most Ford még egyszer, mert lehet, hogy rosszul mondtam. Tehát, hogyha egy problémát meg
+24:4424 minutes, 44 secondstudunk oldani TN időben, akkor meg tudjuk oldani TN tárban. Ez miért igaz?
+24:5224 minutes, 52 secondsTehát a kérdés még egyszer, most már helyesen remélem, hogy így mondtam az előbb is. Ha egy probléma tn időben
+25:0025 minutesmegoldható, akkor megoldható TN tárban.
+25:0625 minutes, 6 secondsMiért igaz? Erre van egy egymondatos válasz.
+25:1825 minutes, 18 secondsHa megoldható valami négyzetes időben, akkor megoldható valami négyzetes tárban. Hát nincs is időnk.
+25:2725 minutes, 27 secondsTehát ugye, hogyha hogyha tn ideig fut a tyingépünk, akkor legfeljebb TN cellába
+25:3425 minutes, 34 secondstudunk írni valamit, ugye? Tehát hogyha valami t időben megoldható,
+25:4225 minutes, 42 secondsakkor tn tárban is, hiszen nem futburing gépünk, tehát nincs időnk több tárat teleírni.
+25:5025 minutes, 50 secondsA kérdés az hordítva igaz, tehát hogyha valami négyzetes időben megoldható az input hosszánk a függvényében, akkor négyzetes tárban is megoldható.
+26:0326 minutes, 3 secondskérdés, hogy tudunk-e fordítva mondani valamit. Tehát tudunk-e mondani
+26:0926 minutes, 9 secondsbármilyen időkorlátot a tárlátfüggvényében?
+26:2026 minutes, 20 secondsTehát tegyük föl, hogy egy tyingép meg tud oldani egy problémát valamilyen esenttárban.
+26:2926 minutes, 29 secondstudunk-e mondani időkorlátot ennek a tuning gépnek a működésére? Ugye
+26:3826 minutes, 38 secondselképzelhető, hogy tehát hogyha hogyha mondjuk egy tyingép lefut 100,
+26:4626 minutes, 46 secondstehát hogy hogy illetve 100 cellát használ, ír tele, amikor kiszámol valamit, tudunk-e mondani a 100 függvényében?
+26:5626 minutes, 56 secondsTehát ez mondjuk 10 x 100 vagy vagy 100 a négyzete legtelebb ennyi ideig fut.
+27:0527 minutes, 5 secondsUgye elvileg elképzelhető, hogy hogy egy nagyon pici tárat használunk, akár egy teljesen korlátos tárat, 100 cellát
+27:1227 minutes, 12 secondshasználunk, és végtelen ideig fut a tuning gépünk. De mégis tudunk-e a tár
+27:1927 minutes, 19 secondsfüggvényében, a tárigény függvényében felső korlátot mondaná futási időre?
+27:2527 minutes, 25 secondsTippeket kérek.
+27:3327 minutes, 33 secondsVilágos-e a kérdés? Mert ez egy Halló?
+27:4527 minutes, 45 secondsHalló! Világos a kérdés? Tehát most most azt tudjuk, hogy hogy biztos, hogy elfogadja,
+27:5327 minutes, 53 secondsvagy felismeri a Persze, persze, persze. Tehát most már mindig most már mindig felismer mindent.
+27:5927 minutes, 59 secondsRáadásul mi nemcsak, hogy véges idő, de már korlátozzuk az időt is. Most már a az időre figyelünk.
+28:1628 minutes, 16 secondsHát a válasz az, hogy igen. Meglepő módon az, hogy igen. Hogyha egy nyelv felismerhető esentárban,
+28:2328 minutes, 23 secondsakkor van olyan C konstans, hogy benne van ez a nyelv a time C az SNKenden.
+28:3428 minutes, 34 secondsTehát akkor C az SNediken időben is fölismerhető ez a nyelv. A bizonyítás az
+28:4028 minutes, 40 secondsnagyon egyszerű, hogyha adott egy n hosszú vev input,
+28:4828 minutes, 48 secondsazt felírjuk a felírjuk a bemeneti szalagra, akkor azt ugye esen egy tárkorlátos tyingép, hogyha egy ez a
+28:5728 minutes, 57 secondsprobléma, amit ez a tűép esen tárkorlátos, akkor ezen
+29:0429 minutes, 4 secondsezt esen tár esent cella felhasználásával fogja megoldani.
+29:1229 minutes, 12 secondsNézzük, hogy hány konfigurációja lehet ennek a gépnek.
+29:1629 minutes, 16 secondsHát ugye egyrészt a gép lehet Q különböző állapotban.
+29:2529 minutes, 25 secondsUgye legfeljebb S& darab cellát használunk,
+29:3129 minutes, 31 secondsugye? És ezen cellák mindegyikében az ABC valamelyik jele áll. Tehát ez a
+29:3929 minutes, 39 secondsQ-t megszorozzuk, a gamma az Senedikennel.
+29:4329 minutes, 43 secondsA fej valahol áll ezek közül, ugye?
+29:5029 minutes, 50 secondsÉs ez tehát itt van még egyesen szorzó.
+30:0230 minutes, 2 secondsÉs hát ugye ugye itt n darab jel van a a bemeneti ABC-n. Tehát az összes konfigurációk száma az ennyi.
+30:1430 minutes, 14 secondsNa most ezek közül a asszimptotikusan nagy ez az exponenciális tény. Ez a gamma az SMen,
+30:2330 minutes, 23 secondsugye? Tehát akkor akkor ennyi konfiguráció van.
+30:3230 minutes, 32 secondsDe hát ha ennyi konfiguráció van, akkor hogyha tovább fut a tying gépünk, akkor biztosak lehetünk abban, hogy hogy
+30:4230 minutes, 42 secondsmegismétlődött ugyanaz a konfiguráció, és akkor viszont a gép végtiklusba
+30:4930 minutes, 49 secondskerül, ugye? Tehát ebből következik, hogyha ennél tovább fut, akkor akkor tudjuk, hogy az az nem jó.
+31:0031 minutesTehát hogyha egy probléma, egy nyelv benne van a spaceenben, akkor benne van
+31:0531 minutes, 5 secondsez a probléma a ennek az SN-nek egy time exponenciális függvényében.
+31:1431 minutes, 14 secondsJó, tehát tulajdonképpen amit elmondtam, az van leírva ide egy kicsit részletesebben, de de ez egy fontos tétel ez a szeg a táridőtétel.
+31:2731 minutes, 27 secondsÉs jó, tehát akkor
+31:3631 minutes, 36 secondsnézzük a nyelvosztályok komplementere. Mi egy
+31:4731 minutes, 47 secondsha adott egy nyelv, akkor annak a komplementere azok szavak stringekből áll, amelyik nem szavai a nyelvnek. Egy
+31:5531 minutes, 55 secondsnyelvesz, egy el nyelvosztály esetén a KL azon nyelvekből áll, amiknek a komplementerei benne vannak a nyelvnek.
+32:0532 minutes, 5 secondsNa most nagyon könnyű belátni, hogy a koko l az egen lel, hiszen el egy nyelv
+32:1332 minutes, 13 secondskomplementerének a komplementere az maga a nyelv. Illetve hogyha a része B-nek nyelvozták, akkor K A része a K B-nek.
+32:2432 minutes, 24 secondsUgye ezt úgy látjuk be, hogyha az L az része a KA nyelvosztálynak, azt jelenti, hogy az L komplementere
+32:3132 minutes, 31 secondsbenne van az A-ban, de mivel A része B-nek, ezért az L komplementere benne van a B-ben is. Ebből viszont
+32:3932 minutes, 39 secondskövetkezik, hogy az L az benne van a KB-ben.
+32:4632 minutes, 46 secondsTehát a tétel az a következőt nagyon könnyű belátni.
+32:5232 minutes, 52 secondsA time tn az egyenlő a cime tn, azaz egy e- nyelv az fölismerhető
+33:0133 minutes, 1 secondpontosan akkor tn időben, hogyha komplementer is felismerhető t időben.
+33:0633 minutes, 6 secondsUgye miért a felismerő tyingében cseréljük meg az elfogadó és elutasító állapotokat?
+33:1733 minutes, 17 secondsÖ de hát belátható itt is ilyen módon, hogy tegyük föl.
+33:2633 minutes, 26 secondsIgen. Tehát akkor felcseljük az elutasító állapotokat, az elfogadókat az elplementere benne a time tnbe, a cotime
+33:3533 minutes, 35 secondstn része time tn és így tovább. Tehát ez ez egy triviális
+33:4333 minutes, 43 secondsállítás. A spaceesen az hasonló módon egyenlő a cospace esetnel, akkor az az
+33:5233 minutes, 52 secondsegy nyelv akkor isak és akkor van benne a space esben, a komplementere benne van a space esemben. Ugyanúgy látható be, mint az előző állítás.
+34:0434 minutes, 4 secondsMég egy-két nevezetes nyelvosztály.
+34:0734 minutes, 7 secondsAz egyik ilyen az exp time, a az unió time 2 az a klikon.
+34:1634 minutes, 16 secondsAzaz az exp ez az exponenciális időben felismerhető nyelveknek az osztálya.
+34:2334 minutes, 23 secondsUgye hát ezek azért ezekre azért nem nagyon
+34:3234 minutes, 32 secondsvagy ezek egy részére nem nagyon hatékony algoritmus. Mi a pace?
+34:4334 minutes, 43 secondsAz PACE a polinom tárban felismerhető nyelvek osztálya. Az unió k nagyobb = 1
+34:5034 minutes, 50 secondsspace n a kikon. És akkor itt jön egyszerű kis tétel. Ugye a p részhalmazzaek és részhalmazza az X time-nak.
+35:0135 minutes, 1 secondHát, hogy a p része a ppacnek az világos, hiszen ha valami polinomidőben felismerhető,
+35:1035 minutes, 10 secondsakkor ugye, hogyha n a kadikon időben felismerhető, akkor polinom tárban is felismerhető, mert polinom idő alatt nem
+35:1835 minutes, 18 secondstudunk több tárat teleírni, mint polinomot.
+35:2235 minutes, 22 secondsÉs a pspace résztalmaz exp time ugye az pedig következik a a táridőtételből.
+35:3135 minutes, 31 secondsTehát hogyha valami fölismerhető n a kikon tárban, akkor fölismerhető C az N a kikon időben, a táridőtétel
+35:4035 minutes, 40 secondsmiatt, ami benne van az exp timeban.
+35:4735 minutes, 47 secondsAz X time nagyon egyszerű belátni, hogy természetesen benne van a rekurzív
+35:5435 minutes, 54 secondsnyelvek osztályában, hiszen a rekurzív nyelvek azok, amik
+36:0136 minutes, 1 secondamik ting, eldönthetők. Tehát az Xtime az az nem csak eldönthető, hanem hanem
+36:1136 minutes, 11 secondsadott rá egy exponenciális időkorlát is, amennyi idő alatt eldönthető.
+36:1936 minutes, 19 secondsA valódi részhalmazhoz lehet mutatni egy olyan nyelvet, ami rekurzív, de mégs benne az ex timean.
+36:2836 minutes, 28 secondsTehát van olyan nyelv, amit még exponenciális futásidő alatt sem tudunk megoldani, azért véges időn belül meg tudjuk oldani. Tehát rekurzív.
+36:4036 minutes, 40 secondsÉs itt van megadva egy ilyen nyelv. Ezt most ezt most nem részletezném, tehát illetve a nyelvet magát kimondom.
+36:5036 minutes, 50 secondsazon vev eleme 01 csillag az ember végéig léte kép létezik és legszebb
+36:5836 minutes, 58 secondskettő ad kettő ad tehát duplán expenciais lépésben elutasítja a webét
+37:0437 minutes, 4 secondsahol webé a szó hosszú hossza hát itt a
+37:1137 minutes, 11 secondstermészetesen ez a nyelv benne van a ez rekurzív de még sincs benne az exp timeban van.
+37:2137 minutes, 21 secondsHát nagyjából igen, ezt a tételt, hát a bizonyítást nézzék meg, nagyon egyszerű, de inkább nem erre koncentrálnék,
+37:3137 minutes, 31 secondshanem hanem van-e kérdés itt a polinomidő, polinomtár e körül, mert mert ez ez egy ez egy fontos fogalom.
+37:4837 minutes, 48 secondstáridőtétel.
+37:5037 minutes, 50 secondsTehát itt amiket vettünk ma, vannak-e kérdések
+38:0138 minutes, 1 secondnekem ott a konfigurációk számánál ott az utolsó két tag, azt nem egészen értem, hogy az miből jön.
+38:1038 minutes, 10 secondsIgen, a tényező itt itt az N-et szerintem fölöslegesen írtam ide, mert
+38:1538 minutes, 15 secondsaz Sen ugye tehát jó a gamma az a Q az az állapotok száma az világos, ugye a
+38:2338 minutes, 23 secondsgamma az Senedikén, tehát enen hosszú a tár vagy esen nagy, esen cellából ár a
+38:2938 minutes, 29 secondstár, és mindegyiken a gam valamelyik eleme állhat, tehát ez összesen gamma az SN különböző lehetőség.
+38:4038 minutes, 40 secondsNa most esen hosszú a tár, de nem tudjuk, hogy hol áll a fej.
+38:4638 minutes, 46 secondsTehát ugye itt még különböző helyeken állhat a fej, de hány helyen összesen essen cellát
+38:5438 minutes, 54 secondshasználunk. Tehát az essen cella valamelyikén áll a fej, ez még különböző lehetőség.
+39:0339 minutes, 3 secondsAz n azt hiszem ide fölösleges.
+39:0739 minutes, 7 secondsTehát de mindegy. Tehát hogyha ideírjuk az N-et, az biztos fölülről becsüli az összes konfiguráció számát. És a lényeg
+39:1639 minutes, 16 secondsaz az, hogy ezek közül a nagy, tehát az igazán nagy, tehát a meghatározó dolog,
+39:2439 minutes, 24 secondsasszimptotikusan a meghatározó tényező, ami a nagyságrendet meghatározza.
+39:3039 minutes, 30 secondsUgye itt van egy a gamma az SMKen.
+39:3739 minutes, 37 secondsTehát ez itt a lényeg, ez itt a a ez itt a főnagyságrend. A gamma az egy konstans, tehát ez a az ABC-nek a
+39:4539 minutes, 45 secondsmérete. Ebből következik, hogy hogy valami konstans, ugye ez bőven felülről korlát. Gyakorlatilag ennek a
+39:5339 minutes, 53 secondsnagyságrendje igazából ordó. kicsit nagyobb, mint gamma az SN-en, de nem nagyobb, mert itt itt azért vannak
+40:0140 minutes, 1 secondlehetnek az N-nel végtelenhez tartó függvények, de gyakorlatilag, hogyha ezt
+40:0940 minutes, 9 secondsbőven fölül tudjuk becsülni, mondjuk gamma az Sen a négyzetedikennel, vagy tehát hogy itt
+40:1940 minutes, 19 secondstehát vagy vagy nem is kell gamma az S négyet, tehát itt itt lényeg lénében a fő
+40:2640 minutes, 26 secondstényező vagy a fő nagyságrü gamma az SNKen. Tehát ez pedig
+40:3340 minutes, 33 secondsC azediken konstans, ugye? Jó, világos? Igen, köszönöm.
+40:4140 minutes, 41 secondsVan-e még kérdés?
+40:5840 minutes, 58 secondsJó, ha nincs kérdés, akkor akkor remélem, hogy minden érthető volt.
+41:0941 minutes, 9 secondsUgye egy valamire fölhívnám a figyelmüket, egy nagyon fontos dolog, hogy eddig mindent,
+41:1641 minutes, 16 secondstehát ilyen bonyolultsági osztályt a time ten, a Space determinisztikusing gépeken keresztül definiáltunk.
+41:2741 minutes, 27 secondsEz egy darab nagyon fontos fogalom, és és ez a fogalom, tehát itt a a P-t is
+41:3741 minutes, 37 secondsdeterminisztikus tyingépeken keresztül definiáltuk.
+41:4241 minutes, 42 secondsTehát, hogy hogy itt azért a bonyolultsági osztályok között az az
+41:5241 minutes, 52 secondsegy nagyon fontos különbség lesz majd, hogy definiálni fogunk osztályokat, nem bonyolultsági osztályokat a jövőrán, nem
+42:0142 minutes, 1 seconddeterminisztikus tuningépeken keresztül is, de egyelőre minden, amit eddig vettünk ezen az órán, ez
+42:0942 minutes, 9 secondsdeterminisztikus tuning gépeken keresztül van definiálva. Tehát az P, az XP time, a ezek ezek mind-mind
+42:1942 minutes, 19 secondsdeterminisztikus gyű, vagy a spaceesen space minden determinisztikusan van definiálva egyelőre.
 
-
-https://www.youtube.com/watch?v=BkCk9BjJO0c
+https://www.youtube.com/watch?v=JwTfRaPoBFs
