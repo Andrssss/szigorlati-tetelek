@@ -30,16 +30,16 @@
         flex-wrap: wrap;
     }
     .back-btn {
-        background: rgba(255,255,255,0.15);
+        background: #888;
         color: #fff;
-        border: 1px solid rgba(255,255,255,0.3);
+        border: 1px solid rgba(255,255,255,0.25);
         padding: 8px 16px;
         border-radius: 8px;
         text-decoration: none;
         font-size: 0.9rem;
         transition: background 0.2s;
     }
-    .back-btn:hover { background: rgba(255,255,255,0.3); }
+    .back-btn:hover { background: #666; }
     h1 { font-size: 1.5rem; text-align: center; margin-bottom: 4px; }
     .subtitle { text-align: center; opacity: 0.85; font-size: 0.95rem; margin-bottom: 20px; }
 
@@ -375,10 +375,10 @@ function fireConfetti() {
             w: 6 + Math.random() * 6,
             h: 8 + Math.random() * 8,
             color: colors[Math.floor(Math.random() * colors.length)],
-            vx: -3 + Math.random() * 6,
-            vy: 3 + Math.random() * 4,
+            vx: -5 + Math.random() * 10,
+            vy: 7 + Math.random() * 8,
             rot: Math.random() * Math.PI,
-            vr: -0.2 + Math.random() * 0.4,
+            vr: -0.5 + Math.random() * 1.0,
             life: 0
         });
     }
@@ -390,7 +390,7 @@ function confettiLoop() {
     confettiPieces.forEach(p => {
         p.x += p.vx;
         p.y += p.vy;
-        p.vy += 0.05; // gravitáció
+        p.vy += 0.15; // gravitáció
         p.rot += p.vr;
         p.life++;
         cctx.save();

@@ -960,12 +960,42 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
     <h3>Gépi tanulás és szóbeágyazás</h3>
     <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h28m36s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A korpuszok teszik lehetővé a statisztikai és neurális modellek tanítását. Az annotált korpuszokon felügyelt tanulással készülnek POS-taggerek, NER-rendszerek, szintaktikai elemzők; az annotálatlan (nyelvileg nem címkézett, nyers) korpuszokon önfelügyelt tanulással szóbeágyazások és nyelvi modellek.</p>
+    <p>A korpuszok teszik lehetővé a statisztikai és neurális modellek tanítását. Az annotált korpuszokon felügyelt tanulással készülnek POS-taggerek, NER-rendszerek, szintaktikai elemzők; az annotálatlan (nyers, nyelvileg nem címkézett) korpuszokon önfelügyelt tanulással szóbeágyazások és nyelvi modellek.</p>
+
+    <h4>Két világ: amit kézzel raktunk össze, és amit a gép maga talál meg</h4>
+    <p>Eddig a jelentésbeli kategóriákat (pl. a WordNet szinszetjeit) <strong>mi, emberek raktuk össze</strong> — még ha gépi támogatással is. A szóbeágyazásnál viszont <strong>elengedjük a gép kezét</strong>: nem mi fogjuk a kezét és mondjuk meg, mi hova tartozik, hanem a gép maga találja meg az összetartozást a szavak között. A modellezést átengedjük neki.</p>
+
+    <h4>Mi az alapötlet? A szó környezete adja a jelentését</h4>
+    <p>A szóbeágyazás volt az első, neurális hálóhoz közeli megoldás (<strong>word2vec</strong>), amelyik a nyelv szavait egy <strong>néhány száz dimenziós térbe</strong> konvertálta. Az alapja egészen egyszerű: minden szó valamilyen <strong>környezetben</strong> fordul elő, és egy szó nagy mennyiségben nagyon sokféle környezetben jelenik meg. Ezt a környezeti viselkedést teszi a számítás alapjává.</p>
+    <p>A nyelvészek ezt amúgy régóta mondják: <em>a szó jelentése nem más, mint a használati szabálya</em> — vagyis hogy hova teszem, milyen szavak közé. Régen ezt csak metaforikusan tudtuk megfogni (pl. „ha a <em>daru</em> elég sokszor áll építkezési szavak mellett, akkor gép; ha madarak és vizek mellett, akkor madár”), de nem volt mögötte fix matematika — csak eszközöket fejlesztgettünk.</p>
+
+    <h4>A zsák szavakból (bag of words)</h4>
+    <p>2013-ban egy <strong>Mikolov Tamás</strong> nevű brnói PhD-hallgató találta ki, hogy ezt hogyan lehet ténylegesen használni. Egy nagyon egyszerű neurális hálóval a szavakat vektorokká alakította: fogja a szót, és a <strong>körülötte lévő szavakat — balra, jobbra, mindegy — beledobálja egy zsákba</strong> (ez a <em>bag of words</em>). Aztán mikor egy szóból 10 000, 1 millió, 100 millió előfordulás van, a környezetei együtt már elég jól jellemzik azt a szót.</p>
+    <p>Az eredmény: az a szó, ami éppen a középpontban van, abban a vektortérben <strong>azokhoz a szavakhoz kerül közel, amelyeknek hasonló a környezetük</strong>; a nagyon különböző környezetűek pedig távol esnek. Vagyis a rendszer valami módon a szemantikus tudásunkat fogja meg — pusztán karaktersorozatokból.</p>
     <div class="definicio">
         <strong>Szóbeágyazás (word embedding):</strong> szavak ábrázolása sűrű, valós értékű vektorként egy néhány száz dimenziós térben. A vektorok úgy tanulódnak, hogy <strong>hasonló kontextusban előforduló szavak közel kerüljenek</strong> egymáshoz (disztribúciós szemantika — Firth elve számszerűsítve). Klasszikus modellek: word2vec (CBOW, Skip-gram), GloVe, FastText; ma a kontextuális beágyazások (BERT) terjedtek el.
     </div>
-    <p>Tipikus tulajdonság: a szóvektorok között a szemantikai-szintaktikai relációk lineárisak (pl. <em>király − férfi + nő ≈ királynő</em>).</p>
-    <p>További korpuszalapú feladatok: tulajdonnévfelismerés (NER), anafora- és koreferencia-feloldás, témafelismerés, hangulatelemzés (sentiment analysis), automatikus összefoglalás (extractive vs. abstractive), kérdés-válasz rendszerek (Watson), OCR, beszédfelismerés.</p>
+    <p>Kétféleképpen lehet tanítani:</p>
+    <ul>
+        <li><strong>CBOW</strong> (continuous bag of words): a <strong>környezetből találom ki az eldugott szót</strong> — sok hasonló környezet alapján a gép megmondja, melyik szó áll középen.</li>
+        <li><strong>Skip-gram</strong>: fordítva, a <strong>szóból találom ki a környezetét</strong> — megmondja, milyen szavak közt szokott előfordulni.</li>
+    </ul>
+
+    <h4>Miért „mély” tanulás? — az arcfelismerő analógia</h4>
+    <p>A mélytanulás attól mély, hogy <strong>több réteget</strong> (legalább hármat) tartalmaz, és minden réteg az előző réteg kimenetére épül. Jó hasonlat az arcfelismerő: az <strong>első réteg</strong> csak apró vonalakat, vonalkákat lát; a <strong>második</strong> ezekből szem-, orr-, fülrészleteket rak össze; a <strong>harmadik</strong> ezekből arcot. A gépnek fogalma sincs, mi a szem vagy a fül — csak azt látja, hogy ezek gyakran állnak egymás mellett. Hogy „arc”, azt csak mi, emberek látjuk bele. Ugyanez történik a nyelvvel is: alacsonyabb rétegű felismerésekre épülnek a magasabbak.</p>
+
+    <h4>Az igazi varázslat: az analógia mint vektorművelet</h4>
+    <p>Mivel a szavak vektorok, <strong>össze lehet adni és ki lehet vonni őket</strong>. Így a régi nyelvészeti gondolat, az <strong>analógia</strong> egyszer csak számszerűsíthetővé válik. Pl. veszem egy főváros vektorát, kivonom belőle a saját országát, hozzáadok egy másik országot, és egy „furcsa parallelogrammán” keresztül megkapom a másik ország fővárosát:</p>
+    <div class="pelda">
+        <em>Moszkva − Oroszország + Kína ≈ Peking</em> &nbsp;·&nbsp; <em>Berlin − Németország + Lengyelország ≈ Varsó</em> &nbsp;·&nbsp; <em>király − férfi + nő ≈ királynő</em>
+    </div>
+    <p>Minél <strong>párhuzamosabbak</strong> ezek a nyilak a térben, annál szebben működik. Néhol „szétcsúszik”: a <em>Törökország→Ankara</em> nyíl másmilyen, mint a <em>Japán→Tokió</em>, mert sokan Isztambult hiszik fővárosnak; ugyanígy bizonytalan Hollandia (Hága vagy Amszterdam?), Ausztrália és Kanada is, mert ott a legnagyobb város nem a főváros.</p>
+
+    <h4>Magyar példa: a „kenyerek” szomszédai</h4>
+    <p>Novák Attila és Borbála segítségével egy <strong>3 milliárd szavas magyar korpuszon</strong> is kipróbálták. A <em>kenyerek</em> szóhoz koszinusz-hasonlóság alapján a legközelebbi szavak: <em>zsemlék, péksütemények, kekszek, pékáruk…</em> — pedig a gyakoriságuk nagyon különböző. A hasonlóságot a <strong>koszinusz mérték</strong> adja: ez a két vektor által bezárt szög koszinusza — kis szögnél (≈1) nagyon hasonló, 90°-nál (≈0) független, ugyanaz a szó pedig pontosan 1. A gép csak karaktersorozatokat „evett meg”, fogalma sincs, mi a kenyér vagy ki a pék — hogy „pék készíti”, azt megint csak mi látjuk bele.</p>
+
+    <h4>További korpuszalapú feladatok</h4>
+    <p>Tulajdonnévfelismerés (NER), anafora- és koreferencia-feloldás, témafelismerés, hangulatelemzés (sentiment analysis), automatikus összefoglalás (extractive vs. abstractive), kérdés-válasz rendszerek (Watson), OCR, beszédfelismerés.</p>
 
  
     <h4>Mondatszinkronizálás (sentence alignment)</h4>
@@ -1022,7 +1052,7 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=11m18s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>Három alapstratégia (Vauquois-háromszög, alulról felfele egyre absztraktabb):</p>
     <ul>
-        <li><strong>Direct (közvetlen) fordítás:</strong> szó-szó megfeleltetés + minimális átrendezés. Pl. <strong>Meteo</strong> rendszer Kanadában — korlátozott időjárás-tartomány.</li>
+        <li><strong>Direct (közvetlen) fordítás:</strong> szó-szó megfeleltetés + minimális átrendezés. </li>
         <li><strong>Transfer:</strong> a forrásnyelvet szintaktikai (és részben szemantikai) reprezentációra hozzuk, <em>lexikális</em> + <em>szerkezeti</em> transzferrel átalakítjuk a célnyelvi reprezentációra, majd abból generálunk. Példa: <strong>Eurotra</strong> EU-projekt.</li>
         <li><strong>Interlingua:</strong> egy nyelvfüggetlen közvetítő reprezentációba elemzünk, majd onnan generálunk. Az <em>Esperanto-interlingva</em> kísérlet kudarcot vallott — túl nehéz nyelvfüggetlen reprezentációt találni.</li>
     </ul>
@@ -1031,8 +1061,7 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
     <h4>Statisztikai gépi fordítás (SMT)</h4>
     <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=52m54s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>Az IBM csapata (<em>Frederick Jelinek</em> és társai) a 90-es években bevezette a tisztán statisztikai modellt — Bayes-szabály alapján:</p>
-    <p style="text-align:center"><em>P(e | f) ∝ P(f | e) · P(e)</em></p>
+    <p>Az IBM csapata (<em>Frederick Jelinek</em> és társai) a 90-es években bevezette a tisztán statisztikai modellt
     <p>ahol <em>e</em> a célnyelvi (pl. angol), <em>f</em> a forrásnyelvi (pl. francia) mondat. A modell két komponense:</p>
     <ul>
         <li><strong>Fordítási modell</strong> <em>P(f | e)</em>: párhuzamos korpuszból tanulja a szó- és kifejezéspárok valószínűségét. Tanítás <strong>EM (Expectation-Maximization)</strong> algoritmussal — pl. <em>la maison ↔ house</em> illesztését iteratív becsléssel finomítja.</li>
