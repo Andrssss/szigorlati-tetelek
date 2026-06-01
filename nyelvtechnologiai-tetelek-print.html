@@ -873,6 +873,9 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
 
 
+             
+
+
     <h3>Szövegszinkronizáció </h3>
     <p><a href="https://www.youtube.com/watch?v=58M0q1lWA00&t=17m15s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
@@ -939,6 +942,27 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
 
 
+    <h3>Gépi tanulás és szóbeágyazás</h3>
+    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h28m36s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A korpuszok teszik lehetővé a statisztikai és neurális modellek tanítását. Az annotált korpuszokon felügyelt tanulással készülnek POS-taggerek, NER-rendszerek, szintaktikai elemzők; az annotálatlan (nyelvileg nem címkézett, nyers) korpuszokon önfelügyelt tanulással szóbeágyazások és nyelvi modellek.</p>
+    <div class="definicio">
+        <strong>Szóbeágyazás (word embedding):</strong> szavak ábrázolása sűrű, valós értékű vektorként egy néhány száz dimenziós térben. A vektorok úgy tanulódnak, hogy <strong>hasonló kontextusban előforduló szavak közel kerüljenek</strong> egymáshoz (disztribúciós szemantika — Firth elve számszerűsítve). Klasszikus modellek: word2vec (CBOW, Skip-gram), GloVe, FastText; ma a kontextuális beágyazások (BERT) terjedtek el.
+    </div>
+    <p>Tipikus tulajdonság: a szóvektorok között a szemantikai-szintaktikai relációk lineárisak (pl. <em>király − férfi + nő ≈ királynő</em>).</p>
+    <p>További korpuszalapú feladatok: tulajdonnévfelismerés (NER), anafora- és koreferencia-feloldás, témafelismerés, hangulatelemzés (sentiment analysis), automatikus összefoglalás (extractive vs. abstractive), kérdés-válasz rendszerek (Watson), OCR, beszédfelismerés.</p>
+
+ 
+    <h4>Mondatszinkronizálás (sentence alignment)</h4>
+    <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=1m" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A párhuzamos korpusz építéséhez először <strong>mondatra kell szegmentálni</strong> (nehéz: a pont nem mindig mondatvég — <em>U.S.</em>, <em>Smith Corp.</em>, URL-ek). Utána a mondatokat egymásnak meg kell feleltetni (1:1, 1:2, 2:1, 1:0 stb.).</p>
+    <ul>
+        <li><strong>Hosszalapú</strong> (Gale–Church, 1990): a megfeleltetett mondatok hossza erősen korrelál. Gyors, nyelvfüggetlen, jó kiindulás.</li>
+        <li><strong>Szótáralapú</strong>: kétnyelvű szótár segítségével keresi a szóegyezéseket.</li>
+        <li><strong>Horgony (anchor) alapú</strong>: nyelvtől független fix elemek (számok, dátumok, tulajdonnevek, e-mail-címek, URL-ek) használata rögzítési pontként.</li>
+        <li><strong>Hibrid</strong>: a fentiek kombinációja — ez a gyakorlatban használatos.</li>
+        <li>Szóláncok és karaktereltérés mérésére a <strong>Levenshtein- (szerkesztési) távolság</strong> a klasszikus eszköz.</li>
+    </ul>
+
 
 
     
@@ -964,27 +988,6 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
 
 
 
-
-    <h3>Gépi tanulás és szóbeágyazás</h3>
-    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h28m36s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A korpuszok teszik lehetővé a statisztikai és neurális modellek tanítását. Az annotált korpuszokon felügyelt tanulással készülnek POS-taggerek, NER-rendszerek, szintaktikai elemzők; az annotálatlan (nyelvileg nem címkézett, nyers) korpuszokon önfelügyelt tanulással szóbeágyazások és nyelvi modellek.</p>
-    <div class="definicio">
-        <strong>Szóbeágyazás (word embedding):</strong> szavak ábrázolása sűrű, valós értékű vektorként egy néhány száz dimenziós térben. A vektorok úgy tanulódnak, hogy <strong>hasonló kontextusban előforduló szavak közel kerüljenek</strong> egymáshoz (disztribúciós szemantika — Firth elve számszerűsítve). Klasszikus modellek: word2vec (CBOW, Skip-gram), GloVe, FastText; ma a kontextuális beágyazások (BERT) terjedtek el.
-    </div>
-    <p>Tipikus tulajdonság: a szóvektorok között a szemantikai-szintaktikai relációk lineárisak (pl. <em>király − férfi + nő ≈ királynő</em>).</p>
-    <p>További korpuszalapú feladatok: tulajdonnévfelismerés (NER), anafora- és koreferencia-feloldás, témafelismerés, hangulatelemzés (sentiment analysis), automatikus összefoglalás (extractive vs. abstractive), kérdés-válasz rendszerek (Watson), OCR, beszédfelismerés.</p>
-
- 
-    <h4>Mondatszinkronizálás (sentence alignment)</h4>
-    <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=1m" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A párhuzamos korpusz építéséhez először <strong>mondatra kell szegmentálni</strong> (nehéz: a pont nem mindig mondatvég — <em>U.S.</em>, <em>Smith Corp.</em>, URL-ek). Utána a mondatokat egymásnak meg kell feleltetni (1:1, 1:2, 2:1, 1:0 stb.).</p>
-    <ul>
-        <li><strong>Hosszalapú</strong> (Gale–Church, 1990): a megfeleltetett mondatok hossza erősen korrelál. Gyors, nyelvfüggetlen, jó kiindulás.</li>
-        <li><strong>Szótáralapú</strong>: kétnyelvű szótár segítségével keresi a szóegyezéseket.</li>
-        <li><strong>Horgony (anchor) alapú</strong>: nyelvtől független fix elemek (számok, dátumok, tulajdonnevek, e-mail-címek, URL-ek) használata rögzítési pontként.</li>
-        <li><strong>Hibrid</strong>: a fentiek kombinációja — ez a gyakorlatban használatos.</li>
-        <li>Szóláncok és karaktereltérés mérésére a <strong>Levenshtein- (szerkesztési) távolság</strong> a klasszikus eszköz.</li>
-    </ul>
 
 
 
