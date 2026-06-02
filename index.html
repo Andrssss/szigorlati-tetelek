@@ -304,11 +304,13 @@
             var baseDPR = window.devicePixelRatio || 1;
 
             function fixFooterZoom() {
-                var zoom = (window.devicePixelRatio || 1) / baseDPR;
                 var footer = document.querySelector('footer');
                 if (footer) {
+                    var zoom = (window.devicePixelRatio || 1) / baseDPR;
                     footer.style.transformOrigin = 'bottom center';
                     footer.style.transform = 'scale(' + (1 / zoom) + ')';
+                    footer.style.width = (zoom * 100) + 'vw';
+                    footer.style.left = ((1 - zoom) / 2 * 100) + 'vw';
                 }
             }
 
