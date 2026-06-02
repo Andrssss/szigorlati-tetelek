@@ -192,12 +192,18 @@
         @media (min-width: 701px) {
             .side-img {
                 position: fixed;
-                right: 0;
                 top: 50%;
-                transform: translateY(-50%);
                 height: 100vh;
                 width: auto;
                 pointer-events: none;
+            }
+            .side-img.right {
+                right: 0;
+                transform: translateY(-50%);
+            }
+            .side-img.left {
+                left: 0;
+                transform: translateY(-50%) scaleX(-1);
             }
         }
 
@@ -241,13 +247,59 @@
         </div>
     </div>
 
-    <img class="side-img" src="img/64f57d9c-fd2a-4edf-a561-e216a2e201ef.png" alt="">
+    <img class="side-img" id="side-img" src="" alt="">
+    <img class="side-img" id="side-img-2" src="" alt="">
 
     <footer>
         Forkolható innen: <a href="https://github.com/Andrssss/szigorlati-tetelek" target="_blank">github.com/Andrssss/szigorlati-tetelek</a>
     </footer>
 
     <script>
+        (function () {
+            var day = new Date().getDay();
+            var todayImg = day === 0 ? 7 : day;
+            var param = new URLSearchParams(window.location.search).get('bg');
+            var n = (param && param >= 1 && param <= 7) ? parseInt(param) : todayImg;
+            var img = document.getElementById('side-img');
+            var img2 = document.getElementById('side-img-2');
+            var heights = {1: '50vh', 4: '70vh', 5: '55vh', 6: '70vh', 7: '35vh'};
+            if (n === 1 || n === 4) {
+                img.src = 'img/backround/1_2.png';
+                img.className = 'side-img';
+                img.style.right = '3vw';
+                img.style.height = '80vh';
+                img.style.transform = 'translateY(-50%)';
+                img2.src = 'img/backround/1_1.png';
+                img2.className = 'side-img';
+                img2.style.left = '0';
+                img2.style.height = '80vh';
+                img2.style.transform = 'translateY(-50%)';
+            } else if (n === 7) {
+                var link7 = function() { window.open('https://hangszerszallitas.hu/', '_blank'); };
+                img.src = 'img/backround/7.png';
+                img.className = 'side-img';
+                img.style.right = '10vw';
+                img.style.height = '35vh';
+                img.style.transform = 'translateY(-50%)';
+                img.style.cursor = 'pointer';
+                img.style.pointerEvents = 'auto';
+                img.onclick = link7;
+                img2.src = 'img/backround/7.png';
+                img2.className = 'side-img';
+                img2.style.left = '10vw';
+                img2.style.height = '35vh';
+                img2.style.transform = 'translateY(-50%)';
+                img2.style.cursor = 'pointer';
+                img2.style.pointerEvents = 'auto';
+                img2.onclick = link7;
+            } else {
+                img.src = 'img/backround/' + n + '.png';
+                img.className = 'side-img ' + (n % 2 === 1 ? 'right' : 'left');
+                img.style.height = heights[n] || '100vh';
+                if (n === 6) img.style.top = '65%';
+            }
+        })();
+
         (function () {
             var baseDPR = window.devicePixelRatio || 1;
 
