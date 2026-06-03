@@ -1168,6 +1168,40 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 
     <h3>Algoritmusok (TG-ek) idő és tárigénye</h3>
     <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=10m32s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        <strong>Jelölés:</strong> Egy adott M TG esetén:<br>
+        T<sub>M</sub>(n) jelöli M maximális lépésszámát (számolási idejét) az n hosszúságú bemenetek esetén.<br>
+        S<sub>M</sub>(n) jelöli az M által maximálisan elolvasott munkaszalag jelek számát n hosszúságú bemenetek esetén.<br><br>
+        <strong>Megj:</strong> Ha M nem áll meg valamely n hosszú bemenetre, akkor T<sub>M</sub>(n) végtelen. Ekkor S<sub>M</sub>(n)-t is végtelennek tekintjük.<br><br>
+
+        <strong>Definíció:</strong> Legyen t: N → N függvény olyan, hogy t(n) ≥ n minden n-re. Az M TG <em>t(n) időkorlátos</em>, ha az n hosszú bemenetek esetén legfeljebb t(n) lépést tesz meg, azaz T<sub>M</sub>(n) ≤ t(n).<br>
+        <span style="font-style:italic; color:#555;">( Minden n hosszú bemenetre megnézzük. t(n) ≥ n, hogy legyen ideje elolvasni a bemenetet. )</span><br><br>
+
+        <strong>Definíció:</strong> TIME(t(n)) = {L | L felismerhető egy O(t(n)) időkorlátos M TG-pel.}<br>
+        <span style="font-style:italic; color:#555;">( Az összes olyan L nyelv halmaza, amely felismerhető egy legfeljebb O(t(n)) lépéses TG-pel. )</span><br><br>
+
+        <strong>Definíció:</strong> Legyen s: N → N függvény olyan, hogy s(n) ≥ log<sub>2</sub> n minden n-re. Az M TG <em>s(n) tárkorlátos</em>, ha az n hosszú bemenetek esetén legfeljebb s(n) db cellát használ a munkaszalagon, azaz S<sub>M</sub>(n) ≤ s(n).<br>
+        <span style="font-style:italic; color:#555;">(A log₂n alsó korlát azért szerepel, mert már az input indexeléshez is kb. log n bit tár kell.)</span><br><br>
+
+        <strong>Definíció:</strong> SPACE(s(n)) = {L | L felismerhető egy O(s(n)) tárkorlátos M TG-pel.}
+    </div>
+    <div class="definicio">
+        <strong>Jelölés:</strong> Σ feletti nyelv esetén L<sup>C</sup> = Σ* \ L az L komplementere.<br><br>
+        <strong>Definíció:</strong> L nyelvosztály esetén coL = {L | L<sup>C</sup> ∈ L} az L nyelvosztály komplementere.
+    </div>
+    <div class="tetel-box">
+        <strong>Tétel:</strong>
+        <ul>
+            <li>co(coL) = L</li>
+            <li>Ha A ⊆ B nyelvosztályok, akkor coA ⊆ coB.</li>
+        </ul>
+    </div>
+    <div class="tetel-box">
+        <strong>Tétel:</strong> TIME(t(n)) = coTIME(t(n)), azaz L ∈ TIME(t(n)) akkor és csak akkor, ha L<sup>C</sup> ∈ TIME(t(n)).
+    </div>
+    <div class="tetel-box">
+        <strong>Tétel:</strong> SPACE(s(n)) = coSPACE(s(n)), azaz L ∈ SPACE(s(n)) akkor és csak akkor, ha L<sup>C</sup> ∈ SPACE(s(n)).
+    </div>
     <h3>A P nyelvosztály</h3>
     <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=14m47s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
@@ -1195,27 +1229,18 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 
 
     <h3>Tár-idő összefüggések</h3>
-    <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=10m30s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <div class="definicio">
-        <strong>Jelölés:</strong> Egy adott M TG esetén:<br>
-        T<sub>M</sub>(n) jelöli M maximális lépésszámát (számolási idejét) az n hosszúságú bemenetek esetén.<br>
-        S<sub>M</sub>(n) jelöli az M által maximálisan elolvasott munkaszalag jelek számát n hosszúságú bemenetek esetén.<br><br>
-        <strong>Megj:</strong> Ha M nem áll meg valamely n hosszú bemenetre, akkor T<sub>M</sub>(n) végtelen. Ekkor S<sub>M</sub>(n)-t is végtelennek tekintjük.<br><br>
-
-        <strong>Definíció:</strong> Legyen t: N → N függvény olyan, hogy t(n) ≥ n minden n-re. Az M TG <em>t(n) időkorlátos</em>, ha az n hosszú bemenetek esetén legfeljebb t(n) lépést tesz meg, azaz T<sub>M</sub>(n) ≤ t(n).<br>
-        <span style="font-style:italic; color:#555;">( Minden n hosszú bemenetre megnézzük. t(n) ≥ n, hogy legyen ideje elolvasni a bemenetet. )</span><br><br>
-
-        <strong>Definíció:</strong> TIME(t(n)) = {L | L felismerhető egy O(t(n)) időkorlátos M TG-pel.}<br>
-        <span style="font-style:italic; color:#555;">( Az összes olyan L nyelv halmaza, amely felismerhető egy legfeljebb O(t(n)) lépéses TG-pel. )</span><br><br>
-
-        <strong>Definíció:</strong> Legyen s: N → N függvény olyan, hogy s(n) ≥ log<sub>2</sub> n minden n-re. Az M TG <em>s(n) tárkorlátos</em>, ha az n hosszú bemenetek esetén legfeljebb s(n) db cellát használ a munkaszalagon, azaz S<sub>M</sub>(n) ≤ s(n).<br>
-        <span style="font-style:italic; color:#555;">(A log₂n alsó korlát azért szerepel, mert már az input indexeléshez is kb. log n bit tár kell.)</span><br><br>
-
-        <strong>Definíció:</strong> SPACE(s(n)) = {L | L felismerhető egy O(s(n)) tárkorlátos M TG-pel.}
-    </div>
     <div class="tetel-box">
+        <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=28m19s" target="_blank">▶ Előadás ezen a részen</a></p>
         <strong>Tétel (Tár-idő tétel):</strong> Ha L ∈ SPACE(s(n)), akkor van olyan L-től függő c konstans, hogy L ∈ TIME(2<sup>s(n)</sup>).
     </div>
+
+     <div class="tetel-box">
+            <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=20m05s" target="_blank">▶ Előadás ezen a részen</a></p>
+
+        <strong>Tétel: (Tár-idő szimulációs tétel)</strong> Az N k-szalagos TG-hez van olyan egyszalagos M TG, hogy L(M) = L(N), és ha N f(n) időigényű, akkor M O(f(n)<sup>2</sup>) időigényű. <br>
+        <span class="note">(Többszallagos TG-t tudunk szimulálni egyszalagos TG-vel négyzetes időbel, de a szimuláció négyzetes időbeli és a tár is csak n -el nő)</span>
+    </div>
+
     <h4>Lineáris gyorsítási tétel</h4>
             <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=21m30s" target="_blank">▶ Előadás ezen a részen</a></p>
 
@@ -1227,25 +1252,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         </ul>
         <strong>Megj:</strong> A fenti tétel magyarázza, hogy miért tekinthettünk el a konstans szorzótól az időigény definiálásakor.</span>
     </div>
-    <div class="tetel-box">
-        <strong>Tétel: (Tár-idő szimulációs tétel)</strong> Az N k-szalagos TG-hez van olyan egyszalagos M TG, hogy L(M) = L(N), és ha N f(n) időigényű, akkor M O(f(n)<sup>2</sup>) időigényű. <br>
-        <span class="note">(Többszallagos TG-t tudunk szimulálni egyszalagos TG-vel négyzetes időbel, de a szimuláció négyzetes időbeli és a tár is csak n -el nő)</span>
-    </div>
-
-    <h4>Komplementer nyelvosztályok</h4>
-    <div class="definicio">
-        <strong>Jelölés:</strong> Σ feletti nyelv esetén L<sup>C</sup> = Σ* \ L az L komplementere.<br><br>
-        <strong>Definíció:</strong> L nyelvosztály esetén coL = {L | L<sup>C</sup> ∈ L} az L nyelvosztály komplementere.<br><br>
-        <strong>Tétel:</strong><br>
-        <ul style="margin-top:4px;">
-            <li>co(coL) = L</li>
-            <li>Ha A ⊆ B nyelvosztályok, akkor coA ⊆ coB.</li>
-        </ul>
-    </div>
-    <div class="tetel-box">
-        <strong>Tétel:</strong> TIME(t(n)) = coTIME(t(n)), azaz L ∈ TIME(t(n)) akkor és csak akkor, ha L<sup>C</sup> ∈ TIME(t(n)).<br><br>
-        <strong>Tétel:</strong> SPACE(s(n)) = coSPACE(s(n)), azaz L ∈ SPACE(s(n)) akkor és csak akkor, ha L<sup>C</sup> ∈ SPACE(s(n)).
-    </div>
+   
 
     <h3>PSPACE és EXPTIME</h3>
     <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=34m02s" target="_blank">▶ Előadás ezen a részen</a></p>
@@ -1276,6 +1283,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 
         <strong>Definíció: Nemdeterminisztikus Turing gépel fogjuk bevezetni. </strong><br>
         Legyen t: N → N olyan, hogy t(n) ≥ n minden n-re. Az M ND TG <em>t(n) időkorlátos</em>, ha az n hosszú bemenetek esetén M minden számítási út mentén legfeljebb t(n) lépést megtéve megáll. Azaz n hosszú bemenetek esetén legfeljebb t(n)+1 mély a számítási fa.<br><br>
+        <span class="note">Megj: Nem ismert olyan fizikai megvalósítás, mely t(n)-nel arányos időben szimulálná egy t(n) időkorlátos NDTG működését.</span><br><br>
         
          <span class="note">( Kép jól illusztrálja, hogy megnézzük, h milyen mély lesz a fa, minden n hosszú inputra ezen fák mélységét és megnézzük a maximumot, ha ez a max t(n), akkor t(n) időkorlátos. :) )</span>
     </div>
@@ -1298,6 +1306,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
     </div>
     <div class="tetel-box">
         <strong>Tétel:</strong> P ⊆ NP ∩ coNP <br><br>
+        Biz : P ⊆ NP   +    coP ⊆ coNP  <br><br>
         <span class="note">(Hisz kinda ugyanaz a problémakör, csak a komplementer nyelvre nézve.)</span>
     </div>
 
