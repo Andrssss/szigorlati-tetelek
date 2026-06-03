@@ -1,0 +1,1338 @@
+=== PAGE 4 ===
+Determinisztikus véges automaták
+Definíció: Determinisztikus véges automata (dva vagy va)
+M = (Q, Σ, δ, q , F) ahol:
+0
+1. Q, egy véges halmaz az állapotok halmaza
+2. Σ, egy véges halmaz az abc
+3. δ: Q × Σ → Q az állapotátmenet függvény
+4. q ∈ Q a kezdeti állapot
+0
+5. F ⊆ Q a végállapotok halmaza
+
+=== PAGE 5 ===
+automaták
+Determinisztikus véges
+Definíció: Felismert (elfogadott) jelsorozat
+M=(Q, Σ, δ, q , F) egy dva, w = x x ... x Σ-beli jelek sorozata.
+0 1 2 n
+M felismeri w-t, ha ∃ r r ... r Q-beli állapotok sorozata, hogy:
+0 1 n
+1. r = q
+0 0
+2. δ(r ,x ) = r i = 1,...n-1
+i i+1 i+1
+3. r ∈ F
+n
+Definíció: az M dva felismeri az L nyelvet, ha
+L = {w| M felismeri w-t}.
+Jelölés: Az M által felismert nyelv: L(M)
+
+=== PAGE 6 ===
+Nyelvek reprezentációja
+Definíciók: Σ tetszőleges jelek egy nemüres, véges halmaza, az
+abc. Σ* jelöli az összes, Σ-beli jelekből álló véges sorozatok
+(szavak) halmazát.
+= = =
+Σ* {w a ...a | a ∈ Σ, i 1, ...n, n ≥ 0 }
+1 n i
+=
+w a ...a szó hossza n.
+1 n
+Speciálisan, ε jelöli a 0 hosszú sorozatot, az üres szót.
+A bináris abc, I a 0 és 1 jeleket tartalmazza.
+=
+Példa: Σ {if, then, else, for, do, a, b, c }
+if a then b else c, do a, do do, aabba
+
+=== PAGE 7 ===
+Nyelvek reprezentációja
+Definíció: L egy formális nyelv Σ felett, ha L ⊆ Σ*.
+Egy nyelv véges módon megadható:
+a) Elemeit felsorolva – ha azok száma véges.
+=
+b) L {w ∈ Σ* | w P tulajdonságú}
+c) L = L(M) ahol M egy automata, pl. dva.
+d) Operátorokkal
+e) Generáló nyelvtannal
+Megj: Nem lehet az összes Σ feletti nyelvet végesen reprezentálni!
+
+=== PAGE 8 ===
+Reguláris operátorok
+Definíció: Reguláris operátorok egy Σ abc feletti nyelveken
+• Egyesítés (unió): A ∪ B ={x | x ∈A vagy x ∈B }
+• Szorzat (illesztés, konkatenáció): A B ={xy |x ∈A, y ∈B } ,
+°
+ahol
+x= x x ...x , y= y y ...y esetén xy= x x ...x y y ...y
+1 2 n 1 2 m 1 2 n 1 2 m
+• Iterálás (Kleene csillag): A* ={w w ...w | w ∈A i =1,...k, k ≥ 0}
+1 2 k i
+1. megj. ε ∈ A*,
+2. megj. L = Σ esetén L* = Σ*
+
+=== PAGE 9 ===
+Operátorok nyelveken
+Definíció: További operátorok egy Σ abc feletti nyelveken
+• Metszet: A ∩ B ={w | w ∈A és w ∈B }
+• Különbség: A - B ={w | w ∈A és w ∉B }, AC = Σ* - A
+• Tükörkép: AR ={ xR | x ∈A } ahol x = x x ...x esetén xR =
+1 2 n
+x x ...x
+n n-1 1
+=
+Pl: L {w ∈ {0,1} * | w-ben 2 vagy 3 db 1-es szerepel úgy, hogy
+az első és a második nem szomszédosak}
+{0}* {1} {0} {0}* {1} { 0}* ({1} { 0}*) ∪ {e})
+° ° ° ° ° ° °
+
+=== PAGE 10 ===
+Reguláris kifejezések
+Definíció: Egy Σ abc feletti reguláris kifejezések:
+1. Σ minden eleme.
+2. ε
+3. Ø
+4. Ha α és β reguláris kifejezések, akkor (αβ) is az.
+5. Ha α és β reguláris kifejezések, akkor (α∪β) is az.
+6. Ha α reguláris kifejezés, akkor α* is az.
+Minden reguláris kifejezés reprezentál egy nyelvet. Pl:
+reg. kif. nyelv
+(a* bc) *ab ({a}* {b} {c} )* {a} {b}
+° ° ° °
+
+=== PAGE 11 ===
+Reguláris kifejezések
+Tétel: Legyen L azon nyelvek halmaza, melyek felismerhetők
+determinisztikus véges automatával.
+L zárt a reguláris operátorokra nézve.
+Azaz ha A ∈ L és A ∈ L, akkor:
+1 2
+1. A ∪ A ∈ L.
+1 2
+2. A A ∈ L.
+°
+1 2
+3. A * ∈ L.
+1
+
+=== PAGE 15 ===
+Nemdeterminisztikus véges automaták
+Definíció: Nemdeterminisztikus véges automata (nva)
+N = (Q, Σ, δ, q , F) ahol:
+0
+1. Q, egy véges halmaz az állapotok halmaza
+2. Σ, egy véges halmaz az abc
+3. δ: Q × (Σ ∪ {ε}) → P(Q) az állapotátmenet fv
+4. q ∈ Q a kezdeti állapot
+0
+5. F ⊆ Q a végállapotok halmaza
+Jelölés: Σ = Σ ∪ {ε}
+ε
+
+=== PAGE 16 ===
+automaták
+Nemdeterminisztikus véges
+Definíció: Felismert (elfogadott) jelsorozat
+N=(Q, Σ, δ, q , F) egy nva, w = w w ... w Σ -beli jelek sorozata.
+0 1 2 n ε
+N felismeri w-t, ha ∃ r r ... r Q-beli állapotok sorozata, hogy:
+0 1 n
+1. r = q
+0 0
+2. r ∈ δ(r ,w ) i = 0,...,n-1
+i+1 i i+1
+3. r ∈ F
+n
+Definíció: Az N nva felismeri az L nyelvet, ha
+L = {w| N felismeri w-t}.
+
+=== PAGE 18 ===
+automaták
+Nemdeterminisztikus véges
+Definíció: M és M ekvivalensek, ha
+1 2
+L(M ) = L(M ).
+1 2
+Tétel: Minden N = (Q, Σ, δ, q , F) nva-hoz létezik
+0
+vele ekvivalens M dva.
+Biz: Megkonstruáljuk az M=(Q’, Σ, δ’, q ’, F’) va-t.
+0
+a) Ha N gráfja nem tartalmaz ε címkét.
+1. Q’ = P(Q)
+∪
+2. δ’(R, a) = { q ∈ Q| ∃ r ∈ R, hogy q ∈ δ(r, a)} = δ(r, a)
+r ∈ R
+3. q ’ = {q }
+0 0
+4. F’ = { R ∈ Q ’ | ∃ r ∈ R, hogy r ∈ F }
+
+=== PAGE 20 ===
+Nemdeterminisztikus véges automaták
+Tétel: Legyen L azon nyelvek halmaza, melyek felismerhetők
+determinisztikus véges automatával.
+L zárt a reguláris operátorokra nézve.
+Azaz ha A ∈ L és A ∈ L, akkor:
+1 2
+1. A ∪ A ∈ L.
+1 2
+2. A A ∈ L.
+°
+1 2
+3. A * ∈ L.
+1
+
+=== PAGE 26 ===
+L és L ekvivalenciája
+R D
+Definíció: Általánosított nemdeterminisztikus véges automata
+(ánva)
+N = (Q, Σ, δ, q , q ) ahol:
+kezdő vég
+1. Q, egy véges halmaz az állapotok halmaza
+2. Σ egy véges halmaz, az abc
+3. δ: (Q - {q }) × (Q - {q }) → R az állapotátmenet fv,
+vég kezdő
+ahol R a Σ feletti reguláris kifejezések halmaza
+4. q ∈ Q a kezdeti állapot
+kezdő
+5. q ∈ Q a végállapot
+vég
+
+=== PAGE 27 ===
+L és L ekvivalenciája
+R D
+Definíció: Felismert (elfogadott) jelsorozat
+N=(Q, Σ, δ, q , q ) egy ánva. N felismeri a w ∈ Σ* sorozatot,
+kezdő vég
+ha w = w w ... w ahol w ∈ Σ* i = 1,...,n, és ∃ r r ,...,r
+1 2 k i 0 1 k
+Q-beli állapotok sorozata, hogy:
+1. r = q
+0 kezdő
+2. r = q
+k vég
+3. w ∈ L(R ), ahol R = δ(r ,r ) i = 1,...k
+i i i i-1 i
+Definíció: N ánva felismeri az L nyelvet, ha
+L = {w| N felismeri w-t}.
+
+=== PAGE 36 ===
+Véges átalakítók
+Definíció: Véges átalakító (fordító)
+M = (Q, Σ, Γ, δ, q ) ahol:
+0
+1. Q, egy véges halmaz az állapotok halmaza
+2. Σ egy véges halmaz, a bemeneti abc
+3. Γ egy véges halmaz, a kimeneti abc
+4. δ: Q × Σ → Q × Γ az állapotátmenet függvény
+5. q ∈ Q a kezdeti állapot
+0
+
+=== PAGE 40 ===
+Minimális dva
+Definíció: Legyen L ⊆ Σ* egy nyelv. x, y ∈ Σ* L-re nézve
+ekvivalensek, ha ∀ z ∈ Σ* esetén igaz, hogy:
+xz ∈ L akkor és csak akkor (csakkor), ha yz ∈ L .
+Ezt a relációt ≈ –vel jelöljük.
+L
+Megj: ≈ ekvivalencia reláció Σ* -on, mely ekvivalencia
+L
+osztályokra bontja Σ*-t.
+Egy x ∈ Σ* ekvivalencia osztályát [x] jelöli.
+
+=== PAGE 43 ===
+Minimális dva
+Definíció: Legyen M = (Q, Σ, δ, q , F) dva.
+0
+(r,x)∈ Q × Σ*, M egy konfigurációja
+Definíció: Legyen M = (Q, Σ, δ, q , F) dva, (r,x) egy konfiguráció.
+0
+(r,x) rákövetkezője az (r’,x’) konfiguráció, ha:
+• ax’ = x, ahol a∈Σ,
+• δ(r,a) = r’.
+Jelölés: (r,x) |— (r’,x’).
+M
+Definíció: (r,x) |—* (r’,x’), (r,x) –ből (r’,x’) elérhető, ha
+M
+(r,x) |— (r ,y ) |— ... (r ,y ) |— (r’,x’) valamely k ≥ 0.
+M 1 1 M k k M
+
+=== PAGE 44 ===
+Minimális dva
+Definíció: Legyen M = (Q, Σ, δ, q , F) dva. x, y ∈ Σ* M-re nézve
+0
+ekvivalensek, ha ∃ q∈ Q hogy
+(q ,x) |—* (q,ε) és (q ,y) |—* (q,ε)
+0 M 0 M
+Ezt a relációt ∼ -vel jelöljük.
+M
+Megj: ∼ ekvivalencia reláció Σ*-on.
+M
+Jelölés: Minden q elérhető állapothoz egy-egy Σ*-részhalmaza
+ekvivalencia osztály tartozik, ezt [q] jelöli.
+
+=== PAGE 46 ===
+Minimális dva
+Tétel: Legyen M = (Q, Σ, δ, q , F) dva. Ekkor ∀ x, y ∈ Σ* esetén:
+0
+x ∼ y ⇒ x ≈ y
+M L(M)
+Biz: x ∈ Σ* esetén legyen q(x) az az állapot, melyre
+(q ,x) |—* (q(x),ε)
+0 M
+Így x, z ∈ Σ* esetén xz ∈ L(M) akkor és csak akkor, ha
+(q(x),z) |—* (q’,ε), ahol q’ ∈ F.
+M
+De x ∼ y ⇒ q(x)=q(y), tehát
+M
+xz ∈ L(M) akkor és csak akkor, ha yz ∈ L(M) ∀ z ∈ Σ* esetén.
+Azaz x ≈ y.
+L(M)
+
+=== PAGE 48 ===
+Minimális dva
+Tétel: Ha L ⊆ Σ* egy reguláris nyelv, akkor
+∃ M = (Q, Σ, δ, q , F) dva, hogy L(M) =L, és állapotainak száma,
+0
+n éppen az ≈ reláció által meghatározott ekvivalencia osztályok
+L
+száma. M, az állapotainak számozásától eltekintve, egyértelmű.
+Biz: Legyen
+• Q = { [x] | x ∈ Σ* }
+• q = [ ε ]
+0
+• F = { [x] | x ∈ L }
+• δ([x], a) = [xa]
+
+=== PAGE 52 ===
+Reguláris nyelvek jellemzése
+Tétel (Pumpáló lemma, Bar-Hillel lemma):
+Ha L ⊆ Σ* egy reguláris nyelv, akkor ∃ p ∈ N szám, hogy
+∀ s ∈ L esetén, ha s hossza leglább p, akkor s felbontható
+s =xyz alakba úgy, hogy:
+1. xynz ∈ L minden n ≥0 esetén,
+2. | y | >0,
+3. | xy | ≤ p.
+Biz:
+• p = | Q | legyen.
+• Legyen s ∈ L, s = s s ... s , p ≤ n. Az s-et elfogadó állapotok sorozata legyen
+1 2 n
+r = r r ... r , ekkor p < n+1. Tehát r tagjai között kell lennie legalább két
+1 2 n+1
+azonosnak, a skatulya elv miatt. Jelölje ezeket r és r . Feltehetjük, hogy k≤p+1.
+j k
+
+=== PAGE 63 ===
+Generatív grammatikák
+Definíció: Egy G = (V, Σ, R, S) négyes generatív grammatika, ahol:
+• V egy véges halmaz, a grammatikai változók vagy
+nemterminálisok halmaza,
+• Σ egy véges halmaz, diszjunkt V-vel, a terminálisok halmaza,
+• R egy véges halmaz, a levezetési szabályok halmaza, ahol egy
+levezetési szabály alakja
+α → β
+ahol α és β terminálisok és nemterminálisok tetszőleges sorozata,
+de α-ban kell legyen egy nemterminális.
+• S∈V a kezdő- vagy mondatszimbólum.
+
+=== PAGE 64 ===
+Generatív grammatikák
+Definíció: Egy G = (V, Σ, R, S) grammatika alapján a κ ∈(V∪Σ)*
+szóból közvetlenül levezethető a µ∈(V∪Σ)* szó, ha léteznek
+olyan γ, δ ∈(V∪Σ)* szavak és α → β szabály R-ben, hogy:
+" " κ = γ α δ, µ = γ β δ."
+Jelölés:
+κ ⇒ µ vagy κ ⇒ µ
+G
+
+=== PAGE 65 ===
+Generatív grammatikák
+Definíció:
+Tetszőleges u és v (V∪Σ)* -beli szavak esetén, azt mondjuk,
+hogy v levezethető az u-ból a G = (V, Σ, R, S) grammatika
+alapján, ha u =v, vagy léteznek n≥1 és u= w , ... w = v (V∪Σ)*-
+1 n
+beli szavak úgy, hogy
+w ⇒ w ⇒ ... ⇒ w .
+1 G 2 G G n
+Jelölés:
+u ⇒* v vagy u ⇒* v
+G
+
+=== PAGE 66 ===
+Generatív grammatikák
+Definíció: A G = (V, Σ, R, S) grammatika generálja az L ⊆ Σ*
+nyelvet, ha L = L(G), ahol
+L(G)={ w ∈ Σ* | S ⇒* w }
+a G grammatika által generált nyelv.
+Definíció: A G és G’ grammatikák ekvivalensek, ha L(G) = L(G’)
+
+=== PAGE 67 ===
+Rekurzív grammatikák
+Definíció: A G = (V, Σ, R, S) grammatika rekurzív, ha van olyan
+A∈V, és γ, δ ∈(V∪Σ)* szavak hogy
+A
+⇒*
+γΑδ
+Ekkor az A egy rekurzív nemterminálisa a grammatikának.
+Megj:
+Nemrekurzív grammatikák véges nyelvet generálnak.
+Kérdés: Milyen nyelvet generálnak a rekurzív grammatikák?
+
+=== PAGE 68 ===
+Környezetfüggetlen (Context Free, CF) grammatikák
+Definíció: A G = (V, Σ, R, S) grammatika környezetfüggetlen, ha a
+levezetési szabályainak bal oldalán egyetlen nemterminális
+szerepel, azaz a szabályok
+A → β
+alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
+1.Megj: Egy szabályaival megadott CF grammatika nemterminálisait
+nagybetűkkel, a terminálisokat kisbetűkkel jelöljük.
+2. Megj: A kezdő szimbólum az első szabály bal oldalán szerepel
+(megállapodás).
+3. Megj: A → β | γ | δ forma gazdaságos szabályösszevonás.
+
+=== PAGE 72 ===
+Egy reguláris nyelv környezetfüggetlen-e?
+Tétel: Igen.
+Biz: Ha L reguláris, akkor van őt felismerő M dva. Készítünk egy
+éppen L-et generáló CF grammatikát.
+M minden q állapotának megfeleltetünk egy R nemterminális
+i i
+szimbólumot, a kezdőszimbólum R .
+0
+R → aR szabály, ha δ(r ,a) = r
+i k i k
+R → ε szabály, ha r végállapot M-ben.
+i i
+Az így definiált grammatika éppen az L-beli szavakat generálja
+valóban.
+Megj.: A kapott nyelvtan egy ún. jobbreguláris nyelvtan.
+
+=== PAGE 74 ===
+Levezetési fa
+Definíció: Egy CF G grammatika szerinti levezetés olyan
+fával ábrázolható, melynek gyökere a kezdőszimbólum,
+levelei balról jobbra a levezetett szó betűi, további
+csomópontjai nemterminálisok, és az elágazások egy-
+egy alkalmazott szabálynak felelnek meg.
+Ez a levezetési fa.
+
+=== PAGE 77 ===
+Környezetfüggetlen (Context Free) grammatikák
+Definíció: Egy környezetfüggetlen grammatika szerinti levezetés
+baloldali, ha a levezetés egyes lépéseiben a legbaloldalibb
+nemtermimálist helyettesítjük be.
+Definíció: Egy nyelvtan egyértelmű, ha minden generált szavának
+egyetlen baloldali levezetése van. Különben többértelmű.
+Egy CF nyelv egyértelmű, ha van őt generáló egyértelmű nyelvtan.
+Megj: Minden baloldali levezetés meghatároz egy levezetési fát. Tehát
+egyértelmű nyelvtan esetén minden generált szóhoz egyetlen
+levezetési fa létezik.
+
+=== PAGE 80 ===
+Chomsky-féle normál alak (CNF)
+Definíció: A G = (V, Σ, R, S) CF grammatika Chomsky-féle
+normálalakban adott, ha a szabályok az alábbi alakúak:
+A → BC
+A → a
+S → ε, de ekkor S nem szerepel szabály jobb oldalán.
+Fent A, B, C∈ V, a ∈Σ, B és C nem kezdőszimbólumok.
+Tétel: Tetszőleges CF nyelvhez megadható őt generáló grammatika
+Chomsky-féle normál alakban.
+
+=== PAGE 83 ===
+CF nyelvek jellemzése pumpáló lemmával
+Tétel: (Pumpáló lemma, Bar-Hillel lemma):
+Ha L ⊆ Σ* egy CFL, akkor ∃ p ∈ N szám, hogy
+∀ s ∈ L esetén, ha s hossza legalább p, akkor s felbontható
+s =uvxyz alakba úgy, hogy:
+1. uvnxynz ∈ L minden n ≥0 esetén,
+2. | vy | >0,
+3. | vxy | ≤ p.
+
+=== PAGE 94 ===
+Verem automaták
+Definíció: Verem automata
+M = (Q, Σ, Γ, δ, q , F) ahol:
+0
+1. Q, egy véges halmaz az állapotok halmaza
+2. Σ, egy véges halmaz a bemeneti abc
+3. Γ, egy véges halmaz a verem abc
+4. δ: Q × Σ × Γ → P(Q × Γ ) az állapotátmenet függvény
+ε ε ε
+5. q ∈ Q a kezdeti állapot
+0
+6. F ⊆ Q a végállapotok halmaza
+Jelölés: Σ = Σ ∪ {ε}, Γ = Γ ∪ {ε} (‘nem olvasunk-írunk’)
+ε ε
+
+=== PAGE 95 ===
+Verem automaták
+Definíció: Felismert (elfogadott) jelsorozat
+M = (Q, Σ, Γ, δ, q , F) egy verem automata, w = w w ... w Σ -beli
+0 1 2 n ε
+jelek sorozata.
+M felismeri w-t, ha ∃ :
+r r ... r Q-beli állapotok sorozata, és
+0 1 n
+s s ... s Γ –feletti szavak sorozata hogy:
+0 1 n ε
+1. r = q és s = ε
+0 0 0
+2. (r , b) ∈ δ(r ,w , a) i = 0,...n-1, ahol:
+i+1 i i+1
+s = at és s = bt valamely a,b ∈ Γ és t ∈ Γ*
+i i+1 ε
+3. r ∈ F
+n
+Definíció: M verem automata felismeri az A nyelvet, ha
+A = {w| M felismeri w-t}.
+
+=== PAGE 98 ===
+Verem automaták
+Tétel: Minden L CF nyelvhez létezik őt felismerő verem automata.
+Biz: Legyen egy, az L-et generáló CF grammatika G.
+Megkonstruálunk egy M verem automatát, amely minden
+bemeneti jelsorozatról eldönti, hogy levezethető-e a G
+grammatika szerint.
+Ötlet: M a G baloldali levezetéseit szimulálja.
+Pl:
+S → 01SS0 szabály alkalmazása
+0 1 1 1 1 1 1 1 0 1
+S
+véges sok S
+állapot 0$
+$
+
+=== PAGE 102 ===
+Verem automaták
+Tétel: Minden M verem automatához létezik G CF grammatika, mely
+éppen az M által felismert nyelvet generálja.
+Biz: Feltesszük, hogy M-re igaz, hogy:
+1. Egyetlen végállapota van, ez q .
+vég
+2. A végállapotot üres veremmel éri el M.
+3. Minden egyes állapotátmenet vagy betesz egy
+szimbólumot a verembe, vagy kivesz egyet onnan.
+Egy adott M módosítható úgy, hogy a feltételek teljesüljenek.
+
+=== PAGE 105 ===
+Verem automaták
+1. Lemma: Ha x levezethető A -ból, akkor M a p állapotból üres
+pq
+veremmel indulva, az x-et beolvasva el tud jutni a q állapotba úgy,
+hogy a verme ismét üres.
+Biz: a levezetések lépésszáma, n szerinti teljes indukcióval.
+Alap eset: n=1
+Az egyetlen levezetési szabály jobb oldalán csak terminális szerepel.
+Ilyen szabály csak A → ε lehet.
+pp
+Ekkor valóban, a p állapotból a p állapot elérhető, és üres kiindulási
+veremmel üres vermet eredményez.
+
+=== PAGE 112 ===
+Műveletek CF nyelveken
+Tétel: Legyen L a CF nyelvek halmaza.
+L zárt a reguláris operátorokra nézve.
+Azaz ha A ∈ L és A ∈ L, akkor:
+1 2
+1. A ∪ A ∈ L.
+1 2
+2. A A ∈ L.
+°
+1 2
+3. A * ∈ L.
+1
+
+=== PAGE 115 ===
+Műveletek CF nyelveken
+Tétel: Legyen L a CF nyelvek halmaza.
+L nem zárt a metszetre nézve.
+L nem zárt a komplementerre nézve.
+Bizonyítás:
+A = {anbncm | n,m ≥0}, A = {anbmcm | n,m ≥0} mindketten CF
+1 2
+nyelvek. A ∩ A = {anbncn | n ≥0} viszont nem CF (beláttuk).
+1 2
+c c c , így a
+A De Morgan azonosság szerint: A ∩ A = (A ∪ A )
+1 2 1 2
+komplementerre zártság maga után vonná a ∩-re zártságot.
+
+=== PAGE 116 ===
+Műveletek CF nyelveken
+Tétel: Ha A CF nyelv, A reguláris nyelv, akkor A ∩ A CF nyelv.
+1 2 1 2
+Bizonyítás: Hasonlít a reguláris nyelvek esetében használtra. Legyen
+M =(Q , Σ, Γ, δ , q , F ) verem automata, hogy A = L(M ) és
+1 1 1 1 1 1 1
+M =(Q , Σ, δ , q , F ) dva, hogy A = L(M ) . Legyen
+2 2 2 2 2 2 2
+M =(Q ×Q , Σ, Γ, δ, (q ,q ), F ×F ) verem automata, ahol:
+1 2 1 2 1 2
+δ: Q ×Q × Σ × Γ → P(Q ×Q × Γ ) állapotátmenet fv legyen:
+1 2 ε ε 1 2 ε
+δ(p,q a, b) = { r, (δ (q a), s) | (r,s) ∈δ (p,a,b) }
+, 2 , 2
+M valóban A ∩ A –t ismeri fel (hf).
+1 2
+
+=== PAGE 118 ===
+Determinisztikus CF nyelvek
+Tétel: A determinisztikus CF nyelvek osztálya zárt a reguláris
+operátorokra, valamint a komplementerképzésre, és a metszetképzésre.
+Biz: nem tárgyaljuk
+Tétel: A determinisztikus CF nyelvek osztálya szűkebb, mint CF nyelvek
+osztálya, azaz van CF nyelv, ami nem determinisztikus CF nyelv.
+Pl: L={akbmcn | k≠ m vagy m≠ n } CF, de nem determinisztikus CF.
+Biz: A fenti tételt alkalmazzuk és keresünk egy alkalmas reguláris
+nyelvvet.
+
+=== PAGE 126 ===
+Turing gépek
+Definíció: Turing gép
+M = (Q, Σ, Γ, δ, q , q , q ) ahol:
+0 elfogad elutasít
+1. Q, egy véges halmaz az állapotok halmaza
+2. Σ, egy véges halmaz a bemeneti abc, mely nem tartalmazza a _ jelet
+3. Γ, egy véges halmaz a szalag abc, ahol _ ∈ Γ és Σ ⊆ Γ
+4. δ: Q × Γ→ Q × Γ × {J, B} az állapotátmenet függvény
+5. q ∈ Q a kezdő állapot
+0
+6. q ∈ Q az elfogadó állapot
+elfogad
+7. q ∈ Q az elutasító állapot
+elutasít
+
+=== PAGE 128 ===
+Turing gépek
+Definíció: Turing gép egy lépése
+a, b, c ∈ Γ szalagjelek, u, v ∈ Γ*, p, q ∈ Q állapotok
+Az ua p bv konfiguráció rákövetkezője az u q acv , ha
+δ(p, b) = (q, c, B) (a fej balra lépett)
+Az ua p bv konfiguráció rákövetkezője az uac q v , ha
+δ(p, b) = (q, c, J) (a fej jobbra lépett)
+Megj:
+p bv rákövetkezője balra lépés esetén p cv (nem esik le a szalagról)
+Definíció: u, v ∈ Γ*, p, ∈ Q (u, p, v) egy konfiguráció,
+elfogadó / elutasító, ha p= q / q
+elfogad elutasít
+kezdeti: (ε, q , w) ahol w a szalagra írt bemenő jelsorozat
+0
+
+=== PAGE 129 ===
+Turing gépek
+Definíció: M Turing gép elfogad egy w sorozatot, ha ∃ :
+C C ... C konfigurációk sorozata, hogy:
+1 2 n
+1. C a kiindulási konfiguráció,
+1
+2. C rákövetkezője C , i = 1,...n-1,
+i i+1
+3. C elfogadó konfiguráció.
+n
+Jelölés: L(M) jelöli az M Turing gép által elfogadott sorozatok halmazát.
+Ez a gép által felismert nyelv.
+
+=== PAGE 130 ===
+Turing gépek
+Definíció: Egy L ⊆ Σ * nyelv Turing felismerhető (rekurzíve
+felsorolható, parciálisan rekurzív, félig eldönthető), ha van olyan
+M Turing gép, melyre L(M) =L.
+Megj:
+s ∈ Σ * -L esetén nem biztos, hogy megáll a gép, így csak az L
+elemeire kapunk igenlő választ.
+Definíció: Egy L ⊆ Σ * nyelv Turing eldönthető vagy rekurzív, ha van
+olyan M Turing gép, melyre L(M) =L, és M minden s ∈ Σ * szóra
+megáll.
+
+=== PAGE 131 ===
+Turing gépek
+Megj: Minden rekurzív nyelv rekurzíve felsorolható is. (Az érdekes
+kérdés a fordított tartalmazás, amiről később belátjuk, hogy nem áll
+fenn.)
+Tétel: Ha L rekurzív, akkor LC is az.
+Biz: Ha L(M) =L, akkor M-ben az elfogadó és elutasító állapotot
+felcserélve, az így kapott M’ TG-re L(M’) = LC.
+
+=== PAGE 133 ===
+Turing gép változatok
+Kényelmesebbek, de nem képesek többre, mint az alap TG:
+ugyanazokat a nyelveket ismerik fel.
+Definíció: M és S Turing gép változatok ekvivalensek, ha L(M) = L
+(S).
+Megj: Ekvivalencia bizonyítására minden esetben megmutatjuk, hogy
+egy M TG változat szimulálható egy alkalmas S alap TG-pel.
+
+=== PAGE 134 ===
+Turing gép variációk: helyben maradó fej
+Definíció: Turing gép helybenmaradó fejjel (HF TG):
+M = (Q, Σ, Γ, δ, q , q , q ) ahol:
+0 elfogad elutasít
+1. ...
+2. ...
+3. ...
+4. δ: Q × Γ→ Q × Γ × {J, B, H} az állapotátmenet függvény
+5. ...
+6. ...
+7. ...
+Tétel: A HF TG-ek ekvivalensek a TG-ekkel.
+Biz: Egy helyben maradó átmenet szimulálható új állapot felvételével és
+egy jobbra ill. egy balra lépéssel.
+
+=== PAGE 135 ===
+Turing gép variációk: több szalag
+Definíció: Turing gép több szalaggal (TSZ TG):
+M = (Q, Σ, Γ, δ, q , q , q ) ahol:
+0 elfogad elutasít
+1. ...
+2. ...
+3. ...
+4. δ: Q × Γ k → Q × Γ k × {J, B} k az állapotátmenet függvény
+5. ...
+6. ...
+7. ...
+Megj. A helyben maradást itt is megengedhetjük.
+
+=== PAGE 136 ===
+Turing gép variációk: több szalag
+Tétel: A TSZ TG-ek ekvivalensek a TG-ekkel.
+Biz: Legyen M egy k-szalagos TG. Megadunk egy S alap TG-et, mely szimulálja M-et.
+0 1 1 1 ! ! ! ! ! ! ! )
+Μ)
+a + a = c ! ! ! ! !)
+2 4 5 ! ! ! ! !)
+S
+# 0 1 1 1 # a + a = c # 2 4 5 #
+
+=== PAGE 138 ===
+Turing gép variációk: nem determinisztikus TG
+Definíció: Nemdeterminisztikus Turing gépek (ND TG):
+M = (Q, Σ, Γ, δ, q , q , q ) ahol:
+0 elfogad elutasít
+1. ...
+2. ...
+3. ...
+4. δ: Q × Γ→ P(Q × Γ × {J, B}) az állapotátmenet függvény
+5. ...
+6. ...
+7. ...
+Megj: A ND TG működését fa írja le. Ha egy ágon az elért állapot
+elfogadó, akkor a ND TG elfogadta a kezdeti sorozatot.
+
+=== PAGE 139 ===
+Turing gép variációk: nem determinisztikus TG
+Tétel: Minden M ND TG-hez van vele ekvivalens S TG.
+Biz: m az M állapotátmeneteinek legnagyobb száma
+C
+0
+C C ... C
+1 2 8
+C
+1,1
+C
+1,2
+... C
+1,32 C C
+...
+C C C
+...
+C
+2,1 2,2 2,11 8,1 8,2 8,m
+Pl: 2,1,3 címke
+melyik konfigurációnak felel meg?
+
+=== PAGE 145 ===
+Turing gép variációk: felsoroló TG
+Definíció: Felsoroló Turing gép
+M = (Q, Σ, Γ, δ, q , q , q ) ahol:
+0 elfogad elutasít
+1. ...
+2. nincsenek bemeneti sorozatok, csak munkaszalag
+3. ...
+4. δ: Q × Γ→ (Q × Γ × {J, B} × Σ*) az állapotátmenet függvény,
+ahol a Σ* -beli sorozatok a felsorolt (kinyomtatott) sorozatok.
+5. ...
+6. ...
+7. ...
+Megj: Az összes felsorolt elemek (egyesek esetleg többször is) alkotják a
+TG által felsorolt nyelvet.
+
+=== PAGE 146 ===
+Turing gép variációk: felsoroló TG
+Tétel: Egy L nyelvet felsoroló E TG-hez létezik egy N TG, mely éppen
+L-et ismeri fel, és viszont.
+Biz: E-hez N
+Legyen N egy kétszalagos TG, ahol az első szalagra a bemeneti
+sorozat kerül, a másodikra íródik mindig az E által felsorolt új
+sorozat. N elfogadja a w inputot, ha az egy, a második szalagra kiírt
+sorozattal azonos. N-hez van S ekvivalens TG.
+
+=== PAGE 149 ===
+Függvényszámítás Turing géppel
+Definíció: x ∈ Σ* kezdeti bemeneti sorozatra az M Turing gép
+outputja az y ∈ Σ* sorozat, ha M megáll az x inputra, és
+megállásakor a szalagon éppen y szerepel (az üres szimbólumok
+előtt), valamint a fej ismét az első pozíción áll.
+Ezt a tényt y = M(x) jelöli.
+Definíció: Az M által kiszámított fv az a
+f : Σ* → Σ* parciálisan értelmezett fv, mely minden x-en
+M
+értelmezett, melyre van y, hogy y = M(x).
+Definíció: Egy f: Σ* → Σ* parciális függvény parciálisan rekurzív,
+ha van M TG, hogy f = f .
+M
+Ha ezen felül f minden Σ*-ra értelmezve van, akkor f rekurzív.
+
+=== PAGE 150 ===
+Függvényszámítás Turing géppel
+Megj: Tetszőleges n természetes szám egyértelműen felírható mint
+B = 0∪1(0∪1)* eleme, ezt bin(n) =w, illetve num(w) =n jelöli.
+Minden, a természetes számokon értelmezett, és természetes szám
+értékű fv tekinthető egy f: B → B függvénynek.
+Továbbá minden, k-dimenziós Nk → N függvény tekinthető egy
+f: B k → B függvénynek.
+Definíció: M =(Q, Σ, Γ, δ, q , q , q ) TG, 0, 1, ; ∈ Σ M
+0 elfogad elutasít
+kiszámítja az f: B k → B függvényt, ha tetszőleges w , … w ∈ B
+1 k
+esetén a w=w ; … ;w sorozatra M(w) = u, ahol
+1 k
+u = f(w , … w ).
+1 k
+
+=== PAGE 164 ===
+Nyitott kérdés: a kongruens számok felismerése
+Definíció: Egy m pozitív szám kongruens, ha van olyan derékszögű háromszög,
+melynek területe m, és oldalai racionális számok.
+p m r p2 + q2 = r2
+q pq = 2 m
+Pl. 5 kongruens: 3/2, 20/3, 41/6
+6 kongruens 3,4,5
+Nem ismert, hogy a K (a kongruens számok problémája) eldönthető-e.
+Megj: K rekurzíve felsorolható: Mivel a rac. számok megszámlálhatók, az azokból
+alkotott párok is azok. Tehát ha van olyan p, q hogy pq = 2 m akkor az kiderül
+véges sok lépés után. Majd egy ilyen párra az is véges sok lépésben kiderül, ha
+az a Pythagorasz tételnek eleget tesz valamely r rac. számot választva.
+
+=== PAGE 165 ===
+Nyelvek felismerhetősége – problémák
+eldönthetősége
+Tétel: Van olyan L’ ⊆ ∑*={0,1}* nyelv, amely
+nem Turing felismerhető, azaz nem rekurzíve felsorolható.
+Biz: Egy TG leírható véges jelsorozattal, pl. a definíciós megadással.
+Az összes TG felsorolható, mivel k hosszú jelsorozattal megadott TG véges
+sok van. Legyen M , M , ...M , ... egy felsorolásuk (lásd később részletesen).
+1 2 n
+Az M TG egyértelműen meghatározza az általa felismert L nyelvet,
+i i
+így a Turing felismerhető nyelvek is felsorolhatók: L , L , ...L , ...
+1 2 n
+Azaz a Turing felismerhető nyelvek megszámlálhatóan sokan vannak.
+Másrészt: Az összes ∑ feletti nyelv számossága éppen a {0,1}* lehetséges
+részhalmazainak a számossága, ami több, mint megszámlálható. (Biz.
+középiskola, ill. Cantor módszer.)
+
+=== PAGE 168 ===
+Egy nem Turing felismerhető nyelv
+Jelölje M a w által kódolt Turing-gépet.
+w
+Megjegyzés: a {0, 1}* -beli szavak felsorolhatók.
+Pl. a kanonikusan: Az üres szót, majd az 1, 2, ...k, ...
+hosszúságúakat soroljuk fel. Az azonos hosszú sorozatokat
+lexikografikusan soroljuk fel, így: ε, 0,1, 00, 01, 10, 11, 000,
+001, 010, 011, ...
+
+=== PAGE 169 ===
+Egy nem Turing felismerhető nyelv: L
+d
+Def: Diagonális nyelv: azon TG kódja, mely TG-ek nem fogadják el a saját kódjukat
+L = { w∈ {0, 1}*, az M gép létezik, és w ∉ L }
+d w M
+w
+Tétel: L nem rekurzíve felsorolható nyelv.
+d
+Biz: Indirekten, t. fel, hogy L rekurzíve felsorolható. Azaz van N TG, mely éppen L
+d d
+szavait ismeri fel, L = L Azaz N felismeri w-t, ha w egy olyan M TG-t
+d N. w
+kódol, mely nem fogadja el a saját kódját.
+Mi a helyzet N-nel? Legyen N kódja s. Felismeri-e N s-et, azaz s ∈ L teljesül-e?
+d
+Ha feltesszük hogy igen, akkor a def. szerint s ∉ L , ELLENTMONDÁS!!
+d
+Ha feltesszük hogy nem, akkor a def. szerint s ∈ L , ELLENTMONDÁS!!
+d
+Tehát mindkét esetben képtelenségre jutottunk, így az indirekt feltevésünk hamis.
+
+=== PAGE 170 ===
+Az univerzális Turing gép
+Képes szimulálni tetszőleges, a w kódjával adott M TG-et.
+w
+Tétel: Van olyan U 3 szalagos TG, melyre teljesül, hogy ha
+w, s ∈ {0, 1}*, és M létezik, akkor az U gép pontosan akkor
+w
+fogadja el (utasítja el, kerül végtelen ciklusba) az w#s bemenetet,
+amikor M az s bemenetet elfogadja (elutasítja, ciklusba kerül).
+w
+Bizonyítás: A 3 szalag szerepe
+w#s nem változik, M működését adja meg
+w
+s
+M szalagjának a szimulálása
+w
+0 M pillanatnyi állapota
+w
+
+=== PAGE 173 ===
+Az univerzális nyelv, L
+u
+Tétel: (Turing, 1936) L nem rekurzív nyelv.
+u
+Biz: Indirekten, feltesszük hogy L rekurzív nyelv. Ekkor van N TG,
+u
+mely eldönti L –t, azaz minden inputra megáll, és L = L .
+u u N
+Legyen N’ a következők szerint működő TG:
+1. Ha a w∈ {0, 1}* bemenet nem TG kódja, elutasítja.
+2. Ha a w bemenet egy TG kódja, akkor elindítja N-t az w#w
+bemenettel. Ha ez a szimuláció elfogadó állapotban megáll, akkor
+N’ elutasító állapotban végez, és fordítva, elutasító N állapot esetén
+a N’ végállapota elfogadó.
+
+=== PAGE 176 ===
+A megállási probléma
+Kérdés: Eldönthető-e, hogy egy adott M TG gép megáll-e minden
+bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?)
+Def: A megállási problémához (halting problem) tartozó L nyelv
+h
+L = {w#s ∈ {0, 1}*, M létezik, és s bemenettel elindítva megáll}
+h w
+Tétel: L rekurzíve felsorolható, de nem rekurzív nyelv.
+h
+Biz: Legyen U egy univ. TG. Ez L szavaira meg fog állni. Legyen U’
+h
+az a TG, mely azonos U-val, kivéve hogy U elutasít állapotát
+elfogadra változtattuk. Ekkor L = L , azaz L rek. felsorolható.
+h U’ h
+
+=== PAGE 179 ===
+A megállási probléma üres inputra
+Kérdés: Eldönthető-e, hogy egy adott M TG gép megáll-e az üres
+bemenetre?
+Def: L = {w∈ {0, 1}*, M létezik, és az ε (üres) bemenettel elindítva
+ε w
+megáll}
+Tétel: L rekurzíve felsorolható.
+ε
+Biz: A rek. felsorolhatóságot bizonyítja, hogy egy w∈ L esetén az L
+ε h
+megállási nyelvet felismerő automatát a w#ε= w# inputtal futtatva,
+ez a gép éppen L –t ismeri fel.
+ε
+Tétel: L nem eldönthető. Bizonyítás: visszavezetéssel.
+ε
+
+=== PAGE 188 ===
+Generatív grammatikák (ism)
+Definíció: Egy G = (V, Σ, R, S) négyes generatív grammatika, ahol:
+• V egy véges halmaz, a grammatikai változók vagy
+nemterminálisok halmaza,
+• Σ egy véges halmaz, diszjunkt V-vel, a terminálisok halmaza,
+• R egy véges halmaz, a levezetési szabályok halmaza, ahol egy
+levezetési szabály alakja
+α → β
+ahol α és β terminálisok és nemterminálisok sorozata,
+• S∈V a kezdő- vagy mondatszimbólum.
+
+=== PAGE 189 ===
+Generatív grammatikák (ism)
+Definíció: A G = (V, Σ, R, S) grammatika generálja az L ⊆ Σ*
+nyelvet, ha L = { w ∈ Σ* | S ⇒* w }
+Jelölés:
+L(G) a G grammatika által generált nyelv.
+
+=== PAGE 191 ===
+Rekurzíve felsorolható és nyelvtannal
+generálható nyelvek kapcsolata
+Tétel: A nyelvtannal generálható nyelvek osztálya megegyezik a
+rekurzíve felsorolható nyelvek osztályával. Azaz L nyelv akkor és
+csak akkor generálható grammatikával, ha van a nyelvet felismerő
+Turing -gép.
+Biz: ⇒ irány (a Turing-Church tézisből is következik/azt támasztja alá)
+Megmutatjuk, hogy ha L grammatikával generálható, akkor van
+M TG, hogy L(M)=L.
+Legyen G = (V, Σ, R, S) grammatika mely L-et generálja.
+A grammatika szerinti levezetés egy-egy lépését meghatározza,
+hogy mely szabályt alkalmazzuk, és annak bal oldalát az éppen
+aktuális mondatszerű forma hányadik elemére illesztjük.
+
+=== PAGE 196 ===
+Környezetfüggő nyelvtannal generálható nyelvek
+felismerése TG-pel
+Mi a helyzet az 1-es (CS) nyelvosztállyal?
+Def: Lineárisan korlátozott TG egy olyan, speciális TG, mely a
+szalagnak csak a bemeneti által elfoglalt részét használja.
+Tétel: A környezetfüggő nyelvtannal generálható nyelvek osztálya (CS)
+megegyezik a lineárisan korlátozott TG-pel felismerhető nyelvek
+osztályával.
+Biz: nem részletezzük
+Tétel: A környezetfüggő nyelvtannal generálható nyelvek osztálya (CS)
+valódi részhalmaza a rekurzív nyelvek osztályának.
+Biz: nem részletezzük
+
+=== PAGE 203 ===
+Numerikus függvények
+Tétel: A primitív rekurzív függvények számossága megszámlálhatóan
+végtelen.
+Biz: A primitív rekurzív függvények megadhatók az alap függvények,
+a kompozíció és rekurzió, valamint zárójelek és term. számok
+szimbólumaiból álló véges sorozatokkal, ilyenből megsz. végtelen
+van.
+Tétel: Nem minden kiszámítható fv. primitív rekurzív.
+Biz: Cantor-féle átlós módszerrel, unáris fv-ekre
+Soroljuk fel az összes primitív rekurzív unáris függvényt,
+f ,f ,...f ,..
+1 2 n
+Legyen g az az unáris fv, melyre g(n) = f (n)+1
+n
+
+=== PAGE 207 ===
+Numerikus függvények
+Tétel: Az f: Nk →N függvény µ-rekurzív akkor és csak akkor, ha
+rekurzív, azaz kiszámítható Turing géppel.
+Biz: nem részletezzük
+
+=== PAGE 213 ===
+TG időkorlátja
+Jelölés: Egy adott M TG esetén:
+T (n) jelöli M maximális lépésszámát (számolási idejét) az n
+M
+hosszúságú bemenetek esetén.
+S (n) jelöli az M által maximálisan elolvasott munkaszalag
+M
+jelek számát n hosszúságú bemenetek esetén.
+Megj: Ha M nem áll meg valamely n hosszú bemenetre, akkor T (n)
+M
+végtelen. Ekkor S (n)-t is végtelennek tekintjük.
+M
+Definíció: Legyen t: N→N függvény olyan, hogy t(n) ≥ n minden n-
+re. Az M TG t(n) időkorlátos, ha az n hosszú bemenetek esetén
+legfeljebb t(n) lépést tesz meg, azaz T (n) ≤ t(n) .
+M
+Definíció: TIME(t(n)) = {L | L felismerhető egy O(t(n)) időkorlátos M
+TG-pel.}.
+
+=== PAGE 214 ===
+TG tárkorlátja
+Definíció: Legyen s: N→N függvény olyan, hogy s(n) ≥ log n
+2
+minden n-re. Az M TG s(n) tárkorlátos, ha az n hosszú
+bemenetek esetén legfeljebb s(n) db cellát használ a
+munkaszalagon, azaz S (n) ≤ s(n) .
+M
+Definíció: SPACE(s(n)) = {L | L felismerhető egy O(s(n)) tárkorlátos
+M TG-pel.}.
+
+=== PAGE 216 ===
+A P osztály
+Pl: TIME(n) a lineáris időben felismerhető nyelvek osztálya.
+TIME(n2) a négyzetes időben felismerhető nyelvek osztálya.
+Definíció: P = ∪ TIME(nk) a polinom időben
+k ≥1
+egyszalagos TG-pel eldönthető nyelvek osztálya.
+1. Megj: Valamely, az alappal ekvivalens speciális TG modellt
+használva, ha az polinom időben szimulálható alap TG-pel, akkor
+P invariáns arra nézve, hogy az alap vagy a speciális TG-et
+használjuk számítási modellként.
+2. Megj: P a praktikusan számítógéppel megoldható problémáknak
+felel meg. Általában találunk P-beli problémákra gyors
+(négyzetes, köbös,...) algoritmust
+
+=== PAGE 219 ===
+TG-ek szimulációjának idő és tárigénye
+Láttuk, hogy speciális TG-ek (többszalagos, RAM, ... nem
+determinisztikus) szimulálhatók alap TG-pel. Ehhez több idő illetve
+tár kell, mennyivel? Mi az egyszerűbb gépeken a hatékonyságromlás
+mértéke?
+Tétel: Az N k-szalagos TG-hez van olyan egyszalagos M TG, hogy
+L(M) = L(N), és ha N f(n) időigényű, akkor M O(f(n)2) időigényű.
+Biz: nem részletezzük, a korábbi konstrukcióhoz hasonló
+
+=== PAGE 220 ===
+TG-ek szimulációjának idő és tárigénye
+Tétel: Az N TG-hez van olyan többszalagos M TG, hogy egy
+alkalmas n számon túl
+0
+a) tetszőleges ε > 0 esetén T (n) ≤ n(1+ ε), ha T (n) = O(n)
+M N
+b) tetszőleges c > 0 esetén T (n) ≤ c T (n), ha lim T (n)/n = ∞
+M N N
+Biz: nem részletezzük.
+Megj: A fenti tétel magyarázza, hogy miért tekinthettünk el a konstans
+szorzótól az időigény definiálásakor.
+
+=== PAGE 222 ===
+Nyelvosztályok komplementere
+Jelölés: L I feletti nyelv esetén LC = I*\L az L komplementere.
+Def: L nyelvosztály esetén coL = {L | LC ∈ L } az L nyelvosztály
+komplementere.
+Tétel:
+a) co(coL) =L
+b) Ha A ⊆ B nyelvosztályok, akkor co A ⊆ co B.
+Biz:
+a) (LC)C = L alapján.
+b) L ∈ co A ⇒LC ∈ A ⇒ LC ∈ B ⇒ L ∈ co B
+
+=== PAGE 223 ===
+Tár-idő tételek komplemens nyelvosztályokra
+Tétel: TIME(t(n))= coTIME(t(n)), azaz
+L ∈ TIME(t(n)) akkor és csak akkor, ha LC ∈ TIME(t(n)) .
+Biz: Az L-et eldöntő M TG-ben az elfogadó és elutasító állapotokat
+felcserélve, egy azonos futásidejű, LC-t eldöntő TG-et kapunk, tehát
+LC ∈ TIME(t(n)) , azaz coTIME(t(n)) ⊆TIME(t(n)).
+Másrészt TIME(t(n)) =co( coTIME(t(n))) ⊆coTIME(t(n)).
+Tehát TIME(t(n)) =coTIME(t(n)).
+
+=== PAGE 224 ===
+Tár-idő tételek komplemens nyelvosztályokra
+Tétel: SPACE(s(n))= coSPACE(s(n)), azaz
+L ∈ SPACE(s(n)) akkor és csak akkor, ha LC ∈ SPACE(s(n)).
+Biz: Legyen L ∈ SPACE(s(n)). A tár-idő tételbeli N gép minden
+inputra megáll, O(s(n)) tárkorlátos.
+Ebben felcserélve az elfogadó és elutasító állapotokat, adódik
+hogy LC ∈ SPACE(s(n)), azaz
+coSPACE(s(n)) ⊆ SPACE(s(n)).
+A másik irány mint előbb.
+
+=== PAGE 225 ===
+Nevezetes nyelvosztályok
+k
+Definíció: EXPTIME = ∪ TIME(2n ) az exponenciális időben
+k ≥1
+felismerhető nyelvek osztálya.
+Definíció: PSPACE = ∪ SPACE(nk) a polinom tárban
+k ≥1
+felismerhető nyelvek osztálya.
+Tétel: P ⊆ PSPACE ⊆ EXPTIME
+Biz: Ha M TG t(n) időkorlátos, akkot t(n) tárkorlátos is (lépésenként
+max. egy jelet ír a munkaszalagra).
+Tehát TIME(nk) ⊆ SPACE(nk), és így
+P = ∪ TIME(nk) ⊆ ∪ SPACE(nk) = PSPACE
+k ≥1 k ≥1
+
+=== PAGE 226 ===
+Nevezetes nyelvosztályok
+Ha L ∈ PSPACE, akkor valamely k-ra L ∈ SPACE(nk)
+A tár-idő tétel szerint ekkor hogy
+k
+L ∈ TIME(2n ) ⊆ EXPTIME.
+Tétel: EXPTIME ⊂ R (=Rekurzív nyelvek osztálya)
+Biz: ⊆ következik EXPTIME időkorlátosságából.
+A valódi tartalmazáshoz mutatunk egy L nyelvet, mely rekurzív, de
+nem EXPTIME–beli,
+
+=== PAGE 230 ===
+Nemdeterminisztikus TG (ism)
+Definíció: Nemdeterminisztikus Turing gép (ND TG):
+M = (Q, Σ, Γ, δ, q , q , q ) ahol:
+0 elfogad elutasít
+1. ...
+2. ...
+3. ...
+4. δ: Q × Γ→ P(Q × Γ × {J, B}) az állapotátmenet függvény
+5. ...
+6. ...
+7. ...
+Megj: A ND TG működését fa írja le. Ha egy ágon az elért állapot
+elfogadó, akkor a ND TG elfogadta a kezdeti sorozatot.
+
+=== PAGE 231 ===
+Turing gép variációk: nemdeterminisztikus TG
+Tétel: Minden M NDTG-hez van vele ekvivalens S TG. (volt)
+C
+0
+C C ... C
+1 2 8
+C
+1,1
+C
+1,2
+... C
+1,32 C C
+...
+C C C
+...
+C
+2,1 2,2 2,11 8,1 8,2 8,m
+Pl: 2,1,3 címke
+melyik konfigurációnak felel meg?
+
+=== PAGE 232 ===
+NDTG időkorlátja
+Definíció: Legyen t: N→N függvény olyan, hogy t(n) ≥ n minden n-
+re. Az M NDTG t(n) időkorlátos, ha az n hosszú bemenetek
+esetén M minden számítási út mentén legfeljebb t(n) lépést
+megtéve megáll. Azaz n hosszú bemenetek esetén legfeljebb t(n)
++1 mély a számítási fa.
+Megj: Nem ismert olyan fizikai megvalósítás, mely t(n)-nel arányos
+időben szimulálná egy t(n) időkorlátos NDTG működését.
+Definíció: NTIME(t(n)) = {L ⊆I* | L felismerhető egy O(t(n))
+időkorlátos M NDTG-pel.}.
+
+=== PAGE 233 ===
+Az NP nyelvosztály
+Definíció: NP = ∪ NTIME(nk) a polinom időben
+k ≥1
+egyszalagos NDTG-pel eldönthető nyelvek osztálya.
+1. Megj: P ⊆ NP
+mivel egy t(n) időkorlátos TG tekinthető egy speciális, t(n)
+időkorlátos NDTG-nek, így TIME(nk) ⊆ NTIME(nk)
+2. Megj: P ⊂ NP vagy P = NP ?
+Nyitott kérdés, 1M $ díj!
+
+=== PAGE 234 ===
+Az NP nyelvosztály
+Tétel: P ⊆ NP ∩ coNP
+Biz: P ⊆ NP láttuk.
+De a co operátor tartalmazás megőrző volta miatt ekkor
+coP ⊆ coNP
+Láttuk hogy coP = P , tehát P ⊆ coNP is teljesül.
+
+=== PAGE 235 ===
+NP -be tartozás megmutatása bizonyítékkal
+Állítás: x∈ L
+Tanú, bizonyíték: y
+A bizonyíték:
+• nem hosszú,
+• hatékonyan ellenőrizhető!
+Pl.
+Merlin lovagjai és udvarhölgyei - egy párosítás
+Hamilton kör van-e a gráfban? – az összes csúcs egy sorozata
+G gráf síkbarajzolható-e? – egy síkba lerajzolt gráf
+
+=== PAGE 237 ===
+NP -be tartozás megmutatása bizonyítékkal
+Def: Legyen L egy Σ feletti nyelv. L polinomiálisan bizonyítható, ha
+van olyan V algoritmus, hogy
+L = {w | V elfogadja <w,c> –t valamely Σ*-beli c-re},
+és V polinom idejű w hosszát tekintve.
+Tétel: NP azokat a nyelveket tartalmazza, amelyek polinomiálisan
+bizonyíthatók.
+
+=== PAGE 239 ===
+Nevezetes NP –teljes problémák
+Def: A és B Σ* feletti nyelvek.
+A polinom időben visszavezethető B-re, ha van
+f: Σ* →Σ* polinomiális időben kiszámítható fv, hogy
+w ∈ A ⇔ f(w) ∈ B.
+Ezt A ≤ B jelöli.
+P
+Tétel: Ha A ≤ B és B ∈ P, akkor A ∈ P.
+P
+Biz: Legyen M az a TG, mely polinom időben felismeri B-t.
+Ekkor a következő N TG A-t ismeri fel polinom időben:
+
+=== PAGE 242 ===
+Nevezetes NP –teljes problémák
+Tétel: Ha B NP-teljes és B ∈ P, akkor NP =P.
+Biz: definíciókból köv.
+Tétel: Ha B NP-teljes, C NP-beli, és B ≤ C , akkor C is NP-teljes.
+P
+Biz: definíciókból köv.
+
+=== PAGE 243 ===
+Nevezetes NP –teljes problémák
+Tétel: (Cook-Levin) SAT ∈ P akkor és csak akkor, ha NP =P.
+Másképp fogalmazva, SAT NP-teljes.
+Biz: nem részletezzük
+Def: 3SAT = {Φ |
+Φ = (a ∨ b ∨ c ) ∧ (a ∨ b ∨ c ) ∧ ... ∧(a ∨ b ∨ c )
+1 1 1 1 1 1 k k k
+valamely k-ra, ahol tetszőleges a , b , c egy Boole-változó vagy
+i i i
+annak negáltja
+Φ kielégíthető Boole-kifejezés}.
+Tétel: 3SAT NP-teljes.
+Biz: SAT polinom időben visszavezethető 3SAT-ra. (Nem
+részletezzük)
+
+=== PAGE 244 ===
+Nevezetes NP –teljes problémák
+Tétel:VERTEX COVER (lefogható-e G minden éle legfeljebb k
+ponttal) NP-teljes.
+Tétel:k-COLORABILITY (kiszínezhető-e G minden éle legfeljebb k
+színnel) NP-teljes k ≥3 esetén.
+Tétel: HAMPATH NP-teljes.
+Biz: 3SAT polinom időben visszavezethető HAMPATH-ra.
+
+=== PAGE 255 ===
+Összenyomhatóság
+Tétel: (Invariancia tétel)
+Legyen U egy univerzális TG. Ekkor tetszőleges M TG-hez
+létezik c ∈Z+ szám, hogy minden I
+*
+-beli x szó esetén
+M
+C (x) ≤ C (x) + c .
+U M M
+Biz: Legyen y egy legrövidebb szó, melyre f (y) =x.
+M
+Legyen M kódja w ∈I
+*
+.
+Ekkor U a w y bemenettel x-et adja meg, azaz f (w y) =x.
+# #
+U
+Tehát C (x) ≤ "w# y " = "w#"+ " y " = "w#"+ C (x) = c + C (x)
+U M M M
+
+=== PAGE 258 ===
+Kolmogorov bonyolultság
+Def: Egy I -beli x szó összenyomhatatlan, ha
+*
+C (x) ≥ " x " .
+Tétel: Legyen k ∈Z+ szám. Ekkor
+1) Legfeljebb 2k +1 – 1 olyan x szó van, melyre C(x) ≤k.
+2) Minden n természetes számra van n hosszú,
+összenyomhatatlan szó.
+Biz: 1) Legyen H = {x ∈I * , C(x) ≤ k }. H -nak legfeljebb annyi
+k k
+eleme van, mint a max. k hosszú I -beli szorozatok száma, azaz
+*
+1 + 2 + 22 + 23 +... + 2k = 2k +1 – 1
+
+=== PAGE 260 ===
+Kolmogorov bonyolultság
+Tétel: A Kolmogorov bonyolultságot megadó C: I
+*→
+Z+ függvény nem
+rekurzív.
+Biz: Legyen F: Z+→ I
+*
+függvény, hogy F(m) = x, ahol x a
+lexikografikus rendezés szerinti első eleme a
+{z ∈I * C (z) ≥ m } halmaznak.
+Tegyük fel indirekten, hogy C rekurzív.
+Ekkor van olyan N TG, mely kiszámítja C(z)-t.
+
+=== PAGE 263 ===
+Kolmogorov bonyolultság és a véletlen
+Jelölés: I ∞ jelöli az összes végtelen 0-1 sorozatot. Egy x ∈ I ∞ esetén x
+n
+az első n elemből álló szót jelöli.
+Def: Egy x ∈ I ∞ sorozat Kolmogorov-véletlen sorozat, ha
+lim C (x ) /n = 1, azaz a sorozat kezdőszeletei
+n →∞ n
+„aszimptotikusan” majdnem teljesen összenyomhatatlanok.
+Tétel: Ha x ∈ I ∞ egy Kolmogorov-véletlen sorozat, akkor nincs M TG,
+mely n (bináris) bemenetre x -t állítja elő.
+n
+Biz: Indirekte, tegyük fel hogy van ilyen M TG. Ekkor C (x ) ≤log n
+M n 2
++1, és az invariancia tétel szerint C(x ) ≤log n+1 +c
+n 2 M:
+De ekkor lim C (x ) /n ≤ lim log n/n = 0, ellentmondás!
+n →∞ n n →∞ 2

@@ -97,83 +97,81 @@
         • <strong>S ∈ V</strong> a kezdő- vagy mondatszimbólum.
     </div>
 
-    <h3>Levezetés (deriváció)</h3>
-    <p>Egy szóforma közvetlenül levezethető egy másikból (jelölés: ⇒), ha egyetlen szabály alkalmazásával megkapható. A levezetés tranzitív lezártját ⇒* jelöli.</p>
-    <div class="pelda">
-        <strong>Példa:</strong> A {0<sup>i</sup>1<sup>i</sup> | i &gt; 0} nemreguláris nyelv nyelvtana<br>
-        <span style="font-style:normal;">G = ({S}, {0,1}, {S → 0S1, S → 01}, S)</span>
-
-        <div style="display:flex; gap:30px; align-items:flex-start; margin:10px 0; font-style:normal; line-height:2.1;">
-            <div style="min-width:130px; font-size:12pt;">
-                S → 0 <strong>S</strong> 1<br>
-                S → 0 1
-            </div>
-            <div style="font-size:10pt; line-height:1.7; padding-top:4px;">
-                <strong>levezetési szabályok</strong><br><br>
-                <em>terminálisok</em> (a nyelv abc-je)<br><br>
-                <strong>grammatikai változók</strong> vagy nemterminális jelek<br><br>
-                a <strong>kezdő szimbólum</strong>: egy kitüntetett nemterminális jel
-            </div>
-        </div>
-
-        <svg width="295" height="220" viewBox="0 0 295 220" style="display:block; margin:6px auto; font-family:'Times New Roman',serif;">
-            <!-- Edges S1 -->
-            <line x1="147" y1="22" x2="15" y2="195" stroke="#000" stroke-width="0.9"/>
-            <line x1="147" y1="22" x2="120" y2="63" stroke="#000" stroke-width="0.9"/>
-            <line x1="147" y1="22" x2="270" y2="195" stroke="#000" stroke-width="0.9"/>
-            <!-- Edges S2 -->
-            <line x1="120" y1="63" x2="48" y2="195" stroke="#000" stroke-width="0.9"/>
-            <line x1="120" y1="63" x2="106" y2="108" stroke="#000" stroke-width="0.9"/>
-            <line x1="120" y1="63" x2="222" y2="195" stroke="#000" stroke-width="0.9"/>
-            <!-- Edges S3 -->
-            <line x1="106" y1="108" x2="81" y2="195" stroke="#000" stroke-width="0.9"/>
-            <line x1="106" y1="108" x2="100" y2="152" stroke="#000" stroke-width="0.9"/>
-            <line x1="106" y1="108" x2="189" y2="195" stroke="#000" stroke-width="0.9"/>
-            <!-- Edges S4 -->
-            <line x1="100" y1="152" x2="114" y2="195" stroke="#000" stroke-width="0.9"/>
-            <line x1="100" y1="152" x2="156" y2="195" stroke="#000" stroke-width="0.9"/>
-            <!-- S nodes -->
-            <text x="147" y="27" text-anchor="middle" font-style="italic" font-size="13">S</text>
-            <text x="120" y="68" text-anchor="middle" font-style="italic" font-size="13">S</text>
-            <text x="106" y="113" text-anchor="middle" font-style="italic" font-size="13">S</text>
-            <text x="100" y="157" text-anchor="middle" font-style="italic" font-size="13">S</text>
-            <!-- Terminal leaves -->
-            <text x="15"  y="210" text-anchor="middle" font-size="12">0</text>
-            <text x="48"  y="210" text-anchor="middle" font-size="12">0</text>
-            <text x="81"  y="210" text-anchor="middle" font-size="12">0</text>
-            <text x="114" y="210" text-anchor="middle" font-size="12">0</text>
-            <text x="156" y="210" text-anchor="middle" font-size="12">1</text>
-            <text x="189" y="210" text-anchor="middle" font-size="12">1</text>
-            <text x="222" y="210" text-anchor="middle" font-size="12">1</text>
-            <text x="270" y="210" text-anchor="middle" font-size="12">1</text>
-        </svg>
-
-        Levezetés (i=4): S ⇒ 0S1 ⇒ 00S11 ⇒ 000S111 ⇒ 00001111<br>
-        Ez a grammatika az L = {0<sup>n</sup>1<sup>n</sup> | n ≥ 1} nyelvet generálja (CF, de nem reguláris).
-    </div>
-    <div class="definicio">
-        <strong>L(G):</strong> Azon terminális szavak halmaza, amelyek levezethetők a kezdőszimbólumból:<br>
-        L(G) = {w ∈ Σ* | S ⇒* w}
-    </div>
-
-    <div class="definicio">
-        <strong>Definíció (Közvetlen levezetés):</strong> Egy G = (V, Σ, R, S) grammatika alapján a κ ∈ (V∪Σ)* szóból <em>közvetlenül levezethető</em> a µ ∈ (V∪Σ)* szó, ha léteznek olyan γ, δ ∈ (V∪Σ)* szavak és α → β szabály R-ben, hogy:
-        <div style="margin: 6px 0 6px 20px;">κ = γ α δ,&nbsp;&nbsp; µ = γ β δ.</div>
-        <strong>Jelölés:</strong> κ ⇒<sub>G</sub> µ &nbsp; vagy &nbsp; κ ⇒ µ
-    </div>
-
+    <h3>Generatív grammatika levezetés</h3>
+    <p><a href="https://www.youtube.com/watch?v=_eVShbDYjqI&t=3m15s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Definíció (Levezetés):</strong> Tetszőleges u és v ∈ (V∪Σ)* szavak esetén azt mondjuk, hogy v <em>levezethető</em> u-ból a G = (V, Σ, R, S) grammatika alapján, ha u = v, vagy léteznek n ≥ 1 és u = w<sub>1</sub>, …, w<sub>n</sub> = v szavak úgy, hogy:
         <div style="margin: 6px 0 6px 20px;">w<sub>1</sub> ⇒<sub>G</sub> w<sub>2</sub> ⇒<sub>G</sub> … ⇒<sub>G</sub> w<sub>n</sub>.</div>
         <strong>Jelölés:</strong> u ⇒*<sub>G</sub> v &nbsp; vagy &nbsp; u ⇒* v
     </div>
+        <p><a href="https://www.youtube.com/watch?v=_eVShbDYjqI&t=2m0s" target="_blank">▶ Előadás ezen a részen</a></p>
 
+<div class="definicio">
+        <strong>Definíció (Közvetlen levezetés):</strong> Egy G = (V, Σ, R, S) grammatika alapján a κ ∈ (V∪Σ)* szóból <em>közvetlenül levezethető</em> a µ ∈ (V∪Σ)* szó, ha léteznek olyan γ, δ ∈ (V∪Σ)* szavak és α → β szabály R-ben, hogy:
+        <div style="margin: 6px 0 6px 20px;">κ = γ α δ,&nbsp;&nbsp; µ = γ β δ.</div>
+        <strong>Jelölés:</strong> κ ⇒<sub>G</sub> µ &nbsp; vagy &nbsp; κ ⇒ µ
+    </div>  
+    <details>
+    <summary><strong>Példa:</strong> A {0<sup>i</sup>1<sup>i</sup> | i &gt; 0} nemreguláris nyelv nyelvtana — Levezetés (i=4): S ⇒ 0S1 ⇒ 00S11 ⇒ 000S111 ⇒ 00001111</summary>
+    <span style="font-style:normal;">G = ({S}, {0,1}, {S → 0S1, S → 01}, S)</span>
+
+    <div style="display:flex; gap:30px; align-items:flex-start; margin:10px 0; font-style:normal; line-height:2.1;">
+        <div style="min-width:130px; font-size:12pt;">
+            S → 0 <strong>S</strong> 1<br>
+            S → 0 1
+        </div>
+        <div style="font-size:10pt; line-height:1.7; padding-top:4px;">
+            <strong>levezetési szabályok</strong><br><br>
+            <em>terminálisok</em> (a nyelv abc-je)<br><br>
+            <strong>grammatikai változók</strong> vagy nemterminális jelek<br><br>
+            a <strong>kezdő szimbólum</strong>: egy kitüntetett nemterminális jel
+        </div>
+    </div>
+
+    <svg width="295" height="220" viewBox="0 0 295 220" style="display:block; margin:6px auto; font-family:'Times New Roman',serif;">
+        <!-- Edges S1 -->
+        <line x1="147" y1="22" x2="15" y2="195" stroke="#000" stroke-width="0.9"/>
+        <line x1="147" y1="22" x2="120" y2="63" stroke="#000" stroke-width="0.9"/>
+        <line x1="147" y1="22" x2="270" y2="195" stroke="#000" stroke-width="0.9"/>
+        <!-- Edges S2 -->
+        <line x1="120" y1="63" x2="48" y2="195" stroke="#000" stroke-width="0.9"/>
+        <line x1="120" y1="63" x2="106" y2="108" stroke="#000" stroke-width="0.9"/>
+        <line x1="120" y1="63" x2="222" y2="195" stroke="#000" stroke-width="0.9"/>
+        <!-- Edges S3 -->
+        <line x1="106" y1="108" x2="81" y2="195" stroke="#000" stroke-width="0.9"/>
+        <line x1="106" y1="108" x2="100" y2="152" stroke="#000" stroke-width="0.9"/>
+        <line x1="106" y1="108" x2="189" y2="195" stroke="#000" stroke-width="0.9"/>
+        <!-- Edges S4 -->
+        <line x1="100" y1="152" x2="114" y2="195" stroke="#000" stroke-width="0.9"/>
+        <line x1="100" y1="152" x2="156" y2="195" stroke="#000" stroke-width="0.9"/>
+        <!-- S nodes -->
+        <text x="147" y="27" text-anchor="middle" font-style="italic" font-size="13">S</text>
+        <text x="120" y="68" text-anchor="middle" font-style="italic" font-size="13">S</text>
+        <text x="106" y="113" text-anchor="middle" font-style="italic" font-size="13">S</text>
+        <text x="100" y="157" text-anchor="middle" font-style="italic" font-size="13">S</text>
+        <!-- Terminal leaves -->
+        <text x="15"  y="210" text-anchor="middle" font-size="12">0</text>
+        <text x="48"  y="210" text-anchor="middle" font-size="12">0</text>
+        <text x="81"  y="210" text-anchor="middle" font-size="12">0</text>
+        <text x="114" y="210" text-anchor="middle" font-size="12">0</text>
+        <text x="156" y="210" text-anchor="middle" font-size="12">1</text>
+        <text x="189" y="210" text-anchor="middle" font-size="12">1</text>
+        <text x="222" y="210" text-anchor="middle" font-size="12">1</text>
+        <text x="270" y="210" text-anchor="middle" font-size="12">1</text>
+    </svg>
+
+    Ez a grammatika az L = {0<sup>n</sup>1<sup>n</sup> | n ≥ 1} nyelvet generálja (CF, de nem reguláris).
+    </details>
+
+
+    <h3>Generatív grammatika generált nyelv fogalma</h3>
     <div class="definicio">
         <strong>Definíció (Generált nyelv):</strong> A G = (V, Σ, R, S) grammatika generálja az L ⊆ Σ* nyelvet, ha L = L(G), ahol:
         <div style="margin: 6px 0 6px 20px;">L(G) = { w ∈ Σ* | S ⇒* w }</div>
         a G grammatika által generált nyelv.
     </div>
 
+    <h3>Generatív grammatika ekvivalenciája</h3>
     <div class="definicio">
         <strong>Definíció (Ekvivalencia):</strong> A G és G' grammatikák <em>ekvivalensek</em>, ha L(G) = L(G').
     </div>
@@ -210,22 +208,6 @@ Turing­gépekkel. </p>
         • L = {aⁿbⁿ | n ≥ 0} — CF, de nem reguláris<br>
         • L = {aⁿbⁿcⁿ | n ≥ 0} — kontextusfüggő, de nem CF<br>
     </div>
-
-        <h3>Chomsky-féle normál alak (CNF)</h3>
-     <div class="tetel-box">
-    <p><strong>Definíció:</strong> A G = (V, Σ, R, S) CF grammatika Chomsky-féle normálalakban adott, ha a szabályok az alábbi alakúak:</p>
-    <ul>
-
-        <li>A → BC</li>
-        <li>A → a</li>
-        <li>S → ε, de ekkor S nem szerepel szabály jobb oldalán.</li>
-    </ul>
-    <p>Ahol A, B, C ∈ V, a ∈ Σ, és B, C nem kezdőszimbólumok.</p>
-<br>
-        <strong>Tétel:</strong> Tetszőleges CF nyelvhez megadható őt generáló grammatika Chomsky-féle normál alakban.
-    </div>
-
-
 
 
 
@@ -270,19 +252,56 @@ Turing­gépekkel. </p>
     </div>
 
 
+   
+
     <div class="definicio">
         <strong>Definíció:</strong> <strong>Egy nyelv reguláris, ha definiálható reguláris kifejezéssel.</strong>
     </div>
+ <h4>Reguláris Operátor</h4>
+    <div class="definicio">
+        <strong>Definíció:</strong> Reguláris operátorok egy Σ abc feletti nyelveken<br>
+        <ul style="font-weight:normal; margin-top:6px;">
+            <li><strong>Egyesítés (unió):</strong> A ∪ B = {x | x ∈ A vagy x ∈ B}</li>
+            <li><strong>Szorzat (illesztés, konkatenáció):</strong> A ∘ B = {xy | x ∈ A, y ∈ B},<br>
+                ahol x = x₁x₂…xₙ, y = y₁y₂…yₘ esetén xy = x₁x₂…xₙy₁y₂…yₘ</li>
+            <li><strong>Iterálás (Kleene-csillag):</strong> A* = {w₁w₂…wₖ | wᵢ ∈ A, i = 1,…k, k ≥ 0}</li>
+        </ul>
+        <strong>1. Megj:</strong> ε ∈ A*<br>
+        <strong>2. Megj:</strong> L = Σ esetén L* = Σ*
+    </div>
+
+    <div class="definicio">
+        <strong>Definíció (Egyéb operátorok nyelveken):</strong> Legyenek A, B ⊆ Σ* nyelvek.<br>
+        <ul style="font-weight:normal; margin-top:6px;">
+            <li><strong>Metszet:</strong> A ∩ B = {w | w ∈ A és w ∈ B}</li>
+            <li><strong>Különbség:</strong> A − B = {w | w ∈ A és w ∉ B}</li>
+            <li><strong>Komplementer:</strong> A<sup>C</sup> = Σ* − A = {w ∈ Σ* | w ∉ A}</li>
+            <li><strong>Tükörkép:</strong> A<sup>R</sup> = {w<sub>n</sub>w<sub>n−1</sub>…w<sub>1</sub> | w<sub>1</sub>w<sub>2</sub>…w<sub>n</sub> ∈ A}</li>
+        </ul>
+    </div>
+
+
 
     <div class="tetel-box">
-        <strong>Tétel:</strong> Legyen ℒ azon nyelvek halmaza, melyek felismerhetők determinisztikus véges automatával.<br>
-        ℒ zárt a reguláris operátorokra nézve.<br>
-        Azaz ha A₁ ∈ ℒ és A₂ ∈ ℒ, akkor:
+        <strong>Tétel (ℒ zártsága reguláris operátorokra):</strong> Legyen ℒ a DVA-kkal felismerhető nyelvek halmaza.<br>
+        Ha A₁, A₂ ∈ ℒ, akkor:
         <ol style="font-weight:normal; margin-top:6px;">
-            <li>A₁ ∪ A₂ ∈ ℒ.</li>
-            <li>A₁ ∘ A₂ ∈ ℒ.</li>
-            <li>A₁* ∈ ℒ.</li>
+            <li>A₁ ∪ A₂ ∈ ℒ &nbsp;(unióra zárt)</li>
+            <li>A₁ ∘ A₂ ∈ ℒ &nbsp;(konkatenációra zárt)</li>
+            <li>A₁* ∈ ℒ &nbsp;(Kleene-csillagra zárt)</li>
+            <li>A₁ ∩ A₂ ∈ ℒ &nbsp;(metszetre zárt)</li>
+            <li>A₁<sup>C</sup> ∈ ℒ &nbsp;(komplementerre zárt)</li>
+            <li>A₁<sup>R</sup> ∈ ℒ &nbsp;(tükörképre zárt)</li>
         </ol>
+    </div>
+
+
+
+    <h3>Reguláris Nyelvek</h3>
+
+    <div class="definicio">
+        <strong>Definíció (Reguláris nyelv):</strong> Egy L ⊆ Σ* nyelv <em>reguláris</em>, ha megadható reguláris kifejezéssel.<br>
+        Jelölés: L<sub>R</sub> = a reguláris nyelvek osztálya Σ felett.
     </div>
 
     <h3>Determinisztikus véges automata (DFA)</h3>
@@ -362,44 +381,8 @@ Turing­gépekkel. </p>
         <img src="img/digszam/NFA_2.png" alt="NFA és DFA példák: L = (01 ∪ 010)* automata" style="max-width: 50%; height: auto; border: 1px solid #888; box-shadow: 1px 2px 8px #bbb;">
     </div>
 
-    <h3>Reguláris nyelvek felismerése automatával ????</h3>
-    <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=36m7s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <div class="tetel-box">
-        <strong>Következmény (L<sub>R</sub> = L<sub>N</sub> = L<sub>D</sub>):</strong> Az alábbi Σ feletti nyelvosztályok megegyeznek:<br>
-        1. L<sub>R</sub> — a reguláris nyelvek halmaza (reguláris kifejezésekkel megadható)<br>
-        2. L<sub>N</sub> — az NVA-k által felismert nyelvek<br>
-        3. L<sub>D</sub> — a DVA által felismert nyelvek
-    </div>
 
-    <h3>Ekvivalenciájuk</h3>
-    <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=43m24s" target="_blank">▶ Előadás ezen a részen</a></p>
-
-    <div class="definicio">
-        <strong>Definíció (Automata-ekvivalencia):</strong> M₁ és M₂ (két automata) <em>ekvivalensek</em>, ha L(M₁) = L(M₂). (ha ugyanazon nyelvet ismerik fel)
-        ( Determinisztikus véges automata kevesebb nyelvet ismer fel, mint nemdeterminisztikus véges automata, de minden determinisztikus véges automata által felismert nyelvet felismer egy nemdeterminisztikus véges automata is.)
-    </div>
-
-    <div class="tetel-box">
-        <strong>Tétel:</strong> Legyen ℒ azon nyelvek halmaza, melyek felismerhetők determinisztikus véges automatával. (vagy nem det. véges automatával, hisz részhalmaza)<br>
-        ℒ zárt a reguláris operátorokra nézve.<br>
-        Azaz ha A₁ ∈ ℒ és A₂ ∈ ℒ, akkor:
-        <ol style="font-weight:normal; margin-top:6px;">
-            <li>A₁ ∪ A₂ ∈ ℒ.</li>
-            <li>A₁ ∘ A₂ ∈ ℒ.</li>
-            <li>A₁* ∈ ℒ.</li>
-        </ol>
-        Ezeket bizonyítani nem det. véges automata segítségével szokták, mert könnyebb a konstrukció.
-    </div>
-
-    <div class="tetel-box">
-        <strong>Következmény (L<sub>R</sub> = L<sub>N</sub> = L<sub>D</sub>):</strong> Az alábbi, valamely adott Σ feletti nyelvosztályok megegyeznek:<br>
-        1. L<sub>R</sub> — a reguláris nyelvek halmaza (reguláris műveletekkel / kifejezésekkel megadható).<br>
-        2. L<sub>N</sub> — az NVA-k által felismert nyelvek.<br>
-        3. L<sub>D</sub> — a DVA által felismert nyelvek.<br><br>
-        <span style="font-weight:normal;">Megjegyzés: L<sub>R</sub> ⊆ L<sub>N</sub> , és L<sub>N</sub> = L<sub>D</sub>. Mert minden reguláris kifejezés konvertálható NVA-vá, és minden NVA szimulálható ekvivalens DVA-val a részhalmaz-konstrukcióval.</span>
-    </div>
-
-    <h3>Általánosított nemdeterminisztikus véges automata (ÁNVA)</h3>
+    <h4>Általánosított nemdeterminisztikus véges automata (ÁNVA)</h4>
     <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=58m45s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Definíció:</strong> Általánosított nemdeterminisztikus véges automata (ánva)<br>
@@ -431,6 +414,79 @@ Turing­gépekkel. </p>
         <strong>Definíció:</strong> N felismeri az L nyelvet, ha L = {w | N felismeri w-t}.
     </div>
 
+
+
+
+
+    
+    <h3>Ekvivalenciájuk</h3>
+    <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=43m24s" target="_blank">▶ Előadás ezen a részen</a></p>
+
+    <div class="definicio">
+        <strong>Definíció (Automata-ekvivalencia):</strong> M₁ és M₂ (két automata) <em>ekvivalensek</em>, ha L(M₁) = L(M₂). (ha ugyanazon nyelvet ismerik fel)
+        ( Determinisztikus véges automata kevesebb nyelvet ismer fel, mint nemdeterminisztikus véges automata, de minden determinisztikus véges automata által felismert nyelvet felismer egy nemdeterminisztikus véges automata is.)
+    </div>
+
+    <div class="definicio">
+        <strong>Definíció (ε-lezárt, E(R)):</strong> Legyen N = (Q, Σ, δ, q₀, F) NVA, R ⊆ Q állapotok halmaza.<br>
+        E(R) az R halmaz ε-lezártja: azon q ∈ Q állapotok halmaza, amelyek R valamely állapotából ε-átmenetekkel elérhetők.<br>
+        Formálisan: E(R) = {q | q elérhető R-ből 0 vagy több ε-átmenettel}.
+    </div>
+
+    <div class="tetel-box">
+        <strong>Tétel (L<sub>D</sub> = L<sub>N</sub> — NVA → DVA részhalmaz-konstrukció):</strong>
+        Minden N = (Q, Σ, δ, q₀, F) NVA-hoz konstruálható ekvivalens M = (Q', Σ, δ', q₀', F') DVA:<br>
+        <ul style="font-weight:normal; margin-top:4px;">
+            <li>Q' = P(Q) &nbsp;(Q hatványhalmaza — az állapotok részhalmazai)</li>
+            <li>q₀' = E({q₀}) &nbsp;(a kezdőállapot ε-lezártja)</li>
+            <li>δ'(R, a) = E(⋃<sub>r∈R</sub> δ(r, a)) &nbsp; minden R ⊆ Q, a ∈ Σ esetén</li>
+            <li>F' = {R ∈ Q' | R ∩ F ≠ ∅} &nbsp;(R végállapot, ha van benne elfogadó NVA-állapot)</li>
+        </ul>
+        Ekkor L(M) = L(N). A konstrukció szemantikája: M minden állapota az N lehetséges állapotainak egy részhalmazát kódolja; az egyidejűleg aktív NVA-állapotok halmazát szimulálva.
+    </div>
+
+   
+
+    <div class="tetel-box">
+        <strong>Következmény (L<sub>R</sub> = L<sub>N</sub> = L<sub>D</sub>):</strong> Az alábbi, valamely adott Σ feletti nyelvosztályok megegyeznek:<br>
+        1. L<sub>R</sub> — a reguláris nyelvek halmaza (reguláris kifejezésekkel megadható).<br>
+        2. L<sub>N</sub> — az NVA-k által felismert nyelvek.<br>
+        3. L<sub>D</sub> — a DVA által felismert nyelvek.<br><br>
+        <span style="font-weight:normal;">Megjegyzés: L<sub>R</sub> ⊆ L<sub>N</sub> , és L<sub>N</sub> = L<sub>D</sub>. Mert minden reguláris kifejezés konvertálható NVA-vá, és minden NVA szimulálható ekvivalens DVA-val a részhalmaz-konstrukcióval.</span>
+    </div>
+
+
+    <h3>Reguláris nyelvek felismerése automatával</h3>
+    <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=36m7s" target="_blank">▶ Előadás ezen a részen</a></p>
+
+    <div class="tetel-box">
+        <strong>Tétel (L<sub>R</sub> ⊆ L<sub>N</sub> — reguláris kifejezés → NVA, KONVERTÁL algoritmus):</strong><br>
+        Minden reguláris kifejezés konvertálható ekvivalens NVA-vá indukcióval a reguláris kifejezés szerkezete szerint:<br>
+        <ul style="font-weight:normal; margin-top:4px;">
+            <li><strong>Alapeseteg:</strong> ∅, ε, egyetlen jel a ∈ Σ — triviális 1-2 állapotú NVA.</li>
+            <li><strong>Unió (R₁ ∪ R₂):</strong> Új kezdőállapotból ε-átmenetek N₁ és N₂ kezdőállapotaiba; N₁ és N₂ végállapotaiból ε-átmenetek új végállapotba.</li>
+            <li><strong>Konkatenáció (R₁R₂):</strong> N₁ végállapotaiból ε-átmenetek N₂ kezdőállapotába.</li>
+            <li><strong>Kleene-csillag (R₁*):</strong> N₁ végállapotaiból ε-átmenet vissza N₁ kezdőállapotára; új q₀ (egyben végállapot) ε-átmenettel N₁ q₀-jára.</li>
+        </ul>
+        Így minden reguláris nyelv felismerhető NVA-val, tehát L<sub>R</sub> ⊆ L<sub>N</sub>.
+    </div>
+
+    <div class="tetel-box">
+        <strong>Tétel (L<sub>D</sub> ⊆ L<sub>R</sub> — DVA → reguláris kifejezés, KONVERTÁL algoritmus):</strong><br>
+        Minden M DVA-hoz konstruálható ekvivalens ÁNVA, majd a KONVERTÁL eljárással reguláris kifejezés:<br>
+        <ol style="font-weight:normal; margin-top:4px;">
+            <li>Egészítjük ki M-et új q<sub>kezdő</sub> és q<sub>vég</sub> állapotokkal; q<sub>kezdő</sub>-ból ε-átmenet M q₀-jába, M végállapotaiból ε-átmenet q<sub>vég</sub>-be.</li>
+            <li><strong>KONVERTÁL(G):</strong> Amíg |Q| > 2 (csak q<sub>kezdő</sub> és q<sub>vég</sub> marad), töröljük q<sub>rip</sub>-et:
+                <ul>
+                    <li>Minden (q<sub>i</sub>, q<sub>j</sub>) párra (ahol q<sub>i</sub> ≠ q<sub>rip</sub> ≠ q<sub>j</sub>) frissítjük az élt:<br>
+                    δ(q<sub>i</sub>, q<sub>j</sub>) := (R<sub>i,rip</sub>)(R<sub>rip,rip</sub>)*(R<sub>rip,j</sub>) ∪ R<sub>i,j</sub></li>
+                </ul>
+            </li>
+            <li>Végül δ(q<sub>kezdő</sub>, q<sub>vég</sub>) egy reguláris kifejezés, amely leírja L(M)-et.</li>
+        </ol>
+        Így minden DVA-val felismert nyelv megadható reguláris kifejezéssel, tehát L<sub>D</sub> ⊆ L<sub>R</sub>.
+    </div>
+
     <h3>Egy reguláris nyelvet felismerő minimális dva</h3>
     <p><a href="https://www.youtube.com/watch?v=CR6PnTvcctI&t=3m42s" target="_blank">▶ Előadás ezen a részen</a></p>
 
@@ -438,6 +494,10 @@ Turing­gépekkel. </p>
         <strong>Definíció :</strong> Legyen L (nyelv) ⊆ Σ* (ábécé) egy nyelv. x, y  (stringek) ∈ Σ* <em>L-re nézve ekvivalensek</em>, ha ∀ z ∈ Σ* esetén igaz, hogy:
         <div style="margin: 6px 0 6px 20px;">xz ∈ L &nbsp; ⟺ &nbsp; yz ∈ L.</div>
         <strong>Jelölés:</strong> x ≈<sub>L</sub> y. Ez egy ekvivalencia reláció Σ*-on.
+    </div>
+
+    <div class="tetel-box">
+        <strong>Következmény (Myhill–Nerode kritérium):</strong> L ⊆ Σ* reguláris &nbsp;⟺&nbsp; az ≈<sub>L</sub> reláció véges sok ekvivalenciaosztályt határoz meg.
     </div>
 
     <div class="pelda">
@@ -486,8 +546,15 @@ Turing­gépekkel. </p>
     </div>
 
     <div class="tetel-box">
-        <strong>Tétel :</strong> Ha L ⊆ Σ* reguláris nyelv, akkor ∃ M = (Q, Σ, δ, q₀, F) DVA (automata), hogy L(M) = L (L nyelvet ismeri fel), és állapotainak száma éppen az ≈<sub>L</sub> reláció által meghatározott ekvivalencia osztályok száma. M az állapotainak számozásától eltekintve egyértelmű. <br>
-        Tehát létezik mindig minimális automata. (és annyi állapota van, ahány ekvivalencia osztály van a nyelvre nézve)
+        <strong>Tétel (Myhill-Nerode):</strong> Ha L ⊆ Σ* reguláris nyelv, akkor ∃ M = (Q, Σ, δ, q₀, F) DVA, hogy L(M) = L, és állapotainak száma éppen az ≈<sub>L</sub> reláció ekvivalencia osztályainak száma. M az állapotok számozásától eltekintve egyértelmű (minimális).<br><br>
+        <strong>Konstruktív bizonyítás:</strong> Definiáljuk M<sub>L</sub> = (Q, Σ, δ, q₀, F) DVA-t:<br>
+        <ul style="font-weight:normal; margin-top:4px;">
+            <li>Q = {[x] | x ∈ Σ*} &nbsp;(az ≈<sub>L</sub> ekvivalencia osztályai)</li>
+            <li>q₀ = [ε]</li>
+            <li>F = {[x] | x ∈ L}</li>
+            <li>δ([x], a) = [xa] &nbsp; ∀a ∈ Σ esetén</li>
+        </ul>
+        Ez jól definiált (nem függ a képviselőtől), és L(M<sub>L</sub>) = L. Bármely L-t felismerő DVA legalább annyi állapotot tartalmaz, mint ahány ≈<sub>L</sub>-osztály van.
     </div>
 
     <div class="tetel-box">
@@ -628,7 +695,7 @@ alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
         Válasz: Nem mindig, mert a szabályok alkalmazásának sorrendje tetszőleges lehet.
     </div>
 
-    <h3>Levezetési fa</h3>
+    <h4>Levezetési fa</h4>
     <p><a href="https://www.youtube.com/watch?v=DaLyIbms98A&t=0m30s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Definíció:</strong> Egy CF G grammatika szerinti levezetés olyan fával ábrázolható, melynek gyökere a kezdőszimbólum, levelei balról jobbra a levezetett szó betűi, további csomópontjai nemterminálisok, és az elágazások egy-egy alkalmazott szabálynak felelnek meg. Ez a levezetési fa.
@@ -660,8 +727,9 @@ alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
     <div class="tetel-box">
         <strong>Tétel:</strong> Tetszőleges CF nyelvhez megadható őt generáló grammatika Chomsky-féle normál alakban.
     </div>
+   
 
-    <h3>Backus-Naur Form (BNF)</h3>
+    <h4>Backus-Naur Form (BNF)</h4>
     <p><a href="https://www.youtube.com/watch?v=DaLyIbms98A&t=36m29s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>BNF:</strong> Programozási nyelvek definiálására — meta-nyelv.<br>
@@ -683,8 +751,6 @@ alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
         <strong>Tétel:</strong> Legyen ℒ a CF nyelvek halmaza. <br> 
          ℒ nem zárt a metszetre nézve.<br>
         ℒ nem zárt a komplementerre nézve.<br><br>
-
-
     </div>
     <div class="tetel-box">
         <strong>Tétel:</strong> Ha A<sub>1</sub> CF nyelv, A<sub>2</sub> reguláris nyelv, akkor A<sub>1</sub> ∩ A<sub>2</sub> CF nyelv.
@@ -835,7 +901,7 @@ alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
         <strong>Biz:</strong> Ha L(M) = L, akkor M-ben az elfogadó és elutasító állapotot felcserélve, az így kapott M' TG-re L(M') = L<sup>C</sup>.
     </div>
 
-    <h3>Nem Turing-felismerhető nyelv létezése</h3>
+    <h4>Nem Turing-felismerhető nyelv létezése</h4>
     <p><a href="https://www.youtube.com/watch?v=vKh94OEZ2gI&t=20m33s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="tetel-box">
         <strong>Tétel:</strong> Van olyan L' ⊆ Σ* = {0,1}* nyelv, amely nem Turing felismerhető, azaz nem rekurzíve felsorolható.<br><br>
@@ -1003,7 +1069,6 @@ Megvalósítható-e minden algoritmus Turing géppel? - Yes<br><br>
         <span style="font-weight:normal;">U szimulál bármely TG-et a kódolt leírása alapján. Ez a modern tárolt programú számítógép elvi alapja.</span>
     </div>
 
-    <h3>Az univerzális nyelv (L<sub>u</sub>)</h3>
     <p><a href="https://www.youtube.com/watch?v=BkCk9BjJO0c&t=9m5s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Kérdés:</strong> Eldönthető-e, hogy egy adott M gép elfogad-e egy adott s ∈ {0, 1}* szót? ('Szuper' algoritmust keresnénk.)<br><br>
@@ -1013,10 +1078,9 @@ Megvalósítható-e minden algoritmus Turing géppel? - Yes<br><br>
         Tehát L<sub>u</sub> rekurzíve felsorolható.
     </div>
 
-    <h3>Az univerzális nyelv (L<sub>u</sub>) nem rekurzív</h3>
     <p><a href="https://www.youtube.com/watch?v=BkCk9BjJO0c&t=10m57s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="tetel-box">
-        <strong>Tétel: (Turing, 1936)</strong> L<sub>u</sub> = { w#s ∈ {0, 1}* | M<sub>w</sub> létezik, és s ∈ L<sub>M<sub>w</sub></sub> } nem rekurzív nyelv.<br><br>
+        <strong>Tétel: (Turing, 1936)</strong> L<sub>u</sub> = { w#s ∈ {0, 1}* | M<sub>w</sub> létezik, és s ∈ L<sub>M<sub>w</sub></sub> } nem rekurzív nyelv.
     </div>
 
 
@@ -1032,7 +1096,7 @@ Definíció: Univerzális nyelv
  Igen választ véges időn belül megkapjuk, hisz beadom a s stringet és 
 </div>
 
-    <h3>A megállási probléma (L<sub>h</sub>)</h3>
+    <h4>A megállási probléma (L<sub>h</sub>)</h4>
     <p><a href="https://www.youtube.com/watch?v=vKh94OEZ2gI&t=50m44s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong class="kerdes">Kérdés:</strong> Eldönthető-e, hogy egy adott M TG gép megáll-e minden
@@ -1047,7 +1111,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 
 
 
-    <h3>A megállási probléma üres inputra</h3>
+    <h4>A megállási probléma üres inputra</h4>
     <p><a href="https://www.youtube.com/watch?v=vKh94OEZ2gI&t=58m40s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong class="kerdes">Kérdés:</strong> Eldönthető-e, hogy egy adott M TG gép megáll-e az üres bemenetre?<br><br>
@@ -1093,7 +1157,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <h2><a href="#tema-7">Időbonyolultság, P, NP, PSPACE, EXPTIME, tár-idő összefüggések</a></h2>
     </div>
 
-    <h3>A 'nagy ordó' jelölés</h3>
+    <h4>A 'nagy ordó' jelölés</h4>
     <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=8m4s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Definíció:</strong> Legyenek f, g: ℕ → ℝ<sup>+</sup> függvények. Azt mondjuk, hogy <em>f(n) = O(g(n))</em>, ha léteznek c és n<sub>0</sub> pozitív egészek, melyekre:<br>
@@ -1134,7 +1198,25 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <strong>Tétel:</strong> Ha az L nyelv n<sup>log n</sup>-nél rövidebb időben nem ismerhető fel, akkor L ∉ <strong>P</strong>.<br>
         ( P = ∪ TIME(n<sup>k</sup>), azaz P-ben csak fix kitevőjű polinomok vannak. n<sup>log n</sup> ≫ n<sup>k</sup> minden fix k-ra, így L ∉ <strong>P</strong>. )
     </div>
-    <p><strong>Ismert polinomiális algoritmus az alábbi problémákra:</strong></p>
+
+    <h4>P zártsága nyelvek feletti műveletekre</h4>
+    <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=14m47s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="tetel-box">
+        <strong>Tétel (P zártsága):</strong> Ha A, B ∈ P, akkor:
+        <ol>
+            <li>A ∪ B ∈ P &nbsp;(unióra zárt)</li>
+            <li>A ∩ B ∈ P &nbsp;(metszetre zárt)</li>
+            <li>Ā = Σ* \ A ∈ P &nbsp;(komplementerre zárt)</li>
+            <li>A ∘ B ∈ P &nbsp;(konkatenációra zárt)</li>
+            <li>A* ∈ P &nbsp;(Kleene-csillagra zárt)</li>
+        </ol>
+        <span style="font-weight:normal;">(Mindkét gép polinom időben fut, az összetett gép szimulációja is polinom időbeli marad — polinom + polinom = polinom, polinom × polinom = polinom.)</span>
+    </div>
+
+
+
+    <h3>Nevezetes P-beli problémák</h3>
+    <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=20m0s" target="_blank">▶ Előadás ezen a részen</a></p>
     <ul>
         <li>PATH = {&lt;G,s,t&gt; | G irányított gráf, és van benne irányított út s-ből t-be}</li>
         <li>RELPRIME = {&lt;x,y&gt; | x és y relatív prímek}</li>
@@ -1145,8 +1227,12 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 
 
 
+
     <h3>Tár-idő összefüggések</h3>
-    <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=20m0s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=12m0s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="tetel-box">
+        <strong>Tétel (Tár-idő tétel):</strong> Ha L ∈ SPACE(s(n)), akkor van olyan L-től függő c konstans, hogy L ∈ TIME(2<sup>c·s(n)</sup>).
+    </div>
     <div class="tetel-box">
         <strong>Tétel: (Tár-idő szimulációs tétel)</strong> Az N k-szalagos TG-hez van olyan egyszalagos M TG, hogy L(M) = L(N), és ha N f(n) időigényű, akkor M O(f(n)<sup>2</sup>) időigényű. <br>
         <span class="note">(Többszallagos TG-t tudunk szimulálni egyszalagos TG-vel négyzetes időbel, de a szimuláció négyzetes időbeli és a tár is csak n -el nő)</span>
@@ -1158,10 +1244,6 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
             <li>tetszőleges c &gt; 0 esetén T<sub>M</sub>(n) ≤ c · T<sub>N</sub>(n), ha lim T<sub>N</sub>(n)/n = ∞  (ha szuper lineáris, akkor több szallaggal megtudj felezni / negyedelni ... az időt. Ezé mind1, h hány szallag.)</li>
         </ul>
         <strong>Megj:</strong> A fenti tétel magyarázza, hogy miért tekinthettünk el a konstans szorzótól az időigény definiálásakor.</span>
-    </div>
-    <div class="definicio">
-        Mostmár az időre figyelünk, nem arra, hogy felismeri-e. <br><br>
-        <strong>Tétel:</strong> Ha L ∈ SPACE(s(n)), akkor van olyan L-től függő c konstans, hogy L ∈ TIME(2<sup>s(n)</sup>).
     </div>
     <div class="definicio">
         <strong>Jelölés:</strong> Σ feletti nyelv esetén L<sup>C</sup> = Σ* \ L az L komplementere.<br><br>
@@ -1177,15 +1259,22 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <strong>Tétel:</strong> SPACE(s(n)) = coSPACE(s(n)), azaz L ∈ SPACE(s(n)) akkor és csak akkor, ha L<sup>C</sup> ∈ SPACE(s(n)).
     </div>
 
-    <h3>Nevezetes nyelvosztályok</h3>
+    <h3>PSPACE és EXPTIME</h3>
     <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=34m02s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Definíció:</strong> EXPTIME = ∪<sub>k≥1</sub> TIME(2<sup>n<sup>k</sup></sup>) az exponenciális időben felismerhető nyelvek osztálya.<br><br>
         <strong>Definíció:</strong> PSPACE = ∪<sub>k≥1</sub> SPACE(n<sup>k</sup>) a polinom tárban felismerhető nyelvek osztálya.
     </div>
     <div class="tetel-box">
-        <strong>Tétel:</strong> P ⊆ PSPACE ⊆ EXPTIME<br><br>
+        <strong>Tétel (Savitch-tétel):</strong> Ha L ∈ NSPACE(s(n)), ahol s(n) ≥ log n, akkor L ∈ SPACE(s(n)<sup>2</sup>).<br>
+        <span style="font-weight:normal;">(Egy nemdeterminisztikus s(n) táras TG szimulálható determinisztikusan s(n)² tárral — a nemdeterminizmus tárban négyzetes overhead-del kompenzálható.)</span><br><br>
+        <strong>Következmény:</strong> NPSPACE = PSPACE.<br>
+        <span style="font-weight:normal;">(Ha s(n) = n<sup>k</sup>, akkor s(n)² = n<sup>2k</sup>, ami szintén polinom → NSPACE(n<sup>k</sup>) ⊆ SPACE(n<sup>2k</sup>) ⊆ PSPACE, így NPSPACE ⊆ PSPACE, és PSPACE ⊆ NPSPACE triviálisan.)</span>
     </div>
+    <div class="tetel-box">
+        <strong>Tétel:</strong> P ⊆ PSPACE ⊆ EXPTIME<br>
+        <span style="font-weight:normal;">Ha L ∈ PSPACE, akkor valamely k-ra L ∈ SPACE(n<sup>k</sup>). A tár-idő tétel szerint ekkor L ∈ TIME(2<sup>n<sup>k</sup></sup>) ⊆ EXPTIME.</span><br><br>
+    </div>  
     <div class="tetel-box">
         <strong>Tétel:</strong> EXPTIME ⊂ R (= Rekurzív nyelvek osztálya)  <span class="note">(EXP timenál adunk neki egy nagyon nagy időkorlátot. Az R -nél meg csak azt adjuk meg, h véges időn belűl álljon meg, szóval kevésbé szigorú a korlát.)</span> <br><br>
         <strong>Következmény:</strong> P ⊆ NP ⊆ PSPACE = NPSPACE ⊆ EXPTIME<br><br>
