@@ -98,7 +98,6 @@
     </div>
 
     <h3>Levezetés (deriváció)</h3>
-    <p><a href="https://www.youtube.com/watch?v=_eVShbDYjqI&t=2m1s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>Egy szóforma közvetlenül levezethető egy másikból (jelölés: ⇒), ha egyetlen szabály alkalmazásával megkapható. A levezetés tranzitív lezártját ⇒* jelöli.</p>
     <div class="pelda">
         <strong>Példa:</strong> A {0<sup>i</sup>1<sup>i</sup> | i &gt; 0} nemreguláris nyelv nyelvtana<br>
@@ -212,6 +211,25 @@ Turing­gépekkel. </p>
         • L = {aⁿbⁿcⁿ | n ≥ 0} — kontextusfüggő, de nem CF<br>
         • Turing-gép megállási problémája — rekurzíve felsorolható, de nem rekurzív
     </div>
+
+        <h3>Chomsky-féle normál alak (CNF)</h3>
+     <div class="tetel-box">
+    <p><strong>Definíció:</strong> A G = (V, Σ, R, S) CF grammatika Chomsky-féle normálalakban adott, ha a szabályok az alábbi alakúak:</p>
+    <ul>
+
+        <li>A → BC</li>
+        <li>A → a</li>
+        <li>S → ε, de ekkor S nem szerepel szabály jobb oldalán.</li>
+    </ul>
+    <p>Ahol A, B, C ∈ V, a ∈ Σ, és B, C nem kezdőszimbólumok.</p>
+<br>
+        <strong>Tétel:</strong> Tetszőleges CF nyelvhez megadható őt generáló grammatika Chomsky-féle normál alakban.
+    </div>
+
+
+
+
+
 
     <div class="page-footer">A Digitális Számítás Elmélete — 1. Téma</div>
 </div>
