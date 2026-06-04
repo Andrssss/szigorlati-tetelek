@@ -61,7 +61,21 @@
     </div>
 
     <h3>Formális nyelv fogalma</h3>
-    <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=8m20s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=7m9s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        <strong>Definíció:</strong> <strong>Σ</strong> tetszőleges jelek egy nemüres, véges halmaza — az <em>ábécé</em>.<br>
+        <strong>Σ*</strong> jelöli az összes, Σ-beli jelekből álló véges sorozatok (<em>szavak</em>) halmazát:<br>
+        <div style="margin: 6px 0 6px 20px;">Σ* = { w = a<sub>1</sub>…a<sub>n</sub> | a<sub>i</sub> ∈ Σ, i = 1,…,n, n ≥ 0 }</div>
+        <ul style="margin: 6px 0;">
+            <li>A <strong>w = a<sub>1</sub>…a<sub>n</sub></strong> szó <strong>hossza</strong> n.</li>
+            <li>Speciálisan, <strong>ε</strong> jelöli a 0 hosszú sorozatot, az <em>üres szót</em>.</li>
+            <li>A <strong>bináris ábécé</strong> a 0 és 1 jeleket tartalmazza.</li>
+        </ul>
+        <strong>Példa:</strong> Σ = {if, then, else, for, do, a, b, c}<br>
+        Az alábbi szavak mind benne vannak Σ*-ban:<br>
+        <code>if a then b else c</code>,&nbsp; <code>do a</code>,&nbsp; <code>do do</code>,&nbsp; <code>aabba</code>
+    </div>
+
     <div class="definicio">
         <strong>Ábécé (Σ):</strong> Véges, nemüres szimbólumhalmaz.<br>
         <strong>Szó:</strong> Az ábécé elemeinek véges sorozata. Az üres szót ε-nal jelöljük.<br>
@@ -77,12 +91,13 @@
     </div>
 
     <h3>Formális nyelvek megadási módjai</h3>
+    <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=8m30s" target="_blank">▶ Előadás ezen a részen</a></p>
     <ul>
-        <li><strong>Felsorolás:</strong> A nyelv szavainak explicit felsorolása (csak véges nyelvekre).</li>
+        <li><strong>Elemei felsorolásával:</strong> A nyelv szavainak explicit felsorolása (csak véges nyelvekre).</li>
         <li><strong>Tulajdonság megadása:</strong> L = {w ∈ Σ* | w rendelkezik P tulajdonsággal}</li>
-        <li><strong>Generatív grammatika:</strong> Szabályrendszer, amely generálja a nyelv szavait.</li>
         <li><strong>Felismerő automata:</strong> Olyan gép, amely eldönti, hogy egy szó benne van-e a nyelvben.</li>
-        <li><strong>Reguláris kifejezés:</strong> Speciális jelölésrendszer (reguláris nyelvekre).</li>
+        <li><strong>Operátorokkal:</strong> Unió, konkatenáció, Kleene-csillag stb. (pl.: reguláris operátor).</li>
+        <li><strong>Generatív grammatika:</strong> Szabályrendszer, amely generálja a nyelv szavait.</li>
     </ul>
 
     <h3>Generatív grammatika</h3>
