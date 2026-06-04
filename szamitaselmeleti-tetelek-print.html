@@ -114,13 +114,8 @@
     </div>
 
     <h3>Generatív grammatika levezetés</h3>
-    <p><a href="https://www.youtube.com/watch?v=_eVShbDYjqI&t=3m15s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <div class="definicio">
-        <strong>Definíció (Levezetés):</strong> Tetszőleges u és v ∈ (V∪Σ)* szavak esetén azt mondjuk, hogy v <em>levezethető</em> u-ból a G = (V, Σ, R, S) grammatika alapján, ha u = v, vagy léteznek n ≥ 1 és u = w<sub>1</sub>, …, w<sub>n</sub> = v szavak úgy, hogy:
-        <div style="margin: 6px 0 6px 20px;">w<sub>1</sub> ⇒<sub>G</sub> w<sub>2</sub> ⇒<sub>G</sub> … ⇒<sub>G</sub> w<sub>n</sub>.</div>
-        <strong>Jelölés:</strong> u ⇒*<sub>G</sub> v &nbsp; vagy &nbsp; u ⇒* v
-    </div>
         <p><a href="https://www.youtube.com/watch?v=_eVShbDYjqI&t=2m0s" target="_blank">▶ Előadás ezen a részen</a></p>
+
 
 <div class="definicio">
         <strong>Definíció (Közvetlen levezetés):</strong> Egy G = (V, Σ, R, S) grammatika alapján a κ ∈ (V∪Σ)* szóból <em>közvetlenül levezethető</em> a µ ∈ (V∪Σ)* szó, ha léteznek olyan γ, δ ∈ (V∪Σ)* szavak és α → β szabály R-ben, hogy:
@@ -180,7 +175,17 @@
     </details>
 
 
+
+    <div class="definicio">
+        <strong>Definíció (Levezetés):</strong> Tetszőleges u és v ∈ (V∪Σ)* szavak esetén azt mondjuk, hogy v <em>levezethető</em> u-ból a G = (V, Σ, R, S) grammatika alapján, ha u = v, vagy léteznek n ≥ 1 és u = w<sub>1</sub>, …, w<sub>n</sub> = v szavak úgy, hogy:
+        <div style="margin: 6px 0 6px 20px;">w<sub>1</sub> ⇒<sub>G</sub> w<sub>2</sub> ⇒<sub>G</sub> … ⇒<sub>G</sub> w<sub>n</sub>.</div>
+        <strong>Jelölés:</strong> u ⇒*<sub>G</sub> v &nbsp; vagy &nbsp; u ⇒* v
+    </div>
+
+
     <h3>Generatív grammatika generált nyelv fogalma</h3>
+        <p><a href="https://www.youtube.com/watch?v=_eVShbDYjqI&t=3m15s" target="_blank">▶ Előadás ezen a részen</a></p>
+
     <div class="definicio">
         <strong>Definíció (Generált nyelv):</strong> A G = (V, Σ, R, S) grammatika generálja az L ⊆ Σ* nyelvet, ha L = L(G), ahol:
         <div style="margin: 6px 0 6px 20px;">L(G) = { w ∈ Σ* | S ⇒* w }</div>
@@ -191,6 +196,19 @@
     <div class="definicio">
         <strong>Definíció (Ekvivalencia):</strong> A G és G' grammatikák <em>ekvivalensek</em>, ha L(G) = L(G').
     </div>
+
+    <h4>Környezetfüggetlen (Context Free, CF) grammatikák </h4>
+   <div class="definicio">
+        <strong>Definíció (Ekvivalencia):</strong> Definíció: A G = (V, Σ, R, S) grammatika környezetfüggetlen, ha a
+levezetési szabályainak bal oldalán egyetlen nemterminális
+szerepel, azaz a szabályok<br><br>
+ A → β <br>
+alakúak, ahol A ∈ V, β ∈ (V∪Σ)* 
+
+
+    </div>
+
+
 
     <h3>Chomsky-féle nyelvosztályok</h3>
     <p><a href="https://www.youtube.com/watch?v=_eVShbDYjqI&t=12m30s" target="_blank">▶ Előadás ezen a részen</a></p>
