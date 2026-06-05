@@ -480,33 +480,8 @@ Turing­gépekkel. </p>
 
     <h3>Reguláris nyelvek felismerése automatával</h3>
     <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=36m7s" target="_blank">▶ Előadás ezen a részen</a></p>
-
-    <div class="tetel-box">
-        <strong>Tétel (L<sub>R</sub> ⊆ L<sub>N</sub> — reguláris kifejezés → NVA, KONVERTÁL algoritmus):</strong><br>
-        Minden reguláris kifejezés konvertálható ekvivalens NVA-vá indukcióval a reguláris kifejezés szerkezete szerint:<br>
-        <ul style="font-weight:normal; margin-top:4px;">
-            <li><strong>Alapeseteg:</strong> ∅, ε, egyetlen jel a ∈ Σ — triviális 1-2 állapotú NVA.</li>
-            <li><strong>Unió (R₁ ∪ R₂):</strong> Új kezdőállapotból ε-átmenetek N₁ és N₂ kezdőállapotaiba; N₁ és N₂ végállapotaiból ε-átmenetek új végállapotba.</li>
-            <li><strong>Konkatenáció (R₁R₂):</strong> N₁ végállapotaiból ε-átmenetek N₂ kezdőállapotába.</li>
-            <li><strong>Kleene-csillag (R₁*):</strong> N₁ végállapotaiból ε-átmenet vissza N₁ kezdőállapotára; új q₀ (egyben végállapot) ε-átmenettel N₁ q₀-jára.</li>
-        </ul>
-        Így minden reguláris nyelv felismerhető NVA-val, tehát L<sub>R</sub> ⊆ L<sub>N</sub>.
-    </div>
-
-    <div class="tetel-box">
-        <strong>Tétel (L<sub>D</sub> ⊆ L<sub>R</sub> — DVA → reguláris kifejezés, KONVERTÁL algoritmus):</strong><br>
-        Minden M DVA-hoz konstruálható ekvivalens ÁNVA, majd a KONVERTÁL eljárással reguláris kifejezés:<br>
-        <ol style="font-weight:normal; margin-top:4px;">
-            <li>Egészítjük ki M-et új q<sub>kezdő</sub> és q<sub>vég</sub> állapotokkal; q<sub>kezdő</sub>-ból ε-átmenet M q₀-jába, M végállapotaiból ε-átmenet q<sub>vég</sub>-be.</li>
-            <li><strong>KONVERTÁL(G):</strong> Amíg |Q| > 2 (csak q<sub>kezdő</sub> és q<sub>vég</sub> marad), töröljük q<sub>rip</sub>-et:
-                <ul>
-                    <li>Minden (q<sub>i</sub>, q<sub>j</sub>) párra (ahol q<sub>i</sub> ≠ q<sub>rip</sub> ≠ q<sub>j</sub>) frissítjük az élt:<br>
-                    δ(q<sub>i</sub>, q<sub>j</sub>) := (R<sub>i,rip</sub>)(R<sub>rip,rip</sub>)*(R<sub>rip,j</sub>) ∪ R<sub>i,j</sub></li>
-                </ul>
-            </li>
-            <li>Végül δ(q<sub>kezdő</sub>, q<sub>vég</sub>) egy reguláris kifejezés, amely leírja L(M)-et.</li>
-        </ol>
-        Így minden DVA-val felismert nyelv megadható reguláris kifejezéssel, tehát L<sub>D</sub> ⊆ L<sub>R</sub>.
+    <div>
+        idk
     </div>
 
     <h3>Egy reguláris nyelvet felismerő minimális dva</h3>
