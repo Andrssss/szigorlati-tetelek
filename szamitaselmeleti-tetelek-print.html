@@ -454,11 +454,6 @@ Turing­gépekkel. </p>
         ( Determinisztikus véges automata kevesebb nyelvet ismer fel, mint nemdeterminisztikus véges automata, de minden determinisztikus véges automata által felismert nyelvet felismer egy nemdeterminisztikus véges automata is.)
     </div>
 
-    <div class="definicio">
-        <strong>Definíció (ε-lezárt, E(R)):</strong> Legyen N = (Q, Σ, δ, q₀, F) NVA, R ⊆ Q állapotok halmaza.<br>
-        E(R) az R halmaz ε-lezártja: azon q ∈ Q állapotok halmaza, amelyek R valamely állapotából ε-átmenetekkel elérhetők.<br>
-        Formálisan: E(R) = {q | q elérhető R-ből 0 vagy több ε-átmenettel}.
-    </div>
 
     <div class="tetel-box">
         <strong>Tétel :</strong>
@@ -469,19 +464,17 @@ Turing­gépekkel. </p>
 
    
 
+
+
+    <h3>Reguláris nyelvek felismerése automatával</h3>
+    <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=51m28s" target="_blank">▶ Előadás ezen a részen</a></p>
+    
     <div class="tetel-box">
         <strong>Következmény (L<sub>R</sub> = L<sub>N</sub> = L<sub>D</sub>):</strong> Az alábbi, valamely adott Σ feletti nyelvosztályok megegyeznek:<br>
         1. L<sub>R</sub> — a reguláris nyelvek halmaza (reguláris kifejezésekkel megadható).<br>
         2. L<sub>N</sub> — az NVA-k által felismert nyelvek.<br>
         3. L<sub>D</sub> — a DVA által felismert nyelvek.<br><br>
         <span style="font-weight:normal;">Megjegyzés: L<sub>R</sub> ⊆ L<sub>N</sub> , és L<sub>N</sub> = L<sub>D</sub>. Mert minden reguláris kifejezés konvertálható NVA-vá, és minden NVA szimulálható ekvivalens DVA-val a részhalmaz-konstrukcióval.</span>
-    </div>
-
-
-    <h3>Reguláris nyelvek felismerése automatával</h3>
-    <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=36m7s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <div>
-        idk
     </div>
 
     <h3>Egy reguláris nyelvet felismerő minimális dva</h3>
