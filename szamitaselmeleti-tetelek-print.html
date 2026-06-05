@@ -699,16 +699,17 @@ alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
         <strong>Tétel:</strong> Tetszőleges CF nyelvhez megadható őt generáló grammatika Chomsky-féle normál alakban.
     </div>
    
-
-    <h4>Backus-Naur Form (BNF)</h4>
+    <h3>BNF</h3>
     <p><a href="https://www.youtube.com/watch?v=DaLyIbms98A&t=36m29s" target="_blank">▶ Előadás ezen a részen</a></p>
+
+    <div class="definicio">
+        A BNF (Backus–Naur-forma) egy formális jelölésrendszer, amely kontextusfüggetlen grammatikák szabályait írja le.
+    </div>
+
+    <h4>Példák BNF-re</h4>
     <div class="definicio">
         <strong>BNF:</strong> Programozási nyelvek definiálására — meta-nyelv.<br>
-        <strong>Példák BNF-re:</strong><br>
-        <code>&lt;azonosító&gt; ::= &lt;betű&gt; | &lt;betű&gt; &lt;azonosítóvég&gt;</code><br>
-        <code>&lt;azonosítóvég&gt; ::= &lt;betű&gt; | &lt;számjegy&gt; | &lt;betű&gt;&lt;azonosítóvég&gt; | &lt;számjegy&gt;&lt;azonosítóvég&gt;</code><br>
-        <code>&lt;betű&gt; ::= a | b | … | z</code><br>
-        <code>&lt;számjegy&gt; ::= 0 | 1 | … | 9</code>
+        <code>&lt;digit&gt; ::= 0 | 1 | ... | 9   (  "|" = vagy )</code>
     </div>
 
     <h3>Műveletek CF nyelveken</h3>
@@ -759,6 +760,9 @@ alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
         </ol>
         <strong>Definíció:</strong> M verem automata felismeri az A nyelvet, ha A = {w | M felismeri w-t}.
     </div>
+
+
+        <h3>Verem automata kapcsolata CF nyelvekkel</h3>
 
     <div class="tetel-box">
         <span style="font-weight:normal;">
