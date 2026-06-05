@@ -283,9 +283,7 @@ Turing­gépekkel. </p>
 
    
 
-    <div class="definicio">
-        <strong>Definíció:</strong> <strong>Egy nyelv reguláris, ha definiálható reguláris kifejezéssel.</strong>
-    </div>
+
  <h4>Reguláris Operátor</h4>
     <div class="definicio">
         <strong>Definíció:</strong> Reguláris operátorok egy Σ abc feletti nyelveken<br>
@@ -345,8 +343,8 @@ Turing­gépekkel. </p>
             <li>Q, egy véges halmaz az állapotok halmaza</li>
             <li>Σ, egy véges halmaz az abc</li>
             <li>δ: Q × Σ → Q az állapotátmenet függvény</li>
-            <li>q₀ ∈ Q a kezdeti állapot</li>
-            <li>F ⊆ Q a végállapotok halmaza</li>
+            <li>q₀ ∈ Q a kezdeti állapot  ( "∈" mert 1 elem része a halmaznak )  </li>
+            <li>F ⊆ Q a végállapotok halmaza  ( "⊆" mert halmaz része a halmaznak )</li>
         </ol>
     </div>
 
@@ -395,7 +393,7 @@ Turing­gépekkel. </p>
         N felismeri w-t, ha ∃ r₀r₁…rₙ Q-beli állapotok sorozata, hogy:<br>
         <ol>
             <li>r₀ = q₀   (kezdeti állapotból indítjuk)</li>
-            <li>r<sub>i+1</sub> ∈ δ(r<sub>i</sub>, w<sub>i+1</sub>) &nbsp; i = 0,…,n−1 (r<sub>i-1</sub>-ből r<sub>i</sub>-be áttudunk ugrani w<sub>i+1</sub> (vevé) jellel)</li>
+            <li>r<sub>i+1</sub> ∈ δ(r<sub>i</sub>, w<sub>i+1</sub>) &nbsp; i = 0,…,n−1 </li>
             <li>rₙ ∈ F (rₙ meg elfogadó állapot)</li>
         </ol>
     </div>
@@ -463,14 +461,9 @@ Turing­gépekkel. </p>
     </div>
 
     <div class="tetel-box">
-        <strong>Tétel (L<sub>D</sub> = L<sub>N</sub> — NVA → DVA részhalmaz-konstrukció):</strong>
-        Minden N = (Q, Σ, δ, q₀, F) NVA-hoz konstruálható ekvivalens M = (Q', Σ, δ', q₀', F') DVA:<br>
-        <ul style="font-weight:normal; margin-top:4px;">
-            <li>Q' = P(Q) &nbsp;(Q hatványhalmaza — az állapotok részhalmazai)</li>
-            <li>q₀' = E({q₀}) &nbsp;(a kezdőállapot ε-lezártja)</li>
-            <li>δ'(R, a) = E(⋃<sub>r∈R</sub> δ(r, a)) &nbsp; minden R ⊆ Q, a ∈ Σ esetén</li>
-            <li>F' = {R ∈ Q' | R ∩ F ≠ ∅} &nbsp;(R végállapot, ha van benne elfogadó NVA-állapot)</li>
-        </ul>
+        <strong>Tétel :</strong>
+        Minden N NVA-hoz konstruálható ekvivalens M DVA:<br><br>
+       
         Ekkor L(M) = L(N). A konstrukció szemantikája: M minden állapota az N lehetséges állapotainak egy részhalmazát kódolja; az egyidejűleg aktív NVA-állapotok halmazát szimulálva.
     </div>
 
@@ -525,19 +518,6 @@ Turing­gépekkel. </p>
         <strong>Jelölés:</strong> x ≈<sub>L</sub> y. Ez egy ekvivalencia reláció Σ*-on.
     </div>
 
-    <div class="tetel-box">
-        <strong>Következmény (Myhill–Nerode kritérium):</strong> L ⊆ Σ* reguláris &nbsp;⟺&nbsp; az ≈<sub>L</sub> reláció véges sok ekvivalenciaosztályt határoz meg.
-    </div>
-
-    <div class="pelda">
-        <strong>Példa:</strong> L = (ab∪ba)* esetén a Σ* ≈<sub>L</sub> szerinti ekvivalencia osztályai:
-        <ol style="font-style:normal;">
-            <li>[ε] = L  (üres string része a nyelvnek)</li>  
-            <li>[a] = La  (a-hoz hozzákonketenálom a nyelvet)</li>
-            <li>[b] = Lb</li>
-            <li>[aa] = L(aa∪bb)Σ*</li>
-        </ol>
-    </div>
 
     <div class="definicio">
         <strong>Definíció (Konfiguráció):</strong> Legyen M = (Q, Σ, δ, q₀, F) DVA.<br>
@@ -576,13 +556,7 @@ Turing­gépekkel. </p>
 
     <div class="tetel-box">
         <strong>Tétel (Myhill-Nerode):</strong> Ha L ⊆ Σ* reguláris nyelv, akkor ∃ M = (Q, Σ, δ, q₀, F) DVA, hogy L(M) = L, és állapotainak száma éppen az ≈<sub>L</sub> reláció ekvivalencia osztályainak száma. M az állapotok számozásától eltekintve egyértelmű (minimális).<br><br>
-        <strong>Konstruktív bizonyítás:</strong> Definiáljuk M<sub>L</sub> = (Q, Σ, δ, q₀, F) DVA-t:<br>
-        <ul style="font-weight:normal; margin-top:4px;">
-            <li>Q = {[x] | x ∈ Σ*} &nbsp;(az ≈<sub>L</sub> ekvivalencia osztályai)</li>
-            <li>q₀ = [ε]</li>
-            <li>F = {[x] | x ∈ L}</li>
-            <li>δ([x], a) = [xa] &nbsp; ∀a ∈ Σ esetén</li>
-        </ul>
+    
         Ez jól definiált (nem függ a képviselőtől), és L(M<sub>L</sub>) = L. Bármely L-t felismerő DVA legalább annyi állapotot tartalmaz, mint ahány ≈<sub>L</sub>-osztály van.
     </div>
 
