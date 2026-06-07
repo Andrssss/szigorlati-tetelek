@@ -114,8 +114,10 @@
 
 <div class="definicio">
         <strong>Definíció (Közvetlen levezetés):</strong> Egy G = (V, Σ, R, S) grammatika alapján a κ ∈ (V∪Σ)* szóból <em>közvetlenül levezethető</em> a µ ∈ (V∪Σ)* szó, ha léteznek olyan γ, δ ∈ (V∪Σ)* szavak és α → β szabály R-ben, hogy:
-        <div style="margin: 6px 0 6px 20px;">κ = γ α δ,&nbsp;&nbsp; µ = γ β δ.</div>
-        <strong>Jelölés:</strong> κ ⇒<sub>G</sub> µ &nbsp; vagy &nbsp; κ ⇒ µ
+        <div style="margin: 6px 0 6px 20px;">κ = γ α δ,&nbsp;&nbsp; µ = γ β δ.</div><br>
+                <strong>Jelölés:</strong> κ ⇒<sub>G</sub> µ &nbsp; vagy &nbsp; κ ⇒ µ <br><br>
+
+        (γ az előtag, δ az utótag. Nélkülük nem lehet megkülönböztetni, melyik előfordulást cseréljük, így a „közvetlen levezetés” nem lenne egyértelmű.)
     </div>  
     <details>
     <summary><strong>Példa:</strong> A {0<sup>i</sup>1<sup>i</sup> | i &gt; 0} nemreguláris nyelv nyelvtana — Levezetés (i=4): S ⇒ 0S1 ⇒ 00S11 ⇒ 000S111 ⇒ 00001111</summary>
@@ -216,7 +218,7 @@ Turing­gépekkel. </p>
 
     <h4>1. típus (Környezetfüggő nyelvek)</h4>
     <p><a href="https://www.youtube.com/watch?v=_eVShbDYjqI&t=12m57s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p><strong>Szabály:</strong> α → β alakú szabályok, ahol |α| ≤ |β| (nem csökkenő szóhossz). Ekvivalens alak: αAβ → αγβ, ahol A ∈ N, γ ∈ (N ∪ Σ)⁺. Felismerő: Lineárisan korlátozott automata (LBA).</p>
+    <p><strong>Szabály:</strong> α → β alakú szabályok, ahol |α| ≤ |β| (nem csökkenő szóhossz). Ekvivalens alak: αAβ → αγβ, ahol A ∈ N, γ ∈ (N ∪ Σ)⁺. Felismerő: Lineárisan korlátozott TG.</p>
 
     <h4>2. típus (Környezetfüggetlen / CF nyelvek)</h4>
     <p><a href="https://www.youtube.com/watch?v=_eVShbDYjqI&t=12m49s" target="_blank">▶ Előadás ezen a részen</a></p>
@@ -224,7 +226,7 @@ Turing­gépekkel. </p>
 
     <h4>3. típus (Reguláris nyelvek)</h4>
     <p><a href="https://www.youtube.com/watch?v=_eVShbDYjqI&t=12m40s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p><strong>Jobblineáris:</strong> A → wB vagy A → w. <strong>Ballineáris:</strong> A → Bw vagy A → w. Felismerő: Véges automata (DFA, NFA).</p>
+    <p><strong>Jobblineáris:</strong> A → wB vagy A → w. <strong>Ballineáris:</strong> A → Bw vagy A → w. Felismerő: Véges automata (DVA, NVA).</p>
 
     <div class="tetel-box">
         <strong>Chomsky-hierarchia:</strong><br>
@@ -331,10 +333,10 @@ Turing­gépekkel. </p>
         Jelölés: L<sub>R</sub> = a reguláris nyelvek osztálya Σ felett.
     </div>
 
-    <h3>Determinisztikus véges automata (DFA)</h3>
+    <h3>Determinisztikus véges automata (DVA)</h3>
     <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=4m0s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div style="text-align:center; margin: 10px 0;">
-        <img src="img/digszam/DET.png" alt="DFA példák: L = (01 ∪ 010)* automata" style="max-width: 50%; height: auto; border: 1px solid #888; box-shadow: 1px 2px 8px #bbb;">
+        <img src="img/digszam/DET.png" alt="DVA példák: L = (01 ∪ 010)* automata" style="max-width: 50%; height: auto; border: 1px solid #888; box-shadow: 1px 2px 8px #bbb;">
     </div>
     <div class="definicio">
         <strong>Definíció:</strong> Determinisztikus véges automata (dva vagy va)<br>
@@ -366,10 +368,10 @@ Turing­gépekkel. </p>
         <strong>Jelölés:</strong> Az M által felismert nyelv: L(M)
     </div>
 
-    <h3>Nemdeterminisztikus véges automata (NFA)</h3>
+    <h3>Nemdeterminisztikus véges automata (NVA)</h3>
     <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=25m24s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div style="text-align:center; margin: 10px 0;">
-        <img src="img/digszam/NFA.png" alt="NFA és DFA példák: L = (01 ∪ 010)* automata" style="max-width: 50%; height: auto; border: 1px solid #888; box-shadow: 1px 2px 8px #bbb;">
+        <img src="img/digszam/NFA.png" alt="NVA és DVA példák: L = (01 ∪ 010)* automata" style="max-width: 50%; height: auto; border: 1px solid #888; box-shadow: 1px 2px 8px #bbb;">
     </div>
     <div class="definicio">
         Azaz olyan automata, amelyben egy adott állapotból egy adott bemenő jelre több átmenet is lehet. Szóval az automata bármikor megsokszorazhatja magát.
@@ -380,7 +382,7 @@ Turing­gépekkel. </p>
         <ol>
             <li>Q, egy véges halmaz az állapotok halmaza</li>
             <li>Σ, egy véges halmaz az abc</li>
-            <li>δ: Q × (Σ ∪ {ε}) → P(Q) az állapotátmenet fv</li>
+            <li>δ: Q × (Σ ∪ {ε}) → P(Q) az állapotátmenet fv  (P mint power set = hatványhalamaz)  </li>
             <li>q₀ ∈ Q a kezdeti állapot</li>
             <li>F ⊆ Q a végállapotok halmaza</li>
         </ol>
@@ -405,7 +407,7 @@ Turing­gépekkel. </p>
     </div>
 
     <div style="text-align:center; margin: 10px 0;">
-        <img src="img/digszam/NFA_2.png" alt="NFA és DFA példák: L = (01 ∪ 010)* automata" style="max-width: 50%; height: auto; border: 1px solid #888; box-shadow: 1px 2px 8px #bbb;">
+        <img src="img/digszam/NFA_2.png" alt="NVA és DVA példák: L = (01 ∪ 010)* automata" style="max-width: 50%; height: auto; border: 1px solid #888; box-shadow: 1px 2px 8px #bbb;">
     </div>
 
 
@@ -525,7 +527,7 @@ Turing­gépekkel. </p>
     <div class="tetel-box">
         <strong>Tétel (Myhill-Nerode):</strong> Ha L ⊆ Σ* reguláris nyelv, akkor ∃ M = (Q, Σ, δ, q₀, F) DVA, hogy L(M) = L, és állapotainak száma éppen az ≈<sub>L</sub> reláció ekvivalencia osztályainak száma. M az állapotok számozásától eltekintve egyértelmű (minimális).<br><br>
     
-        Ez jól definiált (nem függ a képviselőtől), és L(M<sub>L</sub>) = L. Bármely L-t felismerő DVA legalább annyi állapotot tartalmaz, mint ahány ≈<sub>L</sub>-osztály van.
+        <p style="margin-top:8px;">(Ha L reguláris nyelv → akkor van rá minimális automata M, és ennek <strong>állapotainak száma = az ekvivalencia osztályok száma</strong> az ≈<sub>L</sub> relációban.)</p>
     </div>
 
     <div class="tetel-box">
@@ -816,8 +818,6 @@ alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
             <li>q<sub>elfogad</sub> ∈ Q az elfogadó állapot</li>
             <li>q<sub>elutasít</sub> ∈ Q az elutasító állapot</li>
         </ol>
-        <strong>1. Megj:</strong> Turing gép működése: Kezdőhelyzetben az input sorozat a szalag első n mezőjében szerepel, a többi mezőben a _ jel áll. A gép vagy megáll elfogadó vagy elutasító állapotban, vagy nem áll meg. (δ mindenütt értelmezett!)<br><br>
-        <strong>2. Megj:</strong> Egy pillanatnyi konfiguráció leírható a szalag tartalmával, a fej pozíciójával és a pillanatnyi állapottal. Megadása: u q v, ahol q egy állapot, uv a szalagon levő sorozat a végtelen sok _ jel előtt, a fej v első elemén áll.
     </div>
 
     <div class="definicio">
@@ -828,7 +828,6 @@ alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
             <li>C<sub>i</sub> rákövetkezője C<sub>i+1</sub>, i = 1,...n−1,</li>
             <li>C<sub>n</sub> elfogadó konfiguráció. (szóval ha valaha is elfogadó állapotba jut. Azon sorozatok halmaza amit TG elfogad, az TG felismerhető)</li>
         </ol>
-        <strong>Jelölés:</strong> L(M) jelöli az M Turing gép által elfogadott sorozatok halmazát. Ez a gép által felismert nyelv.
     </div>
 
     <h3>Turing gép változatok</h3>
@@ -873,14 +872,12 @@ alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
     <div class="tetel-box">
         <strong>Megj:</strong> Minden rekurzív nyelv rekurzíve felsorolható is. (Az érdekes kérdés a fordított tartalmazás, amiről később belátjuk, hogy nem áll fenn.)<br><br>
         <strong>Tétel:</strong> Ha L rekurzív, akkor L<sup>C</sup> (komplementere) is az. <br>
-        <strong>Biz:</strong> Ha L(M) = L, akkor M-ben az elfogadó és elutasító állapotot felcserélve, az így kapott M' TG-re L(M') = L<sup>C</sup>.
     </div>
 
     <h4>Nem Turing-felismerhető nyelv létezése</h4>
     <p><a href="https://www.youtube.com/watch?v=vKh94OEZ2gI&t=20m33s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="tetel-box">
         <strong>Tétel:</strong> Van olyan L' ⊆ Σ* = {0,1}* nyelv, amely nem Turing felismerhető, azaz nem rekurzíve felsorolható.<br><br>
-        <strong>Biz:</strong> Egy TG leírható véges jelsorozattal. Az összes TG felsorolható, mivel k hosszú jelsorozattal megadott TG véges sok van. Legyen M<sub>1</sub>, M<sub>2</sub>, ...M<sub>n</sub>, ... egy felsorolásuk. Az M<sub>i</sub> TG egyértelműen meghatározza az általa felismert L<sub>i</sub> nyelvet, így a Turing felismerhető nyelvek is felsorolhatók: L<sub>1</sub>, L<sub>2</sub>, ...L<sub>n</sub>, ... Azaz a Turing felismerhető nyelvek megszámlálhatóan sokan vannak. Másrészt: Az összes Σ feletti nyelv számossága éppen a {0,1}* lehetséges részhalmazainak a számossága, ami több, mint megszámlálható.
     </div>
 
          <img src="img/digszam/rec.png" alt="Verem automaták" style="max-width:500px;width:50%;">
@@ -891,7 +888,6 @@ alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
         <strong>Definíció: Diagonális nyelv:</strong> azon TG kódja, mely TG-ek nem fogadják el a saját kódjukat:<br>
         <div style="margin: 6px 0 6px 20px;">L<sub>d</sub> = { w ∈ {0, 1}* | az M<sub>w</sub> gép létezik, és w ∉ L<sub>M<sub>w</sub></sub> }</div>
         <strong>Tétel:</strong> L<sub>d</sub> nem rekurzíve felsorolható nyelv.<br><br>
-        <strong>Biz:</strong> Indirekten, t. fel. hogy L<sub>d</sub> rekurzíve felsorolható. Azaz van N TG, mely éppen L<sub>d</sub> szavait ismeri fel, L<sub>d</sub> = L<sub>N</sub>. Azaz N felismeri w-t, ha w egy olyan M<sub>w</sub> TG-t kódol, mely nem fogadja el a saját kódját.
     </div>
 
     <h3>Példa: Rekurzíve felsorolható (RE), de nem rekurzív (R) nyelv (L<sub>u</sub>)</h3>
@@ -911,10 +907,7 @@ s ∈ {0, 1}* szót? (‘Szuper’ algoritmust keresnénk.) - Nem<br><br>
         <strong>Tétel:</strong> A nyelvtannal generálható nyelvek osztálya megegyezik a rekurzíve felsorolható nyelvek osztályával. Azaz L nyelv akkor és csak akkor generálható grammatikával, ha van a nyelvet felismerő Turing-gép.<br><br>
         (0-sat generálják a gramatikák, 0-sat felismerik a TG-k, így ugyanazokat a nyelveket generálják és ismerik fel)
     </div>
-    <div class="tetel-box">
-        <strong>Tétel:</strong> A környezetfüggő nyelvtannal generálható nyelvek osztálya (CS) megegyezik a lineárisan korlátozott TG-pel felismerhető nyelvek osztályával.<br><br>
-        <strong>Def:</strong> Lineárisan korlátozott TG egy olyan, speciális TG, mely a szalagnak csak a bemeneti által elfoglalt részét használja.
-    </div>
+
 
     <h3>Mi a helyzet az 1-es (CS) nyelvosztállyal?</h3>
     <p><a href="https://www.youtube.com/watch?v=BkCk9BjJO0c&t=32m29s" target="_blank">▶ Előadás ezen a részen</a></p>
