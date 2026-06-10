@@ -204,7 +204,7 @@ megfigyelések.</a></h2>
 <div class="definicio">
     <strong>Zipf-törvény:</strong> egy szövegben néhány szó ( vagy n-gram ) nagyon gyakran fordul elő, míg a szavak többsége csak ritkán jelenik meg. Így csak a gyakoriakat megtartva a szöveg információtartalmának nagy része megőrizhető. <br><br>
 
-    <strong>Heaps-törvény:</strong> a korpusz méretének növekedésével a szókincs mérete szublineárisan nő, vagyis egyre lassabban jelennek meg új szavak, de a szókészlet bővülése soha nem áll meg teljesen.<br><br>
+    <strong>Heaps-törvény:</strong> a korpusz méretének növekedésével a szókincs mérete szublineárisan nő, vagyis egyre lassabban jelennek meg új szavak, de a szókészlet bővülése soha nem áll meg teljesen. (Magyarnál a ragozás miatt kicsit vadabb a helyzet.) <br><br>
 
     <strong>Mandelbrot-féle nyelvi törvényszerűségek:</strong> a gyakran használt szavak általában rövidebbek, és a nyelvtörténeti fejlődés során a nagy gyakoriságú szavak hajlamosak lerövidülni.<br><br>
 
@@ -367,22 +367,27 @@ Ezen a képen az látszik, hogy gyakorlatilag egy egyszerű reguláris kifejezé
     <h3>Véges állapotú automaták kiterjesztései (RTN, ATN)</h3>
 
     <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h38m10s" target="_blank">▶ Előadás ezen a részen </a></p>
+    <img src="img/nyelvtech/RTN.png" alt="Verem automaták" style="max-width:500px;width:60%;">
 
-    <p><strong>RTN (Recursive Transition Network):</strong> egymást hívó FSA-k hálózata; az élek címkéi közt megjelenik más FSA-k „neve". Az aktuális bemeneti pozíciót, az aktuális állapotot és a visszatérési helyet veremkezeléssel kezeli.</p>
-    <div class="definicio">
-        Az RTN összefoglalása:<br>
-        — Az RTN egymást hívó FSA-k hálózata: az élek címkéi közt megjelenik más FSA-k „neve".<br>
-        — Az FSA (a reguláris nyelvek) O(n) idő alatt elemezhetők.<br>
-        — Az RTN valójában egy veremautomata, azaz környezetfüggetlen nyelvek elemzésére is alkalmas.<br>
-    </div>
+<div class="definicio">
 
-    <p><strong>ATN (Augmented Transition Network):</strong> az RTN bővítése, amelynek már van memóriája is a RTN-el ellentétben. Az ATN-ben vannak élcímkék, értékek, tesztek és akciók. Ez egy TG, mivel bármit megenged a nyelvtani szabályokban. </p>
-    <ul>
-        <li><strong>Regisztereket</strong> használ információk tárolására</li>
-        <li><strong>Teszteket</strong> végezhet az átmeneteken</li>
-        <li><strong>Akciókat</strong> hajthat végre</li>
-        <li>Összetettebb, kontextusfüggő nyelvtani jelenségeket képes kezelni — különösen hasznos természetes nyelvű mondatok elemzésében</li>
-    </ul>
+    <strong>Kiindulás:</strong> a véges állapotú automaták hatékonyak és gyorsak, de a természetes nyelvek számos jelenségét nem tudják kezelni, mert nem képesek összetett szerkezetek és távoli függőségek nyilvántartására. Így a Reguláris nyelv helyett környezetfüggetlen nyelvek elemzésére alkalmas RTN és ATN kiterjesztések jöttek létre. (futás idő köbösre nő)<br><br>
+
+    <strong>RTN (Recursive Transition Network – Rekurzív átmenetháló):</strong> a véges állapotú automata olyan kiterjesztése, amelyben az éleken nemcsak terminális szimbólumok (szavak), hanem más automaták nevei (nemterminálisok) is szerepelhetnek. Egy automata így meghívhat egy másikat, amelynek lefutása után folytatódik a feldolgozás.<br><br>
+
+    <strong>Rekurzió:</strong> az automaták egymást akár önmagukon keresztül is meghívhatják, ezért az RTN képes beágyazott mondatszerkezetek kezelésére. A rekurzió miatt a rendszer működéséhez verem szükséges, ezért az RTN lényegében egy veremautomatának felel meg, és környezetfüggetlen nyelvek elemzésére alkalmas.<br><br>
+</div>
+<div class="definicio">
+    <strong>RTN baja: hogy a 2-vel ezelőtti állapotot nem tudja megjegyezni. ( pl.: leg + jo + bb ) </strong> .<br><br>
+
+    <strong>ATN (Augmented Transition Network – Bővített átmenetháló):</strong> az RTN továbbfejlesztése, amely memóriát és különféle műveleteket is tartalmaz. Az átmenetekhez feltételek, tesztek és műveletek kapcsolhatók, például regiszterek tartalmának lekérdezése vagy módosítása. (Ez lényegében egy TG)<br><br>
+
+    <strong>Kiegészítések:</strong> az ATN képes információkat eltárolni, visszakeresni, logikai feltételeket ellenőrizni és ezek alapján dönteni az állapotváltásokról. Így olyan nyelvi jelenségek is kezelhetők, amelyekhez a korábbi állapotokra vagy a mondat más részeire való emlékezés szükséges.<br><br>
+
+    <strong>Jelentőség:</strong> az ATN-ek a 60–70-es években a természetes nyelv feldolgozásának fontos eszközei voltak. Segítségükkel nagy méretű nyelvtanokat lehetett leírni, és közelebb kerültek a valódi nyelvi szerkezetek kezeléséhez, mint a hagyományos véges állapotú automaták.
+</div>
+
+
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 2. Téma</div>
 </div>
@@ -1249,7 +1254,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
 <script src="shared.js"></script>
 <script>
   // —— Nyelvtechnológia-specifikus kiemelések ——
-  highlightTerms(document.body, /reguláris kifejezés|véges automata|FSA|FST/gi, '#cc0000');
+  highlightTerms(document.body, /reguláris kifejezés|véges automata|FSA|FST|RTN|ATN/gi, '#cc0000');
   highlightTerms(document.body, /morfológia|unifikáció/gi, '#cc0000');
   highlightTerms(document.body, /korpusz|szóbeágyazás/gi, '#cc0000');
 </script>
