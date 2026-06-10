@@ -451,11 +451,6 @@ a fedés viszonya a különböző alkalmazásokban.
     </ul>
 
 
-    <h4>Véges átalakítók soros kapcsolása (Kaplan &amp; Kay)</h4>
-    <ul>
-        <li>A fonológiai levezetések közbülső állapotai mindig kiküszöbölhetők az egyes szabályokból kapott átalakítók kompozíciójával: az eredményül kapott átalakítónak csak két szintje van, a lexikális és a felszíni.</li>
-        <li>Az egyetlen generatív átalakító használata sokkal hatékonyabb felismerésre is, mintha az eredeti szabályoknak megfelelő átalakítók egyenként invertált sorrendben működnének.</li>
-    </ul>
 
     <h4>Véges átalakítók párhuzamos kapcsolása</h4>
     <p><a href="https://www.youtube.com/watch?v=l2CA0ULnVI4&t=6694s" target="_blank">▶ Előadás ezen a részen</a></p>
@@ -494,24 +489,7 @@ a fedés viszonya a különböző alkalmazásokban.
     <h3>Unifikáció és jegyszerkezetek</h3>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=5m27s" target="_blank">▶ Előadás ezen a részen (gráf fogalmak, DAG, jegyszerkezetek)</a></p>
 
-    <ol>
-        <li><strong>DAG</strong> = adatstruktúra — jegyszerkezetek ábrázolására</li>
-        <li><strong>Jegyszerkezet</strong> = mit tárolunk benne — jegy–érték párok strukturált leírása</li>
-        <li><strong>Unifikáció</strong> = hogyan vetjük össze — két jegyszerkezet összeegyeztethetőségének ellenőrzése</li>
-        <li><strong>Szóalaktani alapséma</strong> = mire alkalmazzuk — tő + toldalék(ok) kompozíciója</li>
-        <li><strong>HuMor</strong> = a teljes elemző rendszer — unifikálhatósági relációk morfológiai jegyszerkezeteken</li>
-        <li><strong>Bináris jegyrendszer</strong> = hogyan van implementálva — hierarchikus +/− kérdések sorozata</li>
-        <li><strong>Guesser</strong> = mit csinál ha hiányos az adat — ismeretlen tövek becslése toldalékvisszafejtéssel</li>
-    </ol>
-
-    <p>Az unifikáció <strong>NEM a morfológia része</strong> — DAG-okon értelmezett absztrakt művelet, amelyet morfológiában, szintaxisban és máshol egyaránt alkalmaznak. A morfológiánál tárgyaljuk először, de vizsgán nem szabad morfológiai műveletnek mondani.</p>
-    <table style="border-collapse:collapse; margin: 0.5em 0; font-size:0.95em;">
-        <thead><tr style="background:#f0f0f0;"><th style="border:1px solid #ccc;padding:4px 10px;">Hol</th><th style="border:1px solid #ccc;padding:4px 10px;">Mire használjuk</th><th style="border:1px solid #ccc;padding:4px 10px;">Példa</th></tr></thead>
-        <tbody>
-            <tr><td style="border:1px solid #ccc;padding:4px 10px;"><strong>3. téma — morfológia</strong></td><td style="border:1px solid #ccc;padding:4px 10px;">tő + toldalék jegyeinek összeillesztése (HuMor)</td><td style="border:1px solid #ccc;padding:4px 10px;"><em>ház</em> + <em>-ban</em> → unifikálható ✓ &nbsp;|&nbsp; <em>főnök</em> + <em>-ban</em> → fail ✗</td></tr>
-            <tr><td style="border:1px solid #ccc;padding:4px 10px;"><strong>4. téma — szintaxis</strong></td><td style="border:1px solid #ccc;padding:4px 10px;">alany–állítmány egyeztetés, vonzatkeret ellenőrzése</td><td style="border:1px solid #ccc;padding:4px 10px;"><em>fiúk [PL]</em> + <em>futnak [PL]</em> → ✓ &nbsp;|&nbsp; <em>fiú [SG]</em> + <em>futnak [PL]</em> → fail ✗</td></tr>
-        </tbody>
-    </table>
+  
 
     <div class="definicio">
         <strong>DAG</strong> (irányított körmentes gráf):  Erre a legalkalmasabb használni az unifikációt.<br><br>
@@ -521,7 +499,7 @@ a fedés viszonya a különböző alkalmazásokban.
 
 <img src="img/nyelvtech/unific.png" alt="Verem automaták" style="max-width:500px;width:90%;">
 
-
+    <div class="definicio">
     <p><strong>Az Jegyszerkezet-unifikáció művelete DAG-nál</strong> — az unifikáció egyedül akkor nem hajtható végre, ha ugyanazon az ösvényen egymásnak ellentmondó atomi értékek állnak: <br><br>  <span class="note">( SG = Singular (egyes szám), PL = Plural (többes szám))</span>  </p>
     <ul>
         <li>[NUMBER SG] ∪ [NUMBER PL] = <strong>fail!</strong> (eltérő atomi értékek)</li>
@@ -532,13 +510,13 @@ a fedés viszonya a különböző alkalmazásokban.
 
     <p><strong>Destruktív unifikáció:</strong> az egyik kiinduló szerkezet helyén létrejön az eredmény; a másik megszűnik. Gyors, de a korábbi állapot elveszik.</p>
     <p><strong>Nem-destruktív unifikáció:</strong> valójában unifikálhatósági reláció ellenőrzése — a kiinduló szerkezetek megmaradnak, az eredmény egy harmadik, új szerkezet. Másolást igényel, de visszakövethetővé teszi a levezetést; implementációkban igen gyakori.</p>
-
-    <h3>Szóalaktani alapséma</h3>
+</div>
+    <h4>Szóalaktani alapséma</h4>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=21m05s" target="_blank">▶ Előadás ezen a részen</a></p>
 
 <img src="img/nyelvtech/szoalak.png" alt="Verem automaták" style="max-width:500px;width:60%;">
 
-    <h3>Unifikációs morfológia (HuMor = <em>High-speed Unification Morphology</em>)</h3>
+    <h4>Unifikációs morfológia (HuMor = <em>High-speed Unification Morphology</em>)</h4>
     <div class="definicio">
        A <strong>HuMor</strong>  lényege, hogy <strong>minden nyelvi tulajdonság egy jegy</strong>. A morfológiai elemzés nem string-manipuláció (nem „lépj vissza két betűt, vágj egyet"), hanem: a szóalak tő- és toldalékrészeit felismerjük a szótár segítségével, és mindkettőhöz <strong>jegy–érték párokat</strong> rendelünk. Ezután megnézzük, hogy a tő és a toldalék jegyei <strong>unifikálhatók-e</strong> — ha igen, a szóalak grammatikus. A HuMor tehát nem más, mint <strong>unifikálhatósági relációk működtetése</strong> morfológiai jegyszerkezeteken.
     </div>
@@ -595,26 +573,85 @@ a fedés viszonya a különböző alkalmazásokban.
 
 
     <h3>Alkalmazások</h3>
+
+            <div class="definicio">
+
     <p>A morfológiai elemző (pl. HuMor) önmagában nem „végterméke" semminek — más rendszerek használják fel.</p>
 
-    <h4>Helyesírás-ellenőrzés</h4>
+ <ul>
+  <li>
+    <strong>Helyesírás-ellenőrzés</strong>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=1h42m19s" target="_blank">▶ Előadás ezen a részen</a></p>
     <ul>
-        <li><strong>Spell checker</strong> (szószintű): megvizsgálja, hogy a szóalak létezik-e a morfológiai adatbázisban. Ha nem → hibásnak jelöli.</li>
-        <li><strong>Grammar checker</strong> (mondatszintű): szintaktikai/szemantikai összefüggéseket is vizsgál — lényegesen nehezebb feladat.</li>
-        <li>Proofing tools csomag: helyesírás-ellenőrző + elválasztó + tezaurusz. A HuMor-alapú ellenőrző bekerült az Office-termékekbe is.</li>
+      <li><strong>Spell checker</strong> (szószintű): megvizsgálja, hogy a szóalak létezik-e a morfológiai adatbázisban. Ha nem → hibásnak jelöli.</li>
+      <li><strong>Grammar checker</strong> (mondatszintű): szintaktikai/szemantikai összefüggéseket is vizsgál — lényegesen nehezebb feladat.</li>
+      <li>Proofing tools csomag: helyesírás-ellenőrző + elválasztó + tezaurusz. A HuMor-alapú ellenőrző bekerült az Office-termékekbe is.</li>
+      <li>
+        <strong>Tipikus hibák:</strong> karakterhibák/elütések, valódi helyesírási hibák, nyelvhelyességi hibák, tipográfiai hibák.
+      </li>
+      <li>
+        <strong>Javítható:</strong> betűhibák, egybeírások, kötőjelezés, szóismétlés |
+        <strong>Nem javítható:</strong> hibás különírások, közponozási hibák, szórendi hibák.
+      </li>
     </ul>
-    <p><strong>Tipikus hibák:</strong> karakterhibák/elütések, valódi helyesírási hibák, nyelvhelyességi hibák, tipográfiai hibák.</p>
-    <p><strong>Javítható:</strong> betűhibák, egybeírások, kötőjelezés, szóismétlés &nbsp;|&nbsp; <strong>Nem javítható:</strong> hibás különírások, közponozási hibák, szórendi hibák.</p>
-  
+  </li>
 
-    <h4>Automatikus szövegelválasztás</h4>
+  <li>
+    <strong>Automatikus szövegelválasztás</strong>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=2h10m28s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>Alapszabályok + morfológiai felülbírálások (morfémhatárok > puszta betűszámlálás). Pl. <em>asz–szony–nyal</em>. <span class="note">(angolban alapból nem létezik egység)</span></p>
+    <p>Alapszabályok + morfológiai felülbírálások (morfémhatárok &gt; puszta betűszámlálás). Pl. <em>asz–szony–nyal</em>. <span class="note">(angolban alapból nem létezik egység)</span></p>
+  </li>
 
-    <h4>Szinonimaszótárak és tezauruszok</h4>
+  <li>
+    <strong>Szinonimaszótárak és tezauruszok</strong>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=2h16m36s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A morfológiai elemző tőre vezeti vissza a szóalakot → a szinonima a megfelelő tőhöz kereshető. Enélkül az automatikus csere félresikerülne. Problémák: többértelműség kezelése, lexikai vs. szintaktikai szó különbsége.</p>
+    <p>
+      A morfológiai elemző tőre vezeti vissza a szóalakot → a szinonima a megfelelő tőhöz kereshető.
+      Problémák: többértelműség kezelése, lexikai vs. szintaktikai szó különbsége.
+    </p>
+
+    <ul>
+      <li><strong>Intelligens keresés:</strong> a szótövek alapján működik, így minden ragozott alak megtalálható.</li>
+      <li>
+        Példa: „ház" keresése megtalálja: házak, házban, házakat, stb.
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Intelligens csere (lemmatizáció)</strong>
+    <p>
+      Szövegszerkesztőkben a morfológiai tudás segít az intelligens keresés-csere műveletekben,
+      megőrizve a ragozást.
+    </p>
+  </li>
+</ul>
+</div>
+
+
+
+    <h3>Pontosság és fedés viszonya</h3>
+        <div class="definicio">
+
+        <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=10m50s" target="_blank">▶ Előadás ezen a részen</a></p>
+        <p>A szövegszinkronizáció eredményét — mint minden nyelvtechnológiai feladatét — két egymásnak feszülő szempontból lehet mérni:</p>
+        <ul>
+            <li><strong>Pontosság (precision):</strong> az összerendelt mondatpárok közül hány a valóban helyes megfeleltetés? — <em>Amink van, az tényleg jó-e?</em></li>
+            <li><strong>Fedés (recall / teljesség):</strong> az összes lehetséges helyes párból hányat sikerült megtalálni? — <em>Mindent megtaláltunk-e?</em></li>
+        </ul>
+        <p>A kettő egymással <strong>ellentétes irányban mozog</strong>:</p>
+        <ul>
+            <li>Ha <strong>teljes szinkronizációra</strong> törekszünk (mindennek legyen párja) → magas fedés, de a rendszer néha téved, pontossága csökken. Erre a <em>hosszalapú</em> módszer tipikus példa.</li>
+            <li>Ha <strong>részleges szinkronizációt</strong> csinálunk (csak a biztosan helyes párokat adjuk meg) → közel 100%-os pontosság, de a szöveg nagy része lefedetlen marad. Erre a <em>horgonyalapú</em> módszer tipikus példa: a horgonyok (URL, szám, tulajdonnév) szinte mindig pontosak, de egy hosszabb szövegben csak néhány ilyen akad.</li>
+        </ul>
+        <div class="definicio">
+            <strong>Összefoglalva:</strong> a <em>pontosság</em> a részlegességgel, a <em>fedés</em> (teljesség) a relatív pontatlansággal jár együtt. A <strong>hibrid módszer</strong> pontosan ezt az ellentétet hidalja át: a horgonyok biztosítják a magas pontosságot, a hosszalapú komponens pedig kitölti a hézagokat, és biztosítja a teljes fedést.
+        </div>
+        </div>
+
+
+
+
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 3. Téma</div>
 </div>
@@ -703,10 +740,7 @@ alkalmazásai a nyelvtechnológiában (morfológiában, szintaxisban).</a></h2>
     <p>Példa: <em>he studies computational linguistics at the university</em> — <em>studies</em> (V) → <em>studies computational linguistics</em> (V′, mert a tárgyat kötelezően felveszi) → <em>he studies …</em> (VP / V″, a specifier alany megérkezik); az <em>at the university</em> PP adjunkt, nem változtat a vonásszámon.</p>
     <p><strong>Endocentrikus vs. egzocentrikus szerkezet:</strong> az X-vonás az endocentrikus szerkezeteknél működik (van egyértelmű fej, amely átviszi a kategóriát). A koordináció (pl. <em>Jancsi és Juliska</em>) egzocentrikus: nincs igazi fej — sem Jancsi, sem Juliska, sem a kötőszó nem hozza önmagában a főnéviséget.</p>
 
-    <h4>Funkcionális szerkezet — a magyar hagyomány</h4>
-    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=17m22s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A magyar iskolai nyelvtani hagyomány nem a sorrendből, hanem a <strong>funkcióból</strong> indul ki: a mondatnak alanya, állítmánya, tárgya, határozója, jelzője van. A toldalékok (esetragok) hordozzák ezt az információt, ezért a magyar szabad szórend mellett is azonosíthatók a mondatrészek (<em>a kutya ugatja a holdat</em> ↔ <em>a holdat ugatja a kutya</em>).</p>
-
+  
     <h3>Alapvető mondatelemzési módszerek (BU és TD-elemzők) és kombinációik.</h3>
     <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=39m21s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>A formális nyelvtan négyes <em>(N, T, P, S)</em>: <strong>N</strong> = nem-terminálisok (szófaji és mondatrész-kategóriák), <strong>T</strong> = terminálisok (szótári elemek), <strong>P</strong> = újraíró szabályok (pl. S → NP VP), <strong>S</strong> = mondat-szimbólum. <br><br>A szavak mondatba szerveződésének szabályaihoz a <strong>környezetfüggetlen (CF)</strong> szint terjedt el: a reguláris túl gyenge (csak lineáris szabályok, nem tud beágyazást kezelni), a környezetfüggő meg túl drága (köbös komplexitás) — a CF a kettő között a legtöbb szintaktikai jelenséget jól leírja.</p>
@@ -715,7 +749,7 @@ alkalmazásai a nyelvtechnológiában (morfológiában, szintaxisban).</a></h2>
         <li><strong>Felülről lefele (top-down):</strong> S-ből indulunk, a szabályokat balról jobbra alkalmazva levezetjük a bemenetet. A parser előre jósolja, milyen kategóriák jöhetnek, majd ellenőrzi a soron következő szavakat. Hátránya a vak próbálkozás, ha a nyelv nagyon szabad szórendű.</li>
         <li><strong>Alulról felfele (bottom-up):</strong> a bemenet szavainak kategóriáiból építjük fel a fát, redukciókkal jutunk el S-ig. Ez biztosan csak valóban létező részfákat épít, de sok fölösleges részfa is létrejöhet, ha a nyelv rendetlen.</li>
     </ul>
-    <h4>BU és TD kombinációi</h4>
+    <h3>BU és TD kombinációi</h3>
     <p>A gyakorlatban a legjobb megoldás nem tisztán TD vagy BU, hanem valamilyen keverék. A <strong>chart parser</strong> és az <strong>Earley</strong> elsősorban azért működik jól, mert mindkét irány információját tárolja, és újrafelhasználja a már megvizsgált részeredményeket.</p>
     <ul>
         <li><strong>Chart parser:</strong> a már bejárt részfákat egy táblázatban (<em>chart</em>) tárolja. Ha ugyanazt a részfát újra kellene vizsgálni, a parser egyszerűen újra felhasználja. Ez drasztikusan csökkenti az időkomplexitást ambiguitás és rekurzió esetén.</li>
@@ -1056,21 +1090,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
             </li>
         </ul>
 
-        <h4>Pontosság és fedés</h4>
-        <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=10m50s" target="_blank">▶ Előadás ezen a részen</a></p>
-        <p>A szövegszinkronizáció eredményét — mint minden nyelvtechnológiai feladatét — két egymásnak feszülő szempontból lehet mérni:</p>
-        <ul>
-            <li><strong>Pontosság (precision):</strong> az összerendelt mondatpárok közül hány a valóban helyes megfeleltetés? — <em>Amink van, az tényleg jó-e?</em></li>
-            <li><strong>Fedés (recall / teljesség):</strong> az összes lehetséges helyes párból hányat sikerült megtalálni? — <em>Mindent megtaláltunk-e?</em></li>
-        </ul>
-        <p>A kettő egymással <strong>ellentétes irányban mozog</strong>:</p>
-        <ul>
-            <li>Ha <strong>teljes szinkronizációra</strong> törekszünk (mindennek legyen párja) → magas fedés, de a rendszer néha téved, pontossága csökken. Erre a <em>hosszalapú</em> módszer tipikus példa.</li>
-            <li>Ha <strong>részleges szinkronizációt</strong> csinálunk (csak a biztosan helyes párokat adjuk meg) → közel 100%-os pontosság, de a szöveg nagy része lefedetlen marad. Erre a <em>horgonyalapú</em> módszer tipikus példa: a horgonyok (URL, szám, tulajdonnév) szinte mindig pontosak, de egy hosszabb szövegben csak néhány ilyen akad.</li>
-        </ul>
-        <div class="definicio">
-            <strong>Összefoglalva:</strong> a <em>pontosság</em> a részlegességgel, a <em>fedés</em> (teljesség) a relatív pontatlansággal jár együtt. A <strong>hibrid módszer</strong> pontosan ezt az ellentétet hidalja át: a horgonyok biztosítják a magas pontosságot, a hosszalapú komponens pedig kitölti a hézagokat, és biztosítja a teljes fedést.
-        </div>
+
 
 
 
