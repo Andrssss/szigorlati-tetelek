@@ -952,7 +952,7 @@ s ∈ {0, 1}* szót? (‘Szuper’ algoritmust keresnénk.) - Nem<br><br>
     </div>
 
      
-    <h3>Függvényszámítás Turing géppel</h3>
+    <h4>Függvényszámítás Turing géppel</h4>
     <p><a href="https://www.youtube.com/watch?v=vKh94OEZ2gI&t=10m0s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Definíció:</strong> x ∈ Σ* kezdeti bemeneti sorozatra az M Turing gép outputja az y ∈ Σ* sorozat, ha M megáll az x inputra, és megállásakor a szalagon éppen y szerepel (az üres szimbólumok előtt), valamint a fej ismét az első pozíción áll.<br>
@@ -994,23 +994,31 @@ Megvalósítható-e minden algoritmus Turing géppel? - Yes<br><br>
     <p><a href="https://www.youtube.com/watch?v=vKh94OEZ2gI&t=12m45s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Hilbert 10. problémája (1900):</strong><br><br>
-
-        Képzeld el, hogy kapsz egy egyenletet — mondjuk x² + y² − z² = 0 — és azt kérdezik: <em>van-e ennek egész számmegoldása?</em>
-        Erre könnyű válaszolni (pl. x=3, y=4, z=5).<br><br>
-
-        De mi van, ha egymillió különböző egyenletet kapsz? Kellene egy <strong>program / algoritmus</strong>, amit "betáplálsz" bármely egyenlettel, és az megmondja: <em>igen, van egész megoldás</em> vagy <em>nem, nincs</em>.<br><br>
-
-        Hilbert: <strong>létezik-e ilyen általános algoritmus?</strong><br><br>
-
-        <strong>Válasz (Matijaszevics, 1970): NEM.</strong><br>
         Nem létezik olyan program, amely minden lehetséges diofantikus egyenletről (egész együtthatós polinomegyenlet) eldönti, van-e egész megoldása.<br>
         Azaz a H10 probléma <strong>algoritmikusan eldönthetetlen</strong> — nem rekurzív nyelv.
-
-        <div style="margin-top:12px; padding: 8px 12px; background:#f5f5f5; border-left: 3px solid #aaa; font-size:0.95em;">
-            <strong>Diofantikus egyenlet:</strong> f(x<sub>1</sub>, ..., x<sub>n</sub>) = 0, ahol f egész együtthatós polinom, megoldást egész számokban keresünk.<br>
-            <strong>Példák:</strong> x²+y²=z² (Pitagorasz) &nbsp;|&nbsp; x²+y²+u²+w²=z (Lagrange, 1751) &nbsp;|&nbsp; xⁿ+yⁿ=zⁿ, n≥3 (Fermat — nincs megoldás)
-        </div>
     </div>
+
+    <h4>H10 magyarázat:</h4>
+            <div class="definicio">
+
+            Képzeld el, hogy kapsz egy egyenletet — mondjuk x² + y² − z² = 0 — és azt kérdezik: <em>van-e ennek egész számmegoldása?</em>
+            Erre könnyű válaszolni (pl. x=3, y=4, z=5).<br><br>
+
+            De mi van, ha egymillió különböző egyenletet kapsz? Kellene egy <strong>program / algoritmus</strong>, amit "betáplálsz" bármely egyenlettel, és az megmondja: <em>igen, van egész megoldás</em> vagy <em>nem, nincs</em>.<br><br>
+
+            Hilbert: <strong>létezik-e ilyen általános algoritmus?</strong><br><br>
+
+            <strong>Válasz (Matijaszevics, 1970): NEM.</strong><br>
+            
+
+            <div style="margin-top:12px; padding: 8px 12px; background:#f5f5f5; border-left: 3px solid #aaa; font-size:0.95em;">
+                <strong>Diofantikus egyenlet:</strong> f(x<sub>1</sub>, ..., x<sub>n</sub>) = 0, ahol f egész együtthatós polinom, megoldást egész számokban keresünk.<br>
+                <strong>Példák:</strong> x²+y²=z² (Pitagorasz) &nbsp;|&nbsp; x²+y²+u²+w²=z (Lagrange, 1751) &nbsp;|&nbsp; xⁿ+yⁿ=zⁿ, n≥3 (Fermat — nincs megoldás)
+            </div>
+    </div>
+
+
+
 
     <h3>TG kódja</h3>
     <p><a href="https://www.youtube.com/watch?v=vKh94OEZ2gI&t=21m6s" target="_blank">▶ Előadás ezen a részen</a></p>
@@ -1199,7 +1207,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
     <h3>Tár-idő összefüggések</h3>
     <div class="tetel-box">
         <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=28m19s" target="_blank">▶ Előadás ezen a részen</a></p>
-        <strong>Tétel (Tár-idő tétel):</strong> Ha L ∈ SPACE(s(n)), akkor van olyan L-től függő c konstans, hogy L ∈ TIME(2<sup>s(n)</sup>).
+        <strong>Tétel (Tár-idő tétel):</strong> Ha L ∈ SPACE(s(n)), akkor van olyan L-től függő c konstans, hogy L ∈ TIME(c<sup>s(n)</sup>).
     </div>
 
      <div class="tetel-box">
@@ -1239,7 +1247,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <span style="font-weight:normal;">Ha L ∈ PSPACE, akkor valamely k-ra L ∈ SPACE(n<sup>k</sup>). A tár-idő tétel szerint ekkor L ∈ TIME(2<sup>n<sup>k</sup></sup>) ⊆ EXPTIME.</span><br><br>
     </div>  
     <div class="tetel-box">
-        <strong>Tétel:</strong> EXPTIME ⊂ R (= Rekurzív nyelvek osztálya)  <span class="note">(EXP timenál adunk neki egy nagyon nagy időkorlátot. Az R -nél meg csak azt adjuk meg, h véges időn belűl álljon meg, szóval kevésbé szigorú a korlát.)</span> <br><br>
+        <strong>Tétel:</strong> EXPTIME ⊂ R   (= Rekurzív nyelvek osztálya)  <span class="note">(EXP timenál adunk neki egy nagyon nagy időkorlátot. Az R -nél meg csak azt adjuk meg, h véges időn belűl álljon meg, szóval kevésbé szigorú a korlát.)</span> <br><br>
         <strong>Következmény:</strong> P ⊆ NP ⊆ PSPACE = NPSPACE ⊆ EXPTIME<br><br>
         <span style="font-weight:normal;">Nem ismert, hogy a tartalmazások valódiak-e. Ismert, hogy P ⊂ EXPTIME. Tehát a fenti láncban legalább az egyik helyen valódi a tartalmazás, sejtés: mindegyik valódi.</span>
     </div>
@@ -1325,6 +1333,9 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <span class="note">(c a tanú — „bizonyíték" arra, hogy w ∈ L)</span><br><br>
 
         <strong>Tétel:</strong> NP azokat a nyelveket tartalmazza, amelyek polinomiálisan bizonyíthatók. ( Azaz NP = nem det. TG-vel felismerhető nyelvek osztálya. Ez a két fogalom ekvivalens )<br>
+
+        <!-- <strong>Tétel:</strong> <br>
+        <strong>Tétel:</strong> <br> -->
 
         <span class="note">(PL.: Gráf síkba rajzolható-e. Tanú : K3 v K5 topológikus felbontása. P problémákra nem kell tanú, mivel meg is tudjuk oldali polinom időben és így leelenőrizni. Ezért nem kell oda ez a súgás, ami a tanú.)</span>
     </div>
