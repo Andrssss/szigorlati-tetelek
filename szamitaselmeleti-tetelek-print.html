@@ -1181,7 +1181,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
     <h3>A P nyelvosztály</h3>
     <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=14m47s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
-        <strong>Definíció:</strong> P = ∪<sub>k≥1</sub> TIME(n<sup>k</sup>) a polinom időben egyszalagos TG-pel eldönthető nyelvek osztálya.<br>
+        <strong>Definíció:</strong> P = <strong  style="font-size: 20px;">U</strong ><sub>k≥1</sub> TIME(n<sup>k</sup>) a polinom időben egyszalagos TG-pel eldönthető nyelvek osztálya.<br>
         (Pl: TIME(n^2) )<br><br>
         <strong>Megj:</strong> Valamely, az alappal ekvivalens speciális TG modellt használva, ha az polinom időben szimulálható alap TG-pel, akkor P invariáns arra nézve, hogy az alap vagy a speciális TG-et használjuk számítási modellként.<br>
         <strong>Megj:</strong> P a praktikusan számítógéppel megoldható problémáknak felel meg.<br>
@@ -1233,8 +1233,8 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
     <h3>PSPACE és EXPTIME</h3>
     <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=34m02s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
-        <strong>Definíció:</strong> EXPTIME = ∪<sub>k≥1</sub> TIME(2<sup>n<sup>k</sup></sup>) az exponenciális időben felismerhető nyelvek osztálya.<br><br>
-        <strong>Definíció:</strong> PSPACE = ∪<sub>k≥1</sub> SPACE(n<sup>k</sup>) a polinom tárban felismerhető nyelvek osztálya.
+        <strong>Definíció:</strong> EXPTIME = <strong  style="font-size: 20px;">U</strong ><sub>k≥1</sub> TIME(2<sup>n<sup>k</sup></sup>) az exponenciális időben felismerhető nyelvek osztálya.<br><br>
+        <strong>Definíció:</strong> PSPACE = <strong  style="font-size: 20px;">U</strong ><sub>k≥1</sub> SPACE(n<sup>k</sup>) a polinom tárban felismerhető nyelvek osztálya.
     </div>
     <div class="tetel-box">
         <strong>Tétel (Savitch-tétel):</strong> Ha L ∈ NSPACE(s(n)), ahol s(n) ≥ log n, akkor L ∈ SPACE(s(n)<sup>2</sup>).<br>
@@ -1273,7 +1273,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 
 
 
-        <strong>Definíció:</strong> NP = ∪<sub>k≥1</sub> NTIME(n<sup>k</sup>) a polinom időben egyszalagos NDTG-pel eldönthető problémák osztálya.<br><br>
+        <strong>Definíció:</strong> NP = <strong  style="font-size: 20px;">U</strong ><sub>k≥1</sub> NTIME(n<sup>k</sup>) a polinom időben egyszalagos NDTG-pel eldönthető problémák osztálya.<br><br>
          <span class="note">(NP -ben azok vannak benne, amik megoldhatók nem determinisztikus polinomiális időben.)</span><br><br>
         
         <strong>1. Megj:</strong> P ⊆ NP, mivel egy t(n) időkorlátos TG tekinthető egy speciális, t(n) időkorlátos NDTG-nek, így TIME(n<sup>k</sup>) ⊆ NTIME(n<sup>k</sup>).<br>
