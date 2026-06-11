@@ -94,20 +94,17 @@ megfigyelések.</a></h2>
     </div>
 
     <h3>Karakterek és betűreprezentáció</h3>
-
-    <h4>Karakter, karakterkód, karakterkészlet</h4>
-    <p><a href="https://www.youtube.com/watch?v=eCLsBpWa_js&t=17m26s" target="_blank">▶ Előadás ezen a részen</a></p>
-   <div class="definicio">
-    <strong>Karakter:</strong> számítógépes szöveg leképezési egysége, absztrakt.<br><br>
-    
-    <strong>Karakterkód:</strong> karakterekhez megfeleltetett számsor.<br><br>
-    
-    <strong>Karakterkészlet:</strong> karakterek + karakterkódjaik.<br><br>
-    
-    <strong>Kódlap:</strong> karakterkészlet saját számtartományával (ha egy helyen több is van).<br><br>
-    
-    <strong>Betűkészlet:</strong> megjeleníthető a karakterkészlet karaktereinek grafikus képei.
-</div>
+            <p><a href="https://www.youtube.com/watch?v=eCLsBpWa_js&t=17m26s" target="_blank">▶ Előadás ezen a részen</a></p>
+        <div class="definicio">
+            <strong>Karakter:</strong> számítógépes szöveg leképezési egysége, absztrakt.<br><br>
+            <strong>Karakterkód:</strong> karakterekhez megfeleltetett számsor.<br><br>
+            
+            <strong>Karakterkészlet:</strong> karakterek + karakterkódjaik.<br><br>
+            
+            <strong>Kódlap:</strong> karakterkészlet saját számtartományával (ha egy helyen több is van).<br><br>
+            
+            <strong>Betűkészlet:</strong> megjeleníthető a karakterkészlet karaktereinek grafikus képei.
+        </div>
 
 <img src="img/nyelvtech/kodlap.png" alt="Verem automaták" style="max-width:500px;width:40%;">
 
@@ -130,7 +127,7 @@ megfigyelések.</a></h2>
         <li><strong>HTML:</strong> <code>&amp;aacute;rv&amp;iacute;zt&amp;udblac;r&amp;odblac;</code></li>
     </ul>
 
-    <h4>A Unicode és az UCS</h4>
+    <h3>A Unicode és az UCS</h4>
     <p><a href="https://www.youtube.com/watch?v=eCLsBpWa_js&t=25m01s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>UCS (Universal Character Set):</strong> az ISO 10646 szabvány által definiált univerzális karakterkészlet.<br><br>
@@ -147,53 +144,49 @@ megfigyelések.</a></h2>
     </ul>
     <p>1980-as évek: igény egy egységes, minden karaktert leíró kódtáblára → ISO 10646 (ISO szabvány) és Unicode (amerikai cégek konzorciuma). 1991: egyesítik a két projekt eredményeit; az ISO 10646 csak karakterkészlet, a Unicode-ban viszont léteznek további kiegészítések, pl. egyeztetési szabályok. <strong>Unicode 16.0 (2024):</strong> összesen 154 998 karakter, 159-féle írás. <span class="note">(az „Old Hungarian" = székelyírás is benne van: U+10C80–U+10CFF)</span></p>
 
-    <div class="definicio">
-    <strong> A pontos gépi rendezés lehetőségei</strong><br><br>
+    <h3>A pontos gépi rendezés lehetőségei</h3>
+        <div class="definicio">
+            • ABC sorrend nyelvekben<br><br>
 
-    • ABC sorrend nyelvekben<br><br>
+            • Különböző nyelvek ABC-je esetén egyes karaktereket sem tudunk egyértelműen kezelni → transzliterálási probléma<br><br>
 
-    • Különböző nyelvek ABC-je esetén egyes karaktereket sem tudunk egyértelműen kezelni → transzliterálási probléma<br><br>
+            • Szövegfájlban néha csak az első betű alapján történik a rendezés<br><br>
 
-    • Szövegfájlban néha csak az első betű alapján történik a rendezés<br><br>
-
-    • Magyar ábécé szerinti rendezés:<br>
-    &nbsp;&nbsp;– abc-beli sorrend<br>
-    &nbsp;&nbsp;– d < dz < dzs (multigráfok)<br>
-    &nbsp;&nbsp;– cs, dz, dzs külön egységként kezelve<br>
-    &nbsp;&nbsp;– ékezetes és ékezet nélküli betűk: i = í, e = é, a = á, stb.<br>
-    &nbsp;&nbsp;– kis- és nagybetűk kezelése: azonosként értelmezhető (pl. Eger, egér)<br>
-    &nbsp;&nbsp;– többszavas kifejezéseknél a szóközök figyelmen kívül hagyása<br>
-</div>
-
-    <h3>Nyelvstatisztikai törvények</h3>
-
-<h4>Ábécék és rendezés</h4>
-    <p><a href="https://www.youtube.com/watch?v=eCLsBpWa_js&t=27m24s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <ul>
-        <li>A kiejtés szerinti írás problémái; az ábécébe rendezés elvei.</li>
-        <li>Átjárás ábécék között: transzliterálási problémák.</li>
-        <li>A <strong>magyar akadémiai rendezés</strong> főbb szabályai:
-            <ol>
-                <li>A különböző betűvel kezdődő szavakat az első betűk ábécébeli helye szerint állítjuk rendbe, illetőleg keressük meg. (Pl.: <em>acél, cukor, csók...</em>)
-                    <br><span style="color:#1a5fa8;">(Az első eltérő betű ábécébeli sorrendje dönti el a szavak sorrendjét.)</span></li>
-                <li>Az egyjegyű betűt teljesen elkülönítjük az azonos írásjelggyel kezdődő, de külön mássalhangzót jelölő kétjegyű (ill. háromjegyű) betűtől: az egyjegyű betű van előbb (pl.: <em>cudar, cukor, cuppant, csalit, csata</em>).
-                    <br><span style="color:#1a5fa8;">(Az egyjegyű betű (pl. c) mindig megelőzi az ugyanolyan jellel kezdődő kétjegyű betűt (pl. cs).)</span></li>
-                <li>A többjegyű betűk kettőzött változatait sohasem az egyszerűsített alakok szerint soroljuk be a betűrendbe, hanem a megkettőzött betűt mindig két külön betűre bontjuk (<em>ccs = cs + cs; ggy = gy + gy</em>).
-                    <br><span style="color:#1a5fa8;">(A kettőzött többjegyű betűt (pl. ccs) két külön egységre bontva kezeljük a rendezésnél.)</span></li>
-                <li>A magánhangzók rövid és hosszú változatát jelölő betűk (a – á, e – é, i – í, o – ó, ö – ő, u – ú, ü – ű) a kialakult szokás szerint mind a szavak elején, mind pedig a szavak belsejében azonos értékűnek számítanak a betűrendbe sorolás szempontjából. A magánhangzó hosszú változatát tartalmazó szó tehát meg is előzheti a rövid változatút.
-                    <br><span style="color:#1a5fa8;">(A rövid és hosszú magánhangzók (pl. a–á) általában egyenértékűek a betűrendbe soroláskor.)</span></li>
-                <li>A rövid magánhangzós szó kerül viszont előbbre olyankor, ha két szó betűsora csak az azonos magánhangzók hosszúsága tekintetében különbözik.
-                    <br><span style="color:#1a5fa8;">(Ha két szó csak a magánhangzó hosszúságában tér el, a rövid magánhangzós szó kerül előre.)</span></li>
-                <li>A különírt elemekből álló szókapcsolatokat és az egybeírt vagy kötőjellel kapcsolt összetételeket minden tekintetben olyan szabályok szerint soroljuk betűrendbe, mint az egyszerű szavakat — a szóhatárokat tehát nem vesszük figyelembe. Ugyanez a szabály érvényes a közszavak közé besorolt tulajdonnevekre is. (Pl.: <em>Kis részben, kissé, Kiss Ernő, kis sorozat, kissorozat-gyártás, kis számban, kistányér, kis virág — tiszafa, Tiszahát, Tisza Kálmán, Tisza menti, Tiszántúl, Tiszapart, tiszavirág, tiszt</em>)
-                    <br><span style="color:#1a5fa8;">(A szóhatárokat, kötőjeleket és szóközöket figyelmen kívül hagyjuk; a szavakat egybefolyó betűsorként rendezzük.)</span></li>
-                <li>A betűrendbe soroláskor a szokásostól némiképp eltérően kezeljük a régies írású magyar családnevekben, valamint az idegen szavakban és tulajdonnevekben előforduló régi magyar, illetőleg idegen betűket. (Pl.: <em>Czibere, Czuczor, Cházár, Császár, Cselényi</em>)
-                    <br><span style="color:#1a5fa8;">(A régies magyar és idegen betűket speciális, eltérő szabályok szerint soroljuk be a betűrendbe.)</span></li>
-                <li>A számokat tartalmazó tételeket úgy rendezzük betűrendbe, mintha a szám ki volna írva szóval (pl.: <em>2. fejezet → „második fejezet"</em>). Ha az egész tétel számmal kezdődik, azt a betűrendben a megfelelő betűs szó helyére soroljuk. Azonos számok esetén a nagyobb szám kerül hátrább (pl.: <em>1., 2., 10., 100.</em>).
-                    <br><span style="color:#1a5fa8;">(A számokat kiírt szóalakjuk szerint rendezzük betűrendbe; pusztán számos tételek esetén növekvő számsorrend érvényes.)</span></li>
-            
-                </ol>
-        </li>
-    </ul>
+            • Magyar ábécé szerinti rendezés:<br>
+            &nbsp;&nbsp;– abc-beli sorrend<br>
+            &nbsp;&nbsp;– d < dz < dzs (multigráfok)<br>
+            &nbsp;&nbsp;– cs, dz, dzs külön egységként kezelve<br>
+            &nbsp;&nbsp;– ékezetes és ékezet nélküli betűk: i = í, e = é, a = á, stb.<br>
+            &nbsp;&nbsp;– kis- és nagybetűk kezelése: azonosként értelmezhető (pl. Eger, egér)<br>
+            &nbsp;&nbsp;– többszavas kifejezéseknél a szóközök figyelmen kívül hagyása<br>
+        </div>    
+                <h4>Részletek :</h4>
+                    <p><a href="https://www.youtube.com/watch?v=eCLsBpWa_js&t=27m24s" target="_blank">▶ Előadás ezen a részen</a></p>
+                    <ul>
+                        <li>A kiejtés szerinti írás problémái; az ábécébe rendezés elvei.</li>
+                        <li>Átjárás ábécék között: transzliterálási problémák.</li>
+                        <li>A <strong>magyar akadémiai rendezés</strong> főbb szabályai:
+                            <ol>
+                                <li>A különböző betűvel kezdődő szavakat az első betűk ábécébeli helye szerint állítjuk rendbe, illetőleg keressük meg. (Pl.: <em>acél, cukor, csók...</em>)
+                                    <br><span style="color:#1a5fa8;">(Az első eltérő betű ábécébeli sorrendje dönti el a szavak sorrendjét.)</span></li>
+                                <li>Az egyjegyű betűt teljesen elkülönítjük az azonos írásjelggyel kezdődő, de külön mássalhangzót jelölő kétjegyű (ill. háromjegyű) betűtől: az egyjegyű betű van előbb (pl.: <em>cudar, cukor, cuppant, csalit, csata</em>).
+                                    <br><span style="color:#1a5fa8;">(Az egyjegyű betű (pl. c) mindig megelőzi az ugyanolyan jellel kezdődő kétjegyű betűt (pl. cs).)</span></li>
+                                <li>A többjegyű betűk kettőzött változatait sohasem az egyszerűsített alakok szerint soroljuk be a betűrendbe, hanem a megkettőzött betűt mindig két külön betűre bontjuk (<em>ccs = cs + cs; ggy = gy + gy</em>).
+                                    <br><span style="color:#1a5fa8;">(A kettőzött többjegyű betűt (pl. ccs) két külön egységre bontva kezeljük a rendezésnél.)</span></li>
+                                <li>A magánhangzók rövid és hosszú változatát jelölő betűk (a – á, e – é, i – í, o – ó, ö – ő, u – ú, ü – ű) a kialakult szokás szerint mind a szavak elején, mind pedig a szavak belsejében azonos értékűnek számítanak a betűrendbe sorolás szempontjából. A magánhangzó hosszú változatát tartalmazó szó tehát meg is előzheti a rövid változatút.
+                                    <br><span style="color:#1a5fa8;">(A rövid és hosszú magánhangzók (pl. a–á) általában egyenértékűek a betűrendbe soroláskor.)</span></li>
+                                <li>A rövid magánhangzós szó kerül viszont előbbre olyankor, ha két szó betűsora csak az azonos magánhangzók hosszúsága tekintetében különbözik.
+                                    <br><span style="color:#1a5fa8;">(Ha két szó csak a magánhangzó hosszúságában tér el, a rövid magánhangzós szó kerül előre.)</span></li>
+                                <li>A különírt elemekből álló szókapcsolatokat és az egybeírt vagy kötőjellel kapcsolt összetételeket minden tekintetben olyan szabályok szerint soroljuk betűrendbe, mint az egyszerű szavakat — a szóhatárokat tehát nem vesszük figyelembe. Ugyanez a szabály érvényes a közszavak közé besorolt tulajdonnevekre is. (Pl.: <em>Kis részben, kissé, Kiss Ernő, kis sorozat, kissorozat-gyártás, kis számban, kistányér, kis virág — tiszafa, Tiszahát, Tisza Kálmán, Tisza menti, Tiszántúl, Tiszapart, tiszavirág, tiszt</em>)
+                                    <br><span style="color:#1a5fa8;">(A szóhatárokat, kötőjeleket és szóközöket figyelmen kívül hagyjuk; a szavakat egybefolyó betűsorként rendezzük.)</span></li>
+                                <li>A betűrendbe soroláskor a szokásostól némiképp eltérően kezeljük a régies írású magyar családnevekben, valamint az idegen szavakban és tulajdonnevekben előforduló régi magyar, illetőleg idegen betűket. (Pl.: <em>Czibere, Czuczor, Cházár, Császár, Cselényi</em>)
+                                    <br><span style="color:#1a5fa8;">(A régies magyar és idegen betűket speciális, eltérő szabályok szerint soroljuk be a betűrendbe.)</span></li>
+                                <li>A számokat tartalmazó tételeket úgy rendezzük betűrendbe, mintha a szám ki volna írva szóval (pl.: <em>2. fejezet → „második fejezet"</em>). Ha az egész tétel számmal kezdődik, azt a betűrendben a megfelelő betűs szó helyére soroljuk. Azonos számok esetén a nagyobb szám kerül hátrább (pl.: <em>1., 2., 10., 100.</em>).
+                                    <br><span style="color:#1a5fa8;">(A számokat kiírt szóalakjuk szerint rendezzük betűrendbe; pusztán számos tételek esetén növekvő számsorrend érvényes.)</span></li>
+                            
+                                </ol>
+                        </li>
+                    </ul>
 
 
 
