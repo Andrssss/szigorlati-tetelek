@@ -147,7 +147,23 @@ megfigyelések.</a></h2>
     </ul>
     <p>1980-as évek: igény egy egységes, minden karaktert leíró kódtáblára → ISO 10646 (ISO szabvány) és Unicode (amerikai cégek konzorciuma). 1991: egyesítik a két projekt eredményeit; az ISO 10646 csak karakterkészlet, a Unicode-ban viszont léteznek további kiegészítések, pl. egyeztetési szabályok. <strong>Unicode 16.0 (2024):</strong> összesen 154 998 karakter, 159-féle írás. <span class="note">(az „Old Hungarian" = székelyírás is benne van: U+10C80–U+10CFF)</span></p>
 
-    
+    <div class="definicio">
+    <strong> A pontos gépi rendezés lehetőségei</strong><br><br>
+
+    • ABC sorrend nyelvekben<br><br>
+
+    • Különböző nyelvek ABC-je esetén egyes karaktereket sem tudunk egyértelműen kezelni → transzliterálási probléma<br><br>
+
+    • Szövegfájlban néha csak az első betű alapján történik a rendezés<br><br>
+
+    • Magyar ábécé szerinti rendezés:<br>
+    &nbsp;&nbsp;– abc-beli sorrend<br>
+    &nbsp;&nbsp;– d < dz < dzs (multigráfok)<br>
+    &nbsp;&nbsp;– cs, dz, dzs külön egységként kezelve<br>
+    &nbsp;&nbsp;– ékezetes és ékezet nélküli betűk: i = í, e = é, a = á, stb.<br>
+    &nbsp;&nbsp;– kis- és nagybetűk kezelése: azonosként értelmezhető (pl. Eger, egér)<br>
+    &nbsp;&nbsp;– többszavas kifejezéseknél a szóközök figyelmen kívül hagyása<br>
+</div>
 
     <h3>Nyelvstatisztikai törvények</h3>
 
