@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nyelvtechnológia alapjai - Szigorlati Témák (Nyomtatható)</title>
     <link rel="stylesheet" href="shared.css">
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+        }
+    </style>
+    <script>
+        function markH4Sections() {
+            document.querySelectorAll('.page').forEach(function(page) {
+                var inH4 = false;
+                Array.from(page.children).forEach(function(el) {
+                    if (el.tagName === 'H4') {
+                        inH4 = true;
+                    } else if (['H1', 'H2', 'H3'].includes(el.tagName)) {
+                        inH4 = false;
+                    } else if (inH4) {
+                        el.classList.add('no-print');
+                    }
+                });
+            });
+        }
+        function unmarkH4Sections() {
+            document.querySelectorAll('.no-print').forEach(function(el) {
+                el.classList.remove('no-print');
+            });
+        }
+        window.addEventListener('beforeprint', markH4Sections);
+        window.addEventListener('afterprint', unmarkH4Sections);
+    </script>
 </head>
 <body>
 
@@ -126,7 +154,11 @@ megfigyelések.</a></h2>
         <li><strong>HTML:</strong> <code>&amp;aacute;rv&amp;iacute;zt&amp;udblac;r&amp;odblac;</code></li>
     </ul>
 
-    <h3>A Unicode és az UCS</h4>
+
+
+
+    
+    <h4>A Unicode és az UCS</h4>
     <p><a href="https://www.youtube.com/watch?v=eCLsBpWa_js&t=25m01s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>UCS (Universal Character Set):</strong> az ISO 10646 szabvány által definiált univerzális karakterkészlet.<br><br>
@@ -142,6 +174,10 @@ megfigyelések.</a></h2>
         <li><strong>UCS-4 = UTF-32 = ISO 10646:</strong> 4 bájton (31 biten).</li>
     </ul>
     <p>1980-as évek: igény egy egységes, minden karaktert leíró kódtáblára → ISO 10646 (ISO szabvány) és Unicode (amerikai cégek konzorciuma). 1991: egyesítik a két projekt eredményeit; az ISO 10646 csak karakterkészlet, a Unicode-ban viszont léteznek további kiegészítések, pl. egyeztetési szabályok. <strong>Unicode 16.0 (2024):</strong> összesen 154 998 karakter, 159-féle írás. <span class="note">(az „Old Hungarian" = székelyírás is benne van: U+10C80–U+10CFF)</span></p>
+
+
+
+
 
     <h3>A pontos gépi rendezés lehetőségei</h3>
         <div class="definicio">
@@ -211,7 +247,7 @@ megfigyelések.</a></h2>
     <strong>Mandelbrot-féle nyelvi törvényszerűségek:</strong> a gyakran használt szavak általában rövidebbek, és a nyelvtörténeti fejlődés során a nagy gyakoriságú szavak hajlamosak lerövidülni.<br><br>
 
     <strong>Betűsorrend és olvashatóság:</strong> az emberek a szavakat gyakran egész mintázatként ismerik fel, ezért a belső betűk felcserélése mellett is meglepően jól olvasható maradhat egy szöveg.<br><br>
-    <strong>e) karakter- és n-gram-alapú statisztikai megfigyelések</strong><br><br>
+    <strong> karakter- és n-gram-alapú statisztikai megfigyelések</strong><br><br>
 
     • n-gramok hasonlóak a karakteres statisztikákhoz<br><br>
 
