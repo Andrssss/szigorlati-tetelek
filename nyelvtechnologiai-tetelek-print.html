@@ -529,23 +529,35 @@ a fedés viszonya a különböző alkalmazásokban.
     <div class="definicio">
        A <strong>HuMor</strong>  lényege, hogy <strong>minden nyelvi tulajdonság egy jegy</strong>. A morfológiai elemzés nem string-manipuláció (nem „lépj vissza két betűt, vágj egyet"), hanem: a szóalak tő- és toldalékrészeit felismerjük a szótár segítségével, és mindkettőhöz <strong>jegy–érték párokat</strong> rendelünk. Ezután megnézzük, hogy a tő és a toldalék jegyei <strong>unifikálhatók-e</strong> — ha igen, a szóalak helyes / elfogadható. A HuMor tehát nem más, mint <strong>unifikálhatósági relációk működtetése</strong> morfológiai jegyszerkezeteken.
     </div>
-    <p>Működési elv — példa: <em>házban</em> vs. <em>*főnökban</em></p>
+    <div class="definicio">
+    <p>Működési elv — példa: <em>házakban</em></p>
+    <p>A hozzájuk tartozó jegyek például:</p>
+    <pre class="kod">ház:
+[szófaj=főnév, kötőhang_többes=+]
+
+-ak:
+[követelmény: főnév, kötőhang_többes=+]
+[szám=többes]
+
+-k:
+[követelmény: főnév, kötőhang_többes=−]
+[szám=többes]
+
+-ban:
+[követelmény: főnév]
+[eset=inessivus]</pre>
+    <p>Az unifikáció során:</p>
     <ol>
-        <li>A szóalakot szegmentáljuk: megkeressük a lehetséges tő + toldalék(ok) felbontásait.
-            <br><span class="note">→ <em>ház</em> + <em>-ban</em> &nbsp;|&nbsp; <em>főnök</em> + <em>-ban</em></span>
+        <li><strong>„ház" + „-k"</strong> — ütközés: ház [kötőhang_többes=+] vs. -k [kötőhang_többes=−] → <strong>fail!</strong> → <em>*házk</em>
         </li>
-        <li>A tőhöz és minden toldalékhoz jegy–érték párok tartoznak a szótárból.
-            <br><span class="note">→ <em>ház</em>: [NÉVSZÓ +, MÉLYHANGRENDŰ +, …] &nbsp;|&nbsp; <em>főnök</em>: [NÉVSZÓ +, MÉLYHANGRENDŰ −, …]
-            <br>→ <em>-ban</em>: elvárja [NÉVSZÓ +, MÉLYHANGRENDŰ +]</span>
+        <li><strong>„ház" + „-ak"</strong> — kompatibilis: mindkettő [kötőhang_többes=+] → létrejön:
+            <br><code>[főnév, többes]</code>
         </li>
-        <li>A jobboldali elem (relatív toldalék) megmondja, milyen jegyeket vár el a baloldali elemtől (relatív tőtől).
-            <br><span class="note">→ <em>-ban</em> elvárja: MÉLYHANGRENDŰ +</span>
-        </li>
-        <li>Az összeillesztést unifikálhatósági relációval ellenőrizzük: összeillik-e a tő és a toldalék?
-            <br><span class="note">→ <em>ház</em> [MÉLYHANGRENDŰ +] ∪ <em>-ban</em> [MÉLYHANGRENDŰ +] = ✓ → <em>házban</em>
-            <br>→ <em>főnök</em> [MÉLYHANGRENDŰ −] ∪ <em>-ban</em> [MÉLYHANGRENDŰ +] = <strong>fail!</strong> → <em>*főnökban</em> helytelen, a helyes: <em>főnökben</em></span>
+        <li>ehhez kapcsolódik a <strong>„-ban"</strong> — szintén kompatibilis → eredmény:
+            <br><code>[főnév, többes, inessivus]</code>
         </li>
     </ol>
+    </div>
     <p>Így a literális alak (betűsorozat) elveszti jelentőségét — az számít, hogy a jegyszerkezetek összeillenek-e. A HuMor ma is számos helyesírási program morfológiai motorja.</p>
 
     <h4>Bináris jegyrendszer <small style="font-weight:normal; color:#555">— a HuMor belső jegykészlete</small></h4>
