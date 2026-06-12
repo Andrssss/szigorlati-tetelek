@@ -878,18 +878,26 @@ Speciális esetek:
 
     <h3>Rekurzíve felsorolható és rekurzív nyelvek</h3>
     <p><a href="https://www.youtube.com/watch?v=vKh94OEZ2gI&t=1m8s" target="_blank">▶ Előadás ezen a részen</a></p>
+
     Azt érdemes tudni, hogy megszámlálhatóan sok TG van, de a TG által felismert nyelvek száma nem megszámlálhatóan sok (ugye TG az rekurzíve felsorolható), tehát vannak olyan nyelvek, melyeket nem ismer fel egyetlen TG sem. Ezért érdemes megkülönböztetni a Turing felismerhető és a Turing eldönthető nyelveket. (rekurzíve felsorolható és rekurzív nyelvek)
 
     <div class="tetel-box">
-        <strong>Tétel:</strong> Van olyan L' ⊆ Σ* nyelv, amely nem Turing-felismerhető (nem rekurzíve felsorolható).<br><br>
-        <strong>Bizonyítás (számossági meggondolás):</strong>
+                <p><a href="https://www.youtube.com/watch?v=vKh94OEZ2gI&t=20m33s" target="_blank">▶ Előadás ezen a részen</a></p>
+
+        <strong>Tétel:</strong> Van olyan L' ⊆ Σ* = {0,1}* nyelv, amely nem Turing-felismerhető, azaz nem rekurzíve felsorolható.<br><br>
+        
+
+        <strong>Bizonyítás - SZÁMOSSÁGUK:</strong>
         <ol>
             <li>Egy TG leírható véges jelsorozattal → az összes TG <strong>megszámlálhatóan sok</strong> (M₁, M₂, ..., Mₙ, ...)</li>
             <li>Minden Mᵢ egyértelműen meghatározza az általa felismert Lᵢ nyelvet → a Turing-felismerhető nyelvek is <strong>megszámlálhatóan sokan vannak</strong></li>
             <li>Az összes Σ* feletti nyelv = {0,1}* összes részhalmazainak száma → <strong>több mint megszámlálható</strong> (Cantor-módszer)</li>
             <li>Következmény: vannak nyelvek, amelyeket <strong>egyetlen TG sem ismer fel</strong></li>
         </ol>
+
     </div>
+
+
     <div class="definicio">
         <strong>Definíció:</strong> Egy L ⊆ Σ* nyelv <em>Turing felismerhető</em> vagy <em></em>rekurzíve felsorolható</em>, ha van olyan M Turing gép, melyre L(M) = L.<br><br>
         <strong>Megj:</strong> s ∈ Σ* \ L esetén nem biztos, hogy megáll a gép, így csak az L elemeire kapunk igenlő választ. (ha végtelen ciklusba kerűl egy TG akkor nem lesz egy szó felismerhető)<br><br>
@@ -904,15 +912,6 @@ Speciális esetek:
         <strong>Megj:</strong> Minden rekurzív nyelv rekurzíve felsorolható is. (Az érdekes kérdés a fordított tartalmazás, amiről később belátjuk, hogy nem áll fenn.)<br><br>
         <strong>Tétel:</strong> Ha L rekurzív, akkor L<sup>C</sup> (komplementere) is az. <br>
     </div>
-
-    <h4>Nem Turing-felismerhető nyelv létezése</h4>
-    <p><a href="https://www.youtube.com/watch?v=vKh94OEZ2gI&t=20m33s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <div class="tetel-box">
-        <strong>Tétel:</strong> Van olyan L' ⊆ Σ* = {0,1}* nyelv, amely nem Turing felismerhető, azaz nem rekurzíve felsorolható.<br><br>
-    </div>
-
-         <img src="img/digszam/rec.png" alt="Verem automaták" style="max-width:500px;width:50%;">
-
 
     <h3>Példa: Nem rekurzíve felsorolható (R) nyelv (L<sub>d</sub>)</h3>
     <div class="definicio">
