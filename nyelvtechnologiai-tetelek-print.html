@@ -459,20 +459,34 @@ a fedés viszonya a különböző alkalmazásokban.
     <p>Két szintre azért van szükség, mert a szó „belső" alakja (amit a szótárban tárolunk) és a „külső" alakja (amit ténylegesen leírunk) sokszor eltér egymástól – a szabályok ezt az eltérést kötik össze. Még az egyszintes csak a gramatikáról beszél</p>
 
     <h3>Kétszintes morfológia</h3>
-    <p><a href="https://www.youtube.com/watch?v=l2CA0ULnVI4&t=1h51m25s" target="_blank">▶ Előadás ezen a részen</a></p>
+        <p><a href="https://www.youtube.com/watch?v=l2CA0ULnVI4&t=1h51m25s" target="_blank">▶ Előadás ezen a részen</a></p>
 
-    <p>Kimmo Koskenniemi által kifejlesztett modell, amely két reprezentációs szintet különböztet meg:</p>
-    <ul>
-        <li><strong>Lexikális szint:</strong> Az alaki változást nem tartalmazó, absztrakt reprezentáció.</li>
-        <li><strong>Felszíni szint:</strong> A tényleges, megfigyelhető szóalak.</li>
-    </ul>
-    <p>A két szint közötti megfeleltetést véges állapotú fordítókkal (FST) írja le. A módszer előnye, hogy ugyanazok a szabályok használhatók elemzésre és generálásra is.</p>
-    <div class="definicio">
-        <strong>Példa (magyar):</strong><br>
-        <em>Lexikális: h á z + b a n</em><br>
-        <em>Felszíni: h á z b a n</em><br>
-        <em>(A '+' morfémathatár jelölése a lexikális szinten)</em>
-    </div>
+        <p>Kimmo Koskenniemi által kifejlesztett modell, amely két reprezentációs szintet különböztet meg:</p>
+        <ul>
+            <li><strong>Lexikális szint:</strong> Az alaki változást nem tartalmazó, absztrakt reprezentáció.</li>
+            <li><strong>Felszíni szint:</strong> A tényleges, megfigyelhető szóalak.</li>
+        </ul>
+        <p>A két szint közötti megfeleltetést véges állapotú fordítókkal (FST) írja le. A módszer előnye, hogy ugyanazok a szabályok használhatók elemzésre és generálásra is.</p>
+        <div class="definicio">
+            <strong>Példa (magyar): <em>kéz</em> + <em>-ek</em> → <em>kezek</em></strong><br><br>
+            <table style="border-collapse:collapse; font-family:monospace;">
+                <tr>
+                    <td style="padding-right:1em; color:#888;">Lexikális:</td>
+                    <td>k &nbsp; é &nbsp; z &nbsp; + &nbsp; e &nbsp; k</td>
+                </tr>
+                <tr>
+                    <td style="padding-right:1em; color:#888;">Felszíni:</td>
+                    <td>k &nbsp; e &nbsp; z &nbsp; &nbsp; &nbsp; e &nbsp; k</td>
+                </tr>
+            </table>
+            <br>
+            Két szabály működik egyszerre:<br>
+            <ul>
+                <li><strong>é → e</strong> — a tő hosszú magánhangzója megrövidül, ha toldalék követi (<em>kéz</em> → <em>kez-</em>)</li>
+                <li><strong>+ → ∅</strong> — a morfémathatár-jelölő eltűnik a felszíni alakból</li>
+            </ul>
+            A lexikális szinten az absztrakt, „szótári" alak látható; a felszíni szinten az, amit ténylegesen ejtünk és írunk. Az FST mindkét irányban működik: elemzéskor <em>kezek</em>-ből visszaállítja a <em>kéz+ek</em> szerkezetet, generáláskor <em>kéz+ek</em>-ből előállítja a <em>kezek</em> alakot.
+        </div>
 
     <h4>A számítógépes morfológia célja</h4>
     <p>A számítógépes morfológia olyan számítógépes technológiák és algoritmusok kialakításával foglalkozik, melyek segítségével különféle nyelvű toldalékolt szóalakok elemzése és generálása megoldható. A számítógépes morfológia az írott alakokkal foglalkozik. </p>
