@@ -210,7 +210,7 @@
     </div>
     <h1 id="quizTitle">Kvíz</h1>
     <p class="subtitle" id="quizSubtitle"></p>
-    <div class="ai-warning">⚠️ A kérdések AI által generáltak – tartalmazhatnak hibát. Mindig ellenőrizd a tananyaggal!</div>
+    <div class="ai-warning">⚠️ A kérdések AI által generáltak – tartalmazhatnak hibát. Mindig ellenőrizd a tananyaggal! (De nagyrésze amúgy jó.)</div>
 
     <div class="card" id="card"><!-- dynamic --></div>
 </div>
@@ -262,13 +262,13 @@ function buildRound(subjectKey) {
 /* ---------- indítás ---------- */
 function startSubject(subjectKey) {
     state.subject = subjectKey;
-    state.questions = buildRound(subjectKey).slice(0, 10);
+    state.questions = buildRound(subjectKey);
     state.index = 0;
     state.score = 0;
     state.answered = false;
     const data = QUIZ_DATA[subjectKey];
     titleEl.textContent = data.icon + ' ' + data.title;
-    subtitleEl.textContent = 'Kvíz – 10 kérdés';
+    subtitleEl.textContent = 'Kvíz – ' + state.questions.length + ' kérdés';
     renderQuestion();
 }
 
