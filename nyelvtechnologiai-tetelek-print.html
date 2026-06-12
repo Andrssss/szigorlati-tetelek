@@ -523,37 +523,9 @@ a fedés viszonya a különböző alkalmazásokban.
     </ul>
 
 
-    <h3>Unifikáció és jegyszerkezetek</h3>
-    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=5m27s" target="_blank">▶ Előadás ezen a részen (gráf fogalmak, DAG, jegyszerkezetek)</a></p>
+    <h3>Unifikációs morfológia (HuMor = <em>High-speed Unification Morphology</em>)</h3>
+       <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=32m07s" target="_blank">▶ Előadás ezen a részen</a></p>
 
-  
-
-    <div class="definicio">
-        <strong>DAG</strong> (irányított körmentes gráf):  Erre a legalkalmasabb használni az unifikációt.<br><br>
-        Egy mondat alanyának lehetnek mindenféle tulajdonságai: lehet száma (egyes vagy többes) és személye (első, második, harmadik). Ezeket a tulajdonságokat <strong>jegyszerkezetekbe</strong> szervezzük — pl. [NUMBER SG], [PERSON 3]. Ezek a jegyszerkezetek DAG-okkal ábrázolhatók.<br><br>
-        <strong>Jegyszerkezet:</strong> tulajdonságok (jegyek) és értékeik strukturált leírása. Csomópontok = változók, ösvények = jegynevek, ösvény végén atomi érték vagy alulspecifikált (üres) érték. Felírása jegy–érték mátrixként.
-    </div>
-
-<img src="img/nyelvtech/unific.png" alt="Verem automaták" style="max-width:500px;width:90%;">
-
-    <div class="definicio">
-    <p><strong>Az Jegyszerkezet-unifikáció művelete DAG-nál</strong> — az unifikáció egyedül akkor nem hajtható végre, ha ugyanazon az ösvényen egymásnak ellentmondó atomi értékek állnak: <br><br>  <span class="note">( SG = Singular (egyes szám), PL = Plural (többes szám))</span>  </p>
-    <ul>
-        <li>[NUMBER SG] ∪ [NUMBER PL] = <strong>fail!</strong> (eltérő atomi értékek)</li>
-        <li>[NUMBER SG] ∪ [NUMBER SG] = [NUMBER SG]</li>
-        <li>[NUMBER SG] ∪ [NUMBER []] = [NUMBER SG] (alulspecifikált + konkrét = konkrét)</li>
-        <li>[NUMBER SG] ∪ [PERSON 3] = [[NUMBER SG][PERSON 3]] (diszjunkt ösvények → mindkettő megmarad)</li>
-    </ul>
-
-    <p><strong>Destruktív unifikáció:</strong> az egyik kiinduló szerkezet helyén létrejön az eredmény; a másik megszűnik. Gyors, de a korábbi állapot elveszik.</p>
-    <p><strong>Nem-destruktív unifikáció:</strong> valójában unifikálhatósági reláció ellenőrzése — a kiinduló szerkezetek megmaradnak, az eredmény egy harmadik, új szerkezet. Másolást igényel, de visszakövethetővé teszi a levezetést; implementációkban igen gyakori.</p>
-</div>
-    <h4>Szóalaktani alapséma</h4>
-    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=21m05s" target="_blank">▶ Előadás ezen a részen</a></p>
-
-<img src="img/nyelvtech/szoalak.png" alt="Verem automaták" style="max-width:500px;width:60%;">
-
-    <h4>Unifikációs morfológia (HuMor = <em>High-speed Unification Morphology</em>)</h4>
     <div class="definicio">
        A <strong>HuMor</strong>  lényege, hogy <strong>minden nyelvi tulajdonság egy jegy</strong>. A morfológiai elemzés nem string-manipuláció (nem „lépj vissza két betűt, vágj egyet"), hanem: a szóalak tő- és toldalékrészeit felismerjük a szótár segítségével, és mindkettőhöz <strong>jegy–érték párokat</strong> rendelünk. Ezután megnézzük, hogy a tő és a toldalék jegyei <strong>unifikálhatók-e</strong> — ha igen, a szóalak grammatikus. A HuMor tehát nem más, mint <strong>unifikálhatósági relációk működtetése</strong> morfológiai jegyszerkezeteken.
     </div>
