@@ -554,50 +554,79 @@ Turing­gépekkel. </p>
     <h3>Reguláris pumpáló lemma</h3>
     <p><a href="https://www.youtube.com/watch?v=CR6PnTvcctI&t=49m30s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="tetel-box">
-        <strong>Tétel (Pumpáló lemma — reguláris):</strong>Ha L ⊆ Σ* egy reguláris nyelv, akkor ∃ p ∈ N szám, hogy
-∀ s ∈ L esetén, ha s hossza leglább p, akkor s felbontható
-s =xyz alakba úgy, hogy:
+        <strong>Tétel (Pumpáló lemma — reguláris):</strong> Ha L ⊆ Σ* egy reguláris nyelv, akkor ∃ p ∈ ℕ szám, hogy
+        ∀ s ∈ L esetén, ha |s| ≥ p, akkor s felbontható s = xyz alakba úgy, hogy:
         <ol style="font-weight:normal; margin-top:6px;">
-            <li> xy<sup>i</sup>z ∈ L  ∀ i ≥ 0   (van egy olyan résztrink ami iterálható)</li>
-            <li>|y| &gt; 0  (van mit iterálnunk)</li>
-            <li>|xy| ≤ p  (az iterálható rész a szó elején van)</li>
+            <li>xy<sup>i</sup>z ∈ L &nbsp; ∀ i ≥ 0 &nbsp; (az iterálható rész tetszőszer ismételhető)</li>
+            <li>|y| &gt; 0 &nbsp; (van mit iterálni)</li>
+            <li>|xy| ≤ p &nbsp; (az iterálható rész a szó elején van)</li>
         </ol>
+        <strong>Szükséges feltétel, nem elégséges</strong> — csak arra használható, hogy belássuk: egy nyelv <em>nem</em> reguláris.
+    </div>
 
+    <div class="definicio">
+        <strong>Jellemzés — miért igaz?</strong><br>
+        Legyen M egy p állapotú DVA, L(M) = L. Ha |s| ≥ p, az M által bejárt állapotsorozat legalább p+1 elemű, tehát a galamb-lyuk elv alapján valamelyik q állapot kétszer szerepel.<br><br>
+        Legyen q az első ismételt állapot. Ekkor:<br>
+        <ul style="font-weight:normal; margin-top:4px;">
+            <li><strong>x</strong> = az út q₀-tól q első eléréséig,</li>
+            <li><strong>y</strong> = a hurok q-ból q-ba (|y| ≥ 1, mert q kétszer jelenik meg),</li>
+            <li><strong>z</strong> = a maradék.</li>
+        </ul>
+        Mivel M a q állapotból indul újra y minden ismétlésénél, xy<sup>i</sup>z-t is elfogadja ∀ i ≥ 0.<br>
+        Az ismétlés az első p lépésen belül történik → |xy| ≤ p.
     </div>
 
     <div class="pelda">
         <strong>Példa — L = {0<sup>n</sup>1<sup>n</sup> | n ≥ 0} nem reguláris:</strong><br>
-        Legyen p a pumpáló hossz. Válasszuk w = 0<sup>p</sup>1<sup>p</sup> ∈ L. Ekkor |xy| ≤ p, tehát y = 0<sup>k</sup>, k ≥ 1.<br>
+        Legyen p a pumpáló hossz. Válasszuk s = 0<sup>p</sup>1<sup>p</sup> ∈ L. Ekkor |xy| ≤ p, tehát y = 0<sup>k</sup>, k ≥ 1.<br>
         xy<sup>2</sup>z = 0<sup>p+k</sup>1<sup>p</sup> ∉ L — ellentmondás. ∴ L nem reguláris.
     </div>
 
-    <h3>CF nyelvek jellemzése pumpáló lemmával </h3>
+    <h3>CF nyelvek jellemzése pumpáló lemmával</h3>
     <p><a href="https://www.youtube.com/watch?v=_eVShbDYjqI&t=7m16s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="tetel-box">
-        Elégséges feltétel, nem szükséges !!! Csak bizonyításra használható <br>
         <strong>Tétel (Pumpáló lemma — CF):</strong> Ha L ⊆ Σ* egy CF nyelv, akkor ∃ p ∈ ℕ szám, hogy ∀ s ∈ L esetén, ha |s| ≥ p, akkor s felbontható s = uvxyz alakba úgy, hogy:
         <ol style="font-weight:normal; margin-top:6px;">
-            <li>uv<sup>n</sup>xy<sup>n</sup>z ∈ L minden n ≥ 0 esetén, (benne van a nyelvben minden elem)</li>
-            <li>|vy| &gt; 0, (van mit iterálnunk)</li>
-            <li>|vxy| ≤ p. (vhol a közepén van a pumpálható rész)</li>
+            <li>uv<sup>n</sup>xy<sup>n</sup>z ∈ L &nbsp; minden n ≥ 0 esetén,</li>
+            <li>|vy| &gt; 0, &nbsp; (van mit iterálni)</li>
+            <li>|vxy| ≤ p. &nbsp; (a pumpálható rész nem túl hosszú)</li>
         </ol>
+        <strong>Szükséges feltétel, nem elégséges</strong> — csak arra használható, hogy belássuk: egy nyelv <em>nem</em> CF.
+    </div>
+
+    <div class="definicio">
+        <strong>Jellemzés — miért igaz?</strong><br>
+        Legyen G egy b nemterminálisú CNF grammatika, L(G) = L. Legyen p = 2<sup>b+1</sup>.<br>
+        Ha |s| ≥ p, a levezetési fa mélysége &gt; b (CNF fában legfeljebb 2<sup>d</sup> levél van mélység d-n).<br>
+        Ezért valamelyik gyökér–levél úton egy A nemterminális <em>kétszer</em> jelenik meg (galamb-lyuk elv).<br><br>
+        Jelöljük a két előfordulást A<sub>felső</sub> és A<sub>alsó</sub>:<br>
+        <ul style="font-weight:normal; margin-top:4px;">
+            <li><strong>x</strong> = az A<sub>alsó</sub> által generált szó (a belső rész),</li>
+            <li><strong>v</strong>, <strong>y</strong> = a két A-előfordulás közötti fa bal és jobb levéltartalma (a pumpálható részek),</li>
+            <li><strong>u</strong>, <strong>z</strong> = a szó elejei és végi maradék.</li>
+        </ul>
+        Mivel A → …vAy… → …v(vAy)y… levezetés ismételhető, uv<sup>n</sup>xy<sup>n</sup>z ∈ L minden n ≥ 0-ra.<br>
+        Az ismétlés kellően közel van a levélhez → |vxy| ≤ p.
     </div>
 
     <div class="pelda">
         <strong>Példa — L = {a<sup>n</sup>b<sup>n</sup>c<sup>n</sup> | n ≥ 0} nem CFL:</strong><br>
-        Legyen p a pumpáló hossz. Válasszuk w = a<sup>p</sup>b<sup>p</sup>c<sup>p</sup>.<br>
+        Legyen p a pumpáló hossz. Válasszuk s = a<sup>p</sup>b<sup>p</sup>c<sup>p</sup>.<br>
         |vxy| ≤ p, tehát vxy legfeljebb két szimbólumtípust tartalmaz.<br>
         uv<sup>2</sup>xy<sup>2</sup>z-ben az a, b, c darabszámok nem lehetnek egyenlők — ellentmondás. ∴ L nem CF.
     </div>
 
     <div class="definicio">
-        <strong>Megjegyzés:</strong> Mindkét lemma szükséges, de nem elégséges feltételt ad a reguláris/CF tulajdonságra. A lemmák tagadásával igazolható, hogy egy nyelv <em>nem</em> tartozik az osztályba. Ha L kielégíti a lemmát, attól még nem biztos, hogy reguláris ill. CF.
+        <strong>Megjegyzés:</strong> Mindkét lemma szükséges, de nem elégséges feltételt ad. Ha L kielégíti a lemmát, attól még nem biztos, hogy reguláris ill. CF. A lemmák tagadásával igazolható, hogy egy nyelv <em>nem</em> tartozik az osztályba.
     </div>
 
     <table>
         <tr><th>Tulajdonság</th><th>Reguláris</th><th>CF</th></tr>
         <tr><td>Pumpálás alakja</td><td>xyz → xy<sup>i</sup>z</td><td>uvxyz → uv<sup>i</sup>xy<sup>i</sup>z</td></tr>
         <tr><td>Feltételek</td><td>|y| &gt; 0, |xy| ≤ p</td><td>|vy| &gt; 0, |vxy| ≤ p</td></tr>
+        <tr><td>p eredete</td><td>DVA állapotainak száma</td><td>2<sup>b+1</sup>, b = nemterminálisok száma</td></tr>
+        <tr><td>Miért igaz?</td><td>Galamb-lyuk elv állapotokon</td><td>Galamb-lyuk elv nemterminálisokon (levezetési fa)</td></tr>
         <tr><td>Felismerő</td><td>DVA / NVA</td><td>Veremautomata (PDA)</td></tr>
     </table>
 
