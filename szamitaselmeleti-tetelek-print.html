@@ -812,6 +812,10 @@ alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
     </div>
 
     <div class="definicio">
+        <strong>Megj:</strong> "C" konfiguráció egy pillanatnyi állapot leírható a szalag tartalmával, a fej pozíciójával és a pillanatnyi állapottal. 
+    </div>
+
+    <div class="definicio">
         <strong>Definíció: M Turing gép elfogad egy w sorozatot, ha ∃:</strong><br>
         C<sub>1</sub> C<sub>2</sub> ... C<sub>n</sub> konfigurációk sorozata, hogy:
         <ol>
@@ -1337,7 +1341,6 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 
     <h3>NP-teljes nyelvek jellemzése</h3>
     <p><a href="https://www.youtube.com/watch?v=KkvCbPk4Wz8&t=9m54s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p><a href="https://www.youtube.com/watch?v=KkvCbPk4Wz8&t=1h3m57s" target="_blank">▶ Előadás ezen a részen (NP-teljes def., pol. visszavezethetőség)</a></p>
     <div class="definicio">
         <strong>Informális:</strong> Egy L NP-beli nyelv NP-teljes, ha abból a feltételezésből, hogy L P-beli is, következik, hogy az összes NP-beli nyelv P-beli, azaz NP = P.
          <span class="note">(Ha ∃ pol. algoritmus NP-re ⟹ NP = P és erről tudjuk, hogy még nem igaz.)</span><br><br>
@@ -1345,6 +1348,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <strong>2. Megj:</strong> Egy NP-teljes problémára nem érdemes polinom idejű algoritmust keresni (mivel az a feltételezés, hogy P ⊂ NP).
          <span class="note">(Nem érdemes rá P beli megoldást keresni.)</span>
         <br><br>
+    <p><a href="https://www.youtube.com/watch?v=KkvCbPk4Wz8&t=1h3m57s" target="_blank">▶ Előadás ezen a részen (NP-teljes def., pol. visszavezethetőség)</a></p>
 
         <strong>Definíció (polinom idejű visszavezetés):</strong> Legyenek A és B Σ* feletti nyelvek. (A,B 1-1 feladat)<br>
         A <em>polinom időben visszavezethető</em> B-re (jelölés: A ≤<sub>P</sub> B), ha van olyan<br>
@@ -1377,8 +1381,9 @@ L-re.)
      
          <br>
 
-        <strong>Tétel (Cook–Levin):</strong> SAT ∈ P akkor és csak akkor, ha NP = P.<br>
-        Más szóval:  SAT NP-teljes.<br><br>
+            <strong>Tétel (Cook–Levin):</strong> SAT ∈ P akkor és csak akkor, ha NP = P.<br>
+            Más szóval: SAT NP-teljes.<br>
+        <span class="note">3SAT ≤<sub>P</sub> SAT</span><br><br>
 
 
         <strong>Definíció:</strong> 3SAT = {Φ | Φ konjunktív normálformájú Bool kifejezés, ahol minden klóz pontosan 3 literált tartalmaz, és Φ kielégíthető}<br>
