@@ -564,19 +564,6 @@ Turing­gépekkel. </p>
         <strong>Szükséges feltétel, nem elégséges</strong> — csak arra használható, hogy belássuk: egy nyelv <em>nem</em> reguláris.
     </div>
 
-    <div class="definicio">
-        <strong>Jellemzés — miért igaz?</strong><br>
-        Legyen M egy p állapotú DVA, L(M) = L. Ha |s| ≥ p, az M által bejárt állapotsorozat legalább p+1 elemű, tehát a galamb-lyuk elv alapján valamelyik q állapot kétszer szerepel.<br><br>
-        Legyen q az első ismételt állapot. Ekkor:<br>
-        <ul style="font-weight:normal; margin-top:4px;">
-            <li><strong>x</strong> = az út q₀-tól q első eléréséig,</li>
-            <li><strong>y</strong> = a hurok q-ból q-ba (|y| ≥ 1, mert q kétszer jelenik meg),</li>
-            <li><strong>z</strong> = a maradék.</li>
-        </ul>
-        Mivel M a q állapotból indul újra y minden ismétlésénél, xy<sup>i</sup>z-t is elfogadja ∀ i ≥ 0.<br>
-        Az ismétlés az első p lépésen belül történik → |xy| ≤ p.
-    </div>
-
     <div class="pelda">
         <strong>Példa — L = {0<sup>n</sup>1<sup>n</sup> | n ≥ 0} nem reguláris:</strong><br>
         Legyen p a pumpáló hossz. Válasszuk s = 0<sup>p</sup>1<sup>p</sup> ∈ L. Ekkor |xy| ≤ p, tehát y = 0<sup>k</sup>, k ≥ 1.<br>
@@ -595,21 +582,6 @@ Turing­gépekkel. </p>
         <strong>Szükséges feltétel, nem elégséges</strong> — csak arra használható, hogy belássuk: egy nyelv <em>nem</em> CF.
     </div>
 
-    <div class="definicio">
-        <strong>Jellemzés — miért igaz?</strong><br>
-        Legyen G egy b nemterminálisú CNF grammatika, L(G) = L. Legyen p = 2<sup>b+1</sup>.<br>
-        Ha |s| ≥ p, a levezetési fa mélysége &gt; b (CNF fában legfeljebb 2<sup>d</sup> levél van mélység d-n).<br>
-        Ezért valamelyik gyökér–levél úton egy A nemterminális <em>kétszer</em> jelenik meg (galamb-lyuk elv).<br><br>
-        Jelöljük a két előfordulást A<sub>felső</sub> és A<sub>alsó</sub>:<br>
-        <ul style="font-weight:normal; margin-top:4px;">
-            <li><strong>x</strong> = az A<sub>alsó</sub> által generált szó (a belső rész),</li>
-            <li><strong>v</strong>, <strong>y</strong> = a két A-előfordulás közötti fa bal és jobb levéltartalma (a pumpálható részek),</li>
-            <li><strong>u</strong>, <strong>z</strong> = a szó elejei és végi maradék.</li>
-        </ul>
-        Mivel A → …vAy… → …v(vAy)y… levezetés ismételhető, uv<sup>n</sup>xy<sup>n</sup>z ∈ L minden n ≥ 0-ra.<br>
-        Az ismétlés kellően közel van a levélhez → |vxy| ≤ p.
-    </div>
-
     <div class="pelda">
         <strong>Példa — L = {a<sup>n</sup>b<sup>n</sup>c<sup>n</sup> | n ≥ 0} nem CFL:</strong><br>
         Legyen p a pumpáló hossz. Válasszuk s = a<sup>p</sup>b<sup>p</sup>c<sup>p</sup>.<br>
@@ -625,8 +597,6 @@ Turing­gépekkel. </p>
         <tr><th>Tulajdonság</th><th>Reguláris</th><th>CF</th></tr>
         <tr><td>Pumpálás alakja</td><td>xyz → xy<sup>i</sup>z</td><td>uvxyz → uv<sup>i</sup>xy<sup>i</sup>z</td></tr>
         <tr><td>Feltételek</td><td>|y| &gt; 0, |xy| ≤ p</td><td>|vy| &gt; 0, |vxy| ≤ p</td></tr>
-        <tr><td>p eredete</td><td>DVA állapotainak száma</td><td>2<sup>b+1</sup>, b = nemterminálisok száma</td></tr>
-        <tr><td>Miért igaz?</td><td>Galamb-lyuk elv állapotokon</td><td>Galamb-lyuk elv nemterminálisokon (levezetési fa)</td></tr>
         <tr><td>Felismerő</td><td>DVA / NVA</td><td>Veremautomata (PDA)</td></tr>
     </table>
 
