@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyelvtechnológia Alapjai - Szigorlati Tételek (Nyomtatható)</title>
+    <link rel="stylesheet" href="shared.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #000;
+            background: #fff;
+        }
+
+        @media screen {
+            body { background: #888; padding: 20px; }
+            .page {
+                background: #fff;
+                width: 210mm;
+                min-height: 297mm;
+                margin: 0 auto 20px auto;
+                padding: 20mm 18mm 20mm 18mm;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            }
+        }
+
+        @media print {
+            body { background: #fff; }
+            .page {
+                width: 100%;
+                padding: 15mm 15mm 15mm 15mm;
+                page-break-after: always;
+                break-after: page;
+            }
+            .page:last-child {
+                page-break-after: avoid;
+                break-after: avoid;
+            }
+        }
+
+        .cover {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 200mm;
+        }
+
+        .cover h1 {
+            font-size: 24pt;
+            font-weight: bold;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .cover .subtitle { font-size: 14pt; margin-bottom: 30px; }
+
+        .cover .toc {
+            text-align: left;
+            width: 100%;
+            max-width: 420px;
+            margin-top: 20px;
+        }
+
+        .cover .toc h2 {
+            font-size: 13pt;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+        }
+
+        .cover .toc ol { margin-left: 20px; }
+        .cover .toc li { margin-bottom: 6px; font-size: 10pt; }
+
+        .topic-header {
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .topic-num {
+            font-size: 10pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .topic-header h2 {
+            font-size: 15pt;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+
+        h3 {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-top: 16px;
+            margin-bottom: 8px;
+            text-decoration: underline;
+        }
+
+        h4 {
+            font-size: 11pt;
+            font-weight: bold;
+            margin-top: 12px;
+            margin-bottom: 6px;
+        }
+
+        p { margin-bottom: 10px; text-align: justify; }
+
+        ul, ol { margin-left: 22px; margin-bottom: 10px; }
+        li { margin-bottom: 5px; }
+
+        .kiemeles {
+            border: 1px solid #000;
+            padding: 10px 12px;
+            margin: 12px 0;
+        }
+
+        .pelda {
+            border: 1px solid #000;
+            padding: 10px 12px;
+            margin: 12px 0;
+            font-style: italic;
+        }
+
+        .pelda strong { font-style: normal; }
+
+        .page-footer {
+            margin-top: 20px;
+            padding-top: 6px;
+            border-top: 1px solid #000;
+            font-size: 8pt;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<a class="back-btn" href="nyelvtechnologiai-tetelek-print.html">← Vissza</a>
+
+<!-- COVER PAGE -->
+<div class="page">
+    <div class="cover">
+        <h1>A Nyelvtechnológia Alapjai</h1>
+        <p class="subtitle">Szigorlati Tételek Kidolgozása</p>
+        <div class="toc">
+            <h2>Tartalom</h2>
+            <ol>
+                <li>Karakterek és betűreprezentáció, nyelvstatisztikai törvények, n-gramok</li>
+                <li>Reguláris kifejezések, véges automaták és kiterjesztéseik</li>
+                <li>Kétszintes morfológia, unifikációs morfológia és alkalmazások</li>
+                <li>Mondatreprezentációk, jegyszerkezetek, elemzési módszerek</li>
+                <li>A szintaktikai szerepek és a jelentés viszonya. Esetek, WSD, WordNet, Ontológiák</li>
+                <li>Korpuszok, gépi tanulás, szóbeágyazás, fordítómemóriák, gépi fordítás</li>
+            </ol>
+        </div>
+    </div>
+    <div class="page-footer">Nyelvtechnológia Alapjai — Szigorlati Tételek</div>
+</div>
+
+<!-- TÉTEL 1 -->
+<div class="page">
+    <div class="topic-header">
+        <span class="topic-num">1. Tétel</span>
+        <h2>Karakterek és betűreprezentáció, nyelvstatisztikai törvények, n-gramok</h2>
+    </div>
+
+    <h3>Karakterkódolás és reprezentáció</h3>
+    <p>A különböző nyelvek írásrendszerei eltérő karakterkészleteket használnak, ami jelentős kihívást jelent a számítógépes feldolgozásban. Az ASCII kódolás csak 128 karaktert támogat, ami elegendő az angol nyelvhez, de más nyelvek számára elégtelen.</p>
+    <ul>
+        <li><strong>Unicode:</strong> Egységes karakterkódolási rendszer, amely több mint 140 000 karaktert támogat a világ szinte összes írásrendszeréből.</li>
+        <li><strong>UTF-8:</strong> Változó hosszúságú kódolás, amely visszafelé kompatibilis az ASCII-val.</li>
+        <li><strong>UTF-16 és UTF-32:</strong> Fix vagy változó hosszúságú kódolások különböző felhasználási esetekhez.</li>
+    </ul>
+
+    <h3>A pontos gépi rendezés nehézségei</h3>
+    <p>A karakterláncok rendezése nyelvfüggő problémákat vet fel:</p>
+    <ul>
+        <li>Ékezetes betűk helye a rendezésben (pl. magyar: a, á, b, c...)</li>
+        <li>Többkarakteres betűk kezelése (pl. magyar: cs, dz, gy...)</li>
+        <li>Kis- és nagybetűk viszonya</li>
+        <li>Locale-specifikus rendezési szabályok (collation)</li>
+    </ul>
+    <div class="pelda">
+        <strong>Példa:</strong> A „csoda" szó rendezése: betűnkénti rendezésnél a 'c' után következne, de a magyar helyesírás szerint a 'cs' mint egységes betű a 'c' és 'd' közé tartozik.
+    </div>
+
+    <h3>Alapvető nyelvstatisztikai törvények</h3>
+    <p><strong>Zipf-törvény:</strong> A szavak gyakorisága fordítottan arányos a rangsorukkal. Ha a leggyakoribb szó gyakorisága f, akkor a k-adik leggyakoribb szó gyakorisága körülbelül f/k.</p>
+    <p><strong>Heaps-törvény:</strong> A szókincs mérete (V) és a szöveg hossza (n) között power-law kapcsolat áll fenn: V = K × n<sup>β</sup>, ahol K és β konstansok (β jellemzően 0,4–0,6 között).</p>
+    <p><strong>Mandelbrot-törvény:</strong> A Zipf-törvény finomítása, amely jobban illeszkedik a ritkább szavakhoz.</p>
+
+    <h3>N-gramok</h3>
+    <p>Az n-gramok n egymást követő elemből (karakter, szó, stb.) álló szekvenciák, amelyek alapvető eszközei a nyelvstatisztikai elemzésnek.</p>
+    <ul>
+        <li><strong>Unigramok (1-gram):</strong> Egyedi elemek (szavak, karakterek)</li>
+        <li><strong>Bigramok (2-gram):</strong> Szópárok vagy karakterpárok</li>
+        <li><strong>Trigramok (3-gram):</strong> Hármasok</li>
+        <li><strong>N-gramok (n&gt;3):</strong> Hosszabb szekvenciák</li>
+    </ul>
+    <div class="pelda">
+        <strong>Példa:</strong> „a ház" szövegből:<br>
+        Szó-bigramok: [„a ház"]<br>
+        Karakter-bigramok: [„a ", „ h", „há", „áz"]<br>
+        Karakter-trigramok: [„a h", „ há", „háZ"]
+    </div>
+
+    <h3>Alkalmazások</h3>
+    <ul>
+        <li>Nyelvazonosítás</li>
+        <li>Helyesírás-ellenőrzés</li>
+        <li>Gépi fordítás</li>
+        <li>Szövegkiegészítés</li>
+        <li>Információ-visszakeresés</li>
+    </ul>
+
+    <div class="page-footer">Nyelvtechnológia Alapjai — 1. Tétel</div>
+</div>
+
+<!-- TÉTEL 2 -->
+<div class="page">
+    <div class="topic-header">
+        <span class="topic-num">2. Tétel</span>
+        <h2>Reguláris kifejezések, véges automaták és kiterjesztéseik</h2>
+    </div>
+
+    <h3>Reguláris kifejezések (RegEx)</h3>
+    <p>A reguláris kifejezések formális nyelvek leírására szolgáló minták, amelyek hatékonyan használhatók szövegfeldolgozásra.</p>
+    <ul>
+        <li><strong>Alapműveletek:</strong> konkatenáció, alternatíva (|), ismétlés (*, +, ?)</li>
+        <li><strong>Karakterosztályok:</strong> [a-z], [0-9], \d, \w, \s</li>
+        <li><strong>Horgonyok:</strong> ^ (sor eleje), $ (sor vége), \b (szóhatár)</li>
+        <li><strong>Csoportosítás:</strong> (), visszahivatkozások</li>
+    </ul>
+    <div class="pelda">
+        <strong>Példa:</strong> Magyar telefonszám: <code>^(\+36|06)[-\s]?\d{1,2}[-\s]?\d{3}[-\s]?\d{4}$</code>
+    </div>
+
+    <h3>Véges Állapotú Automata (FSA)</h3>
+    <p>Az FSA egy absztrakt gép, amely állapotok között mozog bemeneti szimbólumok alapján. Két típusa van:</p>
+    <ul>
+        <li><strong>Determinisztikus (DFA):</strong> Minden állapotból minden bemenetre legfeljebb egy átmenet létezik.</li>
+        <li><strong>Nemdeterminisztikus (NFA):</strong> Lehetnek epsilon-átmenetek és többszörös átmenetek ugyanarra a bemenetre.</li>
+    </ul>
+    <p>Az FSA komponensei: Állapotok halmaza (Q), Bemeneti ábécé (Σ), Átmeneti függvény (δ), Kezdőállapot (q₀), Elfogadó állapotok halmaza (F).</p>
+
+    <h3>Véges Állapotú Fordító (FST)</h3>
+    <p>Az FST az FSA kiterjesztése, amely bemenet helyett bemeneti/kimeneti párokkal dolgozik. Minden átmenethez egy bemenet és egy kimenet tartozik.</p>
+    <div class="kiemeles">
+        <strong>Alkalmazások a nyelvtechnológiában:</strong>
+        <ul>
+            <li>Morfológiai elemzés és generálás</li>
+            <li>Fonetikai átírás</li>
+            <li>Tokenizálás</li>
+            <li>Helyesírás-ellenőrzés</li>
+            <li>Egyszerű gépi fordítás</li>
+        </ul>
+    </div>
+
+    <h3>Rekurzív Átmeneti Hálózat (RTN)</h3>
+    <p>Az RTN az FSA kiterjesztése, amely lehetővé teszi, hogy az állapotok átmenetei más automatákat hívjanak meg. Ez hierarchikus struktúrák leírását teszi lehetővé.</p>
+
+    <h3>Augmented Transition Network (ATN)</h3>
+    <p>Az ATN az RTN továbbfejlesztése, amely:</p>
+    <ul>
+        <li>Regisztereket használ információk tárolására</li>
+        <li>Teszteket végezhet az átmeneteken</li>
+        <li>Akciókat hajthat végre</li>
+        <li>Összetettebb nyelvtani jelenségeket képes kezelni</li>
+    </ul>
+    <p>Az ATN-ek különösen hasznosak természetes nyelvű mondatok elemzésében, ahol kontextusfüggő információkat kell kezelni.</p>
+
+    <div class="page-footer">Nyelvtechnológia Alapjai — 2. Tétel</div>
+</div>
+
+<!-- TÉTEL 3 -->
+<div class="page">
+    <div class="topic-header">
+        <span class="topic-num">3. Tétel</span>
+        <h2>Kétszintes morfológia, unifikációs morfológia és alkalmazások</h2>
+    </div>
+
+    <h3>Kétszintes morfológia (Two-Level Morphology)</h3>
+    <p>Kimmo Koskenniemi által kifejlesztett modell, amely két reprezentációs szintet különböztet meg:</p>
+    <ul>
+        <li><strong>Lexikális szint:</strong> Az alaki változást nem tartalmazó, absztrakt reprezentáció.</li>
+        <li><strong>Felszíni szint:</strong> A tényleges, megfigyelhető szóalak.</li>
+    </ul>
+    <p>A két szint közötti megfeleltetést véges állapotú fordítókkal (FST) írja le. A módszer előnye, hogy ugyanazok a szabályok használhatók elemzésre és generálásra is.</p>
+    <div class="pelda">
+        <strong>Példa (magyar):</strong><br>
+        Lexikális: h á z + b a n<br>
+        Felszíni: h á z b a n<br>
+        (A '+' morfémathatár jelölése a lexikális szinten)
+    </div>
+
+    <h3>Unifikációs morfológia</h3>
+    <p>Az unifikációs megközelítés jegystruktúrákat használ a morfológiai információk reprezentálására. A morfológiai szabályok unifikáció útján kombinálják ezeket a jegystruktúrákat.</p>
+    <p>Főbb jellemzők:</p>
+    <ul>
+        <li>Deklaratív szabályok</li>
+        <li>Jegyek és értékek használata</li>
+        <li>Unifikáció mint alapművelet</li>
+        <li>Hierarchikus jegystruktúrák</li>
+    </ul>
+    <div class="kiemeles">
+        <strong>Jegystruktúra példa:</strong><br>
+        [SZÓ: „házak"] &nbsp; [TŐSZÓ: „ház"] &nbsp; [KATEGÓRIA: főnév] &nbsp; [SZÁM: többes] &nbsp; [ESET: nominatívusz]
+    </div>
+
+    <h3>Alkalmazások</h3>
+
+    <h4>Helyesírás-ellenőrzés</h4>
+    <p>A morfológiai elemző képes eldönteni, hogy egy szóalak helyes-e a nyelv szabályai szerint. A produktív morfológia kezelése miatt nem szükséges minden szóalakot szótárazni.</p>
+
+    <h4>Automatikus elválasztás</h4>
+    <p>A morfológiai struktúra ismerete segít a helyes szótaghatárok megtalálásában. A morfémathatárok jellemzően jó elválasztási pontok.</p>
+
+    <h4>Intelligens keresés</h4>
+    <p>A morfológiai elemzés lehetővé teszi, hogy a keresőmotorok a szótövek alapján keressenek, így minden ragozott alakot megtaláljanak.</p>
+    <div class="pelda">
+        <strong>Példa:</strong> „ház" keresése megtalálja: házak, házban, házakat, stb.
+    </div>
+
+    <h4>Intelligens csere (lemmatizáció)</h4>
+    <p>Szövegszerkesztőkben a morfológiai tudás segít az intelligens keresés-csere műveletekben, megőrizve a ragozást.</p>
+
+    <h3>Pontosság és fedés viszonya</h3>
+    <p><strong>Pontosság (precision):</strong> A helyesen azonosított alakok aránya az összes azonosított közül.</p>
+    <p><strong>Fedés (recall/coverage):</strong> A helyesen azonosított alakok aránya az összes helyes alak közül.</p>
+    <p>A különböző alkalmazások eltérő követelményeket támasztanak:</p>
+    <ul>
+        <li><strong>Helyesírás-ellenőrzés:</strong> Magas pontosság fontos (kevés hamis riasztás).</li>
+        <li><strong>Információ-visszakeresés:</strong> Magas fedés fontos (ne maradjon ki találat).</li>
+        <li><strong>Gépi fordítás:</strong> Kiegyensúlyozott pontosság és fedés szükséges.</li>
+    </ul>
+    <div class="kiemeles">
+        Általában trade-off van a pontosság és fedés között: az egyik javítása gyakran a másik rovására megy.
+    </div>
+
+    <div class="page-footer">Nyelvtechnológia Alapjai — 3. Tétel</div>
+</div>
+
+<!-- TÉTEL 4 -->
+<div class="page">
+    <div class="topic-header">
+        <span class="topic-num">4. Tétel</span>
+        <h2>Mondatreprezentációk, jegyszerkezetek, elemzési módszerek</h2>
+    </div>
+
+    <h3>Mondatreprezentációs megoldások</h3>
+
+    <h4>Függőségi szerkezet (Dependency Structure)</h4>
+    <p>A függőségi nyelvtan a szavak közötti grammatikai kapcsolatokat írja le. Minden szónak van egy feje (head), amelytől függ.</p>
+    <div class="pelda">
+        <strong>Példa:</strong> „A gyerek olvas egy könyvet"<br>
+        — „olvas" a mondat feje; „gyerek" az alanya; „könyvet" a tárgya; „A" és „egy" a determinánsok.
+    </div>
+
+    <h4>Közvetlen összetevős szerkezet (Phrase Structure)</h4>
+    <p>Ez a reprezentáció hierarchikus szerkezetben csoportosítja a szavakat összetevőkre (constituent), amelyek rekurzívan épülnek egymásra.</p>
+    <ul>
+        <li>NP (Noun Phrase): főnévi csoport</li>
+        <li>VP (Verb Phrase): igei csoport</li>
+        <li>PP (Prepositional Phrase): elöljárós csoport</li>
+        <li>S (Sentence): mondat</li>
+    </ul>
+
+    <h4>X-vonás nyelvtanok (X-bar Theory)</h4>
+    <p>Az X-vonás elmélet szerint minden összetevő hasonló belső struktúrával rendelkezik: X⁰ (fej), X' (köztes szint), XP (maximális projekció).</p>
+
+    <h3>Jegyszerkezetek és DAG</h3>
+    <p><strong>Jegyszerkezetek:</strong> Attribútum-érték párok halmazai, amelyek nyelvi információkat reprezentálnak hierarchikus formában.</p>
+    <p><strong>DAG (Directed Acyclic Graph):</strong> Irányított körmentes gráf, amely lehetővé teszi a struktúramegosztást. A jegyszerkezeteket gyakran DAG-ként reprezentálják a memóriahatékonyság érdekében.</p>
+    <div class="kiemeles">
+        <strong>Jegystruktúra példa:</strong><br>
+        [SZÓFAJ: ige] &nbsp; [ALANY: [SZEMÉLY: 3, SZÁM: egyes]] &nbsp; [IDŐ: jelen] &nbsp; [MÓD: kijelentő]
+    </div>
+
+    <h3>Unifikáció</h3>
+    <p>Az unifikáció két jegyszerkezet összeolvasztásának művelete, amely megőrzi mindkét struktúra információit. Két jegyszerkezet unifikálható, ha nincsenek ellentmondó értékeik.</p>
+
+    <h3>Mondatelemzési módszerek</h3>
+
+    <h4>Bottom-Up (BU) elemzés</h4>
+    <p>Az elemző a terminális szimbólumokból indul ki, és fokozatosan építi fel a mondat szerkezetét, amíg el nem éri a kezdőszimbólumot.</p>
+    <ul>
+        <li><strong>Előnyök:</strong> Csak valóban létező összetevőkkel dolgozik.</li>
+        <li><strong>Hátrányok:</strong> Sok felesleges elemzési utat kipróbálhat.</li>
+    </ul>
+
+    <h4>Top-Down (TD) elemzés</h4>
+    <p>A kezdőszimbólumból indul, és célja a terminális láncot levezető szabályok megtalálása.</p>
+    <ul>
+        <li><strong>Előnyök:</strong> Csak nyelvtanilag helyes szerkezeteket generál.</li>
+        <li><strong>Hátrányok:</strong> Olyan struktúrákat is kipróbálhat, amelyek nem illeszkednek a bemenetre.</li>
+    </ul>
+
+    <h4>Vegyes stratégiák</h4>
+    <ul>
+        <li><strong>Chart parsing:</strong> Táblázatos elemzés, amely egyesíti a BU és TD előnyeit.</li>
+        <li><strong>Left-corner parsing:</strong> BU elemeket használ TD keretben.</li>
+        <li><strong>Earley-algoritmus:</strong> Dinamikus programozást használ.</li>
+    </ul>
+
+    <h3>Az unifikáció alkalmazásai</h3>
+    <h4>Morfológiában</h4>
+    <ul>
+        <li>Szótövek és ragok jegyeinek összeillesztése</li>
+        <li>Egyeztetés ellenőrzése (pl. számban, személyben)</li>
+        <li>Morfoszintaktikai tulajdonságok kombinálása</li>
+    </ul>
+    <h4>Szintaxisban</h4>
+    <ul>
+        <li>Összetevők grammatikai egyeztetése</li>
+        <li>Hosszútávú függőségek kezelése</li>
+        <li>Unifikációs nyelvtanok (pl. HPSG, LFG)</li>
+    </ul>
+    <div class="pelda">
+        <strong>Példa egyeztetésre:</strong><br>
+        „A fiú olvas" — helyes (egyes szám egyezik)<br>
+        „*A fiú olvassák" — helytelen (számban nincs egyezés)
+    </div>
+
+    <div class="page-footer">Nyelvtechnológia Alapjai — 4. Tétel</div>
+</div>
+
+<!-- TÉTEL 5 -->
+<div class="page">
+    <div class="topic-header">
+        <span class="topic-num">5. Tétel</span>
+        <h2>A szintaktikai szerepek és a jelentés viszonya. Esetek a mélyben és a felszínen. Jelentés-egyértelműsítés. Fogalmi reprezentációk, forgatókönyvek. WordNet, Ontológiák. Gyorsfordítók.</h2>
+    </div>
+
+    <h3>Szintaktikai Szerepek és a Jelentés Viszonya</h3>
+    <p>A <strong>szintaktikai szerepek</strong> (pl. alany, tárgy) a mondaton belüli nyelvtani pozíciók, míg a <strong>szemantikai szerepek</strong> (vagy mélyes esetek) a cselekvéshez kötődő szerepeket írják le (pl. ágens, páciens). A kettő nem mindig esik egybe.</p>
+    <div class="pelda">
+        Példa: „A váza tört" — a váza szintaktikailag alany, de szemantikailag páciens (nem a cselekvés végrehajtója).
+    </div>
+
+    <h3>Esetek a Mélyben és a Felszínen</h3>
+    <ul>
+        <li><strong>Mélyes szerkezet (Szemantikai Esetek):</strong> Nyelvfüggetlen szerepek (Ágens, Páciens/Téma, Eszköz, Célpont) — a Fillmore-féle esetnyelvtan alapja.</li>
+        <li><strong>Felszíni esetek (Grammatikai esetek):</strong> Nyelvspecifikus toldalékok és formák (nominatívusz, akkuzatívusz stb.). Egy mélyes szerep több felszíni esetként is megjelenhet.</li>
+    </ul>
+
+    <h3>Jelentés-egyértelműsítés (Word Sense Disambiguation, WSD)</h3>
+    <p>A poliszém (többjelentésű) szavak megfelelő jelentésének kiválasztása a kontextus alapján (pl. „ég" — főnév/ige). Módszerei:</p>
+    <ul>
+        <li>Szótár/Tudásalapú (pl. WordNet)</li>
+        <li>Korpuszalapú (statisztikai modellek)</li>
+        <li>Neurális (szóbeágyazások)</li>
+    </ul>
+
+    <h3>Fogalmi Reprezentációk, Forgatókönyvek, Fogalmi Hálók</h3>
+    <ul>
+        <li><strong>Predikátum-argumentum szerkezet:</strong> Logikai forma: predikátumok (ige) és argumentumok (entitások) közötti viszonyok.</li>
+        <li><strong>Forgatókönyvek (Scripts):</strong> Sztereotip eseménysorozatok (pl. Étterem forgatókönyv), amelyek az implicit tudást kódolják.</li>
+        <li><strong>WordNet:</strong> Angol nyelvű lexikális adatbázis. A szavakat <strong>synsetekbe</strong> (szinonima-halmazokba) csoportosítja, és hierarchikus kapcsolatokat (hiperonímia, hiponímia) ír le.</li>
+        <li><strong>Ontológiák:</strong> Egy adott tartomány tudásának formális specifikációja, fogalmi hierarchiákkal.</li>
+    </ul>
+
+    <h3>Szótári Keresés Nyelvfüggő Problémái</h3>
+    <p>A humán szótárak keresési struktúrája és szabályai eltérnek a gépi feldolgozástól:</p>
+    <ul>
+        <li><strong>Rendezési Nehézségek:</strong> A nyelvi rendezési szabályok (collation) követése a kódpontok helyett.</li>
+        <li><strong>Inflektált Formák:</strong> A szótár a lemmatizált (alap) szót tartalmazza, nem a ragozott formákat.</li>
+    </ul>
+
+    <h3>Gyorsfordítók és Tulajdonságaik</h3>
+    <p>A „ablakos" (folyamatos, beviteli) kommunikáció alacsony késleltetést (latency) és robusztusságot igényel a hiányos bemenettel szemben. Ezért alakultak ki a modern neurális hálós (NMT) alapú gyorsfordítók:</p>
+    <ul>
+        <li><strong>Incremental Decoding:</strong> A fordítást nem a teljes mondat bevitele után, hanem tokenenként, növekményesen generálják.</li>
+        <li><strong>Robusztusság:</strong> Képesek hibás, nyelvtanilag hiányos bemenetet is kezelni.</li>
+    </ul>
+
+    <div class="page-footer">Nyelvtechnológia Alapjai — 5. Tétel</div>
+</div>
+
+<!-- TÉTEL 6 -->
+<div class="page">
+    <div class="topic-header">
+        <span class="topic-num">6. Tétel</span>
+        <h2>Korpuszok. Gépi tanulás korpuszokból. Szóbeágyazás. Párhuzamos korpuszok, szövegszinkronizáció, fordítómemóriák. Szabályalapú, statisztikai és neurális hálós gépi fordítás.</h2>
+    </div>
+
+    <h3>Korpuszok és Gépi Tanulás</h3>
+    <p>A <strong>korpuszok</strong> nagy, strukturált szöveggyűjtemények, a nyelvtechnológiai rendszerek edzésének alapjai.</p>
+    <ul>
+        <li><strong>Monolingvális korpusz:</strong> Egy nyelven írt szövegek (pl. n-gramok, szóbeágyazás tréningezésére).</li>
+        <li><strong>Párhuzamos korpusz:</strong> Két nyelven írt szövegek, melyek egymás fordításai (gépi fordítás alapja).</li>
+    </ul>
+
+    <h3>Szóbeágyazás (Word Embedding)</h3>
+    <p>A szavak <strong>vektoros reprezentációja</strong> (valós számokból álló vektorok), amely a szó jelentését és kontextusát kódolja.</p>
+    <ul>
+        <li><strong>Elv:</strong> „A szó jelentését a környezete határozza meg."</li>
+        <li><strong>Módszerek:</strong> Word2Vec (Skip-gram, CBOW), GloVe, BERT.</li>
+        <li><strong>Kontextuális beágyazások (pl. BERT):</strong> Ugyanaz a szó (pl. „bank") különböző vektorral rendelkezik a mondat kontextusától függően.</li>
+        <li><strong>Tulajdonság:</strong> A szemantikai hasonlóság a vektorok térbeli közelségében nyilvánul meg.</li>
+    </ul>
+
+    <h3>Párhuzamos Korpuszok, Szövegszinkronizáció és Fordítómemóriák</h3>
+    <ul>
+        <li><strong>Párhuzamos Korpuszok:</strong> Alapvető forrás a gépi fordításhoz.</li>
+        <li><strong>Szövegszinkronizáció (Alignment):</strong> A párhuzamos korpusz mondatainak vagy szegmenseinek összekapcsolása, amelyek egymás fordításai.</li>
+        <li><strong>Fordítómemóriák (Translation Memories, TM):</strong> Adatbázis, amely korábban lefordított forrás-cél szegmenspárokat tárol. Elsősorban a humán fordítási munka támogatására szolgál.</li>
+    </ul>
+
+    <h3>A TM és a Gépi Fordítás Viszonya</h3>
+    <p>A TM és a gépi fordítás (MT) kiegészítik egymást:</p>
+    <ul>
+        <li><strong>TM → MT:</strong> A TM-ben lévő minőségi adatok edzőanyagként szolgálnak az MT modellek számára.</li>
+        <li><strong>MT → TM:</strong> A fordítóeszközök (CAT Tools) először a TM-ben keresnek egyezést; ha nincs, MT-t használnak, és az ember által korrigált MT kimenet bekerül a TM-be.</li>
+    </ul>
+
+    <h3>Gépi Fordítás Típusai</h3>
+    <div class="kiemeles">
+        <p>A gépi fordítás (MT) fejlődése:</p>
+        <ol>
+            <li><strong>Szabályalapú (RBMT):</strong> Nyelvészek által manuálisan írt nyelvtani és szótári szabályokra épül. Átlátható, de nem skálázható.</li>
+            <li><strong>Statisztikai (SMT):</strong> Párhuzamos korpuszból származó szavak és kifejezések valószínűségét használja. Jobb fedés, de gyakran nem folyékony kimenet.</li>
+            <li><strong>Neurális Hálós (NMT):</strong> End-to-end mély neurális hálózatok (Transformer architektúra). A jelenlegi legjobb minőség, folyékony, kontextus-érzékeny fordítás, de nagy adatigényű.</li>
+        </ol>
+    </div>
+
+    <div class="page-footer">Nyelvtechnológia Alapjai — 6. Tétel</div>
+</div>
+
+</body>
+</html>

@@ -4,7 +4,6 @@ __pycache__/
 *.pyc
 
 # PDF és generált szöveg
-*.pdf
 pdf_text_full.txt
 *.py
 # Windows
