@@ -155,44 +155,10 @@ megfigyelések.</a></h2>
         <li><strong>ISO 8859-1 (Latin-1)</strong> (256 karakter) – az első 128 megegyezik az ASCII-val, a második 128 a nyugat-európai nyelvek (német, francia, svéd) ékezetes betűit fedi le.</li>
         <li><strong>ISO 8859-2 (Latin-2)</strong> (256 karakter) – ugyanúgy épül fel, de a második 128 a kelet-európai nyelvek (pl. magyar, lengyel, cseh) karaktereit tartalmazza.</li>
         <li><strong>UCS (Universal Character Set)</strong> – az ISO nemzetközi szabványügyi szervezet fejlesztette; először 16 bites volt (kb. 65 000 karakter), majd 32 bitesre bővítették, hogy minden nyelv és írásrendszer beleférjen.</li>
+           <p><a href="https://www.youtube.com/watch?v=eCLsBpWa_js&t=25m01s" target="_blank">▶ Előadás ezen a részen</a></p>
         <li><strong>Unicode</strong> – egy amerikai konzorcium fejlesztette párhuzamosan az UCS-sel; szintén karakterkészlet + kódolási formátum (UTF-8), és szintén 16 bitesre váltott. Egy idő után két egymással versengő szabvány létezett egyszerre.</li>
         <li><strong>Összevonás (1991)</strong> – mivel két hasonló rendszer létezett párhuzamosan, 1991-ben az ISO és az Unicode konzorcium összehangolta a kettőt: a karakterkódok teljesen kompatibilisek lettek. Azóta csak Unicoderól beszélünk – ma ez az egyetlen világszabvány.</li>
     </ul>
-
-
-    <h4>Diakritikumok multigráfos kódolásai</h4>
-    <p><a href="https://www.youtube.com/watch?v=eCLsBpWa_js&t=9m48s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>Az ékezetes karakterek kódolásának számos hagyományos alternatívája létezett (különböző kontextusokban máig használt):
-    <span class="note">(ezek az átviteli kényszerek szülte megoldások; a Unicode előtti korszak jellemzői)</span></p>
-    <ul>
-        <li><strong>e-mail / fokabel:</strong> <code>arvizturo tukorfurogep</code></li>
-        <li><strong>távirati:</strong> <code>aarviiztuuerooe tuekoerfuuroogeep</code></li>
-        <li><strong>repülő ékezetes:</strong> <code>a'rvi'ztu"ro" tu:ko:rfu'ro'ge'p</code></li>
-        <li><strong>számkódos:</strong> <code>a1rvi1ztu3ro3 tu2ko2rfu1ro1ge1p</code></li>
-        <li><strong>TeX:</strong> <code>\' arv\' izt\Hur\Ho t\"uk\"orf\'ur\'og\'ep</code></li>
-        <li><strong>HTML:</strong> <code>&amp;aacute;rv&amp;iacute;zt&amp;udblac;r&amp;odblac;</code></li>
-    </ul>
-
-
-
-
-    
-    <h4>A Unicode és az UCS</h4>
-    <p><a href="https://www.youtube.com/watch?v=eCLsBpWa_js&t=25m01s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <div class="definicio">
-        <strong>UCS (Universal Character Set):</strong> az ISO 10646 szabvány által definiált univerzális karakterkészlet.<br><br>
-        <strong>Unicode szabvány:</strong> 16 biten tárolt síkokra osztja a szabvány legutóbbi változatában rögzített kb. 100 ezer karaktert. Minden beszélt, holt és egyéb nyelv (pl. Braille) karaktereit (betűk, számok, írásjelek stb.) tartalmazza. Minden egyes karakternek egyedi száma és neve van:<br>
-        <code>U+0041  Latin capital letter A</code><br>
-        <code>U+0151  Latin small letter o with double acute</code><br><br>
-        Eredetileg 2 bájton (16 biten) tárolta az adatokat (Basic Multilingual Plane), de ez nem volt elég, ezért 4 bájtos (32 bites) formátumra bővítették.
-    </div>
-    <ul>
-        <li><strong>UTF-8:</strong> változó hosszúságú kódolással (1–6 bájt) képezi le a Unicode karaktertáblát. Pl. 1 bájton tárolt kódjai az ASCII-nak felelnek meg, így a latin betűs UTF-8 kódolású szövegek a régi ASCII környezetben is olvashatók maradnak.</li>
-        <li><strong>UTF-16:</strong> 1 112 064 karaktert kódol.</li>
-        <li><strong>UCS-2</strong> (elavult), 2 bájton — az UTF-16 részhalmaza.</li>
-        <li><strong>UCS-4 = UTF-32 = ISO 10646:</strong> 4 bájton (31 biten).</li>
-    </ul>
-    <p>1980-as évek: igény egy egységes, minden karaktert leíró kódtáblára → ISO 10646 (ISO szabvány) és Unicode (amerikai cégek konzorciuma). 1991: egyesítik a két projekt eredményeit; az ISO 10646 csak karakterkészlet, a Unicode-ban viszont léteznek további kiegészítések, pl. egyeztetési szabályok. <strong>Unicode 16.0 (2024):</strong> összesen 154 998 karakter, 159-féle írás. <span class="note">(az „Old Hungarian" = székelyírás is benne van: U+10C80–U+10CFF)</span></p>
 
 
 
