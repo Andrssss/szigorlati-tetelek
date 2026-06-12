@@ -482,56 +482,48 @@ Turing­gépekkel. </p>
     <h3>Egy reguláris nyelvet felismerő minimális dva</h3>
     <p><a href="https://www.youtube.com/watch?v=CR6PnTvcctI&t=3m42s" target="_blank">▶ Előadás ezen a részen</a></p>
 
-    <div class="definicio">
-        <strong>Definíció :</strong> Legyen L (nyelv) ⊆ Σ* (ábécé) egy nyelv. x, y  (stringek) ∈ Σ* <em>L-re nézve ekvivalensek</em>, ha ∀ z ∈ Σ* esetén igaz, hogy:
-        <div style="margin: 6px 0 6px 20px;">xz ∈ L &nbsp; ⟺ &nbsp; yz ∈ L.</div>
-        <strong>Jelölés:</strong> x ≈<sub>L</sub> y. Ez egy ekvivalencia reláció Σ*-on.
-    </div>
-
-
-    <div class="definicio">
-        <strong>Definíció (Konfiguráció):</strong> Legyen M = (Q, Σ, δ, q₀, F) DVA.<br>
-        (r, x) ∈ Q × Σ* az M egy <em>konfigurációja (r = állapot, x = bemeneti sztring)</em>.
-    </div>
-
-    <div class="definicio">
-        <strong>Definíció (Rákövetkező konfiguráció):</strong> Legyen M = (Q, Σ, δ, q₀, F) DVA, (r, x) egy konfiguráció. (r, x) <em>rákövetkezője</em> az (r', x') konfiguráció, ha:
-        <ul>
-            <li>x = ax', ahol a ∈ Σ, (x-ből olvasom a stringet)</li>
-            <li>δ(r, a) = r'. (akkor r' az új állapot.... i'm just tired man )</li>
-        </ul>
-        <strong>Jelölés:</strong> (r, x) ⊢<sub>M</sub> (r', x').
-    </div>
-
-    <div class="definicio">
-        ööööööööö....<br>
-        <strong>Definíció (Elérhetőség):</strong> (r, x) ⊢*<sub>M</sub> (r', x'), azaz (r, x)-ből (r', x') <em>elérhető</em>, ha<br>
-        (r, x) ⊢<sub>M</sub> (r₁, y₁) ⊢<sub>M</sub> … ⊢<sub>M</sub> (r', x') valamely k ≥ 0 lépésben.
-    </div>
-
-    <div class="definicio">
-        (Definiálunk egy automatát megint.. hogy most egy ekvivalet definiálunk egy automatára nézve. Az elöző egy nyelve nézve volt. )
-        <strong>Definíció (∼<sub>M</sub> reláció):</strong> Legyen M = (Q, Σ, δ, q₀, F) DVA. x, y ∈ Σ* <em>M-re nézve ekvivalensek</em>, ha ∃ q ∈ Q, hogy
-        <div style="margin: 6px 0 6px 20px;">ez egy konf -> (q₀, x) ⊢*<sub>M</sub> (q, ε) &nbsp; és &nbsp; (q₀, y) ⊢*<sub>M</sub> (q, ε).  (ugyanabba az állapotba érnek, hiába más a konfig)</div>
-        <strong>Jelölés:</strong> x ∼<sub>M</sub> y. Ez ekvivalencia reláció Σ*-on.<br>
-        <strong>Jelölés:</strong> Minden q elérhető állapothoz tartozó ekvivalencia osztály: [q].
-    </div>
-
     <div class="tetel-box">
         <strong>Tétel:</strong> Legyen M = (Q, Σ, δ, q₀, F) DVA. Ekkor ∀ x, y ∈ Σ* esetén:<br>
-        x ∼<sub>M</sub> y &nbsp; ⟹ &nbsp; x ≈<sub>L(M)</sub> y  <br>
+        x ∼<sub>M</sub> y &nbsp; ⟹ &nbsp; x ≈<sub>L(M)</sub> y<br>
         ( HA x és y string ekvivalensek az automatára nézve, akkor x és y ekvivalensek a felismert nyelvre nézve.
         Azaz ha x és y ugyanabba az állapotba jutnak, akkor ugyanaz a sorsuk a nyelvben is, vagyis mindkettő benne van, vagy egyik sem.)
     </div>
 
     <div class="tetel-box">
         <strong>Tétel (Myhill-Nerode):</strong> Ha L ⊆ Σ* reguláris nyelv, akkor ∃ M = (Q, Σ, δ, q₀, F) DVA, hogy L(M) = L, és állapotainak száma éppen az ≈<sub>L</sub> reláció ekvivalencia osztályainak száma. M az állapotok számozásától eltekintve egyértelmű (minimális).<br><br>
-    
         <p style="margin-top:8px;">(Ha L reguláris nyelv → akkor van rá minimális automata M, és ennek <strong>állapotainak száma = az ekvivalencia osztályok száma</strong> az ≈<sub>L</sub> relációban.)</p>
     </div>
 
     <div class="tetel-box">
         <strong>Következmény :</strong> L ⊆ Σ* reguláris &nbsp; ⟺ &nbsp; az ≈<sub>L</sub> reláció által meghatározott ekvivalencia osztályok száma véges.
+    </div>
+
+    <h4>Részletek:</h4>
+    <div class="definicio">
+        <strong>Definíció (≈<sub>L</sub>):</strong> Legyen L ⊆ Σ* egy nyelv. x, y ∈ Σ* <em>L-re nézve ekvivalensek</em>, ha ∀ z ∈ Σ* esetén:
+        <div style="margin: 6px 0 6px 20px;">xz ∈ L &nbsp; ⟺ &nbsp; yz ∈ L.</div>
+        <strong>Jelölés:</strong> x ≈<sub>L</sub> y. Ez egy ekvivalencia reláció Σ*-on.
+    </div>
+
+    <div class="definicio">
+        <strong>Definíció (Konfiguráció):</strong> Legyen M = (Q, Σ, δ, q₀, F) DVA.<br>
+        (r, x) ∈ Q × Σ* az M egy <em>konfigurációja</em> (r = állapot, x = bemeneti sztring).
+    </div>
+
+    <div class="definicio">
+        <strong>Definíció (Rákövetkező konfiguráció):</strong> (r, x) <em>rákövetkezője</em> az (r', x') konfiguráció, ha x = ax' (a ∈ Σ) és δ(r, a) = r'.<br>
+        <strong>Jelölés:</strong> (r, x) ⊢<sub>M</sub> (r', x').
+    </div>
+
+    <div class="definicio">
+        <strong>Definíció (Elérhetőség):</strong> (r, x)-ből (r', x') <em>elérhető</em> (jelölés: (r, x) ⊢*<sub>M</sub> (r', x')), ha<br>
+        (r, x) ⊢<sub>M</sub> (r₁, y₁) ⊢<sub>M</sub> … ⊢<sub>M</sub> (r', x') valamely k ≥ 0 lépésben.
+    </div>
+
+    <div class="definicio">
+        <strong>Definíció (∼<sub>M</sub> reláció):</strong> x, y ∈ Σ* <em>M-re nézve ekvivalensek</em>, ha ∃ q ∈ Q, hogy
+        <div style="margin: 6px 0 6px 20px;">(q₀, x) ⊢*<sub>M</sub> (q, ε) &nbsp; és &nbsp; (q₀, y) ⊢*<sub>M</sub> (q, ε).</div>
+        <strong>Jelölés:</strong> x ∼<sub>M</sub> y. Minden q állapothoz tartozó osztály: [q].
     </div>
 
     <div class="page-footer">A Digitális Számítás Elmélete — 2. Téma</div>
