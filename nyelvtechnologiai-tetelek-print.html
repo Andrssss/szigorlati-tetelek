@@ -543,10 +543,15 @@ a fedés viszonya a különböző alkalmazásokban.
 
     <h3>Unifikációs morfológia (HuMor = <em>High-speed Unification Morphology</em>)</h3>
        <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=32m07s" target="_blank">▶ Előadás ezen a részen</a></p>
+   <img src="img/nyelvtech/szoalak.png" alt="Verem automaták" style="max-width:500px;width:60%;">
 
     <div class="definicio">
+        Ne keverjük a szezont a fazonnal. Két féle unifikációt vettünk ezen tárgy keretein belűl. A morfológiában a szavak összerakhatóságáról szól. (ház+ak : YES, ház+k : NO ). 
+        <br>Később beszélünk a másik féle unifikációról amit majd csak a 4. tételben veszünk, ahol a mondatokra fogjuk használni. (Ugye itt is beszél róla, hogy ez nem csak morfológiára használható !)
+            <br><br>
        A <strong>HuMor</strong>  lényege, hogy <strong>minden nyelvi tulajdonság egy jegy</strong>. A morfológiai elemzés nem string-manipuláció (nem „lépj vissza két betűt, vágj egyet"), hanem: a szóalak tő- és toldalékrészeit felismerjük a szótár segítségével, és mindkettőhöz <strong>jegy–érték párokat</strong> rendelünk. Ezután megnézzük, hogy a tő és a toldalék jegyei <strong>unifikálhatók-e</strong> — ha igen, a szóalak helyes / elfogadható. A HuMor tehát nem más, mint <strong>unifikálhatósági relációk működtetése</strong> morfológiai jegyszerkezeteken.
     </div>
+    <h4>Példa:</h4>
     <div class="definicio">
     <p>Működési elv — példa: <em>házakban</em></p>
     <p>A hozzájuk tartozó jegyek például:</p>
@@ -683,9 +688,7 @@ a fedés viszonya a különböző alkalmazásokban.
             <li>Ha <strong>teljes szinkronizációra</strong> törekszünk (mindennek legyen párja) → magas fedés, de a rendszer néha téved, pontossága csökken. Erre a <em>hosszalapú</em> módszer tipikus példa.</li>
             <li>Ha <strong>részleges szinkronizációt</strong> csinálunk (csak a biztosan helyes párokat adjuk meg) → közel 100%-os pontosság, de a szöveg nagy része lefedetlen marad. Erre a <em>horgonyalapú</em> módszer tipikus példa: a horgonyok (URL, szám, tulajdonnév) szinte mindig pontosak, de egy hosszabb szövegben csak néhány ilyen akad.</li>
         </ul>
-        <div class="definicio">
-            <strong>Összefoglalva:</strong> a <em>pontosság</em> a részlegességgel, a <em>fedés</em> (teljesség) a relatív pontatlansággal jár együtt. A <strong>hibrid módszer</strong> pontosan ezt az ellentétet hidalja át: a horgonyok biztosítják a magas pontosságot, a hosszalapú komponens pedig kitölti a hézagokat, és biztosítja a teljes fedést.
-        </div>
+     
         </div>
 
 
@@ -824,25 +827,42 @@ VP → V   S'</pre>
     </div>
 
     <div class="definicio">
-            <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h25m48s" target="_blank">▶ Előadás ezen a részen</a></p>
+            <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h20m26s" target="_blank">▶ Előadás ezen a részen</a></p>
 
-        <strong>Unifikáció</strong> — két jegyszerkezet összekapcsolásának művelete: ha nem tartalmaznak ellentmondó értékpárt, az eredmény a kettő „uniója" (halmazmetszet-szerű). Ha az egyik oldalon nincs érték, a másik oldalról örökölhető. Példa: <code>[NUM: PL, PERS: 3]</code> ∪ <code>[NUM: PL, PERS: 3]</code> → sikeres ✓<br><br>
-        <strong>Mire használják:</strong> <strong>mondatelemzésben</strong> (pl. Earley-elemzőben) — a parser nem azt kérdezi, hogy „pontosan ez a kategória áll-e ott?", hanem hogy „unifikálható-e azzal, amire szükség van?". Az egyeztetési feltétel (pl. alany és állítmány száma/személye megegyezzen) a jegyszerkezetbe van kódolva, és az unifikáció dönti el, hogy egy konkrét főnév–ige pár teljesíti-e. Morfológiában is ugyanez: tő + toldalék jegyszerkezeteinek unifikációja (ezt a 3. tételben tárgyaltuk).
-        <br><br>
-        <em>a fiúk futnak</em> — a főnév és az ige jegyszerkezetét unifikáljuk:<br>
-        &nbsp;&nbsp;<code>fiúk: [NUM: PL, PERS: 3, CASE: NOM]</code><br>
-        &nbsp;&nbsp;<code>futnak: [NUM: PL, PERS: 3]</code><br>
-        &nbsp;&nbsp;→ <code>[NUM: PL, PERS: 3, CASE: NOM]</code> ✓ (nem ütköznek, mindkét oldal jegyei megvannak)<br><br>
-        <em>a fiú futnak</em>:<br>
-        &nbsp;&nbsp;<code>fiú: [NUM: SG, PERS: 3, CASE: NOM]</code><br>
-        &nbsp;&nbsp;<code>futnak: [NUM: PL, PERS: 3]</code><br>
-        &nbsp;&nbsp;→ NUM: SG ≠ NUM: PL → sikertelen, parser elveti ✗
-    </div>
+        <strong>Unifikáció szintaxinban</strong>
+        <br> <br>
 
+         Ez egy másik unifikáció, mint amit a morfológiánál tárgyaltunk. Használhatjuk mondatokban is, hogy ellenőrizzük egyezik-e az alany és az állítmány száma/személye.
+        <br> <br>
+               <strong>!</strong> Nem a jegynek, hanem az <em>odavezető útnak</em> van értéke. Nem azt mondjuk, hogy „az igének száma van", hanem hogy <em>„a mondat állítmányát jelző ige száma azonos a mondat alanyát jelző főnév számával"</em> — vagyis két ösvény végén lévő értéknek kell egyeznie. 
+               <br><br>Ha ezt le tudjuk rajzolni a DAG-ban, nem kell külön szabály az egyes és többes számú egyeztetésre: az egyeztetési jegynek van száma, a számnak lehetséges értéke (egyes vagy többes).
+                <br> <br>
+                 <strong>Meddig „él" egy jegy?</strong><br>
+        <strong>Fejjegyek</strong> — alany–állítmány egyeztetéséhez kellenek; szám/személy végigmegy az egész szerkezeten<br>
+        <strong>Lábjegyek</strong> — szomszédos szó alakját határozzák meg; pl. <em>a/az</em> attól függ, mivel kezdődik a következő szó
+</div>
     <div class="definicio">
             <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h35m46s" target="_blank">▶ Előadás ezen a részen</a></p>
 
         <strong>Unifikálhatóság</strong> — az a feltétel, hogy két jegyszerkezet összekapcsolható-e egyáltalán. Ha ugyanazon ösvényen ellentmondó atomi értékek állnak (pl. <code>NUM: SG</code> vs. <code>NUM: PL</code>), az unifikáció <strong>sikertelen</strong> — a parser elveti azt az elemzési ágat. Így szűri ki a kötelező egyeztetési szabályokat megsértő szerkezeteket.
+        <br><br>
+        Az unifikációnak két változata van:
+        <br><br>
+        <strong>Destruktív unifikáció:</strong>
+        <ul>
+            <li>Két szerkezet unifikációjakor az egyik megszűnik, és helyén létrejön az eredményszerkezet</li>
+            <li>Gyors</li>
+            <li>Bizonyos esetekben nem kívánt hatása is lehet (pl. ha egy szabályt alkalmazunk, annak formáját nem szeretnénk a művelet következtében megváltoztatni)</li>
+            <li><em>Az eredmény az első szerkezet helyére kerül, a második elvész — nem lehet visszalépni</em></li>
+        </ul>
+        <strong>Nem-destruktív unifikáció (unifikálhatóság-ellenőrzés):</strong>
+        <ul>
+            <li>A kiinduló szerkezetek nem változnak, az eredmény egy új, harmadik szerkezet</li>
+            <li>Az implementációkban igen gyakori</li>
+            <li>Könnyű kezelni, viszont másolási műveletet igényel</li>
+            <li>Az unifikálhatóság-ellenőrzés egy reláció, igen/nem eredménnyel, más kimenet nélkül</li>
+            <li><em>Létrehoz egy harmadikat — így vissza lehet menni időben (backtracking lehetséges)</em></li>
+        </ul>
     </div>
 
 
@@ -868,12 +888,17 @@ VP → V   S'</pre>
     <h3>BU és TD kombinációi</h3>
     
     <ul>
-        <li><strong>BU elemzés előfordulási valószínűségekkel:</strong> egy táblázatban látjuk, hogy az egyes szavak mik szoktak lenni (pl. <em>does</em> szinte mindig Aux) — így a ritka opciókat eleve kisebb súllyal kezeljük.</li>
-        <li><strong>TD építés BU jóslással (balsarok-elemzés):</strong> a balsarok az, amivel egy szabály kezdődhet. Pl. ha tudjuk, hogy a <code>"Does"</code> csak Aux lehet, rögtön kizárjuk az összes többi lehetőséget — nem kell vakon végigpróbálni.</li>
+        <li><strong>BU elemzés előfordulási valószínűségekkel:</strong> egy táblázatban látjuk, hogy az egyes szavak mik szoktak lenni — így a ritka opciókat eleve kisebb súllyal kezeljük.</li>
+        <li><strong>TD építés BU jóslással (balsarok-elemzés):</strong> a balsarok az, amivel egy szabály kezdődhet. Pl. ha tudjuk, hogy a <code>"Does"</code> csak Aux (segédige) lehet, rögtön kizárjuk az összes többi lehetőséget — nem kell vakon végigpróbálni.</li>
         <li><strong>Ismétlődő részszerkezetek tárolása:</strong> az egyszer már megtalált jó részfákat félretesszük (chart), hogy ne kelljen újra kiszámolni.</li>
-        <li><strong>Earley-elemző:</strong> repetitív szerkezetek eliminálása, pontozott szabály (a pötty jelzi, hol tart az elemzés): <em>jóslás, elemzés, befejező</em><br>
-            <a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h15m26s" target="_blank">▶ Előadás ezen a részen</a></li>
-        </li>
+        <li><strong>Earley-elemző:</strong> párhuzamos top-down elemzés, amely dinamikus programozással polinomiálisra csökkenti az egyébként exponenciális időigényt. Alapja a <strong>pontozott szabály</strong>: a pötty (•) jelzi, hol tartunk az adott szabály elemzésében.    
+        <br><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h15m26s" target="_blank">▶ Előadás ezen a részen</a></li>
+        <h4>Részletek:</h4>
+            <ul>
+                <li><strong>Jóslás (Predictor):</strong> a pötty nem-terminális előtt áll → megjósoljuk, milyen szerkezet jön (pl. S → • NP VP: most egy NP-t várunk)</li>
+                <li><strong>Beolvasás (Scanner):</strong> a pötty terminális előtt áll → megnézzük, egyezik-e az aktuális szó (pl. S → NP • VP: az NP lefutott, most a VP következik)</li>
+                <li><strong>Befejezés (Completer):</strong> a pötty a szabály végén van → a részszerkezet kész, jelezzük a szülő szabálynak, hogy léphet tovább</li>
+            </ul>
     </ul>
    
 
@@ -885,20 +910,27 @@ VP → V   S'</pre>
 
     <div class="definicio">
         <strong>Unifikáció</strong> — jegy-érték párokon értelmezett művelet: két jegyszerkezet összeolvad (J×J → J), de megszűnik, ha ugyanazon ösvényen eltérő atomi értékek állnak.<br>
-        <strong>!</strong> Nem a jegynek, hanem az <em>odavezető útnak</em> van értéke. Nem azt mondjuk, hogy „az igének száma van", hanem hogy <em>„a mondat állítmányát jelző ige száma azonos a mondat alanyát jelző főnév számával"</em> — vagyis két ösvény végén lévő értéknek kell egyeznie. Ha ezt le tudjuk rajzolni a DAG-ban, nem kell külön szabály az egyes és többes számú egyeztetésre: az egyeztetési jegynek van száma, a számnak lehetséges értéke (egyes vagy többes).
     </div>
-
     <div class="definicio">
-        <strong>Unifikációs morfológia — HuMor</strong> (High-speed Unification Morphology) — nem destruktív: a tulajdonságok (pl. szemantikai jegyek, igekötő) jegyként szerepelnek. Tő + toldalék összeillesztése unifikációval: bináris atomi értékek (+/−).
+        <strong>Morfológiában: — HuMor</strong>
+        <ul>
+            <li>Szótövek és ragok jegyeinek összeillesztése</li>
+            <li>Egyeztetés ellenőrzése (pl. számban, személyben)</li>
+            <li>Morfoszintaktikai tulajdonságok kombinálása</li>
+        </ul>
     </div>
+<div class="definicio">
+    
+            <strong>Szintaxisban:</strong>
 
-    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h20m26s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <div class="definicio">
-        <strong>Unifikációs szintaxis</strong> — a kategóriák (szófajok) mondatszabályokba kerülnek: VP to, SHat, 3sg NP… A szabály megszorítja, hogy pl. „to-s igét", „hogy-os mondatot", „E/3 személyű főnevet" várunk.<br><br>
-        <strong>Fejjegyek:</strong> végigvonulnak az egész szerkezeten (pl. szám, személy)<br>
-        <strong>Lábjegyek:</strong> csak helyben szükségesek (pl. <em>a/az</em> — melyik hanggal kezdődik a következő szó)<br><br>
-        <em>Pl.: E/3 személyű névszóhoz illik-e a névszó? Vagy a „likes" nem állhat egyedül?</em><br><br>
-        <strong>~ Earley unifikációra:</strong> a pötty jelzi, hol tartunk az unifikációban.
+        <ul>
+            <li>Összetevők grammatikai egyeztetése</li>
+            <li>Hosszútávú függőségek kezelése</li>
+            <li>Unifikációs nyelvtanok (pl. HPSG, LFG)</li>
+        </ul>
+        <strong>Példa egyeztetésre:</strong><br>
+        „A fiú olvas" — helyes (egyes szám egyezik)<br>
+        „<em>*A fiú olvassák</em>" — helytelen (számban nincs egyezés)
     </div>
 
 
@@ -1466,7 +1498,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
 <script src="shared.js"></script>
 <script>
   // —— Nyelvtechnológia-specifikus kiemelések ——
-  highlightTerms(document.body, /reguláris kifejezés|véges automata|FSA|FST|RTN|ATN/gi, '#cc0000');
+  highlightTerms(document.body, /reguláris kifejezés|egzocentrikus||Hátránya|Pl.|bottom-up|top-down|Unifikálhatóság|Jegyszerkezet|endocentrikus|DAG|Erőssége|Gyengesége|X-vonás|HuMor|Nem-|Destruktív|BU|TD|véges automata|FSA|FST|RTN|ATN/gi, '#cc0000');
   highlightTerms(document.body, /morfológia|unifikáció/gi, '#cc0000');
   highlightTerms(document.body, /korpusz|szóbeágyazás/gi, '#cc0000');
 </script>
