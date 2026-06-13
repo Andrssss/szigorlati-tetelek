@@ -19,16 +19,37 @@ document.addEventListener('DOMContentLoaded', function() {
 (function() {
     var lastY = 0;
     var hideThreshold = 120;
-    var showThreshold = 60;
     var accumulated = 0;
+    var wheelUp = false;
+    var touchStartY = 0;
+
+    window.addEventListener('wheel', function(e) {
+        wheelUp = e.deltaY < 0;
+    }, { passive: true });
+
+    window.addEventListener('touchstart', function(e) {
+        touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    window.addEventListener('touchmove', function(e) {
+        wheelUp = e.touches[0].clientY > touchStartY;
+    }, { passive: true });
+
     window.addEventListener('scroll', function() {
         var y = window.scrollY;
         var delta = y - lastY;
         lastY = y;
-        if (y <= 60) { document.body.classList.remove('scroll-hidden'); accumulated = 0; return; }
+        if (y <= 80) { document.body.classList.remove('scroll-hidden'); accumulated = 0; return; }
         accumulated += delta;
-        if (accumulated > hideThreshold) { document.body.classList.add('scroll-hidden'); accumulated = 0; }
-        else if (accumulated < -showThreshold) { document.body.classList.remove('scroll-hidden'); accumulated = 0; }
+        if (accumulated > hideThreshold) {
+            document.body.classList.add('scroll-hidden');
+            accumulated = 0;
+        } else if (delta < 0 && wheelUp) {
+            document.body.classList.remove('scroll-hidden');
+            accumulated = 0;
+        } else if (accumulated < 0) {
+            accumulated = 0;
+        }
     }, { passive: true });
 })();
 
