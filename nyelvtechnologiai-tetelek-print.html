@@ -741,8 +741,10 @@ alkalmazásai a nyelvtechnológiában (morfológiában, szintaxisban).</a></h2>
     </div>
     <p>Ez a két tulajdonság független, ezért egyetlen fa egyszerre fejezi ki őket. Egy fa <strong>projektív</strong>, ha az élek nem keresztezik egymást — a környezetfüggetlen nyelvtanok zárójelezésével pontosan ez érhető el (egymásba ágyazott vagy diszjunkt szerkezetek).</p>
 
-    <h4>Közvetlen összetevős szerkezet (Chomsky)</h4>
+    <h3>Közvetlen összetevős szerkezet (Chomsky)</h3>
     <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=5m32s" target="_blank">▶ Előadás ezen a részen</a></p>
+        <img src="img/nyelvtech/kozvetlen.png" alt="Verem automaták" style="max-width:500px;width:40%;">
+
     <p>A Chomsky által bevezetett <em>immediate constituency</em> elv szerint a mondat (S) közvetlenül két összetevőre bomlik: egy főnévi (NP) és egy igei (VP) csoportra. Ezek <strong>testvércsomópontok</strong>: nem alá-fölé rendelten, hanem egymás mellett állnak, a hierarchia csak a beágyazódásból adódik. Példa: <em>I know that Jane thinks that Bill likes beer</em> — beágyazott mondatokkal építkező rekurzív szerkezet.</p>
     <ul>
         <li><strong>Erőssége:</strong> a csoportoknak nevet ad (NP, VP, PP…), így a részfa egészére hivatkozhatunk.</li>
@@ -751,12 +753,13 @@ alkalmazásai a nyelvtechnológiában (morfológiában, szintaxisban).</a></h2>
     </ul>
 
     <h4>Miért problémás morfológiailag gazdag nyelveknél?</h4>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=16m27s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         A <strong>morfológia</strong> a szavak belső szerkezetének tana: hogyan épülnek fel a szavak tövekből és toldalékokból. Pl. <em>ház + ban = házban</em>, <em>olvas + t + am = olvastam</em>. 
     </div>
     <p>A közvetlen összetevős elemzés feltételezi, hogy az összetartozó szavak egymás mellé kerülnek a fában (projektív, egybefüggő részfák). Magyarban azonban ugyanaz a grammatikai viszony szabad szórenddel is kifejezhető — a tárgyat az esetrag (<em>-t</em>) jelöli, nem a pozíció. Így pl. <em>„A macska kergeti az egeret"</em> és <em>„Az egeret kergeti a macska"</em> mondatokban az összetevőcsoportok szétesnek, vagy legalábbis más fát alkotnak, miközben a mondat jelentése azonos. A morfológia <em>redundánssá</em> teszi a pozíciót — az összetevős faszerkezet ezért sokkal kevesebb információt hordoz, mint analitikus (pl. angol) nyelvek esetén.</p>
 
-    <h4>Függőségi (dependencia) szerkezet (Tesnière)</h4>
+    <h3>Függőségi (dependencia) szerkezet (Tesnière)</h3>
     <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=22m01s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>Az elemek <strong>nem ágaznak el</strong> új szülőcsomópontokba, hanem közvetlenül egymásra mutató, <strong>címkézett élekkel</strong> kapcsolódnak. A mondat központja az ige (a finitum); minden más bővítmény (alany, tárgy, határozó, kiegészítő) közvetlenül rajta vagy egymáson lóg.</p>
     <img src="img/nyelvtech/fuggosegi.png" alt="Verem automaták" style="max-width:500px;width:60%;">
@@ -765,7 +768,7 @@ alkalmazásai a nyelvtechnológiában (morfológiában, szintaxisban).</a></h2>
         <li><strong>Gyengesége:</strong> nem nevez meg csoportokat — nem lehet közvetlenül hivatkozni arra, hogy „a kutya" mint egész egy NP.</li>
     </ul>
 
-    <h4>X-vonás (X-bar) elmélet — a két szemlélet ötvözése</h4>
+    <h3>X-vonás (X-bar) elmélet — a két szemlélet ötvözése</h3>
     <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=27m02s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>Az X-vonás nyelvtan ötvözi a közvetlen összetevős és a függőségi szemléletet. Az <em>X</em> bármely szófaji kategória helyettesítője (V, N, P, A…); a szerkezet vonásszámmal nő, ahogy a fej egyre több bővítményét veszi fel.</p>
     <img src="img/nyelvtech/x_vonas.png" alt="Verem automaták" style="max-width:500px;width:40%;">
@@ -778,33 +781,17 @@ alkalmazásai a nyelvtechnológiában (morfológiában, szintaxisban).</a></h2>
     <p>Példa: <em>he studies computational linguistics at the university</em> — <em>studies</em> (V) → <em>studies computational linguistics</em> (V′, mert a tárgyat kötelezően felveszi) → <em>he studies …</em> (VP / V″, a specifier alany megérkezik); az <em>at the university</em> PP adjunkt, nem változtat a vonásszámon.</p>
     <p><strong>Endocentrikus vs. egzocentrikus szerkezet:</strong> az X-vonás az endocentrikus szerkezeteknél működik (van egyértelmű fej, amely átviszi a kategóriát). A koordináció (pl. <em>Jancsi és Juliska</em>) egzocentrikus: nincs igazi fej — sem Jancsi, sem Juliska, sem a kötőszó nem hozza önmagában a főnéviséget.</p>
 
-  
-    <h3>Alapvető mondatelemzési módszerek (BU és TD-elemzők) és kombinációik.</h3>
-    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=39m21s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A formális nyelvtan négyes <em>(N, T, P, S)</em>: <strong>N</strong> = nem-terminálisok (szófaji és mondatrész-kategóriák), <strong>T</strong> = terminálisok (szótári elemek), <strong>P</strong> = újraíró szabályok (pl. S → NP VP), <strong>S</strong> = mondat-szimbólum. <br><br>A szavak mondatba szerveződésének szabályaihoz a <strong>környezetfüggetlen (CF)</strong> szint terjedt el: a reguláris túl gyenge (csak lineáris szabályok, nem tud beágyazást kezelni), a környezetfüggő meg túl drága (köbös komplexitás) — a CF a kettő között a legtöbb szintaktikai jelenséget jól leírja.</p>
-    <p>A szabályok alkalmazásának irányától függően:</p>
-    <ul>
-        <li><strong>Felülről lefele (top-down):</strong> S-ből indulunk, a szabályokat balról jobbra alkalmazva levezetjük a bemenetet. A parser előre jósolja, milyen kategóriák jöhetnek, majd ellenőrzi a soron következő szavakat. Hátránya a vak próbálkozás, ha a nyelv nagyon szabad szórendű.</li>
-        <li><strong>Alulról felfele (bottom-up):</strong> a bemenet szavainak kategóriáiból építjük fel a fát, redukciókkal jutunk el S-ig. Ez biztosan csak valóban létező részfákat épít, de sok fölösleges részfa is létrejöhet, ha a nyelv rendetlen.</li>
-    </ul>
-    <h3>BU és TD kombinációi</h3>
-    <p>A gyakorlatban a legjobb megoldás nem tisztán TD vagy BU, hanem valamilyen keverék. A <strong>chart parser</strong> és az <strong>Earley</strong> elsősorban azért működik jól, mert mindkét irány információját tárolja, és újrafelhasználja a már megvizsgált részeredményeket.</p>
-    <ul>
-        <li><strong>Chart parser:</strong> a már bejárt részfákat egy táblázatban (<em>chart</em>) tárolja. Ha ugyanazt a részfát újra kellene vizsgálni, a parser egyszerűen újra felhasználja. Ez drasztikusan csökkenti az időkomplexitást ambiguitás és rekurzió esetén.</li>
-        <li><strong>Earley:</strong> három lépésből áll: előrejelzés (<em>predict</em>), skálázás (<em>scan</em>) és kiegészítés (<em>complete</em>). Így egyszerre képes kezelni top-down jóslatokat és bottom-up megtalált tokeneket.</li>
-        <li><strong>Left-corner:</strong> olyan hibrid, amely előre kiszámítja, mely szabályok kezdődhetnek egy adott szóval, és ezáltal korán szűri a nem releváns szabályokat.</li>
-    </ul>
-    <h4>Valószínűségi és kontextusfüggő kiterjesztések</h4>
-    <p>A <strong>PCFG</strong> a szabályokhoz valószínűségeket rendel. Az elemző nem csak azt nézi, hogy a mondat levezethető-e, hanem hogy melyik levezetés a legvalószínűbb a korpusz alapján. Ez javítja a természetes nyelvű mondatok feldolgozását, ahol egyszerre több helyes elemzés is lehetséges.</p>
-    <p>Egyes modern algoritmusok a hagyományos <strong>BU / TD</strong> módszerekre épülnek, de statisztikai súlyokat és tanulókomponenseket is használnak. Például a <strong>redukciós parser</strong> elindítja a token feldolgozását, majd egy irányított veremmel kombinálja a top-down jóslatokat.</p>
-    <p>A morfológiailag gazdag nyelveknél (magyar) gyakori, hogy a fa levelei nem szavak, hanem <strong>morfémák</strong>, és a szintaxis „belenyúl" a szó belsejébe — pl. a <em>szemben lakó szomszéd</em> elemzéséhez a <em>lak-ó</em> melléknévi igenév összetétel megbontása szükséges.</p>
 
-    <h3>Jegyszerkezetek, DAG, unifikáció, unifikálhatóság.</h3>
+
+
+    
+  <h3>Jegyszerkezetek, DAG, unifikáció, unifikálhatóság.</h3>
     <h4>DAG és jegyszerkezet</h4>
     <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h20m41s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>A jegyszerkezetek általában <strong>attribútum-érték párokat</strong> tartalmaznak, amelyeket irányított ciklusmentes gráfként, azaz <strong>DAG</strong>-ként modellezhetünk. Minden csomópont egy fogalmi egységet vagy szintaktikai kategóriát jelöl, az élek pedig attribútumok, amelyek más csomópontokra mutatnak.</p>
     <p>Példa: az NP csomópontnak lehet egy <code>NUM</code> attribútuma, amely a „többes” értékre mutat, és egy <code>CASE</code> attribútuma a „nominatív” értékre. A DAG előnye, hogy ugyanazt a jegyet több helyen is megoszthatjuk, és strukturált információt adhatunk át a feldolgozás során.</p>
     <h4>Unifikáció és unifikálhatóság</h4>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h25m48s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>Az <strong>unifikáció</strong> olyan művelet, amely két jegyszerkezetet próbál összekapcsolni. Ha a két DAG nem tartalmaz ellentmondó attribútumérték-párt, akkor egyesíthetők; ezt nevezzük <strong>unifikálhatóságnak</strong>.</p>
     <p>Ha egy jegy egyik ágán <code>NUM = SG</code>, a másikon pedig <code>NUM = PL</code> szerepel, akkor az unifikáció <strong>sikertelen</strong>, mert a két érték ellentmond. Ha viszont az egyik oldalon nincs érték, a másik oldalról örökölhető az attribútum, és az unifikáció sikeres.</p>
     <ul>
@@ -813,6 +800,7 @@ alkalmazásai a nyelvtechnológiában (morfológiában, szintaxisban).</a></h2>
     </ul>
     <p>Az <strong>unifikálhatóság</strong> fontos a mondatelemzésben, mert a parser így szűri ki azt az elemzést, amelyik nem tartja be a nyelvben kötelező egyeztetési szabályokat.</p>
     <h4>Unifikáció a nyelvtechnológiában</h4>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h33m35s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>Az unifikációt nem csak szintaktikai elemzésre használjuk, hanem morfológiában és lexikális feldolgozásban is. Például a morfológiai elemző egyesíti a szó tövét és a toldalék jegyeit, míg a szintaktikai elemző a mondatcsomópontok jegyeit egyezteti.</p>
     <p>Az unifikációs feldolgozás lehet <strong>destruktív</strong> (a jegyek módosulnak és felülíródnak) vagy <strong>nem destruktív</strong> (a jegyeket új változatként hozzuk létre, az eredeti szerkezet megmarad). A magyar nyelvben különösen hasznos a nem destruktív unifikáció, mert a morfológiai és szintaktikai jegyek többféleképpen is értelmezhetők.</p>
     <p><strong>Példa – alany–állítmány egyeztetés:</strong> A <em>„A fiúk futnak."</em> mondatban:</p>
@@ -836,6 +824,31 @@ alkalmazásai a nyelvtechnológiában (morfológiában, szintaxisban).</a></h2>
     <p class="note">Az unifikáció és a jegyszerkezetek fogalmát a <strong>3. tételben</strong> vezettük be (HuMor, DAG, destruktív/nem-destruktív unifikáció). Itt ugyanazt a mechanizmust <strong>szintaxis szintjén</strong> alkalmazzuk: nem tő+toldalék, hanem mondat csomópontjai között.</p>
   
   
+
+
+
+    <h3>Alapvető mondatelemzési módszerek (BU és TD-elemzők) és kombinációik.</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=39m21s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A formális nyelvtan négyes <em>(N, T, P, S)</em>: <strong>N</strong> = nem-terminálisok (szófaji és mondatrész-kategóriák), <strong>T</strong> = terminálisok (szótári elemek), <strong>P</strong> = újraíró szabályok (pl. S → NP VP), <strong>S</strong> = mondat-szimbólum. <br><br>A szavak mondatba szerveződésének szabályaihoz a <strong>környezetfüggetlen (CF)</strong> szint terjedt el: a reguláris túl gyenge (csak lineáris szabályok, nem tud beágyazást kezelni), a környezetfüggő meg túl drága (köbös komplexitás) — a CF a kettő között a legtöbb szintaktikai jelenséget jól leírja.</p>
+    <p>A szabályok alkalmazásának irányától függően:</p>
+    <ul>
+        <li><strong>Felülről lefele (top-down):</strong> S-ből indulunk, a szabályokat balról jobbra alkalmazva levezetjük a bemenetet. A parser előre jósolja, milyen kategóriák jöhetnek, majd ellenőrzi a soron következő szavakat. Hátránya a vak próbálkozás, ha a nyelv nagyon szabad szórendű.</li>
+        <li><strong>Alulról felfele (bottom-up):</strong> a bemenet szavainak kategóriáiból építjük fel a fát, redukciókkal jutunk el S-ig. Ez biztosan csak valóban létező részfákat épít, de sok fölösleges részfa is létrejöhet, ha a nyelv rendetlen.</li>
+    </ul>
+    <h3>BU és TD kombinációi</h3>
+    <p>A gyakorlatban a legjobb megoldás nem tisztán TD vagy BU, hanem valamilyen keverék. A <strong>chart parser</strong> és az <strong>Earley</strong> elsősorban azért működik jól, mert mindkét irány információját tárolja, és újrafelhasználja a már megvizsgált részeredményeket.</p>
+    <ul>
+        <li><strong>Chart parser:</strong> a már bejárt részfákat egy táblázatban (<em>chart</em>) tárolja. Ha ugyanazt a részfát újra kellene vizsgálni, a parser egyszerűen újra felhasználja. Ez drasztikusan csökkenti az időkomplexitást ambiguitás és rekurzió esetén.</li>
+        <li><strong>Earley:</strong> három lépésből áll: előrejelzés (<em>predict</em>), skálázás (<em>scan</em>) és kiegészítés (<em>complete</em>). Így egyszerre képes kezelni top-down jóslatokat és bottom-up megtalált tokeneket.</li>
+        <li><strong>Left-corner:</strong> olyan hibrid, amely előre kiszámítja, mely szabályok kezdődhetnek egy adott szóval, és ezáltal korán szűri a nem releváns szabályokat.</li>
+    </ul>
+    <h4>Valószínűségi és kontextusfüggő kiterjesztések</h4>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h4m50s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A <strong>PCFG</strong> a szabályokhoz valószínűségeket rendel. Az elemző nem csak azt nézi, hogy a mondat levezethető-e, hanem hogy melyik levezetés a legvalószínűbb a korpusz alapján. Ez javítja a természetes nyelvű mondatok feldolgozását, ahol egyszerre több helyes elemzés is lehetséges.</p>
+    <p>Egyes modern algoritmusok a hagyományos <strong>BU / TD</strong> módszerekre épülnek, de statisztikai súlyokat és tanulókomponenseket is használnak. Például a <strong>redukciós parser</strong> elindítja a token feldolgozását, majd egy irányított veremmel kombinálja a top-down jóslatokat.</p>
+    <p>A morfológiailag gazdag nyelveknél (magyar) gyakori, hogy a fa levelei nem szavak, hanem <strong>morfémák</strong>, és a szintaxis „belenyúl" a szó belsejébe — pl. a <em>szemben lakó szomszéd</em> elemzéséhez a <em>lak-ó</em> melléknévi igenév összetétel megbontása szükséges.</p>
+
+    
   
   
     <h3>Az unifikáció és alkalmazásai a nyelvtechnológiában (morfológiában, szintaxisban).</h3>
