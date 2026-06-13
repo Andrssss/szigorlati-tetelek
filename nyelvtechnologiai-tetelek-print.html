@@ -836,6 +836,7 @@ alkalmazásai a nyelvtechnológiában (morfológiában, szintaxisban).</a></h2>
         <li><strong>Alulról felfele (bottom-up):</strong> a bemenet szavainak kategóriáiból építjük fel a fát, redukciókkal jutunk el S-ig. Ez biztosan csak valóban létező részfákat épít, de sok fölösleges részfa is létrejöhet, ha a nyelv rendetlen.</li>
     </ul>
     <h3>BU és TD kombinációi</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h4m17s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>A gyakorlatban a legjobb megoldás nem tisztán TD vagy BU, hanem valamilyen keverék. A <strong>chart parser</strong> és az <strong>Earley</strong> elsősorban azért működik jól, mert mindkét irány információját tárolja, és újrafelhasználja a már megvizsgált részeredményeket.</p>
     <ul>
         <li><strong>Chart parser:</strong> a már bejárt részfákat egy táblázatban (<em>chart</em>) tárolja. Ha ugyanazt a részfát újra kellene vizsgálni, a parser egyszerűen újra felhasználja. Ez drasztikusan csökkenti az időkomplexitást ambiguitás és rekurzió esetén.</li>
@@ -852,6 +853,7 @@ alkalmazásai a nyelvtechnológiában (morfológiában, szintaxisban).</a></h2>
   
   
     <h3>Az unifikáció és alkalmazásai a nyelvtechnológiában (morfológiában, szintaxisban).</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h20m26s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>A morfológiánál bevezetett <strong>jegy–érték párokon</strong> alapuló reprezentáció a mondatelemzésben is használható: a csomópontokhoz egyezési jegyeket (szám, személy, eset, határozottság) rendelünk, és az összekapcsolásnál <strong>unifikációval</strong> ellenőrizzük az összeillést (alany–állítmány egyeztetés, vonzatkeret kielégítése). Így a mondatelemzés ugyanazzal a műveletkészlettel végezhető, mint a morfológia.</p>
     <p><strong>Példa – alany–állítmány egyeztetés:</strong> A <em>„A fiúk futnak."</em> mondatban:</p>
     <ul>
