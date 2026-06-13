@@ -304,11 +304,20 @@ td {
         cursor: pointer;
         box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         color: #fff;
-        transition: background 0.2s;
+        transition: background 0.2s, opacity 0.3s, transform 0.3s;
     }
     .note-toggle-btn:hover { background: #3a9a3a; }
     .notes-hidden .note-toggle-btn { background: #a02020; }
     .notes-hidden .note-toggle-btn:hover { background: #c02828; }
+
+    .back-btn { transition: background 0.2s, opacity 0.3s, transform 0.3s; }
+
+    .scroll-hidden .back-btn,
+    .scroll-hidden .note-toggle-btn {
+        opacity: 0;
+        transform: translateY(-60px);
+        pointer-events: none;
+    }
 }
 
 .notes-hidden .note { display: none; }

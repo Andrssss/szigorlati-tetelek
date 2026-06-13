@@ -16,6 +16,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+(function() {
+    var lastY = 0;
+    window.addEventListener('scroll', function() {
+        var y = window.scrollY;
+        if (y > lastY && y > 60) {
+            document.body.classList.add('scroll-hidden');
+        } else {
+            document.body.classList.remove('scroll-hidden');
+        }
+        lastY = y;
+    }, { passive: true });
+})();
+
 // 1. Bold-kék szín a Tétel/Definíció/stb. labelekre (csak a prefix, kettőspontig)
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('strong').forEach(function(el) {
