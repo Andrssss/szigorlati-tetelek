@@ -289,8 +289,33 @@ td {
         transition: background 0.2s;
     }
     .back-btn:hover { background: #444; }
+
+    .note-toggle-btn {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        z-index: 1000;
+        background: #2a7a2a;
+        border: 1px solid rgba(255,255,255,0.25);
+        border-radius: 8px;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        color: #fff;
+        transition: background 0.2s;
+    }
+    .note-toggle-btn:hover { background: #3a9a3a; }
+    .notes-hidden .note-toggle-btn { background: #a02020; }
+    .notes-hidden .note-toggle-btn:hover { background: #c02828; }
 }
+
+.notes-hidden .note { display: none; }
+.notes-hidden [style*="font-style:italic"][style*="color:#555"],
+.notes-hidden [style*="font-style: italic"][style*="color:#555"] { display: none; }
 
 @media print {
     .back-btn { display: none; }
+    .note-toggle-btn { display: none; }
 }

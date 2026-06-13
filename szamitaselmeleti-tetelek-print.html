@@ -12,6 +12,7 @@
 <body>
 
 <a class="back-btn" href="index.html">← Vissza</a>
+<button class="note-toggle-btn" onclick="toggleNotes()">Kommentek ON</button>
 
 <!-- COVER PAGE -->
 <div class="page">
@@ -345,8 +346,8 @@ Turing­gépekkel. </p>
             <li>Q, egy véges halmaz az állapotok halmaza</li>
             <li>Σ, egy véges halmaz az abc</li>
             <li>δ: Q × Σ → Q az állapotátmenet függvény</li>
-            <li>q₀ ∈ Q a kezdeti állapot  ( "∈" mert 1 elem része a halmaznak )  </li>
-            <li>F ⊆ Q a végállapotok halmaza  ( "⊆" mert halmaz része a halmaznak )</li>
+            <li>q₀ ∈ Q a kezdeti állapot  <span class="note">  ( "∈" mert 1 elem része a halmaznak )   </span>  </li>
+            <li>F ⊆ Q a végállapotok halmaza  <span class="note">   ( "⊆" mert halmaz része a halmaznak )  </span> </li>
         </ol>
     </div>
 
@@ -382,7 +383,7 @@ Turing­gépekkel. </p>
         <ol>
             <li>Q, egy véges halmaz az állapotok halmaza</li>
             <li>Σ, egy véges halmaz az abc</li>
-            <li>δ: Q × (Σ ∪ {ε}) → P(Q) az állapotátmenet fv  (P mint power set = hatványhalamaz)  </li>
+            <li>δ: Q × (Σ ∪ {ε}) → P(Q) az állapotátmenet fv   <span class="note"> (P mint power set = hatványhalamaz)  </span>   </li>
             <li>q₀ ∈ Q a kezdeti állapot</li>
             <li>F ⊆ Q a végállapotok halmaza</li>
         </ol>
@@ -394,16 +395,16 @@ Turing­gépekkel. </p>
         N = (Q, Σ, δ, q₀, F) egy NVA, w = w₁w₂…wₙ Σ<sub>ε</sub>-beli jelek sorozata.<br>
         N felismeri w-t, ha ∃ r₀r₁…rₙ Q-beli állapotok sorozata, hogy:<br>
         <ol>
-            <li>r₀ = q₀   (kezdeti állapotból indítjuk)</li>
+            <li>r₀ = q₀   <span class="note">  (kezdeti állapotból indítjuk)  </span> </li>
             <li>r<sub>i+1</sub> ∈ δ(r<sub>i</sub>, w<sub>i+1</sub>) &nbsp; i = 0,…,n−1 </li>
-            <li>rₙ ∈ F (rₙ meg elfogadó állapot)</li>
+            <li>rₙ ∈ F    <span class="note">   (rₙ meg elfogadó állapot)  </span> </li>
         </ol>
     </div>
 
     <div class="definicio">
         <strong>Definíció: Az N nva által felismert nyelv</strong><br>
         Az N NVA felismeri az L nyelvet, ha <br>
-        <div style="margin: 6px 0 6px 20px;">L = {w | N felismeri w-t} ( azaz azon szavakból áll amiket elfogad az automata )</div>
+        <div style="margin: 6px 0 6px 20px;">L = {w | N felismeri w-t}  <span class="note"> ( azaz azon szavakból áll amiket elfogad az automata ) </span></div>
     </div>
 
     <div style="text-align:center; margin: 10px 0;">
@@ -453,7 +454,7 @@ Turing­gépekkel. </p>
 
     <div class="definicio">
         <strong>Definíció (Automata-ekvivalencia):</strong> M₁ és M₂ (két automata) <em>ekvivalensek</em>, ha L(M₁) = L(M₂). (ha ugyanazon nyelvet ismerik fel)
-        ( Determinisztikus véges automata kevesebb nyelvet ismer fel, mint nemdeterminisztikus véges automata, de minden determinisztikus véges automata által felismert nyelvet felismer egy nemdeterminisztikus véges automata is.)
+        <span class="note"> ( Determinisztikus véges automata kevesebb nyelvet ismer fel, mint nemdeterminisztikus véges automata, de minden determinisztikus véges automata által felismert nyelvet felismer egy nemdeterminisztikus véges automata is.)       </span>
     </div>
 
 
@@ -473,7 +474,7 @@ Turing­gépekkel. </p>
     
     <div class="tetel-box">
         <strong>Következmény (L<sub>R</sub> = L<sub>N</sub> = L<sub>D</sub>):</strong> Az alábbi, valamely adott Σ feletti nyelvosztályok megegyeznek:<br>
-        1. L<sub>R</sub> — a reguláris nyelvek halmaza (reguláris kifejezésekkel megadható).<br>
+        1. L<sub>R</sub> — a reguláris nyelvek halmaza  <span class="note">  (reguláris kifejezésekkel megadható)  </span> .<br>
         2. L<sub>N</sub> — az NVA-k által felismert nyelvek.<br>
         3. L<sub>D</sub> — a DVA által felismert nyelvek.<br><br>
         <span style="font-weight:normal;">Megjegyzés: L<sub>R</sub> ⊆ L<sub>N</sub> , és L<sub>N</sub> = L<sub>D</sub>. Mert minden reguláris kifejezés konvertálható NVA-vá, és minden NVA szimulálható ekvivalens DVA-val a részhalmaz-konstrukcióval.</span>
@@ -485,8 +486,8 @@ Turing­gépekkel. </p>
     <div class="tetel-box">
         <strong>Tétel:</strong> Legyen M = (Q, Σ, δ, q₀, F) DVA. Ekkor ∀ x, y ∈ Σ* esetén:<br>
         x ∼<sub>M</sub> y &nbsp; ⟹ &nbsp; x ≈<sub>L(M)</sub> y<br>
-        ( HA x és y string ekvivalensek az automatára nézve, akkor x és y ekvivalensek a felismert nyelvre nézve.
-        Azaz ha x és y ugyanabba az állapotba jutnak, akkor ugyanaz a sorsuk a nyelvben is, vagyis mindkettő benne van, vagy egyik sem.)
+        <span class="note">  ( HA x és y string ekvivalensek az automatára nézve, akkor x és y ekvivalensek a felismert nyelvre nézve.
+        Azaz ha x és y ugyanabba az állapotba jutnak, akkor ugyanaz a sorsuk a nyelvben is, vagyis mindkettő benne van, vagy egyik sem.)     </span> 
     </div>
 
     <div class="tetel-box">
@@ -901,12 +902,12 @@ Speciális esetek:
     <div class="definicio">
         <strong>Definíció:</strong> Egy L ⊆ Σ* nyelv <em>Turing felismerhető</em> vagy <em></em>rekurzíve felsorolható</em>, ha van olyan M Turing gép, melyre L(M) = L.<br><br>
         <strong>Megj:</strong> s ∈ Σ* \ L esetén nem biztos, hogy megáll a gép, így csak az L elemeire kapunk igenlő választ. (ha végtelen ciklusba kerűl egy TG akkor nem lesz egy szó felismerhető)<br><br>
-        ( Rekurzíve felsorolható nyelvben, igen az véges időn belűl kapunk választ, de ha vmi nem felismerhető, akkor végtelen ciklusba kerül, vagy megkapjuk véges időn belűl )
+         <span class="note">  ( Rekurzíve felsorolható nyelvben, igen az véges időn belűl kapunk választ, de ha vmi nem felismerhető, akkor végtelen ciklusba kerül, vagy megkapjuk véges időn belűl )     </span> 
 
     </div>
     <div class="definicio">
         <strong>Definíció:</strong> Egy L ⊆ Σ* nyelv <em>Turing eldönthető</em> vagy <em>rekurzív</em>, ha van olyan M Turing gép, melyre L(M) = L, és M minden s ∈ Σ* szóra megáll.<br><br>
-        ( Rekuzív nyelvben, igen is nem is véges időn belűl megkapjuk a választ, tehát minden szóra megáll a gép )
+         <span class="note">  ( Rekuzív nyelvben, igen is nem is véges időn belűl megkapjuk a választ, tehát minden szóra megáll a gép )     </span> 
     </div>
     <div class="tetel-box">
         <strong>Megj:</strong> Minden rekurzív nyelv rekurzíve felsorolható is. (Az érdekes kérdés a fordított tartalmazás, amiről később belátjuk, hogy nem áll fenn.)<br><br>
@@ -927,7 +928,7 @@ s ∈ {0, 1}* szót? (‘Szuper’ algoritmust keresnénk.) - Nem<br><br>
         <strong>Definíció: Univerzális nyelv</strong><br>
         <div style="margin: 6px 0 6px 20px;">L<sub>u</sub> = { w#s ∈ {0, 1}* | M<sub>w</sub> létezik, és s ∈ L<sub>M<sub>w</sub></sub>  ( w#s stringekből áll, hogy  M<sub>w</sub> Turing-gépet kódol, ami elfogadja az s szót )   }</div>
         <strong>Megj:</strong> L<sub>u</sub> éppen az univerzális TG nyelve, azaz L<sub>u</sub> rekurzíve felsorolható. ( Engedd el, hogy miért )<br><br>
-        <strong>Tétel: </strong> L<sub>u</sub> nem rekurzív nyelv. ( Rukrzív = Eldönthető-e a nyelv ?? - Nem, mert w -vel nem eldönthető, h elfogadja-e s-t, így nem rekurzív )
+        <strong>Tétel: </strong> L<sub>u</sub> nem rekurzív nyelv. <span class="note">   ( Rukrzív = Eldönthető-e a nyelv ?? - Nem, mert w -vel nem eldönthető, h elfogadja-e s-t, így nem rekurzív )     </span> 
     </div>
 
     <h3>Turing-gépek és grammatikák kapcsolata</h3>
@@ -1009,7 +1010,7 @@ u = f(w1, … wk). <br>
         Algoritmus: véges sok lépéssel kiszámít egy fv-t, eldönt egy kérdést.<br>
 Megvalósítható-e minden algoritmus Turing géppel? - Yes<br><br>
 
-        <strong>Church–Turing tézis:</strong> Ami algoritmussal kiszámítható/eldönthető, az Turing kiszámítható/eldönthető. ( Algoritmussal kiszámolható = TG kiszámolható )<br>
+        <strong>Church–Turing tézis:</strong> Ami algoritmussal kiszámítható/eldönthető, az Turing kiszámítható/eldönthető.   <span class="note">   ( Algoritmussal kiszámolható = TG kiszámolható )     </span> <br>
          Nevezetesen:<br>
         <ul style="font-weight:normal; margin-top:6px;">
             <li>Egy f : Σ* → Σ* parciális fv algoritmussal kiszámítható ⟺ f parciálisan rekurzív.</li>
@@ -1112,7 +1113,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <div style="margin: 6px 0 6px 20px;">L<sub>h</sub> = {w#s ∈ {0, 1}* | M<sub>w</sub> létezik, és s bemenettel elindítva megáll}</div>
         <strong>Tétel:</strong> L<sub>h</sub> rekurzíve felsorolható, de nem rekurzív nyelv.<br><br>
 
-        ( Az igen választ megkapjuk véges időn belűl )
+         <span class="note">  ( Az igen választ megkapjuk véges időn belűl )    </span> 
     </div>
 
 
@@ -1212,14 +1213,14 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
     <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=14m47s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Definíció:</strong> P = <strong  style="font-size: 20px;">U</strong ><sub>k≥1</sub> TIME(n<sup>k</sup>) a polinom időben egyszalagos TG-pel eldönthető nyelvek osztálya.<br>
-        (Pl: TIME(n^2) )<br><br>
+         <span class="note">(Pl: TIME(n^2) )   </span> <br><br>
         <strong>Megj:</strong> Valamely, az alappal ekvivalens speciális TG modellt használva, ha az polinom időben szimulálható alap TG-pel, akkor P invariáns arra nézve, hogy az alap vagy a speciális TG-et használjuk számítási modellként.<br>
         <strong>Megj:</strong> P a praktikusan számítógéppel megoldható problémáknak felel meg.<br>
-        ( P-ről azt lehet mondani, hogy a P beli problémákra gyors számítógéppel megoldható megoldást találunk. )
+         <span class="note"> ( P-ről azt lehet mondani, hogy a P beli problémákra gyors számítógéppel megoldható megoldást találunk. )   </span> 
     </div>
     <div class="tetel-box">
         <strong>Tétel:</strong> Ha az L nyelv n<sup>log n</sup>-nél rövidebb időben nem ismerhető fel, akkor L ∉ <strong>P</strong>.<br>
-        ( P = ∪ TIME(n<sup>k</sup>), azaz P-ben csak fix kitevőjű polinomok vannak. n<sup>log n</sup> ≫ n<sup>k</sup> minden fix k-ra, így L ∉ <strong>P</strong>. )
+        <span class="note"> ( P = ∪ TIME(n<sup>k</sup>), azaz P-ben csak fix kitevőjű polinomok vannak. n<sup>log n</sup> ≫ n<sup>k</sup> minden fix k-ra, így L ∉ <strong>P</strong>. )   </span> 
     </div>
 
     <h3>Nevezetes P-beli problémák</h3>
@@ -1368,7 +1369,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         és V polinom idejű w hosszát tekintve.<br>
         <span class="note">(c a tanú — „bizonyíték" arra, hogy w ∈ L)</span><br><br>
 
-        <strong>Tétel:</strong> NP azokat a nyelveket tartalmazza, amelyek polinomiálisan bizonyíthatók. ( Azaz NP = nem det. TG-vel felismerhető nyelvek osztálya. Ez a két fogalom ekvivalens )<br>
+        <strong>Tétel:</strong> NP azokat a nyelveket tartalmazza, amelyek polinomiálisan bizonyíthatók. <span class="note">  ( Azaz NP = nem det. TG-vel felismerhető nyelvek osztálya. Ez a két fogalom ekvivalens )  </span> <br>
 
         <!-- <strong>Tétel:</strong> <br>
         <strong>Tétel:</strong> <br> -->
@@ -1389,7 +1390,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <strong>2. Megj:</strong> Egy NP-teljes problémára nem érdemes polinom idejű algoritmust keresni (mivel az a feltételezés, hogy P ⊂ NP).
          <span class="note">(Nem érdemes rá P beli megoldást keresni.)</span>
         <br><br>
-    <p><a href="https://www.youtube.com/watch?v=KkvCbPk4Wz8&t=1h3m57s" target="_blank">▶ Előadás ezen a részen (NP-teljes def., pol. visszavezethetőség)</a></p>
+    <p><a href="https://www.youtube.com/watch?v=KkvCbPk4Wz8&t=1h3m57s" target="_blank">▶ Előadás ezen a részen  <span class="note"> (NP-teljes def., pol. visszavezethetőség)</span> </a></p>
 
         <strong>Definíció (polinom idejű visszavezetés):</strong> Legyenek A és B Σ* feletti nyelvek. (A,B 1-1 feladat)<br>
         A <em>polinom időben visszavezethető</em> B-re (jelölés: A ≤<sub>P</sub> B), ha van olyan<br>
@@ -1401,8 +1402,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 
         <strong>Definíció (NP-teljesség):</strong> L <em>NP-teljes</em>, ha<br>
         &nbsp;&nbsp;1. L ∈ NP, és   <span class="note">(ha NP beli, azaz polinosan ellenőrihető)</span>  <br>
-        &nbsp;&nbsp;2. tetszőleges A ∈ NP esetén A ≤<sub>P</sub> L. ( A NP-beli probléma polinom időben visszavezethető
-L-re.)
+        &nbsp;&nbsp;2. tetszőleges A ∈ NP esetén A ≤<sub>P</sub> L.  <span class="note">( A NP-beli probléma polinom időben visszavezethető L-re.)   </span> 
     </div>
     <div class="tetel-box">
         <strong>Tétel:</strong> Ha B NP-teljes és B ∈ P, akkor NP = P.<br>

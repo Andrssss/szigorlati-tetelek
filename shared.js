@@ -1,5 +1,21 @@
 // ── Shared JS for szigorlati tételek oldalak ──
 
+// Note toggle (used by pages that include a .note-toggle-btn)
+function toggleNotes() {
+    var hidden = document.body.classList.toggle('notes-hidden');
+    var btn = document.querySelector('.note-toggle-btn');
+    if (btn) btn.textContent = hidden ? 'Kommentek OFF' : 'Kommentek ON';
+    localStorage.setItem('notes-hidden', hidden ? '1' : '0');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (localStorage.getItem('notes-hidden') === '1') {
+        document.body.classList.add('notes-hidden');
+        var btn = document.querySelector('.note-toggle-btn');
+        if (btn) btn.textContent = 'Kommentek OFF';
+    }
+});
+
 // 1. Bold-kék szín a Tétel/Definíció/stb. labelekre (csak a prefix, kettőspontig)
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('strong').forEach(function(el) {
@@ -24,50 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// 2. Zárójeles magyarázatok szürkítése (inline user notes)
-(function() {
-    var noteRegex = /(\s*\([^)]{15,}\)\s*)/g;
-    var mathPrefixRegex = /[a-zA-Z\u03b1-\u03c9\u0391-\u03a9\u2080-\u2089\u2070-\u2079\d]$/;
-
-    function wrapNotes(node) {
-        if (node.nodeType === Node.TEXT_NODE) {
-            var text = node.textContent;
-            noteRegex.lastIndex = 0;
-            if (!noteRegex.test(text)) return;
-            noteRegex.lastIndex = 0;
-            var frag = document.createDocumentFragment();
-            var lastIndex = 0, match;
-            while ((match = noteRegex.exec(text)) !== null) {
-                var before = text.slice(lastIndex, match.index);
-                if (before.length > 0 && mathPrefixRegex.test(before)) {
-                    frag.appendChild(document.createTextNode(before + match[0]));
-                    lastIndex = match.index + match[0].length;
-                    continue;
-                }
-                if (before) frag.appendChild(document.createTextNode(before));
-                var span = document.createElement('span');
-                span.className = 'note';
-                span.textContent = match[0];
-                frag.appendChild(span);
-                lastIndex = match.index + match[0].length;
-            }
-            if (lastIndex < text.length)
-                frag.appendChild(document.createTextNode(text.slice(lastIndex)));
-            if (frag.childNodes.length > 1)
-                node.parentNode.replaceChild(frag, node);
-        } else if (
-            node.nodeType === Node.ELEMENT_NODE &&
-            !['SCRIPT','STYLE','CODE','PRE','SVG'].includes(node.tagName)
-        ) {
-            Array.from(node.childNodes).forEach(wrapNotes);
-        }
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        wrapNotes(document.body);
-    });
-})();
-
-// 3. Kulcsszó-kiemelő segédfüggvény (hívd meg DOMContentLoaded után!)
+// 2. Kulcsszó-kiemelő segédfüggvény (hívd meg DOMContentLoaded után!)
 function highlightTerms(root, regex, color) {
     var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
         acceptNode: function(n) {
@@ -100,7 +73,7 @@ function highlightTerms(root, regex, color) {
     });
 }
 
-// 4. Becsúkható h4 szekciók (alapból becsukva)
+// 3. Becsúkható h4 szekciók (alapból becsukva)
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('h4').forEach(function(h4) {
         var siblings = [];
