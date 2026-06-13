@@ -18,14 +18,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 (function() {
     var lastY = 0;
+    var hideThreshold = 120;
+    var showThreshold = 60;
+    var accumulated = 0;
     window.addEventListener('scroll', function() {
         var y = window.scrollY;
-        if (y > lastY && y > 60) {
-            document.body.classList.add('scroll-hidden');
-        } else {
-            document.body.classList.remove('scroll-hidden');
-        }
+        var delta = y - lastY;
         lastY = y;
+        if (y <= 60) { document.body.classList.remove('scroll-hidden'); accumulated = 0; return; }
+        accumulated += delta;
+        if (accumulated > hideThreshold) { document.body.classList.add('scroll-hidden'); accumulated = 0; }
+        else if (accumulated < -showThreshold) { document.body.classList.remove('scroll-hidden'); accumulated = 0; }
     }, { passive: true });
 })();
 
