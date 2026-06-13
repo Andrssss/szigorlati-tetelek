@@ -25,10 +25,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var hideThreshold = 120;
     var accumulated = 0;
     var wheelUp = false;
+    var wheelActive = false;
+    var wheelTimer = null;
     var touchStartY = 0;
 
+    function markWheelActive(up) {
+        wheelUp = up;
+        wheelActive = true;
+        clearTimeout(wheelTimer);
+        wheelTimer = setTimeout(function() { wheelActive = false; }, 150);
+    }
+
     window.addEventListener('wheel', function(e) {
-        wheelUp = e.deltaY < 0;
+        markWheelActive(e.deltaY < 0);
     }, { passive: true });
 
     window.addEventListener('touchstart', function(e) {
@@ -36,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, { passive: true });
 
     window.addEventListener('touchmove', function(e) {
-        wheelUp = e.touches[0].clientY > touchStartY;
+        markWheelActive(e.touches[0].clientY > touchStartY);
     }, { passive: true });
 
     window.addEventListener('scroll', function() {
@@ -45,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         lastY = y;
         if (_scrollPaused) return;
         if (y <= 80) { document.body.classList.remove('scroll-hidden'); accumulated = 0; return; }
+        if (!wheelActive) return;
         accumulated += delta;
         if (accumulated > hideThreshold) {
             document.body.classList.add('scroll-hidden');
