@@ -1,11 +1,15 @@
 // ── Shared JS for szigorlati tételek oldalak ──
 
 // Note toggle (used by pages that include a .note-toggle-btn)
+var _scrollPaused = false;
+
 function toggleNotes() {
     var hidden = document.body.classList.toggle('notes-hidden');
     var btn = document.querySelector('.note-toggle-btn');
     if (btn) btn.textContent = hidden ? 'Kommentek OFF' : 'Kommentek ON';
     localStorage.setItem('notes-hidden', hidden ? '1' : '0');
+    _scrollPaused = true;
+    setTimeout(function() { _scrollPaused = false; }, 400);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -39,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var y = window.scrollY;
         var delta = y - lastY;
         lastY = y;
+        if (_scrollPaused) return;
         if (y <= 80) { document.body.classList.remove('scroll-hidden'); accumulated = 0; return; }
         accumulated += delta;
         if (accumulated > hideThreshold) {
