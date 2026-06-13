@@ -47,13 +47,6 @@
         <h1>A Nyelvtechnológia Alapjai</h1>
         <p class="subtitle">Kidolgozta: Bakó András</p>
         <div class="toc">
-            <div style="color:red; font-weight:bold; text-align:center;">
-    FIGYELEM! A 5. tételek hiányosak vagy hibásak !!!!!! <br>
-    FIGYELEM! A 5. tételek hiányosak vagy hibásak !!!!!! <br>
-    FIGYELEM! A 5. tételek hiányosak vagy hibásak !!!!!! <br>
-    FIGYELEM! A 5. tételek hiányosak vagy hibásak !!!!!! <br>
-
-</div>
             <h2>Tartalom</h2>
             <ol>
                 <li><a href="#tema-1">Karakterek és betűreprezentációs megoldások a világ nyelveiben. A pontos gépi rendezés
@@ -921,106 +914,214 @@ WordNet. Az emberi felhasználásra készült szótárakban való keresés nyelv
 „ablakos" kommunikáció nehézségei miatt kialakuló gyorsfordítók és tulajdonságaik.</a></h2>
     </div>
 
-    <h3>A szintaktikai szerepek és a jelentés viszonya.</h3>
-    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1m21s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <h3>A szintaktikai szerepek és a jelentés viszonya</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h51m33s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
-        A jelentésábrázolás háromrétegű:<br>
-        — a <strong>való világ</strong> dolgai (denotátumok),<br>
-        — a <strong>modell</strong>, amellyel a világot közelítjük,<br>
-        — az <strong>elmélet / formális leírás</strong>, amely a modellt formálisan jellemzi.
+        A <strong>tematikus szerepek</strong> (szemantikai esetek) azt írják le, hogy egy mondat szereplői milyen <em>mélyszemantikai viszonyt</em> töltenek be az igéhez képest — függetlenül attól, hogy a felszínen alanyként, tárgyként vagy egyéb formában jelennek meg.
     </div>
 
-    <img src="img/nyelvtech/word.png" alt="Verem automaták" style="max-width:500px;width:50%;">
-    <p>Sosem a világgal, mindig a modellünkkel dolgozunk. A számítógépes nyelvészet számára a nyelvi jelentés és az enciklopédikus világismeret összemosódik: pl. <em>Péter megvette az Ember tragédiáját</em> mondatban tudni kell, hogy nem a művet, hanem egy <em>példányát</em> vásárolta meg.</p>
-
-    <h3>Esetek a mélyben és a felszínen.</h3>
-    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=50m55s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A <strong>szintaktikai szerep</strong> (alany, tárgy, határozó) és a <strong>szemantikai / tematikus szerep</strong> (ágens, páciens, eszköz…) <strong>nem esik egybe</strong>. Ugyanaz a szemantikai szerep különböző szintaktikai pozícióban jelenhet meg — ezért van szükség a mélyesetek külön szintjére.</p>
+    <h4>A főbb tematikus szerepek</h4>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h52m11s" target="_blank">▶ Előadás ezen a részen</a></p>
     <ul>
-        <li><em>Pistike betörte az ablakot a labdával</em> — Pistike = alany + <strong>ágens</strong>, labda = eszközhatározó + <strong>instrument</strong></li>
-        <li><em>A labda betörte az ablakot</em> — labda = alany, de szemantikailag továbbra is <strong>instrument</strong>, nem ágens (nincs szándéka)</li>
+        <li><strong>ÁGENS:</strong> a cselekvést szándékosan végző élőlény. Pl. Jane (eladja a könyvet).</li>
+        <li><strong>TÁRGY / PATIENS:</strong> az az entitás, amelyen a cselekvést elvégzik, vagy amelynek állapota megváltozik. Pl. a könyv (amit eladnak).</li>
+        <li><strong>ELLENÁGENS / RECIPIENS:</strong> a cselekvés irányultja, akinek valami eljut. Pl. Bill (akinek Jane eladja a könyvet).</li>
     </ul>
+    <p>A kulcsmegfigyelés: <em>„Jane sold a book to Bill"</em>, <em>„A book was sold to Bill by Jane"</em> és <em>„Bill bought a book from Jane"</em> — mind ugyanazon mélyszemantikai struktúrát képviseli, csak a felszíni forma különböző. A mélyszinten mindig Jane=ÁGENS, könyv=PATIENS, Bill=RECIPIENS.</p>
+
+    <h4>Az egyforma felszín különböző szerepeket takar</h4>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h54m09s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A <strong>„sül/süt"</strong> példa klasszikus illusztrációja: <em>„A mama süti a süteményt"</em> mondatban a mama az ÁGENS, a sütemény a PATIENS. Az <em>„A sütemény sül"</em> mondatban viszont a sütemény az alany — de a mélyszinten ugyanúgy PATIENS marad. A sütés nem a sütemény szándékos cselekedete; rajta hajtódik végre a folyamat.</p>
+
+    <h3>Esetek a mélyben és a felszínen</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h56m01s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
-        A <strong>felszíni eset</strong> az, amely a mondat nyelvtanában morfológiailag megjelenik (alany, tárgy, részeshatározó, eszközhatározó stb.). A <strong>mélyeset</strong> (case role / thematic role) ezzel szemben szemantikai szerep, amely független a felszíni alaktól.
+        <strong>Fillmore esetgrammatikája</strong> (1968) elkülöníti a <em>felszíni eseteket</em> (nominatívusz, akkuzatívusz…) a <em>mélyszintű esetektől</em> (theta-szerepektől). A felszíni alany önmagában nem árulja el a valódi szemantikai funkciót.
     </div>
-    <p>Fillmore mélyesetei (tematikus szerepek):</p>
-    <ul>
-        <li><strong>Ágens</strong> — szándékos cselekvő (<em>Péter olvas</em>)</li>
-        <li><strong>Páciens / Theme</strong> — az érintett entitás (<em>elolvassa <u>a könyvet</u></em>)</li>
-        <li><strong>Experiencer</strong> — élmény alanya (<em><u>Jonesnak</u> tetszik a film</em>)</li>
-        <li><strong>Instrument</strong> — eszköz (<em><u>villával</u> eszik</em>)</li>
-        <li><strong>Location, Source, Goal, Time</strong> — térbeli / időbeli szerepek</li>
-        <li><strong>Beneficiary</strong> — kedvezményezett</li>
-    </ul>
-    <p>Ugyanaz a mélyeset különböző nyelvekben más felszíni alakban jelenhet meg (pl. az experiencer az angolban alany — <em>Jones likes the film</em> —, a magyarban és németben részeshatározó — <em>Jonesnak tetszik</em> / <em>Jones gefällt</em>). Ezért a fordításnál és az interlingua-alapú reprezentációknál a mélyesetekkel dolgozunk.</p>
 
-    <h3>Jelentésegyértelműsítés.</h3>
-    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h29m40s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>Egy szóalakhoz több jelentés (sense) tartozhat (pl. angol <em>spirit</em> = lélek / szesz, <em>bank</em> = bank / partszakasz). A WSD feladata a kontextus alapján kiválasztani a helyes jelentést.</p>
+    <h4>A „betörte az ablakot" eset</h4>
+    <p>Mindhárom mondat felszíne azonos — van alany és tárgy —, de a mélyszinten a szerepek eltérnek:</p>
     <ul>
-        <li><strong>Tudásalapú</strong> WSD: szótár, ontológia (pl. WordNet) alapján — Lesk-algoritmus: a környező szavak definícióinak átfedését nézi.</li>
-        <li><strong>Statisztikai / gépi tanulás alapú</strong>: annotált korpuszból tanulja meg a jelentésválasztást a kontextusból.</li>
-        <li><strong>Korpuszalapú</strong>: együtt-előfordulások (kollokációk) alapján.</li>
-        <li><strong>Mélytanuláson alapuló</strong>: kontextuális szóbeágyazások (pl. BERT) automatikusan kódolják a szó aktuális jelentését a mondatbeli környezet alapján — külön WSD-lépés nélkül is meg tudják különböztetni pl. a <em>bank</em> pénzintézet vs. partszakasz jelentését, mivel a szóvektor mondatonként változik.</li>
+        <li><strong>„Pistike betörte az ablakot."</strong> → Pistike: valódi ÁGENS (szándéka volt, ő okozta a törést)</li>
+        <li><strong>„A szél betörte az ablakot."</strong> → a szél: természeti erő — közelebb az ágenshez, de nem szándékos cselekvő</li>
+        <li><strong>„A labda betörte az ablakot."</strong> → a labda: felszíni alany, de mélyszinten ESZKÖZ (instrumentum) — a labda magától nem megy sehova; Pistike rúgta oda</li>
     </ul>
-    <p>A WSD a gépi fordítás, információkinyerés, kérdés-válasz rendszerek és kereső motorok kulcsfeladata.</p>
+    <p>A helyes mélyszintű leírás: <em>Pistike betörte az ablakot a labdával</em> — Pistike=ÁGENS, labda=INSTRUMENTUM, ablak=PATIENS. A labda felszíni alanyi pozíciója megtévesztő.</p>
 
-    <h3>Híres fogalmi hálók.</h3>
-    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h00m18s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <h3>Jelentésegyértelűsítés</h3>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=1h57m50s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
-        A <strong>WordNet</strong> a Princeton egyetemen George A. Miller vezetésével létrehozott lexikális adatbázis, amelyben a szavakat nem ábécé-rendben, hanem <strong>jelentés szerinti hálózatba</strong> szervezik. Alapegysége a <strong>synset</strong> (synonym set) — azonos jelentésű szavak halmaza, amely egy fogalmat reprezentál.
+        A <strong>jelentésegyértelűsítés</strong> (Word Sense Disambiguation, WSD) feladata: kontextusból meghatározni, hogy egy többjelentésű szónak éppen melyik értelme aktív.
     </div>
-<img src="img/nyelvtech/wordnet.png" alt="WordNet" style="max-width:500px;width:50%;">
-    <p>A synsetek között szemantikus relációk feszülnek — és a relációk típusa <strong>szófajonként eltér</strong>:</p>
+
+    <h4>A többértelűség típusai</h4>
     <ul>
-        <li><strong>Főneveknél</strong>: Hipernima ↔ Hiponima (állat → kutya → szuka), Holonima ↔ Meronima (épület ↔ ablak)</li>
-        <li><strong>Igéknél</strong>: Troponima — egy ige speciális megvalósítása (<em>megy → őgyeleg, andalog, csoszog</em>), Entailment — logikai következés (<em>horkol → alszik</em>)</li>
-        <li><strong>Melléknév/határozószónál</strong>: kevesebb él-típus, részben főnévi gyökre mutat vissza</li>
-        <li><strong>Antonima</strong> — ellentét (minden szófajnál)</li>
+        <li><strong>Homonímia:</strong> két alak véletlenül egybeesik, nincs köztük szemantikai kapcsolat. Pl. <em>ár</em>₁ (ára valaminek), <em>ár</em>₂ (árvíz), <em>ár</em>₃ (cipészszerszám) — három teljesen különböző fogalom, csak a hangsor azonos.</li>
+        <li><strong>Poliszémia:</strong> egy szónak több, egymással összefüggő jelentése van. Pl. <em>vírus</em>: 1. biológiai vírus, 2. számítógépes vírus — a kapcsolat analógiás, a két jelentés rokon.</li>
+        <li><strong>Szintaktikai többértelűség:</strong> a mondatszerkezet maga nyit meg több olvasatot. Pl. <em>„Láttalak a teraszon ülve"</em> — ki ül a teraszon, te vagy én?</li>
+        <li><strong>Morfológiai többértelűség:</strong> egy szóalak több morfológiai elemzést is kap, pl. különböző toldalékolású szótövek fednek egybe.</li>
     </ul>
-    <p><strong>Poliszémia</strong>: egy szó több synsetbe is tartozhat. Főneveknél viszonylag könnyű elkülöníteni (számítógépes egér ≠ cincogó egér). Igéknél sokkal nehezebb — pl. <em>tart</em>: „tartok valamit a kezemben" / „Nagyvárad felé tartok" / „tartok tőle" — ezek külön synset vagy ugyanaz? A WNet építőjének kell eldöntenie. A „bass" angol szónak pl. 8 különböző synsete van (basszus hang, basszus szólam, bőgő, sósvízi hal stb.).</p>
-    <p>A Princeton WNet módszertanát átvette az <strong>EuroWordNet</strong> — a nyelvek közötti kapcsolatot egy <em>Inter-Lingual Index</em> (ILI) biztosítja. Ehhez csatlakozik a <strong>Balkanet</strong> (balkáni nyelvek), és ezen keresztül a <strong>Magyar WordNet</strong> is (~42 000 fogalom; automatikusan létrehozva, kézzel validálva).</p>
-    <p>A WordNet széles körben használt a WSD-ben, információkeresésben és szemantikus következtetésben.</p>
 
-    <h3>Az emberi felhasználásra készült szótárakban való keresés nyelvfüggő problémái.</h3>
-    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h24m39s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A szótárak a lexikális egységeket felsorolják, de a nyelvek között nem egységesen kezelik a lexikont és a világismeretet. Magyarul a <em>lexikon</em> gyakran enciklopédiát jelent, míg a számítógépes nyelvészetben a szótár a szavak alapjelentéseit és szemantikus jegyeit tárolja. A magyar gazdag toldalékolása és produktív szóalkotása miatt a visszakeresés nem csak a szóalakokra épül — lemmatizálni kell a szótári alakot, és a produktív képzések sokszor nincsenek külön felsorolva.</p>
+    <h4>WSD — Word Sense Disambiguation</h4>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=2h05m02s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>Az <strong>egér</strong> szó két fő értelemben szerepel:</p>
     <ul>
-        <li><strong>Morfológia:</strong> a szótári keresésnek kezelnie kell a toldalékos, ragozott és összetett szóalakokat; ha csak literális stringet keresünk, a magyarban rengeteg találatot elveszíthetünk.</li>
-        <li><strong>Allomorfia:</strong> ugyanaz a gyökér többféle formában jelenik meg (pl. <em>fog</em>, <em>fogta</em>, <em>fogás</em>), ezért a rendszernek vissza kell térnie a szótári alapformához.</li>
-        <li><strong>Szóösszetételek:</strong> a szótárak címszavai nem sorolnak fel minden összetételt; a keresőnek fel kell ismernie a belső határokat és a komponens szavakat.</li>
-        <li><strong>Lexikográfiai különbség:</strong> az emberi szótárak magyarázó jellegűek, míg a gépi szótáraknak strukturált, gépileg feldolgozható adatot kell adniuk.</li>
-        <li><strong>Szemantikus háló szükségessége:</strong> a WordNet és ontológiák kiegészítik a tiszta lexikális listákat a jelentés szerinti relációkkal, ami segíti a keresést és a jelentés-egyértelműsítést.</li>
+        <li><em>egér₁</em> — az állat (Mus musculus)</li>
+        <li><em>egér₂</em> — számítógépes periféria (mouse)</li>
     </ul>
-    <p>Ezért az emberi felhasználásra készített szótárakban való keresés nyelvfüggő problémái kulcsfontosságúak: a morfológia, az allomorfia és a szóösszetételek minden nyelvnél másként jelennek meg, ezért a magyar nyelv specifikus feldolgozó modulokat igényel.</p>
+    <p>A WSD célja: szövegkontextusból eldönteni, melyik értelem aktív. A gyakorlatban nem érdemes minden szóra WSD-t futtatni — csak azokra, amelyek valóban sokjelentésűek <em>és</em> az adott alkalmazás számára különbséget tesz az értelem. A módszer alapvetően korpuszalapú: a szó közvetlen szomszédsági kontextusából gépi tanulásos módszer dönt.</p>
 
-    <h3>Az „ablakos" kommunikáció nehézségei miatt kialakuló gyorsfordítók és tulajdonságaik.</h3>
-    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h24m55s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A gyorsfordítók a felhasználó aktív munkafolyamatát nem megszakítva adnak azonnali segítséget: a szótár vagy jelentés nem külön ablakban nyílik meg, hanem a képernyőn megjelenő szöveg fölé vetített popupként jelenik meg.</p>
+    <h4>Világismeret és WSD</h4>
+    <p><a href="https://www.youtube.com/watch?v=Ap6zWWJtd_Y&t=2h09m25s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>Egyes mondatokhoz <em>enciklopédikus</em> háttértudás szükséges. Pl. <em>„Péter megvette az ember tragédiáját"</em> — tudni kell, hogy <em>Az ember tragédiája</em> Madách Imre műve, amelyik könyvként megvásárolható; nem azt jelenti, hogy Péter tragikus sorsot szerzett magának. A puszta szótárinformáción túl kontextusfüggő, enciklopédikus világmodell szükséges a helyes értelmezéshez.</p>
+
+    <h3>Fogalmi reprezentációk, forgatókönyvek</h3>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=0m27s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        A <strong>fogalmi reprezentáció</strong> az a belső, formális leírás, amely egy természetes nyelvi kifejezés mögöttes fogalmi tartalmát rögzíti a számítógép számára — a mondatjelentéstől a szövegtartalmon át az enciklopédikus háttérig.
+    </div>
+
+    <h4>Logikai reprezentáció: világ → modell → elmélet</h4>
+    <p>Soha nem magát a <em>világot</em> írjuk le — mindig csak a <strong>modellünket</strong>. A modell a világ közelítése (jól, rosszul vagy közepesen), az <strong>elmélet</strong> pedig a modell formális leírása logikai eszközökkel. Ebből fakad a különbség: a <em>szótár</em> (lexikon) a szavak és kapcsolataik leírása, az <em>enciklopédia</em> a világ dolgainak leírása — a kettő keveredik.</p>
+
+    <h4>Montague-grammatika és intenzionális logika</h4>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=6m00s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A <strong>Montague-grammatika</strong> formális, kompozicionális szemantikát nyújt: a mondat jelentése a részjelentésekből lambda-kalkulussal szabályosan felépíthető. Az <strong>intenzionális logika</strong> <em>lehetséges világokat</em> is kezel — pl. <em>„Tom hiszi, hogy Mary férjhez akar menni egy matrózhoz."</em> A „hiszi" modalitás egy szubjektív hitvilágot definiál (Tom hitvilágán belül igaz az állítás), nem a valós tényállást. Az akarás és a hiedelem egymásba ágyazott, elkülönített logikai szinteken kezelhető.</p>
+
+    <h4>Fogalmi függőség — Conceptual Dependency (Schank)</h4>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=31m58s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        Roger Schank <strong>fogalmi függőség elmélete</strong> (Conceptual Dependency, CD) azt állítja, hogy minden ige ~10 primitív akcióra vezethető vissza, és ezekből bármely esemény reprezentációja felépíthető — nyelvtől függetlenül.
+    </div>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=32m41s" target="_blank">▶ Előadás ezen a részen (primitív akciók)</a></p>
+    <p>A főbb primitív akciók:</p>
     <ul>
-        <li><strong>Popup / rávetítés:</strong> a rendszer az aktuális alkalmazás fölé vetít információt, így a felhasználónak nem kell váltania ablakok között.</li>
-        <li><strong>Kis beavatkozás:</strong> kevés billentyűkombináció vagy automatikus aktiválás (pl. kettő másodpercet áll a kurzor a szó felett) indítja el a keresést.</li>
-        <li><strong>Gyors visszajelzés:</strong> a felhasználó gyorsan látja a szótári vagy fordítási javaslatot, majd folytathatja a munkát anélkül, hogy a segédanyagra várna.</li>
-        <li><strong>Környezettudatosság:</strong> a rendszernek tudnia kell, hogy melyik ablakban van a szöveg, és ha más ablak kitakarja a részt, a felismerés pontossága csökken.</li>
-        <li><strong>Sürgősség a jelentéshez:</strong> ezek a rendszerek nem a tökéletes nyelvtani fordítást célozzák, hanem a gyors, érthető jelentéskiszolgálást.</li>
+        <li><strong>TRANS</strong> — fizikai objektum mozgatása egyik helyről a másikra</li>
+        <li><strong>PTRANS</strong> — személy helyváltoztatása</li>
+        <li><strong>ATRANS</strong> — absztrakt dolog átadása (pl. tulajdonjog, információ)</li>
+        <li><strong>INGEST</strong> — valami belekerül egy élő szervezetbe (evés, ivás, injekció)</li>
+        <li><strong>MBUILD</strong> — mentális konstrukció, gondolkodás, következtetés</li>
+        <li><strong>SPEAK</strong> — hangkibocsátás</li>
+        <li><strong>MOVE</strong> — testrész mozgatása</li>
     </ul>
-    <p>A gyorsfordítók tulajdonságaiba ezért beletartozik a képernyőalapú szövegfelismerés, a lemmatizálás és a minimum-interakciós keresés, hogy a felhasználó percek alatt megtalálja a szükséges információt.</p>
+    <p>Ezekhez skálázott tulajdonságok is kapcsolódnak: az egészségi állapot –10-től +10-ig terjed (ahol –10 = halott, +10 = kicsattanóan egészséges); hasonlóan a félelem, mentális állapot és éhség is skálázott. Pl. <em>„Bill shot Bob"</em> → Bill MOVE-olta a fegyvert, a golyó TRANS-ferred Bobba, Bob egészségi állapota → –10.</p>
 
-    <h3>Fogalmi reprezentációk, forgatókönyvek.</h3>
-    <p>A számítógépes szemantika nem csak szójelentésekkel dolgozik, hanem a fogalmak és események közötti kapcsolatokkal. A <strong>fogalmi háló</strong> olyan gráf, ahol a csomópontok fogalmakat vagy konceptuális egységeket jelentenek, az élek pedig a köztük lévő relációkat. A fogalmi függőség (conceptual dependency) olyan elmélet, amely a fogalmakat történetszervező struktúrákkal kapcsolja össze, hogy a számítógép a szavak mögötti „mi történt" jelentést is fel tudja építeni.</p>
-    <p>Ebből a nézőpontból a mondatok már nem egyszerűen egymás mellé helyezett szavak, hanem szereplőkkel, cselekvésekkel és fókuszpontokkal rendelkező forgatókönyvek. Ez segít kezelni a poliszémiát és a szerkezeti többértelműséget: a <em>spirit</em> lélek vagy alkohol értelmezése a környező fogalmi háló és a világismereti háttér alapján válik egyértelművé.</p>
+    <h4>Forgatókönyvek (Scripts)</h4>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=40m40s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        A <strong>forgatókönyv</strong> (script) egy tipikus, sztereotipikus eseménysor, amelyet a résztvevők hallgatólagosan ismernek. Schank felismerése: az emberek nem mondatokat értenek meg, hanem forgatókönyveket aktiválnak — a ki nem mondott részeket a script tölti ki.
+    </div>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=41m13s" target="_blank">▶ Előadás ezen a részen (étterem-script)</a></p>
+    <p>Schank <strong>étterem-scriptje</strong> (Jane Wang-példa): Jane éhes volt, bement egy étterembe, spagettit és Pepsit rendelt, aztán olyan gyorsan jött a pincér, hogy nagy borravalót adott neki. A szöveg nem mondja ki, hogy evett — de mi tudjuk, mert a script kitölti.</p>
+    <ul>
+        <li><em>Szereplők (roles):</em> vendég, pincér, szakács, tulajdonos</li>
+        <li><em>Célok (goals):</em> éhség kielégítése; esetleg szociális interakció</li>
+        <li><em>Eseménysor (body):</em> belépés → leülés → étlap → rendelés → kiszolgálás → evés → fizetés → távozás</li>
+    </ul>
+    <p>A <em>defaulttól való eltérés</em> az, ami „hír": a gyors pincér figyelemre méltó, mert az alapértelmezett a lassabb kiszolgálás. Amit a szöveg nem mond, azt a script automatikusan kitölti — pl. hogy kapott étlapot, hogy megette a rendeltet, hogy fizetett.</p>
 
-    <h3>Ontológiák, WordNet.</h3>
-    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h02m54s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>Filozófiailag az <em>ontológia</em> a létezés tudománya. Ontológiák mindigis a világot szerette volna leírni, itt viszont a számítógépes nyelvészetben <strong>több ontológia is van</strong> (innen a többes szám furcsasága). Egy ontológia <strong>fogalmak és köztük lévő relációk formális leírása</strong>, amely világismereti és nyelvészeti tudást egyaránt rögzít.</p>
-    
-    
-    
-    <h4>Felső (upper) ontológia</h4>
-    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h03m15s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A felső ontológia egy <strong>felülről lefelé épített hierarchia</strong>: a legtetején a legabsztraktabb kategóriák állnak (actuality, szerep, komponens, participant…), és addig megyünk le, amíg már a hétköznapi életben is használt fogalmak jelennek meg — pl. <strong>ágens</strong>, buszvezető, taxisofőr. Minden csomóponthoz tartozik egy <strong>szöveges definíció</strong>, tehát az ember megérti, mit jelent. A hierarchiában az öröklés működik: a buszvezető örökli, hogy ő egy driver → doer → agent → …</p>
-    <p>Ebből elég egyet csinálni — ezt a filozófusok, ontológusok kidolgozzák, és a saját <strong>tartományi (domain) ontológiánkat</strong> rákapcsoljuk (pl. orvosi, jogi, biológiai stb.), amely örökli a felső ontológia tulajdonságait. Példa: <strong>SUMO</strong> </p>
-<img src="img/nyelvtech/SUMO.png" alt="Verem automaták" style="max-width:500px;width:60%;">
+    <h3>Híres fogalmi hálók</h3>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=48m16s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        A <strong>szemantikus háló</strong> (semantic network) egy gráf, amelynek csúcsai fogalmak vagy szavak, élei szemantikai relációk (IS-A, PART-OF stb.). A 60-as évektől kezdve egyre nagyobb fogalmi hálókat hoztak létre.
+    </div>
+
+    <h4>IS-A és PART-OF — az alaprelációk</h4>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=50m20s" target="_blank">▶ Előadás ezen a részen (Katz és Fodor, 1963)</a></p>
+    <ul>
+        <li><strong>IS-A reláció:</strong> „A német juhász kutya" → rendszertani hierarchia. Ám amit a tudományos rendszertanban IS-A-nak mondunk, a hétköznapokban nem feltétlenül használunk — nem mondjuk, hogy „láttam egy emlőst".</li>
+        <li><strong>PART-OF reláció:</strong> „A kisujj az emberi kéz része" — nem ugyanolyan, mint az IS-A. Barkóbázósnál problémás: élő-e a kisujj? (IS-A logika szerint igen, de önálló élőlény nem.)</li>
+        <li><strong>Katz és Fodor (1963, 1969):</strong> bevezették a <em>szemantikai jegyeket</em> (semantic features/markers) — [+ÉLŐLÉNY], [+EMBERI], [+HÍMNEM] stb. — a lexikon formalizálásához.</li>
+        <li><strong>Wilensky, Minsky, Schank:</strong> a mesterséges intelligencia 60-as évekbeli megalapítói ugyanezeket a szemantikus hálókat használták tudásreprezentációra.</li>
+    </ul>
+
+    <h4>Cyc és MindNet — nagy kereskedelmi hálók</h4>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=56m26s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <ul>
+        <li><strong>Cyc:</strong> nagy kereskedelmi szemantikus háló, amely az angol common-sense tudást foglalja össze. Hatalmas kézi munka eredménye, megvásárolható (de nagyon drága). Több százezer fogalom és relációik enciklopédikus gyűjteménye.</li>
+        <li><strong>MindNet (Microsoft):</strong> az Encarta enciklopédia automatikus feldolgozásával jött létre — pl. „Az asztal olyan bútor, amely…" → asztal IS-A bútor. Soha nem tették nyilvánossá; a Microsoft saját természetes nyelvi eszközeiben használta.</li>
+    </ul>
+
+    <h4>FrameNet — Fillmore keretrendszere</h4>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=58m05s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>Fillmore a 80-as évek elején, ~15 évvel esetgrammatikája után, létrehozta a <strong>FrameNet</strong>-et: minden igéhez formalizált <em>keretet</em> (frame) rendel, amely meghatározza az ige összes lehetséges argumentumát és azok esetszerepeit. Az angol FrameNet óriási hatású lett; más nyelvekre is készültek FrameNet-ek (spanyol, japán, magyar…), de ezek egymással nem kompatibilisek.</p>
+
+    <h3>Ontológiák, WordNet</h3>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=59m43s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        A <strong>WordNet</strong> pszicholingvisztikai ihletésű lexikális adatbázis, amelynek alapegysége nem a szó, hanem a <strong>szinszet</strong> (synset) — egy szinonimahalmaz, amely egyetlen fogalmat jelöl. A relációk szinsetek között futnak, nem egyes szavak között.
+    </div>
+
+    <h4>A WordNet felépítése és sikeressége</h4>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=1h00m27s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <ul>
+        <li>A Princetoni Egyetemen fejlesztette ki <strong>George Miller</strong> (és Christian Felbaum) a 80-as évek végén. Miller korábban Chomskyval is publikált, pszicholingvista.</li>
+        <li>Kulcsötlet: nem szavakat, hanem <em>fogalmakat</em> kapcsolunk össze. Egy fogalom = egy szinszet (szinonimák halmaza). Pl. <em>{kutya, eb}</em> → ez egy synset, amely a kutyafajt reprezentálja.</li>
+        <li>Ha ugyanaz a string két különböző szinszet tagja, az poliszémia jele — pl. a főnévi <em>kutya</em> (az állat) és a fokozó jelzői <em>kutya</em> (kutya hideg van) két külön synset tagja.</li>
+        <li>Minden synsethez rövid definíció (gloss) is kapcsolható.</li>
+        <li>Óriási siker: <strong>EuroWordNet</strong> (európai nyelvek), BalkaNet, és számos nemzeti WordNet készült az elvei alapján.</li>
+    </ul>
+
+    <h4>Ontológiák és a felső ontológia</h4>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_6_ID&t=1h02m45s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        Az <strong>ontológia</strong> (filozófiában: a létezés tudománya) az informatikában egy doménben előforduló fogalmak és kapcsolataik formális, géppel értelmezhető leírása.
+    </div>
+    <p>A <strong>felső ontológia</strong> (upper ontology) a legáltalánosabb kategóriákat definiálja (entitás, esemény, folyamat, tulajdonság…), amelyek alá bármilyen szakterületi fogalom besorolható. A hétköznapi életben ritkán hivatkozunk rájuk explicit módon, de biztosítják a különböző ontológiák összekapcsolhatóságát. Példák: <strong>SUMO</strong> (Suggested Upper Merged Ontology), a WordNet hierarchiájának legfelső szintjei.</p>
+
+    <h3>Az emberi felhasználásra készült szótárakban való keresés nyelvfüggő problémái</h3>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_7_ID&t=13m39s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        Az <strong>emberi szótár</strong> elsősorban <em>olvasásra</em> és lapozásra tervezett — szerkezete a nyomtatott könyv kényszerei szerint alakult ki. Ez komoly nehézségeket okoz, ha géppel dolgozunk, vagy ha más nyelvből keresünk benne.
+    </div>
+
+    <h4>Szótártípusok és alapfogalmak</h4>
+    <ul>
+        <li><strong>Nyomtatott → elektronikus:</strong> az első elektronikus szótárak a papírszótár digitalizált képei voltak (mint az első autó = lovaskocsi + motor, nem repülő). Az igazi elektronikus szótár a digitális lehetőségeket aknázza ki.</li>
+        <li><strong>Közvetlen (human-readable):</strong> a felhasználó maga olvassa — a képernyőn megjelenő formázott szöveg.</li>
+        <li><strong>Közvetett (machine-readable):</strong> gépi háttérrendszer olvassa, állandóan rendelkezésre áll; nem szép, hanem strukturált — ez az intelligens szótárkezelő rendszer alapja.</li>
+        <li><strong>Kétnyelvű vs. egynyelvű:</strong> az egynyelvű szótár (értelmező) nagyon fontos referencia, mégis sokan „úri huncutságnak" tartják. A „többnyelvű" szótár valójában sok kétnyelvű szótár közös forrásnyelvvel.</li>
+    </ul>
+
+    <h4>A forrásnyelv/célnyelv aszimmetria</h4>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_7_ID&t=20m00s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A hagyományos szótárban a <strong>forrásnyelv</strong> (amelyikből keresünk) az ABC-sorrend alapja — egy szó a bal oldalon (a fejszó/címszó). A <strong>célnyelv</strong> az a rengeteg információ a jobb oldalon: egyes/kettes/hármas jelentések, szinonimák, példák, szólások. Ez az aszimmetria okozza, hogy:</p>
+    <ul>
+        <li>A szótárat nem lehet egyszerűen „megfordítani" — ha célnyelvi szóból keresünk, minden szócikk belsejét végig kell nézni.</li>
+        <li>A szócikkírók nem tudnak egymásról: az <em>elás csatabárd</em> kifejezés a „csatabárd"-nál és a „bárd"-nál esetleg eltérő fordítással szerepelhet.</li>
+        <li>Különböző nyelvek nem fedik le pontosan egymás denotátumait — nincs valódi egy az egyhez megfeleltetés a legegyszerűbb szavak között sem.</li>
+    </ul>
+
+    <h4>Szótár vs. enciklopédia — nyelvfüggő határ</h4>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_7_ID&t=23m47s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A <em>lexikon</em> és az <em>enciklopédia</em> határai nyelvenként különböznek — a magyarban a „lexikon" szó maga az enciklopédiát jelenti, míg más nyelvekben a szótárat. A határ kérdése: mi számít <em>nyelvi</em> és mi <em>világ</em>ismeretnek? Pl. a <em>pub</em> szónál: „angol kocsmaféle, ahol fából készült berendezés van és barna sört isznak" — ez enciklopédikus kulturális tartalom, amit nem lehet egy szóval visszaadni, mert a fogalom nem létezik a magyar kultúrában.</p>
+
+    <h4>Morfológiai keresési problémák</h4>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_7_ID&t=29m53s" target="_blank">▶ Előadás ezen a részen (szócikk-struktúra)</a></p>
+    <p>Egy agglutináló nyelvben (mint a magyar) a szótárak alapalakot indexelnek, de a felhasználó toldalékolt alakot lát a szövegben. Gépi szótárhasználathoz lemmatizáló szükséges. Tipikus problémák:</p>
+    <ul>
+        <li>Csonkolással keresve: <em>almát → alma</em> jó, de <em>almárium</em> is visszajön (véletlen ütközés).</li>
+        <li>Tőváltakozások: <em>almá-</em> tő vs. <em>alma</em> tő — az allomorfokat kezelni kell.</li>
+        <li>Többszavas kifejezések (MWE): melyik alkotó szónál van a szócikk? Az <em>elás csatabárd</em> az „elás"-nál, a „csatabárd"-nál, vagy a „bárd"-nál?</li>
+    </ul>
+
+    <h3>Az „ablakos" kommunikáció nehézségei miatt kialakuló gyorsfordítók és tulajdonságaik</h3>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_7_ID&t=1h24m47s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        Az <strong>„ablakos" kommunikáció</strong> problémája: szövegolvasás közben ha egy szóhoz szótárt akarok hívni, ki kell lépnem az alkalmazásból, másik ablakot nyitni, keresni, visszamásolni — ez rendkívül időigényes. Ebből a nehézségből fejlődtek ki a <strong>gyorsfordítók</strong> (~20 évvel ezelőtt).
+    </div>
+
+    <h4>Gyorsfordítók jellemzői</h4>
+    <p><a href="https://www.youtube.com/watch?v=VIDEO_7_ID&t=1h25m03s" target="_blank">▶ Előadás ezen a részen (Morphomus példa)</a></p>
+    <ul>
+        <li><strong>Felugró (pop-up) ablak:</strong> az aktuális alkalmazás <em>fölé</em> jelenik meg, nem nyit új ablakot. Elmozdult egér → eltűnik.</li>
+        <li><strong>Kevés interakció:</strong> alapértelmezetten dupla Ctrl-lenyomás, vagy 2 másodpercig egy szó fölött tartott egér. Nincs másolás, beírás, ablakváltás.</li>
+        <li><strong>Kontextus-tudatosság:</strong> nem csak a szót adja vissza, hanem a szövegkörnyezetet is elemzi. Pl. <em>play second field</em> kontextusban a „play second fiddle to somebody" kifejezést hozza ki — a releváns részt kiemelve.</li>
+        <li><strong>Képernyőolvasás → szövegpuffer:</strong> kezdetben OCR-szerűen felismerte a képernyőn lévő karaktereket (ismert betűtípusok pixelmintái alapján). Ma már a szövegpuffert olvassa a memóriából — gyorsabb, megbízhatóbb, és a lefedett szövegrészeket is látja.</li>
+        <li><strong>Morfológiai feldolgozás:</strong> a toldalékolt alakból visszakeresi a lemmát (pl. <em>almát → alma</em>), és azt keresi a szótárban.</li>
+        <li><strong>Logfájlok:</strong> rögzíti, mit kerestek és mi nem volt megtalálható — a szótár így folyamatosan fejleszthető a valós hiányosságok alapján.</li>
+    </ul>
+    <p>Példa: a <strong>Morphomus</strong> (MorphoLogic) nevű gyorsfordító a korai magyar eszközök egyike volt — szövegre mutatva azonnal felbukkan a fordítás és a szótári szócikk releváns részével. A gyorsfordítók alapelve: <em>kevés mozdulattal, kontextus-érzékenyen, az aktuális alkalmazásból ki nem lépve</em> kell az információt megkapni.</p>
 
     <div class="page-footer">A Nyelvtechnológia Alapjai — 5. Téma</div>
 </div>
