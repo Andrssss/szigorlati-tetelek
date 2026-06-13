@@ -1,13 +1,5 @@
 // ── Shared JS for szigorlati tételek oldalak ──
 
-(function() {
-    function applyScrollState() {
-        if (window.scrollY <= 80) { document.body.classList.add('at-top'); }
-        else { document.body.classList.remove('at-top'); }
-    }
-    if (document.body) { applyScrollState(); }
-    else { document.addEventListener('DOMContentLoaded', applyScrollState); }
-})();
 
 // Note toggle (used by pages that include a .note-toggle-btn)
 var _scrollPaused = false;
@@ -29,14 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-window.addEventListener('scroll', function() {
-    if (_scrollPaused) return;
-    if (window.scrollY <= 80) {
-        document.body.classList.add('at-top');
-    } else {
-        document.body.classList.remove('at-top');
-    }
-}, { passive: true });
 
 // 1. Bold-kék szín a Tétel/Definíció/stb. labelekre (csak a prefix, kettőspontig)
 document.addEventListener('DOMContentLoaded', function() {

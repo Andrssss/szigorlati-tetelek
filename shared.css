@@ -310,24 +310,7 @@ td {
     .notes-hidden .note-toggle-btn { background: #a02020; }
     .notes-hidden .note-toggle-btn:hover { background: #c02828; }
 
-    .back-btn {
-        transition: background 0.2s, opacity 0.3s, transform 0.3s;
-        opacity: 0;
-        transform: translateY(-60px);
-        pointer-events: none;
-    }
-    .note-toggle-btn {
-        opacity: 0 !important;
-        transform: translateY(-60px) !important;
-        pointer-events: none !important;
-    }
-
-    .at-top .back-btn,
-    .at-top .note-toggle-btn {
-        opacity: 1 !important;
-        transform: none !important;
-        pointer-events: auto !important;
-    }
+    .back-btn { transition: background 0.2s; }
 }
 
 .notes-hidden .note { display: none; }
