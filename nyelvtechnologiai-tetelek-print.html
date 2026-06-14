@@ -1716,7 +1716,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
 
     <p>(IBM, 90-es évek) Átvették a beszédfelismerésből a statisztikai gondolkodást — ha egy hangsorozatot össze lehet párosítani betűsorozatokkal statisztikailag, miért ne lehetne két különböző nyelv mondatait is? Az így megszülető statisztikai MT teljesen elvonatkoztat a nyelvi szabályoktól: csak a korpuszban megfigyelt együttes előfordulásokra épít. Az alapötlet: egy <strong>fordítási modell</strong> és egy <strong>nyelvi modell</strong> valószínűségét szorozzuk össze — a legjobb fordítás az, amelyikre ez a szorzat a legnagyobb.</p>
 
-    <h4>A modell felépítése</h4>
+    <div class="definicio">
     <p>A három összetevő:</p>
         <img src="img/nyelvtech/static.png" alt="Verem automaták" style="max-width:500px;width:50%;">
 
@@ -1726,7 +1726,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
         <li><strong>Nyelvi modell — P(e)</strong>: egynyelvű célnyelvi korpuszból tanul; mekkora valószínűséggel folyékony célnyelvi mondat <em>e</em>. (Biztosítja, hogy ne „törött" mondatot kapjunk.)</li>
         <li><strong>Dekóder</strong> — megkeresi azt az <em>e</em>-t, amelyre a szorzat maximális.</li>
     </ul>
-
+</div>
    
   
 
