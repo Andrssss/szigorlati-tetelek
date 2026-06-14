@@ -491,18 +491,6 @@ a fedés viszonya a különböző alkalmazásokban.
             A lexikális szinten az absztrakt, „szótári" alak látható; a felszíni szinten az, amit ténylegesen ejtünk és írunk. Az FST mindkét irányban működik: elemzéskor <em>kezek</em>-ből visszaállítja a <em>kéz+ek</em> szerkezetet, generáláskor <em>kéz+ek</em>-ből előállítja a <em>kezek</em> alakot.
         </div>
 
-    <h4>A számítógépes morfológia célja</h4>
-    <p>A számítógépes morfológia olyan számítógépes technológiák és algoritmusok kialakításával foglalkozik, melyek segítségével különféle nyelvű toldalékolt szóalakok elemzése és generálása megoldható. A számítógépes morfológia az írott alakokkal foglalkozik. </p>
-    <p><strong>Példa (magyar):</strong></p>
-    <ul>
-        <li><strong>Elemzés:</strong> <code>házakban</code> → <code>ház</code> + <code>ak</code> (többes szám) + <code>ban</code> (inessivus/helyhatározó rag)</li>
-        <li><strong>Generálás:</strong> <code>ház</code> + PL + INE → <code>házakban</code></li>
-    </ul>
-    <p>Az ilyen leképezéseket általában <strong>véges állapotú transzducer (FST)</strong> valósítja meg, amely minden toldalékolt alakot visszavezet az alapalakra és a morfológiai jegyekre (és fordítva).</p>
-    <ul>
-        <li><strong>Szóalak-felismerés:</strong> a program visszaadja a toldalékolt szóalakból a szótári tövet (lemmatizálás), annak szófaját és a megjelenített nyelvtani információt.</li>
-        <li><strong>Szóalak-generálás:</strong> a helyes szóalak előállítása a szótő és a morfológiailag releváns nyelvtani információ segítségével.</li>
-    </ul>
 
 
 
@@ -531,13 +519,6 @@ a fedés viszonya a különböző alkalmazásokban.
    <img src="img/nyelvtech/pelda_ketszintes.png" alt="Verem automaták" style="max-width:500px;width:60%;">
 
 
-    <h4>Konvenciók, speciális szimb megfeleltetés:</h4>
-    <ul>
-        <li><strong>Dzsókerszimbólum</strong> (általában: @, „kukac"): az adott ábécé tetszőleges karaktere helyett állhat; más formalizmokban más jellel is jelölhetik. Pl. <code>t:c ↔ ___ i:@</code> azt fejezi ki, hogy t lexikálisan c-nek felel meg, ha utána bármilyen felszíni szimbólum követi az i-t.</li>
-        <li><strong>Nullszimbólum</strong> (általában: 0 vagy ε): a két szalag csak egyenlő számú szimbólum esetén párosítható, ezért beszúrásnál és törlésnél az egyik szalagon üres (null) szimbólumnak kell állnia — pl. az y:i és 0:e párok egyidejű kezelésénél.</li>
-        <li><strong>Határszimbólum</strong> (általában: #): jelzi a szó elejét vagy végét (kizárólag egy másik határszimbólummal párban: #:#)</li>
-        <li><strong>Részhalmaz:</strong> egyszavas nevekkel jelzett karakterhalmazok, pl. C a mássalhangzók halmaza, V a magánhangzóké, T a felpattanó hangzóké, NAS a nazálisoké</li>
-    </ul>
 
 
     <h3>Unifikációs morfológia (HuMor = <em>High-speed Unification Morphology</em>)</h3>
@@ -640,33 +621,29 @@ a fedés viszonya a különböző alkalmazásokban.
   </li>
 
   <li>
-    <strong>Automatikus szövegelválasztás</strong>
+    <strong>Szövegelválasztás</strong>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=2h10m28s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>Alapszabályok + morfológiai felülbírálások (morfémhatárok &gt; puszta betűszámlálás). Pl. <em>asz–szony–nyal</em>. <span class="note">(angolban alapból nem létezik egység)</span></p>
+    <p>Ez akkor fasza, amikor pl. egy mondat nem fér ki egy sorban, bekérdezel egy programba. AMi megmondja neked, hogy az adott szót hogyan lehet tördelni (asszony = asz+szony), oszt tudod is használni. De nem minden szónak van ott a tördelése. Csak olyat választ el, amiben biztos.</p>
   </li>
 
   <li>
-    <strong>Szinonimaszótárak és tezauruszok</strong>
+    <strong>Intelligens keresés, csere (Szinonimaszótárak / tezauruszok)</strong>
     <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=2h16m36s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>
-      A morfológiai elemző tőre vezeti vissza a szóalakot → a szinonima a megfelelő tőhöz kereshető.
-      Problémák: többértelműség kezelése, lexikai vs. szintaktikai szó különbsége.
-    </p>
-
     <ul>
-      <li><strong>Intelligens keresés:</strong> a szótövek alapján működik, így minden ragozott alak megtalálható.</li>
-      <li>
-        Példa: „ház" keresése megtalálja: házak, házban, házakat, stb.
-      </li>
-    </ul>
-  </li>
+      <li>Intelligens keresés - hogy úgy keresünk szinonímát, hogy csak a szóról levesszük a toldalékokat. </li>
+      <li>Intelligens csere   - hogy úgy cseréljük le a szavunkat egy szinonímára, hogy aztán a toldalékot is visszatesszük a végére helyes alakban. </li>
 
-  <li>
-    <strong>Intelligens csere (lemmatizáció)</strong>
-    <p>
-      Szövegszerkesztőkben a morfológiai tudás segít az intelligens keresés-csere műveletekben,
-      megőrizve a ragozást.
-    </p>
+      <li>példa: <em>kutya</em>, <em>eb</em> — szinonimák</li>
+      <li><strong>szófaji egyértelműsítés → tő + toldalék</strong> (pl. <em>segítő</em> → tő: <em>segít</em>, toldalék: <em>ő</em>)</li>
+      <li><strong>szinonimakeresés</strong> lépései:
+        <ol>
+          <li>egyértelműsítés: tő + toldalék azonosítása</li>
+          <li>szinonima tőre keresés</li>
+          <li>szinonima visszahelyettesítése megfelelő toldalékkal</li>
+        </ol>
+      </li>
+      <li>⚠️ <strong>óvatosan!</strong> — pl. <em>kutya → eb</em> csere esetén <em>kutyaadó</em> → <em>ebadó</em> (nem létező szó): a szinonimák nem mindig felcsereszabatosak</li>
+    </ul>
   </li>
 </ul>
 </div>
