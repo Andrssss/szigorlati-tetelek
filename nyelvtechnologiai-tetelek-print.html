@@ -48,10 +48,8 @@
         <p class="subtitle">Kidolgozta: Bakó András</p>
 
          <div style="color:red; font-weight:bold; text-align:center;">
-    FIGYELEM! A és 6. tétel hiányos vagy hibás !!!!!! <br>
-    FIGYELEM! A és 6. tétel hiányos vagy hibás  !!!!!! <br>
-
-</div>
+            FIGYELEM !!!! Esetleges hibákért vagy hiányosságokért nem tudok felelősséget vállalni. <br>
+        </div>
         <div class="toc">
             <h2>Tartalom</h2>
             <ol>
@@ -1399,21 +1397,11 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
 
     <h4>Korpuszannotáció <span style="font-weight:normal;font-size:0.85em;">(a szöveg strukturált nyelvi elemzési rétegekkel való gazdagítása)</span></h4>
     <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=11m38s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A korpuszok egyszerű nyers szövegként is felhasználhatók, de értékük annotálással növelhető:</p>
-    <ul>
-        <li><strong>Morfológiai elemzés</strong>: szófaj, tő, toldalék meghatározása minden szóalakra</li>
-        <li><strong>Szófaji egyértelműsítés (POS-tagging)</strong>: többértelmű szóalakok feloldása kontextus alapján</li>
-        <li><strong>Névelem-felismerés (NER)</strong>: tulajdonnevek, dátumok, webcímek egységként kezelve</li>
-        <li><strong>Szintaktikai elemzés</strong>: főnévi csoportok, mondatrészek, függőségi viszonyok jelölése</li>
-        <li><strong>Koreferencia-jelölés</strong>: ugyanarra az entitásra mutató előre- és visszautalások összekötése</li>
-        <li><strong>Dialógus-annotáció</strong>: szóátvétel, közbevágás jelölése (szociolingvisztikában fontos)</li>
-    </ul>
-    <p>A nagy modern korpuszokat már nem lehet kézzel annotálni. Megoldás: <strong>bootstrap annotáció</strong> — a gép annotál, az ember javít egy kis részt, arra tanítunk újra, és így tovább. Saját magát felépítő folyamat.</p>
 
 
 
 
-   <h4>Párhuzamos korpuszok</h4>
+   <h3>Párhuzamos korpuszok</h3>
     <p><a href="https://www.youtube.com/watch?v=58M0q1lWA00&t=4m3s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Párhuzamos korpusz:</strong> két (vagy több) nyelvű egymásnak megfeleltetett szöveggyűjtemény. A megfeleltetés általában mondat-, ritkábban kifejezés- vagy szószintű.
@@ -1528,19 +1516,18 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
 
     <h3>Szóbeágyazás (word embedding)</h3>
     <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h28m36s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A szóbeágyazás volt az első neurális hálóhoz közeli megoldás, amely a szavakat sokdimenziós vektortérbe konvertálja a szövegkörnyezetük alapján. A szó jelentése = a szövegkörnyezete: minden szó sokféle kontextusban fordul elő, és ezek a kontextusok együtt jellemzik, mit jelent az adott szó. Hasonló kontextusú szavak közel kerülnek egymáshoz a vektortérben — a gép maga tanulja meg az összefüggéseket pusztán szövegből, mi nem adjuk meg.</p>
+    <p>A szóbeágyazás volt az első neurális hálóhoz közeli megoldás, amely a szavakat n dimenziós vektortérbe konvertálja a nyelvnek szavait. A szó jelentése = a szövegkörnyezete: minden szó sokféle kontextusban fordul elő, és ezek a kontextusok együtt jellemzik, mit jelent az adott szó. Hasonló kontextusú szavak közel kerülnek egymáshoz a vektortérben — a gép maga tanulja meg az összefüggéseket pusztán szövegből, mi nem adjuk meg.</p>
 
     <p>Különbség a manuális módszerektől (WordNet, ontológiák): ott <em>mi</em> definiáljuk a kategóriákat; a szóbeágyazásnál a gép <em>maga</em> tanulja meg az összefüggéseket pusztán nyers szövegből.</p>
 
-    <div class="definicio">
-        <strong>Szóbeágyazás (word embedding):</strong> szavak ábrázolása <strong>sűrű, valós értékű vektorként</strong> egy néhány száz dimenziós térben. A vektorok úgy tanulódnak, hogy hasonló kontextusban előforduló szavak <strong>közel kerüljenek</strong> egymáshoz a vektortérben. Klasszikus modellek: <strong>word2vec</strong> (CBOW, Skip-gram), GloVe, FastText; ma a kontextuális beágyazások (<strong>BERT</strong>) terjedtek el.
-    </div>
+    
 
     <div class="definicio">
         <ul>
             <li><strong>Régebben:</strong> word2vec (2-rétegű neurális háló)</li>
             <li><strong>Ma:</strong> mélytanulási hálók, transformerek</li>
             <li><strong>Transformer</strong> — két részből áll: encoder, decoder
+                <br><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=1h26m20s" target="_blank">▶ Előadás ezen a részen (Transformer modellek)</a>
                 <ul>
                     <li><strong>Encoder:</strong>
                         <ul>
@@ -1576,6 +1563,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
     </div>
 
     <h4>word2vec — tanítási stratégiák (Mikolov, 2013)</h4>
+    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h30m53s" target="_blank">▶ Előadás ezen a részen (word2vec, Mikolov 2013)</a></p>
     <p>Egy sekély neurális hálóval a szavakat vektorokká alakítja: a szó körüli szövegablak (bal-jobb szomszédok) alapján tanul. Kétféle stratégia:</p>
     <ul>
         <li><strong>CBOW</strong> (Continuous Bag of Words): <strong>környezetből → szó</strong> — a kontextusszavakból prediktálja az eldugott célszót.</li>
@@ -1583,6 +1571,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
     </ul>
 
     <h4>Vektortér-tulajdonságok: analógia és hasonlóság</h4>
+    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h35m43s" target="_blank">▶ Előadás ezen a részen (vektortér-analógia, ország-főváros példa)</a></p>
     <p>Mivel a szavak vektorok, össze lehet adni és kivonni őket — az <strong>analógia vektoraritmetikává</strong> válik:</p>
     <div class="pelda">
         <em>király − férfi + nő ≈ királynő</em> &nbsp;·&nbsp; <em>Moszkva − Oroszország + Kína ≈ Peking</em>
@@ -1678,31 +1667,37 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
 
     <p>A Vauquois-háromszög a szabályalapú MT három stratégiáját ábrázolja az elemzés mélysége szerint. Az ábra alján a két felszíni nyelv (forrásnyelv és célnyelv) helyezkedik el; minél magasabbra megyünk a háromszögben, annál absztraktabb a köztes reprezentáció. A vízszintes távolság a forrásnyelv és célnyelv közötti nyelvi hasonlóságot jelzi: közeli nyelvpárnál (pl. cseh–szlovák) elég alacsonyan maradni, távolabbi pároknál (pl. japán–angol) magasabba kell menni. Ez a háromszög teljesen lehetetlen volt így trapéz lett belőle a valóságban, egy kicsit analizálunk, aztán egy kicsit fordítunk, majd generálunk.</p>
     <img src="img/nyelvtech/szabaly.png" alt="Verem automaták" style="max-width:500px;width:50%;">
+    <div class="definicio">
+        Lépései:<br><br>
+        <p>A háromszög legalján: minimális elemzés, lényegében szó→szó csere. Lépései:</p>
+            <img src="img/nyelvtech/direct.png" alt="Verem automaták" style="max-width:500px;width:50%;">
+        <ol>
+            <li><strong>Morfológiai elemzés</strong> — forrásszavak azonosítása</li>
+            <li><strong>Kétnyelvű szótári csere</strong> — forrásnyelvi szó → célnyelvi szó</li>
+            <li><strong>Prepozíció-csere</strong> — vonzatbeli eltérések kezelése</li>
+            <li><strong>Szórend-átrendezés</strong> — célnyelv szórendjéhez igazítás</li>
+            <li><strong>Morfológiai generálás</strong> — végső célnyelvi szóalak előállítása</li>
+        </ol>
+        <p>Fő korlát: kontextus nélküli szóválasztás, nem skálázható általános szövegre. Klasszikus rendszerek: <strong>METEO</strong> (kanadai időjárás-fordítás) és <strong>SYSTRAN</strong>.</p>
+    </div>
 
-    <h4>1. Közvetlen (Direct) fordítás</h4>
-    <p>A háromszög legalján: minimális elemzés, lényegében szó→szó csere. Lépései:</p>
-        <img src="img/nyelvtech/direct.png" alt="Verem automaták" style="max-width:500px;width:50%;">
+    <div class="definicio">
+        <ul>
+            <li>különbség: nem egy az egyben a toldalékokat rakja vissza, hanem a felépített szerkezetet</li>
+            <li>felszíni transfer, ha hasonló szerkezetű nyelvek; mély transfer egyébként</li>
+            <li>Speciális: <strong>MetaMorpho</strong> — szerkezet-páros, célszerkezet generálás</li>
+            <li>probléma: többértelűség (<em>„Láttam a lányt a teraszon ülve."</em>)</li>
+        </ul>
+    </div>
+        <img src="img/nyelvtech/meta.png" alt="Verem automaták" style="max-width:500px;width:50%;">
 
-    
-    <ol>
-        <li><strong>Morfológiai elemzés</strong> — forrásszavak azonosítása</li>
-        <li><strong>Kétnyelvű szótári csere</strong> — forrásnyelvi szó → célnyelvi szó</li>
-        <li><strong>Prepozíció-csere</strong> — vonzatbeli eltérések kezelése</li>
-        <li><strong>Szórend-átrendezés</strong> — célnyelv szórendjéhez igazítás</li>
-        <li><strong>Morfológiai generálás</strong> — végső célnyelvi szóalak előállítása</li>
-    </ol>
-    <p>Fő korlát: kontextus nélküli szóválasztás, nem skálázható általános szövegre. Klasszikus rendszerek: <strong>METEO</strong> (kanadai időjárás-fordítás) és <strong>SYSTRAN</strong>.</p>
-
-    <h4>2. Interlingua</h4>
+    <h4> Interlingua</h4>
     <p>A háromszög csúcsán: a forrásnyelvet egy <strong>interlingva</strong> — egy teljesen nyelvfüggetlen, formális közvetítő reprezentáció — szintjére elemezzük fel, majd ebből a reprezentációból generálunk bármely célnyelvre. Az interlingva lényege, hogy nem kötődik egyetlen természetes nyelvhez sem: egyfajta „jelentésnyelv", amely az összes forrás- és célnyelvtől függetlenül tudja leírni a mondanivalót. Előny: <em>n</em> nyelvre csak <em>2n</em> modul kell (nem <em>n×(n−1)</em>). Miért nem sikerült: valódi nyelvfüggetlen reprezentáció nem definiálható — minden kísérlet (logikai formalizmus, eszperantó) kudarcot vallott. Idővel a csúcs egyre kevésbé volt elérhető: a Vauquois-háromszögből <strong>trapéz</strong> lett — a teteje „levágódott", mert a teljes interlingva szint a gyakorlatban soha nem valósult meg.</p>
 
-    <h4>3. Transzfer fordítás</h4>
-    <p>Közvetlen és interlingva között: mély elemzés → <strong>transzferszabályok</strong> alakítják a célnyelv struktúrájává → generálás. <em>Nyelvpárhoz kötött</em> — más párhoz új modul kell. Példa: <strong>Eurotra</strong>.</p>
 
     <h4>MetaMorpho — hibrid rendszer</h4>
     <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=37m37s" target="_blank">▶ Előadás ezen a részen</a></p>
     <p>Kulcsötlet: <strong>nincs külön szótár és nyelvtan</strong> — minden egységes <strong>mintapár-rendszerben</strong> van, specifikusságtól az általánosságig:</p>
-        <img src="img/nyelvtech/meta.png" alt="Verem automaták" style="max-width:500px;width:50%;">
 
     
     <ul>
@@ -1718,7 +1713,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
     <h3>Statisztikai gépi fordítás (SMT)</h3>
     <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=52m54s" target="_blank">▶ Előadás ezen a részen</a></p>
 
-    <p>Az ötlet az IBM-nél született: a 90-es évek elején átvette a beszédfelismerésből a statisztikai gondolkodást — ha egy hangsorozatot össze lehet párosítani betűsorozatokkal statisztikailag, miért ne lehetne két különböző nyelv mondatait is? Az így megszülető statisztikai MT teljesen elvonatkoztat a nyelvi szabályoktól: csak a korpuszban megfigyelt együttes előfordulásokra épít. Az alapötlet: egy <strong>fordítási modell</strong> és egy <strong>nyelvi modell</strong> valószínűségét szorozzuk össze — a legjobb fordítás az, amelyikre ez a szorzat a legnagyobb.</p>
+    <p>(IBM, 90-es évek) Átvették a beszédfelismerésből a statisztikai gondolkodást — ha egy hangsorozatot össze lehet párosítani betűsorozatokkal statisztikailag, miért ne lehetne két különböző nyelv mondatait is? Az így megszülető statisztikai MT teljesen elvonatkoztat a nyelvi szabályoktól: csak a korpuszban megfigyelt együttes előfordulásokra épít. Az alapötlet: egy <strong>fordítási modell</strong> és egy <strong>nyelvi modell</strong> valószínűségét szorozzuk össze — a legjobb fordítás az, amelyikre ez a szorzat a legnagyobb.</p>
 
     <h4>A modell felépítése</h4>
     <p>A három összetevő:</p>
@@ -1738,15 +1733,15 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
     <h3>Neurális gépi fordítás (NMT)</h3>
     <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=1h24m07s" target="_blank">▶ Előadás ezen a részen</a></p>
 
-    <p>A 2010-es évek elejétől a statisztikai modelleket lassan felváltják a neurális modellek. Az NMT lényege: a fordítórendszer <strong>végponttól végpontig</strong> (end-to-end) tanul párhuzamos korpuszból — nincsenek manuálisan megírt szabályok, nincs különálló fordítási modell és nyelvi modell.</p>
+    <p>Szavak helyett n dimenziós jelentésvektorok.  A 2010-es évek elejétől a statisztikai modelleket lassan felváltják a neurális modellek. Az NMT lényege: a fordítórendszer <strong>végponttól végpontig</strong> (end-to-end) tanul párhuzamos korpuszból — nincsenek manuálisan megírt szabályok, nincs különálló fordítási modell és nyelvi modell.</p>
 
     <h4>Encoder-decoder architektúra</h4>
         <img src="img/nyelvtech/ed.png" alt="Verem automaták" style="max-width:500px;width:30%;">
 
     <p>Az alap NMT-modell felépítése:</p>
     <ol>
-        <li><strong>Encoder</strong> — a forrásnyelvi mondatot szimbolumról szimbólumra feldolgozza, és a mondat tartalmát egyetlen vektorba (a <em>„piros pontba"</em>, kontextus-vektorba) sűríti. Ez a vektor a mondat <strong>neurális reprezentációja</strong>. Önmagában (dekóder nélkül) alkalmas <strong>osztályozásra és szemantikai keresésre</strong>, mert a mondat egészét egyszerre látja, kétirányú kontextust épít — pl. véleményelemzésnél a <em>„nem rossz"</em> szavanként negatívnak tűnik, de az enkóder a teljes mondatból pozitívnak értékeli.</li>
-        <li><strong>Decoder</strong> — ebből a vektorból generálja a célnyelvi mondatot szót szó után, az eddig generált szavakra is visszatekintve. Önmagában (enkóder nélkül) jól használható <strong>szöveg folytatására és generálásra</strong> (pl. GPT): csak a már generált tokeneket látja, nem a „jövőt".</li>
+        <li><strong>Encoder</strong> —  (önmagában használható arra, hogy ha letakarsz egy szót, akkor ez kitalálja mi volt az a szó) <br> a forrásnyelvi mondatot szimbolumról szimbólumra feldolgozza, és a mondat tartalmát egyetlen vektorba (a <em>„piros pontba"</em>, kontextus-vektorba) sűríti. Ez a vektor a mondat <strong>neurális reprezentációja</strong>. Önmagában (dekóder nélkül) alkalmas <strong>osztályozásra és szemantikai keresésre</strong>, mert a mondat egészét egyszerre látja, kétirányú kontextust épít — pl. véleményelemzésnél a <em>„nem rossz"</em> szavanként negatívnak tűnik, de az enkóder a teljes mondatból pozitívnak értékeli.</li>
+        <li><strong>Decoder</strong> —  (önmagában használható arra, hogy ha adsz neki egy szöveget, megmondja, hogy mi a következő szó. Mint a mai modellek.) <br> ebből a vektorból generálja a célnyelvi mondatot szót szó után, az eddig generált szavakra is visszatekintve. Önmagában (enkóder nélkül) jól használható <strong>szöveg folytatására és generálásra</strong> (pl. GPT): csak a már generált tokeneket látja, nem a „jövőt".</li>
     </ol>
 
     <p>Korai modellek LSTM-et (Long Short-Term Memory) használtak, amelyek képesek hosszabb távú függőségeket kezelni. A mai rendszerek <strong>Transformer</strong> architektúrán alapulnak (2017, „Attention is All You Need"), amelynek kulcseleme az <strong>önfigyelem (self-attention)</strong>: minden szó minden más szóval interakcióba lép a mondatban, nem csak a szomszédjával. A bemeneti szavakat először <strong>one-hot vektorokká</strong> alakítjuk (minden szó egy különálló dimenzió), majd a hálózat ezeket <strong>sűrű vektoriális reprezentációkká</strong> tanulja meg, ahol a hasonló jelentésű szavak közel kerülnek egymáshoz a vektortérben. Így a fordítórendszer az ismeretlen szavakhoz is tud hasonló tanult reprezentációt illeszteni.</p>
