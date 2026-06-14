@@ -48,10 +48,8 @@
         <p class="subtitle">Kidolgozta: Bakó András</p>
 
          <div style="color:red; font-weight:bold; text-align:center;">
-    FIGYELEM! A és 6. tételek hiányosak vagy hibásak !!!!!! <br>
-    FIGYELEM! A és 6. tételek hiányosak vagy hibásak !!!!!! <br>
-    FIGYELEM! A 6. tételek hiányosak vagy hibásak !!!!!! <br>
-    FIGYELEM! A 6.tételek hiányosak vagy hibásak !!!!!! <br>
+    FIGYELEM! A és 6. tétel hiányos vagy hibás !!!!!! <br>
+    FIGYELEM! A és 6. tétel hiányos vagy hibás  !!!!!! <br>
 
 </div>
         <div class="toc">
@@ -1365,7 +1363,13 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
                     <li>dialógus (ki után ki következik, stb.)</li>
                 </ul>
             </li>
-            <li><strong>Példák:</strong>
+        
+        </ul>
+    </div>
+
+    <h4>Példák:</h4>
+
+    <li>
                 <ul>
                     <li>Brown: első, 1M token, címkézett</li>
                     <li>Susanne: Brown része (120E token) + szintaktikai elemzés</li>
@@ -1373,8 +1377,6 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
                     <li>Pázmány Korpusz: 1200M, szófaji egyértelműsített</li>
                 </ul>
             </li>
-        </ul>
-    </div>
 
     <h4>Korpusznyelvészet — két iránya</h4>
     <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=0m47s" target="_blank">▶ Előadás ezen a részen</a></p>
@@ -1408,16 +1410,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
     </ul>
     <p>A nagy modern korpuszokat már nem lehet kézzel annotálni. Megoldás: <strong>bootstrap annotáció</strong> — a gép annotál, az ember javít egy kis részt, arra tanítunk újra, és így tovább. Saját magát felépítő folyamat.</p>
 
-    <h4>Fontosabb korpuszok</h4>
-    <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=13m3s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <ul>
-        <li><strong>Brown korpusz (1961):</strong> az első igazi korpusz — 1 millió szó, lyukkártyán. POS-tagged (87 kategória, mnemonikus kódok: VB, VBD, VBZ…), máig standard referencia.</li>
-        <li><strong>Penn Treebank:</strong> ~3M szó (Wall Street Journal + Brown), szintaktikailag elemzett fastruktúrákkal — az első komolyabb treebanknak számít.</li>
-        <li><strong>Szeged korpusz:</strong> ~1,2M szó (irodalom, iskolai dolgozat, jogi szöveg, szoftverkézikönyv, újság — 6 × 200k), morfológiai és szintaktikai annotációval; POS-tagging pontossága 96,95%.</li>
-        <li><strong>Szószabja:</strong> a .hu domain leszedett szövege (~1,2 mrd tokenből 40%-ot kidobtak: nem magyar, ékezet nélküli, rossz minőségű). Maradt ~500M szó, 7,2M type. Elemzetlen, de hatalmas.</li>
-        <li><strong>Magyar Nemzeti Szövegtár (MNSZ):</strong> irodalom, fórumok, jogi anyagok + határon túli magyar szövegek. 187M → 500M → 1 mrd szó. Morfológiai annotációval, kereshető.</li>
-        <li><strong>Pázmány korpusz:</strong> ~1,2 mrd szó (1000× Szeged). Webes forrás, normált / komment / egyéb rétegekkel; morfológiai elemzés + főnévi csoport határok jelölve.</li>
-    </ul>
+
 
 
    <h4>Párhuzamos korpuszok</h4>
@@ -1435,18 +1428,73 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
              
 
 
+    <h3>Gépi tanulás korpuszból</h3>
+    <div class="definicio">
+        <ul>
+            <li><strong>Supervised learning (felügyelt tanulás):</strong> <a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=38m33s" target="_blank">▶ Előadás ezen a részen</a> — címkézett korpusz
+                <ul>
+                    <li>annotációknak megfelelő feladatokra tanul (classification), pl: szófaji egyértelműsítés, mondatszerkezet, névfelismerés, …</li>
+                    <li>mesterséges neuron (perceptron): φ(Σ w<sub>i</sub>·x<sub>i</sub>)</li>
+                    <li>többréteg (hidden layers)</li>
+                    <li>predikció (forward pass)</li>
+                </ul>
+            </li>
+            <li><strong>Unsupervised learning (felügyeletlen):</strong> <a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=17m26s" target="_blank">▶ Előadás ezen a részen</a> — címkézetlen
+                <ul>
+                    <li>statisztikai számítások (pl: n-gram-os nyelvi modell)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
     <h3>Szövegszinkronizáció</h3>
     <p><a href="https://www.youtube.com/watch?v=58M0q1lWA00&t=17m15s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Szövegszinkronizáció</strong> (alignment): párhuzamos szövegek egymásnak megfelelő szövegegységeinek összekapcsolása. Az alapkérdés: bekezdés-, mondat- vagy szószintű legyen-e a megfeleltetés?
     </div>
 
-    <h4>A szinkronizáció szintjei</h4>
-    <ul>
-            <li><strong>Bekezdésszint</strong>: viszonylag megbízható — a fordítások általában nem változtatnak a bekezdéshatárokon.</li>
-            <li><strong>Mondatszint</strong>: kívánatos, de nehezebb — az arány nem mindig 1:1; lehetséges 1:2, 2:1, sőt 1:0 (kihagyott vagy betoldott mondat) is.</li>
-            <li><strong>Szószint</strong>: sok szónak nincs közvetlen fordítása, ezért ez a legproblematikusabb szint.</li>
-        </ul>
+
+           <div class="definicio">
+
+        Mondatszinkronizálás (sentence alignment)
+                <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=1m" target="_blank">▶ Előadás ezen a részen</a></p>
+            <p>A párhuzamos korpusz építéséhez először <strong>mondatra kell szegmentálni</strong> (nehéz: a pont nem mindig mondatvég — <em>U.S.</em>, <em>Smith Corp.</em>, URL-ek). Utána a mondatokat egymásnak meg kell feleltetni (1:1, 1:2, 2:1, 1:0 stb.).</p>
+            
+                <ul>
+                    <li>
+                        <strong>Hosszalapú (length-based)</strong> — <a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=3m46s" target="_blank">▶</a><br>
+                        Gale–Church (1993): a fordítás hossza korrelál az eredeti hosszával. <strong>Dinamikus programozással</strong> globálisan optimális párba állítást keres — nem kapkod, hanem az egész szövegre nézve legjobb megoldást találja.<br>
+                        <strong>Előny:</strong> nyelvfüggetlen, mindig ad eredményt (teljes szinkronizáció).<br>
+                        <strong>Hátrány:</strong> eltévedhet 1:2, 2:1, 1:0 esetekben.
+                    </li>
+                    <li>
+                        <strong>Lexikai informació alapján</strong> — <a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=1m34s" target="_blank">▶</a><br>
+                        Kétnyelvű szótárból ismert szópárokat keres a mondatokban: ahol mindkét oldalon sok megfelelő szó szerepel, ott párosít.<br>
+                        <strong>Előny:</strong> jó pontosságú részleges szinkronizáció.<br>
+                        <strong>Hátrány:</strong> külső lexikai forrás kell, tulajdonneveket és ritka szavakat nem kezeli.
+                    </li>
+                    <li>
+                        <strong>Horgony (anchor) alapú</strong> — <a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=2m28s" target="_blank">▶</a><br>
+                        Nyelvtől független, mindkét szövegben azonosan szereplő elemeket (e-mail-cím, URL, szám, tulajdonnév) rögzítési pontként használja. Lineáris regresszióval szűri a valódi horgonyokat.<br>
+                        <strong>Előny:</strong> pontossága közel 100%.<br>
+                        <strong>Hátrány:</strong> csak részleges szinkronizáció — kevés horgony van egy szövegben.
+                    </li>
+                    <li>
+                        <strong>Hibrid módszer</strong> — <a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=16m17s" target="_blank">▶</a><br>
+                        Először horgonyalapú szinkronizációval kisebb szövegszakaszokat jelöl ki, majd ezeken belül hosszalapú módszert alkalmaz. Így a hosszalapú nem tud „eltévedni" a nagy szövegben, a horgonyok pedig nem kell hogy minden mondatot lefedjék.
+                    </li>
+                </ul>
+    </div>
+    <div class="definicio">
+        A szinkronizáció szintjei
+        <ul>
+                <li><strong>Bekezdésszint</strong>: viszonylag megbízható — a fordítások általában nem változtatnak a bekezdéshatárokon.</li>
+                <li><strong>Mondatszint</strong>: kívánatos, de nehezebb — az arány nem mindig 1:1; lehetséges 1:2, 2:1, sőt 1:0 (kihagyott vagy betoldott mondat) is.</li>
+                <li><strong>Szószint</strong>: sok szónak nincs közvetlen fordítása, ezért ez a legproblematikusabb szint.</li>
+            </ul>
+    </div>
+
+    
         
         
         
@@ -1468,30 +1516,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
 
    
         
-        
-        <h4>Mondatszinkronizálás (sentence alignment)</h4>
-        <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=1m" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A párhuzamos korpusz építéséhez először <strong>mondatra kell szegmentálni</strong> (nehéz: a pont nem mindig mondatvég — <em>U.S.</em>, <em>Smith Corp.</em>, URL-ek). Utána a mondatokat egymásnak meg kell feleltetni (1:1, 1:2, 2:1, 1:0 stb.).</p>
-    
-        <ul>
-            <li>
-                <strong>Hosszalapú (length-based)</strong> — <a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=3m46s" target="_blank">▶</a><br>
-                Gale–Church (1993): a fordítás hossza korrelál az eredeti hosszával. <strong>Dinamikus programozással</strong> globálisan optimális párba állítást keres — nem kapkod, hanem az egész szövegre nézve legjobb megoldást találja. Előny: nyelvfüggetlen, mindig ad eredményt (teljes szinkronizáció). Hátrány: eltévedhet 1:2, 2:1, 1:0 esetekben.
-            </li>
-            <li>
-                <strong>Szótáralapú (dictionary-based)</strong> — <a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=1m34s" target="_blank">▶</a><br>
-                Kétnyelvű szótárból ismert szópárokat keres a mondatokban: ahol mindkét oldalon sok megfelelő szó szerepel, ott párosít. Előny: jó pontosságú részleges szinkronizáció. Hátrány: külső lexikai forrás kell, tulajdonneveket és ritka szavakat nem kezeli.
-            </li>
-            <li>
-                <strong>Horgony (anchor) alapú</strong> — <a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=2m28s" target="_blank">▶</a><br>
-                Nyelvtől független, mindkét szövegben azonosan szereplő elemeket (e-mail-cím, URL, szám, tulajdonnév) rögzítési pontként használja. Lineáris regresszióval szűri a valódi horgonyokat. Előny: pontossága közel 100%. Hátrány: csak részleges szinkronizáció — kevés horgony van egy szövegben.
-            </li>
-            <li>
-                <strong>Hibrid módszer</strong> — <a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=16m17s" target="_blank">▶</a><br>
-                Először horgonyalapú szinkronizációval kisebb szövegszakaszokat jelöl ki, majd ezeken belül hosszalapú módszert alkalmaz. Így a hosszalapú nem tud „eltévedni" a nagy szövegben, a horgonyok pedig nem kell hogy minden mondatot lefedjék.
-            </li>
-        </ul>
-
+ 
 
 
 
@@ -1509,6 +1534,45 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
 
     <div class="definicio">
         <strong>Szóbeágyazás (word embedding):</strong> szavak ábrázolása <strong>sűrű, valós értékű vektorként</strong> egy néhány száz dimenziós térben. A vektorok úgy tanulódnak, hogy hasonló kontextusban előforduló szavak <strong>közel kerüljenek</strong> egymáshoz a vektortérben. Klasszikus modellek: <strong>word2vec</strong> (CBOW, Skip-gram), GloVe, FastText; ma a kontextuális beágyazások (<strong>BERT</strong>) terjedtek el.
+    </div>
+
+    <div class="definicio">
+        <ul>
+            <li><strong>Régebben:</strong> word2vec (2-rétegű neurális háló)</li>
+            <li><strong>Ma:</strong> mélytanulási hálók, transformerek</li>
+            <li><strong>Transformer</strong> — két részből áll: encoder, decoder
+                <ul>
+                    <li><strong>Encoder:</strong>
+                        <ul>
+                            <li>teljes bemenetből reprezentációt épít</li>
+                            <li>előtanítás szavak kitakarásával (maszkolás)</li>
+                            <li>osztályozási, mondatmegértési feladatokhoz</li>
+                        </ul>
+                    </li>
+                    <li><strong>Decoder:</strong>
+                        <ul>
+                            <li>csak a saját korábbi kimeneteit éri el</li>
+                            <li>előtanítás a következő szó előrejelzésével</li>
+                            <li>generatív feladatokhoz</li>
+                        </ul>
+                    </li>
+                    <li><strong>Encoder-decoder:</strong>
+                        <ul>
+                            <li>teljes bemenetet és korábbi kimeneteit is eléri</li>
+                            <li>bonyolult tanítás</li>
+                            <li>generatív feladatokhoz bemenet alapján</li>
+                            <li>pl: ChatGPT, fordítók</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Előtanítás (pretrain):</strong> unsupervised; nagy korpusz, sok idő (maszkolás, rákövetkezés)</li>
+            <li><strong>Finomhangolás (finetuning):</strong> supervised; kis, specifikus, annotált korpusz
+                <ul>
+                    <li>pl: osztályozás, összesítés, fordítás, …</li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <h4>word2vec — tanítási stratégiák (Mikolov, 2013)</h4>
@@ -1582,6 +1646,32 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
         <li><strong>Szerkezeti többértelműség:</strong> ugyanaz a mondat több szintaktikai elemzést enged — <em>„Time flies like an arrow"</em>: idő repül / időlegyek / időzíts legyeket. Statisztika nélkül mind egyforma súlyú.</li>
         <li><strong>Többszavas kifejezések &amp; idiómák:</strong> az összetétel egységes értelmét szó szerinti fordítás elveszíti — <em>gone to the dogs</em> → „kutyákhoz ment". Ha az idioma nincs a szótárban, nincs közbülső rossz fordítás: egyszerűen téves.</li>
     </ul>
+
+    <h3>A fordítómemóriák és a gépi fordítás viszonya</h3>
+    <div class="definicio">
+        <ul>
+            <li>TM jó kiindulóstad → fordítónak könnyebb</li>
+            <li>pl: statisztikai fordításhoz segíthet (példa-alapú fordítás)</li>
+        </ul>
+        <table style="width:100%; border-collapse:collapse; margin-top:8px;">
+            <thead>
+                <tr>
+                    <th style="border:1px solid #ccc; padding:6px; background:#f5f5f5;">TM</th>
+                    <th style="border:1px solid #ccc; padding:6px; background:#f5f5f5;">GF (Gépi fordítás)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border:1px solid #ccc; padding:6px;">nem fordít önmagában</td>
+                    <td style="border:1px solid #ccc; padding:6px;">automatikusan fordít új szövegeket is</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #ccc; padding:6px;">meglévő fordításokon alapul</td>
+                    <td style="border:1px solid #ccc; padding:6px;">nem szükséges párhuzamos korpusz</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h3>Szabályalapú gépi fordítás (RBMT) — a Vauquois-háromszög</h3>
     <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=11m03s" target="_blank">▶ Előadás ezen a részen</a></p>
@@ -1676,7 +1766,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
 <script src="shared.js"></script>
 <script>
   // —— Nyelvtechnológia-specifikus kiemelések ——
-  highlightTerms(document.body, /reguláris kifejezés|egzocentrikus|Hátránya|Pl.|bottom-up|top-down|Unifikálhatóság|Jegyszerkezet|endocentrikus|DAG|Erőssége|Gyengesége|X-vonás|HuMor|Nem-|Destruktív|BU|TD|véges automata|FSA|FST|RTN|ATN/gi, '#cc0000');
+  highlightTerms(document.body, /reguláris kifejezés|Előny:|Hátrány:|egzocentrikus|Hátránya|Pl.|bottom-up|top-down|Unifikálhatóság|Jegyszerkezet|endocentrikus|DAG|Erőssége|Gyengesége|X-vonás|HuMor|Nem-|Destruktív|BU|TD|véges automata|FSA|FST|RTN|ATN/gi, '#cc0000');
   highlightTerms(document.body, /morfológia|unifikáció/gi, '#cc0000');
   highlightTerms(document.body, /korpusz|szóbeágyazás/gi, '#cc0000');
 </script>
