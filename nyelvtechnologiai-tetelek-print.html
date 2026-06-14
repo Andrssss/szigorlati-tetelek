@@ -1331,30 +1331,57 @@ szövegszinkronizáció, fordítómemóriák. A fordítómemóriák és a gépi 
 Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
     </div>
 
-    <h3>Korpuszok és korpusznyelvészet</h3>
-    <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=1m30s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <h3>Korpuszok és Korpusznyelvészet</h3>
+    <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=0m47s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
-        A <strong>korpusz</strong> elektronikus, géppel kereshető, reprezentatív szöveggyűjtemény, amely egy nyelv vagy nyelvváltozat tanulmányozásához ad mintát. A <em>reprezentativitás</em> azt jelenti, hogy különböző műfajokat, regisztereket és időszakokat arányosan tartalmaz.
+        A <strong>korpusznak</strong> nincs definíciója: egy valamekkora szövegegyüttes, amin valamilyen vizsgálatot végzünk. Általában valamilyen meghatározott szempontok alapján rakják össze — valamifajta hasonlóság a szövegekben: pl. ugyanarról a fórumról, webről, irodalmi világból való, vagy valamilyen típusú szövegek együttese.
     </div>
 
     <div class="definicio">
         <ul>
-            <li>elemzésével információt szolgáltat (következtetés levonás, tézis alátámasztás)</li>
+            <li>Korpusznyelvészet 2 iránya:
+                <ul>
+                    <li><strong>tézis alátámasztás/cáfolás:</strong> van valami intuícióm vagy elméleti hipotézisem → megszámolom, megnézem a korpuszban → ezzel alátámasztom vagy cáfolom</li>
+                    <li><strong>következtetés levonás:</strong> megfigyelem a korpuszt, és abból vonom le a következtetést — nem azt találom, amit kerestem, hanem valami meglepőt (<em>serendipity principle</em>)</li>
+                </ul>
+            </li>
+     </ul>   
+      </div>
+            
+    <div class="definicio">
+            <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=5m05s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A korpusznyelvészeti módszerek (statisztika, gépi tanulás) csak kellő méret fölött működnek megbízhatóan — ahogy rúdugráshoz sem elég 1 méter magasság. De mekkora az elég? A méretet általában <strong>tokenekben</strong> adják meg (whitespace-szel elhatárolt egységek vagy pl: . / # / $  ...), mert a <strong>type</strong>-ok (különböző szóalakok) megszámlálása morfológiai elemzést igényelne.</p>
+
+        <ul>
             <li><strong>token:</strong> token szám = korpusz hossza → TTR = type/token (nyelvi változatosság); token ≈ whitespace-k körti szó</li>
             <li><strong>type:</strong> olyan, mint a token, de csak a különbözőeket számítják → alma, almát különböző? → morfológia</li>
+            <li>Általában a tokenek alapján vonják le a következtetéseket, mert a type-hoz kéne morfológia és nyelvteknológiai eszközök. A milliárdos nagyságú korpuszoknál már token is jó eredményt ad, mert ezek a zajok elenyésznek.</li>
             <li>hatalmas korpuszok → „gép többet tud, mint az ember"</li>
-            <li><strong>Korpuszannotációk:</strong>
+            
+        </ul>
+                <p>1 A4-es oldal ≈ 250 szó</p>
+
+            <p>Érdekesség: milliárdos korpuszban egy ezreléknyi hibaarány is egymilliós hibaszámot jelent — mégis elegendő minőségi adat marad pl. helyesírás-ellenőrző tanításához.</p>
+   
+      </div>
+
+
+          <div class="definicio">
+        <ul>   
+                <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=11m40s" target="_blank">▶ Előadás ezen a részen</a></p>
+ 
+            <li><strong>Korpuszannotációk:</strong> a nyers szövegre rárakott nyelvi elemzési rétegek — van csak sima szöveg, de rászalasztható egy nyelvtechnológiai eszköz, és akkor a szöveg kiegészül strukturált nyelvi információval. Lehetséges annotációk:
                 <ul>
-                    <li>szófaji egyértelműsítés</li>
-                    <li>névsifjeresel (névfelismerés)</li>
-                    <li>szintaktikai szerkezetek jelölése</li>
+                    <li>szófaji egyértelműsítés (POS-tagging)</li>
+                    <li>névfelismerés: tulajdonnevek, dátumok, webcímek → egységként kezelve bezárójelezve</li>
+                    <li>szintaktikai szerkezetek jelölése (pl. főnévi csoportok)</li>
                     <li>jelentés-egyértelműsítés</li>
-                    <li>referenciák (előre/hátra) jelölése</li>
-                    <li>dialógus (ki után ki következik, stb.)</li>
+                    <li>koreferencia (előre/hátra mutató utalások): ugyanarra az entitásra utaló kifejezések összekapcsolása</li>
+                    <li>dialógus: ki veszi át a szót, ki vágja közbe (szociolingvisztikában fontos)</li>
                 </ul>
             </li>
         
-        </ul>
+        
     </div>
 
     <h4>Példák:</h4>
@@ -1368,44 +1395,9 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
                 </ul>
             </li>
 
-    <h4>Korpusznyelvészet — két iránya</h4>
-    <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=0m47s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A korpusznyelvészetnek nincs egységes definíciója: a lényege, hogy valamilyen meghatározott szempontok szerint összeállított szövegegyüttesen végzünk vizsgálatot.</p>
-    <p>Két alapvető megközelítés különíthető el:</p>
-    <ul>
-        <li><strong>Korpuszalapú (corpus-based):</strong> a kutató már rendelkezik valamilyen elméleti hipotézissel, és a korpuszból veszi hozzá az adatokat — megszámolja, majd megerősíti vagy cáfolja az elméletet.</li>
-        <li><strong>Korpuszvezérelt (corpus-driven):</strong> a kutató adatok nézegetése közben vesz észre egy mintát, amelyből aztán az ötlet vagy elmélet születik. Erre vonatkozik a <em>serendipity principle</em> — a véletlenszerű felfedezés elve: nem azt találjuk, amit kerestünk, hanem valami meglepőt.</li>
-    </ul>
-
-    <h4>A korpusz mérete: token és type</h4>
-    <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=5m05s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A korpusznyelvészeti módszerek (statisztika, gépi tanulás) csak kellő méret fölött működnek megbízhatóan — ahogy rúdugráshoz sem elég 1 méter magasság. De mekkora az elég? A méretet általában <strong>tokenekben</strong> adják meg (whitespace-szel elhatárolt egységek vagy pl: . / # / $  ...), mert a <strong>type</strong>-ok (különböző szóalakok) megszámlálása morfológiai elemzést igényelne.</p>
-    <ul>
-        <li>1 A4-es oldal ≈ 250 szó</li>
-        <li>Az első igazi korpusz, a <strong>Brown korpusz</strong> (1961): 1 millió szó</li>
-        <li><strong>Magyar Nemzeti Szövegtár</strong>: mára elérte az 1 milliárdot</li>
-    </ul>
-    <p>Érdekesség: milliárdos korpuszban egy ezreléknyi hibaarány is egymilliós hibaszámot jelent — mégis elegendő minőségi adat marad pl. helyesírás-ellenőrző tanításához.</p>
-
-    <h4>Korpuszannotáció <span style="font-weight:normal;font-size:0.85em;">(a szöveg strukturált nyelvi elemzési rétegekkel való gazdagítása)</span></h4>
-    <p><a href="https://www.youtube.com/watch?v=NtTVkcGo5-A&t=11m38s" target="_blank">▶ Előadás ezen a részen</a></p>
 
 
-
-
-   <h3>Párhuzamos korpuszok</h3>
-    <p><a href="https://www.youtube.com/watch?v=58M0q1lWA00&t=4m3s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <div class="definicio">
-        <strong>Párhuzamos korpusz:</strong> két (vagy több) nyelvű egymásnak megfeleltetett szöveggyűjtemény. A megfeleltetés általában mondat-, ritkábban kifejezés- vagy szószintű.
-    </div>
-             <p> a <strong>Rosetta-kő</strong> (i.e. 196) — egyiptomi hieroglifa, démotikus és ógörög változat egymás mellett. Champollion ennek alapján fejtette meg a hieroglifákat. A <strong>Biblia</strong> a legrégebbi, sok nyelven fennmaradt párhuzamos korpusz.</p>
-    <p>A párhuzamos korpuszok a gépi fordítás alapvető tanítóanyagai: az SMT és NMT rendszerek ezeken a mondatpárokon tanulják meg a forrás- és célnyelv közötti megfeleléseket.</p>
- 
-
-
-
-
-             
+            
 
 
     <h3>Gépi tanulás korpuszból</h3>
@@ -1427,6 +1419,93 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
         </ul>
     </div>
 
+
+ 
+
+
+
+    <h3>Szóbeágyazás (word embedding)</h3>
+    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h28m36s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <p>A szóbeágyazás volt az első neurális hálóhoz közeli megoldás, amely a szavakat n dimenziós vektortérbe konvertálja a nyelvnek szavait. A szó jelentése = a szövegkörnyezete: minden szó sokféle kontextusban fordul elő, és ezek a kontextusok együtt jellemzik, mit jelent az adott szó. Hasonló kontextusú szavak közel kerülnek egymáshoz a vektortérben — a gép maga tanulja meg az összefüggéseket pusztán szövegből, mi nem adjuk meg.</p>
+
+    <p>Különbség a manuális módszerektől (WordNet, ontológiák): ott <em>mi</em> definiáljuk a kategóriákat; a szóbeágyazásnál a gép <em>maga</em> tanulja meg az összefüggéseket pusztán nyers szövegből.</p>
+
+    
+
+    <div class="definicio">
+        <ul>
+            <li><strong>Régebben:</strong> word2vec (2-rétegű neurális háló)</li>
+            <li><strong>Ma:</strong> mélytanulási hálók, transformerek</li>
+            <li><strong>Transformer</strong> — két részből áll: encoder, decoder
+                <br><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=1h26m20s" target="_blank">▶ Előadás ezen a részen (Transformer modellek)</a>
+                <ul>
+                    <li><strong>Encoder:</strong>
+                        <ul>
+                            <li>teljes bemenetből reprezentációt épít</li>
+                            <li>előtanítás szavak kitakarásával (maszkolás)</li>
+                            <li>osztályozási, mondatmegértési feladatokhoz</li>
+                        </ul>
+                    </li>
+                    <li><strong>Decoder:</strong>
+                        <ul>
+                            <li>csak a saját korábbi kimeneteit éri el</li>
+                            <li>előtanítás a következő szó előrejelzésével</li>
+                            <li>generatív feladatokhoz</li>
+                        </ul>
+                    </li>
+                    <li><strong>Encoder-decoder:</strong>
+                        <ul>
+                            <li>teljes bemenetet és korábbi kimeneteit is eléri</li>
+                            <li>bonyolult tanítás</li>
+                            <li>generatív feladatokhoz bemenet alapján</li>
+                            <li>pl: ChatGPT, fordítók</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Előtanítás (pretrain):</strong> unsupervised; nagy korpusz, sok idő (maszkolás, rákövetkezés)</li>
+            <li><strong>Finomhangolás (finetuning):</strong> supervised; kis, specifikus, annotált korpusz
+                <ul>
+                    <li>pl: osztályozás, összesítés, fordítás, …</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h4>word2vec — tanítási stratégiák (Mikolov, 2013)</h4>
+    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h30m53s" target="_blank">▶ Előadás ezen a részen (word2vec, Mikolov 2013)</a></p>
+    <p>Egy sekély neurális hálóval a szavakat vektorokká alakítja: a szó körüli szövegablak (bal-jobb szomszédok) alapján tanul. Kétféle stratégia:</p>
+    <ul>
+        <li><strong>CBOW</strong> (Continuous Bag of Words): <strong>környezetből → szó</strong> — a kontextusszavakból prediktálja az eldugott célszót.</li>
+        <li><strong>Skip-gram</strong>: <strong>szóból → környezet</strong> — a szóból prediktálja a szomszédait. Ritka szavaknál hatékonyabb.</li>
+    </ul>
+
+    <h4>Vektortér-tulajdonságok: analógia és hasonlóság</h4>
+    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h35m43s" target="_blank">▶ Előadás ezen a részen (vektortér-analógia, ország-főváros példa)</a></p>
+    <p>Mivel a szavak vektorok, össze lehet adni és kivonni őket — az <strong>analógia vektoraritmetikává</strong> válik:</p>
+    <div class="pelda">
+        <em>király − férfi + nő ≈ királynő</em> &nbsp;·&nbsp; <em>Moszkva − Oroszország + Kína ≈ Peking</em>
+    </div>
+    <p>Hasonlóságot a <strong>koszinusz-mérték</strong> adja: a két vektor által bezárt szög koszinusza — 1 = azonos irány (hasonló szavak), 0 = független, −1 = ellentétes.</p>
+
+  
+
+
+
+
+   <h3>Párhuzamos korpuszok</h3>
+    <p><a href="https://www.youtube.com/watch?v=58M0q1lWA00&t=4m3s" target="_blank">▶ Előadás ezen a részen</a></p>
+    <div class="definicio">
+        <strong>Párhuzamos korpusz:</strong> két (vagy több) nyelvű egymásnak megfeleltetett szöveggyűjtemény. A megfeleltetés általában mondat-, ritkábban kifejezés- vagy szószintű.
+    </div>
+             <p> a <strong>Rosetta-kő</strong> (i.e. 196) — egyiptomi hieroglifa, démotikus és ógörög változat egymás mellett. Champollion ennek alapján fejtette meg a hieroglifákat. A <strong>Biblia</strong> a legrégebbi, sok nyelven fennmaradt párhuzamos korpusz.</p>
+    <p>A párhuzamos korpuszok a gépi fordítás alapvető tanítóanyagai: az SMT és NMT rendszerek ezeken a mondatpárokon tanulják meg a forrás- és célnyelv közötti megfeleléseket.</p>
+ 
+
+
+
+
+ 
     <h3>Szövegszinkronizáció</h3>
     <p><a href="https://www.youtube.com/watch?v=58M0q1lWA00&t=17m15s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
@@ -1502,75 +1581,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
 
 
 
-    
-
-
-
-    <h3>Szóbeágyazás (word embedding)</h3>
-    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h28m36s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A szóbeágyazás volt az első neurális hálóhoz közeli megoldás, amely a szavakat n dimenziós vektortérbe konvertálja a nyelvnek szavait. A szó jelentése = a szövegkörnyezete: minden szó sokféle kontextusban fordul elő, és ezek a kontextusok együtt jellemzik, mit jelent az adott szó. Hasonló kontextusú szavak közel kerülnek egymáshoz a vektortérben — a gép maga tanulja meg az összefüggéseket pusztán szövegből, mi nem adjuk meg.</p>
-
-    <p>Különbség a manuális módszerektől (WordNet, ontológiák): ott <em>mi</em> definiáljuk a kategóriákat; a szóbeágyazásnál a gép <em>maga</em> tanulja meg az összefüggéseket pusztán nyers szövegből.</p>
-
-    
-
-    <div class="definicio">
-        <ul>
-            <li><strong>Régebben:</strong> word2vec (2-rétegű neurális háló)</li>
-            <li><strong>Ma:</strong> mélytanulási hálók, transformerek</li>
-            <li><strong>Transformer</strong> — két részből áll: encoder, decoder
-                <br><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=1h26m20s" target="_blank">▶ Előadás ezen a részen (Transformer modellek)</a>
-                <ul>
-                    <li><strong>Encoder:</strong>
-                        <ul>
-                            <li>teljes bemenetből reprezentációt épít</li>
-                            <li>előtanítás szavak kitakarásával (maszkolás)</li>
-                            <li>osztályozási, mondatmegértési feladatokhoz</li>
-                        </ul>
-                    </li>
-                    <li><strong>Decoder:</strong>
-                        <ul>
-                            <li>csak a saját korábbi kimeneteit éri el</li>
-                            <li>előtanítás a következő szó előrejelzésével</li>
-                            <li>generatív feladatokhoz</li>
-                        </ul>
-                    </li>
-                    <li><strong>Encoder-decoder:</strong>
-                        <ul>
-                            <li>teljes bemenetet és korábbi kimeneteit is eléri</li>
-                            <li>bonyolult tanítás</li>
-                            <li>generatív feladatokhoz bemenet alapján</li>
-                            <li>pl: ChatGPT, fordítók</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><strong>Előtanítás (pretrain):</strong> unsupervised; nagy korpusz, sok idő (maszkolás, rákövetkezés)</li>
-            <li><strong>Finomhangolás (finetuning):</strong> supervised; kis, specifikus, annotált korpusz
-                <ul>
-                    <li>pl: osztályozás, összesítés, fordítás, …</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <h4>word2vec — tanítási stratégiák (Mikolov, 2013)</h4>
-    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h30m53s" target="_blank">▶ Előadás ezen a részen (word2vec, Mikolov 2013)</a></p>
-    <p>Egy sekély neurális hálóval a szavakat vektorokká alakítja: a szó körüli szövegablak (bal-jobb szomszédok) alapján tanul. Kétféle stratégia:</p>
-    <ul>
-        <li><strong>CBOW</strong> (Continuous Bag of Words): <strong>környezetből → szó</strong> — a kontextusszavakból prediktálja az eldugott célszót.</li>
-        <li><strong>Skip-gram</strong>: <strong>szóból → környezet</strong> — a szóból prediktálja a szomszédait. Ritka szavaknál hatékonyabb.</li>
-    </ul>
-
-    <h4>Vektortér-tulajdonságok: analógia és hasonlóság</h4>
-    <p><a href="https://www.youtube.com/watch?v=KTDQ182qdH0&t=1h35m43s" target="_blank">▶ Előadás ezen a részen (vektortér-analógia, ország-főváros példa)</a></p>
-    <p>Mivel a szavak vektorok, össze lehet adni és kivonni őket — az <strong>analógia vektoraritmetikává</strong> válik:</p>
-    <div class="pelda">
-        <em>király − férfi + nő ≈ királynő</em> &nbsp;·&nbsp; <em>Moszkva − Oroszország + Kína ≈ Peking</em>
-    </div>
-    <p>Hasonlóságot a <strong>koszinusz-mérték</strong> adja: a két vektor által bezárt szög koszinusza — 1 = azonos irány (hasonló szavak), 0 = független, −1 = ellentétes.</p>
-
-  
+   
 
     
     <h3>Fordítómemóriák (Translation Memory, TM)</h3>
@@ -1753,7 +1764,7 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
 <script src="shared.js"></script>
 <script>
   // —— Nyelvtechnológia-specifikus kiemelések ——
-  highlightTerms(document.body, /reguláris kifejezés|Előny:|Hátrány:|egzocentrikus|Hátránya|Pl.|bottom-up|top-down|Unifikálhatóság|Jegyszerkezet|endocentrikus|DAG|Erőssége|Gyengesége|X-vonás|HuMor|Nem-|Destruktív|BU|TD|véges automata|FSA|FST|RTN|ATN/gi, '#cc0000');
+  highlightTerms(document.body, /reguláris kifejezés|Előny:|token|type|Hátrány:|egzocentrikus|Hátránya|Pl.|bottom-up|top-down|Unifikálhatóság|Jegyszerkezet|endocentrikus|DAG|Erőssége|Gyengesége|X-vonás|HuMor|Nem-|Destruktív|BU|TD|véges automata|FSA|FST|RTN|ATN/gi, '#cc0000');
   highlightTerms(document.body, /morfológia|unifikáció/gi, '#cc0000');
   highlightTerms(document.body, /korpusz|szóbeágyazás/gi, '#cc0000');
 </script>
