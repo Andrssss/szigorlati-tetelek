@@ -9,6 +9,8 @@
         @media print {
             .no-print { display: none !important; }
         }
+        a[target="_blank"] { color: #1a6bbf; }
+        a[target="_blank"]:visited { color: #6b21a8; }
     </style>
     <script>
         function markH4Sections() {
@@ -1547,10 +1549,12 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
                 </ul>
     </div>
     <div class="definicio">
+            <p><a href="https://www.youtube.com/watch?v=58M0q1lWA00&t=17m24s" target="_blank">▶ Előadás ezen a részen</a></p>
+
         A szinkronizáció szintjei
         <ul>
                 <li><strong>Bekezdésszint</strong>: viszonylag megbízható — a fordítások általában nem változtatnak a bekezdéshatárokon.</li>
-                <li><strong>Mondatszint</strong>: kívánatos, de nehezebb — az arány nem mindig 1:1; lehetséges 1:2, 2:1, sőt 1:0 (kihagyott vagy betoldott mondat) is.</li>
+                <li><strong>MonGépi fordításdatszint</strong>: kívánatos, de nehezebb — az arány nem mindig 1:1; lehetséges 1:2, 2:1, sőt 1:0 (kihagyott vagy betoldott mondat) is.</li>
                 <li><strong>Szószint</strong>: sok szónak nincs közvetlen fordítása, ezért ez a legproblematikusabb szint.</li>
             </ul>
     </div>
@@ -1619,26 +1623,18 @@ Szabályalapú, statisztikai és neurális hálós gépi fordítás.</a></h2>
     <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=2m" target="_blank">▶ Előadás ezen a részen</a></p>
 
     <p>A gépi fordítás (MT) célja, hogy egy forrásnyelvi szöveget automatikusan célnyelvi szöveggé alakítson. Három kulcsparaméter jellemzi: <strong>sebesség, ár, minőség</strong> — ebből egyszerre csak kettő teljesíthető jól (<em>„a három közül bármelyik kettőt választhatja"</em>). A gépi fordítás nem veszi el a fordítók munkáját, hanem az unalmas, sematikus feladatoktól szabadítja meg őket; a valóban nehéz szövegek (irodalom, jog) továbbra is emberi fordítót igényelnek.</p>
-    <p>Ha a minőség javul és az ár közel van a nullához, a gép sebessége óriási előnyt jelent — olyan gyorsan fordít, ahogy az ember sosem tudna.</p>
 
 
 
     <p>A gépi fordítás fejlődésének három fő korszaka: <strong>szabályalapú</strong> (RBMT, 1950-es évektől), <strong>statisztikai</strong> (SMT, 1990-es évektől), <strong>neurális</strong> (NMT, 2014-től). Ma minden vezető rendszer neurális alapú.</p>
 
-    <h4>Gyors fordítók és kommunikáció poblémája</h4>
-    <p><a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=4m3s" target="_blank">▶ Előadás ezen a részen</a></p>
-    <p>A gyors fordítók az interaktív, rövid kommunikációhoz készültek. Ilyen környezetben a beszéd nem teljes mondatokból áll, hanem félmondatokból, megszakításokból és ismétlésekből. A rendszernek a lehető leggyorsabban kell hasznos jelentést adni, még ha az nem is eléri az irodalmi minőséget.</p>
-    <ul>
-        <li>Beszédfordításnál a telefonos vagy utazási párbeszédek gyakori félmondatokat tartalmaznak („jaj, szél te... most várjál... holnap után..."): a gépnek nem könnyű összerakni a teljes mondatszerkezetet.</li>
-        <li>A pekingi olimpián használt kínai–angol készülékek ilyen sematikus, gyors fordítást vállaltak: cél a közvetlen megértés, nem a tökéletes nyelvi forma.</li>
-        <li>Ezek a rendszerek tipikusan a sebességet és a domain-specifikusságot helyezik előtérbe a nyelvi finomságokkal szemben.</li>
-    </ul>
     <h4>Problémák: </h4>
     <ul>
-        <li><strong>Lexikai többértelűség:</strong> egy szónak több, szótárban egyenrangú jelentése van — <em>spirit</em> = lélek vagy szesz? Statisztika nélkül a gép véletlenszerűen választ.</li>
-        <li><strong>PP-csatolás:</strong> a prepozíciós frázis többféleképpen kötődhet — <em>„I saw the girl with a telescope"</em>: kié a távcső? Az ember azonnal tudja, a gép mindkét fát felépíti.</li>
-        <li><strong>Szerkezeti többértelműség:</strong> ugyanaz a mondat több szintaktikai elemzést enged — <em>„Time flies like an arrow"</em>: idő repül / időlegyek / időzíts legyeket. Statisztika nélkül mind egyforma súlyú.</li>
-        <li><strong>Többszavas kifejezések &amp; idiómák:</strong> az összetétel egységes értelmét szó szerinti fordítás elveszíti — <em>gone to the dogs</em> → „kutyákhoz ment". Ha az idioma nincs a szótárban, nincs közbülső rossz fordítás: egyszerűen téves.</li>
+        <li>Beszédfordításnál a telefonos vagy utazási párbeszédek gyakori félmondatokat tartalmaznak („jaj, szél te... most várjál... holnap után..."): a gépnek nem könnyű összerakni a teljes mondatszerkezetet.</li>
+        <li><strong>Lexikai többértelűség</strong> <a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=44m14s" target="_blank">▶</a><strong>:</strong> egy szónak több, szótárban egyenrangú jelentése van — <em>spirit</em> = lélek vagy szesz? Statisztika nélkül a gép véletlenszerűen választ.</li>
+        <li><strong>PP-csatolás</strong> <a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=46m10s" target="_blank">▶</a><strong>:</strong> a prepozíciós frázis többféleképpen kötődhet — <em>„I saw the girl with a telescope"</em>: kié a távcső? Az ember azonnal tudja, a gép mindkét fát felépíti.</li>
+        <li><strong>Szerkezeti többértelműség</strong> <a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=47m30s" target="_blank">▶</a><strong>:</strong> ugyanaz a mondat több szintaktikai elemzést enged — <em>„Time flies like an arrow"</em>: idő repül / időlegyek / időzíts legyeket. Statisztika nélkül mind egyforma súlyú.</li>
+        <li><strong>Többszavas kifejezések &amp; idiómák</strong> <a href="https://www.youtube.com/watch?v=fMdM4C4d8eY&t=50m52s" target="_blank">▶</a><strong>:</strong> az összetétel egységes értelmét szó szerinti fordítás elveszíti — <em>gone to the dogs</em> → „kutyákhoz ment". Ha az idioma nincs a szótárban, nincs közbülső rossz fordítás: egyszerűen téves.</li>
     </ul>
 
     <h3>A fordítómemóriák és a gépi fordítás viszonya</h3>
