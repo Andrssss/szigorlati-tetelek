@@ -267,7 +267,7 @@
             var day = new Date().getDay();
             var todayImg = day === 0 ? 7 : day;
             var param = new URLSearchParams(window.location.search).get('bg');
-            var n = (param && param >= 1 && param <= 7) ? parseInt(param) : todayImg;
+            var n = (param && param >= 1 && param <= 7) ? parseInt(param) : 1; // TODO: temp, remove to restore: todayImg
             var img = document.getElementById('side-img');
             var img2 = document.getElementById('side-img-2');
             var heights = {1: '50vh', 4: '70vh', 5: '55vh', 6: '70vh', 7: '35vh'};
