@@ -649,20 +649,31 @@ a fedés viszonya a különböző alkalmazásokban.
 </div>
 
 
-
     <h3>Pontosság és fedés viszonya</h3>
         <div class="definicio">
+    <p><a href="https://www.youtube.com/watch?v=HV1pS76Rosc&t=2h20m14s" target="_blank">▶ Előadás ezen a részen</a></p>
 
-        <p><a href="https://www.youtube.com/watch?v=yGdBR66ZFzw&t=10m50s" target="_blank">▶ Előadás ezen a részen</a></p>
-        <p>A szövegszinkronizáció eredményét — mint minden nyelvtechnológiai feladatét — két egymásnak feszülő szempontból lehet mérni:</p>
+
+
+        <p><strong>Pontosság</strong> = amink van, az helyes-e? &nbsp;|&nbsp; <strong>Fedés (recall)</strong> = mindent megtaláltunk-e?</p>
         <ul>
-            <li><strong>Pontosság (precision):</strong> az összerendelt mondatpárok közül hány a valóban helyes megfeleltetés? — <em>Amink van, az tényleg jó-e?</em></li>
-            <li><strong>Fedés (recall / teljesség):</strong> az összes lehetséges helyes párból hányat sikerült megtalálni? — <em>Mindent megtaláltunk-e?</em></li>
-        </ul>
-        <p>A kettő egymással <strong>ellentétes irányban mozog</strong>:</p>
-        <ul>
-            <li>Ha <strong>teljes szinkronizációra</strong> törekszünk (mindennek legyen párja) → magas fedés, de a rendszer néha téved, pontossága csökken. Erre a <em>hosszalapú</em> módszer tipikus példa.</li>
-            <li>Ha <strong>részleges szinkronizációt</strong> csinálunk (csak a biztosan helyes párokat adjuk meg) → közel 100%-os pontosság, de a szöveg nagy része lefedetlen marad. Erre a <em>horgonyalapú</em> módszer tipikus példa: a horgonyok (URL, szám, tulajdonnév) szinte mindig pontosak, de egy hosszabb szövegben csak néhány ilyen akad.</li>
+            <li><strong>Helyesírás → fedés a fontos:</strong> minden hibát alá kell húzni, még ha néha téved is — a felhasználó dönt
+                <ul>
+                    <li>jó hír: ránéz, eldönti, oda se kell menni — buta a rendszer, de ez oké</li>
+                    <li>rossz hír: a felhasználónak tudnia kell a helyesírást, hogy melyiket javítsa valóban ki</li>
+                </ul>
+            </li>
+            <li><strong>Elválasztás → pontosság a fontos:</strong> csak biztosan helyes elválasztást visz be (a rossz elválasztás helyesírási hiba lenne)
+                <ul>
+                    <li>ára: amit nem tud biztosan, azt nem választja el → néha kézzel kell belenyúlni, ha csúnya nagy szóköz marad</li>
+                    <li>jó hír: a folyamat nagyon gyors marad, nincs rossz elválasztás a végleges szövegben</li>
+                </ul>
+            </li>
+            <li><strong>Szinonimaszótár → fedés a fontos:</strong> mint minden keresésnél, minél kevesebb meg nem talált eset maradjon
+                <ul>
+                    <li>ára: néha butaságokat is javasol, de ezt elfogadjuk</li>
+                </ul>
+            </li>
         </ul>
      
         </div>
