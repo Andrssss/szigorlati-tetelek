@@ -20,7 +20,7 @@
         <h1>A Digitális Számítás Elmélete</h1>
         <p class="subtitle">Kidolgozta: Bakó András</p>
        <div style="color:red; font-weight:bold; text-align:center;">
-            FIGYELEM !!!! <br> Két hét folyamatos munkának eredménye ez a kidolgozás.<br> Viszont ez nem azt jelenti, hogy tökéletes ! <br>
+            FIGYELEM !!!! <br> Megértés sokkal fontosabb, mint kimondani a tételeket. Örül a tétel kimondásnak, de a megértés a prio.  <br>
         </div>
         <div class="toc">
             <h2>Tartalom</h2>
@@ -75,16 +75,13 @@
             <li>Speciálisan, <strong>ε</strong> jelöli a 0 hosszú sorozatot, az <em>üres szót</em>.</li>
             <li>A <strong>bináris ábécé</strong> a 0 és 1 jeleket tartalmazza.</li>
         </ul>
-        <strong>Példa:</strong> Σ = {if, then, else, for, do, a, b, c}<br>
-        Az alábbi szavak mind benne vannak Σ*-ban:<br>
-        <code>if a then b else c</code>,&nbsp; <code>do a</code>,&nbsp; <code>do do</code>,&nbsp; <code>aabba</code>
     </div>
         <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=8m18s" target="_blank">▶ Előadás ezen a részen</a></p>
 
     <div class="definicio">
         <strong>Ábécé (Σ):</strong> Véges, nemüres szimbólumhalmaz.<br>
         <strong>Szó:</strong> Az ábécé elemeinek véges sorozata. Az üres szót ε-nal jelöljük.<br>
-        <strong>Σ*:</strong> Az ábécé feletti összes szó halmaza.<br><br>
+        <strong>Σ*:</strong> Az ábécé feletti összes szó véges halmaza.<br><br>
         <strong>Definíció:</strong> <em>L</em> egy <strong>formális nyelv</strong> Σ felett, ha L ⊆ Σ*.<br><br>
 
         <strong>Megjegyzés:</strong> Nem lehet az összes Σ feletti nyelvet végesen reprezentálni!
@@ -119,13 +116,18 @@
 <div class="definicio">
         <strong>Definíció (Közvetlen levezetés):</strong> Egy G = (V, Σ, R, S) grammatika alapján a κ ∈ (V∪Σ)* szóból <em>közvetlenül levezethető</em> a µ ∈ (V∪Σ)* szó, ha léteznek olyan γ, δ ∈ (V∪Σ)* szavak és α → β szabály R-ben, hogy:
         <div style="margin: 6px 0 6px 20px;">κ = γ α δ,&nbsp;&nbsp; µ = γ β δ.</div><br>
-                <strong>Jelölés:</strong> κ ⇒<sub>G</sub> µ &nbsp; vagy &nbsp; κ ⇒ µ <br><br>
+                <strong>Jelölés:</strong> κ ⇒<sub>G</sub> µ &nbsp; vagy &nbsp; κ ⇒ µ 
 
-        (γ az előtag, δ az utótag. Nélkülük nem lehet megkülönböztetni, melyik előfordulást cseréljük, így a „közvetlen levezetés” nem lenne egyértelmű.)
+        <span class="note"> <br><br>(γ az előtag, δ az utótag. Nélkülük nem lehet megkülönböztetni, melyik előfordulást cseréljük, így a „közvetlen levezetés” nem lenne egyértelmű.)</span >
     </div>  
     <details>
-    <summary><strong>Példa:</strong> A {0<sup>i</sup>1<sup>i</sup> | i &gt; 0} nemreguláris nyelv nyelvtana — Levezetés (i=4): S ⇒ 0S1 ⇒ 00S11 ⇒ 000S111 ⇒ 00001111</summary>
-    <span style="font-style:normal;">G = ({S}, {0,1}, {S → 0S1, S → 01}, S)</span>
+    <span class="note"> 
+        <strong>Példa:</strong> <br>
+            S -> 0S1 <br>
+            0K1 -> 0T1 <br>
+            Na most jön a lényeg, ez így ugye 1 irányúnak tűnik. Nade a közvetlen levezetés aztat mondja, hogy csak a környezet a lényeg és így visszafelé is tudod használni more. (Vizsgán kérdezte) <br>
+            Szóval 0000T1111 -> 0000K1111 ilyet is tudsz vele csinálni. Fasza nem ? 
+    </span>
 
     <div style="display:flex; gap:30px; align-items:flex-start; margin:10px 0; font-style:normal; line-height:2.1;">
         <div style="min-width:130px; font-size:12pt;">
@@ -196,17 +198,6 @@
     <h3>Generatív grammatika ekvivalenciája</h3>
     <div class="definicio">
         <strong>Definíció (Ekvivalencia):</strong> A G és G' grammatikák <em>ekvivalensek</em>, ha L(G) = L(G').
-    </div>
-
-    <h4>Környezetfüggetlen (Context Free, CF) grammatikák </h4>
-   <div class="definicio">
-        <strong>Definíció (Ekvivalencia):</strong> Definíció: A G = (V, Σ, R, S) grammatika környezetfüggetlen, ha a
-levezetési szabályainak bal oldalán egyetlen nemterminális
-szerepel, azaz a szabályok<br><br>
- A → β <br>
-alakúak, ahol A ∈ V, β ∈ (V∪Σ)* 
-
-
     </div>
 
 
@@ -415,7 +406,7 @@ Turing­gépekkel. </p>
     </div>
 
 
-    <h4>Általánosított nemdeterminisztikus véges automata (ÁNVA)</h4>
+    <h4>Általánosított nemdeterminisztikus véges automata (ÁNVA) - Reguláris nyelvek felismerése !!</h4>
     <p><a href="https://www.youtube.com/watch?v=RALa01bMNvw&t=58m45s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
         <strong>Definíció:</strong> Általánosított nemdeterminisztikus véges automata (ánva)<br>
@@ -494,8 +485,8 @@ Turing­gépekkel. </p>
     </div>
 
     <div class="tetel-box">
-        <strong>Tétel (Myhill-Nerode):</strong> Ha L ⊆ Σ* reguláris nyelv, akkor ∃ M = (Q, Σ, δ, q₀, F) DVA, hogy L(M) = L, és állapotainak száma éppen az ≈<sub>L</sub> reláció ekvivalencia osztályainak száma. M az állapotok számozásától eltekintve egyértelmű (minimális).<br><br>
-        <p style="margin-top:8px;">(Ha L reguláris nyelv → akkor van rá minimális automata M, és ennek <strong>állapotainak száma = az ekvivalencia osztályok száma</strong> az ≈<sub>L</sub> relációban.)</p>
+        <strong>Tétel (Myhill-Nerode):</strong> Ha L ⊆ Σ* reguláris nyelv, akkor ∃ M = (Q, Σ, δ, q₀, F) DVA, hogy L(M) = L, és állapotainak száma éppen az ≈<sub>L</sub> reláció ekvivalencia osztályainak száma. M az állapotok számozásától eltekintve egyértelmű (minimális).
+          <span class="note"> <br><br> (Ha L reguláris nyelv → akkor van rá minimális automata M, és ennek <strong>állapotainak száma = az ekvivalencia osztályok száma</strong> az ≈<sub>L</sub> relációban.)</span >
     </div>
 
     <div class="tetel-box">
@@ -721,7 +712,7 @@ alakúak, ahol A ∈ V, β ∈ (V∪Σ)*
     <div class="tetel-box">
         <strong>Tétel:</strong> Legyen ℒ a CF nyelvek halmaza. <br> 
          ℒ nem zárt a metszetre nézve.<br>
-        ℒ nem zárt a komplementerre nézve.<br><br>
+        ℒ nem zárt a komplementerre nézve.
     </div>
     <div class="tetel-box">
         <strong>Tétel:</strong> Ha A<sub>1</sub> CF nyelv, A<sub>2</sub> reguláris nyelv, akkor A<sub>1</sub> ∩ A<sub>2</sub> CF nyelv.
@@ -789,7 +780,7 @@ Speciális esetek:
         <h3>Verem automata kapcsolata CF nyelvekkel</h3>
 
     <div class="tetel-box">
-        <span style="font-weight:normal;">
+        <span style="font-weight:normal;", class="note">
             <strong>G</strong> (grammatika) = a szabályok — leírja, hogyan lehet szavakat előállítani. Pl. S → aSb | ε<br>
             <strong>L</strong> (nyelv) = a szavak halmaza — az összes szó, amit G generál. Pl. {aⁿbⁿ | n ≥ 0}<br>
             <strong>M</strong> (verem automata) = gép, ami szavakat olvas és elfogad/elutasít<br><br>
@@ -864,55 +855,62 @@ Speciális esetek:
     </div>
 
     <ul>
-        <li><strong>Helyben maradó fejjel (HF TG):</strong> <br>
-            δ: Q × Γ → Q × Γ × {J, B, H}. <br>
-            - J = jobbra léphetünk, B = balra léphetünk, H = helyben maradunk <br></li>
-        <li><strong>Több szalag (TSZ TG):</strong> <br>
-             δ: Q × Γ<sup>k</sup> → Q × Γ<sup>k</sup> × {J, B}<sup>k</sup>. <br>
-             - Szimulálható egyetlen szalaggal.</li>
+        <li><strong>Helyben maradó fejjel (HF TG):</strong> 
+                <span class="note"> 
+                    <br>
+                    δ: Q × Γ → Q × Γ × {J, B, H}. <br>
+                    - J = jobbra léphetünk, B = balra léphetünk, H = helyben maradunk <br></li>
+                </span >
+            <li><strong>Több szalag (TSZ TG):</strong>
+                <span class="note">
+                    <br>
+                    δ: Q × Γ<sup>k</sup> → Q × Γ<sup>k</sup> × {J, B}<sup>k</sup>. <br>
+    
+                    - Szimulálható egyetlen szalaggal.</li>
+                </span >
         <li><strong>Nemdeterminisztikus TG (ND TG):</strong><br>
-             δ: Q × Γ → P(Q × Γ × {J, B}). <br>
-             - A ND TG működését fa írja le. Ha egy ágon az elért állapot elfogadó, akkor a ND TG elfogadta a kezdeti sorozatot. Minden ND TG-hez van vele ekvivalens (determinisztikus) TG. <br>
-            - Tudjuk szimulálni DT TG -vel.
+             δ: Q × Γ → P(Q × Γ × {J, B}). 
+                <span class="note"> 
+                    <br>
+                    - A ND TG működését fa írja le. Ha egy ágon az elért állapot elfogadó, akkor a ND TG elfogadta a kezdeti sorozatot. Minden ND TG-hez van vele ekvivalens (determinisztikus) TG. <br>
+                    - Tudjuk szimulálni DT TG -vel.
+                </span >
             </li>
              
-        <li><strong>Felsoroló TG:</strong> Nincs bemeneti sorozat,<br>
-             δ: Q × Γ → (Q × Γ × {J, B} × Σ*).<br>
-              - Egy L nyelvet felsoroló E TG-hez létezik egy N TG, mely éppen L-et ismeri fel, és viszont.</li>
-        <li> További példák : két irányban végtelen szalag, 2 dimenziós szalag, több fej, több elutasító és elfogadó állapot, RAM (random access machine), Kétvermes automata, kétszámlálós gép</ul><li>
+        <li><strong>Felsoroló TG:</strong> 
+              <span class="note"> 
+                Nincs bemeneti sorozat,
+                    <br>  
+                    δ: Q × Γ → (Q × Γ × {J, B} × Σ*).<br>
+                    
+                    - Egy L nyelvet felsoroló E TG-hez létezik egy N TG, mely éppen L-et ismeri fel, és viszont.</li>
+                </span>
+             <li> További példák : két irányban végtelen szalag, 2 dimenziós szalag, több fej, több elutasító és elfogadó állapot, RAM (random access machine), Kétvermes automata, kétszámlálós gép</ul><li>
     </ul>
 
     <h3>Rekurzíve felsorolható és rekurzív nyelvek</h3>
     <p><a href="https://www.youtube.com/watch?v=vKh94OEZ2gI&t=1m8s" target="_blank">▶ Előadás ezen a részen</a></p>
-
+ <span class="note">  
     Azt érdemes tudni, hogy megszámlálhatóan sok TG van, de a TG által felismert nyelvek száma nem megszámlálhatóan sok (ugye TG az rekurzíve felsorolható), tehát vannak olyan nyelvek, melyeket nem ismer fel egyetlen TG sem. Ezért érdemes megkülönböztetni a Turing felismerhető és a Turing eldönthető nyelveket. (rekurzíve felsorolható és rekurzív nyelvek)
-
+  </span >
     <div class="tetel-box">
                 <p><a href="https://www.youtube.com/watch?v=vKh94OEZ2gI&t=20m33s" target="_blank">▶ Előadás ezen a részen</a></p>
 
-        <strong>Tétel:</strong> Van olyan L' ⊆ Σ* = {0,1}* nyelv, amely nem Turing-felismerhető, azaz nem rekurzíve felsorolható.<br><br>
-        
-
-        <strong>Bizonyítás - SZÁMOSSÁGUK:</strong>
-        <ol>
-            <li>Egy TG leírható véges jelsorozattal → az összes TG <strong>megszámlálhatóan sok</strong> (M₁, M₂, ..., Mₙ, ...)</li>
-            <li>Minden Mᵢ egyértelműen meghatározza az általa felismert Lᵢ nyelvet → a Turing-felismerhető nyelvek is <strong>megszámlálhatóan sokan vannak</strong></li>
-            <li>Az összes Σ* feletti nyelv = {0,1}* összes részhalmazainak száma → <strong>több mint megszámlálható</strong> (Cantor-módszer)</li>
-            <li>Következmény: vannak nyelvek, amelyeket <strong>egyetlen TG sem ismer fel</strong></li>
-        </ol>
+        <strong>Tétel:</strong> Van olyan L' ⊆ Σ* = {0,1}* nyelv, amely nem Turing-felismerhető, azaz nem rekurzíve felsorolható.
+    
 
     </div>
 
 
     <div class="definicio">
         <strong>Definíció:</strong> Egy L ⊆ Σ* nyelv <em>Turing felismerhető</em> vagy <em></em>rekurzíve felsorolható</em>, ha van olyan M Turing gép, melyre L(M) = L.<br><br>
-        <strong>Megj:</strong> s ∈ Σ* \ L esetén nem biztos, hogy megáll a gép, így csak az L elemeire kapunk igenlő választ. (ha végtelen ciklusba kerűl egy TG akkor nem lesz egy szó felismerhető)<br><br>
-         <span class="note">  ( Rekurzíve felsorolható nyelvben, igen az véges időn belűl kapunk választ, de ha vmi nem felismerhető, akkor végtelen ciklusba kerül, vagy megkapjuk véges időn belűl )     </span> 
+        <strong>Megj:</strong> s ∈ Σ* \ L esetén nem biztos, hogy megáll a gép, így csak az L elemeire kapunk igenlő választ. (ha végtelen ciklusba kerűl egy TG akkor nem lesz egy szó felismerhető)
+         <span class="note"> <br><br> ( Rekurzíve felsorolható nyelvben, igen az véges időn belűl kapunk választ, de ha vmi nem felismerhető, akkor végtelen ciklusba kerül, vagy megkapjuk véges időn belűl )     </span> 
 
     </div>
     <div class="definicio">
-        <strong>Definíció:</strong> Egy L ⊆ Σ* nyelv <em>Turing eldönthető</em> vagy <em>rekurzív</em>, ha van olyan M Turing gép, melyre L(M) = L, és M minden s ∈ Σ* szóra megáll.<br><br>
-         <span class="note">  ( Rekuzív nyelvben, igen is nem is véges időn belűl megkapjuk a választ, tehát minden szóra megáll a gép )     </span> 
+        <strong>Definíció:</strong> Egy L ⊆ Σ* nyelv <em>Turing eldönthető</em> vagy <em>rekurzív</em>, ha van olyan M Turing gép, melyre L(M) = L, és M minden s ∈ Σ* szóra megáll.
+         <span class="note"> <br><br> ( Rekuzív nyelvben, igen is nem is véges időn belűl megkapjuk a választ, tehát minden szóra megáll a gép )     </span> 
     </div>
     <div class="tetel-box">
         <strong>Megj:</strong> Minden rekurzív nyelv rekurzíve felsorolható is. (Az érdekes kérdés a fordított tartalmazás, amiről később belátjuk, hogy nem áll fenn.)<br><br>
@@ -923,7 +921,7 @@ Speciális esetek:
     <div class="definicio">
         <strong>Definíció: Diagonális nyelv:</strong> azon TG kódja, mely TG-ek nem fogadják el a saját kódjukat:<br>
         <div style="margin: 6px 0 6px 20px;">L<sub>d</sub> = { w ∈ {0, 1}* | az M<sub>w</sub> gép létezik, és w ∉ L<sub>M<sub>w</sub></sub> }</div>
-        <strong>Tétel:</strong> L<sub>d</sub> nem rekurzíve felsorolható nyelv.<br><br>
+        <strong>Tétel:</strong> L<sub>d</sub> nem rekurzíve felsorolható nyelv.
     </div>
 
     <h3>Példa: Rekurzíve felsorolható (RE), de nem rekurzív (R) nyelv (L<sub>u</sub>)</h3>
@@ -933,16 +931,17 @@ s ∈ {0, 1}* szót? (‘Szuper’ algoritmust keresnénk.) - Nem<br><br>
         <strong>Definíció: Univerzális nyelv</strong><br>
         <div style="margin: 6px 0 6px 20px;">L<sub>u</sub> = { w#s ∈ {0, 1}* | M<sub>w</sub> létezik, és s ∈ L<sub>M<sub>w</sub></sub>  ( w#s stringekből áll, hogy  M<sub>w</sub> Turing-gépet kódol, ami elfogadja az s szót )   }</div>
         <strong>Megj:</strong> L<sub>u</sub> éppen az univerzális TG nyelve, azaz L<sub>u</sub> rekurzíve felsorolható. ( Engedd el, hogy miért )<br><br>
-        <strong>Tétel: </strong> L<sub>u</sub> nem rekurzív nyelv. <span class="note">   ( Rukrzív = Eldönthető-e a nyelv ?? - Nem, mert w -vel nem eldönthető, h elfogadja-e s-t, így nem rekurzív )     </span> 
+        <strong>Tétel: </strong> L<sub>u</sub> nem rekurzív nyelv. <span class="note">  <br><br> ( Rukrzív = Eldönthető-e a nyelv ? - Nem, mert w -vel nem eldönthető, h elfogadja-e s-t, így nem rekurzív )     </span> 
     </div>
 
     <h3>Turing-gépek és grammatikák kapcsolata</h3>
     <p><a href="https://www.youtube.com/watch?v=BkCk9BjJO0c&t=30m12s" target="_blank">▶ Előadás ezen a részen</a></p>
      <img src="img/digszam/nyelvek.png" alt="Verem automaták" style="max-width:500px;width:80%;">
     <div class="tetel-box">
-        <strong>Tétel:</strong> A nyelvtannal generálható nyelvek osztálya megegyezik a rekurzíve felsorolható nyelvek osztályával. Azaz L nyelv akkor és csak akkor generálható grammatikával, ha van a nyelvet felismerő Turing-gép.<br><br>
-        (0-sat generálják a gramatikák, 0-sat felismerik a TG-k, így ugyanazokat a nyelveket generálják és ismerik fel)
-    </div>
+        <strong>Tétel:</strong> A nyelvtannal generálható nyelvek osztálya megegyezik a rekurzíve felsorolható nyelvek osztályával. Azaz L nyelv akkor és csak akkor generálható grammatikával, ha van a nyelvet felismerő Turing-gép.
+        <span class="note"> <br><br>  (0-sat generálják a gramatikák, 0-sat felismerik a TG-k, így ugyanazokat a nyelveket generálják és ismerik fel)
+            </span >
+        </div>
 
 
     <h3>Mi a helyzet az 1-es (CS) nyelvosztállyal?</h3>
@@ -951,7 +950,7 @@ s ∈ {0, 1}* szót? (‘Szuper’ algoritmust keresnénk.) - Nem<br><br>
         <strong>Definíció:</strong> Lineárisan korlátozott TG egy olyan, speciális TG, mely a szalagnak csak a bemeneti által elfoglalt részét használja. <span class="note"> <br>( azaz ha a bemenet n hosszú, a gép legfeljebb n cellát használhat — nem nyúlhat a szalagon túlra )</span><br><br>
 
         <strong>Tétel:</strong> A környezetfüggő nyelvtannal generálható nyelvek osztálya (CS) megegyezik a lineárisan korlátozott TG-pel felismerhető nyelvek osztályával.<br>
-
+        <br>
         <strong>Tétel:</strong> A környezetfüggő nyelvtannal generálható nyelvek osztálya (CS) valódi részhalmaza a rekurzív nyelvek osztályának.
     </div>
     <div style="display:flex; align-items:center; gap:1em;">
@@ -1021,9 +1020,7 @@ Megvalósítható-e minden algoritmus Turing géppel? - Yes<br><br>
             <li>Egy f : Σ* → Σ* parciális fv algoritmussal kiszámítható ⟺ f parciálisan rekurzív.</li>
             <li>Egy f : Σ* → Σ* teljes fv algoritmussal kiszámítható ⟺ f rekurzív.</li>
             <li>Egy L nyelvre a nyelvbe való tartozás problémája algoritmussal eldönthető ⟺ a nyelv rekurzív.</li>
-        </ul><br><br>
-
-        Tudunk-e eldönthetetlen problémákról? Yes, amire nincs algoritmus...
+        </ul>
     </div>
 
     <h3>Példa algoritmikusan nem eldönthető probléma: Hilbert 10. </h3>
@@ -1077,8 +1074,8 @@ Megvalósítható-e minden algoritmus Turing géppel? - Yes<br><br>
          <img src="img/digszam/uni_tg.png" alt="Verem automaták" style="max-width:500px;width:100%;"><br>
         Programozható gép: olyan gép, mely képes TG működését szimulálni, ha beadjuk neki a TG M<sub>w</sub> kódját. M<sub>w</sub> fogja tudni szimulálni.<br><br>
 
-        <strong>Tétel:</strong> Van olyan U 3 szalagos TG, melyre teljesül, hogy ha w, s ∈ {0, 1}*, és M<sub>w</sub> létezik, akkor az U gép pontosan akkor fogadja el (utasítja el, kerül végtelen ciklusba) a w#s bemenetet, amikor M<sub>w</sub> az s bemenetet elfogadja (elutasítja, ciklusba kerül).<br><br>
-        <span style="font-weight:normal;">U szimulál bármely TG-et a kódolt leírása alapján. Ez a modern tárolt programú számítógép elvi alapja.</span>
+        <strong>Tétel:</strong> Van olyan U 3 szalagos TG, melyre teljesül, hogy ha w, s ∈ {0, 1}*, és M<sub>w</sub> létezik, akkor az U gép pontosan akkor fogadja el (utasítja el, kerül végtelen ciklusba) a w#s bemenetet, amikor M<sub>w</sub> az s bemenetet elfogadja (elutasítja, ciklusba kerül).
+        <span class="note"><br><br>U szimulál bármely TG-et a kódolt leírása alapján. Ez a modern tárolt programú számítógép elvi alapja.</span>
     </div>
 
     <p><a href="https://www.youtube.com/watch?v=BkCk9BjJO0c&t=9m5s" target="_blank">▶ Előadás ezen a részen</a></p>
@@ -1116,9 +1113,9 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 
         <strong>Definíció:</strong> A megállási problémához (halting problem) tartozó L<sub>h</sub> nyelv:<br>
         <div style="margin: 6px 0 6px 20px;">L<sub>h</sub> = {w#s ∈ {0, 1}* | M<sub>w</sub> létezik, és s bemenettel elindítva megáll}</div>
-        <strong>Tétel:</strong> L<sub>h</sub> rekurzíve felsorolható, de nem rekurzív nyelv.<br><br>
+        <strong>Tétel:</strong> L<sub>h</sub> rekurzíve felsorolható, de nem rekurzív nyelv.
 
-         <span class="note">  ( Az igen választ megkapjuk véges időn belűl )    </span> 
+         <span class="note"> <br><br> ( Az igen választ megkapjuk véges időn belűl )    </span> 
     </div>
 
 
@@ -1186,14 +1183,14 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         S<sub>M</sub>(n) jelöli az M által maximálisan elolvasott munkaszalag jelek számát n hosszúságú bemenetek esetén.<br><br>
         <strong>Megj:</strong> Ha M nem áll meg valamely n hosszú bemenetre, akkor T<sub>M</sub>(n) végtelen. Ekkor S<sub>M</sub>(n)-t is végtelennek tekintjük.<br><br>
 
-        <strong>Definíció:</strong> Legyen t: N → N függvény olyan, hogy t(n) ≥ n minden n-re. Az M TG <em>t(n) időkorlátos</em>, ha az n hosszú bemenetek esetén legfeljebb t(n) lépést tesz meg, azaz T<sub>M</sub>(n) ≤ t(n).<br>
-        <span style="font-style:italic; color:#555;">( Minden n hosszú bemenetre megnézzük. t(n) ≥ n, hogy legyen ideje elolvasni a bemenetet. )</span><br><br>
+        <strong>Definíció:</strong> Legyen t: N → N függvény olyan, hogy t(n) ≥ n minden n-re. Az M TG <em>t(n) időkorlátos</em>, ha az n hosszú bemenetek esetén legfeljebb t(n) lépést tesz meg, azaz T<sub>M</sub>(n) ≤ t(n).
+        <span style="font-style:italic; color:#555;"><br>( Minden n hosszú bemenetre megnézzük. t(n) ≥ n, hogy legyen ideje elolvasni a bemenetet. )</span><br><br>
 
-        <strong>Definíció:</strong> TIME(t(n)) = {L | L felismerhető egy O(t(n)) időkorlátos M TG-pel.}<br>
-        <span style="font-style:italic; color:#555;">( Az összes olyan L nyelv halmaza, amely felismerhető egy legfeljebb O(t(n)) lépéses TG-pel. )</span><br><br>
+        <strong>Definíció:</strong> TIME(t(n)) = {L | L felismerhető egy O(t(n)) időkorlátos M TG-pel.}
+        <span style="font-style:italic; color:#555;"><br>( Az összes olyan L nyelv halmaza, amely felismerhető egy legfeljebb O(t(n)) lépéses TG-pel. )</span><br><br>
 
-        <strong>Definíció:</strong> Legyen s: N → N függvény olyan, hogy s(n) ≥ log<sub>2</sub> n minden n-re. Az M TG <em>s(n) tárkorlátos</em>, ha az n hosszú bemenetek esetén legfeljebb s(n) db cellát használ a munkaszalagon, azaz S<sub>M</sub>(n) ≤ s(n).<br>
-        <span style="font-style:italic; color:#555;">(A log₂n alsó korlát azért szerepel, mert már az input indexeléshez is kb. log n bit tár kell.)</span><br><br>
+        <strong>Definíció:</strong> Legyen s: N → N függvény olyan, hogy s(n) ≥ log<sub>2</sub> n minden n-re. Az M TG <em>s(n) tárkorlátos</em>, ha az n hosszú bemenetek esetén legfeljebb s(n) db cellát használ a munkaszalagon, azaz S<sub>M</sub>(n) ≤ s(n).
+        <span style="font-style:italic; color:#555;"><br>(A log₂n alsó korlát azért szerepel, mert már az input indexeléshez is kb. log n bit tár kell.)</span><br><br>
 
         <strong>Definíció:</strong> SPACE(s(n)) = {L | L felismerhető egy O(s(n)) tárkorlátos M TG-pel.}
     </div>
@@ -1217,8 +1214,8 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
     <h3>A P nyelvosztály</h3>
     <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=14m47s" target="_blank">▶ Előadás ezen a részen</a></p>
     <div class="definicio">
-        <strong>Definíció:</strong> P = <strong  style="font-size: 20px;">U</strong ><sub>k≥1</sub> TIME(n<sup>k</sup>) a polinom időben egyszalagos TG-pel eldönthető nyelvek osztálya.<br>
-         <span class="note">(Pl: TIME(n^2) )   </span> <br><br>
+        <strong>Definíció:</strong> P = <strong  style="font-size: 20px;">U</strong ><sub>k≥1</sub> TIME(n<sup>k</sup>) a polinom időben egyszalagos TG-pel eldönthető nyelvek osztálya.
+         <span class="note"><br>(Pl: TIME(n^2) )   </span> <br><br>
         <strong>Megj:</strong> Valamely, az alappal ekvivalens speciális TG modellt használva, ha az polinom időben szimulálható alap TG-pel, akkor P invariáns arra nézve, hogy az alap vagy a speciális TG-et használjuk számítási modellként.<br>
         <strong>Megj:</strong> P a praktikusan számítógéppel megoldható problémáknak felel meg.<br>
          <span class="note"> ( P-ről azt lehet mondani, hogy a P beli problémákra gyors számítógéppel megoldható megoldást találunk. )   </span> 
@@ -1280,12 +1277,12 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
     </div>
     <div class="tetel-box">
         <strong>Tétel:</strong> P ⊆ PSPACE ⊆ EXPTIME<br>
-        <span style="font-weight:normal;">Ha L ∈ PSPACE, akkor valamely k-ra L ∈ SPACE(n<sup>k</sup>). A tár-idő tétel szerint ekkor L ∈ TIME(2<sup>n<sup>k</sup></sup>) ⊆ EXPTIME.</span><br><br>
+        <span style="font-weight:normal;">Ha L ∈ PSPACE, akkor valamely k-ra L ∈ SPACE(n<sup>k</sup>). A tár-idő tétel szerint ekkor L ∈ TIME(2<sup>n<sup>k</sup></sup>) ⊆ EXPTIME.</span>
     </div>  
     <div class="tetel-box">
         <strong>Tétel:</strong> EXPTIME ⊂ R   (= Rekurzív nyelvek osztálya)  <span class="note">(EXP timenál adunk neki egy nagyon nagy időkorlátot. Az R -nél meg csak azt adjuk meg, h véges időn belűl álljon meg, szóval kevésbé szigorú a korlát.)</span> <br><br>
-        <strong>Következmény:</strong> P ⊆ NP ⊆ PSPACE = NPSPACE ⊆ EXPTIME<br><br>
-        <span style="font-weight:normal;">Nem ismert, hogy a tartalmazások valódiak-e. Ismert, hogy P ⊂ EXPTIME. Tehát a fenti láncban legalább az egyik helyen valódi a tartalmazás, sejtés: mindegyik valódi.</span>
+        <strong>Következmény:</strong> P ⊆ NP ⊆ PSPACE = NPSPACE ⊆ EXPTIME
+        <span class="note"><br><br>Nem ismert, hogy a tartalmazások valódiak-e. Ismert, hogy P ⊂ EXPTIME. Tehát a fenti láncban legalább az egyik helyen valódi a tartalmazás, sejtés: mindegyik valódi.</span>
     </div>
 
     <h3>Az NP nyelvosztály</h3>
@@ -1294,22 +1291,15 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <strong>Definíció:</strong> NP = <strong style="font-size:20px;">∪</strong><sub>k≥1</sub> NTIME(n<sup>k</sup>) a polinom időben egyszalagos NDTG-pel eldönthető nyelvek osztálya.<br><br>
         <strong>1. Megj:</strong> P ⊆ NP, mivel egy t(n) időkorlátos TG tekinthető egy speciális, t(n) időkorlátos NDTG-nek, így TIME(n<sup>k</sup>) ⊆ NTIME(n<sup>k</sup>).
     </div>
-
-
-
-
        <img src="img/digszam/nemdet_tg_fa.png" alt="Verem automaták" style="max-width:500px;width:60%;">
-
-
-
     <div class="definicio">
-        <strong>Definíció:</strong> NTIME(t(n)) = {L ⊆ Σ* | L felismerhető egy O(t(n)) időkorlátos M NDTG-pel.}<br><br>
-        <span class="note">( Megengedjük magunknak azt a luxust, hogy Nem determinisztikus TG nem sokszorozza meg magát minden időpillanatban, így benne lesz TIME(t(n))-ben. Das NTIME(t(n)) része TIME(t(n))-nek )</span><br><br>
+        <strong>Definíció:</strong> NTIME(t(n)) = {L ⊆ Σ* | L felismerhető egy O(t(n)) időkorlátos M NDTG-pel.}
+        <span class="note"><br><br>( Megengedjük magunknak azt a luxust, hogy Nem determinisztikus TG nem sokszorozza meg magát minden időpillanatban, így benne lesz TIME(t(n))-ben. Das NTIME(t(n)) része TIME(t(n))-nek )</span><br><br>
 
 
 
-        <strong>Definíció:</strong> NP = <strong  style="font-size: 20px;">U</strong ><sub>k≥1</sub> NTIME(n<sup>k</sup>) a polinom időben egyszalagos NDTG-pel eldönthető problémák osztálya.<br><br>
-         <span class="note">(NP -ben azok vannak benne, amik megoldhatók nem determinisztikus polinomiális időben.)</span><br><br>
+        <strong>Definíció:</strong> NP = <strong  style="font-size: 20px;">U</strong ><sub>k≥1</sub> NTIME(n<sup>k</sup>) a polinom időben egyszalagos NDTG-pel eldönthető problémák osztálya.
+         <span class="note"><br><br>(NP -ben azok vannak benne, amik megoldhatók nem determinisztikus polinomiális időben.)<br><br></span>
         
         <strong>1. Megj:</strong> P ⊆ NP, mivel egy t(n) időkorlátos TG tekinthető egy speciális, t(n) időkorlátos NDTG-nek, így TIME(n<sup>k</sup>) ⊆ NTIME(n<sup>k</sup>).<br>
         <strong>2. Megj:</strong> P ⊂ NP vagy P = NP? Nyitott kérdés...
@@ -1317,8 +1307,8 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
     </div>
     <div class="tetel-box">
         <strong>Tétel:</strong> P ⊆ NP ∩ coNP <br><br>
-        Biz : P ⊆ NP   +    coP ⊆ coNP  <br><br>
-        <span class="note">(Hisz kinda ugyanaz a problémakör, csak a komplementer nyelvre nézve.)</span>
+        Biz : P ⊆ NP   +    coP ⊆ coNP  
+        <span class="note"><br><br>(Hisz kinda ugyanaz a problémakör, csak a komplementer nyelvre nézve.)</span>
     </div>
 
     <div class="page-footer">A Digitális Számítás Elmélete — 7. Téma</div>
@@ -1354,8 +1344,8 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
             <strong>Tétel:</strong> Minden M ND TG-hez van vele ekvivalens S TG. (csak ugye több idő)<br><br>
 
         <strong>Definíció: Nemdeterminisztikus Turing gépel fogjuk bevezetni. </strong><br>
-        Legyen t: N → N olyan, hogy t(n) ≥ n minden n-re. Az M ND TG <em>t(n) időkorlátos</em>, ha az n hosszú bemenetek esetén M minden számítási út mentén legfeljebb t(n) lépést megtéve megáll. Azaz n hosszú bemenetek esetén legfeljebb t(n)+1 mély a számítási fa.<br><br>
-        <span class="note">Megj: Nem ismert olyan fizikai megvalósítás, mely t(n)-nel arányos időben szimulálná egy t(n) időkorlátos NDTG működését.</span><br><br>
+        Legyen t: N → N olyan, hogy t(n) ≥ n minden n-re. Az M ND TG <em>t(n) időkorlátos</em>, ha az n hosszú bemenetek esetén M minden számítási út mentén legfeljebb t(n) lépést megtéve megáll. Azaz n hosszú bemenetek esetén legfeljebb t(n)+1 mély a számítási fa.
+        <span class="note"><br><br>Megj: Nem ismert olyan fizikai megvalósítás, mely t(n)-nel arányos időben szimulálná egy t(n) időkorlátos NDTG működését.<br><br></span>
         
          <span class="note">( Kép jól illusztrálja, hogy megnézzük, h milyen mély lesz a fa, minden n hosszú inputra ezen fák mélységét és megnézzük a maximumot, ha ez a max t(n), akkor t(n) időkorlátos. :) )</span>
     </div>
@@ -1371,8 +1361,8 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
 
         <strong>Definíció:</strong> Legyen L egy Σ feletti nyelv. L <em>polinomiálisan bizonyítható</em>, ha van olyan V algoritmus, hogy<br>
         &nbsp;&nbsp;&nbsp;&nbsp;L = {w | V elfogadja ⟨w, c⟩-t valamely Σ*-beli c-re},  <span class="note">(w maga a szó és c a tanú)</span>  <br>
-        és V polinom idejű w hosszát tekintve.<br>
-        <span class="note">(c a tanú — „bizonyíték" arra, hogy w ∈ L)</span><br><br>
+        és V polinom idejű w hosszát tekintve.<br><br>
+        <span class="note">(c a tanú — „bizonyíték" arra, hogy w ∈ L)<br><br></span>
 
         <strong>Tétel:</strong> NP azokat a nyelveket tartalmazza, amelyek polinomiálisan bizonyíthatók. <span class="note">  ( Azaz NP = nem det. TG-vel felismerhető nyelvek osztálya. Ez a két fogalom ekvivalens )  </span> <br>
 
@@ -1400,8 +1390,8 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <strong>Definíció (polinom idejű visszavezetés):</strong> Legyenek A és B Σ* feletti nyelvek. (A,B 1-1 feladat)<br>
         A <em>polinom időben visszavezethető</em> B-re (jelölés: A ≤<sub>P</sub> B), ha van olyan<br>
         &nbsp;&nbsp;&nbsp;&nbsp;f: Σ* → Σ* polinomiális időben kiszámítható függvény, melyre<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;w ∈ A ⟺ f(w) ∈ B.   <span class="note">(w string  (vevé))</span>   <br>
-        <span class="note">(Az f függvény a visszavezetés; N TG először kiszámítja f(w)-t, majd M-et futtatja f(w)-n.)</span><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;w ∈ A ⟺ f(w) ∈ B.   <span class="note">(w string  (vevé)) <br></span>  
+        <span class="note">(Az f függvény a visszavezetés; N TG először kiszámítja f(w)-t, majd M-et futtatja f(w)-n.)<br><br></span>
 
         <strong>Tétel:</strong> Ha A ≤<sub>P</sub> B és B ∈ P, akkor A ∈ P. <span class="note">(Az A polinomiális időben visszavezethető B-re és B ismert és B megoldható → A is megoldható. Mivel w kiszámítása polinóm + f(w) kiszámolása is polinom idejű, ezért = polinom idő.)</span><br><br>
 
@@ -1423,13 +1413,13 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
         <strong>Definíció:</strong> Bool kifejezések:    &nbsp;&nbsp;∧ (és), ∨ (vagy), ¬ (nem).<br>
         Pl.: Φ = (¬x ∧ y) ∨ (x ∧ ¬z)<br><br>
 
-        <strong>Definíció:</strong> SAT = {Φ | Φ kielégíthető Bool kifejezés}<br>  <span class="note">(Nem mindegyik kielígethető, de ami kielégíthető (ami 1-et ad) azt SAT-nak fogjuk fejőlni.)</span>  <br>
+        <strong>Definíció:</strong> SAT = {Φ | Φ kielégíthető Bool kifejezés} <span class="note"><br> (Nem mindegyik kielígethető, de ami kielégíthető (ami 1-et ad) azt SAT-nak fogjuk fejőlni.)</span>  <br>
      
          <br>
 
             <strong>Tétel (Cook–Levin):</strong> SAT ∈ P akkor és csak akkor, ha NP = P.<br>
-            Más szóval: SAT NP-teljes.<br>
-        <span class="note">3SAT ≤<sub>P</sub> SAT</span><br><br>
+            Más szóval: SAT NP-teljes.<br><br>
+        <span class="note">3SAT ≤<sub>P</sub> SAT<br><br></span>
 
 
         <strong>Definíció:</strong> 3SAT = {Φ | Φ konjunktív normálformájú Bool kifejezés, ahol minden klóz pontosan 3 literált tartalmaz, és Φ kielégíthető}<br>
