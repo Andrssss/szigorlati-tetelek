@@ -174,7 +174,7 @@
         <text x="270" y="210" text-anchor="middle" font-size="12">1</text>
     </svg>
 
-    Ez a grammatika az L = {0<sup>n</sup>1<sup>n</sup> | n ≥ 1} nyelvet generálja (CF, de nem reguláris).
+    Ez a grammatika az L = {0<sup>n</sup>1<sup>n</sup> | n ≥ 1} nyelvet generálja (CF, de nem reguláris). <span class="note"><br><br>( Nem reguláris, mert meg kell jegyezni hány db 0 volt, hogy ugyanannyi 1 jöjjön. )</span>
     </details>
 
 
@@ -481,7 +481,7 @@ Turing­gépekkel. </p>
         <strong>Tétel:</strong> Legyen M = (Q, Σ, δ, q₀, F) DVA. Ekkor ∀ x, y ∈ Σ* esetén:<br>
         x ∼<sub>M</sub> y &nbsp; ⟹ &nbsp; x ≈<sub>L(M)</sub> y<br>
         <span class="note">  ( HA x és y string ekvivalensek az automatára nézve, akkor x és y ekvivalensek a felismert nyelvre nézve.
-        Azaz ha x és y ugyanabba az állapotba jutnak, akkor ugyanaz a sorsuk a nyelvben is, vagyis mindkettő benne van, vagy egyik sem.)     </span> 
+        Azaz ha x és y ugyanabba az állapotba jutnak, akkor ugyanaz a sorsuk a nyelvben is, vagyis mindkettő benne van, vagy egyik sem.)     </span> <span class="note"><br><br>( Pl.: csak páros számú a betű kell. Tehát aa és bbaa ugyanúgy folytatva együtt mozognak — vagy benne maradnak a nyelvben, vagy nem. )</span>
     </div>
 
     <div class="tetel-box">
@@ -886,7 +886,7 @@ Speciális esetek:
                     δ: Q × Γ → (Q × Γ × {J, B} × Σ*).<br>
                     
                     - Egy L nyelvet felsoroló E TG-hez létezik egy N TG, mely éppen L-et ismeri fel, és viszont.</li>
-                </span>
+                </span> <span class="note"><br><br>( Nem egy bemenetet dönt el, hanem sorban kiírja egy nyelv összes szavát — felsorolja az elemeket. )</span>
              <li> További példák : két irányban végtelen szalag, 2 dimenziós szalag, több fej, több elutasító és elfogadó állapot, RAM (random access machine), Kétvermes automata, kétszámlálós gép</ul><li>
     </ul>
 
@@ -1242,7 +1242,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
     <h3>Tár-idő összefüggések</h3>
     <div class="tetel-box">
         <p><a href="https://www.youtube.com/watch?v=JwTfRaPoBFs&t=28m19s" target="_blank">▶ Előadás ezen a részen</a></p>
-        <strong>Tétel (Tár-idő tétel):</strong> Ha L ∈ SPACE(s(n)), akkor van olyan L-től függő c konstans, hogy L ∈ TIME(c<sup>s(n)</sup>).
+        <strong>Tétel (Tár-idő tétel):</strong> Ha L ∈ SPACE(s(n)), akkor van olyan L-től függő c konstans, hogy L ∈ TIME(c<sup>s(n)</sup>). <span class="note"><br><br>( Ha egy algoritmus s(n) memóriát használ, akkor legfeljebb exponenciális időben futhat. )</span>
     </div>
 
      <div class="tetel-box">
@@ -1261,7 +1261,7 @@ bemenetre? (‘Nincs-e végtelen ciklus a programunkban’?) <br><br>
             <li>tetszőleges ε &gt; 0 esetén T<sub>M</sub>(n) ≤ n(1 + ε), ha T<sub>N</sub>(n) = O(n)  <span class="note"> ( T<sub>N</sub>(n) = O(n) = lineáris időkorlátos)</span></li>
             <li>tetszőleges c &gt; 0 esetén T<sub>M</sub>(n) ≤ c · T<sub>N</sub>(n), ha lim T<sub>N</sub>(n)/n = ∞  (ha szuper lineáris, akkor több szallaggal megtudj felezni / negyedelni ... az időt. Ezé mind1, h hány szallag.)</li>
         </ul>
-        <strong>Megj:</strong> A fenti tétel magyarázza, hogy miért tekinthettünk el a konstans szorzótól az időigény definiálásakor.</span>
+        <strong>Megj:</strong> A fenti tétel magyarázza, hogy miért tekinthettünk el a konstans szorzótól az időigény definiálásakor.</span> <span class="note"><br><br>( Emiatt a komplexitáselméletben nem foglalkozunk szorzókkal — csak a növekedési rend (n, n², nlogn, 2^n stb.) számít. )</span>
     </div>
    
 
