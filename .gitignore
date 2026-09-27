@@ -10,3 +10,4 @@ pdf_text_full.txt
 desktop.ini
 Thumbs.db
 *.md
+!README.md
