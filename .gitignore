@@ -11,3 +11,7 @@ desktop.ini
 Thumbs.db
 *.md
 !README.md
+
+# Node / Netlify
+node_modules/
+.netlify/
