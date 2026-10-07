@@ -53,3 +53,7 @@ video_szovegek/                         videóátiratok
 ```
 
 Tiszta HTML/CSS/JS, nincs build lépés vagy függőség.
+
+## Látogatásnaplózás
+
+Az oldalak megnyitását a `track.js` küldi a Netlify `visit` function-nek, ami [Netlify Blobs](https://docs.netlify.com/blobs/overview/)-ba menti (`visits` store, látogatásonként egy JSON: időpont, oldal, anonim böngészőazonosító, referrer, képernyőméret, nyelv, user agent; IP-t nem tárolunk). Kiolvasás: `/.netlify/functions/stats?key=<STATS_KEY>` – a `STATS_KEY` a Netlify környezeti változói között állítandó be.
